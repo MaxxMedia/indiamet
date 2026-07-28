@@ -1,0 +1,300 @@
+"use client"
+
+// import { Metadata } from 'next';
+import SectionContainer from '@/components/UI/SectionContainer';
+// import PartnersSection from '@/components/section/PartnersSection';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// export const metadata: Metadata = {
+//   title: "Die & Mould Exhibition Trade Show | DIEMEX",
+//   description: "Join Diemex 2026, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
+//   openGraph: {
+//     title: "Die & Mould Exhibition Trade Show | DIEMEX",
+//   description: "Join Diemex 2026, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
+//     images: ["/images/image.png"]
+//   }
+// };
+
+export default function ExploreMoscowPage() {
+  return (
+    <main className="relative min-h-[60vh] lg:min-h-[70vh] font-sans antialiased font-parabolica">
+      {/* Hero Section */}
+      <section className="relative z-10 flex flex-col justify-end bg-[#005EB8] pt-96">
+        <SectionContainer className="pt-0 pb-10 text-white">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+            Explore Pune
+          </h1>
+          <p className="mt-5 max-w-6xl whitespace-pre-line text-lg">
+            Where Heritage Meets Innovation
+          </p>
+        </SectionContainer>
+        
+        {/* Background Image with Gradient */}
+        <div className="absolute inset-0 z-[-1]">
+          <div className="absolute inset-0 bg-gradient-to-t from-black" />
+          <img
+            src="/images/pune3.jpg"
+            alt="Pune Night View"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      {/* A Unique Guide Section */}
+      <section className="relative py-16 overflow-hidden">
+        <SectionContainer>
+<div className="mb-14">
+  <div className="lg:basis-2/3">
+    <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black my-3">
+      A City of Culture, Education & Industry
+    </h2>
+
+    <p className="text-gray-700 text-lg">
+      Welcome to Pune, a city where rich heritage meets modern industry. As Maharashtra’s cultural capital and a leading 
+      manufacturing and automotive hub, Pune offers a vibrant experience for business visitors and travellers. From historic landmarks and lively markets to fine dining, museums, and cultural venues, the city has much to explore during your visit to DIEMEX 2026 and beyond.
+    </p>
+  </div>
+</div>
+
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {/* Card 1: Discover Iconic Landmarks */}
+            <div className="group flex flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 xl:p-7 transition-all duration-300 hover:shadow-xl hover:border-blue-200">
+              <div className="flex justify-between items-start">
+                <div className="mb-5 w-16 h-16 rounded-full overflow-hidden">
+                  <img
+                    src="/images/landmark.avif"
+                    alt="Travel exploration"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-3xl font-bold text-gray-300 group-hover:text-blue-500 transition-colors">01</span>
+              </div>
+              
+              <h3 className="text-2xl md:text-3xl font-semibold text-black group-hover:text-blue-600 transition-colors">
+                Discover Iconic Landmarks
+              </h3>
+              
+              <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed">
+                Pune is home to some of Maharashtra’s most iconic landmarks. Begin your journey at Shaniwar Wada, the historic seat of the Maratha 
+                Empire and a symbol of the city’s rich legacy. Explore the grandeur of Aga Khan Palace, a site of national importance closely 
+                associated with India’s freedom movement, and admire the architectural elegance of Pataleshwar Cave Temple, carved from a single rock.
+              </p>
+
+               <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed"> Experience Pune’s cultural depth at Sinhagad Fort, offering panoramic views and a glimpse into Maratha history, and visit the Raja Dinkar Kelkar Museum, 
+              renowned for its remarkable collection of traditional Indian art and artifacts. Together, these landmarks reflect Pune’s timeless heritage and enduring spirit.</p>
+              <Link 
+                href="/iconic-landmarks" 
+                className="mt-auto w-full"
+              >
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                  Explore More
+                  <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </button>
+              </Link>
+            </div>
+
+            {/* Card 2: Immerse Yourself in Culture */}
+            <div className="group flex flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 xl:p-7 transition-all duration-300 hover:shadow-xl hover:border-blue-200">
+              <div className="flex justify-between items-start">
+                <div className="mb-5 w-16 h-16 rounded-full overflow-hidden">
+                  <img
+                    src="/images/culture.jpg"
+                    alt="Pune's Culture"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-3xl font-bold text-gray-300 group-hover:text-blue-500 transition-colors">02</span>
+              </div>
+              
+              <h3 className="text-2xl md:text-3xl font-semibold text-black group-hover:text-blue-600 transition-colors">
+                Immerse Yourself in Culture
+              </h3>
+              
+              <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed">
+               Experience Pune’s vibrant cultural landscape, deeply rooted in tradition and creativity. 
+                Enjoy classical music, theatre, and contemporary performances at renowned venues such as Balgandharva Rangmandir and Pandit Bhimsen Joshi Udyan.
+              </p>
+               <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed">Art and history enthusiasts can explore the Raja Dinkar Kelkar Museum, Mahatma Phule Museum, and several art galleries that showcase Maharashtra’s artistic heritage and 
+              modern expressions. Together, Pune’s cultural institutions offer an enriching experience that reflects the city’s intellectual and artistic spirit.</p>
+              <Link 
+                href="/culture" 
+                className="mt-auto w-full"
+              >
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                  Explore More
+                  <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </button>
+              </Link>
+            </div>
+
+            {/* Card 3: Savor Pune's Culinary Delights */}
+            <div className="group flex flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 xl:p-7 transition-all duration-300 hover:shadow-xl hover:border-blue-200">
+              <div className="flex justify-between items-start">
+                <div className="mb-5 w-16 h-16 rounded-full overflow-hidden">
+                  <img
+                    src="/images/culinary.png"
+                    alt="Pune Vada Pav"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-3xl font-bold text-gray-300 group-hover:text-blue-500 transition-colors">03</span>
+              </div>
+              
+              <h3 className="text-2xl md:text-3xl font-semibold text-black group-hover:text-blue-600 transition-colors">
+                Savor Pune’s Culinary Delights
+              </h3>
+              
+              <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed">
+               From authentic Maharashtrian cuisine to global flavors, Pune’s food scene reflects its diverse and cosmopolitan character. Relish local favourites such as misal pav, vada pav, pithla-bhakri, 
+                and puran poli at traditional eateries, or explore contemporary Indian and international cuisine at the city’s upscale restaurants and cafés.
+              </p>
+              
+              <Link 
+                href="/places-to-eat" 
+                className="mt-auto w-full"
+              >
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                  Explore More
+                  <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </button>
+              </Link>
+            </div>
+
+            {/* Card 4: Shop and Stroll */}
+            <div className="group flex flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 xl:p-7 transition-all duration-300 hover:shadow-xl hover:border-blue-200 md:col-span-2 xl:col-span-1">
+              <div className="flex justify-between items-start">
+                <div className="mb-5 w-16 h-16 rounded-full overflow-hidden">
+                  <img
+                    src="images/shop.jpg"
+                    alt="Shopping in Pune"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-3xl font-bold text-gray-300 group-hover:text-blue-500 transition-colors">04</span>
+              </div>
+              
+              <h3 className="text-2xl md:text-3xl font-semibold text-black group-hover:text-blue-600 transition-colors">
+                Shop and Stroll
+              </h3>
+              
+              <p className="mb-10 whitespace-pre-line text-gray-600 leading-relaxed">
+                For a blend of tradition and modern retail, explore Pune’s vibrant shopping destinations. Wander through Laxmi Road and Tulsi Baug for traditional textiles, 
+                handicrafts, and local souvenirs, or enjoy a modern shopping experience at upscale malls such as Phoenix Marketcity, Pavilion Mall, and Seasons Mall.
+              </p>
+              
+              <Link 
+                href="/shop-and-stroll" 
+                className="mt-auto w-full"
+              >
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                  Explore More
+                  <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </button>
+              </Link>
+            </div>
+          </div>
+
+        </SectionContainer>
+      </section>
+
+      {/* Getting Around Section */}
+      <section className="relative z-10 mx-auto overflow-hidden bg-[#0A2B57] text-white">
+        <SectionContainer>
+          <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
+            <div className="flex h-fit flex-col gap-5 lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-10 xl:pl-12 2xl:pl-14">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+                Getting Around
+              </h2>
+              
+              <p className="whitespace-pre-line text-white/90 text-lg leading-relaxed">
+                Pune offers multiple convenient transport options for visitors. App-based cabs, auto-rickshaws, and local buses 
+                make it easy to navigate the city, while ride-hailing services provide a comfortable way to travel between 
+                business districts and key attractions. For nearby destinations such as Lonavala and Lavasa, road travel is 
+                the most convenient option, allowing you to explore the region at your own pace.
+              </p>
+              
+              <Link 
+                href="/travel-guide" 
+                className="mt-10"
+              >
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300">
+                  Explore More
+                  <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </button>
+              </Link>
+            </div>
+            
+            <div className="grid min-h-[300px] place-content-center lg:col-span-5">
+              <img
+                src="/images/pune4.jpg"
+                alt="Transportation illustration"
+                width={500}
+                height={500}
+                className="h-full w-full object-contain"
+              />
+            </div>
+          </div>
+        </SectionContainer>
+      </section>
+
+      {/* Contact/Visa Section */}
+     <section className="py-16">
+  <SectionContainer>
+    <div className="rounded-xl bg-[#F0F4F8] p-5">
+      <div className="prose max-w-none text-black">
+        <p>
+          For detailed information, visit the website{' '}
+          leave a request or contact in any convenient way:
+        </p>
+
+        <p>
+          <a 
+            href="https://api.whatsapp.com/send?phone=79035460935" 
+            className="text-blue-600 hover:text-blue-800 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+          {' '}– +91 91483 19993
+        </p>
+
+        <p>
+          <a 
+            href="mailto:pad@maxxmedia.in" 
+            className="text-blue-600 hover:text-blue-800 hover:underline"
+          >
+            pad@maxxmedia.in
+          </a>
+        </p>
+
+        <p>
+          <a 
+            href="https://visa-russian.ru/call.php"
+            className="text-blue-600 hover:text-blue-800 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Feedback form
+          </a>
+        </p>
+      </div>
+    </div>
+  </SectionContainer>
+</section>
+
+
+      {/* Partners & Sponsors Section */}
+      {/* <PartnersSection /> */}
+    </main>
+  );
+}

@@ -1,26 +1,474 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* @plugin "tailwindcss-animate"; */
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Montserrat', system-ui, sans-serif;
+
+  --color-main-1: #040d1f;
+  --color-main-2: #0092D7;
+  --color-main-3: #33A8DF;
+  --color-main-4: #003366;
+  --color-main-5: #06162f;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===========================
+   Base styles
+=========================== */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  @apply bg-white text-gray-900 antialiased;
+}
+
+/* ===========================
+   Custom Utility Classes
+=========================== */
+.title-72 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+.title-32 {
+  @apply text-xl md:text-2xl lg:text-[32px] font-bold;
+}
+
+.container {
+  @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+/* ===========================
+   Compact Styles
+=========================== */
+.compact-section {
+  @apply py-8 md:py-12;
+}
+
+.compact-card {
+  @apply p-4;
+}
+
+/* ===========================
+   Text Utilities
+=========================== */
+.text-body {
+  @apply text-sm sm:text-base;
+}
+
+.text-lead {
+  @apply text-base sm:text-lg;
+}
+/* Fix fixed navbar pushing content down */
+/* .page-spacing-wrapper {
+  margin-top: -110px;
+} */
+.clip-arrow {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* YouTube Video Styles */
+#youtube-player {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure YouTube iframe covers the entire area */
+#youtube-player iframe {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  transform: translate(-50%, -50%) scale(1.25) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* Fallback styling for when iframe doesn't load properly */
+.youtube-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Ensure the video container has proper dimensions */
+.hero-video-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  .font-parabolica {
+    font-family: var(--font-parabolica), system-ui, sans-serif;
+  }
+}
+/* Hide scrollbar but allow scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+/* Global spacing and container consistency */
+.container-width {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-width {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-width {
+    padding: 0 2rem;
+  }
+}
+
+/* Consistent section spacing */
+.section-spacing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+/* Title alignment fix */
+.section-title {
+  margin-bottom: 2.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+/* Remove old container styles if conflicting */
+.animated-block-target .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+/* Normalize RTE typography so Tailwind can control it */
+.rte-style {
+  font-size: 20px;
+  line-height: inherit;
+}
+
+.rte-style p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Add this to your global CSS file (e.g., globals.css) */
+
+/* Article content styling - FULL WIDTH */
+.article-content {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #1f2937;
+  width: 100%;
+}
+
+.article-content p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #1f2937;
+}
+
+.article-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.article-content h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.article-content ul {
+  margin: 2rem 0;
+  padding-left: 2rem;
+  list-style-type: disc;
+}
+
+.article-content ol {
+  margin: 2rem 0;
+  padding-left: 2rem;
+  list-style-type: decimal;
+}
+
+.article-content li {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.article-content li:last-child {
+  margin-bottom: 0;
+}
+
+.article-content strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.article-content em {
+  font-style: italic;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #2563eb;
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 0;
+  background-color: #f8fafc;
+  font-style: italic;
+  color: #1e293b;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.article-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 2.5rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .article-content {
+    font-size: 1.125rem;
+  }
+  
+  .article-content p {
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .article-content h2 {
+    font-size: 2rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .article-content li {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-content {
+    font-size: 1rem;
+  }
+  
+  .article-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .article-content h2 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+  }
+  
+  .article-content h3 {
+    font-size: 1.375rem;
+    margin-top: 2rem;
+  }
+  
+  .article-content li {
+    font-size: 1rem;
+  }
+  
+  .article-content blockquote {
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
 }

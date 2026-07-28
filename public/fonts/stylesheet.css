@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-HairlineOblique.woff2') format('woff2'),
+        url('Parabolica-HairlineOblique.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Light.woff2') format('woff2'),
+        url('Parabolica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-BoldOblique.woff2') format('woff2'),
+        url('Parabolica-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Bold.woff2') format('woff2'),
+        url('Parabolica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-BlackOblique.woff2') format('woff2'),
+        url('Parabolica-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Black.woff2') format('woff2'),
+        url('Parabolica-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Hairline.woff2') format('woff2'),
+        url('Parabolica-Hairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Medium.woff2') format('woff2'),
+        url('Parabolica-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-Black.woff2') format('woff2'),
+        url('ParabolicaText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-LightOblique.woff2') format('woff2'),
+        url('Parabolica-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-Medium.woff2') format('woff2'),
+        url('ParabolicaText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-BlackOblique.woff2') format('woff2'),
+        url('ParabolicaText-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-Regular.woff2') format('woff2'),
+        url('Parabolica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-RegularOblique.woff2') format('woff2'),
+        url('ParabolicaText-RegularOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-Regular.woff2') format('woff2'),
+        url('ParabolicaText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-BoldOblique.woff2') format('woff2'),
+        url('ParabolicaText-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-Bold.woff2') format('woff2'),
+        url('ParabolicaText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-RegularOblique.woff2') format('woff2'),
+        url('Parabolica-RegularOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica Text';
+    src: url('ParabolicaText-MediumOblique.woff2') format('woff2'),
+        url('ParabolicaText-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parabolica';
+    src: url('Parabolica-MediumOblique.woff2') format('woff2'),
+        url('Parabolica-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

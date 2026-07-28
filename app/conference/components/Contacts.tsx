@@ -1,0 +1,105 @@
+import React from 'react';
+
+const Contacts = () => {
+  return (
+    <div className="animated-block">
+      <div className="animated-block-target">
+        <div className="container flex flex-col items-start gap-4 md:gap-5 py-6 md:py-8 lg:py-10 text-black">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-3 md:mb-5">
+  Contacts
+</h2>
+          <div className="grid w-full gap-4 md:gap-5 lg:grid-cols-2">
+            
+            {/* First Contact */}
+            <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
+              <div className="rte-style">
+                <p className="text-lg md:text-xl lg:text-27 font-bold">
+                  For participation and partnership inquiries:
+                </p>
+                <div className="mt-4 md:mt-6">
+                  <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
+                    <div className="w-20 sm:w-1/5 min-w-[60px] md:min-w-[80px]">
+                      <img
+                        src="/images/conference/contacts/bhoomika.jpg"
+                        alt="Bhoomika"
+                        width={80}
+                        height={80}
+                        className="rounded-lg object-cover w-full h-auto"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-lg md:text-xl lg:text-27 font-bold">Bhoomika</p>
+                      <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
+                        Conference Sales 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 md:mt-6 space-y-1 md:space-y-2">
+                  <a 
+                    href="mailto:bhoomika@diemex.in."
+                    className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
+                  >
+                    bhoomika@diemex.in
+                  </a>
+                  <a 
+                    href="tel:+91 9980241366"
+                    className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors"
+                  >
+                    +91 9980241366 
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+
+            {/* Second Contact */}
+            <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
+              <div className="rte-style">
+                <p className="text-lg md:text-xl lg:text-27 font-bold">
+                  For speaking opportunities in the business program:
+                </p>
+                <div className="mt-4 md:mt-6">
+                  <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
+                    <div className="w-20 sm:w-1/5 min-w-[60px] md:min-w-[80px]">
+                      <img
+                        src="/images/conference/contacts/pad.jpg"
+                        alt="Padmanabham R"
+                        width={80}
+                        height={80}
+                        className="rounded-lg object-cover w-full h-auto"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-lg md:text-xl lg:text-27 font-bold">Padmanabham R</p>
+                      <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
+                        Conference Director 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 md:mt-6 space-y-1 md:space-y-2">
+                  <a 
+                    href="mailto:Olga.Senicheva@ite.group"
+                    className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
+                  >
+                    pad@diemex.in
+                  </a>
+                  <a 
+                    href="tel:+919148319993"
+                    className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors"
+                  >
+                    +91 9148319993
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contacts;
