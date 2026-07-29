@@ -21,7 +21,7 @@ export default function Footer() {
                 <Image
                   src="/images/indiamet_logo.png"
                   alt="INDIAMET 2027 Logo"
-                  width={220}
+                  width={280}
                   height={180}
                   className="object-contain"
                   priority
@@ -38,7 +38,7 @@ export default function Footer() {
           {/* ABOUT */}
           <div className="lg:max-w-md space-y-5">
             <p className="text-white/70">
-              DIEMEX 2026 is a premier international exhibition showcasing die & mould technologies, tool room solutions, precision components, and next-generation manufacturing systems.
+              INDIAMET 2027 is India's leading international exhibition dedicated to metrology, measurement, quality control, inspection, calibration, and precision manufacturing technologies, connecting global innovators with the manufacturing industry.
             </p>
 
             <div>
