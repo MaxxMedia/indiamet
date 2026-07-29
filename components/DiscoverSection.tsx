@@ -3,7 +3,7 @@ import SectionContainer from './UI/SectionContainer'
 
 export default function DiscoverSection() {
   return (
-    <section className="bg-[#0E1C35] py-32 text-white">
+    <section className="bg-[#024526] py-32 text-white">
       <SectionContainer>
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-14">
