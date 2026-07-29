@@ -14,15 +14,15 @@ export default function Footer() {
     <footer id="footer" className="bg-[#388E36] text-white font-parabolica">
       {/* TOP BRAND BAR */}
       <div className="bg-gradient-to-r from-[#06162f] to-[#06162f] py-10">
-        <div className="mx-auto max-w-7xl px-5">
-          <div className="flex items-center gap-5">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex items-center gap-2">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex items-center gap-4">
+            <Link href="/" className="flex items-center gap-2">
+              <div className="flex items-center gap-1">
                 <Image
                   src="/images/indiamet_logo.png"
                   alt="INDIAMET 2027 Logo"
-                  width={120}
-                  height={80}
+                  width={220}
+                  height={180}
                   className="object-contain"
                   priority
                 />

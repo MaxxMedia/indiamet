@@ -171,11 +171,11 @@ export default function NavBar() {
               <div className="bg-gradient-to-r from-[#06162f] to-[#0a2b57] text-white w-full">
 
                 {/* HEADER */}
-                <div className="grid grid-cols-[70px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
+                <div className="grid grid-cols-[50px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
 
 
                   {/* LOGO */}
-                  <div className="relative w-[80px] h-[47px]">
+                  <div className="relative w-[180px] h-[147px]">
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
@@ -184,8 +184,7 @@ export default function NavBar() {
                       priority
                     />
                   </div>
-                  <span className="block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
-
+                 
 
                   {/* 3rd Edition */}
                   
