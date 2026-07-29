@@ -75,15 +75,15 @@ export default function Footer() {
               <div className="text-white/70 space-y-1">
                 <p className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-green-400"></span>
-                  <span><strong>08 October 2026:</strong> 10:00—18:00</span>
+                  <span><strong>22 April 2027:</strong> 10:00—18:00</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-green-400"></span>
-                  <span><strong>09 October 2026:</strong> 10:00—18:00</span>
+                  <span><strong>23 April 2027:</strong> 10:00—18:00</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-green-400"></span>
-                  <span><strong>10 October 2026:</strong> 10:00—18:00</span>
+                  <span><strong>24 April 2027:</strong> 10:00—18:00</span>
                 </p>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Footer() {
 
           {/* Copyright and Links - Updated for mobile */}
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-white/90 text-center sm:text-left">
-            <span className="text-sm sm:text-base">© DIEMEX 2026. All Rights Reserved</span>
+            <span className="text-sm sm:text-base">© INDIAMET 2027. All Rights Reserved</span>
             
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3 text-sm">
               <Link
