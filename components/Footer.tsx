@@ -26,16 +26,7 @@ export default function Footer() {
                   className="object-contain"
                   priority
                 />
-                <span className="h-8 w-px bg-white/70 mx-2"></span>
-                <Image
-                  src="/images/indiamet_logo.png"
-                  alt="INDIAMETX 2026 Logo"
-                  width={120}
-                  height={80}
-                  className="object-contain mb-1"
-                  priority
-                />
-              </div>
+               </div>
             </Link>
           </div>
         </div>
