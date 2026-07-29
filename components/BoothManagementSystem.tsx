@@ -8,13 +8,72 @@ import {
   Save
 } from "lucide-react";
 import toast, { Toaster } from 'react-hot-toast';
-import { boothsAPI } from "../app/api/boothsAPI";
+
+// Mock API functions - replace with real API calls later
+const mockAPI = {
+  getFloorPlan: async () => {
+    await new Promise(resolve => setTimeout(resolve, 500));
+    return {
+      success: true,
+      data: {
+        id: 12345,
+        baseImageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop"
+      }
+    };
+  },
+  uploadImage: async (formData: FormData): Promise<
+    | { success: true; data: { id: number; baseImageUrl: string } }
+    | { success: false; error: string }
+  > => {
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Extract file from formData for demo
+    const file = formData.get('image') as File;
+    if (file) {
+      const reader = new FileReader();
+      return new Promise((resolve: (value: { success: true; data: { id: number; baseImageUrl: string } }) => void) => {
+        reader.onload = (e) => {
+          resolve({
+            success: true,
+            data: {
+              id: Date.now(),
+              baseImageUrl: e.target?.result as string
+            }
+          });
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+    return {
+      success: false,
+      error: 'No file provided'
+    };
+  },
+  saveFloorPlan: async (data: any): Promise<
+    | { success: true; data: { baseImageUrl: string | null; id: number } }
+    | { success: false; error: string }
+  > => {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    return {
+      success: true,
+      data: { ...data, id: Date.now() }
+    };
+  },
+  reset: async (): Promise<
+    | { success: true }
+    | { success: false; error: string }
+  > => {
+    await new Promise(resolve => setTimeout(resolve, 800));
+    return {
+      success: true
+    };
+  }
+};
 
 export default function FloorPlanViewer() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   const [baseImage, setBaseImage] = useState<string | null>(null);
   const [imageId, setImageId] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -26,12 +85,12 @@ export default function FloorPlanViewer() {
     loadFloorPlan();
   }, []);
 
-  // Load floor plan from API
+  // Load floor plan from mock API
   const loadFloorPlan = async () => {
     setIsLoading(true);
     try {
-      const result = await boothsAPI.getFloorPlan();
-      
+      const result = await mockAPI.getFloorPlan();
+
       if (result.success && result.data?.baseImageUrl) {
         setBaseImage(result.data.baseImageUrl);
         setImageId(result.data.id || null);
@@ -39,6 +98,7 @@ export default function FloorPlanViewer() {
       }
     } catch (error) {
       console.error('Error loading floor plan:', error);
+      toast.error('Failed to load floor plan');
     } finally {
       setIsLoading(false);
     }
@@ -68,9 +128,9 @@ export default function FloorPlanViewer() {
       const formData = new FormData();
       formData.append('image', file);
 
-      const result = await boothsAPI.uploadImage(formData);
-      
-      if (result.success && result.data) {
+      const result = await mockAPI.uploadImage(formData);
+
+      if (result.success) {
         setBaseImage(result.data.baseImageUrl);
         setImageId(result.data.id || null);
         setZoom(1);
@@ -88,33 +148,35 @@ export default function FloorPlanViewer() {
       }
     }
   };
-// Save floor plan
-const saveFloorPlan = async () => {
-  try {
-    const toastId = toast.loading("Saving floor plan...");
 
-    const result = await boothsAPI.saveFloorPlan({
-      baseImageUrl: baseImage
-    });
+  // Save floor plan
+  const saveFloorPlan = async () => {
+    try {
+      const toastId = toast.loading("Saving floor plan...");
 
-    if (result.success) {
-      toast.success("Floor plan saved successfully!", { id: toastId });
-    } else {
-      toast.error(result.error || "Failed to save floor plan", { id: toastId });
+      const result = await mockAPI.saveFloorPlan({
+        baseImageUrl: baseImage
+      });
+
+      if (result.success) {
+        toast.success("Floor plan saved successfully!", { id: toastId });
+      } else {
+        toast.error(result.error || "Failed to save floor plan", { id: toastId });
+      }
+    } catch (error) {
+      console.error("Save error:", error);
+      toast.error("Failed to save floor plan");
     }
-  } catch (error) {
-    console.error("Save error:", error);
-    toast.error("Failed to save floor plan");
-  }
-};
+  };
+
   // Delete floor plan
   const deleteFloorPlan = async () => {
     if (!confirm('Are you sure you want to delete this floor plan?')) return;
-    
+
     setIsLoading(true);
     try {
-      const result = await boothsAPI.reset();
-      
+      const result = await mockAPI.reset();
+
       if (result.success) {
         setBaseImage(null);
         setImageId(null);
@@ -130,12 +192,11 @@ const saveFloorPlan = async () => {
       setIsLoading(false);
     }
   };
-  
 
   // Download image
   const downloadImage = () => {
     if (!baseImage) return;
-    
+
     const link = document.createElement('a');
     link.href = baseImage;
     link.download = `floor-plan-${Date.now()}.png`;
@@ -143,10 +204,16 @@ const saveFloorPlan = async () => {
     toast.success('Image downloaded');
   };
 
+  // View image in new tab
+  const viewImage = () => {
+    if (!baseImage) return;
+    window.open(baseImage, '_blank');
+  };
+
   // Toggle fullscreen
   const toggleFullscreen = () => {
     if (!containerRef.current) return;
-    
+
     if (!isFullscreen) {
       if (containerRef.current.requestFullscreen) {
         containerRef.current.requestFullscreen();
@@ -164,7 +231,7 @@ const saveFloorPlan = async () => {
     const handleFullscreenChange = () => {
       setIsFullscreen(!!document.fullscreenElement);
     };
-    
+
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
@@ -189,10 +256,10 @@ const saveFloorPlan = async () => {
   return (
     <div className="flex flex-col h-screen bg-gray-900">
       <Toaster position="top-right" />
-      
+
       {/* Header */}
       <header className="bg-gray-800 border-b border-gray-700 px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-3">
             <div className="bg-blue-600 text-white p-2 rounded-lg">
               <ImageIcon size={24} />
@@ -203,7 +270,7 @@ const saveFloorPlan = async () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-wrap">
             <input
               type="file"
               ref={fileInputRef}
@@ -211,7 +278,7 @@ const saveFloorPlan = async () => {
               accept="image/*"
               className="hidden"
             />
-            
+
             <button
               onClick={() => fileInputRef.current?.click()}
               disabled={isLoading}
@@ -228,11 +295,27 @@ const saveFloorPlan = async () => {
             {baseImage && (
               <>
                 <button
-                  onClick={downloadImage}
-                  className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center gap-2 transition-colors"
+                  onClick={viewImage}
+                  className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg flex items-center gap-2 transition-colors"
                 >
                   <View size={18} />
                   View
+                </button>
+
+                <button
+                  onClick={downloadImage}
+                  className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center gap-2 transition-colors"
+                >
+                  <Download size={18} />
+                  Download
+                </button>
+
+                <button
+                  onClick={saveFloorPlan}
+                  className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg flex items-center gap-2 transition-colors"
+                >
+                  <Save size={18} />
+                  Save
                 </button>
 
                 <button
@@ -243,13 +326,6 @@ const saveFloorPlan = async () => {
                   <Trash2 size={18} />
                   Delete
                 </button>
-                <button
-  onClick={saveFloorPlan}
-  className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center gap-2"
->
-  <Save size={18} />
-  Save Floor Plan
-</button>
               </>
             )}
           </div>
@@ -258,13 +334,13 @@ const saveFloorPlan = async () => {
 
       {/* Main Content */}
       <main className="flex-1 flex overflow-hidden bg-gray-900">
-        <div 
+        <div
           ref={containerRef}
           className="flex-1 relative flex items-center justify-center p-4"
         >
           {!baseImage ? (
             <div className="text-center">
-              <div className="bg-gray-800 p-12 rounded-2xl border-2 border-dashed border-gray-700">
+              <div className="bg-gray-800 p-12 rounded-2xl border-2 border-dashed border-gray-700 max-w-md">
                 <ImageIcon size={64} className="mx-auto text-gray-600 mb-4" />
                 <h3 className="text-xl font-medium text-white mb-2">No Floor Plan</h3>
                 <p className="text-gray-400 mb-6">Upload an image to get started</p>
@@ -288,7 +364,7 @@ const saveFloorPlan = async () => {
                 >
                   <ZoomOut size={18} />
                 </button>
-                <span className="px-3 py-1 text-sm text-white font-medium">
+                <span className="px-3 py-1 text-sm text-white font-medium min-w-[50px] text-center">
                   {Math.round(zoom * 100)}%
                 </span>
                 <button
@@ -304,7 +380,7 @@ const saveFloorPlan = async () => {
                   className="p-2 hover:bg-gray-700 rounded text-gray-300 hover:text-white transition-colors ml-1 border-l border-gray-700"
                   title="Reset Zoom"
                 >
-                  Reset
+                  <RefreshCw size={18} />
                 </button>
                 <button
                   onClick={toggleFullscreen}
@@ -331,6 +407,9 @@ const saveFloorPlan = async () => {
                       objectFit: 'contain'
                     }}
                     className="rounded-lg shadow-2xl"
+                    onError={() => {
+                      toast.error('Failed to load image');
+                    }}
                   />
                 </div>
               </div>
@@ -338,6 +417,7 @@ const saveFloorPlan = async () => {
               {/* Image Info */}
               <div className="absolute bottom-4 left-4 bg-gray-800 bg-opacity-90 px-4 py-2 rounded-lg text-sm text-gray-300 border border-gray-700">
                 <span>Floor Plan ID: {imageId || 'N/A'}</span>
+                <span className="ml-4">Zoom: {Math.round(zoom * 100)}%</span>
               </div>
             </div>
           )}
@@ -346,10 +426,10 @@ const saveFloorPlan = async () => {
 
       {/* Footer */}
       <footer className="bg-gray-800 border-t border-gray-700 px-6 py-3">
-        <div className="flex justify-between items-center text-sm text-gray-400">
+        <div className="flex justify-between items-center text-sm text-gray-400 flex-wrap gap-2">
           <span>© 2024 Floor Plan Manager</span>
           <span className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span className={`w-2 h-2 rounded-full ${baseImage ? 'bg-green-500' : 'bg-red-500'}`}></span>
             {baseImage ? 'Image Loaded' : 'No Image'}
           </span>
         </div>

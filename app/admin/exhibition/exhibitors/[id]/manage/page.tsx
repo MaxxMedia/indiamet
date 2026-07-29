@@ -13,10 +13,7 @@ import {
   Phone,
   Mail,
   Globe,
-  Linkedin,
-  Twitter,
-  Facebook,
-  Instagram,
+
   Package,
   Tag,
   FileText,
