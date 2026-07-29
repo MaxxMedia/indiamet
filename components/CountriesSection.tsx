@@ -48,7 +48,7 @@ export default function CountriesSection() {
             rel="noopener noreferrer"
             className="mx-auto"
           >
-            <button className="rounded-full px-8 lg:px-10 py-3 lg:py-4 text-base font-semibold bg-[#FE6B0B] text-white hover:bg-[#33A8DF] transition-all duration-300">
+            <button className="rounded-full px-8 lg:px-10 py-3 lg:py-4 text-base font-semibold bg-[#BF9B0A] text-white hover:bg-[#33A8DF] transition-all duration-300">
               Explore the 2026 Exhibitor List
             </button>
           </a>
