@@ -250,7 +250,7 @@ export default function PublicFloorPlanPage() {
           className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12"
         >
           {/* Header with last updated */}
-          <div className="bg-[#02381F] text-white p-6">
+          <div className="bg-[#06162f] text-white p-6">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-blue-300" />
@@ -308,7 +308,7 @@ export default function PublicFloorPlanPage() {
           variants={fadeInUp}
           className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 mb-12"
         >
-          <h3 className="text-2xl font-semibold text-[#02381F] mb-4">About This Layout</h3>
+          <h3 className="text-2xl font-semibold text-[#06162f] mb-4">About This Layout</h3>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
               The exhibition hall is thoughtfully designed to maximize visitor flow and exhibitor visibility. 
