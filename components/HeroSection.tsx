@@ -146,21 +146,21 @@ export default function HeroSection() {
 
             {/* MAIN HEADING */}
             <h1 className="font-parabolica text-[48px] font-bold leading-[0.85] tracking-tight sm:text-[70px] md:text-[100px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
-              DIEMEX <span className="text-[#82C6EB]">2026</span>
+              INDIAMET <span className="text-[#82C6EB]">2027</span>
             </h1>
 
             {/* CONTENT */}
             <div className="mt-6 flex flex-col gap-6 lg:mt-8 lg:flex-row lg:items-end">
               <div className="lg:max-w-5xl">
                 <h2 className="font-parabolica mb-3 text-xl font-bold leading-snug sm:text-2xl lg:text-3xl">
-                  Where global die & mould leaders meet India's manufacturers.
+                  Where Global Metrology Meets Indian Manufacturing.
                 </h2>
 
                 <ul className="space-y-2 text-sm leading-snug sm:text-base lg:text-lg">
                   <li className="flex items-start gap-2">
                     <span className="mt-[2px] text-[#33A8DF]">•</span>
                     <span>
-                      3rd Edition of the International Exhibition for Die & Mould, Tooling, and Precision Manufacturing Technologies
+                      1st Edition of the International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
                     </span>
                   </li>
                 </ul>
