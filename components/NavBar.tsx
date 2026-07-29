@@ -255,16 +255,7 @@ export default function NavBar() {
                     <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
 
                     {/* Edition Badge */}
-                    <div className="relative w-[38px] h-[19px] xs:w-[45px] xs:h-[23px] sm:w-[60px] sm:h-[30px] md:w-[70px] md:h-[35px] lg:w-[85px] lg:h-[43px] xl:w-[100px] xl:h-[50px] flex-shrink-0">
-                      <Image
-                        src="/images/3rd-edition.png"
-                        alt="3rd Edition"
-                        fill
-                        className="object-contain"
-                        sizes="(max-width: 374px) 38px, (max-width: 474px) 45px, (max-width: 639px) 60px, (max-width: 767px) 70px, (max-width: 1023px) 85px, 100px"
-                        priority
-                      />
-                    </div>
+                    
                   </div>
 
                   {/* Event Info - Hidden on small screens */}
@@ -291,7 +282,7 @@ export default function NavBar() {
                         <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
                           <span className={`relative font-medium ${getNavItemFontSize()}`}>
                             {item.title}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF131C] group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#388E36] group-hover:w-full transition-all duration-300"></span>
                           </span>
                           <ChevronDown className={`h-2 w-2 lg:h-2.5 lg:w-2.5 xl:h-3 xl:w-3 transition-transform duration-300 ${activeDropdown === i ? "rotate-180" : ""}`} />
                         </button>
@@ -323,7 +314,7 @@ export default function NavBar() {
                       >
                         <span className={`relative font-medium ${getNavItemFontSize()}`}>
                           {item.title}
-                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF131C] group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#388E36] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </Link>
                     )
