@@ -57,9 +57,10 @@ const navItems: NavItem[] = [
       { text: "Partners & Sponsors", href: "/partners-and-sponsors" },
     ],
   },
-  { title: "Contact us", dropdown: false, href: "/contact-us" },
+  
   { title: "Summit", dropdown: false, href: "/conference" },
-  { title: "GMEA Awards", dropdown: false, href: "/awards" }
+  { title: "GMEA Awards", dropdown: false, href: "/awards" },
+  { title: "Contact us", dropdown: false, href: "/contact-us" }
 ]
 
 const EVENT_DATE = new Date("2026-10-08T10:00:00").getTime()
