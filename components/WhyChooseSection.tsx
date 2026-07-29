@@ -114,7 +114,7 @@ export default function WhyChooseSection() {
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-3xl lg:text-4xl">{reason.icon}</span>
-                    <h3 className="text-3xl lg:text-4xl font-bold text-[#004D9F]">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-[#FE6B0B]">
                       {reason.number}
                     </h3>
                   </div>
