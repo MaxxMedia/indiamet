@@ -199,7 +199,7 @@ export default function NavBar() {
 
                   {/* DATE + VENUE */}
                   <div className="col-span-3 text-[12px] opacity-90 leading-tight whitespace-nowrap">
-                    22-24 April 2027 · Auto Cluster Exhibition Centre, Pune
+                    22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
                   </div>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function NavBar() {
                 {/* ================= LOGO SECTION ================= */}
                 <Link
                   href="/"
-                  className="flex items-center gap-1 sm:gap-1.5 md:gap-2 flex-shrink-0 min-w-0"
+                  className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0"
                 >
                   <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2">
                     {/* Main Logo */}
@@ -259,10 +259,10 @@ export default function NavBar() {
 
                   {/* Event Info - Hidden on small screens */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
-                    <span className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] leading-tight whitespace-nowrap">
-                      22-24 April 2027
+                    <span className="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap">
+                      22 - 24 April 2027
                     </span>
-                    <span className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
+                    <span className="text-[12px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
                       Auto Cluster Exhibition Centre, Pune
                     </span>
                   </div>
@@ -343,7 +343,7 @@ export default function NavBar() {
     <div className="flex items-center gap-2">
       
       {/* Time Bar */}
-      <div className="flex items-center gap-2 rounded-b-xl bg-[#0d1e3c] px-3 py-1 text-[12px] text-white shadow-md">
+      <div className="flex items-center gap-4 rounded-b-xl bg-[#0d1e3c] px-4 py-1 text-[12px] text-white shadow-md">
         <span className="font-medium">{timeLeft.days} Days</span>
         <span className="font-medium">{timeLeft.hours} Hours</span>
         <span className="font-medium">{timeLeft.minutes} Mins</span>
