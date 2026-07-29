@@ -188,16 +188,7 @@ export default function NavBar() {
 
 
                   {/* 3rd Edition */}
-                  <div className="relative w-[80px] h-[47px]">
-                    <Image
-                      src="/images/3rd-edition.png"
-                      alt="3rd Edition"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
-                  </div>
-
+                  
                   {/* MENU BUTTON */}
                   <button
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -264,18 +255,7 @@ export default function NavBar() {
                     <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
 
                     {/* Edition Badge */}
-                    <div className="relative w-[38px] h-[19px] xs:w-[45px] xs:h-[23px] sm:w-[60px] sm:h-[30px] md:w-[70px] md:h-[35px] lg:w-[85px] lg:h-[43px] xl:w-[100px] xl:h-[50px] flex-shrink-0">
-                      <Image
-                        src="/images/3rd-edition.png"
-                        alt="3rd Edition"
-                        fill
-                        className="object-contain"
-                        sizes="(max-width: 374px) 38px, (max-width: 474px) 45px, (max-width: 639px) 60px, (max-width: 767px) 70px, (max-width: 1023px) 85px, 100px"
-                        priority
-                      />
-                    </div>
-                  </div>
-
+                    
                   {/* Event Info - Hidden on small screens */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
                     <span className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] leading-tight whitespace-nowrap">
