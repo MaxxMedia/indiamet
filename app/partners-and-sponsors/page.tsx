@@ -97,7 +97,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
             whileTap={{ scale: 0.95 }}
             // href={`/partner/${partner.slug}`}
           >
-            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#BF9B0A] hover:text-white transition-all duration-300 hover:shadow-lg">
+            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#388E36] hover:text-white transition-all duration-300 hover:shadow-lg">
               Explore
             </button>
           </motion.a>
@@ -110,7 +110,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#BF9B0A] hover:text-white hover:shadow-lg">
+              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#388E36] hover:text-white hover:shadow-lg">
                 Visit Website
               </button>
             </motion.a>

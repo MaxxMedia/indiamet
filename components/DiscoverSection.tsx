@@ -21,7 +21,7 @@ export default function DiscoverSection() {
             </div>
 
             <a href="/post-show-report" className="inline-block mt-10">
-              <button className="rounded-full bg-white text-[#BF9B0A] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#BF9B0A] hover:text-white transition-colors">
+              <button className="rounded-full bg-white text-[#388E36] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#388E36] hover:text-white transition-colors">
                 Download the 2025 Post Show Report
               </button>
             </a>
