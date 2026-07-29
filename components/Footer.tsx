@@ -19,7 +19,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/images/logo-diemex2.png"
+                  src="/images/indiamet_logo.png"
                   alt="INDIAMET 2027 Logo"
                   width={120}
                   height={80}

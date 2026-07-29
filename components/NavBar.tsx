@@ -177,7 +177,7 @@ export default function NavBar() {
                   {/* LOGO */}
                   <div className="relative w-[80px] h-[47px]">
                     <Image
-                      src="/images/logo-diemex2.png"
+                      src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain"
