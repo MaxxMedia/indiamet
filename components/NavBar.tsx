@@ -199,7 +199,7 @@ export default function NavBar() {
 
                   {/* DATE + VENUE */}
                   <div className="col-span-3 text-[12px] opacity-90 leading-tight whitespace-nowrap">
-                    08–10 October 2026 · Auto Cluster Exhibition Centre, Pune
+                    22-24 April 2027 · Auto Cluster Exhibition Centre, Pune
                   </div>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export default function NavBar() {
                   {/* Event Info - Hidden on small screens */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
                     <span className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] leading-tight whitespace-nowrap">
-                      08–10 October 2026
+                      22-24 April 2027
                     </span>
                     <span className="text-[8px] md:text-[9px] lg:text-[10px] xl:text-[12px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
                       Auto Cluster Exhibition Centre, Pune
