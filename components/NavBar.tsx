@@ -58,7 +58,8 @@ const navItems: NavItem[] = [
     ],
   },
   { title: "Contact us", dropdown: false, href: "/contact-us" },
-  { title: "Conference", dropdown: false, href: "/conference" }
+  { title: "Summit", dropdown: false, href: "/conference" },
+  { title: "GMEA Awards", dropdown: false, href: "/awards" }
 ]
 
 const EVENT_DATE = new Date("2026-10-08T10:00:00").getTime()
