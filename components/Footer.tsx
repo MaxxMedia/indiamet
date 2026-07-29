@@ -20,7 +20,7 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Image
                   src="/images/logo-diemex2.png"
-                  alt="DIEMEX 2026 Logo"
+                  alt="INDIAMET 2027 Logo"
                   width={120}
                   height={80}
                   className="object-contain"
@@ -28,8 +28,8 @@ export default function Footer() {
                 />
                 <span className="h-8 w-px bg-white/70 mx-2"></span>
                 <Image
-                  src="/images/3rd-edition.png"
-                  alt="DIEMEX 2026 Logo"
+                  src="/images/indiamet_logo.png"
+                  alt="INDIAMETX 2026 Logo"
                   width={120}
                   height={80}
                   className="object-contain mb-1"

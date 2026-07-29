@@ -178,7 +178,7 @@ export default function NavBar() {
                   <div className="relative w-[80px] h-[47px]">
                     <Image
                       src="/images/logo-diemex2.png"
-                      alt="DIEMEX 2026 Logo"
+                      alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain"
                       priority
@@ -251,8 +251,8 @@ export default function NavBar() {
                     {/* Main Logo */}
                     <div className="relative w-[45px] h-[30px] xs:w-[55px] xs:h-[37px] sm:w-[70px] sm:h-[47px] md:w-[85px] md:h-[57px] lg:w-[95px] lg:h-[63px] xl:w-[110px] xl:h-[73px] flex-shrink-0">
                       <Image
-                        src="/images/logo-diemex2.png"
-                        alt="DIEMEX 2026 Logo"
+                        src="/images/indiamet_logo.png"
+                        alt="INDIAMET 2027 Logo"
                         fill
                         className="object-contain"
                         sizes="(max-width: 374px) 45px, (max-width: 474px) 55px, (max-width: 639px) 70px, (max-width: 767px) 85px, (max-width: 1023px) 95px, 110px"
