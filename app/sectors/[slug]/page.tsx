@@ -108,7 +108,7 @@ Whether you're looking for new partnerships, seeking to optimize your operations
     heroImage: '/images/precision.jpg',
     stats: {
       visitors: '10,000+',
-      exhibitors: '200+',
+      exhibitors: '150+',
       countries: '5+'
     },
     whyExhibit: [

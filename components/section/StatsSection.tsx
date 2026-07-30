@@ -5,7 +5,7 @@ import SectionContainer from "../UI/SectionContainer"
 const StatsSection = () => {
   const stats = [
     { value: "10,000", label: "Visitors" },
-    { value: "200+", label: "Exhibitors" },
+    { value: "150+", label: "Exhibitors" },
     { value: "5+", label: "Countries" },
     { value: "10", label: "Event Sectors" },
   ]

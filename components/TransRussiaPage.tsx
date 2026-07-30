@@ -321,7 +321,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                     Register for Diemex 2026
                   </h2>
                   <p className="text-gray-600 text-lg">
-                    Join 10,000+ industry professionals and 200+ exhibitors at the heart of Pune's Auto Cluster Exhibition Centre.
+                    Join 10,000+ industry professionals and 150+ exhibitors at the heart of Pune's Auto Cluster Exhibition Centre.
                   </p>
                 </div>
 

@@ -259,7 +259,7 @@ const staggerContainer = {
                       whileHover={{ scale: 1.02, x: 5 }}
                       className="text-[#4D4D4D] text-[30px] cursor-pointer"
                     >
-                      <strong>200+ Exhibitors</strong>
+                      <strong>150+ Exhibitors</strong>
                     </motion.span>
                   </li>
 
@@ -871,7 +871,7 @@ const staggerContainer = {
                   icon: "📦",
                   number: "01",
                   title: "Become an Exhibitor",
-                  description: "Join 200+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.",
+                  description: "Join 150+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.",
                   buttonText: "Become an Exhibitor",
                   href: "/exhibiting-enquiry"
                 },

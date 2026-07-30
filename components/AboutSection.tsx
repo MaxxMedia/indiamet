@@ -19,7 +19,7 @@ export default function AboutSection() {
 
   const stats = [
     { value: '10,000', label: 'Visitors' },
-    { value: '200+', label: 'Exhibitors' },
+    { value: '150+', label: 'Exhibitors' },
     { value: '5+', label: 'Countries' },
     { value: '10', label: 'Event Sectors' },
   ];
@@ -136,7 +136,7 @@ export default function AboutSection() {
             ref={titleRef}
             className="max-w-[1400px] font-parabolica text-5xl lg:text-6xl font-[500] leading-[0.9] tracking-tight text-black opacity-0"
           >
-            India&apos;s Leading Die & Mould Manufacturing Exhibition
+            India's First Dedicated Metrology, Measurement & Quality Inspection Exhibition
           </h2>
 
           <div className="max-w-[1500px] space-y-4">
@@ -144,19 +144,19 @@ export default function AboutSection() {
               ref={addToTextRefs}
               className="font-parabolica text-lg md:text-xl leading-relaxed text-[#4D4D4D] opacity-0"
             >
-              DIEMEX 2026 is India&apos;s premier international exhibition for die & mould manufacturing, tooling solutions, 
-              precision engineering, and advanced manufacturing technologies. Scheduled from 8–10 October 2026 at the 
-              Auto Cluster Exhibition Centre, Pune, India, the exhibition brings together industry leaders, OEMs, 
-              toolmakers, and technology innovators from India and overseas.
+              INDIAMET 2027 is India's first dedicated international exhibition focused exclusively on metrology, measurement technology, 
+              quality assurance, inspection systems, calibration, testing equipment, machine vision, NDT, and precision engineering solutions. 
+              Scheduled from 22–24 April 2027 at the Auto Cluster Exhibition Centre, Pune, India, the exhibition brings together global technology 
+              leaders, manufacturers, OEMs, quality professionals, calibration laboratories, research institutions, and solution providers under one roof.
             </p>
 
             <p
               ref={addToTextRefs}
               className="font-parabolica text-lg md:text-xl leading-relaxed text-[#4D4D4D] opacity-0"
             >
-            Whether you are looking to connect with new buyers, strengthen existing business partnerships, 
-            or discover next-generation die & mould technologies, DIEMEX 2026 is the definitive platform 
-            where precision manufacturing meets opportunity.
+            Whether you are looking to showcase cutting-edge measurement technologies, connect with high-value industrial buyers, build strategic 
+            business partnerships, or discover the latest innovations in metrology, quality control, and industrial inspection, INDIAMET 2027 is the 
+            definitive business platform where precision, quality, and manufacturing excellence converge.
             </p>
           </div>
 

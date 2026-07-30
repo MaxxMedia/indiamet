@@ -4,7 +4,7 @@ import SectionContainer from '@/components/UI/SectionContainer';
 
 const ConferenceSection = () => {
   const stats = [
-    "200+ Delegates",
+    "150+ Delegates",
     "20+ Speakers",
     "20 Sessions",
     "2 Days",

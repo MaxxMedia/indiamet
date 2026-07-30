@@ -31,7 +31,7 @@ const QuickNavigationSection = () => {
           </h3>
 
           <p className="text-gray-600 mb-6">
-            Join 200+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.
+            Join 150+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.
           </p>
 
           <Link href="/exhibiting-enquiry">
