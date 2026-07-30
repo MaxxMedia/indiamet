@@ -201,7 +201,7 @@ export default function NavBar() {
 
                   {/* DATE + VENUE */}
                   <div className="col-span-3 text-[12px] opacity-90 leading-tight whitespace-nowrap">
-                    22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
+                     International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies 22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
                   </div>
                 </div>
               </div>
