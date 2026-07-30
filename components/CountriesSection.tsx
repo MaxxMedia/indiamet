@@ -30,7 +30,7 @@ export default function CountriesSection() {
 
           {/* Heading – SAME TEXT */}
           <h2 className="text-5xl lg:text-7xl font-bold text-black leading-[0.9] tracking-tight">
-            Discover the Global Reach of <br /> DIEMEX
+            Discover the Global Reach of <br /> INDIAMET
           </h2>
 
           {/* Paragraph – SAME TEXT */}
@@ -49,7 +49,7 @@ export default function CountriesSection() {
             className="mx-auto"
           >
             <button className="rounded-full px-8 lg:px-10 py-3 lg:py-4 text-base font-semibold bg-[#388E36] text-white hover:bg-[#33A8DF] transition-all duration-300">
-              Explore the 2026 Exhibitor List
+              Exhibitor List
             </button>
           </a>
         </div>

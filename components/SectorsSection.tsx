@@ -77,7 +77,7 @@ export default function SectorsSection() {
               leading-[0.95]
               tracking-tight
             ">
-              Discover In-Demand Product Sectors at DIEMEX
+              Discover the Latest Metrology & Quality Technology Solutions at INDIAMET
             </h2>
           </div>
 
