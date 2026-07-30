@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row flex-wrap justify-between gap-10">
           {/* ABOUT */}
           <div className="lg:max-w-md space-y-5">
-            <p className="text-white/70">
+            <p className="text-white/100">
               INDIAMET 2027 is India's leading international exhibition dedicated to metrology, measurement, quality control, inspection, calibration, and precision manufacturing technologies, connecting global innovators with the manufacturing industry.
             </p>
 
