@@ -146,7 +146,7 @@ export default function HeroSection() {
 
             {/* MAIN HEADING */}
             <h1 className="font-parabolica text-[48px] font-bold leading-[0.85] tracking-tight sm:text-[70px] md:text-[100px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
-              INDIAMET <span className="text-[#AEF7AC]">2027</span>
+              INDIAMET <span className="text-[#005EB8]">2027</span>
             </h1>
 
             {/* CONTENT */}
