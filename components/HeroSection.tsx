@@ -160,7 +160,7 @@ export default function HeroSection() {
                   <li className="flex items-start gap-2">
                     <span className="mt-[2px] text-[#33A8DF]">•</span>
                     <span>
-                      1st Edition of the International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
+                     International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
                     </span>
                   </li>
                 </ul>
