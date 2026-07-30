@@ -43,7 +43,7 @@ export default function Footer() {
 
             <div>
               <h5 className="mb-2 font-semibold">Contact Us</h5>
-              <div className="text-white/70">
+              <div className="text-white/100">
                 <p className="flex items-center gap-2">
                   <span>📞</span>
                   <span>+91 91483 19993</span>
