@@ -63,7 +63,7 @@ const navItems: NavItem[] = [
   { title: "Contact us", dropdown: false, href: "/contact-us" }
 ]
 
-const EVENT_DATE = new Date("2026-10-08T10:00:00").getTime()
+const EVENT_DATE = new Date("2027-04-22T10:00:00").getTime()
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
