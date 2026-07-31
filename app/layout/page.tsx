@@ -352,7 +352,7 @@ on the tariff rate and not on the discounted rate.</li>
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Need Assistance?</h4>
               <p className="text-gray-600">
                 If you need help locating your booth or have questions about the layout, 
-                please contact our exhibition support team at <a href="mailto:info@indiametexpo.com" className="text-[#388E36] hover:underline">info@indiametexpo.com</a>
+                please contact our exhibition support team at <a href="mailto:info@diemex.in" className="text-[#388E36] hover:underline">info@diemex.in</a>
               </p>
             </div>
           </div>
