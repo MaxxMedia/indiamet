@@ -675,8 +675,7 @@ const staggerContainer = {
                 transition={{ delay: 0.1 }}
                 className="text-gray-700 text-xl max-w-8xl mb-6 leading-relaxed"
               >
-                Discover the professionals shaping the future of die & mould manufacturing and precision engineering. DIEMEX attracts a highly targeted audience of decision-makers, industry leaders, and technology innovators from India and international markets.
-              </motion.p>
+Discover the professionals driving the future of metrology, measurement, quality assurance, inspection, calibration, and precision manufacturing. INDIAMET 2027 attracts a highly targeted audience of decision-makers, industry leaders, quality professionals, manufacturing experts, and technology innovators from India and international markets.              </motion.p>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -685,8 +684,7 @@ const staggerContainer = {
                 transition={{ delay: 0.2 }}
                 className="text-gray-700 text-xl max-w-8xl mb-10 leading-relaxed"
               >
-                From OEM procurement heads and plant managers to toolroom owners, design engineers, and manufacturing specialists, DIEMEX visitors arrive with clear objectives—to source advanced tooling solutions, evaluate new technologies, build strategic partnerships, and drive manufacturing competitiveness.
-              </motion.p>
+From quality heads, metrology engineers, plant managers, manufacturing leaders, R&D professionals, procurement specialists, OEMs, calibration laboratories, and testing organizations to precision engineering companies, visitors attend INDIAMET 2027 to discover the latest technologies, evaluate innovative solutions, connect with global suppliers, and build strategic business partnerships.              </motion.p>
 
               <Link href="/post-show-report">
                 <motion.button
@@ -694,7 +692,7 @@ const staggerContainer = {
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#388E36] hover:bg-blue-800 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300"
                 >
-                  Know More Insights – Download Your Post-Show Report
+                  Know More Insights
                 </motion.button>
               </Link>
             </SectionContainer>
@@ -710,7 +708,7 @@ const staggerContainer = {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16"
               >
                 {[
-                  { value: "48%", label: "Die & Mould Manufacturers, Toolrooms & Tooling Companies" },
+                  { value: "Metrology, Measurement & Calibration Professionals", label: "Metrology, Measurement & Calibration Professionals Quality engineers, metrology specialists, calibration laboratories, inspection professionals, and testing experts." },
                   { value: "40%", label: "OEMs, Component Manufacturers, Automotive, EV, Plastics & Industrial Companies" },
                   { value: "31%", label: "Senior Decision-Makers & Department Heads" },
                   { value: "12%", label: "Design Software Providers, Automation & Industry 4.0 Solutions, Material Suppliers & Technical Consultants" }
