@@ -182,22 +182,7 @@ export default function ExhibitorForm() {
         <>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex flex-col gap-1.5">
-                                        <div className="space-y-2">
-                        {INTEREST_LEVELS.map(v => (
-                            <label key={v} className="flex items-center gap-3 cursor-pointer">
-                                <input
-                                    type="radio"
-                                    name="interestLevel"
-                                    value={v}
-                                    checked={form.interestLevel === v}
-                                    onChange={handleChange}
-                                    required
-                                    className="h-4 w-4 accent-[#1e3a6e] cursor-pointer"
-                                />
-                                <span className="text-sm text-gray-700">{v}</span>
-                            </label>
-                        ))}
-                    </div>
+                                        
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
