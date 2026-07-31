@@ -365,7 +365,7 @@ export default function WhyVisit() {
                     whileTap={{ scale: 0.95 }}
                     className="bg-[#388E36] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
                   >
-                    Download Your Post-Show Report
+                    Download Brochure
                   </motion.button>
                 </Link>
               </SectionContainer>
@@ -381,10 +381,22 @@ export default function WhyVisit() {
                   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 lg:gap-16"
                 >
                   {[
-                    { value: "98%", label: "Were Satisfied with the Exhibition" },
-                    { value: "78%", label: "A focused exhibition with a highly relevant industry audience." },
-                    { value: "78%", label: "Sourced New Clients and Partners" },
-                    { value: "63%", label: "Generated Quality Leads at the Show" }
+                      {
+    value: "100%",
+    label: "Dedicated to Metrology, Measurement & Quality Engineering"
+  },
+  {
+    value: "B2B",
+    label: "Focused Business Platform for Manufacturers, OEMs & Technology Providers"
+  },
+  {
+    value: "Global",
+    label: "International Participation from Leading Technology Brands & Industry Experts"
+  },
+  {
+    value: "3 Days",
+    label: "Networking, Technology Showcases & Business Opportunities"
+  }
                   ].map((stat, index) => (
                     <motion.div
                       key={index}
