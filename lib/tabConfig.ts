@@ -53,7 +53,7 @@ export const TABS_CONFIG: {
                 })
             ),
             title: 'Become a Sponsor / Partner',
-            sub: 'Partner with DIEMEX 2026 and put your brand in front of 10,000+ professionals.',
+            sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
         },
         {
             key: 'brochure',
@@ -68,7 +68,7 @@ export const TABS_CONFIG: {
                 })
             ),
             title: 'Download Event Brochure',
-            sub: 'Fill in your details to receive the DIEMEX 2026 event brochure instantly.',
+            sub: 'Fill in your details to receive the INDIAMET 2027 event brochure instantly.',
         },
     ];
 
