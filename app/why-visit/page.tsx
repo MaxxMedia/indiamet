@@ -892,7 +892,7 @@ export default function WhyVisit() {
                   className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg transition-all duration-300"
                 >
                   <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-2 sm:mb-4">Opening Hours</h3>
-                  <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">08-10 October 2026, 10:00 - 18:00</p>
+                  <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">22-24 April 2027, 10:00 - 18:00</p>
                 </motion.div>
               </div>
 
