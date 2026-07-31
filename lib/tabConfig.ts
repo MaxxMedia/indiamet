@@ -82,11 +82,11 @@ export const RIGHT_PANEL: Record<TabKey, { headline: string; sub: string }> = {
         sub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
     },
     sponsor: {
-        headline: 'Amplify Your Brand at Scale',
-        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 50+ countries.',
+        headline: 'Elevate Your Brand Visibility',
+        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 5+ countries.',
     },
     brochure: {
         headline: 'Get the Full Event Guide',
-        sub: 'Download the complete DIEMEX 2026 brochure with floor plans, speaker lineup and exhibitor list.',
+        sub: 'Download the complete INDIAMET 2027 brochure with floor plans, speaker lineup and exhibitor list.',
     },
 };

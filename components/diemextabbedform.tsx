@@ -70,8 +70,8 @@ const TABS: TabConfig[] = [
         ),
         title: 'Become a Sponsor / Partner',
         sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
-        rightHeadline: 'Amplify Your Brand at Scale',
-        rightSub: 'Gain unmatched visibility with India\'s premier die & mould manufacturing exhibition.',
+        rightHeadline: 'Elevate Your Brand Visibility',
+        rightSub: 'Gain maximum exposure by showcasing your solutions at INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.',
         path: TAB_TO_LEGACY_PATH.sponsor,
     },
     {
