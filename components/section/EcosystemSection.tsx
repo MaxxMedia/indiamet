@@ -50,13 +50,15 @@ const EcosystemSection = () => {
           {/* HEADER */}
           <div className="mb-14 flex max-w-8xl flex-col gap-6">
             <h2 className="title-72 text-black">
-              DIEMEX: A Year-Round Die & Mould Manufacturing Ecosystem
+              INDIAMET: India's First Dedicated Metrology & Quality Engineering Exhibition
             </h2>
 
             <p className="text-lg text-black/70">
-              DIEMEX is India’s leading international exhibition for die & mould manufacturing, tooling, and precision engineering technologies. With a strong legacy and deep industry trust, it plays a pivotal role in connecting toolrooms, OEMs, material suppliers, and advanced manufacturing solution providers from India and global markets—before, during, and beyond the exhibition dates.
+              INDIAMET 2027 is India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Designed as a focused B2B platform, it brings together global technology leaders, manufacturers, OEMs, calibration laboratories, research institutions, and solution providers to showcase the latest innovations and create valuable business opportunities.
             </p>
-
+<p className="text-lg text-black/70">
+             The exhibition serves as a meeting point for the entire metrology and quality engineering ecosystem, enabling industry professionals to discover new technologies, exchange technical knowledge, build strategic partnerships, and accelerate the adoption of advanced measurement and quality solutions across India's rapidly growing manufacturing sector.
+            </p>
             {/* LINK AS BUTTON – NO <button> */}
             <Link
               href="/why-exhibit"

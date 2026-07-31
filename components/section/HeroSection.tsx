@@ -18,10 +18,10 @@ const HeroSection = () => {
       <SectionContainer className="relative z-10">
         <div className="flex h-full items-end">
           <div className="pb-25 text-white">
-            <h2 className="title-72">About DIEMEX 2026</h2>
+            <h2 className="title-72">About INDIAMET 2027</h2>
             <p className="mt-4 max-w-6xl text-lg">
               
-              Shaping the Future of Die & Mould Manufacturing.
+              Shaping the Future of Metrology, Measurement & Quality Engineering.
             </p>
           </div>
         </div>
