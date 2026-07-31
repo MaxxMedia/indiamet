@@ -19,24 +19,22 @@ const STAND_SIZES = [
 ];
 
 const PRODUCT_SECTORS = [
-  'Coordinate Measuring Machines (CMM)',
-  'Portable Metrology & 3D Measurement Systems',
-  'Optical, Vision & Laser Measurement Systems',
-  'Machine Vision & Automated Inspection',
-  'Dimensional Metrology & Gauging Solutions',
-  'Surface Measurement & Form Analysis',
-  'Calibration Equipment & Laboratory Services',
-  'Testing Instruments & Material Testing Equipment',
-  'Non-Destructive Testing (NDT) Solutions',
-  'Precision Measuring Instruments',
-  'Sensors, Probes & Measurement Accessories',
-  'Industrial Microscopes & Optical Inspection',
-  'Quality Control & Quality Assurance Systems',
-  'Metrology Software, SPC & Quality Management',
-  'Industrial Automation & Smart Metrology (Industry 4.0)',
-  'AI, Digital Inspection & Data Analytics',
-  'Precision Engineering & Measurement Solutions',
-  'Research, Standards & Certification Bodies'
+    'Additive Manufacturing - 3D Printing',
+    'CNC Milling / Machining Centre, EDM',
+    'Cutting Tools',
+    'Heat Treatment',
+    'Hot Runner System',
+    'Injection Moulding Machine',
+    'Inspection and Quality Systems, CMM',
+    'Machine Tools & Accessories for Dies and Moulds',
+    'Mechanical Presses for Sheet Metal Components',
+    'Raw Material Suppliers (Tool Steel)',
+    'Texturizing, Polishing & Plating',
+    'CAD/CAM/CAE, Simulation',
+    'Mould Base',
+    'Tool Room - Die Casting Dies & Rubber Moulds',
+    'Tool Room - Jig, Fixture and Gauges',
+    'Tool Room - Sheet Metal Dies / Sheet metal Components',
 ];
 
 const INDUSTRIES = ['Automotive', 'Plastics', 'Aerospace', 'Electronics', 'Manufacturing', 'Logistics', 'Other'];
