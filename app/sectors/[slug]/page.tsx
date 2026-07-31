@@ -38,25 +38,7 @@ function getDatabaseKeyFromSlug(slug: string): string {
 // Function to get display name from slug
 function getDisplayNameFromSlug(slug: string): string {
   const displayNameMap: Record<string, string> = {
-    // TransRussia
-    'complex-logistics': 'Complex Logistics',
-    'maritime-and-inland-waterway-transport': 'Maritime Transport',
-    'air-freight': 'Air Freight',
-    'rail-freight': 'Rail Freight',
-    'road-freight-transportation': 'Road Freight',
-    'ports-and-terminals-freight-handling-services-in-ports': 'Ports',
-    'warehouse-technology': 'Warehouse Tech',
-    'it-solutions': 'IT Solutions',
-    'ecommerce-logistics': 'E-commerce',
-    'heavy-lift-carriage': 'Heavy Lift',
-    
-    // SkladTech
-    'warehousing-systems': 'Warehousing',
-    'material-handling': 'Material Handling',
-    'automation-robotics': 'Automation',
-    'packaging-systems': 'Packaging',
-    'inventory-management': 'Inventory',
-    
+          
     // DIEMEX
     'die-mould-manufacturing': 'Die & Mould',
     'tooling-tool-rom-technologies': 'Tooling',
@@ -93,6 +75,7 @@ Whether you're looking to improve product quality, enhance manufacturing accurac
       exhibitors: '150+',
       countries: '5+'
     },
+
     whyExhibit: [
       {
         title: "Connect with Industry Leaders",
