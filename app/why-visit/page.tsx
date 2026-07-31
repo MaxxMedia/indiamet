@@ -671,7 +671,7 @@ export default function WhyVisit() {
               >
                 <div className="max-w-3xl">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-                    More Than Just an Exhibition2
+                    More Than Just an Exhibition
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
                     A dedicated platform for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering that combines live technology demonstrations, technical conferences, expert-led knowledge sharing, and high-value business networking.
