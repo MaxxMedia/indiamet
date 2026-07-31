@@ -16,24 +16,6 @@ interface PageProps {
 // Complete mapping function to convert URL slug to database key
 function getDatabaseKeyFromSlug(slug: string): string {
   const slugToKeyMap: Record<string, string> = {
-    // TransRussia Sectors - Map to existing TransRussia sectors in database
-    'complex-logistics': 'complex-logistics',
-    'maritime-and-inland-waterway-transport': 'maritime-and-inland-waterway-transport',
-    'air-freight': 'air-freight',
-    'rail-freight': 'rail-freight',
-    'road-freight-transportation': 'road-freight-transportation',
-    'ports-and-terminals-freight-handling-services-in-ports': 'ports-and-terminals-freight-handling-services-in-ports',
-    'warehouse-technology': 'warehouse-technology',
-    'it-solutions': 'it-solutions',
-    'ecommerce-logistics': 'ecommerce-logistics',
-    'heavy-lift-carriage': 'heavy-lift-carriage',
-    
-    // SkladTech Sectors
-    'warehousing-systems': 'warehousing-systems',
-    'material-handling': 'material-handling',
-    'automation-robotics': 'automation-robotics',
-    'packaging-systems': 'packaging-systems',
-    'inventory-management': 'inventory-management',
     
     // DIEMEX Sectors - Map to existing DIEMEX sectors in database
     'die-mould-manufacturing': 'die & mould manufacturing',
@@ -102,9 +84,9 @@ function getDefaultSectorContent(slug: string, displayName: string) {
     description: `Comprehensive ${displayName.toLowerCase()} solutions for modern logistics and supply chain operations.`,
     mainDescription: `The ${displayName} sector at DIEMEX showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
 
-Visitors can explore cutting-edge solutions, connect with experts, and discover new opportunities for growth and efficiency. From established players to innovative startups, this sector represents the complete ecosystem of ${displayName.toLowerCase()} solutions.
+Visitors can explore cutting-edge measurement systems, inspection technologies, calibration solutions, and quality assurance innovations while connecting with industry experts and leading brands. From precision instruments and machine vision systems to metrology software and smart inspection technologies, this sector represents the complete ecosystem of modern industrial metrology. ${displayName.toLowerCase()} solutions.
 
-Whether you're looking for new partnerships, seeking to optimize your operations, or exploring the latest trends, the ${displayName} sector provides unparalleled access to the people and technologies driving the industry forward.`,
+Whether you're looking to improve product quality, enhance manufacturing accuracy, adopt advanced inspection technologies, or build new business partnerships, the ${displayName} sector provides direct access to the latest innovations shaping the future of manufacturing and quality engineering.`,
     heroImage: '/images/precision.jpg',
     stats: {
       visitors: '10,000+',
