@@ -177,7 +177,7 @@ const HeroSection: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black"></div>
           <img
             src="/images/plan-your-travel/home.jpg"
-            alt="Diemex"
+            alt="Indiamet"
             className="size-full object-cover"
           />
         </motion.div>
@@ -227,18 +227,18 @@ const IntroductionSection: React.FC = () => {
             >
               <Image
                 src="/images/logo-icon-3.png"
-                alt="Diemex"
+                alt="Indiamet"
                 className="w-5 h-5"
                 rounded={false}
               />
 
-              <span>DIEMEX</span>
+              <span>INDIAMET</span>
             </motion.div>
             <h2 className="title-72 text-black w-7xl">
-              Combine Business with Pune’s Manufacturing Heritage at DIEMEX
+              Combine Business with Pune's Manufacturing Excellence at INDIAMET
             </h2>
             <p className="whitespace-pre-line">
-              Connect with die & mould and precision manufacturing leaders from across India and beyond, explore the latest technologies and industry trends, and experience Pune—a city known for its strong automotive base, engineering excellence, and vibrant cultural legacy.
+              Connect with leaders in metrology, measurement, quality assurance, inspection, calibration, and precision engineering from across India and around the world. Discover the latest technologies, build valuable business partnerships, and experience Pune—one of India's leading manufacturing hubs, renowned for its automotive, engineering, aerospace, and industrial innovation ecosystem.
             </p>
           </div>
         </div>
@@ -317,7 +317,7 @@ const GuideSection: React.FC = () => {
     },
     {
       title: "Freight, Handling & Customs",
-      content: "The officially appointed Clearing & Forwarding (C&F) Agent for DIEMEX 2026 will handle the shipment of exhibits, equipment, materials, and stand components. Exhibitors are strongly advised to coordinate with the official C&F agent to ensure timely, secure, and smooth delivery to the venue.",
+      content: "The officially appointed Clearing & Forwarding (C&F) Agent for INDIAMET 2027 will handle the shipment of exhibits, equipment, materials, and stand components. Exhibitors are strongly advised to coordinate with the official C&F agent to ensure timely, secure, and smooth delivery to the venue.",
       imageSrc: "/images/freight.jpg",
       link: "/exhibitor-resource-center"
     },
@@ -368,7 +368,7 @@ const GuideSection: React.FC = () => {
             >
               <Image
                 src="/images/logo-icon-3.png"
-                alt="Diemex"
+                alt="Indiamet"
                 className="w-5 h-5"
                 rounded={false}
               />
