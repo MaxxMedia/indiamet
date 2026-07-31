@@ -117,7 +117,7 @@ export default function TermsOfUsePage() {
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
                       </div>
-                      <span className="font-medium">Email: info@diemex.in</span>
+                      <span className="font-medium">Email: info@indiametexpo.com</span>
                     </div>
                   </div>
                 </div>

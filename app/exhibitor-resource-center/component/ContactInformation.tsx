@@ -23,10 +23,10 @@ export default function ContactInformation() {
 
         <p className="text-lg mb-3">
           <a
-            href="mailto:info@diemex.in"
+            href="mailto:info@indiametexpo.com"
             className="underline hover:text-mainColor2"
           >
-            info@diemex.in
+            info@indiametexpo.com
           </a>
         </p>
 
