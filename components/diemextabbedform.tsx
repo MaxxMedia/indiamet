@@ -41,8 +41,8 @@ const TABS: TabConfig[] = [
         ),
         title: 'Register as a Visitor',
         sub: 'Please fill in the details below and our team will get in touch with you.',
-        rightHeadline: 'Discover What\'s Next in Manufacturing',
-        rightSub: 'Visit DIEMEX 2026 to explore innovations in die, mould, and precision manufacturing technologies.',
+        rightHeadline: 'Discover the Future of Precision Measurement & Quality Engineering',
+        rightSub: 'Visit INDIAMET 2027 to explore the latest innovations in metrology, measurement technology, quality assurance, inspection systems, calibration, testing, machine vision, and precision engineering solutions.',
         path: TAB_TO_LEGACY_PATH.enquiry,
     },
     {
@@ -243,8 +243,8 @@ export default function DiemexTabbedFormWrapper({
                         <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6">
                             <div className="grid grid-cols-3">
                                 {[
-                                    { num: '250+', lbl: 'Exhibitors' },
-                                    { num: '50+', lbl: 'Countries' },
+                                    { num: '150+', lbl: 'Exhibitors' },
+                                    { num: '5+', lbl: 'Countries' },
                                     { num: '10K+', lbl: 'Visitors' },
                                 ].map(({ num, lbl }) => (
                                     <div
