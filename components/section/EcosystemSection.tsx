@@ -39,7 +39,7 @@ const EcosystemSection = () => {
 - Network with award winners, global technology providers, manufacturing leaders, and distinguished guests during a prestigious industry recognition ceremony.`,
     image: "/images/tooling-about-diemex.png",
     link: "/global-metrology-excellence-awards",
-    buttonText: "Explore Awards",
+    buttonText: "Explore Awards2",
   },
   ]
 
