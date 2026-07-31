@@ -435,7 +435,7 @@ export default function WhyVisit() {
                 viewport={{ once: true }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center sm:text-left"
               >
-                Who is DIEMEX for?
+                Who Should Visit INDIAMET 2027?
               </motion.h2>
 
               <motion.div
@@ -446,33 +446,33 @@ export default function WhyVisit() {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
               >
                 {[
-                  [
-                    "Die & Mould Manufacturers",
-                    "Tooling & Tool Room Owners",
-                    "Automotive OEMs & Tier-1 / Tier-2 Suppliers",
-                    "Production & Manufacturing Heads",
-                    "Design, CAD / CAM & R&D Engineers",
-                    "Injection Moulding & Casting Professionals",
-                    "Press Tool & Sheet Metal Component Manufacturers"
-                  ],
-                  [
-                    "CNC Machining & Precision Engineering Companies",
-                    "Industrial Automation & Robotics Professionals",
-                    "Materials, Steel & Special Alloy Suppliers",
-                    "Quality, Testing & Metrology Professionals",
-                    "Maintenance, Tooling & Plant Managers",
-                    "Procurement & Strategic Sourcing Heads",
-                    "New Product Development (NPD) Teams"
-                  ],
-                  [
-                    "MSME & Large Manufacturing Enterprise Owners",
-                    "Industry Consultants & Technology Advisors",
-                    "Academic Institutions & Skill Development Bodies",
-                    "Industry Associations & Government Bodies",
-                    "Export-Oriented Manufacturing Professionals",
-                    "Transportation Infrastructure Planners",
-                    "Finance, Leasing & Industrial Service Providers"
-                  ]
+                   [
+    "Quality Heads, QA/QC Managers & Quality Engineers",
+    "Metrology Engineers & Measurement Specialists",
+    "Calibration Laboratories & Testing Centres",
+    "Inspection & Non-Destructive Testing (NDT) Professionals",
+    "Manufacturing Heads & Plant Managers",
+    "Production Engineers & Process Improvement Teams",
+    "OEMs & Tier-1 / Tier-2 Manufacturing Suppliers"
+  ],
+  [
+    "Automotive, EV, Aerospace & Defence Manufacturers",
+    "Electronics, Semiconductor & Medical Device Manufacturers",
+    "Precision Engineering & Industrial Machinery Companies",
+    "Industrial Automation & Industry 4.0 Specialists",
+    "Machine Vision & Optical Inspection Professionals",
+    "Coordinate Measuring Machine (CMM) Users",
+    "Procurement & Strategic Sourcing Professionals"
+  ],
+  [
+    "Research Institutions, Universities & Technical Training Centres",
+    "Standards, Certification & Accreditation Bodies",
+    "Government Organizations & Industry Associations",
+    "Industrial Distributors, Dealers & Solution Providers",
+    "Engineering Consultants & System Integrators",
+    "Business Owners, Entrepreneurs & Senior Decision-Makers",
+    "R&D, Design & Product Development Teams"
+  ]
                 ].map((list, index) => (
                   <motion.div
                     key={index}
