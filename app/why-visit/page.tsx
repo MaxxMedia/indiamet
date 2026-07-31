@@ -353,11 +353,11 @@ export default function WhyVisit() {
             >
               <SectionContainer>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 max-w-12xl leading-tight">
-                  Proven Success: What Visitors Say About DIEMEX
+                  Why Attend INDIAMET 2027
                 </h2>
 
                 <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-8xl mb-6 sm:mb-10 leading-relaxed">
-                  Here are DIEMEX 2026–aligned rewrites, keeping the same tone and intent but suited to a growing, credibility-focused exhibition. The first option is recommended.
+                  Experience India's first dedicated exhibition for metrology and quality engineering, where manufacturers, OEMs, technology providers, and quality professionals come together to discover innovations, exchange knowledge, and create new business opportunities.
                 </p>
                 <Link href='/post-show-report'>
                   <motion.button
