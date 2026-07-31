@@ -662,7 +662,7 @@ For businesses seeking to reduce stockouts, minimize excess inventory, or improv
 
   // DIEMEX Sectors
   'precision-moulds': {
-    title: 'Precision Die & Mould Solutions',
+    title: 'Metrology & Precision Measurement Systems',
     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.',
     mainDescription: `The Precision Die & Mould Solutions sector at DIEMEX represents the pinnacle of tooling technology, where accuracy meets durability to enable mass production across automotive, aerospace, electronics, and consumer goods industries. This sector brings together specialized mould makers, tool designers, and manufacturing experts who create the critical components that shape our manufactured world.
 
@@ -1506,7 +1506,7 @@ export const skladTechSectors = [
 export const diemexSectors = [
   { 
     id: 1, 
-    title: 'Precision Die & Mould Solutions',
+    title: 'Metrology & Precision Measurement Systems',
     slug: 'precision-moulds', 
     image: '/images/sectors/pic1.jpg',
     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'

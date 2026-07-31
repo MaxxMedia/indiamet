@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function SectorsSection() {
   const sectors = [
     { 
-      title: 'Precision Die & Mould Solutions',
+      title: 'Metrology & Precision Measurement Systems',
 
       slug: 'precision-moulds', 
       image: '/images/precision.jpg',

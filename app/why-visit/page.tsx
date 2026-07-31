@@ -548,7 +548,7 @@ export default function WhyVisit() {
                 {[
   { 
     id: 1, 
-    title: 'Precision Die & Mould Solutions',
+    title: 'Metrology & Precision Measurement Systems',
 
     slug: 'precision-moulds',
      image: '/images/precision.jpg',

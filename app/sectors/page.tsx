@@ -8,7 +8,7 @@ import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 const DiemexSectors = [
   { 
     id: 1, 
-    title: 'Precision Die & Mould Solutions',
+    title: 'Metrology & Precision Measurement Systems',
 
     slug: 'precision-moulds',
      image: '/images/precision.jpg',
@@ -74,7 +74,7 @@ export default function SectorsPage() {
               Event Sectors
             </h1>
             <p className="text-lg lg:text-xl max-w-full text-white/90">
-  DIEMEX 2026 showcases the complete spectrum of die & mould manufacturing, tooling technologies, advanced machine tools, automation, additive manufacturing, and smart factory innovations.
+  INDIAMET 2027 showcases the complete spectrum of metrology, measurement technology, quality assurance, inspection systems, calibration, testing equipment, machine vision, non-destructive testing (NDT), precision instruments, industrial software, automation, and smart manufacturing solutions, bringing together the latest innovations driving quality and precision across modern manufacturing.
 </p>
           </div>
         </SectionContainer>
@@ -85,11 +85,11 @@ export default function SectorsPage() {
         <SectionContainer>
           <div className="mb-6 lg:mb-8">
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-3 w-full">
-  DIEMEX 2026 Event Sectors
+  INDIAMET 2027 Event Sectors
 </h2>
 
 <p className="text-gray-600 text-lg lg:text-xl w-full">
-  Covers die & mould manufacturing, tooling & cutting tools, machine tools, automation & robotics, additive manufacturing, metrology, smart manufacturing, surface engineering, raw materials, and industrial engineering solutions.
+  Covers metrology & precision measurement systems, coordinate measuring machines (CMM), optical & vision inspection, calibration equipment & services, testing & quality assurance, non-destructive testing (NDT), precision measuring instruments, industrial software, machine vision, AI-enabled inspection, automation, Industry 4.0, and smart metrology solutions.
 </p>
           </div>
           <SectorGrid sectors={DiemexSectors} />
