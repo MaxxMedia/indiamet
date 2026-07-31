@@ -88,7 +88,7 @@ const TABS: TabConfig[] = [
         ),
         title: 'Download Event Brochure',
         sub: 'Fill in your details to receive the complete INDIAMET 2027 brochure.',
-        rightHeadline: 'Your Roadmap to DIEMEX 2026',
+        rightHeadline: 'Your Roadmap to INDIAMET 2027',
         rightSub: 'Explore exhibitor opportunities, visitor demographics, and ROI insights.',
         path: TAB_TO_LEGACY_PATH.brochure,
     },
