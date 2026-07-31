@@ -415,17 +415,17 @@ const staggerContainer = {
               {[
                 {
                   title: "A Fast-Growing Manufacturing Economy",
-                  text: "India is one of the world’s fastest-growing manufacturing hubs, supported by strong GDP growth and major investments in automotive, EVs, aerospace, electronics, and industrial manufacturing—all key drivers of die & mould demand.",
+                  text: "India is one of the world's fastest-growing manufacturing economies, driven by rapid investments in automotive, electric vehicles, aerospace, electronics, medical devices, defence, semiconductors, and industrial engineering. This growth is creating increasing demand for advanced metrology, precision measurement, quality inspection, calibration, testing, and smart manufacturing technologies across every sector.",
                   image: "/images/mfg-economy.jpg"
                 },
                 {
-                  title: "Rising Demand for Precision Tooling",
-                  text: "With increasing localisation, shorter product life cycles, and higher quality standards, there is growing demand for advanced dies, moulds, tooling systems, and high-performance materials across industries.",
+                  title: "Rising Demand for Precision Measurement & Quality Solutions",
+                  text: "As manufacturers embrace automation, digital transformation, and higher quality standards, the demand for advanced metrology, precision measurement, inspection systems, calibration, testing equipment, machine vision, and quality assurance technologies continues to grow across diverse industries.",
                   image: "/images/demand.jpg"
                 },
                 {
                   title: "Long-Term Growth & Investment Potential",
-                  text: "India’s die & mould and tooling sector is poised for sustained expansion through 2026 and beyond, driven by capacity expansion, technology upgrades, automation, and global sourcing shifts—creating strong opportunities for technology providers, material suppliers, and solution partners.",
+                  text: "India's metrology, measurement, and quality engineering market is poised for sustained growth, driven by Industry 4.0 adoption, smart manufacturing, automation, digital quality systems, and increasing investments in precision manufacturing. This creates significant opportunities for technology providers, equipment manufacturers, calibration laboratories, software companies, and solution partners to expand their presence in one of the world's fastest-growing industrial markets.",
                   image: "/images/investment.jpg"
                 }
               ].map((item, index) => (
