@@ -532,20 +532,20 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition hover:border-blue-300 bg-white cursor-pointer"
                       >
                         <option value="">Select your industry profile</option>
-                        <option value="Automotive">Automotive (Auto OE Ms, Auto Ancillary)</option>
-                        <option value="Consumer Appliances">Consumer Appliances</option>
-                        <option value="Electricals">Electricals</option>
-                        <option value="Electronics">Electronics</option>
-                        <option value="Packaging">Packaging</option>
-                        <option value="Plastic Processing">Plastic Processing</option>
-                        <option value="Visitors">Visitors Visitor Registration</option>
-                        <option value="Logistics">Logistics & Supply Chain</option>
-                        <option value="Warehousing">Warehousing & Storage</option>
-                        <option value="Transport">Transport Services</option>
-                        <option value="IT Solutions">IT Solutions</option>
-                        <option value="Manufacturing">Manufacturing</option>
-                        <option value="Retail">Retail & E-commerce</option>
-                        <option value="Consulting">Consulting Services</option>
+                        <option value="Automotive">Automotive & Auto Components</option>
+                        <option value="Aerospace">Aerospace & Aviation</option>
+                        <option value="Defence ">Defence & Defence Manufacturing</option>
+                        <option value="Electronics">Electronics & Semiconductor Manufacturing</option>
+                        <option value="Medical">Medical Devices & Healthcare Manufacturing</option>
+                        <option value="Industrial">Industrial Machinery & Precision Engineering</option>
+                        <option value="Metalworking">Metalworking, Machine Tools & Fabricatio</option>
+                        <option value="Foundry">Foundry, Casting & Forging</option>
+                        <option value="Quality">Quality Assurance, Inspection & Testing</option>
+                        <option value="Calibration">Calibration Laboratories & Testing Centre</option>
+                        <option value="Research">Research Institutes, R&D & Educational Institutions</option>
+                        <option value="Automation">Industrial Automation & Industry 4.0</option>
+                        <option value="OEMs">OEMs, Tier-1 & Tier-2 Supplier</option>
+                        <option value="Energy">Energy, Power & Process Industries</option>
                       </select>
                     </div>
 
