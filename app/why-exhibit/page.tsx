@@ -708,10 +708,22 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16"
               >
                 {[
-                  { value: "Metrology, Measurement & Calibration Professionals", label: "Metrology, Measurement & Calibration Professionals Quality engineers, metrology specialists, calibration laboratories, inspection professionals, and testing experts." },
-                  { value: "40%", label: "OEMs, Component Manufacturers, Automotive, EV, Plastics & Industrial Companies" },
-                  { value: "31%", label: "Senior Decision-Makers & Department Heads" },
-                  { value: "12%", label: "Design Software Providers, Automation & Industry 4.0 Solutions, Material Suppliers & Technical Consultants" }
+               {
+  value: "Quality",
+  label: "Quality Heads, QA/QC Managers, Metrology Engineers & Inspection Professionals"
+},
+{
+  value: "OEMs",
+  label: "OEMs, Automotive, EV, Aerospace, Defence, Electronics, Medical Devices & Industrial Manufacturers"
+},
+{
+  value: "Leaders",
+  label: "Plant Heads, Manufacturing Leaders, Procurement Managers, R&D Teams & Senior Decision-Makers"
+},
+{
+  value: "Experts",
+  label: "Calibration Laboratories, Testing Centers, Machine Vision, CMM, NDT, Automation & Metrology Solution Providers"
+}
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -963,8 +975,8 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                 className="bg-blue-50 p-8 rounded-lg transition-all duration-300"
               >
                 <h3 className="text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-4">Opening Hours</h3>
-                <p className="text-gray-800 font-medium text-lg">08-10 October 2026, 10:00 -18:00</p>
-              </motion.div>
+                <p className="text-gray-800 font-medium text-lg">22-24 April 2027, 10:00 -18:00</p>
+                             </motion.div>
             </div>
 
             <motion.div
