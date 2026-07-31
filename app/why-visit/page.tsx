@@ -70,7 +70,7 @@ export default function WhyVisit() {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 max-w-4xl"
               >
-                Why Visit DIEMEX 2026
+                Why Visit INDIAMET 2027
               </motion.h1>
 <motion.p
   initial={{ opacity: 0, y: 20 }}
@@ -84,11 +84,11 @@ export default function WhyVisit() {
     line-clamp-2 lg:line-clamp-none
   "
 >
-  Discover a focused B2B platform bringing together die & mould manufacturers,
-  tooling suppliers, and precision manufacturing technology providers. DIEMEX
-  offers visitors the opportunity to explore new solutions, connect directly
-  with exhibitors, and gain insights into trends shaping India's manufacturing
-  and automotive sectors.
+  Discover India's first dedicated B2B exhibition for metrology, measurement technology, 
+  quality assurance, inspection, calibration, testing, and precision engineering. INDIAMET 2027 
+  offers visitors the opportunity to explore the latest technologies, connect directly with global 
+  solution providers, compare innovative products, and gain valuable insights into the trends driving 
+  quality, precision, and smart manufacturing across India's industrial sectors.
 </motion.p>
 
 
@@ -123,12 +123,19 @@ export default function WhyVisit() {
           >
             <SectionContainer>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 max-w-10xl leading-tight">
-                The Entire Die & Mould and Precision Manufacturing Ecosystem
-                Brought Together Under One Roof
+                The Complete Metrology, Measurement & Quality Engineering Ecosystem Under One Roof
               </h2>
 
               <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-10xl mb-6 sm:mb-10 leading-relaxed">
-                As India's manufacturing sector continues to grow, DIEMEX provides a focused platform for the die & mould, tooling, and precision engineering community to connect, collaborate, and do business. The exhibition enables manufacturers, OEMs, and technology providers to meet potential partners, expand regional and international networks, exchange knowledge, and discover the latest innovations shaping the future of manufacturing.
+                As India's manufacturing industry embraces Industry 4.0, automation, and digital quality transformation, 
+                INDIAMET 2027 provides the country's first dedicated platform for the metrology, measurement, inspection, 
+                calibration, testing, machine vision, and quality engineering community to connect, collaborate, and grow.
+              </p>
+               <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-10xl mb-6 sm:mb-10 leading-relaxed">
+                The exhibition brings together global technology leaders, manufacturers, OEMs, quality professionals, 
+                calibration laboratories, research institutions, system integrators, and solution providers to showcase 
+                the latest innovations, exchange technical knowledge, build strategic partnerships, and accelerate the 
+                adoption of world-class measurement and quality technologies across India's manufacturing sectors.
               </p>
               <Link href='/contact-us'>
                 <motion.button
@@ -200,13 +207,17 @@ export default function WhyVisit() {
                 className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-0"
               >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
-                  Connect with the Die & Mould Manufacturing
+                  Connect with the Global Metrology & Quality Engineering
                   <br className="hidden sm:block" />
                   Community at INDIAMET
                 </h2>
 
                 <p className="text-gray-600 text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-10 leading-relaxed">
-                  INDIAMET brings together global leaders in metrology, measurement technology, quality assurance, inspection systems, calibration, testing, machine vision, and precision engineering to connect, collaborate, showcase innovations, and drive business opportunities over three focused days of the exhibition..
+                  INDIAMET 2027 brings together global leaders in metrology, measurement technology, quality assurance, inspection systems, 
+                  calibration, testing, machine vision, precision instruments, industrial automation, and smart manufacturing. Over three 
+                  focused days, the exhibition provides a dedicated platform to showcase innovations, exchange technical expertise, build 
+                  strategic partnerships, and create new business opportunities across India's rapidly growing manufacturing and quality 
+                  engineering ecosystem.
                 </p>
                 <Link href="/exhibition-directory">
                  <motion.button
@@ -270,7 +281,7 @@ export default function WhyVisit() {
                 viewport={{ once: true }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center sm:text-left"
               >
-                Why Attend DIEMEX 2026
+                Why Attend INDIAMET 2027
               </motion.h2>
 
               <motion.div
@@ -280,27 +291,28 @@ export default function WhyVisit() {
                 variants={staggerContainer}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"
               >
-                {[
-                  {
-                    image: "/images/pic1.JPG",
-                    title: "Connect with Key Industry Players",
-                    text: "DIEMEX offers a focused platform to meet die & mould manufacturers, tooling suppliers, and precision manufacturing solution providers from India and international markets—helping you connect with the right partners for your business."
-                  },
-                  {
-                    image:  "/images/pic2.JPG",
-                    title: "Discover The Latest Innovations",
-                    text: "Visit DIEMEX to explore the newest developments in die & mould, tooling, and precision manufacturing technologies—and understand how they can enhance productivity, quality, and competitiveness."
-                  },
-                  {
-                    image:  "/images/pic3.JPG",
-                    title: "Build the Right Business Deals",
-                    text: "Engage directly with manufacturers and technology suppliers to discuss requirements, evaluate solutions, and establish long-term business partnerships."
-                  },
-                  {
-                    image:  "/images/pic4.JPG",
-                    title: "Stay Ahead of Industry Trends",
-                    text: "Gain insights into emerging technologies, market developments, and best practices through DIEMEX's conference sessions led by industry experts."
-                  }
+               {[
+  {
+    image: "/images/pic1.JPG",
+    title: "Connect with Global Metrology Leaders",
+    text: "Meet leading manufacturers, technology providers, calibration laboratories, quality professionals, and solution providers from India and around the world, all under one roof at INDIAMET 2027."
+  },
+  {
+    image: "/images/pic2.JPG",
+    title: "Discover Next-Generation Measurement Technologies",
+    text: "Explore the latest innovations in metrology, coordinate measuring machines (CMM), optical inspection, machine vision, calibration, testing, and precision measurement solutions designed for modern manufacturing."
+  },
+  {
+    image: "/images/pic3.JPG",
+    title: "Build Strategic Business Partnerships",
+    text: "Connect directly with OEMs, manufacturers, procurement leaders, quality heads, and industrial decision-makers to evaluate technologies, discuss business opportunities, and establish long-term partnerships."
+  },
+  {
+    image: "/images/pic4.JPG",
+    title: "Stay Ahead with Industry Insights",
+    text: "Discover emerging trends in metrology, quality engineering, smart manufacturing, AI-powered inspection, automation, and Industry 4.0 through expert-led conferences, technical presentations, and live technology demonstrations."
+  }
+
                 ].map((card, index) => (
                   <motion.div
                     key={index}
