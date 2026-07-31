@@ -28,14 +28,14 @@ const TravelSection = () => {
           <div className="flex flex-col items-center text-center space-y-8 lg:space-y-10 py-16 lg:py-24">
             {/* Heading with better visibility */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight drop-shadow-lg">
-              DIEMEX Awaits
+              INDIAMET Awaits
             </h2>
             
             {/* Description with improved contrast */}
             <div className="relative">
               <div className="absolute inset-0 bg-black/30 blur-sm rounded-lg"></div>
               <p className="relative text-white text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed px-4 py-2">
-                Whether you’re traveling from across India or overseas, we’ve got you covered. Find all the essential information to ensure a smooth, convenient, and hassle-free visit to DIEMEX 2026 at the Auto Cluster Exhibition Centre, Pune.
+                Whether you're travelling from within India or overseas, we've got you covered. Find all the essential information you need to plan a smooth, convenient, and hassle-free visit to INDIAMET 2027 at the Auto Cluster Exhibition Centre, Pune, including travel, accommodation, local transportation, and venue details.
               </p>
             </div>
 

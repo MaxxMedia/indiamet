@@ -20,15 +20,17 @@ const ConferenceSection = () => {
 
             <div>
               <h2 className="text-4xl lg:text-5xl xl:text-4xl font-bold text-white mb-4 lg:mb-6">
-                Conference Programme
+                INDIAMET Summit
               </h2>
 
               <p className="text-white/90 text-lg lg:text-xl leading-relaxed">
-                Each year, DIEMEX presents a comprehensive two-day conference programme
-                featuring technical forums, expert panels, practical workshops, plenary
-                sessions, and knowledge-led discussions—delivering the latest insights,
-                innovations, and market trends shaping the die & mould, tooling, and
-                precision manufacturing industry.
+                The INDIAMET Summit is a two-day knowledge platform bringing together industry leaders, 
+                metrology experts, quality professionals, researchers, and technology innovators to discuss 
+                the latest advancements in metrology, measurement technology, quality assurance, inspection, 
+                calibration, testing, machine vision, AI-powered quality systems, Industry 4.0, and precision 
+                engineering. Through keynote presentations, technical sessions, panel discussions, and case 
+                studies, the summit delivers practical insights into the future of precision manufacturing 
+                and quality engineering.
               </p>
             </div>
 
