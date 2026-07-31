@@ -69,7 +69,7 @@ const TABS: TabConfig[] = [
             </svg>
         ),
         title: 'Become a Sponsor / Partner',
-        sub: 'Partner with DIEMEX 2026 and put your brand in front of 10,000+ professionals.',
+        sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
         rightHeadline: 'Amplify Your Brand at Scale',
         rightSub: 'Gain unmatched visibility with India\'s premier die & mould manufacturing exhibition.',
         path: TAB_TO_LEGACY_PATH.sponsor,
@@ -87,7 +87,7 @@ const TABS: TabConfig[] = [
             </svg>
         ),
         title: 'Download Event Brochure',
-        sub: 'Fill in your details to receive the complete DIEMEX 2026 brochure.',
+        sub: 'Fill in your details to receive the complete INDIAMET 2027 brochure.',
         rightHeadline: 'Your Roadmap to DIEMEX 2026',
         rightSub: 'Explore exhibitor opportunities, visitor demographics, and ROI insights.',
         path: TAB_TO_LEGACY_PATH.brochure,
