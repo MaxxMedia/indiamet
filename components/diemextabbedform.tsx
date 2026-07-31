@@ -56,8 +56,8 @@ const TABS: TabConfig[] = [
         ),
         title: 'Enquire about exhibiting at our event',
         sub: 'Please fill in the details below and our team will get in touch with you.',
-        rightHeadline: 'Be Part of a Global Business Platform',
-        rightSub: 'Showcase your solutions, connect with buyers and grow your business.',
+        rightHeadline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        rightSub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
         path: TAB_TO_LEGACY_PATH.exhibitor,
     },
     {

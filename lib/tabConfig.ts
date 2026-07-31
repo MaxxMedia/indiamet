@@ -74,12 +74,12 @@ export const TABS_CONFIG: {
 
 export const RIGHT_PANEL: Record<TabKey, { headline: string; sub: string }> = {
     enquiry: {
-        headline: 'Be Part of a Global Business Platform',
-        sub: 'Connect with industry leaders and discover the latest innovations in die & mould manufacturing.',
+        headline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        sub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
     },
     exhibitor: {
-        headline: 'Be Part of a Global Business Platform',
-        sub: 'Showcase your solutions, connect with buyers and grow your business.',
+        headline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        sub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
     },
     sponsor: {
         headline: 'Amplify Your Brand at Scale',
