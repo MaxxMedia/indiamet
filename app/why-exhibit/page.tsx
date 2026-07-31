@@ -14,33 +14,33 @@ import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 const data = [
   {
-    title: 'Want to grow internationally?',
-    text: 'Connect with buyers, OEMs, and sourcing partners from India and overseas who attend DIEMEX to discover advanced die & mould, tooling, and manufacturing solutions.',
+    title: 'Looking to Expand Your Global Reach??',
+    text: 'Connect with manufacturers, OEMs, quality professionals, distributors, and industrial decision-makers from India and around the world who visit INDIAMET 2027 to discover the latest innovations in metrology, measurement technology, inspection, calibration, testing, and quality assurance solutions.',
     image: '/images/Why-Exhibit/globe.png',
   },
   {
-    title: 'Struggling to Measure Exhibition ROI?',
-    text: 'DIEMEX delivers measurable results—from qualified leads and RFQs to confirmed orders and long-term partnerships.',
+    title: 'Maximize Your Exhibition Success?',
+    text: 'INDIAMET 2027 provides a focused platform to generate high-quality business leads, connect with qualified buyers, launch innovative technologies, strengthen customer relationships, and build strategic partnerships with key decision-makers from the manufacturing and quality engineering industries.',
     image: '/images/Why-Exhibit/market.png',
   },
   {
-    title: 'Facing Challenges Entering New Manufacturing Markets?',
-    text: 'Gain direct access to decision-makers, including toolroom heads, plant managers, procurement leaders, and engineering teams across India’s precision manufacturing sectors.',
+    title: 'Looking to Enter New Manufacturing Markets?',
+    text: 'Gain direct access to quality leaders, manufacturing heads, plant managers, procurement professionals, R&D teams, OEMs, and industrial decision-makers seeking advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions across India"s rapidly growing manufacturing sectors.',
     image: '/images/Why-Exhibit/filtering.png',
   },
   {
-    title: 'Concerned About Cost, Quality & Lead Times?',
-    text: 'Meet trusted suppliers and technology partners who help optimize tooling costs, improve quality, and reduce production cycles.',
+    title: 'Looking to Improve Quality, Accuracy & Productivity?',
+    text: 'Meet leading technology providers and solution partners offering advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions that help enhance product quality, improve manufacturing accuracy, optimize production processes, and increase operational efficiency.',
     image: '/images/Why-Exhibit/conversion.png',
   },
   {
-    title: 'Need better lead generation?',
-    text: 'Build a strong pipeline from automotive, EV, plastics, die casting, aerospace, and industrial manufacturing sectors.',
+    title: 'Looking to Generate High-Quality Business Leads?',
+    text: 'Connect with qualified buyers and decision-makers from the automotive, EV, aerospace, electronics, medical devices, defence, industrial machinery, precision engineering, and general manufacturing sectors actively seeking advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions.',
     image: '/images/Why-Exhibit/opportunity.png',
   },
   {
-    title: 'Is your brand struggling to get noticed?',
-    text: 'Showcase your unique technologies and capabilities to a highly targeted, decision-driven audience.',
+    title: 'Want to Increase Your Brand Visibility?',
+    text: 'Showcase your latest metrology, measurement, inspection, calibration, testing, and quality assurance solutions to a highly targeted audience of manufacturers, OEMs, quality professionals, engineers, and key decision-makers, positioning your brand as a leader in precision manufacturing and industrial quality.',
     image: '/images/Why-Exhibit/worldwide.png',
   },
 ];
@@ -179,7 +179,7 @@ const staggerContainer = {
                   transition={{ duration: 0.8 }}
                   className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mt-30"
                 >
-                  Unlock New Opportunities at DIEMEX
+                  Unlock New Opportunities at INDIAMET
                 </motion.h1>
 
                 <motion.p
@@ -188,7 +188,7 @@ const staggerContainer = {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="mt-4 text-sm sm:text-base lg:text-lg text-white/90"
                 >
-                  Discover new possibilities at DIEMEX 2026—where industry leaders connect,
+                  Discover new possibilities at INDIAMET 2027—where industry leaders connect,
                   collaborate, and innovate.
                 </motion.p>
 
@@ -223,7 +223,7 @@ const staggerContainer = {
         </section>
 
 
-        {/* WHERE TRANSPORT COMES TOGETHER */}
+        {/* WHERE METROLOGY COMES TOGETHER */}
         <section className="py-16 lg:py-24">
           <SectionContainer>
             <motion.div
@@ -234,12 +234,12 @@ const staggerContainer = {
               className="font-parabolica grid lg:grid-cols-2 gap-12 items-center"
             >
               <div>
-                <h2 className="text-4xl lg:text-5xl font-bold">Where the Die & Mould Industry Comes Together</h2>
+                <h2 className="text-4xl lg:text-5xl font-bold">Where the Metrology & Quality Engineering Industry Comes Together</h2>
                 <p className="text-[#4D4D4D] mb-6 text-lg">
-                  DIEMEX is a powerful gateway to tap into India’s rapidly expanding die & mould, tooling, and precision manufacturing ecosystem—one of the world’s fastest-growing industrial markets.
+                  INDIAMET 2027 is India's first dedicated international exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering, bringing together the entire quality ecosystem under one roof.
                 </p>
                 <p className="text-[#4D4D4D] mb-8 text-lg">
-                  With India’s strong automotive, EV, aerospace, electronics, and industrial manufacturing base, supported by large-scale localisation and “Make in India” initiatives, the country offers significant growth opportunities for companies aiming to expand operations, enter new markets, and build long-term manufacturing partnerships.
+                 With India's rapidly expanding manufacturing sectors—including automotive, EV, aerospace, electronics, medical devices, defence, and industrial engineering—supported by initiatives such as Make in India, Atmanirbhar Bharat, and smart manufacturing, the country presents exceptional opportunities for companies to expand their market presence, introduce innovative technologies, and build long-term partnerships with manufacturers, OEMs, and quality professionals.
                 </p>
 
                 <ul className="space-y-4 mb-8">
@@ -330,10 +330,10 @@ const staggerContainer = {
             </motion.div>
 
             <p className="text-gray-700 mb-8 max-w-8xl text-lg">
-              DIEMEX offers a powerful platform for die & mould manufacturers, tooling suppliers, material specialists, and advanced manufacturing solution providers to showcase innovative technologies to a highly qualified audience of OEMs, toolroom heads, engineers, and senior decision-makers.
+              INDIAMET 2027 provides a dedicated platform for manufacturers and solution providers in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, and precision engineering to showcase their latest innovations to a highly targeted audience of OEMs, quality professionals, manufacturing leaders, plant heads, R&D teams, procurement specialists, and key decision-makers.
             </p>
             <p className="text-gray-700 mb-12 max-w-8xl text-lg">
-              With active capital investment and sourcing budgets focused on capacity expansion, localisation, quality improvement, and production efficiency, exhibiting at DIEMEX enables you to build high-value business connections, form long-term strategic partnerships, and accelerate growth in India’s competitive precision manufacturing market.
+              As India's manufacturing sector continues to invest in precision, automation, digital quality, and smart manufacturing, exhibiting at INDIAMET 2027 enables you to generate qualified business leads, strengthen your brand presence, launch new technologies, build strategic partnerships, and expand your footprint in one of the world's fastest-growing industrial markets.
             </p>
 
             <motion.div
