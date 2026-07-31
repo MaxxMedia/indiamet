@@ -393,7 +393,7 @@ const staggerContainer = {
           </SectionContainer>
         </section>
 
-        {/* WHY EXPAND TO DIEMEX */}
+        {/* WHY EXPAND TO INDIAMET*/}
         <section className="py-16 lg:py-24 bg-gray-50 font-parabolica">
           <SectionContainer>
             <motion.h2
@@ -806,14 +806,13 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
               className="relative z-10 text-center"
             >
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                Your Journey Starts Here: Essential Travel Info for DIEMEX 2026
+                Your Journey Starts Here: Essential Travel Info for INDIAMET 2027
               </h2>
 
               <p className="text-lg mb-8 max-w-3xl mx-auto">
-                Whether you are travelling from across India or from overseas, find all
-                the essential information you need to ensure a smooth, comfortable, and
-                hassle-free visit to DIEMEX 2026 at the Auto Cluster Exhibition Centre,
-                Pune, India.
+                Whether you're travelling from within India or overseas, find everything you need to plan a smooth and 
+                comfortable visit to INDIAMET 2027 at the Auto Cluster Exhibition Centre, Pune, India. From travel and 
+                accommodation to local transportation and venue information, we've got you covered.
               </p>
 
               <Link href="/plan-your-travel">
@@ -838,7 +837,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
           <SectionContainer>
             <div className="flex gap-2 mb-4">
               <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">DIEMEX</h3>
+              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">INDIAMET</h3>
             </div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
