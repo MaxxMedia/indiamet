@@ -202,11 +202,11 @@ export default function WhyVisit() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
                   Connect with the Die & Mould Manufacturing
                   <br className="hidden sm:block" />
-                  Community at DIEMEX
+                  Community at INDIAMET
                 </h2>
 
                 <p className="text-gray-600 text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-10 leading-relaxed">
-                  DIEMEX brings together die & mould manufacturers, tooling suppliers, and precision manufacturing solution providers from India and abroad, creating a focused platform for networking, collaboration, and business over three action-packed days.
+                  INDIAMET brings together global leaders in metrology, measurement technology, quality assurance, inspection systems, calibration, testing, machine vision, and precision engineering to connect, collaborate, showcase innovations, and drive business opportunities over three focused days of the exhibition..
                 </p>
                 <Link href="/exhibition-directory">
                  <motion.button
