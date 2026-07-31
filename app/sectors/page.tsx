@@ -5,54 +5,50 @@ import Link from "next/link"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 // Mock data - replace with actual data
-const DiemexSectors = [
-  { 
-    id: 1, 
+const IndiametSectors = [
+  {
+    id: 1,
     title: 'Metrology & Precision Measurement Systems',
-
-    slug: 'precision-moulds',
-     image: '/images/precision.jpg',
-     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'
-     },
-  { 
-    id: 2, 
-     title: 'Tooling, Mould Bases & Standard Components',
-
-                  slug: 'tooling-mould-base',
-                  image: '/images/mouldbase.jpg',
-                  description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.'
-                },
-  { 
-    id: 3, 
-   title: 'Machining & Finishing Technologies',
-
-                  slug: 'machining-finishing',
-                  image: '/images/finishing.jpg',
-                  description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
-                },
-  { 
-    id: 4, 
-     title: 'Automation & Industry 4.0 Solutions',
-
-                  slug: 'automation-industry',
-                  image: '/images/automation.jpg',
-                  description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
-                },
-  { 
-    id: 5, 
-    title: 'Design, CAD/CAM & Engineering Software',
-                  slug: 'cad-cam',
-                  image: '/images/cad.jpg',
-                  description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
-                },
-  { 
-    id: 6, 
-    title: 'Tool Steel & Advanced Materials',
-                  slug: 'tool-steel',
-                  image: '/images/toolsteel.jpg',
-                  description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
-                },
-  ]
+    slug: 'metrology-measurement',
+    image: '/images/metrology.jpg',
+    description: 'Advanced metrology instruments, dimensional measurement systems, gauges, comparators, and precision measurement solutions for industrial quality control and manufacturing.'
+  },
+  {
+    id: 2,
+    title: 'Coordinate Measuring Machines (CMM) & Gauging',
+    slug: 'cmm-gauging',
+    image: '/images/cmm.jpg',
+    description: 'Bridge, gantry, horizontal arm, portable CMMs, precision gauges, probing systems, and dimensional inspection technologies for high-accuracy measurements.'
+  },
+  {
+    id: 3,
+    title: 'Optical, Vision & Laser Inspection Systems',
+    slug: 'vision-inspection',
+    image: '/images/vision.jpg',
+    description: 'Machine vision, optical metrology, laser scanners, 3D measurement systems, industrial microscopes, profile projectors, and non-contact inspection technologies.'
+  },
+  {
+    id: 4,
+    title: 'Calibration, Testing & Non-Destructive Testing (NDT)',
+    slug: 'calibration-testing-ndt',
+    image: '/images/calibration.jpg',
+    description: 'Calibration equipment, accredited laboratory services, testing instruments, hardness testing, force measurement, and advanced non-destructive testing (NDT) solutions.'
+  },
+  {
+    id: 5,
+    title: 'Quality Assurance, Metrology Software & Smart Manufacturing',
+    slug: 'quality-software',
+    image: '/images/software.jpg',
+    description: 'Quality management software, SPC, digital inspection, AI-powered analytics, industrial automation, Industry 4.0, and smart metrology solutions.'
+  },
+  {
+    id: 6,
+    title: 'Precision Instruments, Sensors & Measurement Accessories',
+    slug: 'precision-instruments',
+    image: '/images/instruments.jpg',
+    description: 'Precision measuring instruments, sensors, probes, encoders, transducers, measurement accessories, and engineering solutions for accurate inspection and process control.'
+  }
+];
 
 
 
