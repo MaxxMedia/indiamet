@@ -1503,7 +1503,7 @@ export const skladTechSectors = [
   },
 ]
 
-export const diemexSectors = [
+export const indiametSectors = [
   { 
     id: 1, 
     title: 'Metrology & Precision Measurement Systems',

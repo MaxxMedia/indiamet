@@ -88,7 +88,7 @@ export default function SectorsPage() {
   Covers metrology & precision measurement systems, coordinate measuring machines (CMM), optical & vision inspection, calibration equipment & services, testing & quality assurance, non-destructive testing (NDT), precision measuring instruments, industrial software, machine vision, AI-enabled inspection, automation, Industry 4.0, and smart metrology solutions.
 </p>
           </div>
-          <SectorGrid sectors={DiemexSectors} />
+          <SectorGrid sectors={IndiametSectors} />
         </SectionContainer>
       </section>
 
