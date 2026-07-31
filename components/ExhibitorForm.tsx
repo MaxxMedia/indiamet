@@ -19,7 +19,7 @@ const STAND_SIZES = [
 ];
 
 const PRODUCT_SECTORS = [
-'Coordinate Measuring Machines (CMM)',
+  'Coordinate Measuring Machines (CMM)',
   'Portable Metrology & 3D Measurement Systems',
   'Optical, Vision & Laser Measurement Systems',
   'Machine Vision & Automated Inspection',
@@ -39,7 +39,14 @@ const PRODUCT_SECTORS = [
   'Research, Standards & Certification Bodies'
 ];
 
-const INDUSTRIES = ['Automotive', 'Plastics', 'Aerospace', 'Electronics', 'Manufacturing', 'Logistics', 'Other'];
+const INDUSTRIES = [
+  'Automotive',
+  'Plastics',
+  'Aerospace',
+  'Electronics',
+  'Manufacturing',
+  'Logistics',
+  'Other'
 ];
 
 export default function ExhibitorForm() {
