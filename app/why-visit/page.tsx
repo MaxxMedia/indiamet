@@ -794,29 +794,29 @@ export default function WhyVisit() {
               >
                 {[
                   {
-                    icon: "📦",
-                    number: "01",
-                    title: "Become an Exhibitor",
-                    description: "Showcase your die & mould, tooling, and manufacturing solutions over three focused business days and connect with a rapidly growing base of qualified buyers and decision-makers.",
-                    buttonText: "Become an Exhibitor",
-                    href: "/exhibiting-enquiry"
-                  },
-                  {
-                    icon: "📘",
-                    number: "02",
-                    title: "Download Event Brochure",
-                    description: "Find out what we and how our brochure has the key information to prepare up to date brochure.",
-                    buttonText: "Download Now",
-                    href: "/event-brochure"
-                  },
-                  {
-                    icon: "👥",
-                    number: "03",
-                    title: "Become a Visitor",
-                    description: "Why not visit the market? Why not visit the show and what to expect for the following edition.",
-                    buttonText: "Visitor Registration",
-                    href: "/visitor-registration"
-                  }
+    icon: "📦",
+    number: "01",
+    title: "Become an Exhibitor",
+    description: "Showcase your metrology, measurement, inspection, calibration, testing, quality assurance, and precision engineering solutions while connecting with OEMs, manufacturers, quality professionals, and key decision-makers over three focused business days.",
+    buttonText: "Become an Exhibitor",
+    href: "/exhibiting-enquiry"
+  },
+  {
+    icon: "📘",
+    number: "02",
+    title: "Download Event Brochure",
+    description: "Explore everything about INDIAMET 2027, including exhibitor benefits, product sectors, visitor profile, event highlights, sponsorship opportunities, and how your business can be part of India's first dedicated metrology exhibition.",
+    buttonText: "Download Brochure",
+    href: "/event-brochure"
+  },
+  {
+    icon: "👥",
+    number: "03",
+    title: "Become a Visitor",
+    description: "Register to discover the latest innovations in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, and precision engineering while networking with industry leaders and global technology providers.",
+    buttonText: "Visitor Registration",
+    href: "/visitor-registration"
+  }
                 ].map((card, index) => (
                   <motion.div
                     key={index}
