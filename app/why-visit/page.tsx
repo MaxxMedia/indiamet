@@ -705,15 +705,15 @@ export default function WhyVisit() {
               >
                 {[
                   {
-                    title: "Conference Programme",
-                    text: "2 Days focused industry conference delivering practical insights to address real business challenges — from emerging die & mould technologies and tooling innovations to future trends shaping precision manufacturing.",
+                    title: "INDIAMET Summit",
+                    text: "A 2-day industry summit featuring expert speakers, technical presentations, panel discussions, and case studies on the latest developments in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, AI-powered quality systems, Industry 4.0, and precision manufacturing. Gain practical insights into emerging technologies, global best practices, and the future of quality engineering.",
                     image:  "/images/conferen.jpg",
-                    link: "/conference",
+                    link: "/summit",
                     external:true
                   },
                   {
-                   title: "ToolingTrends.com",
-                text: "A premier knowledge-sharing platform by ToolingTrends.com, bringing together industry leaders, innovators, and manufacturing professionals to exchange insights and drive growth across the tooling, die & mould, and precision engineering sectors.",
+                   title: "Global Metrology Excellence Awards (GMEA)",
+                text: "The Global Metrology Excellence Awards (GMEA) celebrates outstanding achievements in metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. The awards recognize organizations, innovators, technology leaders, and industry professionals who are driving excellence, innovation, and quality across the global manufacturing ecosystem.",
                 image: "/images/tooling-visit.png",
                 link: "https://toolingtrends.com",
                 external: true
