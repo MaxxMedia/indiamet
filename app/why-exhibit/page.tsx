@@ -402,7 +402,7 @@ const staggerContainer = {
               viewport={{ once: true }}
               className="text-4xl lg:text-5xl font-bold mb-12"
             >
-              Why Expand in India’s Die & Mould Market?
+              Why Expand in India's Metrology & Measurement Industry?
             </motion.h2>
 
             <motion.div
