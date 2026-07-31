@@ -543,7 +543,7 @@ export default function WhyVisit() {
           whileTap={{ scale: 0.95 }}
           className="bg-[#388E36] hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
         >
-          View 2026 Exhibitor List
+          View Exhibitor List
         </motion.button>
       </Link>
     </div>
@@ -674,7 +674,7 @@ export default function WhyVisit() {
                     More Than Just an Exhibition
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
-                    A focused die & mould and precision manufacturing exhibition that combines live technology showcases with expert-led knowledge sharing.
+                    A dedicated platform for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering that combines live technology demonstrations, technical conferences, expert-led knowledge sharing, and high-value business networking.
                   </p>
                 </div>
 
