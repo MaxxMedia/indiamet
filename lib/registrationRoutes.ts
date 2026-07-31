@@ -30,7 +30,7 @@ export const REGISTRATION_HERO: Record<
     enquiry: {
         title: 'Register to Visit',
         subtitle:
-            "Register now to access India's premier die & mould manufacturing exhibition.",
+            "Register now to attend INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.,
     },
     exhibitor: {
         title: 'Enquiry to Exhibit',
