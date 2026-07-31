@@ -40,10 +40,6 @@ const PRODUCT_SECTORS = [
 ];
 
 const INDUSTRIES = ['Automotive', 'Plastics', 'Aerospace', 'Electronics', 'Manufacturing', 'Logistics', 'Other'];
-const INTEREST_LEVELS = [
-    'Ready to book my stand',
-    'Looking for more information',
-    'Looking for sponsorship opportunities',
 ];
 
 export default function ExhibitorForm() {
@@ -179,10 +175,7 @@ export default function ExhibitorForm() {
         <>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-xs font-semibold text-gray-700 tracking-wide">
-                        Interest Level <span className="text-red-500">*</span>
-                    </label>
-                    <div className="space-y-2">
+                                        <div className="space-y-2">
                         {INTEREST_LEVELS.map(v => (
                             <label key={v} className="flex items-center gap-3 cursor-pointer">
                                 <input
