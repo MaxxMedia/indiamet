@@ -20,7 +20,7 @@ export default function ExploreMoscowPage() {
   return (
     <main className="relative min-h-[60vh] lg:min-h-[70vh] font-sans antialiased font-parabolica">
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col justify-end bg-[#005EB8] pt-96">
+      <section className="relative z-10 flex flex-col justify-end bg-[#34AB32] pt-96">
         <SectionContainer className="pt-0 pb-10 text-white">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
             Explore Pune
@@ -89,7 +89,7 @@ export default function ExploreMoscowPage() {
                 href="/iconic-landmarks" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -125,7 +125,7 @@ export default function ExploreMoscowPage() {
                 href="/culture" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -160,7 +160,7 @@ export default function ExploreMoscowPage() {
                 href="/places-to-eat" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -195,7 +195,7 @@ export default function ExploreMoscowPage() {
                 href="/shop-and-stroll" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -226,7 +226,7 @@ export default function ExploreMoscowPage() {
                 href="/travel-guide" 
                 className="mt-10"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
