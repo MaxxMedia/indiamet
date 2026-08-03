@@ -93,7 +93,7 @@ export default function WhyChooseSection() {
                        leading-[0.85] tracking-tight opacity-0"
           >
             Why choose{" "}
-            <span className="text-[#82c6eb] font-parabolica">INDIAMET 2026</span>
+            <span className="text-[#73CF72] font-parabolica">INDIAMET 2026</span>
           </h2>
         </SectionContainer>
       </div>
@@ -114,7 +114,7 @@ export default function WhyChooseSection() {
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-3xl lg:text-4xl">{reason.icon}</span>
-                    <h3 className="text-3xl lg:text-4xl font-bold text-[#388E36]">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-[#028C00]">
                       {reason.number}
                     </h3>
                   </div>
