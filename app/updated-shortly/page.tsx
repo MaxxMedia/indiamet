@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function UpdatedShortlyPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#06162f] to-[#06162f] px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#002A34] to-[#002A34] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
