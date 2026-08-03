@@ -283,7 +283,7 @@ export default function NavBar() {
                         <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
                           <span className={`relative font-medium ${getNavItemFontSize()}`}>
                             {item.title}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#388E36] group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#F55B1F] group-hover:w-full transition-all duration-300"></span>
                           </span>
                           <ChevronDown className={`h-2 w-2 lg:h-2.5 lg:w-2.5 xl:h-3 xl:w-3 transition-transform duration-300 ${activeDropdown === i ? "rotate-180" : ""}`} />
                         </button>
@@ -315,7 +315,7 @@ export default function NavBar() {
                       >
                         <span className={`relative font-medium ${getNavItemFontSize()}`}>
                           {item.title}
-                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#388E36] group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#F55B1F] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </Link>
                     )
@@ -326,13 +326,13 @@ export default function NavBar() {
                 <div className="hidden lg:flex items-center gap-1 lg:gap-1.5 xl:gap-2 2xl:gap-3 flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className={`bg-[#388E36] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#F55B1F] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Exhibit" : "Become an Exhibitor"}
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className={`bg-[#388E36] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#F55B1F] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Register" : "Register Now"}
                   </Button>
@@ -443,14 +443,14 @@ export default function NavBar() {
                 <Button
                   href="/exhibiting-enquiry"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#388E36] text-white text-sm py-3 font-semibold rounded-md w-full"
+                  className="bg-[#F55B1F] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
                   Become an Exhibitor
                 </Button>
                 <Button
                   href="/visitor-registration"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#388E36] text-white text-sm py-3 font-semibold rounded-md w-full"
+                  className="bg-[#F55B1F] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
                   Register Now
                 </Button>
