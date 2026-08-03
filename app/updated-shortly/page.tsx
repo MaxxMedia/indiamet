@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function UpdatedShortlyPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#002A34] to-[#002A34] px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#06162F] to-[#06162F] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function UpdatedShortlyPage() {
         {/* CTA */}
         <Link
           href="/"
-          className="inline-block bg-[#F55B1F] hover:bg-[#003d7f] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
+          className="inline-block bg-[#388E36] hover:bg-[#003d7f] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
         >
           Back to Home
         </Link>

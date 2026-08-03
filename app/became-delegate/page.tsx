@@ -132,7 +132,7 @@ export default function DelegatesPackagesPage() {
 
                       {/* Price added at the bottom */}
                       <div className="mt-auto pt-3 border-t border-gray-200">
-                        <div className="text-xl font-bold text-[#F55B1F]">{pkg.price}</div>
+                        <div className="text-xl font-bold text-[#388E36]">{pkg.price}</div>
                         {/* <p className="text-xs text-gray-500 mt-1">Inclusive of GST</p> */}
                       </div>
                     </div>

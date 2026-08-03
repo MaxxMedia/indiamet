@@ -3,7 +3,7 @@ import SectionContainer from './UI/SectionContainer'
 
 export default function DiscoverSection() {
   return (
-    <section className="bg-[#002A34] py-32 text-white">
+    <section className="bg-[#06162F] py-32 text-white">
       <SectionContainer>
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-14">
@@ -21,7 +21,7 @@ export default function DiscoverSection() {
             </div>
 
             <a href="/post-show-report" className="inline-block mt-10">
-              <button className="rounded-full bg-white text-[#F55B1F] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#F55B1F] hover:text-white transition-colors">
+              <button className="rounded-full bg-white text-[#388E36] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#388E36] hover:text-white transition-colors">
                 Download Brochure
               </button>
             </a>
