@@ -185,7 +185,7 @@ export default function DiemexTabbedFormWrapper({
                                 font-semibold text-sm
                                 transition-all
                                 ${isActive
-                                    ? "bg-[#0a2b57] text-white"
+                                    ? "bg-[#002A34] text-white"
                                     : "bg-white text-[#1e2b52] hover:bg-slate-50"
                                 }
                             `}
@@ -194,7 +194,7 @@ export default function DiemexTabbedFormWrapper({
                             <span className="tracking-wide">{tab.label}</span>
 
                             {isActive && (
-                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[12px] w-0 h-0 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#0a2b57]" />
+                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[12px] w-0 h-0 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#002A34]" />
                             )}
                         </button>
                     );
