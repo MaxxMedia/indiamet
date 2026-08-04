@@ -91,7 +91,7 @@ export default function Footer() {
           <div className="lg:max-w-md space-y-5">
             <div>
               <h5 className="mb-2 font-semibold">Quick Links</h5>
-              <div className="flex flex-col gap-2 text-white/70">
+              <div className="flex flex-col gap-2 text-white/100">
                 <Link
                   href="/exhibiting-enquiry"
                   className="hover:underline hover:text-white transition-colors"
@@ -166,7 +166,7 @@ export default function Footer() {
 
               </div>
 
-              <p className="mt-3 text-sm text-white/60">
+              <p className="mt-3 text-sm text-white/100">
                 Follow us for latest updates and news
               </p>
             </div>
