@@ -179,7 +179,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-4 border-t border-white/20 py-5 text-sm">
           {/* Organized By - Updated for mobile */}
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <span className="text-sm text-white/70 mb-2 sm:mb-0">Organised By</span>
+            <span className="text-sm text-white/100 mb-2 sm:mb-0">Organised By</span>
             
             <div className="flex items-center rounded-md bg-white px-4 py-2 shadow-sm whitespace-nowrap min-w-0">
               <span className="font-bold text-[#004A96] text-sm sm:text-base">
