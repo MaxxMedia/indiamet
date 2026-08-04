@@ -216,7 +216,7 @@ export default function NavBar() {
                 </div>
               </div>
 <Link href="/login" className="relative z-[1001]">
-  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#102a55] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#0d1e3c] active:scale-95 transition-all">
+  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#102a55] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#002A34] active:scale-95 transition-all">
     <span className="font-bold">Exhibitor Login</span>
   </div>
 </Link>
@@ -345,7 +345,7 @@ export default function NavBar() {
     <div className="flex items-center gap-2">
       
       {/* Time Bar */}
-      <div className="flex items-center gap-4 rounded-b-xl bg-[#0d1e3c] px-4 py-1 text-[12px] text-white shadow-md">
+      <div className="flex items-center gap-4 rounded-b-xl bg-[#002A34] px-4 py-1 text-[12px] text-white shadow-md">
         <span className="font-medium">{timeLeft.days} Days</span>
         <span className="font-medium">{timeLeft.hours} Hours</span>
         <span className="font-medium">{timeLeft.minutes} Mins</span>
@@ -353,7 +353,7 @@ export default function NavBar() {
 
       {/* Exhibitor Login */}
       <Link href="/login">
-        <div className="flex items-center rounded-b-xl bg-[#0d1e3c] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#102a55] active:scale-95 transition-all shadow-md">
+        <div className="flex items-center rounded-b-xl bg-[#002A34] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#102a55] active:scale-95 transition-all shadow-md">
           Exhibitor Login
         </div>
       </Link>

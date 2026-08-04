@@ -16,7 +16,7 @@ export default function UpdatedShortlyPage() {
         <motion.div
           animate={{ rotate: [0, 10, -10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#0d1e3c] flex items-center justify-center text-white text-2xl font-bold"
+          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#002A34] flex items-center justify-center text-white text-2xl font-bold"
         >
           ⏳
         </motion.div>
