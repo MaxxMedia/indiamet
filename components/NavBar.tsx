@@ -326,13 +326,13 @@ export default function NavBar() {
                 <div className="hidden lg:flex items-center gap-1 lg:gap-1.5 xl:gap-2 2xl:gap-3 flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className={`bg-[#028C00] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#028C00] hover:bg-[##028C00] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Exhibit" : "Become an Exhibitor"}
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className={`bg-[#028C00] hover:bg-[#003d7f] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#028C00] hover:bg-[##028C00] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Register" : "Register Now"}
                   </Button>
