@@ -5,14 +5,14 @@ export default function ArticlesSection() {
   const articles = [
     {
       title: 'The Role of Precision Tooling in Modern Manufacturing',
-      slug: 'why-is-india-die-mould-industry-accelerating-in-2026',
+      slug: 'why-is-india-die-mould-industry-accelerating-in-2027',
       excerpt: 'Precision tooling plays a critical role in enabling high-quality manufacturing across automotive, electronics, and consumer industries.',
       image: '/images/article1.jpg',
-      date: 'February 01, 2026',
+      date: 'February 01, 2027',
     },
     {
       title: 'The Rise of India as a Global Die & Mould Manufacturing Hub',
-      slug: 'how-is-die-mould-industry-preparing-in-2026',
+      slug: 'how-is-die-mould-industry-preparing-in-2027',
       excerpt: 'India is rapidly emerging as a competitive global force in precision tooling and mould manufacturing.',
       image: '/images/article3.jpg',
       date: 'November 20, 2025',

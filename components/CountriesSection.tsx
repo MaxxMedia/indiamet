@@ -35,10 +35,10 @@ export default function CountriesSection() {
 
           {/* Paragraph – SAME TEXT */}
           <p className="text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            DIEMEX brings together die & mould manufacturers, tooling suppliers,
-            material specialists, and advanced manufacturing 
-            solution providers from across the globe to connect, collaborate,
-            and conduct business over three focused days of the exhibition.
+            INDIAMET 2027 unites the world's leading metrology, measurement, inspection, calibration, 
+            testing, and quality engineering companies with manufacturers, OEMs, and industry professionals 
+            to exchange knowledge, demonstrate cutting-edge technologies, build strategic partnerships, and 
+            accelerate business growth over three focused days.
           </p>
 
           {/* Button – SAME TEXT */}

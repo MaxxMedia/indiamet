@@ -89,7 +89,7 @@ export default function HeroSection() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="DIEMEX 2026 Background Video"
+            title="INDIAMET 2027 Background Video"
             onLoad={handleIframeLoad}
             loading="eager"
           />

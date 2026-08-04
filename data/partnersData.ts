@@ -14,7 +14,7 @@ export type PartnersData = Record<string, Partner[]>;
 /* ===================== DATA ===================== */
 
 export const partnersData: PartnersData = {
-  supportingPartner2026: [
+  supportingPartner2027: [
     {
       name: '',
       slug: 'icib',
@@ -25,7 +25,7 @@ export const partnersData: PartnersData = {
     },
   ],
 
-  officialMediaPartner2026: [
+  officialMediaPartner2027: [
     {
       name: '',
       slug: 'cargo-insights',

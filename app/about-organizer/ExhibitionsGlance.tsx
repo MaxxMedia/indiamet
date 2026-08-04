@@ -41,11 +41,11 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
     },
     {
       id: "3",
-      name: "DIEMEX 2026",
+      name: "INDIAMET 2027",
       image:"",
      description: "The international exhibition of Die & Mould Industry.",
-      startDate: "Oct 8th, 2026",
-      endDate: "Oct 10th, 2026",
+      startDate: "Oct 8th, 2027",
+      endDate: "Oct 10th, 2027",
       venue: "Auto Cluster Exhibition Centre, Pune",
       websiteUrl: "#"
     }
