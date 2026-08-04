@@ -110,7 +110,7 @@ export default function ImpactSection() {
             .map((impact, i) => (
               <div
                 key={i}
-                className="flex flex-col overflow-hidden rounded-2xl bg-[#0b1f3f] text-white"
+                className="flex flex-col overflow-hidden rounded-2xl bg-[#002A34] text-white"
               >
                 <div className="p-8 lg:p-10">
                   <h3 className="mb-5 text-2xl lg:text-3xl font-bold leading-tight">
@@ -126,7 +126,7 @@ export default function ImpactSection() {
                   style={{ backgroundImage: `url(${impact.image})` }}
                 />
 
-                <div className="bg-[#0b1f3f] p-6 lg:p-8">
+                <div className="bg-[#002A34] p-6 lg:p-8">
                   <h4 className="mb-2 text-4xl lg:text-5xl font-bold">
                     {impact.stat.value}
                   </h4>
