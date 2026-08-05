@@ -257,7 +257,7 @@ export default function PostShowReportForm() {
       
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="mb-4">
-          <h3 className="text-2xl font-bold text-[#2E9CCA]">Download Post-Show Report</h3>
+          <h3 className="text-2xl font-bold text-[#ffcb9a]">Download Post-Show Report</h3>
           <p className="mt-1 text-gray-600">Fill in your details to get the complete report</p>
         </div>
 
@@ -509,7 +509,7 @@ export default function PostShowReportForm() {
           className={`mt-4 w-full rounded-lg px-6 py-3 font-semibold text-white transition ${
             isSubmitting || !captchaToken
               ? 'cursor-not-allowed bg-gray-400'
-              : 'bg-[#2E9CCA] hover:bg-blue-700'
+              : 'bg-[#ffcb9a] hover:bg-blue-700'
           }`}
         >
           {isSubmitting ? 'Submitting...' : 'Download Report'}
