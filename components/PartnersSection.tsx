@@ -64,7 +64,7 @@ export default function PartnersSection() {
             className="mb-8 flex w-fit items-center gap-3 rounded-full bg-blue-50 px-4 py-2 opacity-0"
           >
             <span className="h-2 w-2 rounded-full bg-[#33A8DF]" />
-            <span className="text-sm font-medium text-[#071D49]">
+            <span className="text-sm font-medium text-[#01163A]">
               Partners & Sponsors
             </span>
           </div>
@@ -110,7 +110,7 @@ export default function PartnersSection() {
                 >
                   <div className="h-48 rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-8 shadow-lg transition hover:shadow-xl">
                     <div className="flex h-full flex-col items-center justify-center gap-6">
-                      <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-white shadow-inner text-2xl font-bold text-[#071D49]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-white shadow-inner text-2xl font-bold text-[#01163A]">
                         {partner.name
                           .split(' ')
                           .map(w => w[0])
@@ -136,7 +136,7 @@ export default function PartnersSection() {
               className="h-40 rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50 p-6 shadow-lg"
             >
               <div className="flex h-full flex-col items-center justify-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white shadow-inner text-lg font-bold text-[#071D49]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white shadow-inner text-lg font-bold text-[#01163A]">
                   {partner.name
                     .split(' ')
                     .map(w => w[0])

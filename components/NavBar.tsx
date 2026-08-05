@@ -170,7 +170,7 @@ export default function NavBar() {
           <div className="mx-auto max-w-[1600px]">
             {/* ================= MOBILE NAVBAR ================= */}
             <div className="lg:hidden w-full absolute top-0 left-0 right-0 z-50">
-              <div className="bg-gradient-to-r from-[#071D49] to-[#071D49] text-white w-full">
+              <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] text-white w-full">
 
                 {/* HEADER */}
                 <div className="grid grid-cols-[50px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
@@ -216,7 +216,7 @@ export default function NavBar() {
                 </div>
               </div>
 <Link href="/login" className="relative z-[1001]">
-  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#FF6A00] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#071D49] active:scale-95 transition-all">
+  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#FF6A00] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#01163A] active:scale-95 transition-all">
     <span className="font-bold">Exhibitor Login</span>
   </div>
 </Link>
@@ -231,7 +231,7 @@ export default function NavBar() {
 
 
             {/* ================= DESKTOP NAV BAR (UNCHANGED) ================= */}
-            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#071D49] to-[#071D49] text-white shadow-xl">
+            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#01163A] to-[#01163A] text-white shadow-xl">
               <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3 lg:gap-4 px-2 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 lg:py-3">
 
                 {/* ================= LOGO SECTION ================= */}
@@ -345,7 +345,7 @@ export default function NavBar() {
     <div className="flex items-center gap-2">
       
       {/* Time Bar */}
-      <div className="flex items-center gap-4 rounded-b-xl bg-[#071D49] px-4 py-1 text-[12px] text-white shadow-md">
+      <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[12px] text-white shadow-md">
         <span className="font-medium">{timeLeft.days} Days</span>
         <span className="font-medium">{timeLeft.hours} Hours</span>
         <span className="font-medium">{timeLeft.minutes} Mins</span>
@@ -353,7 +353,7 @@ export default function NavBar() {
 
       {/* Exhibitor Login */}
       <Link href="/login">
-        <div className="flex items-center rounded-b-xl bg-[#071D49] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
+        <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
           Exhibitor Login
         </div>
       </Link>
