@@ -77,7 +77,7 @@ const termsOfVisitingPageData = {
             <p>&nbsp;</p>
             <p>2.2. Visitor badges can be obtained through the following methods:</p>
             <p>&nbsp;</p>
-            <p>2.3.1. Online Registration: Visitors who register on the official DIEMEX website can download or print their badge.;</p>
+            <p>2.3.1. Online Registration: Visitors who register on the official INDIAMET website can download or print their badge.;</p>
             <p>&nbsp;</p>
             <p>2.3.2. On-site Registration: Visitors may register at the registration counters at the venue and receive their badge.</p>
             <p>&nbsp;</p>

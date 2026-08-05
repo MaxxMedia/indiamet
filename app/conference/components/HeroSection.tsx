@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/diemex-hero-image.jpg')`, // Replace with your actual image path
+            backgroundImage: `url('/images/INDIAMET-hero-image.jpg')`, // Replace with your actual image path
           }}
         />
         

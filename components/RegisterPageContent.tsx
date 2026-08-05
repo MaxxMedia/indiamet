@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import DiemexTabbedFormWrapper from '@/components/diemextabbedform';
+import INDIAMETTabbedFormWrapper from '@/components/INDIAMETtabbedform';
 import PartnersSlider from '@/components/section/PartnersSection';
 import SectionContainer from '@/components/UI/SectionContainer';
 import BackToTop from '@/app/exhibitor-resource-center/component/BackToTop';
@@ -46,7 +46,7 @@ export default function RegisterPageContent() {
             <section className="py-16">
                 <SectionContainer>
                     <div className="max-w-6xl mx-auto">
-                        <DiemexTabbedFormWrapper defaultTab={activeTab} useRegisterRouting />
+                        <INDIAMETTabbedFormWrapper defaultTab={activeTab} useRegisterRouting />
                     </div>
                 </SectionContainer>
             </section>

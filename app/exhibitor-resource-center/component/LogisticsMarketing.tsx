@@ -67,7 +67,7 @@ export default function LogisticsMarketing() {
   {/* Background Image */}
   <img
     src="/images/exbibitor-resource-center/image3.png"
-    alt="Diemex Exhibition"
+    alt="INDIAMET Exhibition"
     className="absolute inset-0 h-full w-full object-cover"
   />
 

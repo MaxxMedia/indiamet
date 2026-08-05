@@ -137,7 +137,7 @@ export default function ExhibitorPromotionPage() {
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Invitation_Diemex2027.docx"
+                href="/images/Exhibitor_Promotion/Invitation_INDIAMET2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
@@ -182,7 +182,7 @@ export default function ExhibitorPromotionPage() {
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Announcement_Temp_Diemex_2027.docx"
+                href="/images/Exhibitor_Promotion/Announcement_Temp_INDIAMET_2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
@@ -205,7 +205,7 @@ export default function ExhibitorPromotionPage() {
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Diemex_2027_news.pdf"
+                href="/images/Exhibitor_Promotion/INDIAMET_2027_news.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
@@ -245,7 +245,7 @@ export default function ExhibitorPromotionPage() {
                   </p>
 
                   <img
-                    src="/images/exhibitor-promo/logo_diemex.png"
+                    src="/images/exhibitor-promo/logo_INDIAMET.png"
                     alt="Indiamet logo"
                     className="max-w-[260px]"
                   />
@@ -255,7 +255,7 @@ export default function ExhibitorPromotionPage() {
                   </p>
 
                   <p>
-                    October 08–10, 2027, Auto Cluster Exhibition Centre, Pune, India
+                    April 22-24, 2027, Auto Cluster Exhibition Centre, Pune, India
                     <br />
                     <br />
                     We invite you to visit our stand No. ___
@@ -268,7 +268,7 @@ export default function ExhibitorPromotionPage() {
 
                 {/* BUTTON */}
                 <a
-                  href="/images/exhibitor-promo/Diemex_2027_logos.zip"
+                  href="/images/exhibitor-promo/INDIAMET_2027_logos.zip"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex w-fit rounded-full bg-[#FF6A00] px-12 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"

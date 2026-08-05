@@ -14,7 +14,7 @@ export default function VideoSection() {
           <iframe
             className="absolute inset-0 w-full h-full"
             src={embedUrl}
-            title="1st Edition DIEMEX International Die & Mould Exhibition 2023"
+            title="1st Edition INDIAMET International Die & Mould Exhibition 2023"
             frameBorder="0"
             allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -24,7 +24,7 @@ export default function VideoSection() {
 <div className="pointer-events-none absolute inset-0 flex items-end justify-start p-6 md:p-10">
   <div className="bg-[#2BB7A8]/90 px-8 py-3 rounded-md">
     <span className="text-white text-xl md:text-3xl font-bold tracking-wide">
-      DIEMEX 2023 HIGHLIGHTS
+      INDIAMET 2023 HIGHLIGHTS
     </span>
   </div>
 </div>

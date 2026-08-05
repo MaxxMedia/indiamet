@@ -44,7 +44,7 @@ export default function PostShowReportForm() {
     sector: '',
   });
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://diemex-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
 
   const sectors = [
     "Additive Manufacturing - 3D Printing",

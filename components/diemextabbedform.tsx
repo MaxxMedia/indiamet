@@ -1,4 +1,4 @@
-// components/DiemexTabbedFormWrapper.tsx
+// components/INDIAMETTabbedFormWrapper.tsx
 "use client"
 
 import React, { useState, useEffect } from 'react';
@@ -96,7 +96,7 @@ const TABS: TabConfig[] = [
 
 const PATH_TO_TAB = LEGACY_PATH_TO_TAB;
 
-interface DiemexTabbedFormWrapperProps {
+interface INDIAMETTabbedFormWrapperProps {
     defaultTab?: TabKey;
     showHeader?: boolean;
     headerTitle?: string;
@@ -105,14 +105,14 @@ interface DiemexTabbedFormWrapperProps {
     useRegisterRouting?: boolean;
 }
 
-export default function DiemexTabbedFormWrapper({
+export default function INDIAMETTabbedFormWrapper({
     defaultTab = 'exhibitor',
     showHeader = true,
     headerTitle,
     headerSubtitle,
     className = '',
     useRegisterRouting = false,
-}: DiemexTabbedFormWrapperProps) {
+}: INDIAMETTabbedFormWrapperProps) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
@@ -221,7 +221,7 @@ export default function DiemexTabbedFormWrapper({
                 <div className="hidden lg:block lg:w-[48%] relative overflow-hidden min-h-[500px]">
                     <img
                         src="/images/exbibitor-resource-center/image1.png"
-                        alt="DIEMEX Exhibition"
+                        alt="INDIAMET Exhibition"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
 

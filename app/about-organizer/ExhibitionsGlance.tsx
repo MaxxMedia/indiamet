@@ -21,7 +21,7 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
   exhibitions = [
     {
       id: "1",
-      name: "DIEMEX 2023",
+      name: "INDIAMET 2023",
       image:"",
       description: "The international exhibition of Die & Mould Industry.",
       startDate: "Oct 27th, 2023",
@@ -31,7 +31,7 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
     },
     {
       id: "2",
-      name: "DIEMEX 2025",
+      name: "INDIAMET 2025",
       image:"",
       description: "The international exhibition of Die & Mould Industry.",
       startDate: "Nov 20th, 2025",

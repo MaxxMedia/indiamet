@@ -3,8 +3,8 @@ import SectionContainer from "@/components/UI/SectionContainer"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | DIEMEX",
-  description: "DIEMEX Privacy Policy - Learn how we collect, use, store, and protect your personal data in accordance with applicable laws.",
+  title: "Privacy Policy | INDIAMET",
+  description: "INDIAMET Privacy Policy - Learn how we collect, use, store, and protect your personal data in accordance with applicable laws.",
 }
 
 export default function PrivacyPolicyPage() {
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Introduction</h3>
                     <p>
-                      This Policy for Processing and Security of Personal Data ("Policy") explains how DIEMEX ("we", "our", "us") collects, uses, stores, and protects personal data obtained through the DIEMEX website and related digital platforms. DIEMEX is committed to safeguarding personal data and handling it responsibly in accordance with applicable Indian laws, including the Digital Personal Data Protection Act, 2023.
+                      This Policy for Processing and Security of Personal Data ("Policy") explains how INDIAMET ("we", "our", "us") collects, uses, stores, and protects personal data obtained through the INDIAMET website and related digital platforms. INDIAMET is committed to safeguarding personal data and handling it responsibly in accordance with applicable Indian laws, including the Digital Personal Data Protection Act, 2023.
                     </p>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
                 <div className="border-b pb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Scope of the Policy</h3>
                   <p className="text-gray-700">
-                    This Policy applies to all personal data collected from website visitors, exhibitors, visitors, delegates, partners, vendors, and other users who interact with the DIEMEX website or provide personal information in connection with DIEMEX exhibitions and events.
+                    This Policy applies to all personal data collected from website visitors, exhibitors, visitors, delegates, partners, vendors, and other users who interact with the INDIAMET website or provide personal information in connection with INDIAMET exhibitions and events.
                   </p>
                 </div>
 
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Visitor, exhibitor, and delegate registration</li>
                       <li>Event communication and coordination</li>
-                      <li>Marketing, newsletters, and promotional updates related to DIEMEX</li>
+                      <li>Marketing, newsletters, and promotional updates related to INDIAMET</li>
                       <li>Customer support and enquiry handling</li>
                       <li>Website administration and improvement</li>
                       <li>Legal and regulatory compliance</li>
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
                 <div className="border-b pb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">6. Consent of the Data Subject</h3>
                   <p className="text-gray-700">
-                    By submitting personal information through the DIEMEX website, users provide their free, informed, and specific consent to the processing of their personal data in accordance with this Policy. Consent may be withdrawn at any time by contacting DIEMEX.
+                    By submitting personal information through the INDIAMET website, users provide their free, informed, and specific consent to the processing of their personal data in accordance with this Policy. Consent may be withdrawn at any time by contacting INDIAMET.
                   </p>
                 </div>
 
@@ -113,14 +113,14 @@ export default function PrivacyPolicyPage() {
                 <div className="border-b pb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">8. Confidentiality and Data Sharing</h3>
                   <p className="text-gray-700">
-                    All personal data is treated as confidential. DIEMEX does not sell or misuse personal data. Data may be shared only with trusted service providers, event partners, or authorities where necessary for event operations or where required by law, subject to appropriate confidentiality obligations.
+                    All personal data is treated as confidential. INDIAMET does not sell or misuse personal data. Data may be shared only with trusted service providers, event partners, or authorities where necessary for event operations or where required by law, subject to appropriate confidentiality obligations.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">9. Data Security Measures</h3>
                   <p className="text-gray-700">
-                    DIEMEX implements appropriate technical and organisational measures to protect personal data against unauthorised access, alteration, disclosure, loss, or destruction. These measures include secure servers, access controls, and regular system monitoring.
+                    INDIAMET implements appropriate technical and organisational measures to protect personal data against unauthorised access, alteration, disclosure, loss, or destruction. These measures include secure servers, access controls, and regular system monitoring.
                   </p>
                 </div>
 
@@ -135,22 +135,22 @@ export default function PrivacyPolicyPage() {
                       <li>Withdraw consent for data processing</li>
                     </ul>
                     <p className="pt-2">
-                      Requests related to these rights may be submitted by email to DIEMEX.
+                      Requests related to these rights may be submitted by email to INDIAMET.
                     </p>
                   </div>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">11. Obligations of DIEMEX</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">11. Obligations of INDIAMET</h3>
                   <p className="text-gray-700">
-                    DIEMEX is responsible for ensuring that personal data is processed lawfully, fairly, and transparently, and that adequate safeguards are in place to protect such data.
+                    INDIAMET is responsible for ensuring that personal data is processed lawfully, fairly, and transparently, and that adequate safeguards are in place to protect such data.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">12. Updates to This Policy</h3>
                   <p className="text-gray-700">
-                    DIEMEX reserves the right to update or revise this Policy at any time. Any changes will be published on the website. Continued use of the website indicates acceptance of the updated Policy.
+                    INDIAMET reserves the right to update or revise this Policy at any time. Any changes will be published on the website. Continued use of the website indicates acceptance of the updated Policy.
                   </p>
                 </div>
 
@@ -167,7 +167,7 @@ export default function PrivacyPolicyPage() {
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
                       </div>
-                      <span className="font-medium">Email: info@diemex.in</span>
+                      <span className="font-medium">Email: info@INDIAMET.in</span>
                     </div>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <div>
                     <p className="text-gray-500">
-                      This Privacy Policy is effective immediately and applies to all users of the DIEMEX website.
+                      This Privacy Policy is effective immediately and applies to all users of the INDIAMET website.
                     </p>
                   </div>
                 </div>

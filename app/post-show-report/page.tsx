@@ -5,8 +5,8 @@ import SectionContainer from "@/components/UI/SectionContainer"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
-  title: "Post-Show Report | Diemex 2025",
-  description: "Download the complete post-show report for Diemex Expo. See event statistics, success metrics, and exhibitor feedback.",
+  title: "Post-Show Report | INDIAMET 2025",
+  description: "Download the complete post-show report for INDIAMET Expo. See event statistics, success metrics, and exhibitor feedback.",
 }
 
 export default function PostShowReportPage() {
@@ -37,7 +37,7 @@ export default function PostShowReportPage() {
 
               <p className="mb-8 text-lg leading-relaxed text-gray-700">
                 Position your brand within India’s growing die, mould, and precision manufacturing 
-                ecosystem. <strong className="text-[#4D4D4D]">DIEMEX </strong> is a focused B2B platform that brings together die & mould manufacturers, 
+                ecosystem. <strong className="text-[#4D4D4D]">INDIAMET </strong> is a focused B2B platform that brings together die & mould manufacturers, 
                 tooling suppliers, technology providers, and serious buyers from automotive, engineering, 
                 and industrial manufacturing sectors. 
               </p>
@@ -52,7 +52,7 @@ export default function PostShowReportPage() {
                 <li>Review exhibitor participation highlights and market response</li>
                 <li>Understand visitor profiles, industry representation, and sourcing interests</li>
                 <li>
-                  Learn how DIEMEX supports lead generation, brand visibility, and long-term business growth
+                  Learn how INDIAMET supports lead generation, brand visibility, and long-term business growth
                 </li>
               </ul>
 

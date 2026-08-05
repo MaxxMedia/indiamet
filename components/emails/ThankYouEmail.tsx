@@ -36,7 +36,7 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
   return (
     <Html>
       <Head />
-      <Preview>Thank you for contacting DIEMEX Expo</Preview>
+      <Preview>Thank you for contacting INDIAMET Expo</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
@@ -52,7 +52,7 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
             </Text>
             
             <Text style={paragraph}>
-              Thank you for getting in touch with Diemex Expo. 
+              Thank you for getting in touch with INDIAMET Expo. 
               We have received your enquiry and our team will review it shortly.
             </Text>
 
@@ -66,17 +66,17 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
               
               <ul style={list}>
                 <li style={listItem}>
-                  <a href="https://diemex.in/event-brochure" style={link}>
+                  <a href="https://INDIAMET.in/event-brochure" style={link}>
                     Download our Event Brochure
                   </a>
                 </li>
                 <li style={listItem}>
-                  <a href="https://diemex.in/post-show-report" style={link}>
+                  <a href="https://INDIAMET.in/post-show-report" style={link}>
                     View our Post-Show Report
                   </a>
                 </li>
                 <li style={listItem}>
-                  <a href="https://diemex.in/sectors" style={link}>
+                  <a href="https://INDIAMET.in/sectors" style={link}>
                     Explore Event Sectors
                   </a>
                 </li>
@@ -84,7 +84,7 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
             </Section>
 
             <Button
-              href="https://diemex.in"
+              href="https://INDIAMET.in"
               style={button}
             >
               Visit Our Website
@@ -94,9 +94,9 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
           <Hr style={hr} />
 
           <Section style={footer}>
-            <Text style={footerTitle}>Diemex Expo</Text>
+            <Text style={footerTitle}>INDIAMET Expo</Text>
             <Text style={footerText}>
-             08-10 October 2027 | Auto Cluster Exhibition Centre, Pimpri-chinchwad|Pune, India
+             22-24 April 2027 | Auto Cluster Exhibition Centre, Pimpri-chinchwad|Pune, India
             </Text>
             <Text style={footerContact}>
               Phone: +91 91483 19993| Email: pad@maxxmedia.in

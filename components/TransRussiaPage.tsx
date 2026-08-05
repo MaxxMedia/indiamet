@@ -68,7 +68,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
   const [showThankYouPopup, setShowThankYouPopup] = useState(false);
   const [submittedName, setSubmittedName] = useState('');
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://diemex-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
 
   // Fetch countries
   useEffect(() => {
@@ -559,7 +559,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                         className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-0.5 cursor-pointer"
                       />
                       <label htmlFor="terms" className="ml-3 text-sm text-gray-600 cursor-pointer select-none">
-                        I agree to receive marketing communications, updates, and promotional materials from Diemex Exhibition. 
+                        I agree to receive marketing communications, updates, and promotional materials from INDIAMET Exhibition. 
                         I can unsubscribe anytime by clicking the "unsubscribe" link in emails. 
                         For more information on how we handle your data, please refer to our{' '}
                         <a 
@@ -613,8 +613,8 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                 <div className="mt-8 text-center text-gray-600">
                   <p className="text-sm">
                     Need assistance with registration? Contact us at{' '}
-                    <a href="mailto:pad@diemex.in" className="text-blue-600 hover:underline">
-                      pad@diemex.in
+                    <a href="mailto:pad@INDIAMET.in" className="text-blue-600 hover:underline">
+                      pad@INDIAMET.in
                     </a>
                   </p>
                 </div>

@@ -76,7 +76,7 @@ export default function SectorsPage() {
         </SectionContainer>
       </section>
 
-      {/* Diemex Sectors - COMPACT */}
+      {/* INDIAMET Sectors - COMPACT */}
       <section className="py-16 lg:py-24">
         <SectionContainer>
           <div className="mb-6 lg:mb-8">

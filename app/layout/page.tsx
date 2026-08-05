@@ -8,7 +8,7 @@ import { MapPin, Loader2, AlertCircle, Calendar, Building2 } from 'lucide-react'
 import SectionContainer from '@/components/UI/SectionContainer';
 import BackToTop from '../exhibitor-resource-center/component/BackToTop';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://diemex-backend.onrender.com/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://INDIAMET-backend.onrender.com/api';
 
 /* ===================== ANIMATION VARIANTS ===================== */
 const fadeInUp = {
@@ -352,7 +352,7 @@ on the tariff rate and not on the discounted rate.</li>
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Need Assistance?</h4>
               <p className="text-gray-600">
                 If you need help locating your booth or have questions about the layout, 
-                please contact our exhibition support team at <a href="mailto:info@diemex.in" className="text-[#FF6A00] hover:underline">info@diemex.in</a>
+                please contact our exhibition support team at <a href="mailto:info@INDIAMET.in" className="text-[#FF6A00] hover:underline">info@INDIAMET.in</a>
               </p>
             </div>
           </div>

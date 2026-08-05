@@ -12,7 +12,7 @@ const TravelSection = () => {
       <div className="absolute inset-0">
         <Image
           src="/images/pune.jpg"
-          alt="diemex exhibition backgrouund"
+          alt="INDIAMET exhibition backgrouund"
           fill
           className="object-cover"
           priority

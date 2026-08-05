@@ -272,7 +272,7 @@ export default function WhyVisit() {
             </SectionContainer>
           </section>
 
-          {/* WHY ATTEND DIEMEX */}
+          {/* WHY ATTEND INDIAMET */}
           <section className="py-12 sm:py-16 lg:py-28 bg-white">
             <SectionContainer>
               <motion.h2
@@ -426,7 +426,7 @@ export default function WhyVisit() {
             </section>
           </div>
 
-          {/* WHO IS DIEMEX FOR */}
+          {/* WHO IS INDIAMET FOR */}
           <section className="py-12 sm:py-16 lg:py-28 bg-white">
             <SectionContainer>
               <motion.h2

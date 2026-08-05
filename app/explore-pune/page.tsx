@@ -7,10 +7,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // export const metadata: Metadata = {
-//   title: "Die & Mould Exhibition Trade Show | DIEMEX",
+//   title: "Die & Mould Exhibition Trade Show | INDIAMET",
 //   description: "Join INDIAMET 2027, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
 //   openGraph: {
-//     title: "Die & Mould Exhibition Trade Show | DIEMEX",
+//     title: "Die & Mould Exhibition Trade Show | INDIAMET",
 //   description: "Join INDIAMET 2027, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
 //     images: ["/images/image.png"]
 //   }

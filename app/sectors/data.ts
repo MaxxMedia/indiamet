@@ -4,7 +4,7 @@ export const sectorDatabase = {
   'die & mould manufacturing': {
     title: 'Comprehensive die, mould, and precision tooling solutions powering modern manufacturing industries.',
     description: 'Die & Mould Manufacturing',
-    mainDescription: `As industries demand lighter components, tighter tolerances, and faster production cycles, the role of advanced die & mould manufacturing becomes increasingly critical. The Die & Mould Manufacturing sector at DIEMEX brings together leading tool rooms, mould makers, die manufacturers, and precision engineering companies driving innovation across automotive, aerospace, electronics, packaging, and medical industries..
+    mainDescription: `As industries demand lighter components, tighter tolerances, and faster production cycles, the role of advanced die & mould manufacturing becomes increasingly critical. The Die & Mould Manufacturing sector at INDIAMET brings together leading tool rooms, mould makers, die manufacturers, and precision engineering companies driving innovation across automotive, aerospace, electronics, packaging, and medical industries..
 
 From high-precision injection moulds and progressive dies to die-casting tools and multi-cavity mould systems, this sector showcases cutting-edge manufacturing capabilities designed for durability, repeatability, and cost efficiency.
 
@@ -63,7 +63,7 @@ Whether you are an OEM seeking reliable tooling partners or a manufacturer aimin
      'die-mould-manufacturing': {
     title: 'Die & Mould Manufacturing',
     description: 'Comprehensive die, mould, and precision tooling solutions powering modern manufacturing industries.',
-    mainDescription: `As industries demand higher precision, faster production cycles, and lightweight components, advanced die & mould solutions have become essential. This sector at DIEMEX brings together leading tool rooms, mould makers, and die manufacturers serving automotive, aerospace, electronics, medical, and consumer industries.
+    mainDescription: `As industries demand higher precision, faster production cycles, and lightweight components, advanced die & mould solutions have become essential. This sector at INDIAMET brings together leading tool rooms, mould makers, and die manufacturers serving automotive, aerospace, electronics, medical, and consumer industries.
 
 From injection moulds and progressive press tools to die casting dies and multi-cavity systems, exhibitors showcase durable, repeatable, and cost-efficient manufacturing capabilities enhanced by CAD/CAM integration and high-speed machining technologies.`,
     heroImage: '/images/sectors/die-mould.jpg',
@@ -149,7 +149,7 @@ From injection moulds and progressive press tools to die casting dies and multi-
   'tooling & cutting tools': {
     title: 'Tooling & Cutting Tools',
     description: 'Enhancing Productivity Through Advanced Tooling Solutions',
-    mainDescription: `In high-speed, high-precision production environments, tooling performance directly impacts efficiency and profitability. The Tooling & Cutting Tools sector at DIEMEX features manufacturers and suppliers of carbide inserts, end mills, drills, reamers, tool holders, and special-purpose tooling systems.
+    mainDescription: `In high-speed, high-precision production environments, tooling performance directly impacts efficiency and profitability. The Tooling & Cutting Tools sector at INDIAMET features manufacturers and suppliers of carbide inserts, end mills, drills, reamers, tool holders, and special-purpose tooling systems.
 
 This sector highlights advancements in coating technologies, optimized geometries, micro-machining tools, and long-life cutting solutions designed to improve surface finish and reduce downtime.
 
@@ -206,7 +206,7 @@ Visitors can explore innovative tooling strategies that support hard machining, 
   'machine tools & advanced machining': {
     title: 'Machine Tools & Advanced Machining',
     description: 'CNC systems, EDM, multi-axis machining, and high-precision production technologies.',
-    mainDescription: `The backbone of die & mould and precision engineering industries, advanced machining technologies continue to evolve rapidly. The Machine Tools sector at DIEMEX features CNC machining centers, 5-axis systems, EDM, wire-cut EDM, grinding machines, and high-speed milling solutions.
+    mainDescription: `The backbone of die & mould and precision engineering industries, advanced machining technologies continue to evolve rapidly. The Machine Tools sector at INDIAMET features CNC machining centers, 5-axis systems, EDM, wire-cut EDM, grinding machines, and high-speed milling solutions.
 
 Exhibitors present automation-ready machines integrated with IoT monitoring, AI-driven diagnostics, and high-accuracy control systems designed for complex geometries and tight tolerances.
 
@@ -263,7 +263,7 @@ Visitors can experience live demonstrations, production simulations, and smart m
   'automation & robotics': {
     title: 'Automation & Robotics',
     description: 'Industrial automation, robotics, and smart production systems driving next-generation manufacturing efficiency.',
-    mainDescription: `As manufacturers strive for higher productivity, consistency, and safety, automation has become a strategic necessity. The Automation & Robotics sector at DIEMEX showcases industrial robots, cobots, automated material handling systems, vision-guided inspection, and AI-driven production technologies.
+    mainDescription: `As manufacturers strive for higher productivity, consistency, and safety, automation has become a strategic necessity. The Automation & Robotics sector at INDIAMET showcases industrial robots, cobots, automated material handling systems, vision-guided inspection, and AI-driven production technologies.
 
 From robotic tool loading and automated mould change systems to fully integrated smart assembly lines, this sector highlights solutions that reduce human error, improve precision, and enhance production throughput.
 
@@ -408,7 +408,7 @@ Visitors can explore scalable automation models suitable for tool rooms, die & m
   'heavy-lift-carriage': {
    title: 'Industrial Services & Engineering Solutions',
   description: 'Specialized engineering expertise and industrial services supporting scalable manufacturing growth.',
-  mainDescription: `As manufacturing ecosystems become more specialized and globally integrated, companies increasingly rely on external expertise to enhance efficiency, reduce costs, and accelerate innovation. The Industrial Services & Engineering Solutions sector at DIEMEX brings together contract manufacturers, engineering consultants, reverse engineering specialists, maintenance providers, and technical service companies.
+  mainDescription: `As manufacturing ecosystems become more specialized and globally integrated, companies increasingly rely on external expertise to enhance efficiency, reduce costs, and accelerate innovation. The Industrial Services & Engineering Solutions sector at INDIAMET brings together contract manufacturers, engineering consultants, reverse engineering specialists, maintenance providers, and technical service companies.
 
 This sector focuses on delivering end-to-end industrial support — from product design optimization and process consulting to plant maintenance, retrofitting, and turnkey project execution. Exhibitors present scalable solutions that help manufacturers improve operational performance without heavy capital investments.
 
@@ -473,7 +473,7 @@ Whether you are an OEM seeking outsourced engineering support or a growing manuf
   'warehousing-systems': {
     title: 'Warehousing Systems',
     description: 'Storage systems, racking, and warehouse infrastructure solutions.',
-    mainDescription: `The Warehousing Systems sector at DIEMEX focuses on the physical infrastructure that enables efficient storage and retrieval of goods. From pallet racking and shelving systems to mezzanine floors and automated storage solutions, this sector showcases the products that maximize warehouse space utilization while ensuring safety and accessibility.
+    mainDescription: `The Warehousing Systems sector at INDIAMET focuses on the physical infrastructure that enables efficient storage and retrieval of goods. From pallet racking and shelving systems to mezzanine floors and automated storage solutions, this sector showcases the products that maximize warehouse space utilization while ensuring safety and accessibility.
 
 Exhibitors include manufacturers and suppliers of storage equipment, racking systems, and warehouse infrastructure components. Visitors can explore different storage configurations, compare materials and load capacities, and discover innovative solutions for challenging storage requirements—from long goods to hazardous materials and temperature-controlled environments.
 
@@ -515,7 +515,7 @@ For warehouse operators, logistics managers, and facility planners, this sector 
   'material-handling': {
     title: 'Material Handling',
     description: 'Forklifts, conveyors, and material handling equipment.',
-    mainDescription: `The Material Handling sector at DIEMEX showcases the equipment that keeps goods moving through warehouses, distribution centers, and manufacturing facilities. From forklifts and pallet jacks to conveyor systems and automated guided vehicles (AGVs), this sector brings together the manufacturers and suppliers who enable efficient material flow.
+    mainDescription: `The Material Handling sector at INDIAMET showcases the equipment that keeps goods moving through warehouses, distribution centers, and manufacturing facilities. From forklifts and pallet jacks to conveyor systems and automated guided vehicles (AGVs), this sector brings together the manufacturers and suppliers who enable efficient material flow.
 
 Exhibitors demonstrate the latest in lift truck technology, including electric and alternative fuel options, ergonomic designs, and telematics-enabled fleet management systems. Visitors can also explore conveyor solutions for sortation and accumulation, as well as specialized handling equipment for unique applications like drum handling, coil lifting, and palletizing.
 
@@ -552,7 +552,7 @@ For operations managers seeking to improve throughput, reduce labor costs, and e
   'automation-robotics': {
     title: 'Automation & Robotics',
     description: 'Automated storage, robotics, and smart warehouse solutions.',
-    mainDescription: `The Automation & Robotics sector at DIEMEX showcases the cutting-edge technologies that are transforming warehouses into highly efficient, lights-out operations. From autonomous mobile robots (AMRs) that transport goods through facilities to robotic picking arms that handle individual items, this sector demonstrates how automation is addressing labor shortages while improving accuracy and throughput.
+    mainDescription: `The Automation & Robotics sector at INDIAMET showcases the cutting-edge technologies that are transforming warehouses into highly efficient, lights-out operations. From autonomous mobile robots (AMRs) that transport goods through facilities to robotic picking arms that handle individual items, this sector demonstrates how automation is addressing labor shortages while improving accuracy and throughput.
 
 Exhibitors include robotics manufacturers, system integrators, and automation specialists who design and implement solutions for warehouses of all sizes. Visitors can see live demonstrations of robotic systems in action, explore how they integrate with warehouse management software, and understand the ROI calculations that justify automation investments.
 
@@ -589,7 +589,7 @@ For forward-thinking logistics professionals, this sector provides a window into
   'packaging-systems': {
     title: 'Packaging Systems',
     description: 'Packaging equipment, labeling, and packing solutions.',
-    mainDescription: `The Packaging Systems sector at DIEMEX addresses the critical interface between product protection and logistics efficiency. From primary packaging that preserves product integrity to secondary packaging that enables efficient handling and transport, this sector showcases the equipment and materials that ensure goods reach customers in perfect condition.
+    mainDescription: `The Packaging Systems sector at INDIAMET addresses the critical interface between product protection and logistics efficiency. From primary packaging that preserves product integrity to secondary packaging that enables efficient handling and transport, this sector showcases the equipment and materials that ensure goods reach customers in perfect condition.
 
 Exhibitors include manufacturers of packaging machinery, labeling systems, and consumables, as well as providers of sustainable packaging solutions that reduce environmental impact while maintaining protection. Visitors can explore automated packaging lines, case erectors, stretch wrappers, and the labeling systems that ensure products are properly identified throughout the supply chain.
 
@@ -626,7 +626,7 @@ For operations managers seeking to optimize packaging processes, reduce material
   'inventory-management': {
     title: 'Inventory Management',
     description: 'Inventory control, stock management, and tracking solutions.',
-    mainDescription: `The Inventory Management sector at DIEMEX focuses on the systems and technologies that provide real-time visibility into stock levels, locations, and movements. In an era where inventory accuracy directly impacts customer satisfaction and working capital, this sector showcases the solutions that help businesses maintain precise control over their assets.
+    mainDescription: `The Inventory Management sector at INDIAMET focuses on the systems and technologies that provide real-time visibility into stock levels, locations, and movements. In an era where inventory accuracy directly impacts customer satisfaction and working capital, this sector showcases the solutions that help businesses maintain precise control over their assets.
 
 Exhibitors include providers of inventory management software, RFID and barcode systems, cycle counting solutions, and the IoT sensors that enable continuous monitoring of inventory conditions. Visitors can explore how these technologies integrate with ERP and WMS systems to provide accurate, timely information for decision-making.
 
@@ -660,11 +660,11 @@ For businesses seeking to reduce stockouts, minimize excess inventory, or improv
     ]
   },
 
-  // DIEMEX Sectors
+  // INDIAMET Sectors
   'precision-moulds': {
     title: 'Metrology & Precision Measurement Systems',
     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.',
-    mainDescription: `The Precision Die & Mould Solutions sector at DIEMEX represents the pinnacle of tooling technology, where accuracy meets durability to enable mass production across automotive, aerospace, electronics, and consumer goods industries. This sector brings together specialized mould makers, tool designers, and manufacturing experts who create the critical components that shape our manufactured world.
+    mainDescription: `The Precision Die & Mould Solutions sector at INDIAMET represents the pinnacle of tooling technology, where accuracy meets durability to enable mass production across automotive, aerospace, electronics, and consumer goods industries. This sector brings together specialized mould makers, tool designers, and manufacturing experts who create the critical components that shape our manufactured world.
 
 From injection moulds that produce millions of plastic parts to complex die-casting tools that form metal components under extreme pressure, exhibitors demonstrate how precision engineering drives modern manufacturing. Visitors can explore innovations in mould design, material selection, cooling systems, and ejection mechanisms that improve part quality while reducing cycle times.
 
@@ -723,7 +723,7 @@ For manufacturers seeking to launch new products or optimize existing production
   'tooling-mould-base': {
     title: 'Tooling, Mould Bases & Standard Components',
     description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.',
-    mainDescription: `The Tooling, Mould Bases & Standard Components sector at DIEMEX focuses on the building blocks of effective tooling—the standardized elements that enable rapid mould construction, reliable performance, and cost-effective maintenance. This sector brings together manufacturers of mould bases, hot runner systems, ejector components, and the thousands of standard parts that toolmakers rely on daily.
+    mainDescription: `The Tooling, Mould Bases & Standard Components sector at INDIAMET focuses on the building blocks of effective tooling—the standardized elements that enable rapid mould construction, reliable performance, and cost-effective maintenance. This sector brings together manufacturers of mould bases, hot runner systems, ejector components, and the thousands of standard parts that toolmakers rely on daily.
 
 From precision-ground guide pillars and bushings to complex hot runner manifolds with sequential valve gating, exhibitors demonstrate how standardized components can reduce lead times, improve reliability, and simplify maintenance. Visitors can explore catalogues of off-the-shelf solutions that can be customized for specific applications, as well as specialized components designed for demanding molding conditions.
 
@@ -782,7 +782,7 @@ For toolrooms and mould makers facing tight deadlines and budget constraints, th
   'machining-finishing': {
     title: 'Machining & Finishing Technologies',
     description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.',
-    mainDescription: `The Machining & Finishing Technologies sector at DIEMEX showcases the equipment and processes that transform raw materials into precision tooling components. From rough machining to final finishing, this sector brings together manufacturers of CNC machines, EDM equipment, grinding systems, and the tools that achieve the micron-level accuracy required for modern tooling.
+    mainDescription: `The Machining & Finishing Technologies sector at INDIAMET showcases the equipment and processes that transform raw materials into precision tooling components. From rough machining to final finishing, this sector brings together manufacturers of CNC machines, EDM equipment, grinding systems, and the tools that achieve the micron-level accuracy required for modern tooling.
 
 Exhibitors demonstrate the latest in multi-axis machining, high-speed cutting, and wire EDM technologies that enable complex geometries and fine details. Visitors can also explore finishing processes—from manual polishing to automated surface treatments—that determine the final quality of tooling surfaces and, ultimately, the parts they produce.
 
@@ -841,7 +841,7 @@ For toolmakers and precision machinists, this sector offers hands-on exposure to
   'automation-industry': {
     title: 'Automation & Industry 4.0 Solutions',
     description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.',
-    mainDescription: `The Automation & Industry 4.0 Solutions sector at DIEMEX showcases the digital transformation of toolmaking, where smart machines, connected systems, and data analytics are creating new levels of efficiency and capability. This sector brings together robotics manufacturers, control system integrators, and software developers who are implementing the smart factory vision in tool rooms and production facilities.
+    mainDescription: `The Automation & Industry 4.0 Solutions sector at INDIAMET showcases the digital transformation of toolmaking, where smart machines, connected systems, and data analytics are creating new levels of efficiency and capability. This sector brings together robotics manufacturers, control system integrators, and software developers who are implementing the smart factory vision in tool rooms and production facilities.
 
 Exhibitors demonstrate how collaborative robots can work alongside skilled toolmakers, how IoT sensors provide real-time machine monitoring, and how digital twins enable simulation and optimization before cutting chips. Visitors can explore manufacturing execution systems (MES) that provide end-to-end visibility and control, as well as the connectivity solutions that tie everything together.
 
@@ -900,7 +900,7 @@ For manufacturers seeking to remain competitive in an increasingly digital world
   'cad-cam': {
     title: 'Design, CAD/CAM & Engineering Software',
     description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.',
-    mainDescription: `The Design, CAD/CAM & Engineering Software sector at DIEMEX showcases the digital tools that enable toolmakers to design complex geometries, simulate manufacturing processes, and generate efficient toolpaths before any metal is cut. This sector brings together software developers who create the specialized applications that tool designers and CNC programmers rely on daily.
+    mainDescription: `The Design, CAD/CAM & Engineering Software sector at INDIAMET showcases the digital tools that enable toolmakers to design complex geometries, simulate manufacturing processes, and generate efficient toolpaths before any metal is cut. This sector brings together software developers who create the specialized applications that tool designers and CNC programmers rely on daily.
 
 Exhibitors demonstrate the latest in 3D modeling, mold flow analysis, multi-axis CAM programming, and the simulation tools that verify programs and prevent costly errors. Visitors can explore how integrated CAD/CAM/CAE workflows reduce development time, improve first-shot success, and enable the design of increasingly complex parts.
 
@@ -959,7 +959,7 @@ For tool designers, engineers, and programmers, this sector offers insights into
   'tool-steel': {
     title: 'Tool Steel & Advanced Materials',
     description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.',
-    mainDescription: `The Tool Steel & Advanced Materials sector at DIEMEX focuses on the fundamental materials that determine tool performance, longevity, and cost-effectiveness. This sector brings together steel producers, material distributors, and metallurgical experts who supply the specialized alloys that enable precision tooling to withstand the extreme conditions of modern manufacturing.
+    mainDescription: `The Tool Steel & Advanced Materials sector at INDIAMET focuses on the fundamental materials that determine tool performance, longevity, and cost-effectiveness. This sector brings together steel producers, material distributors, and metallurgical experts who supply the specialized alloys that enable precision tooling to withstand the extreme conditions of modern manufacturing.
 
 Exhibitors showcase the full range of tool steels—from conventional grades to powder metallurgy products—as well as advanced materials like carbides, ceramics, and surface treatments that extend tool life and improve performance. Visitors can explore material properties, heat treatment options, and the latest developments in materials that resist wear, withstand heat, and maintain dimensional stability under demanding conditions.
 
@@ -1018,7 +1018,7 @@ For tool designers and manufacturing engineers, this sector provides essential i
   'die-mould-2': {
     title: 'Die & Mould Manufacturing',
     description: 'Injection moulds, die casting dies, press tools, blow moulds, extrusion dies and comprehensive manufacturing solutions.',
-    mainDescription: `The Die & Mould Manufacturing sector at DIEMEX encompasses the complete spectrum of tooling production, from concept to finished tool ready for production. This sector brings together specialized manufacturers who create the injection moulds, die casting dies, press tools, and other production tooling that enable mass manufacturing across industries.
+    mainDescription: `The Die & Mould Manufacturing sector at INDIAMET encompasses the complete spectrum of tooling production, from concept to finished tool ready for production. This sector brings together specialized manufacturers who create the injection moulds, die casting dies, press tools, and other production tooling that enable mass manufacturing across industries.
 
 Exhibitors demonstrate their capabilities in designing and building tools for applications ranging from micro-molding to large automotive components. Visitors can explore examples of complex tooling, discuss manufacturing approaches, and evaluate potential partners for their tooling needs. The sector also showcases supporting services like tool tryout, sampling, and production support that ensure tools perform as designed.
 
@@ -1077,7 +1077,7 @@ For companies seeking tooling partners—whether for new product launches, capac
   'tooling-tool-rom-technologies': {
     title: 'Tooling & Tool Room Technologies',
     description: 'Cutting tools, jigs & fixtures, gauges, tool holders, and comprehensive tool room solutions for precision manufacturing.',
-    mainDescription: `The Tooling & Tool Room Technologies sector at DIEMEX focuses on the essential elements that keep manufacturing operations running—the cutting tools, workholding devices, measurement equipment, and support systems that tool rooms rely on daily. This sector brings together manufacturers and suppliers of the consumables and equipment that determine machining efficiency and part quality.
+    mainDescription: `The Tooling & Tool Room Technologies sector at INDIAMET focuses on the essential elements that keep manufacturing operations running—the cutting tools, workholding devices, measurement equipment, and support systems that tool rooms rely on daily. This sector brings together manufacturers and suppliers of the consumables and equipment that determine machining efficiency and part quality.
 
 Exhibitors showcase the latest in cutting tool materials and geometries, workholding innovations that reduce setup time, and measurement systems that ensure quality. Visitors can explore tool management solutions that track tool inventory and usage, as well as the accessories and consumables that support efficient tool room operations.
 
@@ -1136,7 +1136,7 @@ For manufacturing engineers, machinists, and tool room managers, this sector pro
   'cnc-machines': {
     title: 'CNC Machines & Precision Engineering',
     description: 'Machining centres, turning, grinding, EDM, VMCs & HMCs, and comprehensive precision engineering solutions.',
-    mainDescription: `The CNC Machines & Precision Engineering sector at DIEMEX showcases the capital equipment that forms the backbone of modern manufacturing. From machining centers and turning machines to grinders and EDM equipment, this sector brings together machine tool builders and distributors who supply the equipment that produces precision components across industries.
+    mainDescription: `The CNC Machines & Precision Engineering sector at INDIAMET showcases the capital equipment that forms the backbone of modern manufacturing. From machining centers and turning machines to grinders and EDM equipment, this sector brings together machine tool builders and distributors who supply the equipment that produces precision components across industries.
 
 Exhibitors demonstrate the latest in machine technology—faster spindles, more rigid constructions, better thermal stability, and advanced control systems that enable unattended operation and lights-out manufacturing. Visitors can explore multi-tasking machines that combine multiple operations in one setup, as well as specialized machines designed for specific applications like gear cutting or turbine blade production.
 
@@ -1194,7 +1194,7 @@ For manufacturers investing in new capabilities or replacing aging equipment, th
   'complex-logistics': {
     title: 'Die & Mould Manufacturing',
     description: 'Comprehensive die, mould, and precision tooling solutions powering modern manufacturing industries.',
-    mainDescription: `As industries demand higher precision, faster production cycles, and lightweight components, advanced die & mould solutions have become essential. This sector at DIEMEX brings together leading tool rooms, mould makers, and die manufacturers serving automotive, aerospace, electronics, medical, and consumer industries.
+    mainDescription: `As industries demand higher precision, faster production cycles, and lightweight components, advanced die & mould solutions have become essential. This sector at INDIAMET brings together leading tool rooms, mould makers, and die manufacturers serving automotive, aerospace, electronics, medical, and consumer industries.
 
 From injection moulds and progressive press tools to die casting dies and multi-cavity systems, exhibitors showcase durable, repeatable, and cost-efficient manufacturing capabilities enhanced by CAD/CAM integration and high-speed machining technologies.`,
     heroImage: '/images/sectors/die-mould.jpg',
@@ -1217,7 +1217,7 @@ From injection moulds and progressive press tools to die casting dies and multi-
   'surface-treatment': {
     title: 'Surface Treatment & Heat Treatment',
     description: 'Coatings, finishing, hardening, thermal processes, and surface enhancement technologies for extended component life.',
-    mainDescription: `The Surface Treatment & Heat Treatment sector at DIEMEX addresses the critical processes that determine component performance, durability, and appearance. This sector brings together specialists in thermal processing, coating application, and surface enhancement who extend the life and improve the functionality of tools and components.
+    mainDescription: `The Surface Treatment & Heat Treatment sector at INDIAMET addresses the critical processes that determine component performance, durability, and appearance. This sector brings together specialists in thermal processing, coating application, and surface enhancement who extend the life and improve the functionality of tools and components.
 
 Exhibitors showcase heat treatment services that optimize material properties, coating technologies that reduce friction and wear, and finishing processes that achieve required surface specifications. Visitors can explore the relationship between treatment processes and component performance, understanding how proper treatment can multiply tool life and improve part quality.
 
@@ -1276,7 +1276,7 @@ For manufacturers seeking to improve product performance or reduce warranty cost
   'materials-steels-alloys': {
     title: 'Materials, Steels & Alloys',
     description: 'Tool steels, special alloys, polymers, consumables, and advanced materials for demanding manufacturing applications.',
-    mainDescription: `The Materials, Steels & Alloys sector at DIEMEX provides a comprehensive view of the raw materials that go into manufacturing—from the metals shaped into components to the consumables that support production processes. This sector brings together material producers, distributors, and specialists who supply the building blocks of manufactured products.
+    mainDescription: `The Materials, Steels & Alloys sector at INDIAMET provides a comprehensive view of the raw materials that go into manufacturing—from the metals shaped into components to the consumables that support production processes. This sector brings together material producers, distributors, and specialists who supply the building blocks of manufactured products.
 
 Exhibitors showcase the range of materials available for different applications, including tool steels for demanding forming operations, engineering plastics for lightweight components, and specialized alloys for extreme environments. Visitors can explore material properties, processing characteristics, and the latest developments in material science that enable new applications and improved performance.
 
@@ -1335,7 +1335,7 @@ For design engineers, procurement specialists, and manufacturing professionals, 
   'die-casting': {
     title: 'Injection Moulding & Casting Technologies',
     description: 'Plastics, rubber, die casting, metal forming solutions, and comprehensive moulding technologies for production.',
-    mainDescription: `The Injection Moulding & Casting Technologies sector at DIEMEX focuses on the production processes that shape materials into finished products—from plastic injection molding to metal die casting and forming. This sector brings together machinery manufacturers, process specialists, and technology providers who enable high-volume production of precision components.
+    mainDescription: `The Injection Moulding & Casting Technologies sector at INDIAMET focuses on the production processes that shape materials into finished products—from plastic injection molding to metal die casting and forming. This sector brings together machinery manufacturers, process specialists, and technology providers who enable high-volume production of precision components.
 
 Exhibitors showcase injection molding machines of all sizes, die casting equipment for non-ferrous metals, and the auxiliary equipment that supports efficient production. Visitors can explore process control technologies that ensure consistency, automation solutions that reduce labor, and quality monitoring systems that catch defects before they reach customers.
 
@@ -1610,7 +1610,7 @@ export const allSectorSlugs = [
   'packaging-systems',
   'inventory-management',
   
-  // DIEMEX sectors
+  // INDIAMET sectors
   'precision-moulds',
   'tooling-mould-base',
   'machining-finishing',

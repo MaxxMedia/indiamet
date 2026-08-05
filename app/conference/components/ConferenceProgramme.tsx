@@ -34,19 +34,19 @@ const TransRussiaSummitProgram: React.FC = () => {
   const programData: DayProgram[] = [
     // {
     //   day: "VIP Reception",
-    //   date: "October 08, 2027",
+    //   date: "April 22, 2027",
     //   description: "*Only for Exhibitors,Speakers,VIP's and Delegates",
     //   sessions: [
     //     {
     //       time: "18:00 – 21:00",
-    //       title: "DIEMEX VIP RECEPTION",
+    //       title: "INDIAMET VIP RECEPTION",
     //       description: "A special event at the Auto Cluter Exhibition Centre, Pune"
     //     }
     //   ]
     // },
     {
       day: "Day 1 Theme : Future-ready Manufacturing – Precision & Productivity",
-      date: "October 08, 2027",
+      date: "April 22, 2027",
       description: "*For delegates",
       sessions: [
         {
@@ -244,7 +244,7 @@ const TransRussiaSummitProgram: React.FC = () => {
     {
 
       day: "Day 2 Theme : Sustainability & Innovation in Manufacturing",
-      date: "October 9, 2027",
+      date: "April 23, 2027",
       description: "*For delegates of all categories",
       sessions: [
         {

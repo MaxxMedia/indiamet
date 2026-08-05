@@ -123,7 +123,7 @@ export default function Footer() {
               <h5 className="mb-2 font-semibold">Stay Connected</h5>
               <div className="flex gap-3">
                 <a
-                  href="https://www.linkedin.com/company/diemex-india/"
+                  href="https://www.linkedin.com/company/INDIAMET-india/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white hover:bg-blue-600 transition-all duration-300 hover:scale-110"
@@ -133,7 +133,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/diemex_india"
+                  href="https://www.instagram.com/INDIAMET_india"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 hover:opacity-90 transition-all duration-300 hover:scale-110"
@@ -143,7 +143,7 @@ export default function Footer() {
                 </a>
 
   <a
-                  href="https://www.facebook.com/DiemexIndia/"
+                  href="https://www.facebook.com/INDIAMETIndia/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 transition-all duration-300 hover:scale-110"
@@ -153,7 +153,7 @@ export default function Footer() {
                 </a>
 
 <a
-                  href="https://x.com/Diemex_India"
+                  href="https://x.com/INDIAMET_India"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-black hover:bg-white-600 transition-all duration-300 hover:scale-110"

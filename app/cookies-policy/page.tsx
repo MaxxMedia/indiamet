@@ -3,8 +3,8 @@ import SectionContainer from "@/components/UI/SectionContainer"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
-  title: "Cookies Policy | DIEMEX",
-  description: "DIEMEX Cookies Policy - Learn how we use cookies and similar technologies on our website to enhance your browsing experience.",
+  title: "Cookies Policy | INDIAMET",
+  description: "INDIAMET Cookies Policy - Learn how we use cookies and similar technologies on our website to enhance your browsing experience.",
 }
 
 export default function CookiesPolicyPage() {
@@ -30,7 +30,7 @@ export default function CookiesPolicyPage() {
               {/* Introduction */}
               <div className="mb-8 pb-6 border-b">
                 <p className="text-lg text-gray-700">
-                  This Cookies Policy explains how DIEMEX ("we", "our", "us") uses cookies and similar technologies on the DIEMEX website ("Platform"). By using the Platform, you agree to the use of cookies in accordance with this Policy.
+                  This Cookies Policy explains how INDIAMET ("we", "our", "us") uses cookies and similar technologies on the INDIAMET website ("Platform"). By using the Platform, you agree to the use of cookies in accordance with this Policy.
                 </p>
               </div>
 
@@ -39,7 +39,7 @@ export default function CookiesPolicyPage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">1. Notice</h2>
                   <p className="text-gray-700">
-                    When you visit the DIEMEX Platform for the first time, you will be notified about the use of cookies. By continuing to browse or use the Platform without changing your cookie settings, you consent to the use of cookies as described in this Policy.
+                    When you visit the INDIAMET Platform for the first time, you will be notified about the use of cookies. By continuing to browse or use the Platform without changing your cookie settings, you consent to the use of cookies as described in this Policy.
                   </p>
                 </div>
 
@@ -53,14 +53,14 @@ export default function CookiesPolicyPage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">3. Purpose of Using Cookies</h2>
                   <div className="space-y-3 text-gray-700">
-                    <p>DIEMEX uses cookies for the following purposes:</p>
+                    <p>INDIAMET uses cookies for the following purposes:</p>
                     <ul className="list-disc pl-5 space-y-2">
                       <li>To ensure proper functioning of the Platform</li>
                       <li>To improve website performance and user experience</li>
                       <li>To remember user preferences and settings</li>
                       <li>To analyse website traffic and usage statistics</li>
                       <li>To support secure login sessions and form submissions</li>
-                      <li>To personalise content, communications, and promotional messages related to DIEMEX events</li>
+                      <li>To personalise content, communications, and promotional messages related to INDIAMET events</li>
                     </ul>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function CookiesPolicyPage() {
                       <li>Session duration and navigation behaviour</li>
                     </ul>
                     <p className="pt-2 font-medium">
-                      DIEMEX does not use cookies to collect sensitive personal data.
+                      INDIAMET does not use cookies to collect sensitive personal data.
                     </p>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function CookiesPolicyPage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">6. Updates to This Policy</h2>
                   <p className="text-gray-700">
-                    DIEMEX reserves the right to update this Cookies Policy at any time. Any changes will be posted on this page. Continued use of the Platform constitutes acceptance of the updated Policy.
+                    INDIAMET reserves the right to update this Cookies Policy at any time. Any changes will be posted on this page. Continued use of the Platform constitutes acceptance of the updated Policy.
                   </p>
                 </div>
 
@@ -131,7 +131,7 @@ export default function CookiesPolicyPage() {
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
                       </div>
-                      <span className="font-medium">Email: info@diemex.in</span>
+                      <span className="font-medium">Email: info@INDIAMET.in</span>
                     </div>
                   </div>
                 </div>

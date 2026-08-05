@@ -191,7 +191,7 @@ export default function DelegateForm() {
 
     try {
       // Use your Render backend URL
-      const response = await fetch('https://diemex-backend.onrender.com/api/contact', {
+      const response = await fetch('https://INDIAMET-backend.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

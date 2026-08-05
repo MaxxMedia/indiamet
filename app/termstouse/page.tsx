@@ -3,8 +3,8 @@ import SectionContainer from "@/components/UI/SectionContainer"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
-  title: "Terms of Use | DIEMEX",
-  description: "Terms and conditions governing the use of DIEMEX website. Read our terms of use, policies, and legal information.",
+  title: "Terms of Use | INDIAMET",
+  description: "Terms and conditions governing the use of INDIAMET website. Read our terms of use, policies, and legal information.",
 }
 
 export default function TermsOfUsePage() {
@@ -32,21 +32,21 @@ export default function TermsOfUsePage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Acceptance of Terms</h2>
                   <p className="text-gray-700">
-                    The DIEMEX website ("Website") is operated by the DIEMEX Organising Team ("DIEMEX", "we", "our", "us"). The Website is offered to you subject to your acceptance, without modification, of these Terms of Use. By accessing or using this Website, you agree to be bound by all terms, conditions, and notices contained herein.
+                    The INDIAMET website ("Website") is operated by the INDIAMET Organising Team ("INDIAMET", "we", "our", "us"). The Website is offered to you subject to your acceptance, without modification, of these Terms of Use. By accessing or using this Website, you agree to be bound by all terms, conditions, and notices contained herein.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Modification of Terms</h2>
                   <p className="text-gray-700">
-                    DIEMEX reserves the right to change, modify, or update these Terms of Use at any time without prior notice. Continued use of the Website following any changes constitutes acceptance of those changes.
+                    INDIAMET reserves the right to change, modify, or update these Terms of Use at any time without prior notice. Continued use of the Website following any changes constitutes acceptance of those changes.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Links to Third-Party Websites</h2>
                   <p className="text-gray-700">
-                    The Website may contain links to third-party websites ("Linked Sites") provided for convenience only. DIEMEX does not control, endorse, or assume responsibility for the content, accuracy, or policies of any Linked Site. Accessing such websites is done at your own risk.
+                    The Website may contain links to third-party websites ("Linked Sites") provided for convenience only. INDIAMET does not control, endorse, or assume responsibility for the content, accuracy, or policies of any Linked Site. Accessing such websites is done at your own risk.
                   </p>
                 </div>
 
@@ -58,10 +58,10 @@ export default function TermsOfUsePage() {
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Materials Submitted to DIEMEX</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Materials Submitted to INDIAMET</h2>
                   <div className="space-y-3 text-gray-700">
-                    <p>DIEMEX does not claim ownership of any materials, information, or content you submit to the Website, including enquiries, feedback, or registration details ("Submissions"). However, by submitting content, you grant DIEMEX a non-exclusive, royalty-free right to use, reproduce, display, and distribute such Submissions for exhibition-related, promotional, or operational purposes.</p>
-                    <p>No compensation shall be payable for the use of such Submissions. DIEMEX reserves the right to remove any Submission at its sole discretion.</p>
+                    <p>INDIAMET does not claim ownership of any materials, information, or content you submit to the Website, including enquiries, feedback, or registration details ("Submissions"). However, by submitting content, you grant INDIAMET a non-exclusive, royalty-free right to use, reproduce, display, and distribute such Submissions for exhibition-related, promotional, or operational purposes.</p>
+                    <p>No compensation shall be payable for the use of such Submissions. INDIAMET reserves the right to remove any Submission at its sole discretion.</p>
                     <p>You represent and warrant that you own or have the necessary rights to submit the content provided.</p>
                   </div>
                 </div>
@@ -69,8 +69,8 @@ export default function TermsOfUsePage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Disclaimer of Liability</h2>
                   <div className="space-y-3 text-gray-700">
-                    <p>The information on this Website is provided for general information purposes only and may contain inaccuracies or typographical errors. DIEMEX makes no warranties regarding the accuracy, completeness, or suitability of the information, products, or services provided through the Website.</p>
-                    <p>All content is provided on an "as is" and "as available" basis, without any warranties, express or implied. DIEMEX shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to the use or inability to use the Website.</p>
+                    <p>The information on this Website is provided for general information purposes only and may contain inaccuracies or typographical errors. INDIAMET makes no warranties regarding the accuracy, completeness, or suitability of the information, products, or services provided through the Website.</p>
+                    <p>All content is provided on an "as is" and "as available" basis, without any warranties, express or implied. INDIAMET shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to the use or inability to use the Website.</p>
                   </div>
                 </div>
 
@@ -84,7 +84,7 @@ export default function TermsOfUsePage() {
                 <div className="border-b pb-6">
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Termination of Access</h2>
                   <p className="text-gray-700">
-                    DIEMEX reserves the right to suspend or terminate access to the Website or any part thereof at any time, without notice, for any reason.
+                    INDIAMET reserves the right to suspend or terminate access to the Website or any part thereof at any time, without notice, for any reason.
                   </p>
                 </div>
 
@@ -99,8 +99,8 @@ export default function TermsOfUsePage() {
                   <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">Copyright and Intellectual Property</h2>
                   <div className="space-y-3 text-gray-700">
                     <p>All content on this Website, including text, images, graphics, logos, and design elements, is protected by applicable copyright and intellectual property laws.</p>
-                    <p className="font-semibold">© DIEMEX. All rights reserved.</p>
-                    <p>No part of this Website may be reproduced, distributed, or transmitted in any form without prior written permission from DIEMEX, except for personal, non-commercial use.</p>
+                    <p className="font-semibold">© INDIAMET. All rights reserved.</p>
+                    <p>No part of this Website may be reproduced, distributed, or transmitted in any form without prior written permission from INDIAMET, except for personal, non-commercial use.</p>
                   </div>
                 </div>
 
@@ -117,7 +117,7 @@ export default function TermsOfUsePage() {
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
                       </div>
-                      <span className="font-medium">Email: info@diemex.in</span>
+                      <span className="font-medium">Email: info@INDIAMET.in</span>
                     </div>
                   </div>
                 </div>

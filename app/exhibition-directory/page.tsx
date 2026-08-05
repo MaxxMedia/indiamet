@@ -1,7 +1,7 @@
 import CompanyDirectory from "./company-directory"
 
 export const metadata = {
-  title: 'Exhibitor Directory - Diemex Exhibition',
+  title: 'Exhibitor Directory - INDIAMET Exhibition',
   description: 'Browse participating companies in the INDIAMET 2027 exhibition',
 }
 

@@ -17,7 +17,7 @@ interface PageProps {
 function getDatabaseKeyFromSlug(slug: string): string {
   const slugToKeyMap: Record<string, string> = {
     
-    // DIEMEX Sectors - Map to existing DIEMEX sectors in database
+    // INDIAMET Sectors - Map to existing INDIAMET sectors in database
     'die-mould-manufacturing': 'die & mould manufacturing',
     'tooling-tool-rom-technologies': 'tooling & cutting tools',
     'cnc-machines': 'machine tools & advanced machining',
@@ -39,7 +39,7 @@ function getDatabaseKeyFromSlug(slug: string): string {
 function getDisplayNameFromSlug(slug: string): string {
   const displayNameMap: Record<string, string> = {
           
-    // DIEMEX
+    // INDIAMET
     'die-mould-manufacturing': 'Die & Mould',
     'tooling-tool-rom-technologies': 'Tooling',
     'cnc-machines': 'Machine Tools',
@@ -64,7 +64,7 @@ function getDefaultSectorContent(slug: string, displayName: string) {
   return {
     title: `${displayName} Solutions`,
     description: `Comprehensive ${displayName.toLowerCase()} solutions for modern logistics and supply chain operations.`,
-    mainDescription: `The ${displayName} sector at DIEMEX showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
+    mainDescription: `The ${displayName} sector at INDIAMET showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
 
 Visitors can explore cutting-edge measurement systems, inspection technologies, calibration solutions, and quality assurance innovations while connecting with industry experts and leading brands. From precision instruments and machine vision systems to metrology software and smart inspection technologies, this sector represents the complete ecosystem of modern industrial metrology. ${displayName.toLowerCase()} solutions.
 

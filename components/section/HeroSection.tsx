@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* BACKGROUND IMAGE - Full Width */}
       <img
         src="/images/about-header.jpg"
-        alt="Diemex©2027"
+        alt="INDIAMET©2027"
         className="absolute inset-0 h-full w-full object-cover"
       />
 

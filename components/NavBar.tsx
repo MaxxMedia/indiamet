@@ -52,7 +52,7 @@ const navItems: NavItem[] = [
     title: "About",
     dropdown: true,
     links: [
-      { text: "About Diemex", href: "/about-diemex" },
+      { text: "About INDIAMET", href: "/about-INDIAMET" },
       { text: "About The Organizer", href: "/about-organizer" },
       { text: "Partners & Sponsors", href: "/partners-and-sponsors" },
     ],

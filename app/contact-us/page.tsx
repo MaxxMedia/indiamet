@@ -5,7 +5,7 @@ import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
   title: "Contact Us | INDIAMET 2027",
-  description: "Get in touch with Diemex Expo. Contact our team for sales, marketing, technical, or general exhibition enquiries.",
+  description: "Get in touch with INDIAMET Expo. Contact our team for sales, marketing, technical, or general exhibition enquiries.",
 }
 
 export default function ContactPage() {
@@ -70,7 +70,7 @@ export default function ContactPage() {
                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                           </svg>
                         </div>
-                        <span className="font-medium">pad@diemex.in</span>
+                        <span className="font-medium">pad@INDIAMET.in</span>
                       </div>
                     </div>
                   </div>

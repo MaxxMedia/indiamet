@@ -29,7 +29,7 @@ export default function CashfreePayment({
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_BASE_URL = 'https://diemex-backend.onrender.com';
+  const API_BASE_URL = 'https://INDIAMET-backend.onrender.com';
 
   // Load Cashfree SDK
   useEffect(() => {

@@ -101,7 +101,7 @@ export interface Brochure {
 }
 
 // API Base URL
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://diemex-backend.onrender.com';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
 
 // Helper function to safely access metadata properties
 function getMetadataValue(metadata: any, path: string[]): any {
