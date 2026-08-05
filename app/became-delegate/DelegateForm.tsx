@@ -252,7 +252,7 @@ export default function DelegateForm() {
       <Toaster position="top-right" />
       
       <form onSubmit={handleSubmit} className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-        <h3 className="text-xl font-semibold text-[#ffcb9a]">
+        <h3 className="text-xl font-semibold text-[#116466]">
           Register as Delegate
         </h3>
 
@@ -486,7 +486,7 @@ export default function DelegateForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`mt-4 w-fit rounded bg-[#ffcb9a] px-6 py-2 text-sm font-medium text-white hover:opacity-90 ${
+          className={`mt-4 w-fit rounded bg-[#116466] px-6 py-2 text-sm font-medium text-white hover:opacity-90 ${
             isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
           }`}
         >
