@@ -284,8 +284,8 @@ export default function HomePage() {
             <section className="w-full">
               <div className="mx-auto w-full max-w-[1240px] lg:max-w-[1320px] xl:max-w-[1440px] 2xl:max-w-[1600px] px-4 sm:px-6 lg:px-8">
                 <SpeakersSection
-                  title="Top speakers INDIAMET Conference 2027"
-                  subtitle="The largest Die, Mould and Tooling leaders"
+                  title="Top Speakers | INDIAMET Summit 2027"
+                  subtitle="The Leading Voices in Metrology, Precision Measurement & Quality Engineering"
                   speakers={speakersData}
                 />
               </div>
