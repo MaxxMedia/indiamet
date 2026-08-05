@@ -170,7 +170,7 @@ export default function NavBar() {
           <div className="mx-auto max-w-[1600px]">
             {/* ================= MOBILE NAVBAR ================= */}
             <div className="lg:hidden w-full absolute top-0 left-0 right-0 z-50">
-              <div className="bg-gradient-to-r from-[#2c3531] to-[#2c3531] text-white w-full">
+              <div className="bg-gradient-to-r from-[#123C69] to-[#123C69] text-white w-full">
 
                 {/* HEADER */}
                 <div className="grid grid-cols-[50px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
@@ -209,14 +209,14 @@ export default function NavBar() {
               {/* TIME BAR */}
               <div className="flex items-center gap-2 pl-4">
                 <div className="relative z-[1001] flex justify-center px-0">
-                <div className="flex items-center gap-1.5 rounded-b-xl bg-[#116466] px-2 py-0.5 text-[12px] text-white justify-start">
+                <div className="flex items-center gap-1.5 rounded-b-xl bg-[#AC3B61] px-2 py-0.5 text-[12px] text-white justify-start">
                   <span className="font-medium">{timeLeft.days} Days</span>
                   <span className="font-medium">{timeLeft.hours} Hours</span>
                   <span className="font-medium">{timeLeft.minutes} Mins</span>
                 </div>
               </div>
 <Link href="/login" className="relative z-[1001]">
-  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#116466] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#2c3531] active:scale-95 transition-all">
+  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#AC3B61] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#123C69] active:scale-95 transition-all">
     <span className="font-bold">Exhibitor Login</span>
   </div>
 </Link>
@@ -231,7 +231,7 @@ export default function NavBar() {
 
 
             {/* ================= DESKTOP NAV BAR (UNCHANGED) ================= */}
-            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#2c3531] to-[#2c3531] text-white shadow-xl">
+            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#123C69] to-[#123C69] text-white shadow-xl">
               <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3 lg:gap-4 px-2 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 lg:py-3">
 
                 {/* ================= LOGO SECTION ================= */}
@@ -283,7 +283,7 @@ export default function NavBar() {
                         <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
                           <span className={`relative font-medium ${getNavItemFontSize()}`}>
                             {item.title}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#116466] group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#AC3B61] group-hover:w-full transition-all duration-300"></span>
                           </span>
                           <ChevronDown className={`h-2 w-2 lg:h-2.5 lg:w-2.5 xl:h-3 xl:w-3 transition-transform duration-300 ${activeDropdown === i ? "rotate-180" : ""}`} />
                         </button>
@@ -315,7 +315,7 @@ export default function NavBar() {
                       >
                         <span className={`relative font-medium ${getNavItemFontSize()}`}>
                           {item.title}
-                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#116466] group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#AC3B61] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </Link>
                     )
@@ -326,13 +326,13 @@ export default function NavBar() {
                 <div className="hidden lg:flex items-center gap-1 lg:gap-1.5 xl:gap-2 2xl:gap-3 flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className={`bg-[#116466] hover:bg-[#116466] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#AC3B61] hover:bg-[#AC3B61] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Exhibit" : "Become an Exhibitor"}
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className={`bg-[#116466] hover:bg-[#116466] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className={`bg-[#AC3B61] hover:bg-[#AC3B61] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
                     {screenSize === "laptop" ? "Register" : "Register Now"}
                   </Button>
@@ -345,7 +345,7 @@ export default function NavBar() {
     <div className="flex items-center gap-2">
       
       {/* Time Bar */}
-      <div className="flex items-center gap-4 rounded-b-xl bg-[#2c3531] px-4 py-1 text-[12px] text-white shadow-md">
+      <div className="flex items-center gap-4 rounded-b-xl bg-[#123C69] px-4 py-1 text-[12px] text-white shadow-md">
         <span className="font-medium">{timeLeft.days} Days</span>
         <span className="font-medium">{timeLeft.hours} Hours</span>
         <span className="font-medium">{timeLeft.minutes} Mins</span>
@@ -353,7 +353,7 @@ export default function NavBar() {
 
       {/* Exhibitor Login */}
       <Link href="/login">
-        <div className="flex items-center rounded-b-xl bg-[#2c3531] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#116466] active:scale-95 transition-all shadow-md">
+        <div className="flex items-center rounded-b-xl bg-[#123C69] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#AC3B61] active:scale-95 transition-all shadow-md">
           Exhibitor Login
         </div>
       </Link>
@@ -443,14 +443,14 @@ export default function NavBar() {
                 <Button
                   href="/exhibiting-enquiry"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#116466] text-white text-sm py-3 font-semibold rounded-md w-full"
+                  className="bg-[#AC3B61] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
                   Become an Exhibitor
                 </Button>
                 <Button
                   href="/visitor-registration"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#116466] text-white text-sm py-3 font-semibold rounded-md w-full"
+                  className="bg-[#AC3B61] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
                   Register Now
                 </Button>

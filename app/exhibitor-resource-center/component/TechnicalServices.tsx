@@ -17,7 +17,7 @@ export default function TechnicalServices() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="flex-center group w-fit gap-2 overflow-hidden rounded-full px-10 py-3 font-jakarta text-[16px] font-semibold global-transition bg-[#116466] text-white hover:bg-mainColor4">
+                    <button className="flex-center group w-fit gap-2 overflow-hidden rounded-full px-10 py-3 font-jakarta text-[16px] font-semibold global-transition bg-[#AC3B61] text-white hover:bg-mainColor4">
                       Download Technical Service Form
                     </button>
                   </Link>
