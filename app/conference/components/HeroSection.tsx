@@ -52,7 +52,7 @@ export default function HeroSection() {
               </Button>
 
               <Link href="/become-partner">
-                <button className="relative z-50 rounded-full bg-[#028C00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
+                <button className="relative z-50 rounded-full bg-[#2E9CCA] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
                   Become a partner
                 </button>
               </Link>

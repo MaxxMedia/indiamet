@@ -76,7 +76,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
         </div>
       </motion.div>
 
-      <div className="flex grow flex-col justify-between bg-[#002A34] p-6 text-white lg:p-8">
+      <div className="flex grow flex-col justify-between bg-[#25274d] p-6 text-white lg:p-8">
         <div>
           <motion.h3 
             whileHover={{ scale: 1.02 }}
@@ -97,7 +97,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
             whileTap={{ scale: 0.95 }}
             // href={`/partner/${partner.slug}`}
           >
-            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#028C00] hover:text-white transition-all duration-300 hover:shadow-lg">
+            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#2E9CCA] hover:text-white transition-all duration-300 hover:shadow-lg">
               Explore
             </button>
           </motion.a>
@@ -110,7 +110,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#028C00] hover:text-white hover:shadow-lg">
+              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#2E9CCA] hover:text-white hover:shadow-lg">
                 Visit Website
               </button>
             </motion.a>
