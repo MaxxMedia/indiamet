@@ -93,7 +93,7 @@ export default function WhyChooseSection() {
                        leading-[0.85] tracking-tight opacity-0"
           >
             Why choose{" "}
-            <span className="text-[#73CF72] font-parabolica">INDIAMET 2027</span>
+            <span className="text-[#FF6A00] font-parabolica">INDIAMET 2027</span>
           </h2>
         </SectionContainer>
       </div>
