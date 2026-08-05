@@ -146,7 +146,7 @@ export default function HeroSection() {
 
             {/* MAIN HEADING */}
             <h1 className="font-parabolica text-[48px] font-bold leading-[0.85] tracking-tight sm:text-[70px] md:text-[100px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
-              INDIAMET <span className="text-[#AC3B61]">2027</span>
+              INDIAMET <span className="text-[#FF6A00]">2027</span>
             </h1>
 
             {/* CONTENT */}
@@ -168,7 +168,7 @@ export default function HeroSection() {
 
               <div className="mt-6 shrink-0 lg:ml-auto lg:mt-0">
                 <a href="/exhibiting-enquiry">
-                  <button className="w-full rounded-full bg-[#AC3B61] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40 sm:w-auto sm:px-12 sm:py-4 sm:text-lg">
+                  <button className="w-full rounded-full bg-[#FF6A00] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40 sm:w-auto sm:px-12 sm:py-4 sm:text-lg">
                     Book Your Stand
                   </button>
                 </a>

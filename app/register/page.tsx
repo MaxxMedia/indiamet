@@ -13,7 +13,7 @@ export default function RegisterPage() {
         <Suspense
             fallback={
                 <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 py-10">
-                    <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#123C69] border-t-transparent" />
+                    <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#071D49] border-t-transparent" />
                     <p className="text-lg font-semibold text-gray-700">Loading registration form...</p>
                 </div>
             }

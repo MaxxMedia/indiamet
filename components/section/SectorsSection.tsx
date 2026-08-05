@@ -40,7 +40,7 @@ const SectorsSection = () => {
 
         <div className="flex lg:col-span-3 lg:justify-end">
           <Link href="/sectors">
-            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#AC3B61] text-white transition hover:bg-mainColor4">
+            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#FF6A00] text-white transition hover:bg-mainColor4">
               Explore All Our Event Sector
             </button>
           </Link>

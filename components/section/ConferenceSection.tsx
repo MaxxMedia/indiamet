@@ -15,7 +15,7 @@ const ConferenceSection = () => {
       <div className="grid min-h-[600px] overflow-hidden rounded-2xl lg:grid-cols-2 shadow-xl">
         
         {/* Left Content */}
-        <div className="relative bg-[#123C69] p-8 lg:p-12 flex flex-col justify-center">
+        <div className="relative bg-[#071D49] p-8 lg:p-12 flex flex-col justify-center">
           <div className="space-y-6 lg:space-y-8">
 
             <div>
