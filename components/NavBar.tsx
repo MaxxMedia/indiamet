@@ -241,7 +241,7 @@ export default function NavBar() {
                 >
                   <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2">
                     {/* Main Logo */}
-                    <div className="relative w-[45px] h-[30px] xs:w-[55px] xs:h-[37px] sm:w-[70px] sm:h-[47px] md:w-[85px] md:h-[57px] lg:w-[95px] lg:h-[63px] xl:w-[110px] xl:h-[73px] flex-shrink-0">
+                    <div className="relative w-[65px] h-[50px] xs:w-[75px] xs:h-[57px] sm:w-[90px] sm:h-[67px] md:w-[105px] md:h-[77px] lg:w-[95px] lg:h-[63px] xl:w-[110px] xl:h-[73px] flex-shrink-0">
                       <Image
                         src="/images/indiamet_logo.png"
                         alt="INDIAMET 2027 Logo"
