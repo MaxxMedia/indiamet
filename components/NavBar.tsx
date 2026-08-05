@@ -170,7 +170,7 @@ export default function NavBar() {
           <div className="mx-auto max-w-[1600px]">
             {/* ================= MOBILE NAVBAR ================= */}
             <div className="lg:hidden w-full absolute top-0 left-0 right-0 z-50">
-              <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] text-white w-full">
+              <div className="bg-gradient-to-r from-[#FFFFFF] to-[#01163A] text-white w-full">
 
                 {/* HEADER */}
                 <div className="grid grid-cols-[50px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
