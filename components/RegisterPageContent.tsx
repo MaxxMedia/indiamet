@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import INDIAMETTabbedFormWrapper from '@/components/INDIAMETtabbedform';
+import INDIAMETTabbedFormWrapper from '@/components/INDIAMETTabbedFormWrapper';
 import PartnersSlider from '@/components/section/PartnersSection';
 import SectionContainer from '@/components/UI/SectionContainer';
 import BackToTop from '@/app/exhibitor-resource-center/component/BackToTop';
