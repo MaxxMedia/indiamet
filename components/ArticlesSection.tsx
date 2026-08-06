@@ -5,14 +5,14 @@ export default function ArticlesSection() {
   const articles = [
     {
       title: 'The Role of Precision Tooling in Modern Manufacturing',
-      slug: 'why-is-india-die-mould-industry-accelerating-in-2026',
+      slug: 'why-is-india-die-mould-industry-accelerating-in-2027',
       excerpt: 'Precision tooling plays a critical role in enabling high-quality manufacturing across automotive, electronics, and consumer industries.',
       image: '/images/article1.jpg',
-      date: 'February 01, 2026',
+      date: 'February 01, 2027',
     },
     {
       title: 'The Rise of India as a Global Die & Mould Manufacturing Hub',
-      slug: 'how-is-die-mould-industry-preparing-in-2026',
+      slug: 'how-is-die-mould-industry-preparing-in-2027',
       excerpt: 'India is rapidly emerging as a competitive global force in precision tooling and mould manufacturing.',
       image: '/images/article3.jpg',
       date: 'November 20, 2025',
@@ -41,7 +41,7 @@ export default function ArticlesSection() {
             </p>
 
             <a href="/articles">
-              <button className="rounded-full bg-[#388E36] px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-[#0A66C2] transition">
+              <button className="rounded-full bg-[#FF6A00] px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-[#0A66C2] transition">
                 View all articles
               </button>
             </a>

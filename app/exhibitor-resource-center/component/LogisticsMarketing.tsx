@@ -19,7 +19,7 @@ export default function LogisticsMarketing() {
             <div className="mb-8 flex-grow">
   <div className="prose prose-xl max-w-none text-[#4D4D4D]">
     <p className="text-[18px]">
-      Diemex 2026 partners with Buhariwala Logistics for all freight handling requests from exhibitors.
+      Indiaet 2027 partners with Buhariwala Logistics for all freight handling requests from exhibitors.
     </p>
 
     <p className="text-[18px]">
@@ -67,7 +67,7 @@ export default function LogisticsMarketing() {
   {/* Background Image */}
   <img
     src="/images/exbibitor-resource-center/image3.png"
-    alt="Diemex Exhibition"
+    alt="INDIAMET Exhibition"
     className="absolute inset-0 h-full w-full object-cover"
   />
 
@@ -86,7 +86,7 @@ export default function LogisticsMarketing() {
 
       <p className="text-lg text-white/95 leading-relaxed mb-8">
         To increase the effectiveness of participation in the exhibition, take advantage
-        of the partnership and additional advertising opportunities of Diemex 2026 Expo.
+        of the partnership and additional advertising opportunities of INDIAMET 2027 Expo.
       </p>
 
       <Link
@@ -95,7 +95,7 @@ export default function LogisticsMarketing() {
         rel="noopener noreferrer"
       >
         <button className="inline-flex items-center justify-center rounded-full 
-          bg-[#388E36] px-8 py-3 text-[16px] font-semibold text-white
+          bg-[#FF6A00] px-8 py-3 text-[16px] font-semibold text-white
           shadow-lg shadow-black/30
           transition-all duration-300
           hover:bg-blue-700 hover:scale-105">

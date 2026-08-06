@@ -37,10 +37,10 @@ const Contacts = () => {
                 </div>
                 <div className="mt-4 md:mt-6 space-y-1 md:space-y-2">
                   <a 
-                    href="mailto:bhoomika@diemex.in."
+                    href="mailto:bhoomika@INDIAMET.in."
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    bhoomika@diemex.in
+                    bhoomika@INDIAMET.in
                   </a>
                   <a 
                     href="tel:+91 9980241366"
@@ -83,7 +83,7 @@ const Contacts = () => {
                     href="mailto:Olga.Senicheva@ite.group"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    pad@diemex.in
+                    pad@INDIAMET.in
                   </a>
                   <a 
                     href="tel:+919148319993"

@@ -14,33 +14,33 @@ import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 const data = [
   {
-    title: 'Want to grow internationally?',
-    text: 'Connect with buyers, OEMs, and sourcing partners from India and overseas who attend DIEMEX to discover advanced die & mould, tooling, and manufacturing solutions.',
+    title: 'Looking to Expand Your Global Reach??',
+    text: 'Connect with manufacturers, OEMs, quality professionals, distributors, and industrial decision-makers from India and around the world who visit INDIAMET 2027 to discover the latest innovations in metrology, measurement technology, inspection, calibration, testing, and quality assurance solutions.',
     image: '/images/Why-Exhibit/globe.png',
   },
   {
-    title: 'Struggling to Measure Exhibition ROI?',
-    text: 'DIEMEX delivers measurable results—from qualified leads and RFQs to confirmed orders and long-term partnerships.',
+    title: 'Maximize Your Exhibition Success?',
+    text: 'INDIAMET 2027 provides a focused platform to generate high-quality business leads, connect with qualified buyers, launch innovative technologies, strengthen customer relationships, and build strategic partnerships with key decision-makers from the manufacturing and quality engineering industries.',
     image: '/images/Why-Exhibit/market.png',
   },
   {
-    title: 'Facing Challenges Entering New Manufacturing Markets?',
-    text: 'Gain direct access to decision-makers, including toolroom heads, plant managers, procurement leaders, and engineering teams across India’s precision manufacturing sectors.',
+    title: 'Looking to Enter New Manufacturing Markets?',
+    text: 'Gain direct access to quality leaders, manufacturing heads, plant managers, procurement professionals, R&D teams, OEMs, and industrial decision-makers seeking advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions across India"s rapidly growing manufacturing sectors.',
     image: '/images/Why-Exhibit/filtering.png',
   },
   {
-    title: 'Concerned About Cost, Quality & Lead Times?',
-    text: 'Meet trusted suppliers and technology partners who help optimize tooling costs, improve quality, and reduce production cycles.',
+    title: 'Looking to Improve Quality, Accuracy & Productivity?',
+    text: 'Meet leading technology providers and solution partners offering advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions that help enhance product quality, improve manufacturing accuracy, optimize production processes, and increase operational efficiency.',
     image: '/images/Why-Exhibit/conversion.png',
   },
   {
-    title: 'Need better lead generation?',
-    text: 'Build a strong pipeline from automotive, EV, plastics, die casting, aerospace, and industrial manufacturing sectors.',
+    title: 'Looking to Generate High-Quality Business Leads?',
+    text: 'Connect with qualified buyers and decision-makers from the automotive, EV, aerospace, electronics, medical devices, defence, industrial machinery, precision engineering, and general manufacturing sectors actively seeking advanced metrology, measurement, inspection, calibration, testing, and quality assurance solutions.',
     image: '/images/Why-Exhibit/opportunity.png',
   },
   {
-    title: 'Is your brand struggling to get noticed?',
-    text: 'Showcase your unique technologies and capabilities to a highly targeted, decision-driven audience.',
+    title: 'Want to Increase Your Brand Visibility?',
+    text: 'Showcase your latest metrology, measurement, inspection, calibration, testing, and quality assurance solutions to a highly targeted audience of manufacturers, OEMs, quality professionals, engineers, and key decision-makers, positioning your brand as a leader in precision manufacturing and industrial quality.',
     image: '/images/Why-Exhibit/worldwide.png',
   },
 ];
@@ -49,25 +49,25 @@ export default function WhyExhibit() {
   const testimonials = [
     {
       logo: "/images/Why-Exhibit/raj.png",
-      text: "DIEMEX provides an excellent platform for tooling manufacturers to connect with serious buyers from the automotive, electronics, and engineering sectors.",
+      text: "INDIAMET provides an excellent platform for tooling manufacturers to connect with serious buyers from the automotive, electronics, and engineering sectors.",
       author: "RAJSHEKAR HUGHAR",
       company: "Managing Director, Raj Tools & Stampings Pvt Ltd",
     },
     {
       logo: "/images/Why-Exhibit/trove.png",
-      text: "We gained valuable business leads and met key decision-makers from major manufacturing companies. DIEMEX is becoming an important event for the tooling industry.",
+      text: "We gained valuable business leads and met key decision-makers from major manufacturing companies. INDIAMET is becoming an important event for the tooling industry.",
       author: "SUCHEENDRAN KUNDUVARAVALAPIL",
       company: "Managing Director , The Tooling Trove",
     },
     {
       logo: "/images/Why-Exhibit/pawan.png",
-      text: "The quality of visitors and industry professionals attending DIEMEX is impressive. It’s a great opportunity to showcase our latest die and mould innovations.",
+      text: "The quality of visitors and industry professionals attending INDIAMET is impressive. It’s a great opportunity to showcase our latest die and mould innovations.",
       author: "AMIT A, DHARURKAR",
       company: "Marketing Engineer, Pawan Precisions Pvt. Ltd.",
     },
     {
       logo: "/images/Why-Exhibit/richcam.png",
-      text: "DIEMEX helps us demonstrate advanced automation and machining solutions directly to manufacturers looking to upgrade their tool rooms.",
+      text: "INDIAMET helps us demonstrate advanced automation and machining solutions directly to manufacturers looking to upgrade their tool rooms.",
       author: "ABHIJEET C KHOLLAM",
       company: "Chief Operating Officer, Rich Cam Auto Engg (I) Pvt. Ltd",
     },
@@ -79,31 +79,31 @@ export default function WhyExhibit() {
     },
     {
       logo: "/images/Why-Exhibit/rajamane.png",
-      text: "Participating at DIEMEX helped us expand our market presence and connect with OEM manufacturers across multiple industries.",
+      text: "Participating at INDIAMET helped us expand our market presence and connect with OEM manufacturers across multiple industries.",
       author: "MAHESH RAJAMANE",
       company: "CEO, Rajamane Solutions",
     },
     {
       logo: "/images/Why-Exhibit/prenac.webp",
-      text: "DIEMEX is an excellent platform for networking, discovering new technologies, and building partnerships within the die and mould industry.",
+      text: "INDIAMET is an excellent platform for networking, discovering new technologies, and building partnerships within the die and mould industry.",
       author: "Ms. CHERRY YASIS",
       company: "Sales Assnt, Sohbi Kohgei (Phil)., Inc",
     },
     {
       logo: "/images/Why-Exhibit/prenac.webp",
-      text: "We look forward to participating in DIEMEX again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
+      text: "We look forward to participating in INDIAMET again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
       author: "NAVEEN",
       company: "Managing Director, Prenac Tools",
     },
     {
       logo: "/images/Why-Exhibit/hottip.jpg",
-      text: "We look forward to participating in DIEMEX again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
+      text: "We look forward to participating in INDIAMET again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
       author: "MOHAMMED FAHEMUDAIN",
       company: "Managing Director, Hottip India",
     },
     {
       logo: "/images/Why-Exhibit/jai.jpg",
-      text: "We look forward to participating in DIEMEX again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
+      text: "We look forward to participating in INDIAMET again. The event provides great exposure and meaningful interactions with buyers and industry experts.",
       author: "SANTHOSH RAI",
       company: "Director,  Jai Ambay Etching Process",
     },
@@ -179,7 +179,7 @@ const staggerContainer = {
                   transition={{ duration: 0.8 }}
                   className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mt-30"
                 >
-                  Unlock New Opportunities at DIEMEX
+                  Unlock New Opportunities at INDIAMET
                 </motion.h1>
 
                 <motion.p
@@ -188,20 +188,20 @@ const staggerContainer = {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="mt-4 text-sm sm:text-base lg:text-lg text-white/90"
                 >
-                  Discover new possibilities at DIEMEX 2026—where industry leaders connect,
+                  Discover new possibilities at INDIAMET 2027—where industry leaders connect,
                   collaborate, and innovate.
                 </motion.p>
 
                 <div className="flex flex-wrap gap-4 mt-6 text-white/90 text-sm sm:text-base">
                   <span className="flex items-center gap-2">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#388E36]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#FF6A00]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                       <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
                     </svg>
                     22 - 24 April 2027
                   </span>
 
                   <span className="flex items-center gap-2">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#388E36]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#FF6A00]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                       <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
                     </svg>
                     Pune, India
@@ -212,7 +212,7 @@ const staggerContainer = {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-8 bg-[#388E36] hover:bg-blue-700 px-8 py-3 rounded-full font-medium"
+                    className="mt-8 bg-[#FF6A00] hover:bg-blue-700 px-8 py-3 rounded-full font-medium"
                   >
                     Enquire to Exhibit
                   </motion.button>
@@ -223,7 +223,7 @@ const staggerContainer = {
         </section>
 
 
-        {/* WHERE TRANSPORT COMES TOGETHER */}
+        {/* WHERE METROLOGY COMES TOGETHER */}
         <section className="py-16 lg:py-24">
           <SectionContainer>
             <motion.div
@@ -234,12 +234,12 @@ const staggerContainer = {
               className="font-parabolica grid lg:grid-cols-2 gap-12 items-center"
             >
               <div>
-                <h2 className="text-4xl lg:text-5xl font-bold">Where the Die & Mould Industry Comes Together</h2>
+                <h2 className="text-4xl lg:text-5xl font-bold">Where the Metrology & Quality Engineering Industry Comes Together</h2>
                 <p className="text-[#4D4D4D] mb-6 text-lg">
-                  DIEMEX is a powerful gateway to tap into India’s rapidly expanding die & mould, tooling, and precision manufacturing ecosystem—one of the world’s fastest-growing industrial markets.
+                  INDIAMET 2027 is India's first dedicated international exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering, bringing together the entire quality ecosystem under one roof.
                 </p>
                 <p className="text-[#4D4D4D] mb-8 text-lg">
-                  With India’s strong automotive, EV, aerospace, electronics, and industrial manufacturing base, supported by large-scale localisation and “Make in India” initiatives, the country offers significant growth opportunities for companies aiming to expand operations, enter new markets, and build long-term manufacturing partnerships.
+                 With India's rapidly expanding manufacturing sectors—including automotive, EV, aerospace, electronics, medical devices, defence, and industrial engineering—supported by initiatives such as Make in India, Atmanirbhar Bharat, and smart manufacturing, the country presents exceptional opportunities for companies to expand their market presence, introduce innovative technologies, and build long-term partnerships with manufacturers, OEMs, and quality professionals.
                 </p>
 
                 <ul className="space-y-4 mb-8">
@@ -259,7 +259,7 @@ const staggerContainer = {
                       whileHover={{ scale: 1.02, x: 5 }}
                       className="text-[#4D4D4D] text-[30px] cursor-pointer"
                     >
-                      <strong>200+ Exhibitors</strong>
+                      <strong>150+ Exhibitors</strong>
                     </motion.span>
                   </li>
 
@@ -278,7 +278,7 @@ const staggerContainer = {
                   <motion.button
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
-                    className="font-parabolica bg-[#388E36] hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300"
+                    className="font-parabolica bg-[#FF6A00] hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300"
                   >
                     Enquire to Exhibit
                   </motion.button>
@@ -330,10 +330,10 @@ const staggerContainer = {
             </motion.div>
 
             <p className="text-gray-700 mb-8 max-w-8xl text-lg">
-              DIEMEX offers a powerful platform for die & mould manufacturers, tooling suppliers, material specialists, and advanced manufacturing solution providers to showcase innovative technologies to a highly qualified audience of OEMs, toolroom heads, engineers, and senior decision-makers.
+              INDIAMET 2027 provides a dedicated platform for manufacturers and solution providers in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, and precision engineering to showcase their latest innovations to a highly targeted audience of OEMs, quality professionals, manufacturing leaders, plant heads, R&D teams, procurement specialists, and key decision-makers.
             </p>
             <p className="text-gray-700 mb-12 max-w-8xl text-lg">
-              With active capital investment and sourcing budgets focused on capacity expansion, localisation, quality improvement, and production efficiency, exhibiting at DIEMEX enables you to build high-value business connections, form long-term strategic partnerships, and accelerate growth in India’s competitive precision manufacturing market.
+              As India's manufacturing sector continues to invest in precision, automation, digital quality, and smart manufacturing, exhibiting at INDIAMET 2027 enables you to generate qualified business leads, strengthen your brand presence, launch new technologies, build strategic partnerships, and expand your footprint in one of the world's fastest-growing industrial markets.
             </p>
 
             <motion.div
@@ -385,7 +385,7 @@ const staggerContainer = {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-8 bg-[#388E36] hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300"
+                className="mt-8 bg-[#FF6A00] hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300"
               >
                 Enquire to Exhibit
               </motion.button>
@@ -393,7 +393,7 @@ const staggerContainer = {
           </SectionContainer>
         </section>
 
-        {/* WHY EXPAND TO DIEMEX */}
+        {/* WHY EXPAND TO INDIAMET*/}
         <section className="py-16 lg:py-24 bg-gray-50 font-parabolica">
           <SectionContainer>
             <motion.h2
@@ -402,7 +402,7 @@ const staggerContainer = {
               viewport={{ once: true }}
               className="text-4xl lg:text-5xl font-bold mb-12"
             >
-              Why Expand in India’s Die & Mould Market?
+              Why Expand in India's Metrology & Measurement Industry?
             </motion.h2>
 
             <motion.div
@@ -415,17 +415,17 @@ const staggerContainer = {
               {[
                 {
                   title: "A Fast-Growing Manufacturing Economy",
-                  text: "India is one of the world’s fastest-growing manufacturing hubs, supported by strong GDP growth and major investments in automotive, EVs, aerospace, electronics, and industrial manufacturing—all key drivers of die & mould demand.",
+                  text: "India is one of the world's fastest-growing manufacturing economies, driven by rapid investments in automotive, electric vehicles, aerospace, electronics, medical devices, defence, semiconductors, and industrial engineering. This growth is creating increasing demand for advanced metrology, precision measurement, quality inspection, calibration, testing, and smart manufacturing technologies across every sector.",
                   image: "/images/mfg-economy.jpg"
                 },
                 {
-                  title: "Rising Demand for Precision Tooling",
-                  text: "With increasing localisation, shorter product life cycles, and higher quality standards, there is growing demand for advanced dies, moulds, tooling systems, and high-performance materials across industries.",
+                  title: "Rising Demand for Precision Measurement & Quality Solutions",
+                  text: "As manufacturers embrace automation, digital transformation, and higher quality standards, the demand for advanced metrology, precision measurement, inspection systems, calibration, testing equipment, machine vision, and quality assurance technologies continues to grow across diverse industries.",
                   image: "/images/demand.jpg"
                 },
                 {
                   title: "Long-Term Growth & Investment Potential",
-                  text: "India’s die & mould and tooling sector is poised for sustained expansion through 2026 and beyond, driven by capacity expansion, technology upgrades, automation, and global sourcing shifts—creating strong opportunities for technology providers, material suppliers, and solution partners.",
+                  text: "India's metrology, measurement, and quality engineering market is poised for sustained growth, driven by Industry 4.0 adoption, smart manufacturing, automation, digital quality systems, and increasing investments in precision manufacturing. This creates significant opportunities for technology providers, equipment manufacturers, calibration laboratories, software companies, and solution partners to expand their presence in one of the world's fastest-growing industrial markets.",
                   image: "/images/investment.jpg"
                 }
               ].map((item, index) => (
@@ -476,14 +476,14 @@ const staggerContainer = {
                   <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Event Sectors</h3>
                 </div>
                 <h2 className="text-4xl lg:text-6xl font-[450] max-w-7xl">
-                  Discover the Core Sectors Powering Die & Mould Manufacturing
+                  Discover the Core Sectors Driving Metrology & Quality Engineering
                 </h2>
               </div>
               <Link href="/sectors">
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-16 lg:mt-24 bg-[#388E36] hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
+                  className="mt-16 lg:mt-24 bg-[#FF6A00] hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
                 >
                   Explore Event Sectors
                 </motion.button>
@@ -499,41 +499,41 @@ const staggerContainer = {
             >
               {[
                 {
-                  title: 'Precision Die & Mould Solutions',
-                  slug: 'precision-moulds',
-                  image: '/images/precision.jpg',
-                  description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'
-                },
-                {
-                  title: 'Tooling, Mould Bases & Standard Components',
-                  slug: 'tooling-mould-base',
-                  image: '/images/mouldbase.jpg',
-                  description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.'
-                },
-                {
-                  title: 'Machining & Finishing Technologies',
-                  slug: 'machining-finishing',
-                  image: '/images/finishing.jpg',
-                  description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
-                },
-                {
-                  title: 'Automation & Industry 4.0 Solutions',
-                  slug: 'automation-industry',
-                  image: '/images/automation.jpg',
-                  description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
-                },
-                {
-                  title: 'Design, CAD/CAM & Engineering Software',
-                  slug: 'cad-cam',
-                  image: '/images/cad.jpg',
-                  description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
-                },
-                {
-                  title: 'Tool Steel & Advanced Materials',
-                  slug: 'tool-steel',
-                  image: '/images/toolsteel.jpg',
-                  description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
-                },
+  title: 'Metrology & Precision Measurement Systems',
+  slug: 'metrology-measurement',
+  image: '/images/metrology.jpg',
+  description: 'Advanced metrology instruments, precision measuring systems, gauges, comparators, and dimensional measurement solutions for accurate quality control and manufacturing.'
+},
+{
+  title: 'Coordinate Measuring Machines (CMM) & Gauging',
+  slug: 'cmm-gauging',
+  image: '/images/cmm.jpg',
+  description: 'Bridge, horizontal arm, portable, and shop-floor CMMs, along with precision gauges and dimensional inspection systems for high-accuracy measurement applications.'
+},
+{
+  title: 'Optical, Vision & Laser Inspection Systems',
+  slug: 'vision-inspection',
+  image: '/images/vision.jpg',
+  description: 'Machine vision, optical metrology, laser scanning, 3D measurement, profile projectors, microscopes, and non-contact inspection technologies for advanced quality assurance.'
+},
+{
+  title: 'Calibration, Testing & NDT Solutions',
+  slug: 'calibration-testing',
+  image: '/images/calibration.jpg',
+  description: 'Calibration equipment, accredited laboratory services, material testing, hardness testing, force measurement, and non-destructive testing (NDT) solutions for industrial quality compliance.'
+},
+{
+  title: 'Industrial Software, Automation & Smart Metrology',
+  slug: 'smart-metrology',
+  image: '/images/software.jpg',
+  description: 'Metrology software, SPC, quality management systems, digital inspection, AI-powered analytics, industrial automation, and Industry 4.0 solutions for intelligent manufacturing.'
+},
+{
+  title: 'Quality Assurance & Precision Engineering Solutions',
+  slug: 'quality-engineering',
+  image: '/images/quality.jpg',
+  description: 'Quality control equipment, precision instruments, sensors, measurement accessories, engineering services, and integrated solutions that enhance manufacturing accuracy, productivity, and compliance.'
+},
               ].map((sector, index) => (
                 <Link
                   key={index}
@@ -675,8 +675,7 @@ const staggerContainer = {
                 transition={{ delay: 0.1 }}
                 className="text-gray-700 text-xl max-w-8xl mb-6 leading-relaxed"
               >
-                Discover the professionals shaping the future of die & mould manufacturing and precision engineering. DIEMEX attracts a highly targeted audience of decision-makers, industry leaders, and technology innovators from India and international markets.
-              </motion.p>
+Discover the professionals driving the future of metrology, measurement, quality assurance, inspection, calibration, and precision manufacturing. INDIAMET 2027 attracts a highly targeted audience of decision-makers, industry leaders, quality professionals, manufacturing experts, and technology innovators from India and international markets.              </motion.p>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -685,16 +684,15 @@ const staggerContainer = {
                 transition={{ delay: 0.2 }}
                 className="text-gray-700 text-xl max-w-8xl mb-10 leading-relaxed"
               >
-                From OEM procurement heads and plant managers to toolroom owners, design engineers, and manufacturing specialists, DIEMEX visitors arrive with clear objectives—to source advanced tooling solutions, evaluate new technologies, build strategic partnerships, and drive manufacturing competitiveness.
-              </motion.p>
+From quality heads, metrology engineers, plant managers, manufacturing leaders, R&D professionals, procurement specialists, OEMs, calibration laboratories, and testing organizations to precision engineering companies, visitors attend INDIAMET 2027 to discover the latest technologies, evaluate innovative solutions, connect with global suppliers, and build strategic business partnerships.              </motion.p>
 
               <Link href="/post-show-report">
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#388E36] hover:bg-blue-800 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300"
+                  className="bg-[#FF6A00] hover:bg-blue-800 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300"
                 >
-                  Know More Insights – Download Your Post-Show Report
+                  Know More Insights
                 </motion.button>
               </Link>
             </SectionContainer>
@@ -710,10 +708,22 @@ const staggerContainer = {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16"
               >
                 {[
-                  { value: "48%", label: "Die & Mould Manufacturers, Toolrooms & Tooling Companies" },
-                  { value: "40%", label: "OEMs, Component Manufacturers, Automotive, EV, Plastics & Industrial Companies" },
-                  { value: "31%", label: "Senior Decision-Makers & Department Heads" },
-                  { value: "12%", label: "Design Software Providers, Automation & Industry 4.0 Solutions, Material Suppliers & Technical Consultants" }
+               {
+  value: "Quality",
+  label: "Quality Heads, QA/QC Managers, Metrology Engineers & Inspection Professionals"
+},
+{
+  value: "OEMs",
+  label: "OEMs, Automotive, EV, Aerospace, Defence, Electronics, Medical Devices & Industrial Manufacturers"
+},
+{
+  value: "Leaders",
+  label: "Plant Heads, Manufacturing Leaders, Procurement Managers, R&D Teams & Senior Decision-Makers"
+},
+{
+  value: "Experts",
+  label: "Calibration Laboratories, Testing Centers, Machine Vision, CMM, NDT, Automation & Metrology Solution Providers"
+}
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -725,7 +735,7 @@ const staggerContainer = {
                     }}
                     className="p-6 rounded-xl transition-all duration-300 cursor-pointer"
                   >
-                    <div className="text-6xl font-bold text-[#388E36] mb-4 hover:text-blue-800 transition-colors duration-300">
+                    <div className="text-6xl font-bold text-[#FF6A00] mb-4 hover:text-blue-800 transition-colors duration-300">
                       {stat.value}
                     </div>
                     <p className="text-lg text-gray-800 mb-6">{stat.label}</p>
@@ -782,9 +792,9 @@ const staggerContainer = {
             >
               <Link
                 href="/exhibition-directory"
-                className="inline-block bg-[#388E36] hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-medium"
+                className="inline-block bg-[#FF6A00] hover:bg-blue-700 text-white px-6 py-3 rounded-full text-base font-medium"
               >
-                View 2026 Exhibitor List
+                View Exhibitor List
               </Link>
             </motion.button>
           </SectionContainer>
@@ -808,14 +818,13 @@ const staggerContainer = {
               className="relative z-10 text-center"
             >
               <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-                Your Journey Starts Here: Essential Travel Info for DIEMEX 2026
+                Your Journey Starts Here: Essential Travel Info for INDIAMET 2027
               </h2>
 
               <p className="text-lg mb-8 max-w-3xl mx-auto">
-                Whether you are travelling from across India or from overseas, find all
-                the essential information you need to ensure a smooth, comfortable, and
-                hassle-free visit to DIEMEX 2026 at the Auto Cluster Exhibition Centre,
-                Pune, India.
+                Whether you're travelling from within India or overseas, find everything you need to plan a smooth and 
+                comfortable visit to INDIAMET 2027 at the Auto Cluster Exhibition Centre, Pune, India. From travel and 
+                accommodation to local transportation and venue information, we've got you covered.
               </p>
 
               <Link href="/plan-your-travel">
@@ -840,7 +849,7 @@ const staggerContainer = {
           <SectionContainer>
             <div className="flex gap-2 mb-4">
               <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">DIEMEX</h3>
+              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">INDIAMET</h3>
             </div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -871,7 +880,7 @@ const staggerContainer = {
                   icon: "📦",
                   number: "01",
                   title: "Become an Exhibitor",
-                  description: "Join 200+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.",
+                  description: "Join 150+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.",
                   buttonText: "Become an Exhibitor",
                   href: "/exhibiting-enquiry"
                 },
@@ -922,7 +931,7 @@ const staggerContainer = {
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full bg-[#388E36] hover:bg-blue-700 text-white py-3 rounded-full font-medium transition-all duration-300"
+                      className="w-full bg-[#FF6A00] hover:bg-blue-700 text-white py-3 rounded-full font-medium transition-all duration-300"
                     >
                       {card.buttonText}
                     </motion.button>
@@ -966,8 +975,8 @@ const staggerContainer = {
                 className="bg-blue-50 p-8 rounded-lg transition-all duration-300"
               >
                 <h3 className="text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-4">Opening Hours</h3>
-                <p className="text-gray-800 font-medium text-lg">08-10 October 2026, 10:00 -18:00</p>
-              </motion.div>
+                <p className="text-gray-800 font-medium text-lg">22-24 April 2027, 10:00 -18:00</p>
+                             </motion.div>
             </div>
 
             <motion.div

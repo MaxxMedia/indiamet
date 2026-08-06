@@ -11,9 +11,9 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer id="footer" className="bg-[#388E36] text-white font-parabolica">
+    <footer id="footer" className="bg-[#FF6A00] text-white font-parabolica">
       {/* TOP BRAND BAR */}
-      <div className="bg-gradient-to-r from-[#06162f] to-[#0a2b57] py-10">
+      <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] py-10">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2">
@@ -37,13 +37,13 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row flex-wrap justify-between gap-10">
           {/* ABOUT */}
           <div className="lg:max-w-md space-y-5">
-            <p className="text-white/70">
+            <p className="text-white/100">
               INDIAMET 2027 is India's leading international exhibition dedicated to metrology, measurement, quality control, inspection, calibration, and precision manufacturing technologies, connecting global innovators with the manufacturing industry.
             </p>
 
             <div>
               <h5 className="mb-2 font-semibold">Contact Us</h5>
-              <div className="text-white/70">
+              <div className="text-white/100">
                 <p className="flex items-center gap-2">
                   <span>📞</span>
                   <span>+91 91483 19993</span>
@@ -63,7 +63,7 @@ export default function Footer() {
           <div className="lg:max-w-md space-y-5">
             <div>
               <h5 className="mb-2 font-semibold">Opening Hours</h5>
-              <div className="text-white/70 space-y-1">
+              <div className="text-white/100 space-y-1">
                 <p className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-green-400"></span>
                   <span><strong>22 April 2027:</strong> 10:00—18:00</span>
@@ -81,7 +81,7 @@ export default function Footer() {
 
             <div>
               <h5 className="mb-2 font-semibold">Venue</h5>
-              <p className="text-white/70">
+              <p className="text-white/100">
                 Auto Cluster Exhibition Centre, Pune, India
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function Footer() {
           <div className="lg:max-w-md space-y-5">
             <div>
               <h5 className="mb-2 font-semibold">Quick Links</h5>
-              <div className="flex flex-col gap-2 text-white/70">
+              <div className="flex flex-col gap-2 text-white/100">
                 <Link
                   href="/exhibiting-enquiry"
                   className="hover:underline hover:text-white transition-colors"
@@ -123,7 +123,7 @@ export default function Footer() {
               <h5 className="mb-2 font-semibold">Stay Connected</h5>
               <div className="flex gap-3">
                 <a
-                  href="https://www.linkedin.com/company/diemex-india/"
+                  href="https://www.linkedin.com/company/INDIAMET-india/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white hover:bg-blue-600 transition-all duration-300 hover:scale-110"
@@ -133,7 +133,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/diemex_india"
+                  href="https://www.instagram.com/INDIAMET_india"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 hover:opacity-90 transition-all duration-300 hover:scale-110"
@@ -143,7 +143,7 @@ export default function Footer() {
                 </a>
 
   <a
-                  href="https://www.facebook.com/DiemexIndia/"
+                  href="https://www.facebook.com/INDIAMETIndia/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 transition-all duration-300 hover:scale-110"
@@ -153,7 +153,7 @@ export default function Footer() {
                 </a>
 
 <a
-                  href="https://x.com/Diemex_India"
+                  href="https://x.com/INDIAMET_India"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-black hover:bg-white-600 transition-all duration-300 hover:scale-110"
@@ -166,7 +166,7 @@ export default function Footer() {
 
               </div>
 
-              <p className="mt-3 text-sm text-white/60">
+              <p className="mt-3 text-sm text-white/100">
                 Follow us for latest updates and news
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-4 border-t border-white/20 py-5 text-sm">
           {/* Organized By - Updated for mobile */}
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <span className="text-sm text-white/70 mb-2 sm:mb-0">Organised By</span>
+            <span className="text-sm text-white/100 mb-2 sm:mb-0">Organised By</span>
             
             <div className="flex items-center rounded-md bg-white px-4 py-2 shadow-sm whitespace-nowrap min-w-0">
               <span className="font-bold text-[#004A96] text-sm sm:text-base">

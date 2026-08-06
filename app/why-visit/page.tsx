@@ -70,7 +70,7 @@ export default function WhyVisit() {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 max-w-4xl"
               >
-                Why Visit DIEMEX 2026
+                Why Visit INDIAMET 2027
               </motion.h1>
 <motion.p
   initial={{ opacity: 0, y: 20 }}
@@ -84,11 +84,11 @@ export default function WhyVisit() {
     line-clamp-2 lg:line-clamp-none
   "
 >
-  Discover a focused B2B platform bringing together die & mould manufacturers,
-  tooling suppliers, and precision manufacturing technology providers. DIEMEX
-  offers visitors the opportunity to explore new solutions, connect directly
-  with exhibitors, and gain insights into trends shaping India's manufacturing
-  and automotive sectors.
+  Discover India's first dedicated B2B exhibition for metrology, measurement technology, 
+  quality assurance, inspection, calibration, testing, and precision engineering. INDIAMET 2027 
+  offers visitors the opportunity to explore the latest technologies, connect directly with global 
+  solution providers, compare innovative products, and gain valuable insights into the trends driving 
+  quality, precision, and smart manufacturing across India's industrial sectors.
 </motion.p>
 
 
@@ -123,18 +123,25 @@ export default function WhyVisit() {
           >
             <SectionContainer>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 max-w-10xl leading-tight">
-                The Entire Die & Mould and Precision Manufacturing Ecosystem
-                Brought Together Under One Roof
+                The Complete Metrology, Measurement & Quality Engineering Ecosystem Under One Roof
               </h2>
 
               <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-10xl mb-6 sm:mb-10 leading-relaxed">
-                As India's manufacturing sector continues to grow, DIEMEX provides a focused platform for the die & mould, tooling, and precision engineering community to connect, collaborate, and do business. The exhibition enables manufacturers, OEMs, and technology providers to meet potential partners, expand regional and international networks, exchange knowledge, and discover the latest innovations shaping the future of manufacturing.
+                As India's manufacturing industry embraces Industry 4.0, automation, and digital quality transformation, 
+                INDIAMET 2027 provides the country's first dedicated platform for the metrology, measurement, inspection, 
+                calibration, testing, machine vision, and quality engineering community to connect, collaborate, and grow.
+              </p>
+               <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-10xl mb-6 sm:mb-10 leading-relaxed">
+                The exhibition brings together global technology leaders, manufacturers, OEMs, quality professionals, 
+                calibration laboratories, research institutions, system integrators, and solution providers to showcase 
+                the latest innovations, exchange technical knowledge, build strategic partnerships, and accelerate the 
+                adoption of world-class measurement and quality technologies across India's manufacturing sectors.
               </p>
               <Link href='/contact-us'>
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#388E36] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
+                  className="bg-[#FF6A00] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
                 >
                   Contact Us
                 </motion.button>
@@ -154,7 +161,7 @@ export default function WhyVisit() {
               >
                 {[
                   { value: "10,000", label: "Visitors" },
-                  { value: "200+", label: "Exhibitors" },
+                  { value: "150+", label: "Exhibitors" },
                   { value: "5+", label: "Countries" },
                   { value: "10", label: "Event Sectors" }
                 ].map((stat, index) => (
@@ -168,7 +175,7 @@ export default function WhyVisit() {
                     }}
                     className="p-4 sm:p-6 rounded-xl transition-all duration-300 cursor-pointer"
                   >
-                    <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#388E36] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
+                    <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FF6A00] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
                       {stat.value}
                     </div>
                     <p className="text-sm sm:text-base lg:text-lg text-gray-800 mb-4 sm:mb-6">{stat.label}</p>
@@ -177,7 +184,7 @@ export default function WhyVisit() {
                       whileInView={{ width: "100%" }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8, delay: index * 0.1 }}
-                      className="h-px bg-[#388E36]"
+                      className="h-px bg-[#FF6A00]"
                     />
                   </motion.div>
                 ))}
@@ -200,19 +207,23 @@ export default function WhyVisit() {
                 className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-0"
               >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
-                  Connect with the Die & Mould Manufacturing
+                  Connect with the Global Metrology & Quality Engineering
                   <br className="hidden sm:block" />
-                  Community at DIEMEX
+                  Community at INDIAMET
                 </h2>
 
                 <p className="text-gray-600 text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-10 leading-relaxed">
-                  DIEMEX brings together die & mould manufacturers, tooling suppliers, and precision manufacturing solution providers from India and abroad, creating a focused platform for networking, collaboration, and business over three action-packed days.
+                  INDIAMET 2027 brings together global leaders in metrology, measurement technology, quality assurance, inspection systems, 
+                  calibration, testing, machine vision, precision instruments, industrial automation, and smart manufacturing. Over three 
+                  focused days, the exhibition provides a dedicated platform to showcase innovations, exchange technical expertise, build 
+                  strategic partnerships, and create new business opportunities across India's rapidly growing manufacturing and quality 
+                  engineering ecosystem.
                 </p>
                 <Link href="/exhibition-directory">
                  <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#388E36] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 mb-6 sm:mb-0 w-full sm:w-auto"
+                  className="bg-[#FF6A00] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 mb-6 sm:mb-0 w-full sm:w-auto"
                 >
                   Explore the Exhibitor list
                 </motion.button>
@@ -261,7 +272,7 @@ export default function WhyVisit() {
             </SectionContainer>
           </section>
 
-          {/* WHY ATTEND DIEMEX */}
+          {/* WHY ATTEND INDIAMET */}
           <section className="py-12 sm:py-16 lg:py-28 bg-white">
             <SectionContainer>
               <motion.h2
@@ -270,7 +281,7 @@ export default function WhyVisit() {
                 viewport={{ once: true }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center sm:text-left"
               >
-                Why Attend DIEMEX 2026
+                Why Attend INDIAMET 2027
               </motion.h2>
 
               <motion.div
@@ -280,27 +291,28 @@ export default function WhyVisit() {
                 variants={staggerContainer}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8"
               >
-                {[
-                  {
-                    image: "/images/pic1.JPG",
-                    title: "Connect with Key Industry Players",
-                    text: "DIEMEX offers a focused platform to meet die & mould manufacturers, tooling suppliers, and precision manufacturing solution providers from India and international markets—helping you connect with the right partners for your business."
-                  },
-                  {
-                    image:  "/images/pic2.JPG",
-                    title: "Discover The Latest Innovations",
-                    text: "Visit DIEMEX to explore the newest developments in die & mould, tooling, and precision manufacturing technologies—and understand how they can enhance productivity, quality, and competitiveness."
-                  },
-                  {
-                    image:  "/images/pic3.JPG",
-                    title: "Build the Right Business Deals",
-                    text: "Engage directly with manufacturers and technology suppliers to discuss requirements, evaluate solutions, and establish long-term business partnerships."
-                  },
-                  {
-                    image:  "/images/pic4.JPG",
-                    title: "Stay Ahead of Industry Trends",
-                    text: "Gain insights into emerging technologies, market developments, and best practices through DIEMEX's conference sessions led by industry experts."
-                  }
+               {[
+  {
+    image: "/images/pic1.JPG",
+    title: "Connect with Global Metrology Leaders",
+    text: "Meet leading manufacturers, technology providers, calibration laboratories, quality professionals, and solution providers from India and around the world, all under one roof at INDIAMET 2027."
+  },
+  {
+    image: "/images/pic2.JPG",
+    title: "Discover Next-Generation Measurement Technologies",
+    text: "Explore the latest innovations in metrology, coordinate measuring machines (CMM), optical inspection, machine vision, calibration, testing, and precision measurement solutions designed for modern manufacturing."
+  },
+  {
+    image: "/images/pic3.JPG",
+    title: "Build Strategic Business Partnerships",
+    text: "Connect directly with OEMs, manufacturers, procurement leaders, quality heads, and industrial decision-makers to evaluate technologies, discuss business opportunities, and establish long-term partnerships."
+  },
+  {
+    image: "/images/pic4.JPG",
+    title: "Stay Ahead with Industry Insights",
+    text: "Discover emerging trends in metrology, quality engineering, smart manufacturing, AI-powered inspection, automation, and Industry 4.0 through expert-led conferences, technical presentations, and live technology demonstrations."
+  }
+
                 ].map((card, index) => (
                   <motion.div
                     key={index}
@@ -341,19 +353,19 @@ export default function WhyVisit() {
             >
               <SectionContainer>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 max-w-12xl leading-tight">
-                  Proven Success: What Visitors Say About DIEMEX
+                  Why Attend INDIAMET 2027
                 </h2>
 
                 <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-8xl mb-6 sm:mb-10 leading-relaxed">
-                  Here are DIEMEX 2026–aligned rewrites, keeping the same tone and intent but suited to a growing, credibility-focused exhibition. The first option is recommended.
+                  Experience India's first dedicated exhibition for metrology and quality engineering, where manufacturers, OEMs, technology providers, and quality professionals come together to discover innovations, exchange knowledge, and create new business opportunities.
                 </p>
                 <Link href='/post-show-report'>
                   <motion.button
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-[#388E36] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
+                    className="bg-[#FF6A00] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
                   >
-                    Download Your Post-Show Report
+                    Download Brochure
                   </motion.button>
                 </Link>
               </SectionContainer>
@@ -369,10 +381,22 @@ export default function WhyVisit() {
                   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 lg:gap-16"
                 >
                   {[
-                    { value: "98%", label: "Were Satisfied with the Exhibition" },
-                    { value: "78%", label: "A focused exhibition with a highly relevant industry audience." },
-                    { value: "78%", label: "Sourced New Clients and Partners" },
-                    { value: "63%", label: "Generated Quality Leads at the Show" }
+                      {
+    value: "100%",
+    label: "Dedicated to Metrology, Measurement & Quality Engineering"
+  },
+  {
+    value: "B2B",
+    label: "Focused Business Platform for Manufacturers, OEMs & Technology Providers"
+  },
+  {
+    value: "Global",
+    label: "International Participation from Leading Technology Brands & Industry Experts"
+  },
+  {
+    value: "3 Days",
+    label: "Networking, Technology Showcases & Business Opportunities"
+  }
                   ].map((stat, index) => (
                     <motion.div
                       key={index}
@@ -384,7 +408,7 @@ export default function WhyVisit() {
                       }}
                       className="p-4 sm:p-6 rounded-xl transition-all duration-300 cursor-pointer"
                     >
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#388E36] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#FF6A00] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
                         {stat.value}
                       </div>
                       <p className="text-sm sm:text-base lg:text-lg text-gray-800 mb-4 sm:mb-6">{stat.label}</p>
@@ -393,7 +417,7 @@ export default function WhyVisit() {
                         whileInView={{ width: "100%" }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: index * 0.1 }}
-                        className="h-px bg-[#388E36]"
+                        className="h-px bg-[#FF6A00]"
                       />
                     </motion.div>
                   ))}
@@ -402,7 +426,7 @@ export default function WhyVisit() {
             </section>
           </div>
 
-          {/* WHO IS DIEMEX FOR */}
+          {/* WHO IS INDIAMET FOR */}
           <section className="py-12 sm:py-16 lg:py-28 bg-white">
             <SectionContainer>
               <motion.h2
@@ -411,7 +435,7 @@ export default function WhyVisit() {
                 viewport={{ once: true }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center sm:text-left"
               >
-                Who is DIEMEX for?
+                Who Should Visit INDIAMET 2027?
               </motion.h2>
 
               <motion.div
@@ -422,33 +446,33 @@ export default function WhyVisit() {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
               >
                 {[
-                  [
-                    "Die & Mould Manufacturers",
-                    "Tooling & Tool Room Owners",
-                    "Automotive OEMs & Tier-1 / Tier-2 Suppliers",
-                    "Production & Manufacturing Heads",
-                    "Design, CAD / CAM & R&D Engineers",
-                    "Injection Moulding & Casting Professionals",
-                    "Press Tool & Sheet Metal Component Manufacturers"
-                  ],
-                  [
-                    "CNC Machining & Precision Engineering Companies",
-                    "Industrial Automation & Robotics Professionals",
-                    "Materials, Steel & Special Alloy Suppliers",
-                    "Quality, Testing & Metrology Professionals",
-                    "Maintenance, Tooling & Plant Managers",
-                    "Procurement & Strategic Sourcing Heads",
-                    "New Product Development (NPD) Teams"
-                  ],
-                  [
-                    "MSME & Large Manufacturing Enterprise Owners",
-                    "Industry Consultants & Technology Advisors",
-                    "Academic Institutions & Skill Development Bodies",
-                    "Industry Associations & Government Bodies",
-                    "Export-Oriented Manufacturing Professionals",
-                    "Transportation Infrastructure Planners",
-                    "Finance, Leasing & Industrial Service Providers"
-                  ]
+                   [
+    "Quality Heads, QA/QC Managers & Quality Engineers",
+    "Metrology Engineers & Measurement Specialists",
+    "Calibration Laboratories & Testing Centres",
+    "Inspection & Non-Destructive Testing (NDT) Professionals",
+    "Manufacturing Heads & Plant Managers",
+    "Production Engineers & Process Improvement Teams",
+    "OEMs & Tier-1 / Tier-2 Manufacturing Suppliers"
+  ],
+  [
+    "Automotive, EV, Aerospace & Defence Manufacturers",
+    "Electronics, Semiconductor & Medical Device Manufacturers",
+    "Precision Engineering & Industrial Machinery Companies",
+    "Industrial Automation & Industry 4.0 Specialists",
+    "Machine Vision & Optical Inspection Professionals",
+    "Coordinate Measuring Machine (CMM) Users",
+    "Procurement & Strategic Sourcing Professionals"
+  ],
+  [
+    "Research Institutions, Universities & Technical Training Centres",
+    "Standards, Certification & Accreditation Bodies",
+    "Government Organizations & Industry Associations",
+    "Industrial Distributors, Dealers & Solution Providers",
+    "Engineering Consultants & System Integrators",
+    "Business Owners, Entrepreneurs & Senior Decision-Makers",
+    "R&D, Design & Product Development Teams"
+  ]
                 ].map((list, index) => (
                   <motion.div
                     key={index}
@@ -517,9 +541,9 @@ export default function WhyVisit() {
         <motion.button
           whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
           whileTap={{ scale: 0.95 }}
-          className="bg-[#388E36] hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
+          className="bg-[#FF6A00] hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
         >
-          View 2026 Exhibitor List
+          View Exhibitor List
         </motion.button>
       </Link>
     </div>
@@ -548,7 +572,7 @@ export default function WhyVisit() {
                 {[
   { 
     id: 1, 
-    title: 'Precision Die & Mould Solutions',
+    title: 'Metrology & Precision Measurement Systems',
 
     slug: 'precision-moulds',
      image: '/images/precision.jpg',
@@ -626,7 +650,7 @@ export default function WhyVisit() {
                   <motion.button
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-[#388E36] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
+                    className="bg-[#FF6A00] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
                   >
                     Explore All the Event Sectors
                   </motion.button>
@@ -650,7 +674,7 @@ export default function WhyVisit() {
                     More Than Just an Exhibition
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
-                    A focused die & mould and precision manufacturing exhibition that combines live technology showcases with expert-led knowledge sharing.
+                    A dedicated platform for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering that combines live technology demonstrations, technical conferences, expert-led knowledge sharing, and high-value business networking.
                   </p>
                 </div>
 
@@ -665,7 +689,7 @@ export default function WhyVisit() {
                   <motion.button
                     whileHover={{ scale: 1.1, backgroundColor: "#1d4ed8" }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#388E36] text-white flex items-center justify-center transition-all duration-300"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FF6A00] text-white flex items-center justify-center transition-all duration-300"
                   >
                     →
                   </motion.button>
@@ -681,15 +705,15 @@ export default function WhyVisit() {
               >
                 {[
                   {
-                    title: "Conference Programme",
-                    text: "2 Days focused industry conference delivering practical insights to address real business challenges — from emerging die & mould technologies and tooling innovations to future trends shaping precision manufacturing.",
+                    title: "INDIAMET Summit",
+                    text: "A 2-day industry summit featuring expert speakers, technical presentations, panel discussions, and case studies on the latest developments in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, AI-powered quality systems, Industry 4.0, and precision manufacturing. Gain practical insights into emerging technologies, global best practices, and the future of quality engineering.",
                     image:  "/images/conferen.jpg",
-                    link: "/conference",
+                    link: "/summit",
                     external:true
                   },
                   {
-                   title: "ToolingTrends.com",
-                text: "A premier knowledge-sharing platform by ToolingTrends.com, bringing together industry leaders, innovators, and manufacturing professionals to exchange insights and drive growth across the tooling, die & mould, and precision engineering sectors.",
+                   title: "Global Metrology Excellence Awards (GMEA)",
+                text: "The Global Metrology Excellence Awards (GMEA) celebrates outstanding achievements in metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. The awards recognize organizations, innovators, technology leaders, and industry professionals who are driving excellence, innovation, and quality across the global manufacturing ecosystem.",
                 image: "/images/tooling-visit.png",
                 link: "https://toolingtrends.com",
                 external: true
@@ -713,7 +737,7 @@ export default function WhyVisit() {
           }}
           className="rounded-lg sm:rounded-xl overflow-hidden border border-gray-200 transition-all duration-300 cursor-pointer h-full"
         >
-          <div className="bg-[#06162f] text-white p-4 sm:p-6 lg:p-8">
+          <div className="bg-[#01163A] text-white p-4 sm:p-6 lg:p-8">
             <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 hover:text-blue-300 transition-colors duration-300">
               {card.title}
             </h3>
@@ -770,29 +794,29 @@ export default function WhyVisit() {
               >
                 {[
                   {
-                    icon: "📦",
-                    number: "01",
-                    title: "Become an Exhibitor",
-                    description: "Showcase your die & mould, tooling, and manufacturing solutions over three focused business days and connect with a rapidly growing base of qualified buyers and decision-makers.",
-                    buttonText: "Become an Exhibitor",
-                    href: "/exhibiting-enquiry"
-                  },
-                  {
-                    icon: "📘",
-                    number: "02",
-                    title: "Download Event Brochure",
-                    description: "Find out what we and how our brochure has the key information to prepare up to date brochure.",
-                    buttonText: "Download Now",
-                    href: "/event-brochure"
-                  },
-                  {
-                    icon: "👥",
-                    number: "03",
-                    title: "Become a Visitor",
-                    description: "Why not visit the market? Why not visit the show and what to expect for the following edition.",
-                    buttonText: "Visitor Registration",
-                    href: "/visitor-registration"
-                  }
+    icon: "📦",
+    number: "01",
+    title: "Become an Exhibitor",
+    description: "Showcase your metrology, measurement, inspection, calibration, testing, quality assurance, and precision engineering solutions while connecting with OEMs, manufacturers, quality professionals, and key decision-makers over three focused business days.",
+    buttonText: "Become an Exhibitor",
+    href: "/exhibiting-enquiry"
+  },
+  {
+    icon: "📘",
+    number: "02",
+    title: "Download Event Brochure",
+    description: "Explore everything about INDIAMET 2027, including exhibitor benefits, product sectors, visitor profile, event highlights, sponsorship opportunities, and how your business can be part of India's first dedicated metrology exhibition.",
+    buttonText: "Download Brochure",
+    href: "/event-brochure"
+  },
+  {
+    icon: "👥",
+    number: "03",
+    title: "Become a Visitor",
+    description: "Register to discover the latest innovations in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, and precision engineering while networking with industry leaders and global technology providers.",
+    buttonText: "Visitor Registration",
+    href: "/visitor-registration"
+  }
                 ].map((card, index) => (
                   <motion.div
                     key={index}
@@ -805,7 +829,7 @@ export default function WhyVisit() {
                     className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-8 transition-all duration-300 cursor-pointer"
                   >
                     <div className="flex items-center justify-between mb-4 sm:mb-6">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#388E36] rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#FF6A00] rounded-full flex items-center justify-center">
                         <span className="text-lg sm:text-xl lg:text-2xl">{card.icon}</span>
                       </div>
                       <motion.span
@@ -824,7 +848,7 @@ export default function WhyVisit() {
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="w-full bg-[#388E36] hover:bg-blue-700 text-white py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
+                        className="w-full bg-[#FF6A00] hover:bg-blue-700 text-white py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
                       >
                         {card.buttonText}
                       </motion.button>
@@ -868,7 +892,7 @@ export default function WhyVisit() {
                   className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg transition-all duration-300"
                 >
                   <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-2 sm:mb-4">Opening Hours</h3>
-                  <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">08-10 October 2026, 10:00 - 18:00</p>
+                  <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">22-24 April 2027, 10:00 - 18:00</p>
                 </motion.div>
               </div>
 

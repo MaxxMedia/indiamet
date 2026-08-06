@@ -3,8 +3,8 @@ import SectionContainer from "@/components/UI/SectionContainer"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
 
 export const metadata: Metadata = {
-  title: "Cookies Policy | DIEMEX",
-  description: "DIEMEX Cookies Policy - Learn how we use cookies and similar technologies on our website to enhance your browsing experience.",
+  title: "Cookies Policy | INDIAMET",
+  description: "INDIAMET Cookies Policy - Learn how we use cookies and similar technologies on our website to enhance your browsing experience.",
 }
 
 export default function CookiesPolicyPage() {
@@ -30,43 +30,43 @@ export default function CookiesPolicyPage() {
               {/* Introduction */}
               <div className="mb-8 pb-6 border-b">
                 <p className="text-lg text-gray-700">
-                  This Cookies Policy explains how DIEMEX ("we", "our", "us") uses cookies and similar technologies on the DIEMEX website ("Platform"). By using the Platform, you agree to the use of cookies in accordance with this Policy.
+                  This Cookies Policy explains how INDIAMET ("we", "our", "us") uses cookies and similar technologies on the INDIAMET website ("Platform"). By using the Platform, you agree to the use of cookies in accordance with this Policy.
                 </p>
               </div>
 
               {/* Content Sections */}
               <div className="space-y-8">
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">1. Notice</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">1. Notice</h2>
                   <p className="text-gray-700">
-                    When you visit the DIEMEX Platform for the first time, you will be notified about the use of cookies. By continuing to browse or use the Platform without changing your cookie settings, you consent to the use of cookies as described in this Policy.
+                    When you visit the INDIAMET Platform for the first time, you will be notified about the use of cookies. By continuing to browse or use the Platform without changing your cookie settings, you consent to the use of cookies as described in this Policy.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">2. What Are Cookies?</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">2. What Are Cookies?</h2>
                   <p className="text-gray-700">
                     Cookies are small text files stored on your computer, mobile phone, or other devices when you visit a website. Cookies help the Platform recognise your device and store certain information such as browser type, operating system, language preferences, and other settings to enhance your browsing experience.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">3. Purpose of Using Cookies</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">3. Purpose of Using Cookies</h2>
                   <div className="space-y-3 text-gray-700">
-                    <p>DIEMEX uses cookies for the following purposes:</p>
+                    <p>INDIAMET uses cookies for the following purposes:</p>
                     <ul className="list-disc pl-5 space-y-2">
                       <li>To ensure proper functioning of the Platform</li>
                       <li>To improve website performance and user experience</li>
                       <li>To remember user preferences and settings</li>
                       <li>To analyse website traffic and usage statistics</li>
                       <li>To support secure login sessions and form submissions</li>
-                      <li>To personalise content, communications, and promotional messages related to DIEMEX events</li>
+                      <li>To personalise content, communications, and promotional messages related to INDIAMET events</li>
                     </ul>
                   </div>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">4. Types of Cookies Used</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">4. Types of Cookies Used</h2>
                   <div className="space-y-3 text-gray-700">
                     <p>The Platform may collect the following information through cookies:</p>
                     <ul className="list-disc pl-5 space-y-2">
@@ -77,13 +77,13 @@ export default function CookiesPolicyPage() {
                       <li>Session duration and navigation behaviour</li>
                     </ul>
                     <p className="pt-2 font-medium">
-                      DIEMEX does not use cookies to collect sensitive personal data.
+                      INDIAMET does not use cookies to collect sensitive personal data.
                     </p>
                   </div>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">5. Cookie Management and Control</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">5. Cookie Management and Control</h2>
                   <div className="space-y-4 text-gray-700">
                     <p>
                       You can manage or disable cookies at any time through your browser settings. Most browsers automatically accept cookies, but you can choose to block or delete cookies or receive alerts when cookies are being sent.
@@ -112,26 +112,26 @@ export default function CookiesPolicyPage() {
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">6. Updates to This Policy</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">6. Updates to This Policy</h2>
                   <p className="text-gray-700">
-                    DIEMEX reserves the right to update this Cookies Policy at any time. Any changes will be posted on this page. Continued use of the Platform constitutes acceptance of the updated Policy.
+                    INDIAMET reserves the right to update this Cookies Policy at any time. Any changes will be posted on this page. Continued use of the Platform constitutes acceptance of the updated Policy.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#388E36] mb-3">7. Contact Information</h2>
+                  <h2 className="text-2xl font-bold text-[#FF6A00] mb-3">7. Contact Information</h2>
                   <p className="text-gray-700 mb-4">
                     If you have any questions about this Cookies Policy, please contact:
                   </p>
                   <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
                     <div className="flex items-center gap-3">
                       <div className="flex-shrink-0">
-                        <svg className="w-5 h-5 text-[#388E36]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="w-5 h-5 text-[#FF6A00]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
                       </div>
-                      <span className="font-medium">Email: info@diemex.in</span>
+                      <span className="font-medium">Email: info@INDIAMET.in</span>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function CookiesPolicyPage() {
 
               {/* Browser Cookie Settings Guide */}
               <div className="mt-10 p-6 bg-blue-50 rounded-lg border border-blue-200">
-                <h3 className="text-xl font-semibold text-[#388E36] mb-4">How to Manage Cookies in Different Browsers</h3>
+                <h3 className="text-xl font-semibold text-[#FF6A00] mb-4">How to Manage Cookies in Different Browsers</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div className="bg-white p-4 rounded border">
                     <h4 className="font-semibold text-gray-800 mb-2">Google Chrome</h4>
@@ -183,7 +183,7 @@ export default function CookiesPolicyPage() {
             <div className="mt-12 text-center">
               <div className="inline-flex items-center gap-4 text-gray-600">
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#388E36]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-[#FF6A00]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                   </svg>
                   <span>You can control cookie settings through your browser preferences</span>

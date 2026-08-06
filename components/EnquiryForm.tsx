@@ -14,19 +14,20 @@ import {
 import { submitContactForm, PROJECT_ID_VAR } from '@/lib/graphql-client';
 
 const VISITOR_PROFILES = [
-    { value: 'Automotive', label: 'Automotive (Auto OEMs, Auto Ancillary)' },
-    { value: 'Consumer Appliances', label: 'Consumer Appliances' },
-    { value: 'Electricals', label: 'Electricals' },
-    { value: 'Electronics', label: 'Electronics' },
-    { value: 'Packaging', label: 'Packaging' },
-    { value: 'Plastic Processing', label: 'Plastic Processing' },
-    { value: 'Logistics', label: 'Logistics & Supply Chain' },
-    { value: 'Warehousing', label: 'Warehousing & Storage' },
-    { value: 'Transport', label: 'Transport Services' },
-    { value: 'IT Solutions', label: 'IT Solutions' },
-    { value: 'Manufacturing', label: 'Manufacturing' },
-    { value: 'Retail', label: 'Retail & E-commerce' },
-    { value: 'Consulting', label: 'Consulting Services' },
+{ value: 'Automotive', label: 'Automotive & Auto Components' },
+  { value: 'Aerospace', label: 'Aerospace & Aviation' },
+  { value: 'Defence', label: 'Defence & Defence Manufacturing' },
+  { value: 'Electronics', label: 'Electronics & Semiconductor Manufacturing' },
+  { value: 'Medical', label: 'Medical Devices & Healthcare Manufacturing' },
+  { value: 'Industrial', label: 'Industrial Machinery & Precision Engineering' },
+  { value: 'Metalworking', label: 'Metalworking, Machine Tools & Fabrication' },
+  { value: 'Foundry', label: 'Foundry, Casting & Forging' },
+  { value: 'Quality', label: 'Quality Assurance, Inspection & Testing' },
+  { value: 'Calibration', label: 'Calibration Laboratories & Testing Centres' },
+  { value: 'Research', label: 'Research Institutes, R&D & Educational Institutions' },
+  { value: 'Automation', label: 'Industrial Automation & Industry 4.0' },
+  { value: 'OEMs', label: 'OEMs, Tier-1 & Tier-2 Suppliers' },
+  { value: 'Energy', label: 'Energy, Power & Process Industries' }
 ];
 
 export default function EnquiryForm() {

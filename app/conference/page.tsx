@@ -20,10 +20,10 @@ import BackToTop from '../exhibitor-resource-center/component/BackToTop';
 import TransRussiaSummitProgram from './components/ConferenceProgramme';
 
 export const metadata: Metadata = {
-  title: 'Diemex Conference | October 08-10, 2026, Pune',
+  title: 'INDIAMET SUMMIT | April 22-23, 2027, Pune',
   description: 'Annual conference for professionals in the tooling industry.',
   openGraph: {
-    title: 'Diemex Conference | October 08-10, 2026, Pune',
+    title: 'INDIAMET Conference | April 22-23, 2027, Pune',
     description: 'Annual conference for professionals in the tooling industry.',
     images: [''],
   },
@@ -284,8 +284,8 @@ export default function HomePage() {
             <section className="w-full">
               <div className="mx-auto w-full max-w-[1240px] lg:max-w-[1320px] xl:max-w-[1440px] 2xl:max-w-[1600px] px-4 sm:px-6 lg:px-8">
                 <SpeakersSection
-                  title="Top speakers Diemex Conference 2026"
-                  subtitle="The largest Die, Mould and Tooling leaders"
+                  title="Top Speakers | INDIAMET Summit 2027"
+                  subtitle="The Leading Voices in Metrology, Precision Measurement & Quality Engineering"
                   speakers={speakersData}
                 />
               </div>

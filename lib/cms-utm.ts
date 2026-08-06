@@ -112,7 +112,7 @@ export async function createUTMInCMS(utmData: any): Promise<CMSUTMCampaign | nul
         url: (
             utmData.landingPage ||
             utmData.utm_url ||
-            (typeof window !== 'undefined' ? window.location.href : 'https://diemex.in')
+            (typeof window !== 'undefined' ? window.location.href : 'https://INDIAMET.in')
         ).toLowerCase(),
         projectId: PROJECT_ID_VAR.projectId,
     };

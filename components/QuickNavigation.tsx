@@ -6,7 +6,7 @@ const quickNavItems = [
   {
     id: 1,
     title: 'Become an Exhibitor',
-    description: 'Connect with 10,000+ manufacturing professionals, OEMs, and decision-makers over 3 power-packed days of business, networking, and technology showcase at DIEMEX 2026.',
+    description: 'Showcase your innovations at INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Connect with manufacturers, OEMs, quality professionals, and key decision-makers over three focused days of business networking and technology showcase.',
     image: '/images/exhibitor.jpg',
     cta: {
       text: 'Book A Stand',
@@ -16,8 +16,8 @@ const quickNavItems = [
   },
   {
     id: 2,
-    title: 'Download Diemex 2026 Event Brochure',
-    description: 'Discover who we are, the industries we serve, visitor profiles, sector highlights, and how DIEMEX can help you expand your footprint in India’s rapidly growing die, mould, and precision engineering market — all in one comprehensive brochure.',
+    title: 'Download the INDIAMET 2027 Event Brochure',
+    description: 'Discover everything about INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Explore the event overview, product sectors, visitor profile, exhibitor opportunities, and how INDIAMET can help you connect with key decision-makers and grow your business in India"s rapidly expanding manufacturing and quality engineering ecosystem.',
     image: '/images/brochure.jpg',
     cta: {
       text: 'Download Now',
@@ -28,7 +28,7 @@ const quickNavItems = [
   {
     id: 3,
     title: 'Become a Visitor',
-    description: 'Not ready to exhibit? Register as a visitor and explore cutting-edge machine tools, tooling innovations, automation technologies, and advanced manufacturing solutions — all under one roof.',
+    description: 'Not ready to exhibit? Register as a visitor and discover the latest innovations in metrology, measurement technology, quality assurance, inspection systems, calibration, testing, machine vision, precision instruments, and smart manufacturing solutions—all under one roof at INDIAMET 2027.',
     image: '/images/visitor.jpg',
     cta: {
       text: 'Register Now',
@@ -53,7 +53,7 @@ export default function QuickNavigation() {
           {quickNavItems.map((item) => (
             <div key={item.id} className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#388E36] flex items-center justify-center">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#FF6A00] flex items-center justify-center">
                   <span className="text-white text-xl lg:text-2xl font-bold">{item.number}</span>
                 </div>
                 <span className="text-2xl font-bold text-gray-300">{item.number}</span>
@@ -65,7 +65,7 @@ export default function QuickNavigation() {
               <div className="mt-auto">
                 <Link 
                   href={item.cta.href}
-                  className="block w-full rounded-full bg-[#388E36] text-white text-center font-semibold py-3 px-6 hover:bg-[#0074D9] transition-colors text-sm lg:text-base"
+                  className="block w-full rounded-full bg-[#FF6A00] text-white text-center font-semibold py-3 px-6 hover:bg-[#0074D9] transition-colors text-sm lg:text-base"
                 >
                   {item.cta.text}
                 </Link>

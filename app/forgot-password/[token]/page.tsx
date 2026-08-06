@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { KeyIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline';
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://diemex-backend.onrender.com';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://INDIAMET-backend.onrender.com';
 
 export default function ResetPasswordPage() {
   const params = useParams();

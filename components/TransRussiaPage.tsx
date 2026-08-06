@@ -68,7 +68,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
   const [showThankYouPopup, setShowThankYouPopup] = useState(false);
   const [submittedName, setSubmittedName] = useState('');
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://diemex-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
 
   // Fetch countries
   useEffect(() => {
@@ -301,7 +301,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
             <SectionContainer>
               <div className="flex flex-col justify-end !pt-0 !pb-16">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 mt-15">
-                  {pageData?.Header?.Title || 'TransRussia 2026'}
+                  {pageData?.Header?.Title || 'TransRussia 2027'}
                 </h1>
                 <p className="text-lg text-gray-600 max-w-8xl">
                   Register now to access Eurasia's premier transport and logistics exhibition. Connect with industry leaders, discover innovations, and expand your network.
@@ -318,10 +318,10 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                     Get Your Visitor Pass
                   </span>
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                    Register for Diemex 2026
+                    Register for INDIAMET 2027
                   </h2>
                   <p className="text-gray-600 text-lg">
-                    Join 10,000+ industry professionals and 200+ exhibitors at the heart of Pune's Auto Cluster Exhibition Centre.
+                    Join 10,000+ industry professionals and 150+ exhibitors at the heart of Pune's Auto Cluster Exhibition Centre.
                   </p>
                 </div>
 
@@ -532,20 +532,20 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition hover:border-blue-300 bg-white cursor-pointer"
                       >
                         <option value="">Select your industry profile</option>
-                        <option value="Automotive">Automotive (Auto OE Ms, Auto Ancillary)</option>
-                        <option value="Consumer Appliances">Consumer Appliances</option>
-                        <option value="Electricals">Electricals</option>
-                        <option value="Electronics">Electronics</option>
-                        <option value="Packaging">Packaging</option>
-                        <option value="Plastic Processing">Plastic Processing</option>
-                        <option value="Visitors">Visitors Visitor Registration</option>
-                        <option value="Logistics">Logistics & Supply Chain</option>
-                        <option value="Warehousing">Warehousing & Storage</option>
-                        <option value="Transport">Transport Services</option>
-                        <option value="IT Solutions">IT Solutions</option>
-                        <option value="Manufacturing">Manufacturing</option>
-                        <option value="Retail">Retail & E-commerce</option>
-                        <option value="Consulting">Consulting Services</option>
+                        <option value="Automotive">Automotive & Auto Components</option>
+                        <option value="Aerospace">Aerospace & Aviation</option>
+                        <option value="Defence ">Defence & Defence Manufacturing</option>
+                        <option value="Electronics">Electronics & Semiconductor Manufacturing</option>
+                        <option value="Medical">Medical Devices & Healthcare Manufacturing</option>
+                        <option value="Industrial">Industrial Machinery & Precision Engineering</option>
+                        <option value="Metalworking">Metalworking, Machine Tools & Fabricatio</option>
+                        <option value="Foundry">Foundry, Casting & Forging</option>
+                        <option value="Quality">Quality Assurance, Inspection & Testing</option>
+                        <option value="Calibration">Calibration Laboratories & Testing Centre</option>
+                        <option value="Research">Research Institutes, R&D & Educational Institutions</option>
+                        <option value="Automation">Industrial Automation & Industry 4.0</option>
+                        <option value="OEMs">OEMs, Tier-1 & Tier-2 Supplier</option>
+                        <option value="Energy">Energy, Power & Process Industries</option>
                       </select>
                     </div>
 
@@ -559,7 +559,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                         className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-0.5 cursor-pointer"
                       />
                       <label htmlFor="terms" className="ml-3 text-sm text-gray-600 cursor-pointer select-none">
-                        I agree to receive marketing communications, updates, and promotional materials from Diemex Exhibition. 
+                        I agree to receive marketing communications, updates, and promotional materials from INDIAMET Exhibition. 
                         I can unsubscribe anytime by clicking the "unsubscribe" link in emails. 
                         For more information on how we handle your data, please refer to our{' '}
                         <a 
@@ -613,8 +613,8 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                 <div className="mt-8 text-center text-gray-600">
                   <p className="text-sm">
                     Need assistance with registration? Contact us at{' '}
-                    <a href="mailto:pad@diemex.in" className="text-blue-600 hover:underline">
-                      pad@diemex.in
+                    <a href="mailto:pad@INDIAMET.in" className="text-blue-600 hover:underline">
+                      pad@INDIAMET.in
                     </a>
                   </p>
                 </div>

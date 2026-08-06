@@ -53,7 +53,7 @@ export const TABS_CONFIG: {
                 })
             ),
             title: 'Become a Sponsor / Partner',
-            sub: 'Partner with DIEMEX 2026 and put your brand in front of 10,000+ professionals.',
+            sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
         },
         {
             key: 'brochure',
@@ -68,25 +68,25 @@ export const TABS_CONFIG: {
                 })
             ),
             title: 'Download Event Brochure',
-            sub: 'Fill in your details to receive the DIEMEX 2026 event brochure instantly.',
+            sub: 'Fill in your details to receive the INDIAMET 2027 event brochure instantly.',
         },
     ];
 
 export const RIGHT_PANEL: Record<TabKey, { headline: string; sub: string }> = {
     enquiry: {
-        headline: 'Be Part of a Global Business Platform',
-        sub: 'Connect with industry leaders and discover the latest innovations in die & mould manufacturing.',
+        headline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        sub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
     },
     exhibitor: {
-        headline: 'Be Part of a Global Business Platform',
-        sub: 'Showcase your solutions, connect with buyers and grow your business.',
+        headline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        sub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
     },
     sponsor: {
-        headline: 'Amplify Your Brand at Scale',
-        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 50+ countries.',
+        headline: 'Elevate Your Brand Visibility',
+        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 5+ countries.',
     },
     brochure: {
         headline: 'Get the Full Event Guide',
-        sub: 'Download the complete DIEMEX 2026 brochure with floor plans, speaker lineup and exhibitor list.',
+        sub: 'Download the complete INDIAMET 2027 brochure with floor plans, speaker lineup and exhibitor list.',
     },
 };

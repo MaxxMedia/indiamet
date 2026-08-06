@@ -7,7 +7,7 @@ import axios from "axios";
 const api = axios.create({
   baseURL:
     process.env.NEXT_PUBLIC_API_URL ||
-    "https://diemex-backend.onrender.com/api",
+    "https://INDIAMET-backend.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",

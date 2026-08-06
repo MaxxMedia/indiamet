@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function SectorsSection() {
   const sectors = [
     { 
-      title: 'Precision Die & Mould Solutions',
+      title: 'Metrology & Precision Measurement Systems',
 
       slug: 'precision-moulds', 
       image: '/images/precision.jpg',
@@ -77,7 +77,7 @@ export default function SectorsSection() {
               leading-[0.95]
               tracking-tight
             ">
-              Discover In-Demand Product Sectors at DIEMEX
+              Discover the Latest Metrology & Quality Technology Solutions at INDIAMET
             </h2>
           </div>
 
@@ -86,7 +86,7 @@ export default function SectorsSection() {
             <Link href="/sectors">
               <button className="
                 rounded-full 
-                bg-[#388E36] 
+                bg-[#FF6A00] 
                 px-8 lg:px-10 
                 py-3 lg:py-4 
                 text-white 

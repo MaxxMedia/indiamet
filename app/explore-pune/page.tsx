@@ -7,11 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // export const metadata: Metadata = {
-//   title: "Die & Mould Exhibition Trade Show | DIEMEX",
-//   description: "Join Diemex 2026, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
+//   title: "Die & Mould Exhibition Trade Show | INDIAMET",
+//   description: "Join INDIAMET 2027, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
 //   openGraph: {
-//     title: "Die & Mould Exhibition Trade Show | DIEMEX",
-//   description: "Join Diemex 2026, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
+//     title: "Die & Mould Exhibition Trade Show | INDIAMET",
+//   description: "Join INDIAMET 2027, the premier internatinal die and mould exhibition at Auto Cluster Exhibition Centre, Pune.. Network with global industry leaders and explore cutting-edge solutions.",
 //     images: ["/images/image.png"]
 //   }
 // };
@@ -20,7 +20,7 @@ export default function ExploreMoscowPage() {
   return (
     <main className="relative min-h-[60vh] lg:min-h-[70vh] font-sans antialiased font-parabolica">
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col justify-end bg-[#005EB8] pt-96">
+      <section className="relative z-10 flex flex-col justify-end bg-[#34AB32] pt-96">
         <SectionContainer className="pt-0 pb-10 text-white">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
             Explore Pune
@@ -52,7 +52,7 @@ export default function ExploreMoscowPage() {
 
     <p className="text-gray-700 text-lg">
       Welcome to Pune, a city where rich heritage meets modern industry. As Maharashtra’s cultural capital and a leading 
-      manufacturing and automotive hub, Pune offers a vibrant experience for business visitors and travellers. From historic landmarks and lively markets to fine dining, museums, and cultural venues, the city has much to explore during your visit to DIEMEX 2026 and beyond.
+      manufacturing and automotive hub, Pune offers a vibrant experience for business visitors and travellers. From historic landmarks and lively markets to fine dining, museums, and cultural venues, the city has much to explore during your visit to INDIAMET 2027 and beyond.
     </p>
   </div>
 </div>
@@ -89,7 +89,7 @@ export default function ExploreMoscowPage() {
                 href="/iconic-landmarks" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -125,7 +125,7 @@ export default function ExploreMoscowPage() {
                 href="/culture" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -160,7 +160,7 @@ export default function ExploreMoscowPage() {
                 href="/places-to-eat" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -195,7 +195,7 @@ export default function ExploreMoscowPage() {
                 href="/shop-and-stroll" 
                 className="mt-auto w-full"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300 w-full">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>
@@ -207,7 +207,7 @@ export default function ExploreMoscowPage() {
       </section>
 
       {/* Getting Around Section */}
-      <section className="relative z-10 mx-auto overflow-hidden bg-[#06162f] text-white">
+      <section className="relative z-10 mx-auto overflow-hidden bg-[#01163A] text-white">
         <SectionContainer>
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
             <div className="flex h-fit flex-col gap-5 lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-10 xl:pl-12 2xl:pl-14">
@@ -226,7 +226,7 @@ export default function ExploreMoscowPage() {
                 href="/travel-guide" 
                 className="mt-10"
               >
-                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#005EB8] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300">
+                <button className="group/btn flex items-center justify-center gap-2 overflow-hidden rounded-full bg-[#34AB32] text-white hover:bg-[#004494] px-10 py-3 font-semibold text-base transition-all duration-300">
                   Explore More
                   <span className="transform transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
                 </button>

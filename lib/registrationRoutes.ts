@@ -30,17 +30,17 @@ export const REGISTRATION_HERO: Record<
     enquiry: {
         title: 'Register to Visit',
         subtitle:
-            "Register now to access India's premier die & mould manufacturing exhibition.",
+            "Register now to attend INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.",
     },
     exhibitor: {
         title: 'Enquiry to Exhibit',
         subtitle:
-            'Please complete the form below and our team will contact you regarding DIEMEX 2026 exhibiting opportunities.',
+            'Please complete the form below and our team will contact you regarding INDIAMET 2027 exhibiting opportunities.',
     },
     sponsor: {
         title: 'Become a Partner',
         subtitle:
-            'Partner with DIEMEX 2026 and put your brand in front of 10,000+ professionals.',
+            'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
     },
     brochure: {
         title: 'Browse Through Your Event Brochure',

@@ -237,7 +237,7 @@ const NewsletterPage: React.FC = () => {
                           className="mt-1 h-5 w-5 text-mainColor2 focus:ring-mainColor2"
                         />
                         <label htmlFor="consent" className="text-sm text-gray-600">
-                          By subscribing to the Diemex Expo newsletter, you agree to receive marketing communications, 
+                          By subscribing to the INDIAMET Expo newsletter, you agree to receive marketing communications, 
                           updates, and promotional materials from us. You can unsubscribe anytime by clicking the 
                           &quot;unsubscribe&quot; link in our emails. For more information on how we handle your data, 
                           please refer to our{' '}

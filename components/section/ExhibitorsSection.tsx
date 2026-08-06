@@ -8,11 +8,11 @@ const ExhibitorsSection = () => {
     <SectionContainer className="py-16 lg:py-24">
       {/* Heading */}
       <h2 className="title-72 text-black mb-6">
-        A Glimpse of Our Past Exhibitors
+        Meet the Leading Brands Driving Metrology Innovation
       </h2>
 
       <p className="title-40 font-semibold text-gray-700 mb-12 lg:mb-16">
-        Participating in DIEMEX Boosts Your Business Growth and Visibility
+        Showcase your innovations at INDIAMET 2027 and connect with manufacturers, OEMs, quality professionals, and industry leaders shaping the future of metrology, measurement, inspection, calibration, testing, and precision engineering.
       </p>
 
       {/* Single Banner Image with All Logos */}
@@ -31,8 +31,8 @@ const ExhibitorsSection = () => {
       {/* CTA */}
       <div className="flex justify-center">
         <Link href="/exhibition-directory" target="_blank" rel="noopener noreferrer">
-          <button className="group flex items-center gap-3 rounded-full px-10 py-4 text-[18px] font-semibold bg-[#388E36] text-white transition hover:bg-mainColor4 hover:shadow-xl">
-            View Our 2026 Exhibitor List
+          <button className="group flex items-center gap-3 rounded-full px-10 py-4 text-[18px] font-semibold bg-[#FF6A00] text-white transition hover:bg-mainColor4 hover:shadow-xl">
+            View Our 2027 Exhibitor List
           </button>
         </Link>
       </div>

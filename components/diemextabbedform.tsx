@@ -1,4 +1,4 @@
-// components/DiemexTabbedFormWrapper.tsx
+// components/INDIAMETTabbedFormWrapper.tsx
 "use client"
 
 import React, { useState, useEffect } from 'react';
@@ -41,8 +41,8 @@ const TABS: TabConfig[] = [
         ),
         title: 'Register as a Visitor',
         sub: 'Please fill in the details below and our team will get in touch with you.',
-        rightHeadline: 'Discover What\'s Next in Manufacturing',
-        rightSub: 'Visit DIEMEX 2026 to explore innovations in die, mould, and precision manufacturing technologies.',
+        rightHeadline: 'Discover the Future of Precision Measurement & Quality Engineering',
+        rightSub: 'Visit INDIAMET 2027 to explore the latest innovations in metrology, measurement technology, quality assurance, inspection systems, calibration, testing, machine vision, and precision engineering solutions.',
         path: TAB_TO_LEGACY_PATH.enquiry,
     },
     {
@@ -56,8 +56,8 @@ const TABS: TabConfig[] = [
         ),
         title: 'Enquire about exhibiting at our event',
         sub: 'Please fill in the details below and our team will get in touch with you.',
-        rightHeadline: 'Be Part of a Global Business Platform',
-        rightSub: 'Showcase your solutions, connect with buyers and grow your business.',
+        rightHeadline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        rightSub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
         path: TAB_TO_LEGACY_PATH.exhibitor,
     },
     {
@@ -69,9 +69,9 @@ const TABS: TabConfig[] = [
             </svg>
         ),
         title: 'Become a Sponsor / Partner',
-        sub: 'Partner with DIEMEX 2026 and put your brand in front of 10,000+ professionals.',
-        rightHeadline: 'Amplify Your Brand at Scale',
-        rightSub: 'Gain unmatched visibility with India\'s premier die & mould manufacturing exhibition.',
+        sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
+        rightHeadline: 'Elevate Your Brand Visibility',
+        rightSub: 'Gain maximum exposure by showcasing your solutions at INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.',
         path: TAB_TO_LEGACY_PATH.sponsor,
     },
     {
@@ -87,8 +87,8 @@ const TABS: TabConfig[] = [
             </svg>
         ),
         title: 'Download Event Brochure',
-        sub: 'Fill in your details to receive the complete DIEMEX 2026 brochure.',
-        rightHeadline: 'Your Roadmap to DIEMEX 2026',
+        sub: 'Fill in your details to receive the complete INDIAMET 2027 brochure.',
+        rightHeadline: 'Your Roadmap to INDIAMET 2027',
         rightSub: 'Explore exhibitor opportunities, visitor demographics, and ROI insights.',
         path: TAB_TO_LEGACY_PATH.brochure,
     },
@@ -96,7 +96,7 @@ const TABS: TabConfig[] = [
 
 const PATH_TO_TAB = LEGACY_PATH_TO_TAB;
 
-interface DiemexTabbedFormWrapperProps {
+interface INDIAMETTabbedFormWrapperProps {
     defaultTab?: TabKey;
     showHeader?: boolean;
     headerTitle?: string;
@@ -105,14 +105,14 @@ interface DiemexTabbedFormWrapperProps {
     useRegisterRouting?: boolean;
 }
 
-export default function DiemexTabbedFormWrapper({
+export default function INDIAMETTabbedFormWrapper({
     defaultTab = 'exhibitor',
     showHeader = true,
     headerTitle,
     headerSubtitle,
     className = '',
     useRegisterRouting = false,
-}: DiemexTabbedFormWrapperProps) {
+}: INDIAMETTabbedFormWrapperProps) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
@@ -185,7 +185,7 @@ export default function DiemexTabbedFormWrapper({
                                 font-semibold text-sm
                                 transition-all
                                 ${isActive
-                                    ? "bg-[#002d86] text-white"
+                                    ? "bg-[#01163A] text-white"
                                     : "bg-white text-[#1e2b52] hover:bg-slate-50"
                                 }
                             `}
@@ -194,7 +194,7 @@ export default function DiemexTabbedFormWrapper({
                             <span className="tracking-wide">{tab.label}</span>
 
                             {isActive && (
-                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[12px] w-0 h-0 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#002d86]" />
+                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[12px] w-0 h-0 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#01163A]" />
                             )}
                         </button>
                     );
@@ -221,7 +221,7 @@ export default function DiemexTabbedFormWrapper({
                 <div className="hidden lg:block lg:w-[48%] relative overflow-hidden min-h-[500px]">
                     <img
                         src="/images/exbibitor-resource-center/image1.png"
-                        alt="DIEMEX Exhibition"
+                        alt="INDIAMET Exhibition"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
 
@@ -243,7 +243,7 @@ export default function DiemexTabbedFormWrapper({
                         <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6">
                             <div className="grid grid-cols-3">
                                 {[
-                                    { num: '250+', lbl: 'Exhibitors' },
+                                    { num: '150+', lbl: 'Exhibitors' },
                                     { num: '50+', lbl: 'Countries' },
                                     { num: '10K+', lbl: 'Visitors' },
                                 ].map(({ num, lbl }) => (

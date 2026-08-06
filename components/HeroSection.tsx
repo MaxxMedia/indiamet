@@ -89,7 +89,7 @@ export default function HeroSection() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="DIEMEX 2026 Background Video"
+            title="INDIAMET 2027 Background Video"
             onLoad={handleIframeLoad}
             loading="eager"
           />
@@ -146,7 +146,7 @@ export default function HeroSection() {
 
             {/* MAIN HEADING */}
             <h1 className="font-parabolica text-[48px] font-bold leading-[0.85] tracking-tight sm:text-[70px] md:text-[100px] lg:text-[120px] xl:text-[150px] 2xl:text-[170px]">
-              INDIAMET <span className="text-[#AEF7AC]">2027</span>
+              INDIAMET <span className="text-[#FF6A00]">2027</span>
             </h1>
 
             {/* CONTENT */}
@@ -160,7 +160,7 @@ export default function HeroSection() {
                   <li className="flex items-start gap-2">
                     <span className="mt-[2px] text-[#33A8DF]">•</span>
                     <span>
-                      1st Edition of the International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
+                     International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
                     </span>
                   </li>
                 </ul>
@@ -168,7 +168,7 @@ export default function HeroSection() {
 
               <div className="mt-6 shrink-0 lg:ml-auto lg:mt-0">
                 <a href="/exhibiting-enquiry">
-                  <button className="w-full rounded-full bg-[#388E36] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40 sm:w-auto sm:px-12 sm:py-4 sm:text-lg">
+                  <button className="w-full rounded-full bg-[#FF6A00] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40 sm:w-auto sm:px-12 sm:py-4 sm:text-lg">
                     Book Your Stand
                   </button>
                 </a>

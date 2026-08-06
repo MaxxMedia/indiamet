@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 const QRCodeScanner = ({ onScanSuccess, onScanError }) => {
   const [isScanning, setIsScanning] = useState(false);
   const scannerRef = useRef(null);
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://diemex-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
 
   useEffect(() => {
     // Initialize scanner
@@ -30,7 +30,7 @@ const QRCodeScanner = ({ onScanSuccess, onScanError }) => {
       
       try {
         // Parse QR code data - it contains visitor code
-        // Format: "DIEMEX 2026\nVisitor\nName: XXX\nEmail: XXX\nCode: diemex-1234567890\nDate: 8-10 Oct 2026"
+        // Format: "INDIAMET 2027\nVisitor\nName: XXX\nEmail: XXX\nCode: INDIAMET-1234567890\nDate: 8-10 Oct 2027"
         const lines = decodedText.split('\n');
         const codeLine = lines.find(line => line.includes('Code: '));
         

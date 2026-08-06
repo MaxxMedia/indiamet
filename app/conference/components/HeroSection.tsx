@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/diemex-hero-image.jpg')`, // Replace with your actual image path
+            backgroundImage: `url('/images/INDIAMET-hero-image.jpg')`, // Replace with your actual image path
           }}
         />
         
@@ -33,7 +33,7 @@ export default function HeroSection() {
           <div className="mt-4 md:mt-6 flex flex-col gap-4 md:gap-6 lg:flex-row lg:items-end">
             <div className="max-w-4xl">
               <h2 className="mb-2 md:mb-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold">
-                Global Conference on Die & Mould Engineering and Precision Manufacturing Technologies
+                Global Summit on Metrology, Precision Measurement and Quality Engineering
 
               </h2>
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
               </Button>
 
               <Link href="/become-partner">
-                <button className="relative z-50 rounded-full bg-[#388E36] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
+                <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
                   Become a partner
                 </button>
               </Link>

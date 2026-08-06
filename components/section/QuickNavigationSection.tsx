@@ -31,11 +31,11 @@ const QuickNavigationSection = () => {
           </h3>
 
           <p className="text-gray-600 mb-6">
-            Join 200+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.
+            Join 150+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.
           </p>
 
           <Link href="/exhibiting-enquiry">
-            <button className="w-full bg-[#388E36] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
+            <button className="w-full bg-[#FF6A00] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
               Book a Stand
             </button>
           </Link>
@@ -59,7 +59,7 @@ const QuickNavigationSection = () => {
           </p>
 
           <Link href="/event-brochure">
-            <button className="w-full bg-[#388E36] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
+            <button className="w-full bg-[#FF6A00] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
               Download Now
             </button>
           </Link>
@@ -83,7 +83,7 @@ const QuickNavigationSection = () => {
           </p>
 
           <Link href="/visitor-registration">
-            <button className="w-full bg-[#388E36] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
+            <button className="w-full bg-[#FF6A00] hover:bg-blue-700 text-white py-3 rounded-full font-medium">
               Visitor Registration
             </button>
           </Link>

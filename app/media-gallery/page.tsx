@@ -6,39 +6,39 @@ import Link from 'next/link';
 const mediaItems = [
   {
     id: 1,
-    title: "Diemex 2025 Exhibition Inauguration",
-    href: "/media-gallery/diemex-2025-inauguration",
-    image: "/images/diemex2025.JPG"
+    title: "INDIAMET 2025 Exhibition Inauguration",
+    href: "/media-gallery/INDIAMET-2025-inauguration",
+    image: "/images/INDIAMET2025.JPG"
   },
   {
     id: 2,
-    title: "Diemex 2025 Exhibition",
-    href: "/media-gallery/diemex-2025-exhibition",
-    image: "/images/diemex2025-2.JPG"
+    title: "INDIAMET 2025 Exhibition",
+    href: "/media-gallery/INDIAMET-2025-exhibition",
+    image: "/images/INDIAMET2025-2.JPG"
   },
   {
     id: 3,
-    title: "Diemex 2025 Awards Ceremony",
-    href: "/media-gallery/diemex-2025-awards",
-    image: "/images/diemex2025-awards.JPG"
+    title: "INDIAMET 2025 Awards Ceremony",
+    href: "/media-gallery/INDIAMET-2025-awards",
+    image: "/images/INDIAMET2025-awards.JPG"
   },
   {
     id: 4,
-    title: "Diemex 2023 Exhibition Inauguration",
-    href: "/media-gallery/diemex-2023-inauguration",
-    image: "/images/diemex2023.JPG"
+    title: "INDIAMET 2023 Exhibition Inauguration",
+    href: "/media-gallery/INDIAMET-2023-inauguration",
+    image: "/images/INDIAMET2023.JPG"
   },
   {
     id: 5,
-    title: "Diemex 2023 Exhibition",
-    href: "/media-gallery/diemex-2023-exhibition",
-    image: "/images/diemex2023-2.JPG"
+    title: "INDIAMET 2023 Exhibition",
+    href: "/media-gallery/INDIAMET-2023-exhibition",
+    image: "/images/INDIAMET2023-2.JPG"
   },
   {
     id: 6,
-    title: "Diemex 2023 Awards Ceremony",
-    href: "/media-gallery/diemex-2023-awards",
-    image: "/images/diemex2023-awards.JPG"
+    title: "INDIAMET 2023 Awards Ceremony",
+    href: "/media-gallery/INDIAMET-2023-awards",
+    image: "/images/INDIAMET2023-awards.JPG"
   },
 ];
 
@@ -79,9 +79,9 @@ export default function MediaGalleryPage() {
         <div className="bg-[#F0F9FF] py-20">
           <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 mt-15">
             <div className="flex flex-col justify-end">
-              <h2 className="title-72 text-black">Explore Diemex Over the Years</h2>
+              <h2 className="title-72 text-black">Explore INDIAMET Over the Years</h2>
               <p className="max-w-6xl whitespace-pre-line py-5">
-                Discover Diemex through our curated gallery, featuring moments from the opening ceremony, awards, exhibition showcases, and dynamic conference sessions.
+                Discover INDIAMET through our curated gallery, featuring moments from the opening ceremony, awards, exhibition showcases, and dynamic conference sessions.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function MediaGalleryPage() {
                 <Link
                   key={item.id}
                   href={item.href}
-                  className="group relative flex flex-col rounded-xl overflow-hidden bg-[#06162f] shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                  className="group relative flex flex-col rounded-xl overflow-hidden bg-[#01163A] shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                 >
                   {/* Image Container */}
                   <div className="relative h-56 w-full overflow-hidden">

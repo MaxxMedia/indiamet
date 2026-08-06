@@ -15,13 +15,13 @@ export default function ExplorePuneSection() {
           {/* DESCRIPTION */}
           <div className="max-w-8xl space-y-6">
             <p className="text-lg lg:text-xl leading-relaxed text-black">
-              Make the most of your visit to DIEMEX 2026 by experiencing the dynamic city of Pune—a major hub for automotive, engineering, and manufacturing excellence. Explore key industrial corridors, business districts, cultural landmarks, and dining destinations that perfectly complement your exhibition and networking experience.
+              Make the most of your visit to INDIAMET 2027 by experiencing the dynamic city of Pune—a major hub for automotive, engineering, and manufacturing excellence. Explore key industrial corridors, business districts, cultural landmarks, and dining destinations that perfectly complement your exhibition and networking experience.
             </p>
           </div>
 
           {/* CTA */}
           <a href="/explore-pune" className="mt-6 w-fit">
-            <button className="flex items-center justify-center gap-2 rounded-full bg-[#388E36] px-8 lg:px-10 py-3 lg:py-4 text-[16px] font-semibold text-white transition-all duration-300 hover:bg-[#33A8DF]">
+            <button className="flex items-center justify-center gap-2 rounded-full bg-[#FF6A00] px-8 lg:px-10 py-3 lg:py-4 text-[16px] font-semibold text-white transition-all duration-300 hover:bg-[#33A8DF]">
               City Guide
             </button>
           </a>

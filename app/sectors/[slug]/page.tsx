@@ -16,26 +16,8 @@ interface PageProps {
 // Complete mapping function to convert URL slug to database key
 function getDatabaseKeyFromSlug(slug: string): string {
   const slugToKeyMap: Record<string, string> = {
-    // TransRussia Sectors - Map to existing TransRussia sectors in database
-    'complex-logistics': 'complex-logistics',
-    'maritime-and-inland-waterway-transport': 'maritime-and-inland-waterway-transport',
-    'air-freight': 'air-freight',
-    'rail-freight': 'rail-freight',
-    'road-freight-transportation': 'road-freight-transportation',
-    'ports-and-terminals-freight-handling-services-in-ports': 'ports-and-terminals-freight-handling-services-in-ports',
-    'warehouse-technology': 'warehouse-technology',
-    'it-solutions': 'it-solutions',
-    'ecommerce-logistics': 'ecommerce-logistics',
-    'heavy-lift-carriage': 'heavy-lift-carriage',
     
-    // SkladTech Sectors
-    'warehousing-systems': 'warehousing-systems',
-    'material-handling': 'material-handling',
-    'automation-robotics': 'automation-robotics',
-    'packaging-systems': 'packaging-systems',
-    'inventory-management': 'inventory-management',
-    
-    // DIEMEX Sectors - Map to existing DIEMEX sectors in database
+    // INDIAMET Sectors - Map to existing INDIAMET sectors in database
     'die-mould-manufacturing': 'die & mould manufacturing',
     'tooling-tool-rom-technologies': 'tooling & cutting tools',
     'cnc-machines': 'machine tools & advanced machining',
@@ -56,26 +38,8 @@ function getDatabaseKeyFromSlug(slug: string): string {
 // Function to get display name from slug
 function getDisplayNameFromSlug(slug: string): string {
   const displayNameMap: Record<string, string> = {
-    // TransRussia
-    'complex-logistics': 'Complex Logistics',
-    'maritime-and-inland-waterway-transport': 'Maritime Transport',
-    'air-freight': 'Air Freight',
-    'rail-freight': 'Rail Freight',
-    'road-freight-transportation': 'Road Freight',
-    'ports-and-terminals-freight-handling-services-in-ports': 'Ports',
-    'warehouse-technology': 'Warehouse Tech',
-    'it-solutions': 'IT Solutions',
-    'ecommerce-logistics': 'E-commerce',
-    'heavy-lift-carriage': 'Heavy Lift',
-    
-    // SkladTech
-    'warehousing-systems': 'Warehousing',
-    'material-handling': 'Material Handling',
-    'automation-robotics': 'Automation',
-    'packaging-systems': 'Packaging',
-    'inventory-management': 'Inventory',
-    
-    // DIEMEX
+          
+    // INDIAMET
     'die-mould-manufacturing': 'Die & Mould',
     'tooling-tool-rom-technologies': 'Tooling',
     'cnc-machines': 'Machine Tools',
@@ -100,17 +64,18 @@ function getDefaultSectorContent(slug: string, displayName: string) {
   return {
     title: `${displayName} Solutions`,
     description: `Comprehensive ${displayName.toLowerCase()} solutions for modern logistics and supply chain operations.`,
-    mainDescription: `The ${displayName} sector at DIEMEX showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
+    mainDescription: `The ${displayName} sector at INDIAMET showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
 
-Visitors can explore cutting-edge solutions, connect with experts, and discover new opportunities for growth and efficiency. From established players to innovative startups, this sector represents the complete ecosystem of ${displayName.toLowerCase()} solutions.
+Visitors can explore cutting-edge measurement systems, inspection technologies, calibration solutions, and quality assurance innovations while connecting with industry experts and leading brands. From precision instruments and machine vision systems to metrology software and smart inspection technologies, this sector represents the complete ecosystem of modern industrial metrology. ${displayName.toLowerCase()} solutions.
 
-Whether you're looking for new partnerships, seeking to optimize your operations, or exploring the latest trends, the ${displayName} sector provides unparalleled access to the people and technologies driving the industry forward.`,
+Whether you're looking to improve product quality, enhance manufacturing accuracy, adopt advanced inspection technologies, or build new business partnerships, the ${displayName} sector provides direct access to the latest innovations shaping the future of manufacturing and quality engineering.`,
     heroImage: '/images/precision.jpg',
     stats: {
       visitors: '10,000+',
-      exhibitors: '200+',
+      exhibitors: '150+',
       countries: '5+'
     },
+
     whyExhibit: [
       {
         title: "Connect with Industry Leaders",
@@ -264,7 +229,7 @@ export default async function SectorPage({ params }: PageProps) {
 
             <div className="mt-12 text-center">
               <Link href="/exhibiting-enquiry">
-                <button className="px-8 py-4 bg-[#388E36] text-white rounded-full">
+                <button className="px-8 py-4 bg-[#FF6A00] text-white rounded-full">
                   Enquire to Exhibit
                 </button>
               </Link>
@@ -335,16 +300,16 @@ export async function generateMetadata({
 
   if (!sectorData) {
     return {
-      title: `${displayName} | Diemex 2026`,
-      description: `Explore ${displayName.toLowerCase()} solutions at Diemex 2026. Connect with industry leaders and discover innovative solutions.`,
+      title: `${displayName} | INDIAMET 2027`,
+      description: `Explore ${displayName.toLowerCase()} solutions at INDIAMET 2027. Connect with industry leaders and discover innovative solutions.`,
     };
   }
 
   return {
-    title: `${sectorData.title} | Diemex 2026`,
+    title: `${sectorData.title} | INDIAMET 2027`,
     description: sectorData.description,
     openGraph: {
-      title: `${sectorData.title} | Diemex 2026`,
+      title: `${sectorData.title} | INDIAMET 2027`,
       description: sectorData.description,
       images: [sectorData.heroImage],
     },

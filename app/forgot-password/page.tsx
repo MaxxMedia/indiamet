@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { CheckCircleIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://diemex-backend.onrender.com';
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://INDIAMET-backend.onrender.com';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');

@@ -76,7 +76,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
         </div>
       </motion.div>
 
-      <div className="flex grow flex-col justify-between bg-[#06162f] p-6 text-white lg:p-8">
+      <div className="flex grow flex-col justify-between bg-[#01163A] p-6 text-white lg:p-8">
         <div>
           <motion.h3 
             whileHover={{ scale: 1.02 }}
@@ -97,7 +97,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
             whileTap={{ scale: 0.95 }}
             // href={`/partner/${partner.slug}`}
           >
-            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#388E36] hover:text-white transition-all duration-300 hover:shadow-lg">
+            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#FF6A00] hover:text-white transition-all duration-300 hover:shadow-lg">
               Explore
             </button>
           </motion.a>
@@ -110,7 +110,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#388E36] hover:text-white hover:shadow-lg">
+              <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#FF6A00] hover:text-white hover:shadow-lg">
                 Visit Website
               </button>
             </motion.a>
@@ -169,13 +169,13 @@ const PartnersSponsorsPage: React.FC = () => {
 
   const sections = [
     {
-      title: "Supporting Partner 2026",
-      partners: partnersData.supportingPartner2026 ?? [],
+      title: "Supporting Partner 2027",
+      partners: partnersData.supportingPartner2027 ?? [],
       key: "supporting",
     },
     {
-      title: "Official Media Partner 2026",
-      partners: partnersData.officialMediaPartner2026 ?? [],
+      title: "Official Media Partner 2027",
+      partners: partnersData.officialMediaPartner2027 ?? [],
       key: "official-media",
     },
     {
@@ -232,7 +232,7 @@ const PartnersSponsorsPage: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="mb-4 mt-20 text-4xl lg:text-4xl xl:text-5xl font-[600] text-black"
           >
-            The organisations that power DIEMEX
+            The organisations that power INDIAMET
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -240,7 +240,7 @@ const PartnersSponsorsPage: React.FC = () => {
             transition={{ delay: 0.3 }}
             className="max-w-4xl text-lg lg:text-xl text-gray-600"
           >
-            Discover our valued sponsors and partners who help make DIEMEX a success.
+            Discover our valued sponsors and partners who help make INDIAMET a success.
           </motion.p>
         </SectionContainer>
       </motion.section>

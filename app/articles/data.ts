@@ -60,9 +60,9 @@ export const articles: Article[] = [
     <h2>Benefits for Tooling Manufacturers</h2>
     <p>Automation allows tooling manufacturers to produce complex dies and moulds with consistent quality while reducing production cycle times. It also helps companies meet growing global demand while maintaining competitive costs.</p>
 
-    <p>Industry platforms such as <strong>DIEMEX – International Die & Mould Expo</strong> showcase the latest automation solutions helping tool rooms move toward Industry 4.0 manufacturing.</p>
+    <p>Industry platforms such as <strong>INDIAMET – International Die & Mould Expo</strong> showcase the latest automation solutions helping tool rooms move toward Industry 4.0 manufacturing.</p>
     `,
-    PublishedDate: "2026-02-25T03:30:00.000Z",
+    PublishedDate: "2027-02-25T03:30:00.000Z",
     Image: {
       data: {
         attributes: {
@@ -96,9 +96,9 @@ export const articles: Article[] = [
     <h2>Advancements in Tooling Technology</h2>
     <p>Advanced simulation software, high-speed machining, and additive manufacturing are enabling tooling companies to produce more complex designs while reducing development time.</p>
 
-    <p>Events such as <strong>DIEMEX 2026</strong> bring together tooling manufacturers, technology providers, and industrial buyers to explore these innovations.</p>
+    <p>Events such as <strong>INDIAMET 2027</strong> bring together tooling manufacturers, technology providers, and industrial buyers to explore these innovations.</p>
     `,
-    PublishedDate: "2026-02-01T03:30:00.000Z",
+    PublishedDate: "2027-02-01T03:30:00.000Z",
     Image: {
       data: {
         attributes: {
@@ -112,7 +112,7 @@ export const articles: Article[] = [
     id: "83",
   attributes: {
     Title: "The Rise of India as a Global Die & Mould Manufacturing Hub",
-    Slug: "why-is-rail-freight-becoming-a-stronger-alternative-for-long-haul-cargo-in-2026",
+    Slug: "why-is-rail-freight-becoming-a-stronger-alternative-for-long-haul-cargo-in-2027",
     Excerpt:
       "India is rapidly emerging as a competitive global force in precision tooling and mould manufacturing.",
     Content: `
@@ -131,7 +131,7 @@ export const articles: Article[] = [
     <h2>Future Opportunities</h2>
     <p>India is becoming a preferred sourcing destination for global OEMs seeking cost-effective and high-quality tooling solutions. Continued investment in automation and digital manufacturing will further strengthen the country’s global competitiveness.</p>
     `,
-    PublishedDate: "2026-01-20T03:30:00.000Z",
+    PublishedDate: "2027-01-20T03:30:00.000Z",
     Image: {
       data: {
         attributes: {
@@ -145,7 +145,7 @@ export const articles: Article[] = [
    id: "82",
   attributes: {
     Title: "How Smart Manufacturing Is Reshaping the Tooling Industry",
-    Slug: "how-are-ports-preparing-for-increased-freight-handling-demands-in-2026",
+    Slug: "how-are-ports-preparing-for-increased-freight-handling-demands-in-2027",
     Excerpt:
       "Smart manufacturing technologies are reshaping the global die and mould industry.",
     Content: `
@@ -178,7 +178,7 @@ export const articles: Article[] = [
    id: "85",
   attributes: {
     Title: "Key Technologies Driving Innovation in Die & Mould Manufacturing",
-    Slug: "sklad-tech-2026-participants-and-sections",
+    Slug: "sklad-tech-2027-participants-and-sections",
     Excerpt:
       "Explore the latest technologies transforming die and mould manufacturing worldwide.",
     Content: `
@@ -195,7 +195,7 @@ export const articles: Article[] = [
 
     <p>These innovations allow tooling manufacturers to reduce production time, improve quality, and remain competitive in global markets.</p>
 
-    <p><strong>DIEMEX 2026 – International Die & Mould Expo</strong> will showcase these technologies and connect global tooling suppliers with buyers and manufacturers.</p>
+    <p><strong>INDIAMET 2027 – International Die & Mould Expo</strong> will showcase these technologies and connect global tooling suppliers with buyers and manufacturers.</p>
     `,
     PublishedDate: "2025-12-15T06:00:00.000Z",
     Image: {
@@ -228,7 +228,7 @@ export const articles: Article[] = [
     <h2>Global Market Outlook</h2>
     <p>Demand for advanced tooling solutions will continue to grow as industries require lightweight components, higher precision, and faster product development cycles.</p>
 
-    <p>International industry events such as <strong>DIEMEX</strong> provide a platform for manufacturers and technology providers to explore new partnerships and innovations.</p>
+    <p>International industry events such as <strong>INDIAMET</strong> provide a platform for manufacturers and technology providers to explore new partnerships and innovations.</p>
     `,
     PublishedDate: "2025-12-05T09:15:00.000Z",
     Image: {

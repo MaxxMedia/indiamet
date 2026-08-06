@@ -45,7 +45,7 @@ const COUNTRIES = [
 ]
 
 // API Base URL
-const API_BASE_URL = 'https://diemex-backend.onrender.com/api';
+const API_BASE_URL = 'https://INDIAMET-backend.onrender.com/api';
 
 export default function VisitorRegistrationForm({
   isOpen,

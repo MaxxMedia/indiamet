@@ -7,7 +7,7 @@ export default function PreviousYearSection() {
       <div className="animated-block-target">
         <div className="relative !py-40 xl:!py-62">
           <img
-            alt="Diemex 2025 Conference"
+            alt="INDIAMET 2025 Conference"
             src=""
             className="absolute inset-0 z-[-1] size-full object-cover"
             width={500}
@@ -15,7 +15,7 @@ export default function PreviousYearSection() {
           />
           <div className="container flex max-w-[1300px] flex-col items-center justify-center gap-5 text-center text-white">
             <h2 className="title-72 text-white">How It Was</h2>
-            <p className="whitespace-pre-line">Diemex Confernce 2023</p>
+            <p className="whitespace-pre-line">INDIAMET Confernce 2023</p>
             <Link href="/postrelease/" className="block">
               <button className="flex-center group w-fit gap-2 overflow-hidden rounded-full bg-white px-10 py-3 font-jakarta text-sm font-semibold text-mainColor2 hover:bg-mainColor2 hover:text-white md:text-base">
                 Learn More

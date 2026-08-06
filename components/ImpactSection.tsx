@@ -10,41 +10,41 @@ export default function ImpactSection() {
       title: 'Find the Right Platform to Accelerate Your Business Growth',
 
       content:
-        'DIEMEX offers a powerful opportunity for visitors to discover new die & mould suppliers, tooling partners, and advanced manufacturing solutions—all under one roof.',
+        'INDIAMET 2027 provides an unparalleled opportunity for visitors to discover the latest innovations in metrology, measurement technology, quality assurance, inspection systems, calibration, testing equipment, machine vision, NDT, and precision engineering solutions—all under one roof.',
       image: '/images/tooling.JPG',
       stat: {
-        value: '76%',
-        label: 'of visitors attend DIEMEX to identify new suppliers and sourcing partners',
+        value: '',
+        label: 'Connect directly with leading technology providers, compare cutting-edge solutions, evaluate live demonstrations, and build valuable partnerships with global manufacturers, OEMs, quality professionals, and industrial solution providers driving the future of precision manufacturing.',
       },
     },
     {
       title: 'Expand your business with the right partners',
       content:
-        'Visitors to DIEMEX gain actionable insights, qualified leads, and direct connections with trusted die & mould manufacturers, tooling specialists, and precision engineering solution providers.',
+        'INDIAMET 2027 connects you with leading metrology, measurement, inspection, calibration, testing, machine vision, and quality assurance solution providers from India and around the world. Explore innovative technologies, evaluate solutions firsthand, and engage directly with manufacturers, OEMs, distributors, research institutions, and industry experts to identify the right partners for your business growth.',
       image: '/images/raj.JPG',
       stat: {
-        value: '72%',
-        label: 'of visitors plan to purchase products or services after visiting DIEMEX',
+        value: '',
+        label: 'Build valuable business relationships, discover new technologies, and unlock opportunities that enhance productivity, quality, and manufacturing excellence.',
       },
     },
     {
       title: 'Build long-term business connections',
       content:
-        'Meet decision-makers and industry leaders to create long-term partnerships.',
+        'Forge valuable relationships with industry leaders, quality professionals, manufacturing executives, OEMs, technology providers, and decision-makers from across the manufacturing ecosystem.',
       image: '/images/japan.JPG',
       stat: {
-        value: '68%',
-        label: 'Of visitors establish new business connections',
+        value: '',
+        label: 'Network with the right partners, exchange knowledge, and create strategic collaborations that drive innovation, business growth, and long-term success in the metrology and quality engineering industry.',
       },
     },
     {
       title: 'Showcase innovation to the right audience',
       content:
-        'Present your latest solutions to a highly targeted professional audience.',
+        'Present your latest metrology, measurement, inspection, calibration, testing, machine vision, and quality assurance solutions to a highly targeted audience of manufacturers, OEMs, quality professionals, production engineers, R&D teams, calibration laboratories, and industrial decision-makers.',
       image: '/images/hottip.JPG',
       stat: {
-        value: '81%',
-        label: 'Of exhibitors achieve key business goals',
+        value: '',
+        label: 'Demonstrate your technologies through live interactions, generate qualified business opportunities, and position your brand at the forefront of precision manufacturing and quality excellence.',
       },
     },
   ];
@@ -76,13 +76,11 @@ export default function ImpactSection() {
             </div>
 
             <h2 className="text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6">
-              DIEMEX Impact
+              INDIAMET 2027 – The Industry Impact
             </h2>
 
             <p className="text-lg text-[#4D4D4D]">
-              Discover the scale, influence, and industry reach of DIEMEX. From leading die & mould manufacturers 
-              and technology providers to thousands of qualified industry visitors, explore the key numbers that 
-              define the success of India’s premier die & mould and tooling exhibition.
+              Discover the vision, opportunity, and industry significance of INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, and precision engineering. Bringing together global technology leaders, manufacturers, OEMs, quality professionals, and industrial decision-makers, INDIAMET is set to become the nation's premier platform for advancing precision manufacturing, quality excellence, and industrial innovation.
             </p>
           </div>
 
@@ -91,14 +89,14 @@ export default function ImpactSection() {
             <button
               onClick={prev}
               disabled={currentIndex === 0}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#9BB6D9] text-white disabled:opacity-40 hover:bg-[#003366] transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#9BB6D9] text-white disabled:opacity-40 hover:bg-[#01163A] transition-colors"
             >
               ←
             </button>
             <button
               onClick={next}
               disabled={currentIndex + ITEMS_PER_VIEW >= impacts.length}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#003366] text-white disabled:opacity-40 hover:bg-[#00264d] transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#01163A] text-white disabled:opacity-40 hover:bg-[#00264d] transition-colors"
             >
               →
             </button>
@@ -112,7 +110,7 @@ export default function ImpactSection() {
             .map((impact, i) => (
               <div
                 key={i}
-                className="flex flex-col overflow-hidden rounded-2xl bg-[#0b1f3f] text-white"
+                className="flex flex-col overflow-hidden rounded-2xl bg-[#01163A] text-white"
               >
                 <div className="p-8 lg:p-10">
                   <h3 className="mb-5 text-2xl lg:text-3xl font-bold leading-tight">
@@ -128,7 +126,7 @@ export default function ImpactSection() {
                   style={{ backgroundImage: `url(${impact.image})` }}
                 />
 
-                <div className="bg-[#0b1f3f] p-6 lg:p-8">
+                <div className="bg-[#01163A] p-6 lg:p-8">
                   <h4 className="mb-2 text-4xl lg:text-5xl font-bold">
                     {impact.stat.value}
                   </h4>

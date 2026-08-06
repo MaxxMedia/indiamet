@@ -30,15 +30,15 @@ export default function CountriesSection() {
 
           {/* Heading – SAME TEXT */}
           <h2 className="text-5xl lg:text-7xl font-bold text-black leading-[0.9] tracking-tight">
-            Discover the Global Reach of <br /> DIEMEX
+            Discover the Global Reach of <br /> INDIAMET
           </h2>
 
           {/* Paragraph – SAME TEXT */}
           <p className="text-lg lg:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            DIEMEX brings together die & mould manufacturers, tooling suppliers,
-            material specialists, and advanced manufacturing 
-            solution providers from across the globe to connect, collaborate,
-            and conduct business over three focused days of the exhibition.
+            INDIAMET 2027 unites the world's leading metrology, measurement, inspection, calibration, 
+            testing, and quality engineering companies with manufacturers, OEMs, and industry professionals 
+            to exchange knowledge, demonstrate cutting-edge technologies, build strategic partnerships, and 
+            accelerate business growth over three focused days.
           </p>
 
           {/* Button – SAME TEXT */}
@@ -48,8 +48,8 @@ export default function CountriesSection() {
             rel="noopener noreferrer"
             className="mx-auto"
           >
-            <button className="rounded-full px-8 lg:px-10 py-3 lg:py-4 text-base font-semibold bg-[#388E36] text-white hover:bg-[#33A8DF] transition-all duration-300">
-              Explore the 2026 Exhibitor List
+            <button className="rounded-full px-8 lg:px-10 py-3 lg:py-4 text-base font-semibold bg-[#FF6A00] text-white hover:bg-[#33A8DF] transition-all duration-300">
+              Exhibitor List
             </button>
           </a>
         </div>

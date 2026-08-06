@@ -5,41 +5,42 @@ import SectionContainer from "../UI/SectionContainer"
 
 const EcosystemSection = () => {
   const ecosystemItems = [
-    {
-      number: "01",
-      title: "The Exhibition",
-      description: `At the heart of the ecosystem is the annual DIEMEX exhibition in Pune, India. It brings together the entire die & mould and tooling value chain, offering a high-impact platform to::
+     {
+    number: "01",
+    title: "The Exhibition",
+    description: `At the heart of the ecosystem is INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. The exhibition brings together the complete metrology and quality engineering value chain, offering a high-impact platform to:
 
-- Establish direct, face-to-face business connections with OEMs, toolroom owners, and senior decision-makers.
-- Showcase advanced die & mould solutions, including tooling technologies, design & engineering software, automation, materials, and Industry 4.0 innovations.
-- Engage with thousands of qualified buyers and technical professionals from automotive, EV, plastics, aerospace, and industrial manufacturing sectors—all in one place from 8–10 October 2026.`,
-      image: "/images/expo-about-diemex.JPG",
-      link: "/about-diemex",
-      buttonText: "Know More",
-    },
-    {
-      number: "02",
-      title: "Conference",
-      description: `Alongside the exhibition, DIEMEX 2026 features a comprehensive conference programme comprising technical conferences, expert forums, and industry-led sessions. These are carefully curated to encourage meaningful dialogue around die & mould technologies, tooling innovation, manufacturing trends, and future-ready production strategies.
+- Connect face-to-face with OEMs, manufacturers, quality heads, metrology engineers, procurement leaders, and senior decision-makers.
+- Showcase advanced metrology solutions, including CMMs, optical & vision inspection systems, machine vision, calibration equipment, testing technologies, precision instruments, industrial software, and smart manufacturing solutions.
+- Engage with a highly qualified audience from the automotive, EV, aerospace, defence, electronics, medical devices, industrial machinery, and precision engineering sectors over three focused days of business networking and technology showcase.`,
+    image: "/images/expo-about-INDIAMET.JPG",
+    link: "/about-indiamet",
+    buttonText: "Know More",
+  },
+  {
+    number: "02",
+    title: "INDIAMET Summit",
+    description: `Running alongside the exhibition, the INDIAMET Summit brings together industry leaders, technical experts, researchers, and manufacturing professionals for two days of knowledge sharing and technical discussions on the future of metrology and quality engineering.
 
-- Gain insights from industry experts on the latest developments, challenges, and opportunities in die & mould and precision manufacturing.
-- Explore emerging technologies, including advanced tooling, materials, automation, digital design, and Industry 4.0 applications.
-- Build valuable professional connections with OEMs, toolroom heads, engineers, buyers, and decision-makers from across the manufacturing ecosystem.`,
-      image: "/images/conference-about-diemex.JPG",
-      link: "/conference",
-      buttonText: "Conference Programme",
-    },
-    {
-      number: "03",
-      title: "Tooling Trends",
-      description: `Tooling Trends is an online platform designed to keep the industry connected before, during, and after the exhibition. Through Molding Trends, participants can::
-- Network year-round with buyers, OEMs, toolrooms, technology providers, and industry peers.
-- Access curated content, including industry news, technical insights, exhibitor updates, and market trends.
-- Schedule meetings, manage contacts, and follow up on business leads seamlessly through a single digital platform.`,
-      image: "/images/tooling-about-diemex.png",
-      link: "https://toolingtrends.com",
-      buttonText: "Join Tooling Trends",
-    },
+- Learn from global experts on the latest developments in metrology, measurement technology, inspection, calibration, testing, and quality assurance.
+- Explore emerging trends including AI-powered inspection, machine vision, digital metrology, Industry 4.0, and smart manufacturing.
+- Build valuable professional connections with OEMs, quality leaders, metrology specialists, calibration laboratories, researchers, and decision-makers from across the manufacturing ecosystem.`,
+    image: "/images/conference-about-INDIAMET.JPG",
+    link: "/indiamet-summit",
+    buttonText: "Explore Summit",
+  },
+  {
+    number: "03",
+    title: "Global Metrology Excellence Awards (GMEA)",
+    description: `The Global Metrology Excellence Awards (GMEA) recognizes outstanding achievements in metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. The awards celebrate organizations and professionals driving innovation, accuracy, and manufacturing excellence.
+
+- Honour pioneering companies, innovators, researchers, and industry leaders.
+- Celebrate breakthrough technologies, best practices, and excellence in quality engineering.
+- Network with award winners, global technology providers, manufacturing leaders, and distinguished guests during a prestigious industry recognition ceremony.`,
+    image: "/images/tooling-about-INDIAMET.png",
+    link: "/global-metrology-excellence-awards",
+    buttonText: "Explore Awards",
+  },
   ]
 
   return (
@@ -50,17 +51,19 @@ const EcosystemSection = () => {
           {/* HEADER */}
           <div className="mb-14 flex max-w-8xl flex-col gap-6">
             <h2 className="title-72 text-black">
-              DIEMEX: A Year-Round Die & Mould Manufacturing Ecosystem
+              INDIAMET: India's First Dedicated Metrology & Quality Engineering Exhibition
             </h2>
 
             <p className="text-lg text-black/70">
-              DIEMEX is India’s leading international exhibition for die & mould manufacturing, tooling, and precision engineering technologies. With a strong legacy and deep industry trust, it plays a pivotal role in connecting toolrooms, OEMs, material suppliers, and advanced manufacturing solution providers from India and global markets—before, during, and beyond the exhibition dates.
+              INDIAMET 2027 is India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Designed as a focused B2B platform, it brings together global technology leaders, manufacturers, OEMs, calibration laboratories, research institutions, and solution providers to showcase the latest innovations and create valuable business opportunities.
             </p>
-
+<p className="text-lg text-black/70">
+             The exhibition serves as a meeting point for the entire metrology and quality engineering ecosystem, enabling industry professionals to discover new technologies, exchange technical knowledge, build strategic partnerships, and accelerate the adoption of advanced measurement and quality solutions across India's rapidly growing manufacturing sector.
+            </p>
             {/* LINK AS BUTTON – NO <button> */}
             <Link
               href="/why-exhibit"
-              className="inline-block w-fit rounded-full bg-[#388E36] px-10 py-4 font-semibold text-white transition hover:bg-mainColor4"
+              className="inline-block w-fit rounded-full bg-[#FF6A00] px-10 py-4 font-semibold text-white transition hover:bg-mainColor4"
             >
               Why Exhibit
             </Link>
@@ -106,7 +109,7 @@ const EcosystemSection = () => {
                 <div className="mt-auto p-6 pt-4 xl:p-8">
                   <Link
                     href={item.link}
-                    className="block w-full rounded-full bg-[#388E36] px-8 py-4 text-center text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-mainColor4 hover:shadow-lg"
+                    className="block w-full rounded-full bg-[#FF6A00] px-8 py-4 text-center text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-mainColor4 hover:shadow-lg"
                   >
                     {item.buttonText}
                   </Link>

@@ -89,7 +89,7 @@ export default function LoginPage() {
   <div className="relative h-40 w-[700px]">
   <Image
   src="/images/exhibitor-login.png"
-  alt="DIEMEX"
+  alt="INDIAMET"
   width={300}
   height={100}
   className="mx-auto object-contain"
@@ -111,7 +111,7 @@ export default function LoginPage() {
               <br />
               API URL:{" "}
               {process.env.NEXT_PUBLIC_API_URL ||
-                "https://diemex-backend.onrender.com/api"}
+                "https://INDIAMET-backend.onrender.com/api"}
             </div>
           )}
         </div>
@@ -212,7 +212,7 @@ export default function LoginPage() {
         {/* Footer */}
         <div className="text-center mt-8">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} DIEMEX Exhibition. All rights reserved.
+            © {new Date().getFullYear()} INDIAMET Exhibition. All rights reserved.
           </p>
         </div>
       </div>

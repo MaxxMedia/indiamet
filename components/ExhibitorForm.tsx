@@ -19,29 +19,34 @@ const STAND_SIZES = [
 ];
 
 const PRODUCT_SECTORS = [
-    'Additive Manufacturing - 3D Printing',
-    'CNC Milling / Machining Centre, EDM',
-    'Cutting Tools',
-    'Heat Treatment',
-    'Hot Runner System',
-    'Injection Moulding Machine',
-    'Inspection and Quality Systems, CMM',
-    'Machine Tools & Accessories for Dies and Moulds',
-    'Mechanical Presses for Sheet Metal Components',
-    'Raw Material Suppliers (Tool Steel)',
-    'Texturizing, Polishing & Plating',
-    'CAD/CAM/CAE, Simulation',
-    'Mould Base',
-    'Tool Room - Die Casting Dies & Rubber Moulds',
-    'Tool Room - Jig, Fixture and Gauges',
-    'Tool Room - Sheet Metal Dies / Sheet metal Components',
+  'Coordinate Measuring Machines (CMM)',
+  'Portable Metrology & 3D Measurement Systems',
+  'Optical, Vision & Laser Measurement Systems',
+  'Machine Vision & Automated Inspection',
+  'Dimensional Metrology & Gauging Solutions',
+  'Surface Measurement & Form Analysis',
+  'Calibration Equipment & Laboratory Services',
+  'Testing Instruments & Material Testing Equipment',
+  'Non-Destructive Testing (NDT) Solutions',
+  'Precision Measuring Instruments',
+  'Sensors, Probes & Measurement Accessories',
+  'Industrial Microscopes & Optical Inspection',
+  'Quality Control & Quality Assurance Systems',
+  'Metrology Software, SPC & Quality Management',
+  'Industrial Automation & Smart Metrology (Industry 4.0)',
+  'AI, Digital Inspection & Data Analytics',
+  'Precision Engineering & Measurement Solutions',
+  'Research, Standards & Certification Bodies'
 ];
 
-const INDUSTRIES = ['Automotive', 'Plastics', 'Aerospace', 'Electronics', 'Manufacturing', 'Logistics', 'Other'];
-const INTEREST_LEVELS = [
-    'Ready to book my stand',
-    'Looking for more information',
-    'Looking for sponsorship opportunities',
+const INDUSTRIES = [
+  'Automotive',
+  'Plastics',
+  'Aerospace',
+  'Electronics',
+  'Manufacturing',
+  'Logistics',
+  'Other'
 ];
 
 export default function ExhibitorForm() {
@@ -177,25 +182,7 @@ export default function ExhibitorForm() {
         <>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex flex-col gap-1.5">
-                    <label className="text-xs font-semibold text-gray-700 tracking-wide">
-                        Interest Level <span className="text-red-500">*</span>
-                    </label>
-                    <div className="space-y-2">
-                        {INTEREST_LEVELS.map(v => (
-                            <label key={v} className="flex items-center gap-3 cursor-pointer">
-                                <input
-                                    type="radio"
-                                    name="interestLevel"
-                                    value={v}
-                                    checked={form.interestLevel === v}
-                                    onChange={handleChange}
-                                    required
-                                    className="h-4 w-4 accent-[#1e3a6e] cursor-pointer"
-                                />
-                                <span className="text-sm text-gray-700">{v}</span>
-                            </label>
-                        ))}
-                    </div>
+                                        
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

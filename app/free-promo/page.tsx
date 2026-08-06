@@ -54,7 +54,7 @@ export default function ExhibitorPromotionPage() {
           </h1>
 
           <p className="max-w-10xl text-lg leading-relaxed text-black/80">
-            As an exhibitor at Diemex 2026, maximise your impact by inviting your
+            As an exhibitor at INDIAMET 2027, maximise your impact by inviting your
             clients, partners, and prospects to visit your stand for free! We're
             providing you with an exclusive branded materials, ensuring your audience can easily register and connect with you
             at the event.
@@ -68,7 +68,7 @@ export default function ExhibitorPromotionPage() {
           {/* TEXT */}
           <div className='text-[#4D4D4D]'>
             <h2 className="text-2xl lg:text-3xl font-bold text-[#4D4D4D] mb-6 leading-tight">
-              Invite Your Clients to Diemex 2026
+              Invite Your Clients to INDIAMET 2027
             </h2>
 
             <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
@@ -131,16 +131,16 @@ export default function ExhibitorPromotionPage() {
               <p className="text-lg lg:text-xl leading-relaxed text-black/80 mb-6">
                 Use your <strong>Logo</strong> to personally invite
                 your clients, distributors, and business partners to visit your stand
-                at <strong>Diemex 2026</strong> for free. Add Logo to
+                at <strong>INDIAMET 2027</strong> for free. Add Logo to
                 your email invitations and formal letters to ensure they secure their
                 <strong> free electronic ticket</strong>.
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Invitation_Diemex2026.docx"
+                href="/images/Exhibitor_Promotion/Invitation_INDIAMET2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#388E36] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Your Invitation
               </a>
@@ -163,7 +163,7 @@ export default function ExhibitorPromotionPage() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#388E36] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Your Personalised Banners
               </a>
@@ -178,14 +178,14 @@ export default function ExhibitorPromotionPage() {
               <p className="text-lg lg:text-xl leading-relaxed text-black/80 mb-6">
                 Announce your participation in the exhibition on your company website.
                 Share your stand number, product information, and invite visitors to
-                meet you at <strong>Diemex 2026</strong>.
+                meet you at <strong>INDIAMET 2027</strong>.
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Announcement_Temp_Diemex_2026.docx"
+                href="/images/Exhibitor_Promotion/Announcement_Temp_INDIAMET_2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#388E36] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Announcement Template
               </a>
@@ -201,14 +201,14 @@ export default function ExhibitorPromotionPage() {
                 Promote your <strong>product launches</strong> through company
                 newsletters, industry publications, and press releases to maximise
                 visibility and encourage visitors to attend
-                <strong> Diemex 2026</strong>.
+                <strong> INDIAMET 2027</strong>.
               </p>
 
               <a
-                href="/images/Exhibitor_Promotion/Diemex_2026_news.pdf"
+                href="/images/Exhibitor_Promotion/INDIAMET_2027_news.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#388E36] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#FF6A00] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Requirements to News Promotion
               </a>
@@ -245,17 +245,17 @@ export default function ExhibitorPromotionPage() {
                   </p>
 
                   <img
-                    src="/images/exhibitor-promo/logo_diemex.png"
-                    alt="Diemex logo"
+                    src="/images/exhibitor-promo/logo_INDIAMET.png"
+                    alt="Indiamet logo"
                     className="max-w-[260px]"
                   />
 
                   <p className="font-semibold text-black">
-                    Diemex 2026 | 3rd Edition
+                    Indiamet 2027 | 1st Edition
                   </p>
 
                   <p>
-                    October 08–10, 2026, Auto Cluster Exhibition Centre, Pune, India
+                    April 22-24, 2027, Auto Cluster Exhibition Centre, Pune, India
                     <br />
                     <br />
                     We invite you to visit our stand No. ___
@@ -268,10 +268,10 @@ export default function ExhibitorPromotionPage() {
 
                 {/* BUTTON */}
                 <a
-                  href="/images/exhibitor-promo/Diemex_2026_logos.zip"
+                  href="/images/exhibitor-promo/INDIAMET_2027_logos.zip"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex w-fit rounded-full bg-[#388E36] px-12 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                  className="mt-6 inline-flex w-fit rounded-full bg-[#FF6A00] px-12 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
                 >
                   Download Logo
                 </a>

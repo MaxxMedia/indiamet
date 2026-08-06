@@ -18,18 +18,18 @@ export default function WhyChooseSection() {
   const reasons = [
     {
       number: '01',
-      title: 'Meet serious buyers from the die & mould industry',
+      title: 'Meet Serious Buyers from the Manufacturing & Quality Engineering Industry',
 
       description:
-        'Gain access to a highly focused audience of toolmakers, OEMs, component manufacturers, design engineers, and senior decision-makers actively seeking advanced die & mould solutions, precision tooling, and manufacturing partnerships.',
+        'Connect with a highly targeted audience of quality managers, metrology engineers, inspection professionals, manufacturing heads, OEMs, automotive companies, aerospace manufacturers, medical device producers, precision engineering firms, calibration laboratories, research institutions, and senior decision-makers actively seeking advanced metrology, measurement, inspection, calibration, and quality assurance solutions.',
       icon: '👥',
     },
     {
       number: '02',
-      title: 'Expand Your Market Presence at DIEMEX 2026',
+      title: 'Expand Your Market Presence at INDIAMET 2027',
 
       description:
-        'Strengthen your footprint in India’s rapidly growing manufacturing ecosystem by showcasing your brand to a highly targeted and decision-driven audience of die & mould manufacturers, OEMs, automotive and engineering companies, and industrial buyers from across India and overseas.',
+        'Strengthen your footprint in India’s rapidly growing manufacturing and quality ecosystem by showcasing your brand to a highly targeted audience of metrology professionals, quality engineers, OEMs, automotive, aerospace, electronics, medical device, defence, precision engineering manufacturers, calibration laboratories, research institutions, and industrial decision-makers from across India and around the world..',
       icon: '🌍',
     },
     {
@@ -37,7 +37,7 @@ export default function WhyChooseSection() {
       title: 'Meet Key Decision-Makers and Build Instant Credibility',
 
       description:
-        'Showcase your cutting-edge die & mould solutions and position your brand as a trusted leader in India’s precision manufacturing and tooling industry.',
+        'Showcase your innovative metrology, measurement, inspection, calibration, and quality assurance solutions while positioning your brand as a trusted partner in India’s rapidly evolving manufacturing and quality engineering ecosystem. Engage directly with senior decision-makers, quality heads, plant managers, manufacturing leaders, procurement professionals, and technical experts driving investments in precision measurement and industrial excellence..',
       icon: '🤝',
     },
   ];
@@ -85,7 +85,7 @@ export default function WhyChooseSection() {
   return (
     <section ref={sectionRef} className="bg-[#F4F4F4] overflow-hidden">
       {/* Blue Header Section - Full width background */}
-      <div className="bg-[#06162f] py-24">
+      <div className="bg-[#01163A] py-24">
         <SectionContainer>
           <h2
             ref={titleRef}
@@ -93,7 +93,7 @@ export default function WhyChooseSection() {
                        leading-[0.85] tracking-tight opacity-0"
           >
             Why choose{" "}
-            <span className="text-[#82c6eb] font-parabolica">DIEMEX 2026</span>
+            <span className="text-[#FF6A00] font-parabolica">INDIAMET 2027</span>
           </h2>
         </SectionContainer>
       </div>
@@ -114,7 +114,7 @@ export default function WhyChooseSection() {
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-3xl lg:text-4xl">{reason.icon}</span>
-                    <h3 className="text-3xl lg:text-4xl font-bold text-[#388E36]">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-[#FF6A00]">
                       {reason.number}
                     </h3>
                   </div>

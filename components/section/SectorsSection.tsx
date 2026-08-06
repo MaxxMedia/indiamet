@@ -5,27 +5,27 @@ import SectionContainer from "../UI/SectionContainer"
 
 const SectorsSection = () => {
   const sectors = [
-    {
-      title: "Die,Mould & Tooling Solutions",
-      description:
-        "Advanced die manufacturing, injection moulding solutions, precision machining systems, and smart tooling technologies.",
-      image: "/images/precision.jpg",
-      link: "/sectors/die-mould",
-    },
-    {
-      title: "Tooling & Cutting Solutions",
-description:
-  "High-performance cutting tools, tool holders, and machining solutions driving productivity and precision in modern manufacturing.",
-image: "/images/mouldbase.jpg",
-link: "/sectors/tooling-cutting-solutions",
-    },
-    {
-      title: "Precision Machining & Automation",
-description:
-  "CNC machining, EDM systems, robotics, and smart manufacturing technologies powering next-generation production.",
-image: "/images/finishing.jpg",
-link: "/sectors/precision-machining-automation",
-    },
+ {
+    title: "Metrology & Precision Measurement Systems",
+    description:
+      "Advanced metrology instruments, dimensional measurement systems, precision gauges, comparators, and measurement solutions for accurate quality control and manufacturing.",
+    image: "/images/precision.jpg",
+    link: "/sectors/metrology-measurement",
+  },
+  {
+    title: "Coordinate Measuring Machines (CMM) & Gauging",
+    description:
+      "Bridge, gantry, horizontal arm, and portable CMMs, precision gauges, probing systems, and dimensional inspection technologies for high-accuracy measurements.",
+    image: "/images/mouldbase.jpg",
+    link: "/sectors/cmm-gauging",
+  },
+  {
+    title: "Optical Inspection, Machine Vision & Smart Metrology",
+    description:
+      "Optical metrology, machine vision, laser scanning, 3D measurement, AI-powered inspection, industrial software, and smart metrology solutions for modern manufacturing.",
+    image: "/images/finishing.jpg",
+    link: "/sectors/optical-machine-vision",
+  },
   ]
 
   return (
@@ -34,13 +34,13 @@ link: "/sectors/precision-machining-automation",
       <div className="grid gap-5 lg:grid-cols-12 lg:items-end lg:gap-10">
         <div className="lg:col-span-9">
           <h2 className="title-72 text-black ">
-            10 Event Sectors Covering the Complete Die & Mould Value Chain
+            10 Event Sectors Covering the Complete Metrology & Quality Engineering Ecosystem
           </h2>
         </div>
 
         <div className="flex lg:col-span-3 lg:justify-end">
           <Link href="/sectors">
-            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#388E36] text-white transition hover:bg-mainColor4">
+            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#FF6A00] text-white transition hover:bg-mainColor4">
               Explore All Our Event Sector
             </button>
           </Link>

@@ -3,9 +3,9 @@ import { Suspense } from 'react';
 import RegisterPageContent from '@/components/RegisterPageContent';
 
 export const metadata: Metadata = {
-    title: 'Register | DIEMEX 2026',
+    title: 'Register | INDIAMET 2027',
     description:
-        'Register for DIEMEX 2026 — visitor registration, exhibitor enquiry, partnership, or brochure download.',
+        'Register for INDIAMET 2027 — visitor registration, exhibitor enquiry, partnership, or brochure download.',
 };
 
 export default function RegisterPage() {
@@ -13,7 +13,7 @@ export default function RegisterPage() {
         <Suspense
             fallback={
                 <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4 py-10">
-                    <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#002d86] border-t-transparent" />
+                    <div className="h-12 w-12 animate-spin rounded-full border-4 border-[#01163A] border-t-transparent" />
                     <p className="text-lg font-semibold text-gray-700">Loading registration form...</p>
                 </div>
             }
