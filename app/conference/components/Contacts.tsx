@@ -40,7 +40,7 @@ const Contacts = () => {
                     href="mailto:bhoomika@INDIAMET.in."
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    summit@INDIAMET.in
+                    summit@indiametexpo.com
                   </a>
                   <a 
                     href="tel:+91 9980241366"
@@ -83,7 +83,7 @@ const Contacts = () => {
                     href="mailto:Olga.Senicheva@ite.group"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    pad@INDIAMET.in
+                    pad@indiametexpo.com
                   </a>
                   <a 
                     href="tel:+919148319993"
