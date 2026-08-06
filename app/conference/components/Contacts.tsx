@@ -20,15 +20,15 @@ const Contacts = () => {
                   <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
                     <div className="w-20 sm:w-1/5 min-w-[60px] md:min-w-[80px]">
                       <img
-                        src="/images/conference/contacts/bhoomika.jpg"
-                        alt="Bhoomika"
+                        src="/images/conference/contacts/"
+                        alt=""
                         width={80}
                         height={80}
                         className="rounded-lg object-cover w-full h-auto"
                       />
                     </div>
                     <div className="flex-1">
-                      <p className="text-lg md:text-xl lg:text-27 font-bold">Bhoomika</p>
+                      <p className="text-lg md:text-xl lg:text-27 font-bold"></p>
                       <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
                         Conference Sales 
                       </p>
@@ -40,7 +40,7 @@ const Contacts = () => {
                     href="mailto:bhoomika@INDIAMET.in."
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    bhoomika@INDIAMET.in
+                    summit@INDIAMET.in
                   </a>
                   <a 
                     href="tel:+91 9980241366"
