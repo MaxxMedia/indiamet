@@ -359,15 +359,7 @@ export default function WhyVisit() {
                 <p className="text-gray-700 text-sm sm:text-base md:text-[10] max-w-8xl mb-6 sm:mb-10 leading-relaxed">
                   Experience India's first dedicated exhibition for metrology and quality engineering, where manufacturers, OEMs, technology providers, and quality professionals come together to discover innovations, exchange knowledge, and create new business opportunities.
                 </p>
-                <Link href='/post-show-report'>
-                  <motion.button
-                    whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-[#FF6A00] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
-                  >
-                    Download Brochure
-                  </motion.button>
-                </Link>
+                
               </SectionContainer>
             </motion.section>
 
