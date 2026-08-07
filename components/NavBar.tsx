@@ -18,33 +18,33 @@ const navItems: NavItem[] = [
     title: "EXHIBIT",
     dropdown: true,
     links: [
-      { text: "Why Exhibit", href: "/why-exhibit" },
-      { text: "Become an Exhibitor", href: "/exhibiting-enquiry" },
-      { text: "Event Sectors", href: "/sectors" },
-      { text: "Plan your travel", href: "/plan-your-travel" },
-      { text: "Exhibitor List", href: "/exhibition-directory" },
-      { text: "Exhibitor Resource Center", href: "/exhibitor-resource-center" },
-      { text: "Exhibitor Promotions", href: "/free-promo" },
-      { text: "Floor Plan", href: "/layout"}
+      { text: "WHY EXHIBIT", href: "/why-exhibit" },
+      { text: "BECOME AN EXHIBITOR", href: "/exhibiting-enquiry" },
+      { text: "EVENT SECTORS", href: "/sectors" },
+      { text: "EXHIBITOR LIST", href: "/exhibition-directory" },
+      { text: "EXHIBITOR RESOURCE CENTER", href: "/exhibitor-resource-center" },
+      { text: "EXHIBITOR PROMOTIONS", href: "/free-promo" },
+      { text: "FLOOR PLAN", href: "/layout"}
+      { text: "PLAN YOUR TRAVEL", href: "/plan-your-travel" },
     ],
   },
   {
     title: "VISIT",
     dropdown: true,
     links: [
-      { text: "Why Visit", href: "/why-visit" },
-      { text: "Event Sector", href: "/sectors" },
-      { text: "Exhibitor List", href: "/exhibition-directory" },
-      { text: "Download Event Brochure", href: "/event-brochure" },
+      { text: "WHY VISIT", href: "/why-visit" },
+      { text: "EVENT SECTORS", href: "/sectors" },
+      { text: "EXHIBITOR LIST", href: "/exhibition-directory" },
+      { text: "DOWNLOAD EVENT BROCHURE", href: "/event-brochure" },
     ],
   },
    {
     title: "ABOUT",
     dropdown: true,
     links: [
-      { text: "About INDIAMET", href: "/about-indiamet" },
-      { text: "About The Organizer", href: "/about-organizer" },
-      { text: "Partners & Sponsors", href: "/partners-and-sponsors" },
+      { text: "ABOUT INDIAMET", href: "/about-indiamet" },
+      { text: "ABOUT THE ORGANIZER", href: "/about-organizer" },
+      { text: "PARTNERS & SPONSORS", href: "/partners-and-sponsors" },
     ],
   },
   
