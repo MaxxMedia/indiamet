@@ -327,7 +327,7 @@ export default function NavBar() {
                     href="/visitor-registration"
                     className={`bg-[#FF6A00] hover:bg-[#FF6A00] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
                   >
-                    {screenSize === "laptop" ? "Register" : "Register Now"}
+                    {screenSize === "laptop" ? "Register" : "Visitor Registration"}
                   </Button>
                 </div>
               </div>
@@ -445,7 +445,7 @@ export default function NavBar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="bg-[#FF6A00] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
-                  Register Now
+                  Visitor Registration
                 </Button>
               </div>
             </div>
