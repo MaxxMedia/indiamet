@@ -613,8 +613,8 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
                 <div className="mt-8 text-center text-gray-600">
                   <p className="text-sm">
                     Need assistance with registration? Contact us at{' '}
-                    <a href="mailto:pad@INDIAMET.in" className="text-blue-600 hover:underline">
-                      pad@INDIAMET.in
+                    <a href="mailto:pad@indiametexpo.in" className="text-blue-600 hover:underline">
+                      pad@indiametexpo.in
                     </a>
                   </p>
                 </div>
