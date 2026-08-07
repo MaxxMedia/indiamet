@@ -22,9 +22,12 @@ const navItems: NavItem[] = [
       { text: "BECOME AN EXHIBITOR", href: "/exhibiting-enquiry" },
       { text: "EVENT SECTORS", href: "/sectors" },
       { text: "EXHIBITOR LIST", href: "/exhibition-directory" },
-      { text: "EXHIBITOR RESOURCE CENTER", href: "/exhibitor-resource-center" },
+      {
+        text: "EXHIBITOR RESOURCE CENTER",
+        href: "/exhibitor-resource-center",
+      },
       { text: "EXHIBITOR PROMOTIONS", href: "/free-promo" },
-      { text: "FLOOR PLAN", href: "/layout"}
+      { text: "FLOOR PLAN", href: "/layout" },
       { text: "PLAN YOUR TRAVEL", href: "/plan-your-travel" },
     ],
   },
@@ -38,7 +41,7 @@ const navItems: NavItem[] = [
       { text: "DOWNLOAD EVENT BROCHURE", href: "/event-brochure" },
     ],
   },
-   {
+  {
     title: "ABOUT",
     dropdown: true,
     links: [
@@ -47,11 +50,11 @@ const navItems: NavItem[] = [
       { text: "PARTNERS & SPONSORS", href: "/partners-and-sponsors" },
     ],
   },
-  
+
   { title: "SUMMIT", dropdown: false, href: "/conference" },
   { title: "GMEA AWARDS", dropdown: false, href: "/awards" },
-  { title: "CONTACT US", dropdown: false, href: "/contact-us" }
-]
+  { title: "CONTACT US", dropdown: false, href: "/contact-us" },
+];
 
 const EVENT_DATE = new Date("2027-04-22T10:00:00").getTime()
 
