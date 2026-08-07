@@ -20,23 +20,23 @@ export default function WhyAttendSection() {
                     {[
                       {
                         icon: "info_1ac9f9903c.png",
-                        title: "Stay Updated on Key Industry Developments",
-                        description: "Delegates will gain valuable insights into the latest trends in die & mould, tooling, automation, and precision manufacturing. Hear directly from industry experts, technology leaders, and OEM decision-makers, and get practical answers to your most pressing technical and business challenges."
+                        title: "Gain Insights into the Latest Metrology & Quality Technologies",
+                        description: "Stay ahead of the rapidly evolving manufacturing landscape by exploring the latest innovations in industrial metrology, precision measurement, calibration, machine vision, 3D scanning, AI-powered inspection, digital quality management, and Industry 4.0. Learn directly from global technology leaders, manufacturing experts, and quality professionals about emerging trends and best practices shaping the future of precision manufacturing."
                       },
                       {
                         icon: "profits_7bf2b98a13.png",
-                        title: "Insights for Business Growth",
-                        description: "Each delegate will discover new opportunities for business expansion, including advanced tooling capabilities, emerging manufacturing technologies, new industry applications, and expanded service offerings across automotive, aerospace, plastics, and precision engineering sectors."
+                        title: "Discover New Business & Technology Opportunities",
+                        description: "Explore how advanced metrology solutions can improve manufacturing accuracy, reduce production costs, enhance product quality, and accelerate digital transformation. Gain valuable insights into applications across automotive, aerospace, defence, medical devices, electronics, semiconductor, heavy engineering, and precision manufacturing industries."
                       },
                       {
                         icon: "chat_6c367bef7a.png",
-                        title: "Networking opportunities",
-                        description: "Participating in the INDIAMET Conference offers a powerful platform to connect with die & mould manufacturers, tooling experts, OEM leaders, and precision engineering professionals. Exchange ideas, share best practices, and build strategic partnerships that drive long-term business growth."
+                        title: "Build High-Value Industry Connections",
+                        description: "The INDIAMET Conference provides an exclusive platform to network with metrology professionals, quality managers, manufacturing leaders, OEMs, calibration laboratories, research institutions, government organizations, automation providers, and technology innovators. Exchange knowledge, share industry experiences, and establish strategic partnerships that support long-term business growth."
                       },
                       {
                         icon: "sales_348ae8dd98.png",
-                        title: "Additional Opportunities for INDIAMET Exhibitors",
-                        description: "For INDIAMET exhibitors, conference insights help sharpen exhibition strategies, align product positioning with market trends, and maximise ROI. By understanding emerging technologies and buyer expectations, exhibitors can present stronger, more targeted solutions."
+                        title: "Maximise Your Exhibition & Business ROI",
+                        description: "Conference sessions provide exhibitors and delegates with valuable market intelligence, customer insights, and technology trends that help strengthen product positioning, identify new business opportunities, and improve engagement with prospective customers during the exhibition. Attendees can align their business strategies with evolving industry demands while maximizing the value of their participation at INDIAMET 2027."
                       }
                     ].map((item, index) => (
                       <React.Fragment key={index}>
