@@ -3,27 +3,27 @@ import SectionContainer from './UI/SectionContainer'
 
 export default function ArticlesSection() {
   const articles = [
-    {
-      title: 'The Role of Precision Tooling in Modern Manufacturing',
-      slug: 'why-is-india-die-mould-industry-accelerating-in-2027',
-      excerpt: 'Precision tooling plays a critical role in enabling high-quality manufacturing across automotive, electronics, and consumer industries.',
-      image: '/images/article1.jpg',
-      date: 'February 01, 2027',
-    },
-    {
-      title: 'The Rise of India as a Global Die & Mould Manufacturing Hub',
-      slug: 'how-is-die-mould-industry-preparing-in-2027',
-      excerpt: 'India is rapidly emerging as a competitive global force in precision tooling and mould manufacturing.',
-      image: '/images/article3.jpg',
-      date: 'November 20, 2025',
-    },
-    {
-      title: 'How Smart Manufacturing Is Reshaping the Tooling Industry',
-      slug: 'what-s-next-for-large-complex-tooling-mould-manufacturing',
-      excerpt: 'Smart manufacturing technologies are reshaping the global die and mould industry.',
-      image: '/images/article4.jpg',
-      date: 'November 5, 2025',
-    },
+  {
+  title: 'The Future of Industrial Metrology: Driving Smart Manufacturing',
+  slug: 'future-of-industrial-metrology-driving-smart-manufacturing',
+  excerpt: 'Discover how precision measurement, AI-powered inspection, and advanced metrology technologies are transforming modern manufacturing across automotive, aerospace, electronics, and medical devices.',
+  image: '/images/article1.jpg',
+  date: 'February 01, 2027',
+},
+{
+  title: 'Why Precision Measurement is Critical for Next-Generation Manufacturing',
+  slug: 'why-precision-measurement-is-critical-for-next-generation-manufacturing',
+  excerpt: 'Explore how CMMs, optical metrology, machine vision, and calibration technologies are helping manufacturers improve quality, reduce defects, and achieve global standards.',
+  image: '/images/article3.jpg',
+  date: 'January 20, 2027',
+},
+{
+  title: 'Industrial Metrology Trends Shaping the Future of Manufacturing',
+  slug: 'industrial-metrology-trends-shaping-the-future-of-manufacturing',
+  excerpt: 'From 3D scanning and digital inspection to AI-driven quality control and smart factories, explore the technologies redefining precision manufacturing.',
+  image: '/images/article4.jpg',
+  date: 'January 05, 2027',
+},
   ]
 
   return (
