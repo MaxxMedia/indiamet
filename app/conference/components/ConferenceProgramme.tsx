@@ -181,7 +181,7 @@ const TransRussiaSummitProgram: React.FC = () => {
         {
           time: "12:30 – 13:00",
           title: "Fireside Chat : Precision Manufacturing in the EV & Aerospace Era",
-         description: "Discussionb Points:",
+         description: "Discussion Points:",
           topics: [
             { id: 1, title: "Tight tolerance requirements" },
             { id: 2, title: "Lightweight component inspection" },
@@ -202,8 +202,15 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
 {
           time: "14:00 – 14:30",
-          title: 'Technical Session 3 : Surface Finishing, Coatings & Wear Protection"',
-          description: "1. PVD, CVD, DLC coatings 2. Improving mould surface quality",
+          title: 'Technical Session 3 : Calibration, Traceability & Quality Standards"',
+       description: "Session Topics:",
+          topics: [
+            { id: 1, title: "ISO 17025" },
+            { id: 2, title: "Calibration best practices" },
+            { id: 3, title: "Measurement uncertainty" },
+            { id: 4, title: "International traceability" },
+            { id: 5, title: "NABL ecosystem" },
+                       ],
           speakers: [
             {
               name: "",
@@ -214,12 +221,15 @@ const TransRussiaSummitProgram: React.FC = () => {
 
         {
           time: "14:30 – 15:30",
-          title: 'Panel Discussion : Automation & Industry 4.0 in Moulding and Tool Rooms',
-          description: "Session Topics:",
+          title: 'Panel Discussion : Quality 4.0 – The Future of Digital Inspection & Manufacturing Excellence',
+          description: "Discussion Topics:",
           topics: [
-            { id: 1, title: "Robotics in injection moulding" },
-            { id: 2, title: "Lights-out manufacturing for tool shops" },
-            { id: 3, title: "Reducing cycle times through smart automation" },
+            { id: 1, title: "AI in dimensional inspection" },
+            { id: 2, title: "Digital quality management" },
+            { id: 3, title: "Predictive quality analytics" },
+            { id: 4, title: "Automated inspection cells" },
+            { id: 5, title: "Zero-defect manufacturing" },
+            { id: 6, title: "Smart production lines" },
                      ],
           moderator: {
             name: "",
@@ -239,13 +249,34 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
 {
           time: "16:30 – 16:30",
-          title: "Fireside Chat : AI, Simulation & Smart Manufacturing – Digitalizing the Mold Shop",
-          description: "• AI-driven mold flow and simulation for zero-defect molding.• Use of digital twins & predictive maintenance in tool rooms • From manual know-how to knowledge-driven digital workflows"
+          title: "Fireside Chat : The Future of AI, Digital Twins & Smart Metrology",
+          description: "Discussion Points:",
+          topics: [
+            { id: 1, title: "AI-assisted inspection" },
+            { id: 2, title: "Digital twins for manufacturing" },
+            { id: 3, title: "Predictive quality control" },
+            { id: 4, title: "Cloud-connected metrology" },
+            { id: 5, title: "Autonomous inspection systems" },
+             { id: 6, title: "Next-generation manufacturing intelligence" },
+                       ],
+          speakers: [
+            {
+              name: "",
+              position: ""
+            }
+          ],
         },
 {
           time: "16:30 – 17:00",
-          title: 'Technical Session 4 : Design for Manufacturability (DFM) in Tooling & Plastic Parts',
-          description: "• Optimising part geometry for efficiency  • Reducing rework & scrap",
+          title: 'Technical Session 4 : Industrial Metrology for Automotive, Medical Devices & Semiconductor Manufacturing',
+          description: "Session Topics:",
+          topics: [
+            { id: 1, title: "Precision measurement for EV components" },
+            { id: 2, title: "Medical implant inspection" },
+            { id: 3, title: "Semiconductor metrology" },
+            { id: 4, title: "Micro-measurement technologies" },
+            { id: 5, title: "High-precision manufacturing" },
+                       ],
           speakers: [
             {
               name: "",
@@ -267,7 +298,7 @@ const TransRussiaSummitProgram: React.FC = () => {
     },
     {
 
-      day: "Day 2 Theme : Sustainability & Innovation in Manufacturing",
+      day: "Day 2 Theme : Innovation, Sustainability & Next-Generation Measurement Technologies",
       date: "April 23, 2027",
       description: "*For delegates of all categories",
       sessions: [
@@ -277,12 +308,15 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
                     {
           time: "10:00 – 11:00",
-          title: 'Panel Discussion : Sustainable Materials & Circular Economy in Plastics',
-          description: "Session Topics:",
+          title: 'Panel Discussion : Future of Precision Manufacturing: Emerging Trends in Industrial Metrology',
+          description: "Discussion Topics:",
           topics: [
-            { id: 1, title: "Biodegradable polymers" },
-            { id: 2, title: "Recycling technologies" },
-            { id: 3, title: "Regulatory compliance & EPR norms" },
+            { id: 1, title: "Sustainability in precision manufacturing" },
+            { id: 2, title: "Green metrology and energy-efficient inspection" },
+            { id: 3, title: "Digital quality ecosystems" },
+            { id: 4, title: "Global metrology standards" },
+            { id: 5, title: "Future manufacturing technologies" },
+             { id: 6, title: "Building globally competitive factories" },
                      ],
           moderator: {
             name: "",
@@ -298,11 +332,15 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
                {
           time: "11:00 – 11:30",
-          title: 'Technical Session 5 : Conformal Cooling in Mould Design',
+          title: 'Technical Session 5 : Portable Metrology & On-Machine Measurement Technologies',
+             description: "Session Topics:",
           topics: [
-            { id: 1, title: "3D printing for optimised cooling channels" },
-            { id: 2, title: "Energy savings & cycle time reduction" },
-                                 ],
+            { id: 1, title: "Portable CMMs and articulated arms" },
+            { id: 2, title: "Laser trackers for large-volume inspection" },
+            { id: 3, title: "In-process measurement" },
+            { id: 4, title: "Shop-floor metrology" },
+            { id: 5, title: "Real-time dimensional verification" },
+                       ],
           speakers: [
             {
               name: "",
@@ -312,16 +350,33 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
         {
           time: "11:30 – 12:00",
-          title: "Fireside Chat : Material Evolution: Navigating New Plastics and Sustainability Demands",
-          description: "• Recycled and high-performance polymers for safety-critical and mass-market goods • Influence of global supply chains on material availability • Circular economy pilots: What works across sectors?."
+          title: "Fireside Chat : Metrology for the Semiconductor & Electronics Revolution",
+              description: "Discussion Points:",
+          topics: [
+            { id: 1, title: "Semiconductor inspection challenges" },
+            { id: 2, title: "Wafer and micro-component measurement" },
+            { id: 3, title: "PCB and electronics quality" },
+            { id: 4, title: "Ultra-precision manufacturing" },
+            { id: 5, title: "Future opportunities in India's semiconductor ecosystem" },
+            ],
+          speakers: [
+            {
+              name: "",
+              position: ""
+            }
+          ],
         },
          {
           time: "12:00 – 12:30",
-          title: 'Technical Session 6 : Advanced Simulation & Flow Analysis',
+          title: 'Technical Session 6 : Surface Metrology & Form Measurement',
+             description: "Session Topics:",
           topics: [
-            { id: 1, title: "Reducing warpage & shrinkage in moulded parts" },
-            { id: 2, title: "Case studies from automotive & electronics" },
-                                 ],
+            { id: 1, title: "Surface roughness evaluation" },
+            { id: 2, title: "Roundness and cylindricity" },
+            { id: 3, title: "Profile and contour measurement" },
+            { id: 4, title: "Form accuracy analysis" },
+            { id: 5, title: "Precision finishing verification" },
+            ],
           speakers: [
             {
               name: "",
@@ -331,11 +386,15 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
            {
           time: "12:30 – 13:00",
-          title: 'Technical Session 7 : AI-Driven Process Optimisation in Moulding',
+          title: 'Technical Session 7 : Industrial CT Scanning & Non-Destructive Testing (NDT)',
+                  description: "Session Topics:",
           topics: [
-            { id: 1, title: "Data-driven cycle time reduction" },
-            { id: 2, title: "Predictive defect prevention" },
-                                 ],
+            { id: 1, title: "Industrial CT inspection" },
+            { id: 2, title: "Internal defect detection" },
+            { id: 3, title: "X-ray measurement systems" },
+            { id: 4, title: "Digital radiography" },
+            { id: 5, title: "Advanced NDT for critical components" },
+            ],
           speakers: [
             {
               name: "",
@@ -352,12 +411,16 @@ const TransRussiaSummitProgram: React.FC = () => {
 
         {
           time: "14:00 – 15:00",
-          title: 'Panel Discussion : Global Trends in Die & Mould Manufacturing',
-          description: "Session Topics:",
+          title: 'Panel Discussion : Global Metrology Trends & India"s Manufacturing Competitiveness',
+          description: "Discussion Topics:",
           topics: [
-            { id: 1, title: "Competing with China & Europe" },
-            { id: 2, title: "Export opportunities & standards compliance" },
-                          ],
+            { id: 1, title: "International quality regulations" },
+            { id: 2, title: "Export readiness through precision" },
+            { id: 3, title: "Global supply chain requirements" },
+            { id: 4, title: "Smart manufacturing benchmarks" },
+            { id: 5, title: "Workforce development" },
+             { id: 6, title: "India's roadmap to becoming a global metrology hub" },
+                     ],
           moderator: {
             name: "",
             position: "",
@@ -376,44 +439,58 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
 {
           time: "15:30 – 16:00",
-          title: "Fireside Chat : The Future is Collaborative: Cross-Industry Lessons in Mold Use",
-          description: "• Best practices in tooling partnerships.• Open innovation: When an idea from medical is adopted in aerospace, etc. • Workforce and upskilling for converging technologies."
+          title: "Fireside Chat : Precision Without Limits – The Next Generation of Industrial Metrology",
+                    description: "Discussion Topics:",
+          topics: [
+            { id: 1, title: "AI-enabled measurement systems" },
+            { id: 2, title: "Portable metrology and in-line inspection" },
+            { id: 3, title: "Digital twins and predictive quality" },
+            { id: 4, title: "Cloud-connected manufacturing" },
+            { id: 5, title: "Future of autonomous inspection" },
+            ],
+          speakers: [
+            {
+              name: "",
+              position: ""
+            }
+          ],
         },
 {
           time: "16:00 – 16:30",
-          title: 'Technical Session 8 : Hot Runner vs Cold Runner Technologies',
-          description: "Session Topics:",
+          title: 'Technical Session 8 : Calibration Laboratories, Accreditation & Compliance',
+                  description: "Session Topics:",
           topics: [
-            { id: 1, title: "Performance, cost & waste considerations" },
-            
-                          ],
-          moderator: {
-            name: "",
-            position: "",
-          },
+            { id: 1, title: "NABL accreditation best practices" },
+            { id: 2, title: "Laboratory automation" },
+            { id: 3, title: "Digital calibration certificates" },
+            { id: 4, title: "Traceability chains management" },
+            { id: 5, title: "International compliance" },
+            ],
           speakers: [
-            { name: "", position: "" },
-     
+            {
+              name: "",
+              position: ""
+            }
           ],
         },
 
 
         {
           time: "16:30 – 17:00",
-          title: 'Technical Session 9 : Automation in Quality Inspection',
-          description: "Session Topics:",
+          title: 'Technical Session 9 : Additive Manufacturing Inspection & Reverse Engineering',
+        description: "Session Topics:",
           topics: [
-            { id: 1, title: "CMM, laser scanning & AI-based defect detection" },
-            
-                          ],
-          moderator: {
-            name: "",
-            position: "",
-          },
+            { id: 1, title: "Inspection of 3D printed components" },
+            { id: 2, title: "Reverse engineering workflows" },
+            { id: 3, title: "GD&T validation" },
+            { id: 4, title: "Digital manufacturing verification" },
+            { id: 5, title: "Hybrid manufacturing inspection" },
+            ],
           speakers: [
-            { name: "", position: "" },
-         
-       
+            {
+              name: "",
+              position: ""
+            }
           ],
         },
 {
