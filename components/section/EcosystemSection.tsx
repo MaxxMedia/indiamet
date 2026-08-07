@@ -13,7 +13,7 @@ const EcosystemSection = () => {
 - Connect face-to-face with OEMs, manufacturers, quality heads, metrology engineers, procurement leaders, and senior decision-makers.
 - Showcase advanced metrology solutions, including CMMs, optical & vision inspection systems, machine vision, calibration equipment, testing technologies, precision instruments, industrial software, and smart manufacturing solutions.
 - Engage with a highly qualified audience from the automotive, EV, aerospace, defence, electronics, medical devices, industrial machinery, and precision engineering sectors over three focused days of business networking and technology showcase.`,
-    image: "/images/expo-about-INDIAMET.JPG",
+    image: "/images/expo-about-indiamet.JPG",
     link: "/about-indiamet",
     buttonText: "Know More",
   },
@@ -25,7 +25,7 @@ const EcosystemSection = () => {
 - Learn from global experts on the latest developments in metrology, measurement technology, inspection, calibration, testing, and quality assurance.
 - Explore emerging trends including AI-powered inspection, machine vision, digital metrology, Industry 4.0, and smart manufacturing.
 - Build valuable professional connections with OEMs, quality leaders, metrology specialists, calibration laboratories, researchers, and decision-makers from across the manufacturing ecosystem.`,
-    image: "/images/conference-about-INDIAMET.JPG",
+    image: "/images/conference-about-indiamet.JPG",
     link: "/indiamet-summit",
     buttonText: "Explore Summit",
   },
@@ -37,7 +37,7 @@ const EcosystemSection = () => {
 - Honour pioneering companies, innovators, researchers, and industry leaders.
 - Celebrate breakthrough technologies, best practices, and excellence in quality engineering.
 - Network with award winners, global technology providers, manufacturing leaders, and distinguished guests during a prestigious industry recognition ceremony.`,
-    image: "/images/tooling-about-INDIAMET.png",
+    image: "/images/tooling-about-indiamet.png",
     link: "/global-metrology-excellence-awards",
     buttonText: "Explore Awards",
   },
