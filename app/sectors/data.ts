@@ -1006,104 +1006,103 @@ For production managers, process engineers, and manufacturing executives, this s
   }
 }
 export const indiametSectors = [
-  { 
-    id: 1, 
-    title: 'Metrology & Precision Measurement Systems',
-    slug: 'precision-moulds', 
-    image: '/images/sectors/pic1.jpg',
-    description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'
+  {
+    id: 1,
+    title: "Industrial Metrology & Precision Measurement",
+    slug: "industrial-metrology",
+    image: "/images/sectors/metrology.jpg",
+    description: "CMMs, optical metrology, laser measurement, gauges, precision measuring instruments and dimensional inspection."
   },
-  { 
-    id: 2, 
-    title: 'Tooling, Mould Bases & Standard Components',
-    slug: 'tooling-mould-base', 
-    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_5_46a97403ad.png',
-    description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.'
+  {
+    id: 2,
+    title: "Quality Control & Inspection Systems",
+    slug: "quality-control",
+    image: "/images/sectors/quality-control.jpg",
+    description: "Inline inspection, automated quality systems, SPC, quality assurance and production inspection technologies."
   },
-  { 
-    id: 3, 
-    title: 'Machining & Finishing Technologies',
-    slug: 'machining-finishing', 
-    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_4_b89e6f82a3.png',
-    description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
+  {
+    id: 3,
+    title: "Coordinate Measuring Machines (CMM)",
+    slug: "coordinate-measuring-machines",
+    image: "/images/sectors/cmm.jpg",
+    description: "Bridge CMMs, gantry CMMs, portable CMMs, horizontal arm CMMs and measuring software."
   },
-  { 
-    id: 4, 
-    title: 'Automation & Industry 4.0 Solutions',
-    slug: 'automation-industry', 
-    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_3_9089d75ec1.png',
-    description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
+  {
+    id: 4,
+    title: "Optical & Vision Measurement",
+    slug: "optical-vision-measurement",
+    image: "/images/sectors/vision.jpg",
+    description: "Vision measuring machines, optical comparators, laser scanners, 3D scanners and imaging systems."
   },
-  { 
-    id: 5, 
-    title: 'Design, CAD/CAM & Engineering Software', 
-    slug: 'cad-cam', 
-    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_7_c75137da32.png',
-    description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
+  {
+    id: 5,
+    title: "Calibration Equipment & Laboratory",
+    slug: "calibration-laboratory",
+    image: "/images/sectors/calibration.jpg",
+    description: "Calibration instruments, NABL laboratories, calibration software and traceability solutions."
   },
-  { 
-    id: 6, 
-    title: 'Tool Steel & Advanced Materials', 
-    slug: 'tool-steel', 
-    image: 'https://cdn.itegroupnews.com/httpstransrussia_preview_prismetic_comterms_of_visiting_1200_x_490_px_a78a81f1aa.png',
-    description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
+  {
+    id: 6,
+    title: "Testing & Non-Destructive Testing (NDT)",
+    slug: "testing-ndt",
+    image: "/images/sectors/ndt.jpg",
+    description: "Ultrasonic testing, radiography, magnetic particle, eddy current, hardness and material testing."
   },
-  { 
-    id: 7, 
-    title: "Die & Mould Manufacturing",
-    slug: "die-mould-manufacturing",
-    image: "/images/image.png",
-    description: "Injection moulds, die casting dies, press tools, blow moulds, extrusion dies and comprehensive manufacturing solutions."
+  {
+    id: 7,
+    title: "Machine Vision & AI Inspection",
+    slug: "machine-vision",
+    image: "/images/sectors/machine-vision.jpg",
+    description: "Industrial cameras, AI inspection, smart vision systems, defect detection and deep learning inspection."
   },
-  { 
-    id: 8, 
-    title: "Tooling & Tool Room Technologies",
-    slug: "tooling-tool-rom-technologies", 
-    image: "/images/image.png",
-    description: "Cutting tools, jigs & fixtures, gauges, tool holders, and comprehensive tool room solutions for precision manufacturing."
+  {
+    id: 8,
+    title: "Sensors, IoT & Smart Manufacturing",
+    slug: "sensors-iot",
+    image: "/images/sectors/iot.jpg",
+    description: "Industrial sensors, IIoT, smart factories, digital twins, predictive maintenance and Industry 4.0."
   },
-  { 
-    id: 9, 
-    title: "CNC Machines & Precision Engineering", 
-    slug: "cnc-machines", 
-    image: "/images/image.png",
-    description: "Machining centres, turning, grinding, EDM, VMCs & HMCs, and comprehensive precision engineering solutions."
+  {
+    id: 9,
+    title: "Precision Gauges & Measuring Instruments",
+    slug: "gauges-measuring-instruments",
+    image: "/images/sectors/gauges.jpg",
+    description: "Micrometers, calipers, dial gauges, bore gauges, height gauges, surface roughness testers and precision tools."
   },
-  { 
-    id: 10, 
-    title: "Surface Treatment & Heat Treatment",
-    slug: "surface-treatment", 
-    image: "/images/image.png",
-    description: "Coatings, finishing, hardening, thermal processes, and surface enhancement technologies for extended component life."
+  {
+    id: 10,
+    title: "Metrology Software & Digital Solutions",
+    slug: "metrology-software",
+    image: "/images/sectors/software.jpg",
+    description: "Metrology software, measurement analysis, SPC, CAD comparison, reverse engineering and cloud solutions."
   },
-  { 
-    id: 11, 
-    title: "Materials, Steels & Alloys",
-    slug: "materials-steels-alloys",
-    image: "/images/image.png",
-    description: "Tool steels, special alloys, polymers, consumables, and advanced materials for demanding manufacturing applications."
+  {
+    id: 11,
+    title: "Industrial Automation & Robotics",
+    slug: "automation-robotics",
+    image: "/images/sectors/automation.jpg",
+    description: "Robotic inspection, cobots, automated measurement cells and smart manufacturing automation."
   },
-  { 
-    id: 12, 
-    title: "Injection Moulding & Casting Technologies",
-    slug: "die-casting", 
-    image: "/images/image.png",
-    description: "Plastics, rubber, die casting, metal forming solutions, and comprehensive moulding technologies for production."
+  {
+    id: 12,
+    title: "Research, Standards & Technical Institutions",
+    slug: "research-standards",
+    image: "/images/sectors/research.jpg",
+    description: "National laboratories, universities, standards organizations, certification bodies and metrology institutes."
   }
-]
+];
 
 export const allSectorSlugs = [
-   // INDIAMET sectors
-  'precision-moulds',
-  'tooling-mould-base',
-  'machining-finishing',
-  'automation-industry',
-  'cad-cam',
-  'tool-steel',
-  'die-mould-manufacturing',
-  'tooling-tool-rom-technologies',
-  'cnc-machines',
-  'surface-treatment',
-  'materials-steels-alloys',
-  'die-casting'
-]
+  "industrial-metrology",
+  "quality-control",
+  "coordinate-measuring-machines",
+  "optical-vision-measurement",
+  "calibration-laboratory",
+  "testing-ndt",
+  "machine-vision",
+  "sensors-iot",
+  "gauges-measuring-instruments",
+  "metrology-software",
+  "automation-robotics",
+  "research-standards"
+];
