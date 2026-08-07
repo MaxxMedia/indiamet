@@ -15,7 +15,7 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    title: "Exhibit",
+    title: "EXHIBIT",
     dropdown: true,
     links: [
       { text: "Why Exhibit", href: "/why-exhibit" },
@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    title: "Visit",
+    title: "VISIT",
     dropdown: true,
     links: [
       { text: "Why Visit", href: "/why-visit" },
@@ -39,7 +39,7 @@ const navItems: NavItem[] = [
     ],
   },
    {
-    title: "About",
+    title: "ABOUT",
     dropdown: true,
     links: [
       { text: "About INDIAMET", href: "/about-indiamet" },
@@ -48,9 +48,9 @@ const navItems: NavItem[] = [
     ],
   },
   
-  { title: "Summit", dropdown: false, href: "/conference" },
-  { title: "GMEA Awards", dropdown: false, href: "/awards" },
-  { title: "Contact us", dropdown: false, href: "/contact-us" }
+  { title: "SUMMIT", dropdown: false, href: "/conference" },
+  { title: "GMEA AWARDS", dropdown: false, href: "/awards" },
+  { title: "CONTACT US", dropdown: false, href: "/contact-us" }
 ]
 
 const EVENT_DATE = new Date("2027-04-22T10:00:00").getTime()
