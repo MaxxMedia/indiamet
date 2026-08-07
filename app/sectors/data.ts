@@ -1005,118 +1005,6 @@ For production managers, process engineers, and manufacturing executives, this s
     ]
   }
 }
-
-export const transRussiaSectors = [
-  { 
-    id: 1, 
-    title: 'Complex Logistics Services & Freight Forwarding', 
-    slug: 'complex-logistics', 
-    image: '/images/image.png',
-    description: 'Comprehensive logistics solutions including freight forwarding, customs clearance, and supply chain management services.'
-  },
-  { 
-    id: 2, 
-    title: 'Maritime & Inland Waterway Transport', 
-    slug: 'maritime-and-inland-waterway-transport', 
-    image: '/images/image.png',
-    description: 'Ocean and river transport services, shipping lines, and inland waterway logistics solutions.'
-  },
-  { 
-    id: 3, 
-    title: 'Air Freight', 
-    slug: 'air-freight', 
-    image: '/images/image.png',
-    description: 'Air cargo services, express logistics, and aviation freight solutions.'
-  },
-  { 
-    id: 4, 
-    title: 'Rail Freight', 
-    slug: 'rail-freight', 
-    image: '/images/image.png',
-    description: 'Rail transportation, intermodal solutions, and rail logistics across Eurasia.'
-  },
-  { 
-    id: 5, 
-    title: 'Road Freight Transportation', 
-    slug: 'road-freight-transportation', 
-    image: '/images/image.png',
-    description: 'Trucking, LTL, FTL services, and road transport logistics.'
-  },
-  { 
-    id: 6, 
-    title: 'Ports & Terminals, Freight Handling Services In Ports', 
-    slug: 'ports-and-terminals-freight-handling-services-in-ports', 
-    image: '/images/image.png',
-    description: 'Port operations, terminal services, stevedoring, and maritime infrastructure solutions.'
-  },
-  { 
-    id: 7, 
-    title: 'Warehouse Technology', 
-    slug: 'warehouse-technology', 
-    image: '/images/image.png',
-    description: 'Warehouse management systems, automation, and storage technology solutions.'
-  },
-  { 
-    id: 8, 
-    title: 'IT Solutions', 
-    slug: 'it-solutions', 
-    image: '/images/image.png',
-    description: 'Logistics software, tracking systems, and digital supply chain solutions.'
-  },
-  { 
-    id: 9, 
-    title: 'E-commerce Logistics', 
-    slug: 'ecommerce-logistics', 
-    image: '/images/image.png',
-    description: 'Fulfillment, last-mile delivery, and e-commerce supply chain services.'
-  },
-  { 
-    id: 10, 
-    title: 'Heavy Lift Carriage', 
-    slug: 'heavy-lift-carriage', 
-    image: '/images/image.png',
-    description: 'Oversized cargo transport, project logistics, and specialized heavy haulage.'
-  },
-]
-
-export const skladTechSectors = [
-  { 
-    id: 1, 
-    title: 'Warehousing Systems', 
-    slug: 'warehousing-systems', 
-    image: '/images/image.png',
-    description: 'Storage systems, racking, and warehouse infrastructure solutions.'
-  },
-  { 
-    id: 2, 
-    title: 'Material Handling', 
-    slug: 'material-handling', 
-    image: '/images/image.png',
-    description: 'Forklifts, conveyors, and material handling equipment.'
-  },
-  { 
-    id: 3, 
-    title: 'Automation & Robotics', 
-    slug: 'automation-robotics', 
-    image: '/images/image.png',
-    description: 'Automated storage, robotics, and smart warehouse solutions.'
-  },
-  { 
-    id: 4, 
-    title: 'Packaging Systems', 
-    slug: 'packaging-systems', 
-    image: '/images/image.png',
-    description: 'Packaging equipment, labeling, and packing solutions.'
-  },
-  { 
-    id: 5, 
-    title: 'Inventory Management', 
-    slug: 'inventory-management', 
-    image: '/images/image.png',
-    description: 'Inventory control, stock management, and tracking solutions.'
-  },
-]
-
 export const indiametSectors = [
   { 
     id: 1, 
@@ -1205,26 +1093,7 @@ export const indiametSectors = [
 ]
 
 export const allSectorSlugs = [
-  // TransRussia sectors
-  'complex-logistics',
-  'maritime-and-inland-waterway-transport', 
-  'air-freight',
-  'rail-freight',
-  'road-freight-transportation',
-  'ports-and-terminals-freight-handling-services-in-ports',
-  'warehouse-technology',
-  'it-solutions',
-  'ecommerce-logistics',
-  'heavy-lift-carriage',
-  
-  // SkladTech sectors
-  'warehousing-systems',
-  'material-handling',
-  'automation-robotics',
-  'packaging-systems',
-  'inventory-management',
-  
-  // INDIAMET sectors
+   // INDIAMET sectors
   'precision-moulds',
   'tooling-mould-base',
   'machining-finishing',
