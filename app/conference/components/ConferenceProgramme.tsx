@@ -105,7 +105,7 @@ const TransRussiaSummitProgram: React.FC = () => {
       
         {
           time: "10:15 – 10:25",
-          title: "India's Vision for Precision Manufacturing & Metrology Leadership 2035",
+          title: "Inaugural Keynote - India's Vision for Precision Manufacturing & Metrology Leadership 2035",
           speakers: [
             { name: "", position: "" },
                  ],
