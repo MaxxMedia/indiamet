@@ -16,7 +16,7 @@ const quickNavItems = [
   },
   {
     id: 2,
-    title: 'Download the INDIAMET 2027 Event Brochure',
+    title: 'Download Event Brochure',
     description: 'Discover everything about INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Explore the event overview, product sectors, visitor profile, exhibitor opportunities, and how INDIAMET can help you connect with key decision-makers and grow your business in India"s rapidly expanding manufacturing and quality engineering ecosystem.',
     image: '/images/brochure.jpg',
     cta: {
