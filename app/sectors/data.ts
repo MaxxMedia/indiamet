@@ -469,7 +469,198 @@ Whether you are an OEM seeking outsourced engineering support or a growing manuf
   ]
 },
 
-    // INDIAMET Sectors
+  // SkladTech Sectors
+  'warehousing-systems': {
+    title: 'Warehousing Systems',
+    description: 'Storage systems, racking, and warehouse infrastructure solutions.',
+    mainDescription: `The Warehousing Systems sector at INDIAMET focuses on the physical infrastructure that enables efficient storage and retrieval of goods. From pallet racking and shelving systems to mezzanine floors and automated storage solutions, this sector showcases the products that maximize warehouse space utilization while ensuring safety and accessibility.
+
+Exhibitors include manufacturers and suppliers of storage equipment, racking systems, and warehouse infrastructure components. Visitors can explore different storage configurations, compare materials and load capacities, and discover innovative solutions for challenging storage requirements—from long goods to hazardous materials and temperature-controlled environments.
+
+For warehouse operators, logistics managers, and facility planners, this sector provides the foundational elements of efficient warehouse design. Whether you're building a new facility, expanding existing space, or reconfiguring for changing product mix, the solutions showcased here help you make the most of your storage investment.`,
+    heroImage: '/images/image.png',
+    stats: {
+      visitors: '10,000+',
+      exhibitors: '150+',
+      countries: '5+'
+    },
+    whyExhibit: [
+      {
+        title: "Meet Warehouse Operators & 3PLs",
+        icon: "🏭",
+        description: "Connect with distribution centers, logistics hubs, and storage facility managers seeking modern storage solutions."
+      },
+      {
+        title: "Showcase Advanced Storage Technologies",
+        icon: "📊",
+        description: "Present your racking systems, automated storage, mezzanine floors, and warehouse design services."
+      }
+    ],
+    services: [
+      "Pallet Racking Systems",
+      "Shelving & Storage Solutions",
+      "Mezzanine Floors",
+      "Warehouse Design & Layout",
+      "Storage Optimization",
+      "Inventory Management Systems"
+    ],
+    faqs: [
+      {
+        question: "What products are featured?",
+        answer: "Storage systems, warehouse equipment, racking solutions, and space optimization technologies."
+      }
+    ]
+  },
+
+  'material-handling': {
+    title: 'Material Handling',
+    description: 'Forklifts, conveyors, and material handling equipment.',
+    mainDescription: `The Material Handling sector at INDIAMET showcases the equipment that keeps goods moving through warehouses, distribution centers, and manufacturing facilities. From forklifts and pallet jacks to conveyor systems and automated guided vehicles (AGVs), this sector brings together the manufacturers and suppliers who enable efficient material flow.
+
+Exhibitors demonstrate the latest in lift truck technology, including electric and alternative fuel options, ergonomic designs, and telematics-enabled fleet management systems. Visitors can also explore conveyor solutions for sortation and accumulation, as well as specialized handling equipment for unique applications like drum handling, coil lifting, and palletizing.
+
+For operations managers seeking to improve throughput, reduce labor costs, and enhance workplace safety, this sector offers hands-on exposure to the equipment that can transform material handling operations. Whether you're equipping a new facility or upgrading existing equipment, the solutions showcased here address the full spectrum of material movement needs.`,
+    heroImage: '/images/image.png',
+    stats: {
+      visitors: '10,000+',
+      exhibitors: '150+',
+      countries: '5+'
+    },
+    whyExhibit: [
+      {
+        title: "Connect with Operations Managers",
+        icon: "🔧",
+        description: "Meet warehouse managers, plant supervisors, and logistics professionals seeking material handling solutions."
+      }
+    ],
+    services: [
+      "Forklifts & Lift Trucks",
+      "Conveyor Systems",
+      "Pallet Jacks & Hand Trucks",
+      "Automated Guided Vehicles",
+      "Cranes & Hoists",
+      "Dock Equipment"
+    ],
+    faqs: [
+      {
+        question: "What equipment is featured?",
+        answer: "Forklifts, conveyors, AGVs, cranes, and various material handling equipment."
+      }
+    ]
+  },
+
+  'automation-robotics': {
+    title: 'Automation & Robotics',
+    description: 'Automated storage, robotics, and smart warehouse solutions.',
+    mainDescription: `The Automation & Robotics sector at INDIAMET showcases the cutting-edge technologies that are transforming warehouses into highly efficient, lights-out operations. From autonomous mobile robots (AMRs) that transport goods through facilities to robotic picking arms that handle individual items, this sector demonstrates how automation is addressing labor shortages while improving accuracy and throughput.
+
+Exhibitors include robotics manufacturers, system integrators, and automation specialists who design and implement solutions for warehouses of all sizes. Visitors can see live demonstrations of robotic systems in action, explore how they integrate with warehouse management software, and understand the ROI calculations that justify automation investments.
+
+For forward-thinking logistics professionals, this sector provides a window into the future of warehousing. Whether you're considering partial automation or planning a fully automated facility, the expertise and technology showcased here can guide your automation strategy and help you stay competitive in an increasingly automated world.`,
+    heroImage: '/images/image.png',
+    stats: {
+      visitors: '10,000+',
+      exhibitors: '150+',
+      countries: '5+'
+    },
+    whyExhibit: [
+      {
+        title: "Connect with Automation Engineers",
+        icon: "🤖",
+        description: "Meet professionals seeking to automate warehouse operations and reduce labor dependency."
+      }
+    ],
+    services: [
+      "Automated Storage Systems",
+      "Robotic Picking Solutions",
+      "Autonomous Mobile Robots",
+      "Sortation Systems",
+      "Control Software",
+      "Integration Services"
+    ],
+    faqs: [
+      {
+        question: "What automation solutions are featured?",
+        answer: "Robotics, automated storage, sortation systems, and control software."
+      }
+    ]
+  },
+
+  'packaging-systems': {
+    title: 'Packaging Systems',
+    description: 'Packaging equipment, labeling, and packing solutions.',
+    mainDescription: `The Packaging Systems sector at INDIAMET addresses the critical interface between product protection and logistics efficiency. From primary packaging that preserves product integrity to secondary packaging that enables efficient handling and transport, this sector showcases the equipment and materials that ensure goods reach customers in perfect condition.
+
+Exhibitors include manufacturers of packaging machinery, labeling systems, and consumables, as well as providers of sustainable packaging solutions that reduce environmental impact while maintaining protection. Visitors can explore automated packaging lines, case erectors, stretch wrappers, and the labeling systems that ensure products are properly identified throughout the supply chain.
+
+For operations managers seeking to optimize packaging processes, reduce material costs, or transition to more sustainable options, this sector provides access to the latest innovations in packaging technology. Whether you're packaging consumer goods, industrial components, or e-commerce orders, the solutions showcased here help you balance protection, cost, and sustainability.`,
+    heroImage: '/images/image.png',
+    stats: {
+      visitors: '10,000+',
+      exhibitors: '150+',
+      countries: '5+'
+    },
+    whyExhibit: [
+      {
+        title: "Connect with Packaging Engineers",
+        icon: "📦",
+        description: "Meet professionals responsible for product packaging and shipping preparation."
+      }
+    ],
+    services: [
+      "Packaging Machinery",
+      "Labeling Systems",
+      "Stretch Wrappers",
+      "Case Erectors",
+      "Sustainable Packaging",
+      "Packing Materials"
+    ],
+    faqs: [
+      {
+        question: "What packaging solutions are featured?",
+        answer: "Packaging equipment, labeling systems, and sustainable packaging materials."
+      }
+    ]
+  },
+
+  'inventory-management': {
+    title: 'Inventory Management',
+    description: 'Inventory control, stock management, and tracking solutions.',
+    mainDescription: `The Inventory Management sector at INDIAMET focuses on the systems and technologies that provide real-time visibility into stock levels, locations, and movements. In an era where inventory accuracy directly impacts customer satisfaction and working capital, this sector showcases the solutions that help businesses maintain precise control over their assets.
+
+Exhibitors include providers of inventory management software, RFID and barcode systems, cycle counting solutions, and the IoT sensors that enable continuous monitoring of inventory conditions. Visitors can explore how these technologies integrate with ERP and WMS systems to provide accurate, timely information for decision-making.
+
+For businesses seeking to reduce stockouts, minimize excess inventory, or improve inventory accuracy, this sector offers insights into the tools and practices that drive inventory excellence. From warehouse floor to executive dashboard, the solutions showcased here provide the visibility needed to optimize inventory investment while meeting customer demand.`,
+    heroImage: '/images/image.png',
+    stats: {
+      visitors: '10,000+',
+      exhibitors: '150+',
+      countries: '5+'
+    },
+    whyExhibit: [
+      {
+        title: "Connect with Inventory Managers",
+        icon: "📊",
+        description: "Meet professionals responsible for stock accuracy and inventory optimization."
+      }
+    ],
+    services: [
+      "Inventory Management Software",
+      "RFID Systems",
+      "Barcode Solutions",
+      "Cycle Counting",
+      "IoT Sensors",
+      "Analytics & Reporting"
+    ],
+    faqs: [
+      {
+        question: "What inventory solutions are featured?",
+        answer: "Inventory software, tracking systems, and real-time monitoring solutions."
+      }
+    ]
+  },
+
+  // INDIAMET Sectors
   'precision-moulds': {
     title: 'Metrology & Precision Measurement Systems',
     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.',
@@ -1201,104 +1392,217 @@ For production managers, process engineers, and manufacturing executives, this s
   }
 }
 
-export const indiametSectors = [
-  {
-    id: 1,
-    title: "Coordinate Measuring Machines (CMM)",
-    slug: "coordinate-measuring-machines",
-    image: "/images/sectors/cmm.jpg",
-    description: "Bridge, gantry, horizontal arm, portable and multisensor CMM systems."
+export const diemexSectors = [
+  { 
+    id: 1, 
+    title: 'Complex Logistics Services & Freight Forwarding', 
+    slug: 'complex-logistics', 
+    image: '/images/image.png',
+    description: 'Comprehensive logistics solutions including freight forwarding, customs clearance, and supply chain management services.'
   },
-  {
-    id: 2,
-    title: "Optical & Vision Measurement",
-    slug: "optical-vision-measurement",
-    image: "/images/sectors/vision.jpg",
-    description: "Vision measuring systems, optical comparators, profile projectors and image analysis."
+  { 
+    id: 2, 
+    title: 'Maritime & Inland Waterway Transport', 
+    slug: 'maritime-and-inland-waterway-transport', 
+    image: '/images/image.png',
+    description: 'Ocean and river transport services, shipping lines, and inland waterway logistics solutions.'
   },
-  {
-    id: 3,
-    title: "3D Scanning & Reverse Engineering",
-    slug: "3d-scanning-reverse-engineering",
-    image: "/images/sectors/scanning.jpg",
-    description: "Laser scanners, structured light scanners and reverse engineering software."
+  { 
+    id: 3, 
+    title: 'Air Freight', 
+    slug: 'air-freight', 
+    image: '/images/image.png',
+    description: 'Air cargo services, express logistics, and aviation freight solutions.'
   },
-  {
-    id: 4,
-    title: "Industrial Metrology Software",
-    slug: "metrology-software",
-    image: "/images/sectors/software.jpg",
-    description: "Inspection software, SPC, statistical analysis, reporting and quality management."
+  { 
+    id: 4, 
+    title: 'Rail Freight', 
+    slug: 'rail-freight', 
+    image: '/images/image.png',
+    description: 'Rail transportation, intermodal solutions, and rail logistics across Eurasia.'
   },
-  {
-    id: 5,
-    title: "Calibration Equipment & Services",
-    slug: "calibration-services",
-    image: "/images/sectors/calibration.jpg",
-    description: "Dimensional, pressure, temperature, electrical and accredited calibration laboratories."
+  { 
+    id: 5, 
+    title: 'Road Freight Transportation', 
+    slug: 'road-freight-transportation', 
+    image: '/images/image.png',
+    description: 'Trucking, LTL, FTL services, and road transport logistics.'
   },
-  {
-    id: 6,
-    title: "Precision Measuring Instruments",
-    slug: "precision-measuring-instruments",
-    image: "/images/sectors/instruments.jpg",
-    description: "Micrometers, calipers, height gauges, bore gauges, dial indicators and gauges."
+  { 
+    id: 6, 
+    title: 'Ports & Terminals, Freight Handling Services In Ports', 
+    slug: 'ports-and-terminals-freight-handling-services-in-ports', 
+    image: '/images/image.png',
+    description: 'Port operations, terminal services, stevedoring, and maritime infrastructure solutions.'
   },
-  {
-    id: 7,
-    title: "Surface & Form Measurement",
-    slug: "surface-form-measurement",
-    image: "/images/sectors/surface.jpg",
-    description: "Surface roughness, contour, roundness, cylindricity and form measurement."
+  { 
+    id: 7, 
+    title: 'Warehouse Technology', 
+    slug: 'warehouse-technology', 
+    image: '/images/image.png',
+    description: 'Warehouse management systems, automation, and storage technology solutions.'
   },
-  {
-    id: 8,
-    title: "Machine Vision & AI Inspection",
-    slug: "machine-vision-ai",
-    image: "/images/sectors/machinevision.jpg",
-    description: "Industrial vision systems, AI inspection, deep learning and automated defect detection."
+  { 
+    id: 8, 
+    title: 'IT Solutions', 
+    slug: 'it-solutions', 
+    image: '/images/image.png',
+    description: 'Logistics software, tracking systems, and digital supply chain solutions.'
   },
-  {
-    id: 9,
-    title: "Non-Destructive Testing (NDT)",
-    slug: "ndt-testing",
-    image: "/images/sectors/ndt.jpg",
-    description: "Ultrasonic, X-ray, Eddy Current, Magnetic Particle and Dye Penetrant inspection."
+  { 
+    id: 9, 
+    title: 'E-commerce Logistics', 
+    slug: 'ecommerce-logistics', 
+    image: '/images/image.png',
+    description: 'Fulfillment, last-mile delivery, and e-commerce supply chain services.'
   },
-  {
-    id: 10,
-    title: "Sensors, Lasers & Measurement Systems",
-    slug: "laser-sensors",
-    image: "/images/sectors/laser.jpg",
-    description: "Laser trackers, displacement sensors, encoders and industrial sensing technologies."
+  { 
+    id: 10, 
+    title: 'Heavy Lift Carriage', 
+    slug: 'heavy-lift-carriage', 
+    image: '/images/image.png',
+    description: 'Oversized cargo transport, project logistics, and specialized heavy haulage.'
   },
-  {
-    id: 11,
-    title: "Automation, Robotics & Inline Inspection",
-    slug: "automation-inline-inspection",
-    image: "/images/sectors/automation.jpg",
-    description: "Robotic inspection, automated gauging, inline quality control and smart manufacturing."
+]
+
+export const skladTechSectors = [
+  { 
+    id: 1, 
+    title: 'Warehousing Systems', 
+    slug: 'warehousing-systems', 
+    image: '/images/image.png',
+    description: 'Storage systems, racking, and warehouse infrastructure solutions.'
   },
-  {
-    id: 12,
-    title: "Testing, Quality Assurance & Certification",
-    slug: "quality-testing-certification",
-    image: "/images/sectors/testing.jpg",
-    description: "Testing laboratories, certification bodies, QA solutions and compliance services."
+  { 
+    id: 2, 
+    title: 'Material Handling', 
+    slug: 'material-handling', 
+    image: '/images/image.png',
+    description: 'Forklifts, conveyors, and material handling equipment.'
+  },
+  { 
+    id: 3, 
+    title: 'Automation & Robotics', 
+    slug: 'automation-robotics', 
+    image: '/images/image.png',
+    description: 'Automated storage, robotics, and smart warehouse solutions.'
+  },
+  { 
+    id: 4, 
+    title: 'Packaging Systems', 
+    slug: 'packaging-systems', 
+    image: '/images/image.png',
+    description: 'Packaging equipment, labeling, and packing solutions.'
+  },
+  { 
+    id: 5, 
+    title: 'Inventory Management', 
+    slug: 'inventory-management', 
+    image: '/images/image.png',
+    description: 'Inventory control, stock management, and tracking solutions.'
+  },
+]
+
+export const diemexSectors = [
+  { 
+    id: 1, 
+    title: 'Metrology & Precision Measurement Systems',
+    slug: 'precision-moulds', 
+    image: '/images/sectors/pic1.jpg',
+    description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'
+  },
+  { 
+    id: 2, 
+    title: 'Tooling, Mould Bases & Standard Components',
+    slug: 'tooling-mould-base', 
+    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_5_46a97403ad.png',
+    description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.'
+  },
+  { 
+    id: 3, 
+    title: 'Machining & Finishing Technologies',
+    slug: 'machining-finishing', 
+    image: 'hges_4_b89e6f82a3.png',
+    description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
+  },
+  { 
+    id: 4, 
+    title: 'Automation & Industry 4.0 Solutions',
+    slug: 'automation-industry', 
+    image: '',
+    description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
+  },
+  { 
+    id: 5, 
+    title: 'Design, CAD/CAM & Engineering Software', 
+    slug: 'cad-cam', 
+    image: '',
+    description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
+  },
+  { 
+    id: 6, 
+    title: 'Tool Steel & Advanced Materials', 
+    slug: 'tool-steel', 
+    image: '',
+    description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
+  },
+  { 
+    id: 7, 
+    title: "Die & Mould Manufacturing",
+    slug: "die-mould-manufacturing",
+    image: "/images/image.png",
+    description: "Injection moulds, die casting dies, press tools, blow moulds, extrusion dies and comprehensive manufacturing solutions."
+  },
+  { 
+    id: 8, 
+    title: "Tooling & Tool Room Technologies",
+    slug: "tooling-tool-rom-technologies", 
+    image: "/images/image.png",
+    description: "Cutting tools, jigs & fixtures, gauges, tool holders, and comprehensive tool room solutions for precision manufacturing."
+  },
+  { 
+    id: 9, 
+    title: "CNC Machines & Precision Engineering", 
+    slug: "cnc-machines", 
+    image: "/images/image.png",
+    description: "Machining centres, turning, grinding, EDM, VMCs & HMCs, and comprehensive precision engineering solutions."
+  },
+  { 
+    id: 10, 
+    title: "Surface Treatment & Heat Treatment",
+    slug: "surface-treatment", 
+    image: "/images/image.png",
+    description: "Coatings, finishing, hardening, thermal processes, and surface enhancement technologies for extended component life."
+  },
+  { 
+    id: 11, 
+    title: "Materials, Steels & Alloys",
+    slug: "materials-steels-alloys",
+    image: "/images/image.png",
+    description: "Tool steels, special alloys, polymers, consumables, and advanced materials for demanding manufacturing applications."
+  },
+  { 
+    id: 12, 
+    title: "Injection Moulding & Casting Technologies",
+    slug: "die-casting", 
+    image: "/images/image.png",
+    description: "Plastics, rubber, die casting, metal forming solutions, and comprehensive moulding technologies for production."
   }
-];
+]
 
 export const allSectorSlugs = [
-  "coordinate-measuring-machines",
-  "optical-vision-measurement",
-  "3d-scanning-reverse-engineering",
-  "metrology-software",
-  "calibration-services",
-  "precision-measuring-instruments",
-  "surface-form-measurement",
-  "machine-vision-ai",
-  "ndt-testing",
-  "laser-sensors",
-  "automation-inline-inspection",
-  "quality-testing-certification"
-];
+   
+  // INDIAMET sectors
+  'precision-moulds',
+  'tooling-mould-base',
+  'machining-finishing',
+  'automation-industry',
+  'cad-cam',
+  'tool-steel',
+  'die-mould-manufacturing',
+  'tooling-tool-rom-technologies',
+  'cnc-machines',
+  'surface-treatment',
+  'materials-steels-alloys',
+  'die-casting'
+]
