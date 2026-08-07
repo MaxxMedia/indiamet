@@ -23,7 +23,7 @@ const navItems: NavItem[] = [
       { text: "EVENT SECTORS", href: "/sectors" },
       { text: "EXHIBITOR LIST", href: "/exhibition-directory" },
       {
-        text: "EXHIBITOR RESOURCE CENTER",
+        text: "EXHIBITOR RESOURCES",
         href: "/exhibitor-resource-center",
       },
       { text: "EXHIBITOR PROMOTIONS", href: "/free-promo" },
