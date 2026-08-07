@@ -21,13 +21,7 @@ export default function VideoSection() {
           />
 
           {/* Overlay Text */}
-<div className="pointer-events-none absolute inset-0 flex items-end justify-start p-6 md:p-10">
-  <div className="bg-[#2BB7A8]/90 px-8 py-3 rounded-md">
-    <span className="text-white text-xl md:text-3xl font-bold tracking-wide">
-      INDIAMET 2023 HIGHLIGHTS
-    </span>
-  </div>
-</div>
+
         </div>
       </SectionContainer>
     </section>
