@@ -64,86 +64,94 @@ function getDefaultSectorContent(slug: string, displayName: string) {
   return {
     title: `${displayName} Solutions`,
 
-description: `Comprehensive ${displayName.toLowerCase()} solutions for industrial metrology, precision measurement, quality inspection, calibration, and advanced manufacturing.`,
+    description: `Comprehensive ${displayName.toLowerCase()} solutions for industrial metrology, precision measurement, quality inspection, calibration, and advanced manufacturing.`,
 
-mainDescription: `The ${displayName} sector at INDIAMET 2027 showcases the latest innovations in industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, automation, and smart manufacturing technologies. This dedicated sector brings together global technology leaders, equipment manufacturers, solution providers, research institutions, and industry experts driving the future of precision engineering and manufacturing excellence.
+    mainDescription: `The ${displayName} sector at INDIAMET 2027 showcases the latest innovations in industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, automation, and smart manufacturing technologies. This dedicated sector brings together global technology leaders, equipment manufacturers, solution providers, research institutions, and industry experts driving the future of precision engineering and manufacturing excellence.
 
 Visitors can explore cutting-edge Coordinate Measuring Machines (CMMs), optical and laser measurement systems, portable metrology solutions, industrial CT scanners, machine vision systems, calibration equipment, precision gauges, sensors, metrology software, AI-powered inspection systems, and digital quality management solutions. From laboratory measurement to shop-floor inspection, this sector represents the complete ecosystem of modern industrial metrology.
 
 Whether you are looking to improve product quality, enhance manufacturing accuracy, reduce production defects, implement Industry 4.0 technologies, automate inspection processes, or establish new business partnerships, the ${displayName} sector provides direct access to the latest technologies and global innovations shaping the future of manufacturing and quality engineering.`,
 
-heroImage: "/images/precision.jpg",
+    heroImage: "/images/precision.jpg",
 
-stats: {
-  visitors: "10,000+",
-  exhibitors: "150+",
-  countries: "14+",
-},
+    stats: {
+      visitors: "10,000+",
+      exhibitors: "150+",
+      countries: "14+",
+    },
+
     whyExhibit: [
-  {
-    title: "Meet Qualified Buyers",
-    icon: "🎯",
-    description: "Connect directly with OEMs, manufacturing companies, quality heads, plant managers, and purchase decision-makers looking for advanced metrology solutions."
-  },
-  {
-    title: "Launch Innovative Technologies",
-    icon: "🚀",
-    description: "Showcase your latest metrology equipment, inspection systems, software, calibration solutions, and smart manufacturing technologies to a targeted audience."
-  },
-  {
-    title: "Expand Global Business",
-    icon: "🌍",
-    description: "Build strategic partnerships with manufacturers, distributors, system integrators, research organizations, and international buyers."
-  }
-],
+      {
+        title: "Meet Qualified Buyers",
+        icon: "🎯",
+        description:
+          "Connect directly with OEMs, manufacturing companies, quality heads, plant managers, and purchase decision-makers looking for advanced metrology solutions.",
+      },
+      {
+        title: "Launch Innovative Technologies",
+        icon: "🚀",
+        description:
+          "Showcase your latest metrology equipment, inspection systems, software, calibration solutions, and smart manufacturing technologies to a targeted audience.",
+      },
+      {
+        title: "Expand Global Business",
+        icon: "🌍",
+        description:
+          "Build strategic partnerships with manufacturers, distributors, system integrators, research organizations, and international buyers.",
+      },
+    ],
+
     services: [
-  "Coordinate Measuring Machines (CMM)",
-  "Vision Measurement Systems",
-  "3D Laser Scanning",
-  "Portable Metrology",
-  "Laser Trackers",
-  "Industrial CT Scanning",
-  "Calibration Equipment",
-  "Precision Gauges & Instruments",
-  "Machine Vision & AI Inspection",
-  "Metrology Software & Analytics",
-  "Non-Destructive Testing (NDT)",
-  "Industrial Automation & Robotics",
-  "Surface & Form Measurement",
-  "Sensors & Smart Manufacturing Solutions"
-],
+      "Coordinate Measuring Machines (CMM)",
+      "Vision Measurement Systems",
+      "3D Laser Scanning",
+      "Portable Metrology",
+      "Laser Trackers",
+      "Industrial CT Scanning",
+      "Calibration Equipment",
+      "Precision Gauges & Instruments",
+      "Machine Vision & AI Inspection",
+      "Metrology Software & Analytics",
+      "Non-Destructive Testing (NDT)",
+      "Industrial Automation & Robotics",
+      "Surface & Form Measurement",
+      "Sensors & Smart Manufacturing Solutions",
+    ],
+
     faqs: [
-  {
-    question: "Who should exhibit in this sector?",
-    answer: "Manufacturers of metrology equipment, precision measurement instruments, calibration systems, inspection technologies, machine vision solutions, industrial software, automation systems, and quality engineering services."
-  },
-  {
-    question: "Who will visit this sector?",
-    answer: "Quality Managers, Manufacturing Heads, Production Engineers, QA/QC Professionals, R&D Engineers, Plant Managers, OEMs, Tier Suppliers, Calibration Laboratories, Government Organizations, and Research Institutions."
-  },
-  {
-    question: "What technologies will be showcased?",
-    answer: "CMMs, optical metrology, 3D scanning, portable metrology, laser trackers, industrial CT, machine vision, AI inspection, calibration systems, precision instruments, metrology software, and Industry 4.0 quality solutions."
-  }
-],
+      {
+        question: "Who should exhibit in this sector?",
+        answer:
+          "Manufacturers of metrology equipment, precision measurement instruments, calibration systems, inspection technologies, machine vision solutions, industrial software, automation systems, and quality engineering services.",
+      },
+      {
+        question: "Who will visit this sector?",
+        answer:
+          "Quality Managers, Manufacturing Heads, Production Engineers, QA/QC Professionals, R&D Engineers, Plant Managers, OEMs, Tier Suppliers, Calibration Laboratories, Government Organizations, and Research Institutions.",
+      },
+      {
+        question: "What technologies will be showcased?",
+        answer:
+          "CMMs, optical metrology, 3D scanning, portable metrology, laser trackers, industrial CT, machine vision, AI inspection, calibration systems, precision instruments, metrology software, and Industry 4.0 quality solutions.",
+      },
+    ],
+  };
 }
 
 export default async function SectorPage({ params }: PageProps) {
-  // Await the params Promise
-  const { slug } = await params;
-  
-  // Get the correct database key for this slug
-  const databaseKey = getDatabaseKeyFromSlug(slug);
-  
-  // Get display name for the sector
-  const displayName = getDisplayNameFromSlug(slug);
-  
-  // Try to get the sector data using the mapped key
-  let sectorData = sectorDatabase[databaseKey as keyof typeof sectorDatabase];
+  const { slug } = params;
 
-  // If no data found, use default content
+  const databaseKey = getDatabaseKeyFromSlug(slug);
+  const displayName = getDisplayNameFromSlug(slug);
+
+  let sectorData =
+    sectorDatabase[databaseKey as keyof typeof sectorDatabase];
+
   if (!sectorData) {
-    console.log(`No data found for slug: ${slug}, databaseKey: ${databaseKey}, using default content`);
+    console.log(
+      `No data found for slug: ${slug}, databaseKey: ${databaseKey}, using default content`
+    );
+
     sectorData = getDefaultSectorContent(slug, displayName);
   }
 
@@ -296,18 +304,20 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  // Await the params Promise
-  const { slug } = await params;
+  const { slug } = params;
+
   const databaseKey = getDatabaseKeyFromSlug(slug);
   const displayName = getDisplayNameFromSlug(slug);
-  const sectorData = sectorDatabase[databaseKey as keyof typeof sectorDatabase];
+
+  const sectorData =
+    sectorDatabase[databaseKey as keyof typeof sectorDatabase];
 
   if (!sectorData) {
     return {
       title: `${displayName} | INDIAMET 2027`,
-      description: `Explore ${displayName.toLowerCase()} solutions at INDIAMET 2027. Connect with industry leaders and discover innovative solutions.`,
+      description: `Explore ${displayName.toLowerCase()} solutions at INDIAMET 2027.`,
     };
   }
 
