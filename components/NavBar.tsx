@@ -258,7 +258,7 @@ export default function NavBar() {
     22 - 24 APRIL 2027
   </span>
                     <span className="text-[12px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
-                      AUTO CLUSTER EXHIBITION CENTER, PUNE, INDIA
+                      Auto Cluster Exhibition Center, Pune, India
                     </span>
                   </div>
                 </Link>
