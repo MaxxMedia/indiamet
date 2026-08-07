@@ -1,6 +1,6 @@
 // Database of all sectors with their specific content
 export const sectorDatabase = {
-  // Diemex Sectors
+  // TransRussia Sectors
   'die & mould manufacturing': {
     title: 'Comprehensive die, mould, and precision tooling solutions powering modern manufacturing industries.',
     description: 'Die & Mould Manufacturing',
@@ -1392,7 +1392,7 @@ For production managers, process engineers, and manufacturing executives, this s
   }
 }
 
-export const diemexSectors = [
+export const transRussiaSectors = [
   { 
     id: 1, 
     title: 'Complex Logistics Services & Freight Forwarding', 
@@ -1465,6 +1465,44 @@ export const diemexSectors = [
   },
 ]
 
+export const skladTechSectors = [
+  { 
+    id: 1, 
+    title: 'Warehousing Systems', 
+    slug: 'warehousing-systems', 
+    image: '/images/image.png',
+    description: 'Storage systems, racking, and warehouse infrastructure solutions.'
+  },
+  { 
+    id: 2, 
+    title: 'Material Handling', 
+    slug: 'material-handling', 
+    image: '/images/image.png',
+    description: 'Forklifts, conveyors, and material handling equipment.'
+  },
+  { 
+    id: 3, 
+    title: 'Automation & Robotics', 
+    slug: 'automation-robotics', 
+    image: '/images/image.png',
+    description: 'Automated storage, robotics, and smart warehouse solutions.'
+  },
+  { 
+    id: 4, 
+    title: 'Packaging Systems', 
+    slug: 'packaging-systems', 
+    image: '/images/image.png',
+    description: 'Packaging equipment, labeling, and packing solutions.'
+  },
+  { 
+    id: 5, 
+    title: 'Inventory Management', 
+    slug: 'inventory-management', 
+    image: '/images/image.png',
+    description: 'Inventory control, stock management, and tracking solutions.'
+  },
+]
+
 export const indiametSectors = [
   { 
     id: 1, 
@@ -1484,28 +1522,28 @@ export const indiametSectors = [
     id: 3, 
     title: 'Machining & Finishing Technologies',
     slug: 'machining-finishing', 
-    image: 'hges_4_b89e6f82a3.png',
+    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_4_b89e6f82a3.png',
     description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
   },
   { 
     id: 4, 
     title: 'Automation & Industry 4.0 Solutions',
     slug: 'automation-industry', 
-    image: '',
+    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_3_9089d75ec1.png',
     description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
   },
   { 
     id: 5, 
     title: 'Design, CAD/CAM & Engineering Software', 
     slug: 'cad-cam', 
-    image: '',
+    image: 'https://cdn.itegroupnews.com/TRU_Sectors_Images_7_c75137da32.png',
     description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
   },
   { 
     id: 6, 
     title: 'Tool Steel & Advanced Materials', 
     slug: 'tool-steel', 
-    image: '',
+    image: 'https://cdn.itegroupnews.com/httpstransrussia_preview_prismetic_comterms_of_visiting_1200_x_490_px_a78a81f1aa.png',
     description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
   },
   { 
@@ -1553,7 +1591,25 @@ export const indiametSectors = [
 ]
 
 export const allSectorSlugs = [
-   
+  // TransRussia sectors
+  'complex-logistics',
+  'maritime-and-inland-waterway-transport', 
+  'air-freight',
+  'rail-freight',
+  'road-freight-transportation',
+  'ports-and-terminals-freight-handling-services-in-ports',
+  'warehouse-technology',
+  'it-solutions',
+  'ecommerce-logistics',
+  'heavy-lift-carriage',
+  
+  // SkladTech sectors
+  'warehousing-systems',
+  'material-handling',
+  'automation-robotics',
+  'packaging-systems',
+  'inventory-management',
+  
   // INDIAMET sectors
   'precision-moulds',
   'tooling-mould-base',
