@@ -45,7 +45,7 @@ const TransRussiaSummitProgram: React.FC = () => {
     //   ]
     // },
     {
-      day: "Day 1 Theme : Future-ready Manufacturing – Precision & Productivity",
+      day: "Day 1 Theme : The Future of Industrial Metrology – Precision, Digitalization & Manufacturing Excellence",
       date: "April 22, 2027",
       description: "*For delegates",
       sessions: [
@@ -105,7 +105,7 @@ const TransRussiaSummitProgram: React.FC = () => {
       
         {
           time: "10:15 – 10:25",
-          title: 'Inaugural Keynote – India’s Roadmap for Advanced Manufacturing 2030',
+          title: "India's Vision for Precision Manufacturing & Metrology Leadership 2035",
           speakers: [
             { name: "", position: "" },
                  ],
@@ -120,12 +120,16 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
             {
           time: "10:30 – 11:30",
-          title: 'Panel Discussion : Digital Transformation in Die, Mould & Plastic Processing',
+          title: 'Panel Discussion : Metrology 4.0 – Enabling Smart Manufacturing & Digital Quality',
           description: "Session Topics:",
           topics: [
-            { id: 1, title: "Integrating CAD/CAM, AI, IoT & Robotics" },
-            { id: 2, title: "Digital twin applications for faster prototyping" },
-            { id: 3, title: "Predictive maintenance in high-volume production" },
+            { id: 1, title: "AI-powered inspection and intelligent quality control" },
+            { id: 2, title: "Digital metrology for Industry 4.0" },
+            { id: 3, title: "Connected manufacturing using IoT-enabled measurement systems" },
+            { id: 4, title: "Digital twins and closed-loop manufacturing" },
+            { id: 5, title: "Digital twins and closed-loop manufacturingConnected manufacturing using IoT-enabled measurement systems" },
+            { id: 6, title: "Smart factories powered by precision measurement" },
+
                      ],
           moderator: {
             name: "",
@@ -141,8 +145,14 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
                {
           time: "11:30 – 12:00",
-          title: 'Technical Session 1 : High-Performance Materials for Tooling & Moulding',
-          description: "",
+          title: 'Technical Session 1 : Advances in Coordinate Measuring Machines (CMMs) & Precision Measurement',
+          description: "Session Topics:",
+          topics: [
+            { id: 1, title: "Latest developments in bridge, gantry and horizontal arm CMMs" },
+            { id: 2, title: "Multi-sensor measurement technologies" },
+            { id: 3, title: "Increasing inspection speed without compromising accuracy" },
+            { id: 4, title: "Automation-ready CMM solutions" },
+                       ],
           speakers: [
             {
               name: "",
@@ -152,13 +162,15 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
         {
           time: "12:00 – 12:30",
-          title: "Technical Session 2 : Precision Machining for Complex Geometries",
-          description: "• High-speed milling, EDM, micro-machining • Accuracy & repeatability in mould inserts"
-        },
-         {
-          time: "11:30 – 12:00",
-          title: 'Technical Session 1 : High-Performance Materials for Tooling & Moulding',
-          description: "",
+          title: "Technical Session 2 : 3D Optical Metrology, Laser Scanning & Machine Vision",
+            description: "Session Topics:",
+          topics: [
+            { id: 1, title: "Non-contact measurement technologies" },
+            { id: 2, title: "Non-contact measurement technologies" },
+            { id: 3, title: "Optical measurement for complex geometries" },
+            { id: 4, title: "Automated vision inspection systems" },
+            { id: 5, title: "Reverse engineering applications" },
+                       ],
           speakers: [
             {
               name: "",
@@ -168,14 +180,26 @@ const TransRussiaSummitProgram: React.FC = () => {
         },
         {
           time: "12:30 – 13:00",
-          title: "Fireside Chat : Designing for Fun and Safety: Mold Innovations in the Toy Industry",
-          description: "•This session can cover breakthroughs and challenges unique to toy mold design, including safety regulations, rapid product cycles, and creative flexibility"
+          title: "Fireside Chat : Precision Manufacturing in the EV & Aerospace Era",
+         description: "Discussionb Points:",
+          topics: [
+            { id: 1, title: "Tight tolerance requirements" },
+            { id: 2, title: "Lightweight component inspection" },
+            { id: 3, title: "Battery manufacturing quality" },
+            { id: 4, title: "Aerospace certification challenges" },
+            { id: 5, title: "Future inspection technologies" },
+                       ],
+          speakers: [
+            {
+              name: "",
+              position: ""
+            }
+          ],
         },
-        {
+  {
           time: "13:00 – 14:00",
           title: "Networking Lunch"
         },
-
 {
           time: "14:00 – 14:30",
           title: 'Technical Session 3 : Surface Finishing, Coatings & Wear Protection"',
@@ -411,7 +435,7 @@ const selectedDay = programData[activeDay];
 
         {/* Heading */}
         <h1 className="text-5xl font-bold text-black mb-10">
-          Driving Precision, Performance & Sustainability in Tooling and Plastics
+          Driving Precision, Quality & Smart Manufacturing through Advanced Metrology
         </h1>
 
         {/* Day Toggle Buttons */}
