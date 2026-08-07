@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="animated-block-target">
         <div className="container">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-10 text-black">
-  About the Conference
+  About the Summit
 </h2>
           <div className="rte-style [&_a]:underline [&_blockquote]:relative [&_blockquote]:ml-5 [&_blockquote]:w-fit [&_blockquote]:border-l-4 [&_blockquote]:border-black [&_blockquote]:bg-[#f9f9f9] [&_blockquote]:p-5 [&_blockquote]:italic [&_h1]:lg:text-4xl [&_h2]:lg:text-3xl [&_h3]:lg:text-2xl [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:list-disc [&_ul]:pl-5">
             <div className="overflow-x-auto">
@@ -26,7 +26,7 @@ export default function AboutSection() {
                       </td>
                       <td className="py-2 md:py-0 px-4 md:px-0">
                         <span className="text-sm md:text-base lg:text-[19px]">
-                          <strong>300+ top-level delegates</strong> from leading die & mould manufacturers, automotive OEMs, tier suppliers, and precision engineering companies
+                          <strong>300+ senior delegates from leading metrology companies, automotive OEMs, aerospace manufacturers, precision engineering firms, medical device companies, electronics manufacturers, and quality-driven industries. engineering companies
                         </span>
                       </td>
                       <td className="py-2 md:py-0">
@@ -43,7 +43,7 @@ export default function AboutSection() {
                       </td>
                       <td className="py-2 md:py-0 px-4 md:px-0">
                         <span className="text-sm md:text-base lg:text-[19px]">
-                          <strong>30+ speakers</strong> - Industry leaders, tool room heads, manufacturing strategists, and technology specialists
+                          <strong>30+ speakers</strong> - Metrology experts, quality leaders, manufacturing executives, R&D specialists, and Industry 4.0 technology innovators.Industry leaders, tool room heads, manufacturing strategists, and technology specialists
                         </span>
                       </td>
                     </tr>
@@ -68,7 +68,7 @@ export default function AboutSection() {
                       </td>
                       <td className="py-2 md:py-0 px-4 md:px-0">
                         <span className="text-sm md:text-base lg:text-[19px]">
-                          <strong>15+ hours of high-value technical sessions</strong> featuring market insights, manufacturing trends, automation advancements, and tooling innovations
+                          <strong>15+ hours of high-value technical sessions</strong> covering industrial metrology, precision measurement, quality assurance, calibration, AI-powered inspection, digital manufacturing, and smart factory innovations.
                         </span>
                       </td>
                       <td className="py-2 md:py-0">
@@ -85,7 +85,7 @@ export default function AboutSection() {
                       </td>
                       <td className="py-2 md:py-0 px-4 md:px-0">
                         <span className="text-sm md:text-base lg:text-[19px]">
-                          <strong>8+ hours of focused networking</strong> with die makers, mould manufacturers, CNC specialists, automation providers, and procurement heads  
+                          <strong>8+ hours of focused networking</strong> with metrology professionals, manufacturing leaders, OEMs, Tier 1 & Tier 2 suppliers, quality engineers, calibration laboratories, automation solution providers, research institutions, and procurement decision-makers.  
                         </span>
                       </td>
                     </tr>
