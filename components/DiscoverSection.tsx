@@ -13,7 +13,7 @@ export default function DiscoverSection() {
 
             <div className="space-y-6 mt-8 max-w-3xl">
               <p className="text-lg lg:text-xl leading-relaxed">
-               Download the INDIAMET 2027 Event Brochure to explore India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Discover the exhibition highlights, industry sectors, exhibitor profiles, visitor demographics, conference features, sponsorship opportunities, and the business potential awaiting you at INDIAMET 2027.
+               Download the Event Brochure to explore India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. Discover the exhibition highlights, industry sectors, exhibitor profiles, visitor demographics, conference features, sponsorship opportunities, and the business potential awaiting you at INDIAMET 2027.
               </p>
               <p className="text-lg lg:text-xl leading-relaxed">
                 Download now and start planning your success!
