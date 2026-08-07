@@ -75,10 +75,10 @@ export const articles: Article[] = [
   {
     id: "96",
   attributes: {
-    Title: "The Role of Precision Tooling in Modern Manufacturing",
+    Title: "The Future of Industrial Metrology: Driving Smart Manufacturing with Precision",
     Slug: "the-role-of-freight-forwarders-in-managing-complex-supply-chains",
     Excerpt:
-      "Precision tooling plays a critical role in enabling high-quality manufacturing across automotive, electronics, and consumer industries.",
+      "Discover how advanced metrology technologies, AI-powered inspection, digital measurement systems, and Quality 4.0 are transforming modern manufacturing across automotive, aerospace, electronics, medical devices, and semiconductor industries.",
     Content: `
     <p><strong>Precision tooling</strong> forms the backbone of modern manufacturing. From automotive body panels to plastic consumer products, high-quality dies and moulds are essential for producing complex components with consistent accuracy.</p>
 
@@ -111,10 +111,10 @@ export const articles: Article[] = [
   {
     id: "83",
   attributes: {
-    Title: "The Rise of India as a Global Die & Mould Manufacturing Hub",
+    Title: "Why Precision Measurement is Critical for Next-Generation Manufacturing",
     Slug: "why-is-rail-freight-becoming-a-stronger-alternative-for-long-haul-cargo-in-2027",
     Excerpt:
-      "India is rapidly emerging as a competitive global force in precision tooling and mould manufacturing.",
+      "Explore how precision measurement, calibration, machine vision, coordinate measuring machines (CMMs), and digital inspection technologies are helping manufacturers improve quality, reduce defects, and achieve global manufacturing standards.",
     Content: `
     <h2>India’s Transformation in Tooling Excellence</h2>
 
@@ -144,10 +144,10 @@ export const articles: Article[] = [
   {
    id: "82",
   attributes: {
-    Title: "How Smart Manufacturing Is Reshaping the Tooling Industry",
+    Title: "Industrial Metrology Trends Shaping the Future of Manufacturing",
     Slug: "how-are-ports-preparing-for-increased-freight-handling-demands-in-2027",
     Excerpt:
-      "Smart manufacturing technologies are reshaping the global die and mould industry.",
+      "From 3D scanning and optical metrology to AI-powered quality inspection and automated measurement systems, discover the emerging technologies redefining industrial quality, productivity, and manufacturing excellence.",
     Content: `
     <p><strong>Smart manufacturing</strong> is transforming the global die and mould industry by integrating digital technologies into traditional machining and toolmaking processes.</p>
 

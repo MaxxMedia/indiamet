@@ -32,12 +32,12 @@ export default function ArticlesSection() {
         {/* HEADER */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
           <h2 className="mb-4 sm:mb-6 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold tracking-tight text-black">
-            Event Insights & Industry Trends
+            Insights & Industry Trends
           </h2>
 
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0">
             <p className="max-w-3xl text-sm sm:text-base lg:text-lg xl:text-xl text-gray-700">
-              Stay up to date with the latest in the industry and the show
+              Stay informed with the latest developments in industrial metrology, precision measurement, quality engineering, inspection technologies, and smart manufacturing.
             </p>
 
             <a href="/articles">
