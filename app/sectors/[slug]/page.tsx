@@ -63,63 +63,69 @@ function getDisplayNameFromSlug(slug: string): string {
 function getDefaultSectorContent(slug: string, displayName: string) {
   return {
     title: `${displayName} Solutions`,
-    description: `Comprehensive ${displayName.toLowerCase()} solutions for modern logistics and supply chain operations.`,
-    mainDescription: `The ${displayName} sector at INDIAMET showcases the latest innovations and solutions in ${displayName.toLowerCase()}. This sector brings together industry leaders, technology providers, and service specialists who are shaping the future of logistics and supply chain management.
 
-Visitors can explore cutting-edge measurement systems, inspection technologies, calibration solutions, and quality assurance innovations while connecting with industry experts and leading brands. From precision instruments and machine vision systems to metrology software and smart inspection technologies, this sector represents the complete ecosystem of modern industrial metrology. ${displayName.toLowerCase()} solutions.
+description: `Comprehensive ${displayName.toLowerCase()} solutions for industrial metrology, precision measurement, quality inspection, calibration, and advanced manufacturing.`,
 
-Whether you're looking to improve product quality, enhance manufacturing accuracy, adopt advanced inspection technologies, or build new business partnerships, the ${displayName} sector provides direct access to the latest innovations shaping the future of manufacturing and quality engineering.`,
-    heroImage: '/images/precision.jpg',
-    stats: {
-      visitors: '10,000+',
-      exhibitors: '150+',
-      countries: '5+'
-    },
+mainDescription: `The ${displayName} sector at INDIAMET 2027 showcases the latest innovations in industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, automation, and smart manufacturing technologies. This dedicated sector brings together global technology leaders, equipment manufacturers, solution providers, research institutions, and industry experts driving the future of precision engineering and manufacturing excellence.
 
+Visitors can explore cutting-edge Coordinate Measuring Machines (CMMs), optical and laser measurement systems, portable metrology solutions, industrial CT scanners, machine vision systems, calibration equipment, precision gauges, sensors, metrology software, AI-powered inspection systems, and digital quality management solutions. From laboratory measurement to shop-floor inspection, this sector represents the complete ecosystem of modern industrial metrology.
+
+Whether you are looking to improve product quality, enhance manufacturing accuracy, reduce production defects, implement Industry 4.0 technologies, automate inspection processes, or establish new business partnerships, the ${displayName} sector provides direct access to the latest technologies and global innovations shaping the future of manufacturing and quality engineering.`,
+
+heroImage: "/images/precision.jpg",
+
+stats: {
+  visitors: "10,000+",
+  exhibitors: "150+",
+  countries: "14+",
+},
     whyExhibit: [
-      {
-        title: "Connect with Industry Leaders",
-        icon: "🤝",
-        description: `Engage with key decision-makers and professionals in the ${displayName.toLowerCase()} sector.`
-      },
-      {
-        title: "Showcase Your Solutions",
-        icon: "🚀",
-        description: `Present your ${displayName.toLowerCase()} solutions to a targeted audience of industry professionals.`
-      },
-      {
-        title: "Expand Your Network",
-        icon: "🌍",
-        description: `Build valuable connections with partners, suppliers, and customers from around the world.`
-      }
-    ],
+  {
+    title: "Meet Qualified Buyers",
+    icon: "🎯",
+    description: "Connect directly with OEMs, manufacturing companies, quality heads, plant managers, and purchase decision-makers looking for advanced metrology solutions."
+  },
+  {
+    title: "Launch Innovative Technologies",
+    icon: "🚀",
+    description: "Showcase your latest metrology equipment, inspection systems, software, calibration solutions, and smart manufacturing technologies to a targeted audience."
+  },
+  {
+    title: "Expand Global Business",
+    icon: "🌍",
+    description: "Build strategic partnerships with manufacturers, distributors, system integrators, research organizations, and international buyers."
+  }
+],
     services: [
-      "Consulting & Advisory Services",
-      "Technology Solutions",
-      "Equipment & Machinery",
-      "Software & Digital Tools",
-      "Training & Support",
-      "Maintenance & Repair",
-      "Spare Parts & Consumables",
-      "Project Management",
-      "Quality Assurance",
-      "Regulatory Compliance"
-    ],
+  "Coordinate Measuring Machines (CMM)",
+  "Vision Measurement Systems",
+  "3D Laser Scanning",
+  "Portable Metrology",
+  "Laser Trackers",
+  "Industrial CT Scanning",
+  "Calibration Equipment",
+  "Precision Gauges & Instruments",
+  "Machine Vision & AI Inspection",
+  "Metrology Software & Analytics",
+  "Non-Destructive Testing (NDT)",
+  "Industrial Automation & Robotics",
+  "Surface & Form Measurement",
+  "Sensors & Smart Manufacturing Solutions"
+],
     faqs: [
-      {
-        question: "What types of companies exhibit in this sector?",
-        answer: `Service providers, manufacturers, technology companies, and consultants specializing in ${displayName.toLowerCase()}.`
-      },
-      {
-        question: "Who visits this sector?",
-        answer: "Logistics managers, supply chain professionals, operations directors, and procurement specialists."
-      },
-      {
-        question: "What are the key trends?",
-        answer: "Digital transformation, sustainability, automation, and integrated supply chain solutions."
-      }
-    ]
-  };
+  {
+    question: "Who should exhibit in this sector?",
+    answer: "Manufacturers of metrology equipment, precision measurement instruments, calibration systems, inspection technologies, machine vision solutions, industrial software, automation systems, and quality engineering services."
+  },
+  {
+    question: "Who will visit this sector?",
+    answer: "Quality Managers, Manufacturing Heads, Production Engineers, QA/QC Professionals, R&D Engineers, Plant Managers, OEMs, Tier Suppliers, Calibration Laboratories, Government Organizations, and Research Institutions."
+  },
+  {
+    question: "What technologies will be showcased?",
+    answer: "CMMs, optical metrology, 3D scanning, portable metrology, laser trackers, industrial CT, machine vision, AI inspection, calibration systems, precision instruments, metrology software, and Industry 4.0 quality solutions."
+  }
+],
 }
 
 export default async function SectorPage({ params }: PageProps) {
