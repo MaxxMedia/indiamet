@@ -255,10 +255,10 @@ export default function NavBar() {
                   {/* Event Info - Hidden on small screens */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
                     <span className="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap">
-                      22 - 24 April 2027
+                      22 - 24 APRIL 2027
                     </span>
                     <span className="text-[12px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
-                      Auto Cluster Exhibition Centre, Pune
+                      AUTO CLUSTER EXHIBITION CENTER, PUNE, INDIA
                     </span>
                   </div>
                 </Link>
