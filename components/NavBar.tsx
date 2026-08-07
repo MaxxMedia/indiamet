@@ -38,17 +38,7 @@ const navItems: NavItem[] = [
       { text: "Download Event Brochure", href: "/event-brochure" },
     ],
   },
-  {
-    title: "Insights",
-    dropdown: true,
-    links: [
-      { text: "Industry News", href: "/articles" },
-      { text: "Post Show Report", href: "/post-show-report" },
-      { text: "Event Brochure", href: "/event-brochure" },
-      { text: "Media Gallery", href: "/media-gallery" }
-    ],
-  },
-  {
+   {
     title: "About",
     dropdown: true,
     links: [
