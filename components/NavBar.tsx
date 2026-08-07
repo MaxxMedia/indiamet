@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    title: "Attend",
+    title: "Visit",
     dropdown: true,
     links: [
       { text: "Why Visit", href: "/why-visit" },
