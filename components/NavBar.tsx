@@ -438,14 +438,14 @@ export default function NavBar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="bg-[#FF6A00] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
-                  Become an Exhibitor
+                  EXHIBITOR REGISTRATION
                 </Button>
                 <Button
                   href="/visitor-registration"
                   onClick={() => setMobileMenuOpen(false)}
                   className="bg-[#FF6A00] text-white text-sm py-3 font-semibold rounded-md w-full"
                 >
-                  Visitor Registration
+                  VISITOR REGISTRATION
                 </Button>
               </div>
             </div>
