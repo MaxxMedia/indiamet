@@ -11,8 +11,7 @@ export default function OrganizerSection() {
 
             <p className="mb-4">
               <span className="text-base md:text-lg lg:text-[27px]">
-                The INDIAMET Conference is held alongside INDIAMET – International Exhibition for Die & Mould, Tooling, and Precision Manufacturing Technologies, one of India’s focused platforms for the tooling and precision engineering industry.{" "}
-                The exhibition brings together leading die & mould manufacturers, tooling solution providers, OEMs, technology suppliers, and manufacturing decision-makers from across India and international markets.
+                The INDIAMET Conference 2027 is held alongside INDIAMET 2027 – India International Metrology, Measurement & Quality Expo, India's dedicated exhibition for industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, and advanced manufacturing technologies.
               </span>
             </p>
 
@@ -20,7 +19,7 @@ export default function OrganizerSection() {
 
             <p>
               <span className="text-base md:text-lg lg:text-[27px]">
-                INDIAMET is organised by <strong>Maxx Business Media</strong>, an experienced exhibition team with a strong portfolio of industrial trade fairs, conferences, and business forums across key manufacturing sectors. Through integrated digital outreach and on-ground engagement, the INDIAMET platform delivers powerful networking, knowledge exchange, and business development opportunities for the die & mould and precision manufacturing community.
+                INDIAMET is organised by <strong>Maxx Business Media</strong>, a leading organizer of industrial exhibitions, conferences, and B2B business forums dedicated to the manufacturing sector. Backed by extensive industry expertise and a strong network across automotive, aerospace, defence, electronics, medical devices, precision engineering, and advanced manufacturing industries, Maxx Business Media delivers high-impact business platforms that connect technology providers with key decision-makers. Through strategic marketing campaigns, digital media, trade publications, and on-ground engagement, INDIAMET creates exceptional opportunities for business networking, knowledge exchange, technology showcasing, product launches, and long-term industry collaboration within the industrial metrology, measurement, quality, and inspection ecosystem.
               </span>
             </p>
 
