@@ -210,7 +210,7 @@ export default function NavBar() {
               </div>
 <Link href="/login" className="relative z-[1001]">
   <div className="flex items-end gap-1.5 rounded-b-xl bg-[#FF6A00] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#01163A] active:scale-95 transition-all">
-    <span className="font-bold">Exhibitor Login</span>
+    <span className="font-bold"></span>
   </div>
 </Link>
 
@@ -347,7 +347,7 @@ export default function NavBar() {
       {/* Exhibitor Login */}
       <Link href="/login">
         <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
-          Exhibitor Login
+          EXHIBITOR LOGIN
         </div>
       </Link>
 
