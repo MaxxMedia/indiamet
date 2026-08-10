@@ -151,7 +151,7 @@ export const sectorDatabase: Record<string, SectorDetail> = {
 
 From incoming inspection and first-piece verification to in-process measurement and final quality inspection, exhibitors showcase technologies designed to deliver accuracy, repeatability, traceability, and faster inspection cycles. Visitors can explore contact and non-contact measurement systems, portable and automated inspection solutions, and advanced metrology software that converts measurement data into actionable quality insights.`,
   heroImage: "/images/sectors/metrology.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Quality & Manufacturing Engineers",
@@ -207,7 +207,7 @@ From incoming inspection and first-piece verification to in-process measurement 
 
 Exhibitors showcase high-accuracy measurement solutions designed for tool rooms, quality laboratories, production floors, automotive components, aerospace parts, precision engineering, and other demanding applications. Visitors can compare measurement accuracy, inspection speed, automation capabilities, software integration, and repeatability across different CMM and gauging technologies.`,
   heroImage: "/images/cmm.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Reach CMM Buyers Directly",
@@ -263,7 +263,7 @@ Exhibitors showcase high-accuracy measurement solutions designed for tool rooms,
 
 Exhibitors demonstrate how optical and laser technologies can capture dimensional and surface information quickly and accurately, supporting automated inspection and high-throughput manufacturing. Visitors can explore solutions for component measurement, defect detection, surface inspection, reverse engineering, and automated quality verification.`,
   heroImage: "/images/vision.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Engage Automation-Ready Buyers",
@@ -319,7 +319,7 @@ Exhibitors demonstrate how optical and laser technologies can capture dimensiona
 
 Exhibitors showcase calibration instruments, reference standards, laboratory equipment, software, and documentation solutions that help organizations maintain measurement accuracy and traceability. Visitors can evaluate solutions for in-house calibration laboratories as well as professional calibration and testing services supporting quality management systems and industrial compliance.`,
   heroImage: "/images/sectors/calibration.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Calibration Decision-Makers",
@@ -375,7 +375,7 @@ Exhibitors showcase calibration instruments, reference standards, laboratory equ
 
 Visitors can explore integrated quality solutions that connect shop-floor inspection with production data, reporting, statistical process control, and quality management systems. Exhibitors demonstrate technologies designed to identify deviations early, reduce defects, improve process capability, and support continuous manufacturing improvement.`,
   heroImage: "/images/sectors/quality.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Reach Quality Decision-Makers",
@@ -431,7 +431,7 @@ ndt: {
 
 Exhibitors showcase portable and fixed inspection systems for applications across aerospace, automotive, power generation, oil & gas, infrastructure, heavy engineering, fabrication, and other safety-critical industries. Visitors can compare testing technologies based on material type, component geometry, defect characteristics, inspection requirements, and applicable standards.`,
   heroImage: "/images/sectors/ndt.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Safety-Critical Industries",
@@ -487,7 +487,7 @@ Exhibitors showcase portable and fixed inspection systems for applications acros
 
 Exhibitors demonstrate how robotics and automation can integrate measurement and inspection directly into production workflows. Visitors can explore automated quality inspection, robotic handling, connected equipment, real-time production monitoring, and digital platforms that link manufacturing data with quality information.`,
   heroImage: "/images/sectors/automation.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Engage Digital Transformation Leaders",
@@ -543,7 +543,7 @@ Exhibitors demonstrate how robotics and automation can integrate measurement and
 
 Visitors can explore sensing solutions for temperature, pressure, force, displacement, vibration, position, flow, and other critical parameters, together with data acquisition and monitoring systems that convert sensor signals into actionable information for quality and process improvement.`,
   heroImage: "/images/sectors/sensors.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Instrumentation Engineers",
@@ -599,7 +599,7 @@ Visitors can explore sensing solutions for temperature, pressure, force, displac
 
 Exhibitors present instrument ranges for general workshop inspection as well as demanding high-accuracy applications. Visitors can compare mechanical and digital instruments, accuracy classes, measurement ranges, ergonomics, connectivity options, and accessories designed to improve measurement efficiency and traceability.`,
   heroImage: "/images/instruments.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Reach Shop-Floor Buyers Directly",
@@ -655,7 +655,7 @@ Exhibitors present instrument ranges for general workshop inspection as well as 
 
 Exhibitors showcase laboratory and portable testing technologies used for incoming material inspection, process verification, research and development, and final product quality assurance. Visitors can explore solutions for evaluating mechanical properties, surface characteristics, material composition, and compliance with required specifications.`,
   heroImage: "/images/sectors/material-testing.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Materials Engineering Teams",
@@ -711,7 +711,7 @@ Exhibitors showcase laboratory and portable testing technologies used for incomi
 
 Exhibitors demonstrate how integrated digital workflows can reduce inspection programming time, improve measurement consistency, simplify reporting, and connect quality data with manufacturing decisions. Visitors can explore software solutions that enable smarter inspection, better traceability, digital collaboration, and data-driven quality improvement.`,
   heroImage: "/images/sectors/software.jpg",
-  stats: { visitors: "10,000+", exhibitors: "150+", countries: "5+" },
+  stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
       title: "Connect with Digital Manufacturing Teams",
