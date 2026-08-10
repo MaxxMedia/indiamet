@@ -845,7 +845,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                   number: "01",
                   title: "Become an Exhibitor",
                   description: "Join 150+ exhibitors in presenting your solutions for 3 days for unmatched networking opportunities.",
-                  buttonText: "Become an Exhibitor",
+                  buttonText: "EXHIBITOR REGISTRATION",
                   href: "/exhibiting-enquiry"
                 },
                 {
@@ -861,7 +861,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                   number: "03",
                   title: "Become a Visitor",
                   description: "Why not visit the market? Why not visit the show and what to expect for the following edition.",
-                  buttonText: "Visitor Registration",
+                  buttonText: "VISITOR REGISTRATION",
                   href: "/visitor-registration"
                 }
               ].map((card, index) => (
