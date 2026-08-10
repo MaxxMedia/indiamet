@@ -97,7 +97,9 @@ export default function LoginPage() {
 />
   </div>
 </div>
-
+ <p className="text-gray-600">
+            
+          </p>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Exhibitor Portal
           </h1>
