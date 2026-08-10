@@ -65,15 +65,15 @@ export default function Footer() {
               <h5 className="mb-2 font-semibold">Opening Hours</h5>
               <div className="text-white/100 space-y-1">
                 <p className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-green-400"></span>
+                  <span className="h-2 w-2 rounded-full bg-blue-400"></span>
                   <span><strong>22 April 2027:</strong> 10:00—18:00</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-green-400"></span>
+                  <span className="h-2 w-2 rounded-full bg-blue-400"></span>
                   <span><strong>23 April 2027:</strong> 10:00—18:00</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-green-400"></span>
+                  <span className="h-2 w-2 rounded-full bg-blue-400"></span>
                   <span><strong>24 April 2027:</strong> 10:00—18:00</span>
                 </p>
               </div>
