@@ -755,6 +755,7 @@ Exhibitors demonstrate how integrated digital workflows can reduce inspection pr
       question: "What are the key trends?",
       answer:
         "Cloud-connected metrology, AI-assisted inspection analysis, digital twins, automated reporting, CAD-to-part comparison, and connected quality data.",
-    },
-  ],
-},
+ }, 
+], 
+}, 
+};
