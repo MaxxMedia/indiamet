@@ -86,20 +86,17 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center mb-10">
           <div className="flex justify-center mb-6">
-  <div className="relative h-40 w-[700px]">
+  <div className="relative h-60 w-[900px]">
   <Image
   src="/images/exhibitor-login.png"
   alt="INDIAMET"
-  width={300}
-  height={100}
+  width={400}
+  height={200}
   className="mx-auto object-contain"
   priority
 />
   </div>
 </div>
- <p className="text-gray-600">
-            
-          </p>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Exhibitor Portal
           </h1>
