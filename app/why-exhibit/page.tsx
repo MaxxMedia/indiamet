@@ -11,6 +11,7 @@ import { motion } from 'framer-motion'
 import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi"
 import BrochureSection from "@/components/section/BrochureSection"
 import BackToTop from "../exhibitor-resource-center/component/BackToTop"
+import { indiametSectors } from "../sectors/data"
 
 const data = [
   {
@@ -497,46 +498,9 @@ const staggerContainer = {
               variants={staggerContainer}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
             >
-              {[
-                {
-  title: 'Metrology & Precision Measurement Systems',
-  slug: 'metrology-measurement',
-  image: '/images/metrology.jpg',
-  description: 'Advanced metrology instruments, precision measuring systems, gauges, comparators, and dimensional measurement solutions for accurate quality control and manufacturing.'
-},
-{
-  title: 'Coordinate Measuring Machines (CMM) & Gauging',
-  slug: 'cmm-gauging',
-  image: '/images/cmm.jpg',
-  description: 'Bridge, horizontal arm, portable, and shop-floor CMMs, along with precision gauges and dimensional inspection systems for high-accuracy measurement applications.'
-},
-{
-  title: 'Optical, Vision & Laser Inspection Systems',
-  slug: 'vision-inspection',
-  image: '/images/vision.jpg',
-  description: 'Machine vision, optical metrology, laser scanning, 3D measurement, profile projectors, microscopes, and non-contact inspection technologies for advanced quality assurance.'
-},
-{
-  title: 'Calibration, Testing & NDT Solutions',
-  slug: 'calibration-testing',
-  image: '/images/calibration.jpg',
-  description: 'Calibration equipment, accredited laboratory services, material testing, hardness testing, force measurement, and non-destructive testing (NDT) solutions for industrial quality compliance.'
-},
-{
-  title: 'Industrial Software, Automation & Smart Metrology',
-  slug: 'smart-metrology',
-  image: '/images/software.jpg',
-  description: 'Metrology software, SPC, quality management systems, digital inspection, AI-powered analytics, industrial automation, and Industry 4.0 solutions for intelligent manufacturing.'
-},
-{
-  title: 'Quality Assurance & Precision Engineering Solutions',
-  slug: 'quality-engineering',
-  image: '/images/quality.jpg',
-  description: 'Quality control equipment, precision instruments, sensors, measurement accessories, engineering services, and integrated solutions that enhance manufacturing accuracy, productivity, and compliance.'
-},
-              ].map((sector, index) => (
+              {indiametSectors.slice(0, 6).map((sector) => (
                 <Link
-                  key={index}
+                  key={sector.id}
                   href={`/sectors/${sector.slug}`}
                   className="group relative w-full min-h-[600px] overflow-hidden block"
                 >

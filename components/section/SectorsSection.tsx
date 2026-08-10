@@ -2,31 +2,12 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import SectionContainer from "../UI/SectionContainer"
+import { indiametSectors } from "@/app/sectors/data"
 
 const SectorsSection = () => {
-  const sectors = [
- {
-    title: "Metrology & Precision Measurement Systems",
-    description:
-      "Advanced metrology instruments, dimensional measurement systems, precision gauges, comparators, and measurement solutions for accurate quality control and manufacturing.",
-    image: "/images/precision.jpg",
-    link: "/sectors/metrology-measurement",
-  },
-  {
-    title: "Coordinate Measuring Machines (CMM) & Gauging",
-    description:
-      "Bridge, gantry, horizontal arm, and portable CMMs, precision gauges, probing systems, and dimensional inspection technologies for high-accuracy measurements.",
-    image: "/images/mouldbase.jpg",
-    link: "/sectors/cmm-gauging",
-  },
-  {
-    title: "Optical Inspection, Machine Vision & Smart Metrology",
-    description:
-      "Optical metrology, machine vision, laser scanning, 3D measurement, AI-powered inspection, industrial software, and smart metrology solutions for modern manufacturing.",
-    image: "/images/finishing.jpg",
-    link: "/sectors/optical-machine-vision",
-  },
-  ]
+  // Only 6 of the 11 INDIAMET sectors are shown here — first 6 by id order.
+  // Swap this slice/selection if a different subset should be featured.
+  const sectors = indiametSectors.slice(0, 6)
 
   return (
     <SectionContainer className="py-16 lg:py-24">
@@ -49,10 +30,10 @@ const SectorsSection = () => {
 
       {/* Sectors Grid */}
       <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {sectors.map((sector, index) => (
+        {sectors.map((sector) => (
           <Link
-            key={index}
-            href={sector.link}
+            key={sector.id}
+            href={`/sectors/${sector.slug}`}
             className="group relative flex min-h-[600px] w-full flex-col justify-end overflow-hidden rounded-xl p-5 text-white"
           >
             {/* Background Image */}
