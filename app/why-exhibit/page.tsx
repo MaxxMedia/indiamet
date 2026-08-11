@@ -302,7 +302,7 @@ const staggerContainer = {
                     transition={{ delay: 0.2 }}
                     className="text-white font-parabolica text-3xl font-bold"
                   >
-                    SummitHighlights
+                   
                   </motion.h2>
                 </div>
               </motion.div>
@@ -738,7 +738,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
             >
               <div className="relative w-full h-[520px] lg:h-[580px] rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/exhibitors.png"
+                  src=""
                   alt="Exhibitors showcase"
                   fill
                   className="object-cover"

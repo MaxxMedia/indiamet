@@ -25,14 +25,14 @@ export default function HeroSection() {
       <div className="relative z-10 flex min-h-[60vh] lg:min-h-[70vh] w-full items-end px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1440px] pb-6 md:pb-10 lg:pb-16">
           {/* Heading */}
-          <h1 className="font-parabolica text-[32px] font-bold leading-[0.85] tracking-tight sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[160px]">
+          <h1 className="font-parabolica text-[32px] font-bold leading-[0.85] tracking-tight sm:text-[35px] md:text-[70px] lg:text-[80px] xl:text-[160px]">
             METROLOGY SUMMIT 2027
           </h1>
 
           {/* Sub content */}
           <div className="mt-4 md:mt-6 flex flex-col gap-4 md:gap-6 lg:flex-row lg:items-end">
             <div className="max-w-4xl">
-              <h2 className="mb-2 md:mb-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold">
+              <h2 className="mb-2 md:mb-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl font-semibold">
                 Global Summit on Metrology, Precision Measurement and Quality Engineering
 
               </h2>
@@ -44,11 +44,11 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="mt-4 lg:mt-0 lg:ml-auto flex flex-col sm:flex-row gap-3 md:gap-4">
-              <Link
-                
-                className="text-sm md:text-base px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-4" href={'/became-delegate'}              >
-                Become a delegate
-              </Link>
+             <Link href="/become-delegate">
+        <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
+         Become a Delegate
+        </button>
+       </Link>
 
               <Link href="/become-partner">
                 <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
