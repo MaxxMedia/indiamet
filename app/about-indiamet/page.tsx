@@ -87,7 +87,7 @@ export default function AboutTransRussia() {
           <div className="animated-block">
             <div className="animated-block-target">
               <SectionContainer>
-                <ConferenceSection />
+                <SummitSection />
               </SectionContainer>
             </div>
           </div>

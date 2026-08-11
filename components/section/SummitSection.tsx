@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import SectionContainer from '@/components/UI/SectionContainer';
 
-const ConferenceSection = () => {
+const SummitSection = () => {
   const stats = [
     "150+ Delegates",
     "20+ Speakers",
@@ -79,4 +79,4 @@ const ConferenceSection = () => {
   );
 };
 
-export default ConferenceSection;
+export default SummitSection;
