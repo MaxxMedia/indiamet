@@ -44,7 +44,7 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="mt-4 lg:mt-0 lg:ml-auto flex flex-col sm:flex-row gap-3 md:gap-4">
-             <Link href="/become-delegate">
+              <Link href="/became-delegate">
         <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
          Become a Delegate
         </button>
