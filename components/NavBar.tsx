@@ -51,7 +51,7 @@ const navItems: NavItem[] = [
     ],
   },
 
-  { title: "SUMMIT", dropdown: false, href: "/conference" },
+  { title: "SUMMIT", dropdown: false, href: "/summit" },
   { title: "GMEA AWARDS", dropdown: false, href: "/awards" },
   { title: "CONTACT US", dropdown: false, href: "/contact-us" },
 ];
