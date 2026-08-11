@@ -651,13 +651,13 @@ Discover the professionals driving the future of metrology, measurement, quality
 From quality heads, metrology engineers, plant managers, manufacturing leaders, R&D professionals, procurement specialists, OEMs, calibration laboratories, and testing organizations to precision engineering companies, visitors attend INDIAMET 2027 to discover the latest technologies, evaluate innovative solutions, connect with global suppliers, and build strategic business partnerships.              </motion.p>
 
               <Link href="/post-show-report">
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#FF6A00] hover:bg-blue-800 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300"
                 >
                   Know More Insights
-                </motion.button>
+                </motion.button> */}
               </Link>
             </SectionContainer>
           </div>
