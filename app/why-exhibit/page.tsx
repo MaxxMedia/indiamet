@@ -738,7 +738,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
             >
               <div className="relative w-full h-[520px] lg:h-[580px] rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/exhibitors.png"
+                  src=""
                   alt="Exhibitors showcase"
                   fill
                   className="object-cover"
