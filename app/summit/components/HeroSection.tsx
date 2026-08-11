@@ -44,11 +44,11 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="mt-4 lg:mt-0 lg:ml-auto flex flex-col sm:flex-row gap-3 md:gap-4">
-              <Link
-                
-                className="text-sm md:text-base px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-4" href={'/became-delegate'}              >
-                Become a delegate
-              </Link>
+             <Link href="/become-delegate">
+        <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
+         Become a Delegate
+        </button>
+       </Link>
 
               <Link href="/become-partner">
                 <button className="relative z-50 rounded-full bg-[#FF6A00] px-6 py-3 md:px-8 md:py-3 lg:px-10 lg:py-4 text-sm md:text-base lg:text-lg font-semibold transition hover:scale-105 hover:shadow-2xl hover:shadow-[#33A8DF]/40">
