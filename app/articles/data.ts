@@ -60,7 +60,7 @@ export const articles: Article[] = [
     <h2>Benefits for Tooling Manufacturers</h2>
     <p>Automation allows tooling manufacturers to produce complex dies and moulds with consistent quality while reducing production cycle times. It also helps companies meet growing global demand while maintaining competitive costs.</p>
 
-    <p>Industry platforms such as <strong>INDIAMET – International Die & Mould Expo</strong> showcase the latest automation solutions helping tool rooms move toward Industry 4.0 manufacturing.</p>
+    <p>Industry platforms such as <strong>DIEMEX – International Die & Mould Expo</strong> showcase the latest automation solutions helping tool rooms move toward Industry 4.0 manufacturing.</p>
     `,
     PublishedDate: "2027-02-25T03:30:00.000Z",
     Image: {

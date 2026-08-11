@@ -21,7 +21,7 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
   exhibitions = [
     {
       id: "1",
-      name: "INDIAMET 2023",
+      name: "DIEMEX 2023",
       image:"",
       description: "The international exhibition of Die & Mould Industry.",
       startDate: "Oct 27th, 2023",
@@ -31,7 +31,7 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
     },
     {
       id: "2",
-      name: "INDIAMET 2025",
+      name: "DIEMEX 2025",
       image:"",
       description: "The international exhibition of Die & Mould Industry.",
       startDate: "Nov 20th, 2025",
@@ -39,6 +39,18 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
       venue: "Chennai Trade Centre,Chennai",
       websiteUrl: "#"
     },
+
+ {
+      id: "2",
+      name: "DIEMEX 2026",
+      image:"",
+      description: "The international exhibition of Die & Mould Industry.",
+      startDate: "Oct 08th, 2026",
+      endDate: "Oct 10th, 2026",
+      venue: "Auto Cluster Exhibition Centre, Pune",
+      websiteUrl: "#"
+    },
+
     {
       id: "3",
       name: "INDIAMET 2027",
@@ -47,7 +59,7 @@ const ExhibitionsGlance: React.FC<ExhibitionsGlanceProps> = ({
       startDate: "April 22nd, 2027",
       endDate: "April 24th, 2027",
       venue: "Auto Cluster Exhibition Centre, Pune",
-      websiteUrl: "#"
+      websiteUrl: "https://www.indiametexpo.com"
     }
   ]
 }) => {

@@ -23,7 +23,7 @@ export default function SectorsPage() {
                 Event Sectors
               </h1>
               <p className="text-lg lg:text-xl max-w-full text-white/90">
-                INDIAMET 2027 showcases the complete spectrum of metrology, measurement technology, quality assurance, inspection systems, calibration, testing equipment, machine vision, non-destructive testing (NDT), precision instruments, industrial software, automation, and smart manufacturing solutions, bringing together the latest innovations driving quality and precision across modern manufacturing.
+                INDIAMET 2027 covers metrology, measurement, quality, inspection, calibration, testing, machine vision, NDT, precision instruments, software, automation, and smart manufacturing technologies.
               </p>
             </div>
           </SectionContainer>

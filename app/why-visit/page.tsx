@@ -569,53 +569,48 @@ export default function WhyVisit() {
   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16"
 >
                 {[
-  { 
-    id: 1, 
-    title: 'Metrology & Precision Measurement Systems',
-
-    slug: 'precision-moulds',
-     image: '/images/precision.jpg',
-     description: 'Comprehensive die & mould manufacturing, tooling systems, design engineering, and end-to-end production solutions supporting high-precision industrial applications.'
-     },
-  { 
-    id: 2, 
-     title: 'Tooling, Mould Bases & Standard Components',
-
-                  slug: 'tooling-mould-base',
-                  image: '/images/mouldbase.jpg',
-                  description: 'High-quality mould bases, precision components, hot runner systems, and standard tooling elements supporting efficient and reliable die & mould production.'
-                },
-  { 
-    id: 3, 
-   title: 'Machining & Finishing Technologies',
-
-                  slug: 'machining-finishing',
-                  image: '/images/finishing.jpg',
-                  description: 'High-precision CNC machining, EDM, wire-cut, surface finishing, and polishing solutions for toolroom operations.'
-                },
-  { 
-    id: 4, 
-     title: 'Automation & Industry 4.0 Solutions',
-
-                  slug: 'automation-industry',
-                  image: '/images/automation.jpg',
-                  description: 'Smart automation, robotics, digital manufacturing, and smart factory technologies for modern die & mould production.'
-                },
-  { 
-    id: 5, 
-    title: 'Design, CAD/CAM & Engineering Software',
-                  slug: 'cad-cam',
-                  image: '/images/cad.jpg',
-                  description: 'Advanced design, simulation, and manufacturing software enabling accurate tooling development and reduced time-to-market.'
-                },
-  { 
-    id: 6, 
-    title: 'Tool Steel & Advanced Materials',
-                  slug: 'tool-steel',
-                  image: '/images/toolsteel.jpg',
-                  description: 'High-performance tool steels, alloy steels, special metals, and advanced materials engineered for durability, precision, and long tool life in die & mould applications.'
-                },
-  
+  {
+  id: 1,
+  title: 'Metrology & Precision Measurement Systems',
+  slug: 'metrology-precision-measurement',
+  image: '/images/precision.jpg',
+  description: 'CMMs, precision measurement systems, dimensional inspection equipment, gauges, optical measurement, and advanced metrology technologies.'
+},
+{
+  id: 2,
+  title: 'Coordinate Measuring Machines (CMM) & Gauging',
+  slug: 'tooling-mould-base',
+  image: '/images/mouldbase.jpg',
+  description: 'Bridge, gantry, horizontal arm and portable CMMs, probing systems, precision gauges, and dimensional inspection technologies.'
+},
+{
+  id: 3,
+  title: 'Optical, Vision & Laser Inspection Systems',
+  slug: 'machining-finishing',
+  image: '/images/finishing.jpg',
+  description: 'Machine vision, optical metrology, laser scanners, 3D measurement systems, microscopes, and non-contact inspection solutions.'
+},
+{
+  id: 4,
+  title: 'Calibration & Testing Equipment',
+  slug: 'automation-industry',
+  image: '/images/automation.jpg',
+  description: 'Calibration laboratories, dimensional standards, pressure, temperature, torque, electrical, mass, force, and testing solutions.'
+},
+{
+  id: 5,
+  title: 'Quality Control, Inspection & NDT',
+  slug: 'cad-cam',
+  image: '/images/cad.jpg',
+  description: 'Quality assurance systems, SPC, industrial inspection, non-destructive testing, testing equipment, and process quality solutions.'
+},
+{
+  id: 6,
+  title: 'Automation, Software & Smart Manufacturing',
+  slug: 'tool-steel',
+  image: '/images/toolsteel.jpg',
+  description: 'Metrology software, CAD/CAM, digital twins, AI, robotics, automated inspection, Industry 4.0, and smart manufacturing solutions.'
+},
 ].map((sector, index) => (
   <Link
     key={index}
