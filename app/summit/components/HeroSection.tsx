@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex min-h-[60vh] lg:min-h-[70vh] w-full items-end px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1440px] pb-6 md:pb-10 lg:pb-16">
           {/* Heading */}
-          <h1 className="font-parabolica text-[32px] font-bold leading-[0.85] tracking-tight sm:text-[35px] md:text-[80px] lg:text-[100px] xl:text-[260px]">
+          <h1 className="font-parabolica text-[32px] font-bold leading-[0.85] tracking-tight sm:text-[35px] md:text-[70px] lg:text-[80px] xl:text-[160px]">
             METROLOGY SUMMIT 2027
           </h1>
 
