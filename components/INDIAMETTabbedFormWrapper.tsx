@@ -244,7 +244,7 @@ export default function INDIAMETTabbedFormWrapper({
                             <div className="grid grid-cols-3">
                                 {[
                                     { num: '150+', lbl: 'Exhibitors' },
-                                    { num: '50+', lbl: 'Countries' },
+                                    { num: '12+', lbl: 'Countries' },
                                     { num: '10K+', lbl: 'Visitors' },
                                 ].map(({ num, lbl }) => (
                                     <div
