@@ -169,7 +169,7 @@ export default function WhyVisit() {
                 {[
                   { value: "10,000", label: "Visitors" },
                   { value: "150+", label: "Exhibitors" },
-                  { value: "5+", label: "Countries" },
+                  { value: "12+", label: "Countries" },
                   { value: "10", label: "Event Sectors" }
                 ].map((stat, index) => (
                   <motion.div

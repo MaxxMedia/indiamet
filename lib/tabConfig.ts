@@ -83,7 +83,7 @@ export const RIGHT_PANEL: Record<TabKey, { headline: string; sub: string }> = {
     },
     sponsor: {
         headline: 'Elevate Your Brand Visibility',
-        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 5+ countries.',
+        sub: 'Position your company as an industry leader in front of 10,000+ decision-makers from 12+ countries.',
     },
     brochure: {
         headline: 'Get the Full Event Guide',

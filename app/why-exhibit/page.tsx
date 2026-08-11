@@ -270,7 +270,7 @@ const staggerContainer = {
                       whileHover={{ scale: 1.02, x: 5 }}
                       className="text-[#4D4D4D] text-[30px] cursor-pointer"
                     >
-                      <strong>5+ Countries</strong>
+                      <strong>12+ Countries</strong>
                     </motion.span>
                   </li>
                 </ul>

@@ -73,7 +73,7 @@ Whether you're looking to improve product quality, enhance manufacturing accurac
     stats: {
       visitors: '10,000+',
       exhibitors: '150+',
-      countries: '5+'
+      countries: '12+'
     },
 
     whyExhibit: [
