@@ -5,7 +5,7 @@ import EcosystemSection from '@/components/section/EcosystemSection';
 import SectorsSection from '@/components/section/SectorsSection';
 import BrochureSection from '@/components/section/BrochureSection';
 import ExhibitorsSection from '@/components/section/ExhibitorsSection';
-import ConferenceSection from '@/components/section/SummitSection';
+import SummitSection from '@/components/section/SummitSection';
 import ConnectSection from '@/components/ConnectSection';
 import TravelSection from '@/components/section/TravelSection';
 import QuickNavigationSection from '@/components/section/QuickNavigationSection';
