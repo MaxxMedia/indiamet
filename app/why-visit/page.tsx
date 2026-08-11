@@ -91,11 +91,9 @@ export default function WhyVisit() {
     line-clamp-2 lg:line-clamp-none
   "
 >
-  Discover India's first dedicated B2B exhibition for metrology, measurement technology, 
-  quality assurance, inspection, calibration, testing, and precision engineering. INDIAMET 2027 
-  offers visitors the opportunity to explore the latest technologies, connect directly with global 
-  solution providers, compare innovative products, and gain valuable insights into the trends driving 
-  quality, precision, and smart manufacturing across India's industrial sectors.
+  Explore the latest metrology, measurement, quality, inspection, calibration, testing, and 
+  precision engineering technologies, while connecting with leading solution providers and 
+  discovering innovations shaping India's smart manufacturing future.
 </motion.p>
 
 
