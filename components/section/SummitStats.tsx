@@ -12,7 +12,7 @@ interface Stat {
 const stats: Stat[] = [
   { value: 200, suffix: "+", label: "Delegates" },
   { value: 20, suffix: "+", label: "Speakers" },
-  { value: 20, label: "Conference Sessions" },
+  { value: 20, label: "SummitSessions" },
   { value: 2, label: "Days" },
 ]
 

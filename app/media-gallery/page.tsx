@@ -81,7 +81,7 @@ export default function MediaGalleryPage() {
             <div className="flex flex-col justify-end">
               <h2 className="title-72 text-black">Explore INDIAMET Over the Years</h2>
               <p className="max-w-6xl whitespace-pre-line py-5">
-                Discover INDIAMET through our curated gallery, featuring moments from the opening ceremony, awards, exhibition showcases, and dynamic conference sessions.
+                Discover INDIAMET through our curated gallery, featuring moments from the opening ceremony, awards, exhibition showcases, and dynamic Summitsessions.
               </p>
             </div>
           </div>

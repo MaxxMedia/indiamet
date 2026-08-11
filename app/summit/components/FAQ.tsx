@@ -8,13 +8,13 @@ const FAQ = () => {
   const faqItems = [
     {
       id: 1,
-      question: "When will INDIAMET Conference take place?",
+      question: "When will INDIAMET Summittake place?",
       answer: "April 22-23, 2027."
     },
     {
       id: 2,
-      question: "Can I participate in INDIAMET Conference  online?",
-      answer: "No. INDIAMET Conference will be held offline at the Auto Cluster Exhibition Centre, Pune."
+      question: "Can I participate in INDIAMET Summit online?",
+      answer: "No. INDIAMET Summitwill be held offline at the Auto Cluster Exhibition Centre, Pune."
     },
     {
       id: 3,

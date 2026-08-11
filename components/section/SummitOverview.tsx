@@ -15,14 +15,14 @@ const ConferenceOverview = () => {
 
   Industry leaders, technology innovators, and international experts will share trends, best practices, case studies, and real-world applications shaping the future of advanced manufacturing in India and globally.
   <br /><br />
-  Attendance to all conference sessions is complimentary for registered exhibition visitors.
+  Attendance to all Summitsessions is complimentary for registered exhibition visitors.
 </p>
 
         {/* <Link
           href="/conference-programme/download"
           className="inline-flex items-center rounded-full bg-[#004aad] px-8 py-4 text-white font-semibold transition hover:bg-[#003a87]"
         >
-          Download 2025 Conference Programme Schedule
+          Download 2025 SummitProgramme Schedule
         </Link> */}
       </SectionContainer>
     </section>

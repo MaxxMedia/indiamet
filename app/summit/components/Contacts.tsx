@@ -30,7 +30,7 @@ const Contacts = () => {
                     <div className="flex-1">
                       <p className="text-lg md:text-xl lg:text-27 font-bold"></p>
                       <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
-                        Conference Sales 
+                        SummitSales 
                       </p>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const Contacts = () => {
                     <div className="flex-1">
                       <p className="text-lg md:text-xl lg:text-27 font-bold">Padmanabham R</p>
                       <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
-                        Conference Director 
+                        SummitDirector 
                       </p>
                     </div>
                   </div>

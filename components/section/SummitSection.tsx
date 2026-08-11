@@ -65,7 +65,7 @@ const ConferenceSection = () => {
         <div className="relative min-h-[400px] lg:min-h-full">
           <Image
             src="/images/con-about-indiamet.JPG"
-            alt="Conference attendees networking and participating in sessions"
+            alt="Summitattendees networking and participating in sessions"
             fill
             className="object-cover"
             priority

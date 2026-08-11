@@ -5,7 +5,7 @@ import EcosystemSection from '@/components/section/EcosystemSection';
 import SectorsSection from '@/components/section/SectorsSection';
 import BrochureSection from '@/components/section/BrochureSection';
 import ExhibitorsSection from '@/components/section/ExhibitorsSection';
-import ConferenceSection from '@/components/section/ConferenceSection';
+import ConferenceSection from '@/components/section/SummitSection';
 import ConnectSection from '@/components/ConnectSection';
 import TravelSection from '@/components/section/TravelSection';
 import QuickNavigationSection from '@/components/section/QuickNavigationSection';
@@ -83,7 +83,7 @@ export default function AboutTransRussia() {
             </div>
           </div>
 
-          {/* Conference Section with SectionContainer */}
+          {/* SummitSection with SectionContainer */}
           <div className="animated-block">
             <div className="animated-block-target">
               <SectionContainer>

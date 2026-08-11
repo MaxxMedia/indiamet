@@ -302,7 +302,7 @@ const staggerContainer = {
                     transition={{ delay: 0.2 }}
                     className="text-white font-parabolica text-3xl font-bold"
                   >
-                    Conference Highlights
+                    SummitHighlights
                   </motion.h2>
                 </div>
               </motion.div>

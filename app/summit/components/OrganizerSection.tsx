@@ -11,7 +11,7 @@ export default function OrganizerSection() {
 
             <p className="mb-4">
               <span className="text-base md:text-lg lg:text-[27px]">
-                The INDIAMET Conference 2027 is held alongside INDIAMET 2027 – India International Metrology, Measurement & Quality Expo, India's dedicated exhibition for industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, and advanced manufacturing technologies.
+                The INDIAMET Summit2027 is held alongside INDIAMET 2027 – India International Metrology, Measurement & Quality Expo, India's dedicated exhibition for industrial metrology, precision measurement, quality assurance, calibration, testing, inspection, machine vision, and advanced manufacturing technologies.
               </span>
             </p>
 

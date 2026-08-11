@@ -8,7 +8,7 @@ const ConferenceIntro = () => {
     <section className="bg-[#f3f9fd] py-20 ">
       <SectionContainer>
         <h1 className="text-[56px] font-bold text-black mb-4 mt-10">
-          Conference Programme
+          SummitProgramme
         </h1>
 
         <p className="text-sm uppercase tracking-wide text-black/70">

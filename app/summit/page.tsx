@@ -21,7 +21,7 @@ import TransRussiaSummitProgram from './components/ConferenceProgramme';
 
 export const metadata: Metadata = {
   title: 'INDIAMET SUMMIT | April 22-23, 2027, Pune',
-  description: 'Annual conference for professionals in the metrology industry.',
+  description: 'Annual Summitfor professionals in the metrology industry.',
   openGraph: {
     title: 'INDIAMET Summit | April 22-23, 2027, Pune',
     description: 'Annual summit for professionals in industrial metrology.',

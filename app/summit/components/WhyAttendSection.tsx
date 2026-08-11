@@ -6,7 +6,7 @@ export default function WhyAttendSection() {
       <div className="animated-block-target">
         <div className="container">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-10 text-black">
-  Why Attend INDIAMET Conference 2027
+  Why Attend INDIAMET Summit2027
 </h2>
           <div className="rte-style [&_a]:underline [&_blockquote]:relative [&_blockquote]:ml-5 [&_blockquote]:w-fit [&_blockquote]:border-l-4 [&_blockquote]:border-black [&_blockquote]:bg-[#f9f9f9] [&_blockquote]:p-5 [&_blockquote]:italic [&_h1]:lg:text-4xl [&_h2]:lg:text-3xl [&_h3]:lg:text-2xl [&_ol]:list-decimal [&_ol]:pl-5 [&_ul]:list-disc [&_ul]:pl-5">
             <div className="overflow-x-auto">
@@ -31,12 +31,12 @@ export default function WhyAttendSection() {
                       {
                         icon: "chat_6c367bef7a.png",
                         title: "Build High-Value Industry Connections",
-                        description: "The INDIAMET Conference provides an exclusive platform to network with metrology professionals, quality managers, manufacturing leaders, OEMs, calibration laboratories, research institutions, government organizations, automation providers, and technology innovators. Exchange knowledge, share industry experiences, and establish strategic partnerships that support long-term business growth."
+                        description: "The INDIAMET Summitprovides an exclusive platform to network with metrology professionals, quality managers, manufacturing leaders, OEMs, calibration laboratories, research institutions, government organizations, automation providers, and technology innovators. Exchange knowledge, share industry experiences, and establish strategic partnerships that support long-term business growth."
                       },
                       {
                         icon: "sales_348ae8dd98.png",
                         title: "Maximise Your Exhibition & Business ROI",
-                        description: "Conference sessions provide exhibitors and delegates with valuable market intelligence, customer insights, and technology trends that help strengthen product positioning, identify new business opportunities, and improve engagement with prospective customers during the exhibition. Attendees can align their business strategies with evolving industry demands while maximizing the value of their participation at INDIAMET 2027."
+                        description: "Summitsessions provide exhibitors and delegates with valuable market intelligence, customer insights, and technology trends that help strengthen product positioning, identify new business opportunities, and improve engagement with prospective customers during the exhibition. Attendees can align their business strategies with evolving industry demands while maximizing the value of their participation at INDIAMET 2027."
                       }
                     ].map((item, index) => (
                       <React.Fragment key={index}>
