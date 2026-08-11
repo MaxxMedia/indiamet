@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* Sub content */}
           <div className="mt-4 md:mt-6 flex flex-col gap-4 md:gap-6 lg:flex-row lg:items-end">
             <div className="max-w-4xl">
-              <h2 className="mb-2 md:mb-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold">
+              <h2 className="mb-2 md:mb-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl font-semibold">
                 Global Summit on Metrology, Precision Measurement and Quality Engineering
 
               </h2>
