@@ -22,7 +22,7 @@ export default function RootLayout({
   const pathname = usePathname();
 
   const hideLayout =
-    pathname?.startsWith("/admin") ||
+    pathname?.startsWith("/admin") ||   
     pathname?.startsWith("/dashboard") ||
     pathname?.startsWith("/login") ||
     pathname?.startsWith("/exhibition-directory/");

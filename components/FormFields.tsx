@@ -191,7 +191,29 @@ export function PhoneField({
         </div>
     );
 }
+interface RadioCardProps {
+    title: string;
+    price: string;
+    note: string;
+    name: string;
+    defaultChecked?: boolean;
+}
 
+export function RadioCard({ title, price, note, name, defaultChecked = false }: RadioCardProps) {
+    return (
+        <label className="relative flex flex-col items-center justify-center p-3 border border-navy-600 rounded-lg cursor-pointer hover:border-gold-500 transition-colors bg-navy-800/50 hover:bg-navy-800 text-center min-h-[100px]">
+            <input
+                type="radio"
+                name={name}
+                defaultChecked={defaultChecked}
+                className="absolute top-2 right-2 accent-gold-600"
+            />
+            <span className="text-xs font-bold text-gold-500 tracking-wider">{title}</span>
+            <span className="text-sm font-semibold text-white mt-1">{price}</span>
+            <span className="text-[10px] text-slate-400 mt-1">{note}</span>
+        </label>
+    );
+}
 // Define the types for location data
 export interface LocationItem {
     id: string;
@@ -344,6 +366,137 @@ export function ConsentCheckbox({
                 {children}
             </label>
         </div>
+    );
+}
+
+// Add these components to FormFields.tsx
+
+interface FieldProps {
+    label: string;
+    required?: boolean;
+    children: React.ReactNode;
+    className?: string;
+}
+
+export function Field({ label, required = false, children, className = '' }: FieldProps) {
+    return (
+        <div className={`flex flex-col gap-1.5 ${className}`}>
+            <label className="text-xs font-medium text-slate-300 tracking-wide">
+                {label} {required && <span className="text-gold-500">*</span>}
+            </label>
+            {children}
+        </div>
+    );
+}
+
+interface TextInputProps {
+    type?: string;
+    placeholder?: string;
+    prefix?: string;
+    value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    name?: string;
+    required?: boolean;
+    defaultValue?: string;
+}
+
+export function TextInput({
+    type = 'text',
+    placeholder,
+    prefix,
+    value,
+    onChange,
+    name,
+    required,
+    defaultValue
+}: TextInputProps) {
+    return (
+        <div className="relative">
+            {prefix && (
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                    {prefix}
+                </span>
+            )}
+            <input
+                type={type}
+                name={name}
+                value={value}
+                onChange={onChange}
+                required={required}
+                placeholder={placeholder}
+                defaultValue={defaultValue}
+                className={`w-full ${prefix ? 'pl-12' : 'px-3'} py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white placeholder:text-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition`}
+            />
+        </div>
+    );
+}
+
+interface TextAreaProps {
+    placeholder?: string;
+    rows?: number;
+    value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+    name?: string;
+    required?: boolean;
+    defaultValue?: string;
+}
+
+export function TextArea({
+    placeholder,
+    rows = 3,
+    value,
+    onChange,
+    name,
+    required,
+    defaultValue
+}: TextAreaProps) {
+    return (
+        <textarea
+            name={name}
+            value={value}
+            onChange={onChange}
+            required={required}
+            placeholder={placeholder}
+            rows={rows}
+            defaultValue={defaultValue}
+            className="w-full px-3 py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white placeholder:text-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition resize-vertical"
+        />
+    );
+}
+
+interface SelectProps {
+    placeholder?: string;
+    options: string[];
+    value?: string;
+    onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+    name?: string;
+    required?: boolean;
+    defaultValue?: string;
+}
+
+export function Select({
+    placeholder,
+    options,
+    value,
+    onChange,
+    name,
+    required,
+    defaultValue
+}: SelectProps) {
+    return (
+        <select
+            name={name}
+            value={value}
+            onChange={onChange}
+            required={required}
+            defaultValue={defaultValue}
+            className="w-full px-3 py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition appearance-none"
+        >
+            <option value="">{placeholder}</option>
+            {options.map(opt => (
+                <option key={opt} value={opt}>{opt}</option>
+            ))}
+        </select>
     );
 }
 

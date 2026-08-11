@@ -26,10 +26,11 @@ export default function DelegateForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  
+  const [isLocalhost, setIsLocalhost] = useState(false);
+
   // Create a ref for the reCAPTCHA component
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -44,27 +45,54 @@ export default function DelegateForm() {
     notRobot: false
   });
 
+  // Detect localhost on client-side only to avoid hydration mismatch
+  useEffect(() => {
+    setIsLocalhost(
+      typeof window !== "undefined" &&
+      (window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1")
+    );
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // Fetch countries
+  // Fetch countries using CountriesNow API
   useEffect(() => {
     const fetchCountries = async () => {
       try {
         setCountriesLoading(true);
-        const res = await fetch("https://restcountries.com/v3.1/all?fields=name");
-        const data = await res.json();
+        const res = await fetch(
+          "https://countriesnow.space/api/v0.1/countries"
+        );
 
-        // Sort alphabetically
-        const sortedCountries = data
-          .map((c: any) => ({ name: c.name.common }))
-          .sort((a: Country, b: Country) => a.name.localeCompare(b.name));
+        if (!res.ok) {
+          throw new Error(`Countries API failed: ${res.status}`);
+        }
 
-        setCountries(sortedCountries);
+        const result = await res.json();
+
+        // CountriesNow returns { data: [{ country: "Afghanistan" }, ...] }
+        if (result.data && Array.isArray(result.data)) {
+          // Map to { name: string } format
+          const mappedCountries = result.data.map((item: any) => ({
+            name: item.country || item.name || item.Country || ""
+          })).filter((item: Country) => item.name !== "");
+
+          // Sort alphabetically
+          const sortedCountries = mappedCountries.sort((a: Country, b: Country) =>
+            a.name.localeCompare(b.name)
+          );
+
+          setCountries(sortedCountries);
+        } else {
+          throw new Error("Invalid response structure from CountriesNow");
+        }
       } catch (error) {
         console.error("Failed to fetch countries", error);
+        setCountries([]);
         toast.error("Failed to load countries");
       } finally {
         setCountriesLoading(false);
@@ -85,7 +113,7 @@ export default function DelegateForm() {
 
       try {
         setStatesLoading(true);
-        
+
         const response = await fetch(
           'https://countriesnow.space/api/v0.1/countries/states',
           {
@@ -98,17 +126,17 @@ export default function DelegateForm() {
         );
 
         const result = await response.json();
-        
+
         if (result.data && result.data.states) {
           const sortedStates = result.data.states
             .map((state: any) => ({ name: state.name }))
             .sort((a: State, b: State) => a.name.localeCompare(b.name));
-          
+
           setStates(sortedStates);
         } else {
           setStates([]);
         }
-        
+
         setFormData(prev => ({ ...prev, state: '', city: '' }));
       } catch (error) {
         console.error("Failed to fetch states", error);
@@ -133,7 +161,7 @@ export default function DelegateForm() {
 
       try {
         setCitiesLoading(true);
-        
+
         const response = await fetch(
           'https://countriesnow.space/api/v0.1/countries/state/cities',
           {
@@ -141,25 +169,25 @@ export default function DelegateForm() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ 
+            body: JSON.stringify({
               country: formData.country,
-              state: formData.state 
+              state: formData.state
             }),
           }
         );
 
         const result = await response.json();
-        
+
         if (result.data && result.data.length > 0) {
           const sortedCities = result.data
             .map((city: string) => ({ name: city }))
             .sort((a: City, b: City) => a.name.localeCompare(b.name));
-          
+
           setCities(sortedCities);
         } else {
           setCities([]);
         }
-        
+
         setFormData(prev => ({ ...prev, city: '' }));
       } catch (error) {
         console.error("Failed to fetch cities", error);
@@ -176,14 +204,15 @@ export default function DelegateForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     if (!formData.notRobot) {
       toast.error("Please confirm that you are not a robot.");
       setIsSubmitting(false);
       return;
     }
 
-    if (!captchaToken) {
+    // Only require captcha token if not on localhost
+    if (!isLocalhost && !captchaToken) {
       toast.error("Please complete the reCAPTCHA verification.");
       setIsSubmitting(false);
       return;
@@ -199,7 +228,7 @@ export default function DelegateForm() {
         body: JSON.stringify({
           ...formData,
           formType: 'delegate-registration',
-          captchaToken,
+          captchaToken: isLocalhost ? 'localhost-test-token' : captchaToken,
           submittedAt: new Date().toISOString(),
         }),
       });
@@ -209,7 +238,7 @@ export default function DelegateForm() {
       if (result.success) {
         toast.success('Delegate registration submitted successfully!');
         setShowThankYou(true);
-        
+
         // Reset form
         setFormData({
           firstName: '',
@@ -224,16 +253,16 @@ export default function DelegateForm() {
           package: '',
           notRobot: false
         });
-        
+
         // Reset states and cities
         setStates([]);
         setCities([]);
-        
+
         // Reset captcha token
         setCaptchaToken(null);
-        
-        // Reset reCAPTCHA using the ref
-        if (recaptchaRef.current) {
+
+        // Reset reCAPTCHA using the ref (only if not localhost)
+        if (!isLocalhost && recaptchaRef.current) {
           recaptchaRef.current.reset();
         }
       } else {
@@ -250,7 +279,7 @@ export default function DelegateForm() {
   return (
     <>
       <Toaster position="top-right" />
-      
+
       <form onSubmit={handleSubmit} className="space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
         <h3 className="text-xl font-semibold text-[#FF6A00]">
           Register as Delegate
@@ -390,10 +419,10 @@ export default function DelegateForm() {
                          disabled:bg-gray-100 disabled:cursor-not-allowed"
             >
               <option value="">
-                {statesLoading 
-                  ? "Loading states..." 
-                  : !formData.country 
-                    ? "Select country first" 
+                {statesLoading
+                  ? "Loading states..."
+                  : !formData.country
+                    ? "Select country first"
                     : "Select State"}
               </option>
               {states.map((state, index) => (
@@ -420,10 +449,10 @@ export default function DelegateForm() {
                          disabled:bg-gray-100 disabled:cursor-not-allowed"
             >
               <option value="">
-                {citiesLoading 
-                  ? "Loading cities..." 
-                  : !formData.state 
-                    ? "Select state first" 
+                {citiesLoading
+                  ? "Loading cities..."
+                  : !formData.state
+                    ? "Select state first"
                     : "Select City"}
               </option>
               {cities.map((city, index) => (
@@ -471,24 +500,25 @@ export default function DelegateForm() {
           </label>
         </div>
 
-        {/* reCAPTCHA */}
-        <div className="rounded border bg-gray-50 p-4">
-          <div className="flex justify-center">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-              onChange={(token) => setCaptchaToken(token)}
-              onExpired={() => setCaptchaToken(null)}
-            />
+        {/* reCAPTCHA - Only rendered if not on localhost */}
+        {isLocalhost === false && (
+          <div className="rounded border bg-gray-50 p-4">
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                onChange={(token) => setCaptchaToken(token)}
+                onExpired={() => setCaptchaToken(null)}
+              />
+            </div>
           </div>
-        </div>
+        )}
 
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`mt-4 w-fit rounded bg-[#FF6A00] px-6 py-2 text-sm font-medium text-white hover:opacity-90 ${
-            isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
-          }`}
+          className={`mt-4 w-fit rounded bg-[#FF6A00] px-6 py-2 text-sm font-medium text-white hover:opacity-90 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+            }`}
         >
           {isSubmitting ? 'Processing...' : 'Register as Delegate'}
         </button>
@@ -512,7 +542,7 @@ export default function DelegateForm() {
         isVisible={showThankYou}
         onClose={() => setShowThankYou(false)}
         name={formData.firstName}
-        // formType="delegate-registration"
+      // formType="delegate-registration"
       />
     </>
   );

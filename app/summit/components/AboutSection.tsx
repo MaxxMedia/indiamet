@@ -20,8 +20,8 @@ export default function AboutSection() {
                           style={{ width: "50%", maxWidth: "75px", margin: "0 auto" }}
                         >
                           <img
-                            src=""
-                            alt="users"
+                            src="YOUR_USERS_IMAGE_URL"
+                            alt="Users"
                             width={328}
                             height={328}
                             className="w-full h-auto"
