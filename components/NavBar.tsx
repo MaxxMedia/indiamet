@@ -163,60 +163,141 @@ export default function NavBar() {
           <div className="mx-auto max-w-[1600px]">
             {/* ================= MOBILE NAVBAR ================= */}
             <div className="lg:hidden w-full absolute top-0 left-0 right-0 z-50">
-              <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] text-white w-full">
+              <div className="bg-[#01163A] text-white w-full">
 
                 {/* HEADER */}
-                <div className="grid grid-cols-[50px_auto_1fr_auto] gap-x-3 px-4 pt-2 pb-2 items-center w-full">
-
+                <div className="relative flex items-center justify-between w-full px-4 py-3 min-h-[72px]">
 
                   {/* LOGO */}
-                  <div className="relative w-[180px] h-[147px]">
+                  <Link
+                    href="/"
+                    className="relative flex-shrink-0 w-[125px] h-[58px]"
+                  >
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
-                      className="object-contain"
+                      className="object-contain object-left"
+                      sizes="125px"
                       priority
                     />
-                  </div>
-                 
+                  </Link>
 
-                  {/* 3rd Edition */}
-                  
-                  {/* MENU BUTTON */}
-                  <button
-                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="rounded-full bg-white/10 hover:bg-white/20 p-1 active:scale-95"
-                    aria-label="Toggle menu"
-                  >
-                    <Menu className="w-4 h-4" />
-                  </button>
+                  {/* RIGHT SIDE ACTIONS */}
+                  <div className="flex items-center gap-2 ml-auto">
 
-                  {/* DATE + VENUE */}
-                  <div className="col-span-3 text-[12px] opacity-90 leading-tight whitespace-nowrap">
-                     International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies 22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
+                    {/* EXHIBITOR LOGIN */}
+                    <Link
+                      href="/login"
+                      className="flex items-center justify-center gap-1.5
+                     rounded-full
+                     bg-[#FF6A00]
+                     text-white
+                     px-3
+                     py-2
+                     text-[11px]
+                     font-bold
+                     whitespace-nowrap
+                     shadow-md
+                     active:scale-95
+                     transition-all"
+                    >
+                      <span>LOGIN</span>
+                    </Link>
+
+                    {/* MENU BUTTON */}
+                    <button
+                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                      className="flex items-center justify-center
+                     w-9 h-9
+                     rounded-full
+                     bg-white/10
+                     hover:bg-white/20
+                     active:scale-95
+                     transition-all
+                     flex-shrink-0"
+                      aria-label="Toggle menu"
+                    >
+                      {mobileMenuOpen ? (
+                        <X className="w-5 h-5" />
+                      ) : (
+                        <Menu className="w-5 h-5" />
+                      )}
+                    </button>
+
                   </div>
                 </div>
+
+                {/* EVENT INFO */}
+                <div className="px-4 pb-3 overflow-hidden">
+                  <div className="text-[11px] sm:text-[12px] opacity-90 leading-tight whitespace-nowrap overflow-hidden text-ellipsis">
+                    International Exhibition for Metrology, Measurement,
+                    Quality Control & Inspection Technologies
+                  </div>
+
+                  <div className="mt-1 text-[10px] sm:text-[11px] text-white/70 whitespace-nowrap overflow-hidden text-ellipsis">
+                    22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
+                  </div>
+                </div>
+
               </div>
 
               {/* TIME BAR */}
-              <div className="flex items-center gap-2 pl-4">
-                <div className="relative z-[1001] flex justify-center px-0">
-                <div className="flex items-center gap-1.5 rounded-b-xl bg-[#FF6A00] px-2 py-0.5 text-[12px] text-white justify-start">
-                  <span className="font-medium">{timeLeft.days} Days</span>
-                  <span className="font-medium">{timeLeft.hours} Hours</span>
-                  <span className="font-medium">{timeLeft.minutes} Mins</span>
+              <div className="flex items-center gap-2 pl-4 mt-0">
+
+                {/* COUNTDOWN */}
+                <div className="relative z-[1001]">
+                  <div
+                    className="flex items-center gap-1.5
+                   rounded-b-xl
+                   bg-[#FF6A00]
+                   px-3
+                   py-1
+                   text-[11px] sm:text-[12px]
+                   text-white
+                   whitespace-nowrap"
+                  >
+                    <span className="font-medium">
+                      {timeLeft.days} Days
+                    </span>
+
+                    <span className="font-medium">
+                      {timeLeft.hours} Hours
+                    </span>
+
+                    <span className="font-medium">
+                      {timeLeft.minutes} Mins
+                    </span>
+                  </div>
                 </div>
-              </div>
-<Link href="/login" className="relative z-[1001]">
-  <div className="flex items-end gap-1.5 rounded-b-xl bg-[#FF6A00] px-2 py-0.5 text-[12px] text-white cursor-pointer hover:bg-[#01163A] active:scale-95 transition-all">
-    <span className="font-bold"></span>
-  </div>
-</Link>
+
+                {/* EXHIBITOR LOGIN */}
+                <Link
+                  href="/login"
+                  className="relative z-[1001]"
+                >
+                  <div
+                    className="flex items-center
+                   rounded-b-xl
+                   bg-[#01163A]
+                   border border-white/10
+                   px-3
+                   py-1
+                   text-[11px] sm:text-[12px]
+                   text-white
+                   font-bold
+                   whitespace-nowrap
+                   cursor-pointer
+                   hover:bg-[#FF6A00]
+                   active:scale-95
+                   transition-all
+                   shadow-md"
+                  >
+                    EXHIBITOR LOGIN
+                  </div>
+                </Link>
 
               </div>
-
-
             </div>
                           
 
