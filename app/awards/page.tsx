@@ -1,8 +1,6 @@
 "use client";
 import Head from "next/head";
 import type { NextPage } from "next";
-import Trophy from "@/components/Trophy";
-import EventBar from "@/components/EventBar";
 import Link from "next/link";
 import SectionContainer from "@/components/UI/SectionContainer";
 import { motion } from 'framer-motion';
@@ -152,29 +150,38 @@ const Awards: NextPage = () => {
 
             <main className="bg-white overflow-hidden">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[60vh] lg:min-h-[70vh] overflow-hidden pt-[155px] lg:pt-[165px]">
+                <section className="relative min-h-[100vh] lg:min-h-[110vh] w-full overflow-hidden">
                     {/* Background Image */}
-                    <motion.div
-                        initial={{ scale: 1.1 }}
-                        animate={{ scale: 1 }}
-                        transition={{ duration: 1.2, ease: "easeOut" }}
-                        className="absolute inset-0 bg-gradient-to-r from-[#01163A] to-[#01163A]/90"
-                    />
+                    {/* ================= HERO VIDEO BACKGROUND ================= */}
+                    <div className="absolute inset-0 w-full h-[100vh] lg:h-[110vh] overflow-hidden">
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload="auto"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        >
+                            <source
+                                src="/images/awards-vote-banner.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
 
-                    {/* Decorative pattern overlay */}
-                    <div className="absolute inset-0 opacity-10" style={{
-                        backgroundImage: `url("https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ=")`,
-                    }} />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/80 to-[#01163A]/40" />
 
-                    <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 md:px-8 lg:px-10 relative z-10">
-                        <div className="relative z-10 min-h-[60vh] lg:min-h-[70vh] flex items-center">
-                            <div className="max-w-7xl text-white">
+                    {/* Content */}
+                    <div className="relative z-10 flex items-end min-h-[100vh] lg:min-h-[110vh] pb-20 lg:pb-24 xl:pb-28">
+                        <SectionContainer>
+                            <div className="max-w-4xl text-white">
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[10px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
                                         POWERED BY INDIAMET 2027
                                     </span>
                                 </motion.div>
@@ -183,7 +190,7 @@ const Awards: NextPage = () => {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold"
+                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
                                 >
                                     GLOBAL METROLOGY
                                     <br />
@@ -207,20 +214,20 @@ const Awards: NextPage = () => {
                                     className="flex flex-wrap gap-4 mt-6"
                                 >
                                     <Link
-                                        href={'/Sponsor'}
+                                        href="/Sponsor"
                                         className="border border-[#FF6A00]/60 text-[#FF6A00] hover:bg-[#FF6A00]/10 font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
                                     >
                                         SPONSOR NOW
                                     </Link>
                                     <Link
-                                        href={'/Nominate'}
+                                        href="/Nominate"
                                         className="bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
                                     >
                                         NOMINATE NOW ↗
                                     </Link>
                                 </motion.div>
                             </div>
-                        </div>
+                        </SectionContainer>
                     </div>
                 </section>
 
@@ -609,8 +616,7 @@ const Awards: NextPage = () => {
                                     className="flex flex-col items-center gap-2 bg-white p-4 rounded-lg border border-gray-200 hover:border-[#FF6A00] transition-all duration-300"
                                 >
                                     <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00]/10 to-[#01163A]/10 rounded-full flex items-center justify-center">
-                                        {/* <span className="text-2xl">🏢</span> */}
-                                        <Image src={""} alt={""} />
+                                        <span className="text-2xl font-bold text-[#FF6A00]">{supporter.name.charAt(0)}</span>
                                     </div>
                                     <p className="text-[#4D4D4D] text-[10px] tracking-wide uppercase">{supporter.role}</p>
                                     <p className="text-gray-900 font-semibold text-sm text-center">{supporter.name}</p>

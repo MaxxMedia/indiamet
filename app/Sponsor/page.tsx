@@ -1,14 +1,12 @@
 "use client";
 import Head from "next/head";
 import type { NextPage } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
-import Trophy from "@/components/Trophy";
+import Link from "next/link";
 import SideCard, { CheckItem, DateItem } from "@/components/SideCard";
 import TrustStrip from "@/components/TrustStrip";
 import { Field, TextInput, TextArea, Select, RadioCard } from "@/components/FormFields";
 import SectionContainer from "@/components/UI/SectionContainer";
 import { motion } from 'framer-motion';
-import Link from "next/link";
 
 const packages = [
     { title: "PLATINUM PARTNER", price: "₹12,00,000 + GST", note: "3 Complimentary Stalls" },
@@ -55,40 +53,33 @@ const SponsorPage: NextPage = () => {
 
             <main className="bg-white overflow-hidden">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[620px] lg:min-h-[660px] overflow-hidden pt-[190px] lg:pt-[195px]">
-
-                    {/* BASE BACKGROUND */}
-                    <div className="absolute inset-0 bg-[#01163A]" />
-
-                    {/* HERO BACKGROUND IMAGE */}
-                    <div className="absolute inset-0 z-0 overflow-hidden">
-                        <img
-                            src="https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ="
-                            alt="GMEA awards trophy"
-                            className="absolute inset-0 h-full w-full object-cover object-right"
+                <section className="relative min-h-[70vh] lg:min-h-[80vh] w-full overflow-hidden">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 w-full h-full">
+                        <motion.div
+                            initial={{ scale: 1.1 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            className="w-full h-full bg-cover bg-center"
+                            style={{
+                                backgroundImage: `url("https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ=")`,
+                            }}
                         />
                     </div>
 
-                    {/* SUBTLE DARK OVERLAY */}
-                    <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#01163A]/80 via-[#01163A]/35 to-transparent" />
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/80 to-[#01163A]/40" />
 
-                    {/* SUBTLE PATTERN */}
-                    <div
-                        className="absolute inset-0 z-10 opacity-[0.04]"
-                        style={{
-                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                        }}
-                    />
-
-                    <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 md:px-8 lg:px-10 relative z-20">
-                        <div className="relative flex items-start pb-[100px] lg:pb-[130px]">
-                            <div className="max-w-7xl text-white">
+                    {/* Content */}
+                    <div className="relative z-10 flex items-center min-h-[70vh] lg:min-h-[80vh] pt-30 lg:pt-34 xl:pt-38">
+                        <SectionContainer>
+                            <div className="max-w-4xl text-white">
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[10px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
                                         GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
                                     </span>
                                 </motion.div>
@@ -97,7 +88,7 @@ const SponsorPage: NextPage = () => {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold"
+                                    className="font-parabolica text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight"
                                 >
                                     AWARD SPONSOR
                                     <br />
@@ -108,7 +99,7 @@ const SponsorPage: NextPage = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, delay: 0.2 }}
-                                    className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 max-w-2xl"
+                                    className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 max-w-7xl"
                                 >
                                     Partner with the most prestigious recognition platform in the metrology
                                     industry and showcase your brand to global leaders, innovators and decision
@@ -138,33 +129,23 @@ const SponsorPage: NextPage = () => {
                                         </motion.div>
                                     ))}
                                 </motion.div>
-
-                                {/* <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, delay: 0.4 }}
-                                    className="flex flex-wrap gap-4 mt-6"
-                                >
-                                    <Link
-                                        href="#form"
-                                        className="bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
-                                    >
-                                        START SPONSORSHIP →
-                                    </Link>
-                                    <Link
-                                        href="/sponsor-guidelines"
-                                        className="border border-white/40 text-white hover:bg-white/10 font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
-                                    >
-                                        ⬇ VIEW PACKAGES
-                                    </Link>
-                                </motion.div> */}
                             </div>
-                        </div>
+                        </SectionContainer>
                     </div>
                 </section>
 
                 {/* ================= BREADCRUMB ================= */}
-  
+                <section className="py-4 bg-gray-50 border-b border-gray-100">
+                    <SectionContainer>
+                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <Link href="/" className="hover:text-[#FF6A00] transition-colors">Home</Link>
+                            <span className="text-gray-400">/</span>
+                            <Link href="/awards" className="hover:text-[#FF6A00] transition-colors">GMEA Awards</Link>
+                            <span className="text-gray-400">/</span>
+                            <span className="text-[#FF6A00] font-medium">Sponsor Partnership</span>
+                        </div>
+                    </SectionContainer>
+                </section>
 
                 {/* ================= FORM + SIDEBAR ================= */}
                 <section className="py-10 lg:py-16" id="form">
@@ -280,7 +261,7 @@ const SponsorPage: NextPage = () => {
 
                             {/* SIDEBAR */}
                             <aside className="flex flex-col gap-6">
-                                <SideCard title="WHY SPONSOR GMEA AWARDS?" icon={undefined} >
+                                <SideCard title="WHY SPONSOR GMEA AWARDS?" icon={undefined}>
                                     <ul className="space-y-2">
                                         <CheckItem>Position your brand among industry leaders</CheckItem>
                                         <CheckItem>Gain unmatched visibility before, during and after the event</CheckItem>
@@ -290,7 +271,7 @@ const SponsorPage: NextPage = () => {
                                     </ul>
                                 </SideCard>
 
-                                <SideCard title="SPONSORSHIP PACKAGES" icon={undefined} >
+                                <SideCard title="SPONSORSHIP PACKAGES" icon={undefined}>
                                     <p className="text-gray-600 text-sm mb-4">
                                         Choose a package that aligns with your marketing and branding goals.
                                     </p>

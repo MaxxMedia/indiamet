@@ -6,6 +6,18 @@ import { useRouter } from 'next/navigation'
 import { Search, ChevronDown, Filter, X, Loader2 } from 'lucide-react'
 import BackToTop from '../exhibitor-resource-center/component/BackToTop'
 import { fetchExhibitionCompanies, ExhibitionCompany } from './api'
+import SectionContainer from '@/components/UI/SectionContainer'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 }
+  }
+};
 
 export default function CompanyDirectory() {
   const router = useRouter()
@@ -82,11 +94,11 @@ export default function CompanyDirectory() {
       const maxPages = 5
       let start = Math.max(1, currentPage - Math.floor(maxPages / 2))
       let end = Math.min(totalPages, start + maxPages - 1)
-      
+
       if (end - start + 1 < maxPages) {
         start = Math.max(1, end - maxPages + 1)
       }
-      
+
       return Array.from({ length: Math.min(maxPages, totalPages) }, (_, i) => start + i)
     }
   }
@@ -104,8 +116,86 @@ export default function CompanyDirectory() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      {/* Top Navigation - same as before */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+      {/* ================= HERO SECTION ================= */}
+      <section className="relative min-h-[60vh] lg:min-h-[70vh] overflow-hidden pt-20 lg:pt-24 xl:pt-28">
+        {/* Background Image */}
+        <motion.div
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url("/images/why-exhibit-header.JPG")`,
+          }}
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
+
+        <SectionContainer>
+          <div className="relative z-10 min-h-[60vh] lg:min-h-[70vh] flex items-center pt-20 lg:pt-24 xl:pt-28">
+            <div className="max-w-7xl text-white">
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold"
+              >
+                Exhibition Directory
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 max-w-5xl"
+              >
+                Explore the leading companies and innovators in metrology, measurement technology,
+                quality assurance, and precision engineering exhibiting at INDIAMET 2027.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="flex flex-wrap gap-4 mt-6"
+              >
+                <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
+                  <span className="flex items-center gap-2">
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#FF6A00]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                    </svg>
+                    150+ Exhibitors
+                  </span>
+
+                  <span className="flex items-center gap-2">
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-[#FF6A00]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path>
+                    </svg>
+                    12+ Countries
+                  </span>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="mt-6"
+              >
+                <Link href="/exhibiting-enquiry">
+                  <button className="bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors">
+                    EXHIBIT AT INDIAMET 2027 →
+                  </button>
+                </Link>
+              </motion.div>
+            </div>
+          </div>
+        </SectionContainer>
+      </section>
+
+      {/* ================= Top Navigation Bar ================= */}
+      {/* <div className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-3 md:py-4">
           <div className="flex items-center justify-between">
             <button
@@ -119,33 +209,30 @@ export default function CompanyDirectory() {
             <div className="flex items-center gap-1 sm:gap-2">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-lg transition-colors ${
-                  viewMode === 'grid'
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'grid'
                     ? 'bg-slate-900 text-white'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                }`}
+                  }`}
                 aria-label="Grid view"
               >
                 <GridIcon />
               </button>
               <button
                 onClick={() => setViewMode('gallery')}
-                className={`p-2 rounded-lg transition-colors ${
-                  viewMode === 'gallery'
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'gallery'
                     ? 'bg-slate-900 text-white'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                }`}
+                  }`}
                 aria-label="Gallery view"
               >
                 <GalleryIcon />
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-lg transition-colors ${
-                  viewMode === 'list'
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'list'
                     ? 'bg-slate-900 text-white'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                }`}
+                  }`}
                 aria-label="List view"
               >
                 <ListIcon />
@@ -185,7 +272,7 @@ export default function CompanyDirectory() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Error display */}
       {error && (
@@ -196,20 +283,19 @@ export default function CompanyDirectory() {
         </div>
       )}
 
-      <main className="pt-24 sm:pt-28 md:pt-32 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Alphabetical Filter */}
-        <div className="mb-6 md:mb-8 mt-10">
+        <div className="mb-6 md:mb-8 mt-6">
           <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
             <button
               onClick={() => {
                 setSelectedLetter(null)
                 setCurrentPage(1)
               }}
-              className={`px-3 sm:px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-                !selectedLetter
+              className={`px-3 sm:px-4 py-2 text-sm font-medium rounded-lg transition-colors ${!selectedLetter
                   ? 'bg-slate-900 text-white'
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'
-              }`}
+                }`}
             >
               All
             </button>
@@ -222,11 +308,10 @@ export default function CompanyDirectory() {
                     setSelectedLetter(letter)
                     setCurrentPage(1)
                   }}
-                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded text-sm font-medium transition-colors border flex items-center justify-center ${
-                    selectedLetter === letter
+                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded text-sm font-medium transition-colors border flex items-center justify-center ${selectedLetter === letter
                       ? 'bg-slate-900 text-white border-slate-900'
                       : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'
-                  }`}
+                    }`}
                 >
                   {letter}
                 </button>
@@ -245,8 +330,8 @@ export default function CompanyDirectory() {
             <Loader2 className="w-8 h-8 animate-spin text-slate-600" />
           </div>
         ) : (
-          <CompanyGrid 
-            companies={filteredCompanies} 
+          <CompanyGrid
+            companies={filteredCompanies}
             viewMode={viewMode}
             onProductBrochureClick={handleProductBrochure}
           />
@@ -264,11 +349,10 @@ export default function CompanyDirectory() {
                 <button
                   onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                   disabled={currentPage === 1}
-                  className={`px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${
-                    currentPage === 1
+                  className={`px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${currentPage === 1
                       ? 'text-slate-400 cursor-not-allowed'
                       : 'text-slate-700 hover:bg-slate-100'
-                  }`}
+                    }`}
                 >
                   <ChevronLeft />
                   <span className="hidden sm:inline">Previous</span>
@@ -279,11 +363,10 @@ export default function CompanyDirectory() {
                     <button
                       key={page}
                       onClick={() => setCurrentPage(page)}
-                      className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg text-sm font-medium flex items-center justify-center transition-colors ${
-                        currentPage === page
+                      className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg text-sm font-medium flex items-center justify-center transition-colors ${currentPage === page
                           ? 'bg-slate-900 text-white'
                           : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-300'
-                      }`}
+                        }`}
                     >
                       {page}
                     </button>
@@ -293,11 +376,10 @@ export default function CompanyDirectory() {
                 <button
                   onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                   disabled={currentPage === totalPages}
-                  className={`px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${
-                    currentPage === totalPages
+                  className={`px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1 ${currentPage === totalPages
                       ? 'text-slate-400 cursor-not-allowed'
                       : 'text-slate-700 hover:bg-slate-100'
-                  }`}
+                    }`}
                 >
                   <span className="hidden sm:inline">Next</span>
                   <ChevronRight />
@@ -330,7 +412,7 @@ export default function CompanyDirectory() {
           </div>
         )}
       </main>
-      <BackToTop/>
+      <BackToTop />
     </div>
   )
 }

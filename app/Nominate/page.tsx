@@ -2,13 +2,12 @@
 import Head from "next/head";
 import type { NextPage } from "next";
 import { useState } from "react";
-import Trophy from "@/components/Trophy";
+import Link from "next/link";
 import SideCard, { CheckItem, DateItem } from "@/components/SideCard";
 import TrustStrip from "@/components/TrustStrip";
 import { Field, TextInput, TextArea, Select } from "@/components/FormFields";
 import SectionContainer from "@/components/UI/SectionContainer";
 import { motion } from 'framer-motion';
-import Link from "next/link";
 
 const steps = ["Nominee Details", "Category Selection", "Nominee Information", "Supporting Details", "Review & Submit"];
 
@@ -51,32 +50,33 @@ const NominatePage: NextPage = () => {
 
             <main className="bg-white overflow-hidden">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[60vh] lg:min-h-[70vh] overflow-hidden pt-[190px] lg:pt-[195px]">
-                    {/* ================= HERO BACKGROUND ================= */}
-
-                    {/* Base background */}
-                    <div className="absolute inset-0 bg-[#01163A]" />
-
-                    {/* Hero image */}
-                    <div className="absolute inset-0 z-0 overflow-hidden">
-                        <img
-                            src="https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ="
-                            alt="GMEA trophy"
-                            className="absolute inset-0 h-full w-full object-cover object-center"
+                <section className="relative min-h-[70vh] lg:min-h-[80vh] w-full overflow-hidden">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 w-full h-full">
+                        <motion.div
+                            initial={{ scale: 1.1 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            className="w-full h-full bg-cover bg-center"
+                            style={{
+                                backgroundImage: `url("https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ=")`,
+                            }}
                         />
                     </div>
 
-                    {/* Dark gradient only on the left for text readability */}
-                    <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/65 to-transparent" />
-                    <div className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 md:px-8 lg:px-10 relative z-10">
-                        <div className="relative z-10 flex items-start">
-                            <div className="max-w-7xl text-white">
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/80 to-[#01163A]/40" />
+
+                    {/* Content */}
+                    <div className="relative z-10 flex items-center min-h-[70vh] lg:min-h-[80vh] pt-40 lg:pt-44 xl:pt-48">
+                        <SectionContainer>
+                            <div className="max-w-4xl text-white">
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[10px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
                                         GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
                                     </span>
                                 </motion.div>
@@ -85,7 +85,7 @@ const NominatePage: NextPage = () => {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold"
+                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
                                 >
                                     NOMINATION FORM
                                 </motion.h1>
@@ -94,34 +94,14 @@ const NominatePage: NextPage = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, delay: 0.2 }}
-                                    className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 max-w-2xl"
+                                    className="mt-4 text-sm sm:text-base lg:text-lg text-white/90 max-w-5xl"
                                 >
                                     Recognize. Celebrate. Inspire Excellence. Nominate the best organizations and
                                     individuals who are shaping the future of metrology, measurement, inspection
                                     and quality excellence.
                                 </motion.p>
-
-                                {/* <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, delay: 0.4 }}
-                                    className="flex flex-wrap gap-4 mt-6"
-                                >
-                                    <Link
-                                        href="#form"
-                                        className="bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
-                                    >
-                                        START NOMINATION →
-                                    </Link>
-                                    <Link
-                                        href="/guidelines"
-                                        className="border border-white/40 text-white hover:bg-white/10 font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
-                                    >
-                                        ⬇ DOWNLOAD GUIDELINES
-                                    </Link>
-                                </motion.div> */}
                             </div>
-                        </div>
+                        </SectionContainer>
                     </div>
                 </section>
 
@@ -140,8 +120,8 @@ const NominatePage: NextPage = () => {
                                     <div className="flex flex-col items-center gap-2">
                                         <div
                                             className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold border-2 ${i === active
-                                                    ? "bg-[#FF6A00] border-[#FF6A00] text-white"
-                                                    : "border-gray-300 text-gray-700 bg-white"
+                                                ? "bg-[#FF6A00] border-[#FF6A00] text-white"
+                                                : "border-gray-300 text-gray-700 bg-white"
                                                 }`}
                                         >
                                             {i + 1}
