@@ -13,13 +13,13 @@ export default function SectionContainer({
   bgColor = "",
   fullWidth = false,
 }: SectionContainerProps) {
-  // Common max-width for consistent alignment
-  const contentMaxWidth = "max-w-[1240px] lg:max-w-[1320px] xl:max-w-[1440px] 2xl:max-w-[1600px]"
+  const containerClass =
+    "w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8"
 
   if (fullWidth) {
     return (
       <div className={`w-full ${bgColor}`}>
-        <div className={`w-full px-4 sm:px-6 lg:px-8 ${className}`}>
+        <div className={`${containerClass} ${className}`}>
           {children}
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function SectionContainer({
   }
 
   return (
-    <div className={`w-full px-4 sm:px-6 lg:px-8 mx-auto ${contentMaxWidth} ${className}`}>
+    <div className={`${containerClass} ${className}`}>
       {children}
     </div>
   )

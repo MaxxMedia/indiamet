@@ -52,7 +52,15 @@ const navItems: NavItem[] = [
   },
 
   { title: "SUMMIT", dropdown: false, href: "/summit" },
-  { title: "GMEA AWARDS", dropdown: false, href: "/awards" },
+  {
+    title: "GMEA AWARDS",
+    dropdown: true,
+    links: [
+      {text: "AWARD CATEGORIES", href: "/awards"},
+      { text: "NOMINATE", href: "/Nominate" },
+      { text: "SPONSOR", href: "/Sponsor" },
+    ],
+  },
   { title: "CONTACT US", dropdown: false, href: "/contact-us" },
 ];
 
@@ -226,19 +234,19 @@ export default function NavBar() {
             {/* ================= DESKTOP NAVBAR ================= */}
             <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
               {/* Flex container maintaining exact same structure */}
-              <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3 lg:gap-4 px-2 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 lg:py-3">
+              <div className="flex items-center justify-between gap-3 xl:gap-5 2xl:gap-6 px-4 xl:px-6 2xl:px-8 py-3 xl:py-4 2xl:py-5 min-h-[112px] xl:min-h-[120px] 2xl:min-h-[128px]">
 
                 {/* ================= LEFT SECTION: LOGO + EVENT INFO ================= */}
                 <div className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0">
                   <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2">
                     {/* Logo with fluid sizing */}
-                    <div className="relative w-[clamp(70px,7vw,110px)] h-[clamp(47px,4.8vw,73px)] flex-shrink-0">
+                    <div className="relative w-[clamp(90px,7.5vw,135px)] h-[clamp(60px,5.5vw,88px)] flex-shrink-0">
                       <Image
                         src="/images/indiamet_logo.png"
                         alt="INDIAMET 2027 Logo"
                         fill
                         className="object-contain"
-                        sizes="(max-width: 1023px) 95px, 110px"
+                        sizes="(max-width: 1023px) 110px, 135px"
                         priority
                       />
                     </div>
@@ -269,7 +277,7 @@ export default function NavBar() {
                         onMouseLeave={() => setActiveDropdown(null)}
                       >
                         <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
-                          <span className={`relative font-medium text-[clamp(10px,0.75vw,15px)]`}>
+                          <span className={`relative font-medium text-[13px]`}>
                             {item.title}
                             <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
                           </span>
@@ -301,7 +309,7 @@ export default function NavBar() {
                         href={item.href!}
                         className="hover:text-gray-200 relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
                       >
-                        <span className={`relative font-medium text-[clamp(10px,0.75vw,15px)]`}>
+                        <span className={`relative font-medium text-[13px]`}>
                           {item.title}
                           <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
                         </span>
