@@ -189,18 +189,7 @@ export default function NavBar() {
                     {/* EXHIBITOR LOGIN */}
                     <Link
                       href="/login"
-                      className="flex items-center justify-center gap-1.5
-                     rounded-full
-                     bg-[#FF6A00]
-                     text-white
-                     px-3
-                     py-2
-                     text-[11px]
-                     font-bold
-                     whitespace-nowrap
-                     shadow-md
-                     active:scale-95
-                     transition-all"
+                      className="flex items-center justify-center gap-1.5 rounded-full bg-[#FF6A00] text-white px-3 py-2 text-[11px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
                     >
                       <span>LOGIN</span>
                     </Link>
@@ -208,14 +197,7 @@ export default function NavBar() {
                     {/* MENU BUTTON */}
                     <button
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      className="flex items-center justify-center
-                     w-9 h-9
-                     rounded-full
-                     bg-white/10
-                     hover:bg-white/20
-                     active:scale-95
-                     transition-all
-                     flex-shrink-0"
+                      className="flex items-center justify-center w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 transition-all flex-shrink-0"
                       aria-label="Toggle menu"
                     >
                       {mobileMenuOpen ? (
@@ -248,14 +230,7 @@ export default function NavBar() {
                 {/* COUNTDOWN */}
                 <div className="relative z-[1001]">
                   <div
-                    className="flex items-center gap-1.5
-                   rounded-b-xl
-                   bg-[#FF6A00]
-                   px-3
-                   py-1
-                   text-[11px] sm:text-[12px]
-                   text-white
-                   whitespace-nowrap"
+                    className="flex items-center gap-1.5 rounded-b-xl bg-[#FF6A00] px-3 py-1 text-[11px] sm:text-[12px] text-white whitespace-nowrap"
                   >
                     <span className="font-medium">
                       {timeLeft.days} Days
@@ -277,21 +252,7 @@ export default function NavBar() {
                   className="relative z-[1001]"
                 >
                   <div
-                    className="flex items-center
-                   rounded-b-xl
-                   bg-[#01163A]
-                   border border-white/10
-                   px-3
-                   py-1
-                   text-[11px] sm:text-[12px]
-                   text-white
-                   font-bold
-                   whitespace-nowrap
-                   cursor-pointer
-                   hover:bg-[#FF6A00]
-                   active:scale-95
-                   transition-all
-                   shadow-md"
+                    className="flex items-center rounded-b-xl bg-[#FF6A00] border border-white/10 px-3 py-1 text-[11px] sm:text-[12px] text-white font-bold whitespace-nowrap cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md"
                   >
                     EXHIBITOR LOGIN
                   </div>
@@ -299,7 +260,7 @@ export default function NavBar() {
 
               </div>
             </div>
-                          
+
 
 
 
@@ -330,14 +291,14 @@ export default function NavBar() {
                     <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
 
                     {/* Edition Badge */}
-                    
+
                   </div>
 
                   {/* Event Info - Hidden on small screens */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
                     <span className="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap font-bold">
-    22 - 24 APRIL 2027
-  </span>
+                      22 - 24 APRIL 2027
+                    </span>
                     <span className="text-[12px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
                       Auto Cluster Exhibition Center, Pune, India
                     </span>
@@ -414,27 +375,27 @@ export default function NavBar() {
               </div>
             </div>
 
-{!scrolled && (
-  <div className="hidden lg:flex justify-end w-full pr-4">
-    <div className="flex items-center gap-2">
-      
-      {/* Time Bar */}
-      <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[12px] text-white shadow-md">
-        <span className="font-medium">{timeLeft.days} Days</span>
-        <span className="font-medium">{timeLeft.hours} Hours</span>
-        <span className="font-medium">{timeLeft.minutes} Mins</span>
-      </div>
+            {!scrolled && (
+              <div className="hidden lg:flex justify-end w-full pr-4">
+                <div className="flex items-center gap-2">
 
-      {/* Exhibitor Login */}
-      <Link href="/login">
-        <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
-          EXHIBITOR LOGIN
-        </div>
-      </Link>
+                  {/* Time Bar */}
+                  <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[12px] text-white shadow-md">
+                    <span className="font-medium">{timeLeft.days} Days</span>
+                    <span className="font-medium">{timeLeft.hours} Hours</span>
+                    <span className="font-medium">{timeLeft.minutes} Mins</span>
+                  </div>
 
-    </div>
-  </div>
-)}
+                  {/* Exhibitor Login */}
+                  <Link href="/login">
+                    <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
+                      EXHIBITOR LOGIN
+                    </div>
+                  </Link>
+
+                </div>
+              </div>
+            )}
 
           </div>
         </div>
