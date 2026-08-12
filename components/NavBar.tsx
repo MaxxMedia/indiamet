@@ -62,7 +62,6 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null)
   const [scrolled, setScrolled] = useState(false)
-  const [screenSize, setScreenSize] = useState<"mobile" | "tablet" | "laptop" | "desktop">("desktop")
   const [isMounted, setIsMounted] = useState(false)
 
   const [timeLeft, setTimeLeft] = useState({
@@ -106,26 +105,6 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  /* ================= SCREEN SIZE DETECTION ================= */
-  useEffect(() => {
-    const checkScreenSize = () => {
-      const width = window.innerWidth
-      if (width < 768) {
-        setScreenSize("mobile")
-      } else if (width >= 768 && width < 1024) {
-        setScreenSize("tablet")
-      } else if (width >= 1024 && width < 1280) {
-        setScreenSize("laptop")
-      } else {
-        setScreenSize("desktop")
-      }
-    }
-
-    checkScreenSize()
-    window.addEventListener("resize", checkScreenSize)
-    return () => window.removeEventListener("resize", checkScreenSize)
-  }, [])
-
   /* ================= PREVENT BODY SCROLL WHEN MOBILE MENU OPEN ================= */
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -138,29 +117,12 @@ export default function NavBar() {
     }
   }, [mobileMenuOpen])
 
-  // Calculate font sizes based on screen size
-  const getNavItemFontSize = () => {
-    switch (screenSize) {
-      case "laptop": return "text-[10px] lg:text-[11px] xl:text-[13px]"
-      case "desktop": return "text-[11px] lg:text-[13px] xl:text-[15px]"
-      default: return "text-[11px] lg:text-[13px] xl:text-[15px]"
-    }
-  }
-
-  const getButtonFontSize = () => {
-    switch (screenSize) {
-      case "laptop": return "text-[8px] lg:text-[10px] xl:text-[12px]"
-      case "desktop": return "text-[9px] lg:text-[11px] xl:text-[13px]"
-      default: return "text-[9px] lg:text-[11px] xl:text-[13px]"
-    }
-  }
-
   return (
     <>
       {/* ================= NAVBAR ================= */}
       <header className="fixed top-0 left-0 right-0 z-[999] font-parabolica">
         <div className={`px-2 sm:px-4 md:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "pt-1.5 sm:pt-2" : "pt-2 sm:pt-3 md:pt-4"}`}>
-          <div className="mx-auto max-w-[1600px]">
+          <div className="mx-auto max-w-[1800px]">
             {/* ================= MOBILE NAVBAR ================= */}
             <div className="lg:hidden w-full absolute top-0 left-0 right-0 z-50">
               <div className="bg-[#01163A] text-white w-full">
@@ -261,52 +223,43 @@ export default function NavBar() {
               </div>
             </div>
 
-
-
-
-
-            {/* ================= DESKTOP NAV BAR (UNCHANGED) ================= */}
-            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#01163A] to-[#01163A] text-white shadow-xl">
+            {/* ================= DESKTOP NAVBAR ================= */}
+            <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
+              {/* Flex container maintaining exact same structure */}
               <div className="flex items-center justify-between gap-1 sm:gap-2 md:gap-3 lg:gap-4 px-2 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 lg:py-3">
 
-                {/* ================= LOGO SECTION ================= */}
-                <Link
-                  href="/"
-                  className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0"
-                >
+                {/* ================= LEFT SECTION: LOGO + EVENT INFO ================= */}
+                <div className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0">
                   <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2">
-                    {/* Main Logo */}
-                    <div className="relative w-[45px] h-[30px] xs:w-[55px] xs:h-[37px] sm:w-[70px] sm:h-[47px] md:w-[85px] md:h-[57px] lg:w-[95px] lg:h-[63px] xl:w-[110px] xl:h-[73px] flex-shrink-0">
+                    {/* Logo with fluid sizing */}
+                    <div className="relative w-[clamp(70px,7vw,110px)] h-[clamp(47px,4.8vw,73px)] flex-shrink-0">
                       <Image
                         src="/images/indiamet_logo.png"
                         alt="INDIAMET 2027 Logo"
                         fill
                         className="object-contain"
-                        sizes="(max-width: 374px) 45px, (max-width: 474px) 55px, (max-width: 639px) 70px, (max-width: 767px) 85px, (max-width: 1023px) 95px, 110px"
+                        sizes="(max-width: 1023px) 95px, 110px"
                         priority
                       />
                     </div>
 
-                    {/* Divider - Show only on desktop and up */}
+                    {/* Divider */}
                     <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
-
-                    {/* Edition Badge */}
-
                   </div>
 
-                  {/* Event Info - Hidden on small screens */}
+                  {/* Event Info with fluid typography */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
-                    <span className="text-[12px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap font-bold">
+                    <span className="text-[clamp(12px,1vw,18px)] leading-tight whitespace-nowrap font-bold">
                       22 - 24 APRIL 2027
                     </span>
-                    <span className="text-[12px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-tight whitespace-nowrap truncate max-w-[150px] lg:max-w-[180px] xl:max-w-none">
+                    <span className="text-[clamp(11px,0.9vw,18px)] leading-tight whitespace-nowrap truncate max-w-[clamp(120px,15vw,240px)]">
                       Auto Cluster Exhibition Center, Pune, India
                     </span>
                   </div>
-                </Link>
+                </div>
 
-                {/* ================= DESKTOP NAVIGATION ================= */}
-                <nav className={`hidden lg:flex items-center gap-1 lg:gap-1.5 xl:gap-2 2xl:gap-4 font-parabolica flex-shrink min-w-0 ${screenSize === "laptop" ? "mx-1" : ""}`}>
+                {/* ================= CENTER: NAVIGATION ================= */}
+                <nav className="hidden lg:flex items-center gap-[clamp(4px,0.6vw,14px)] font-parabolica flex-shrink min-w-0">
                   {navItems.map((item, i) =>
                     item.dropdown ? (
                       <div
@@ -316,7 +269,7 @@ export default function NavBar() {
                         onMouseLeave={() => setActiveDropdown(null)}
                       >
                         <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
-                          <span className={`relative font-medium ${getNavItemFontSize()}`}>
+                          <span className={`relative font-medium text-[clamp(10px,0.75vw,15px)]`}>
                             {item.title}
                             <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
                           </span>
@@ -330,7 +283,7 @@ export default function NavBar() {
                                 <Link
                                   key={j}
                                   href={link.href}
-                                  className="block px-2 lg:px-3 xl:px-4 py-1 lg:py-1.5 xl:py-2 text-[10px] lg:text-[11px] xl:text-[13px] hover:bg-gray-100 relative group/item whitespace-nowrap transition-colors"
+                                  className="block px-2 lg:px-3 xl:px-4 py-1 lg:py-1.5 xl:py-2 text-[clamp(10px,0.7vw,13px)] hover:bg-gray-100 relative group/item whitespace-nowrap transition-colors"
                                 >
                                   <span className="relative">
                                     {link.text}
@@ -348,7 +301,7 @@ export default function NavBar() {
                         href={item.href!}
                         className="hover:text-gray-200 relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
                       >
-                        <span className={`relative font-medium ${getNavItemFontSize()}`}>
+                        <span className={`relative font-medium text-[clamp(10px,0.75vw,15px)]`}>
                           {item.title}
                           <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
                         </span>
@@ -357,42 +310,38 @@ export default function NavBar() {
                   )}
                 </nav>
 
-                {/* ================= DESKTOP CTA BUTTONS ================= */}
-                <div className="hidden lg:flex items-center gap-1 lg:gap-1.5 xl:gap-2 2xl:gap-3 flex-shrink-0">
+                {/* ================= RIGHT: CTA BUTTONS ================= */}
+                <div className="hidden lg:flex items-center gap-[clamp(4px,0.5vw,12px)] flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className={`bg-[#FF6A00] hover:bg-[#FF6A00] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className="bg-[#FF6A00] hover:bg-[#FF6A00] px-[clamp(8px,0.7vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(8px,0.6vw,13px)] font-bold rounded-full"
                   >
-                    {screenSize === "laptop" ? "Exhibit" : "EXHIBITOR REGISTRATION"}
+                    EXHIBITOR REGISTRATION
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className={`bg-[#FF6A00] hover:bg-[#FF6A00] px-1.5 lg:px-2 xl:px-3 py-1 lg:py-1.5 xl:py-2 whitespace-nowrap transition-all ${getButtonFontSize()}`}
+                    className="bg-[#FF6A00] hover:bg-[#FF6A00] px-[clamp(8px,0.7vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(8px,0.6vw,13px)] font-bold rounded-full"
                   >
-                    {screenSize === "laptop" ? "Register" : "VISITOR REGISTRATION"}
+                    VISITOR REGISTRATION
                   </Button>
                 </div>
               </div>
             </div>
 
+            {/* ================= COUNTDOWN + LOGIN (desktop) ================= */}
             {!scrolled && (
               <div className="hidden lg:flex justify-end w-full pr-4">
                 <div className="flex items-center gap-2">
-
-                  {/* Time Bar */}
-                  <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[12px] text-white shadow-md">
+                  <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[clamp(11px,0.7vw,14px)] text-white shadow-md">
                     <span className="font-medium">{timeLeft.days} Days</span>
                     <span className="font-medium">{timeLeft.hours} Hours</span>
                     <span className="font-medium">{timeLeft.minutes} Mins</span>
                   </div>
-
-                  {/* Exhibitor Login */}
                   <Link href="/login">
-                    <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[12px] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
+                    <div className="flex items-center rounded-b-xl bg-[#01163A] px-3 py-1 text-[clamp(11px,0.7vw,14px)] text-white font-bold cursor-pointer hover:bg-[#FF6A00] active:scale-95 transition-all shadow-md">
                       EXHIBITOR LOGIN
                     </div>
                   </Link>
-
                 </div>
               </div>
             )}
@@ -400,21 +349,22 @@ export default function NavBar() {
           </div>
         </div>
       </header>
+
       {/* ================= MOBILE MENU ================= */}
       {mobileMenuOpen && (
         <>
-          {/* Backdrop - lower z-index */}
+          {/* Backdrop */}
           <div
             className="lg:hidden fixed inset-0 bg-black/30 z-[998]"
             onClick={() => setMobileMenuOpen(false)}
           />
 
-          {/* Dropdown Menu - higher z-index */}
+          {/* Dropdown Menu */}
           <div
             className={`lg:hidden fixed top-[64px] left-0 right-0 z-[9999] mt-2 bg-white text-gray-900 shadow-xl rounded-xl mx-2`}
             style={{ animation: "slideDown 0.25s ease-out" }}
           >
-            {/* Dropdown Header (Close Button) */}
+            {/* Dropdown Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
               <span className="text-sm font-semibold">Menu</span>
               <button
@@ -494,8 +444,6 @@ export default function NavBar() {
           </div>
         </>
       )}
-
-
 
       {/* CSS Animations */}
       <style jsx global>{`
