@@ -2,6 +2,7 @@
 import Head from "next/head";
 import type { NextPage } from "next";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import SideCard, { CheckItem, DateItem } from "@/components/SideCard";
 import TrustStrip from "@/components/TrustStrip";
@@ -40,7 +41,20 @@ const scaleIn = {
 };
 
 const NominatePage: NextPage = () => {
-    const [active] = useState<number>(0);
+    const router = useRouter();
+    const [active, setActive] = useState<number>(0);
+
+    const handleBack = () => {
+        if (active > 0) {
+            setActive(active - 1);
+        }
+    };
+
+    const handleNext = () => {
+        if (active < steps.length - 1) {
+            setActive(active + 1);
+        }
+    };
 
     return (
         <>
@@ -105,6 +119,19 @@ const NominatePage: NextPage = () => {
                     </div>
                 </section>
 
+                {/* ================= BREADCRUMB ================= */}
+                <section className="py-4 bg-gray-50 border-b border-gray-100">
+                    <SectionContainer>
+                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                            <Link href="/" className="hover:text-[#FF6A00] transition-colors">Home</Link>
+                            <span className="text-gray-400">/</span>
+                            <Link href="/awards" className="hover:text-[#FF6A00] transition-colors">GMEA Awards</Link>
+                            <span className="text-gray-400">/</span>
+                            <span className="text-[#FF6A00] font-medium">Nomination Form</span>
+                        </div>
+                    </SectionContainer>
+                </section>
+
                 {/* ================= STEP PROGRESS ================= */}
                 <section className="py-8 bg-gray-50">
                     <SectionContainer>
@@ -152,6 +179,14 @@ const NominatePage: NextPage = () => {
                                 variants={fadeInUp}
                                 className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm"
                             >
+                                {/* Back Button */}
+                                <button
+                                    onClick={() => router.back()}
+                                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#FF6A00] transition-colors mb-6"
+                                >
+                                    ← BACK TO AWARDS
+                                </button>
+
                                 <h2 className="text-[#FF6A00] font-bold text-base mb-4">1. NOMINATOR DETAILS</h2>
                                 <div className="grid md:grid-cols-2 gap-5">
                                     <Field label="Name of Nominator / Organization" required className="md:col-span-2">
@@ -253,12 +288,26 @@ const NominatePage: NextPage = () => {
                                     </button>
                                 </div>
 
-                                <button
-                                    type="submit"
-                                    className="mt-8 inline-flex items-center gap-2 bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
-                                >
-                                    SAVE & CONTINUE →
-                                </button>
+                                {/* Navigation Buttons */}
+                                <div className="flex items-center justify-between gap-4 mt-8">
+                                    <button
+                                        onClick={handleBack}
+                                        disabled={active === 0}
+                                        className={`inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-colors ${active === 0
+                                            ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                            : "bg-gray-100 hover:bg-gray-200 text-gray-700"
+                                            }`}
+                                    >
+                                        ← PREVIOUS STEP
+                                    </button>
+
+                                    <button
+                                        onClick={handleNext}
+                                        className="inline-flex items-center gap-2 bg-[#FF6A00] hover:bg-[#FF6A00]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                    >
+                                        {active === steps.length - 1 ? "SUBMIT" : "SAVE & CONTINUE →"}
+                                    </button>
+                                </div>
                             </motion.div>
 
                             {/* SIDEBAR */}

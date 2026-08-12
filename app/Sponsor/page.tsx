@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import type { NextPage } from "next";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import SideCard, { CheckItem, DateItem } from "@/components/SideCard";
 import TrustStrip from "@/components/TrustStrip";
@@ -45,6 +46,8 @@ const scaleIn = {
 };
 
 const SponsorPage: NextPage = () => {
+    const router = useRouter();
+
     return (
         <>
             <Head>
@@ -159,6 +162,14 @@ const SponsorPage: NextPage = () => {
                                 variants={fadeInUp}
                                 className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm"
                             >
+                                {/* Back Button */}
+                                <button
+                                    onClick={() => router.back()}
+                                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#FF6A00] transition-colors mb-6"
+                                >
+                                    ← BACK
+                                </button>
+
                                 <h2 className="text-[#FF6A00] font-bold text-lg mb-1">SPONSOR INFORMATION</h2>
                                 <p className="text-gray-500 text-sm mb-6">
                                     Please complete the form below and our team will get in touch with you.
