@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
-import { ChevronDown, Menu, X, } from "lucide-react"
+import { ChevronDown, Menu, X, UserRound } from "lucide-react"
 import Button from "./UI/Button"
 import Image from "next/image"
 
@@ -208,9 +208,11 @@ export default function NavBar() {
                     {/* EXHIBITOR LOGIN */}
                     <Link
                       href="/login"
-                      className="flex items-center justify-center gap-1 rounded-full bg-[#FF6A00] text-white px-2.5 xs:px-3 sm:px-4 md:px-5 py-2 xs:py-2.5 sm:py-3.5 md:py-4.5 text-[11px] xs:text-[13px] sm:text-[16px] md:text-[18px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
+                      aria-label="Login"
+                      title="Login"
+                      className="flex items-center justify-center text-white hover:text-[#FF6A00] active:scale-90 transition-all flex-shrink-0"
                     >
-                      <span>LOGIN</span>
+                      <UserRound className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 md:w-9 md:h-9" />
                     </Link>
 
                     {/* MENU BUTTON - increased size */}
