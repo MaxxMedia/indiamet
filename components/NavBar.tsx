@@ -54,9 +54,9 @@ const navItems: NavItem[] = [
   { title: "SUMMIT", 
     dropdown: true, 
       links: [
-      {text: "SUMMIT AGENDA", href: "/agenda"},
-      { text:"DELEGATE", href: "/delegate" },
-      { text:"SPONSOR", href: "/Sponsor" },
+      {text: "SUMMIT AGENDA", href: "/summit"},
+      { text:"DELEGATE", href: "/became-delegate" },
+      { text:"SPONSOR", href: "/become-partner" },
     ],
   },
   {
