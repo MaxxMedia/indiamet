@@ -141,7 +141,7 @@ export default function NavBar() {
                   {/* LOGO */}
                   <Link
                     href="/"
-                    className="relative flex-shrink-0 w-[325px] h-[158px]"
+                    className="relative flex-shrink-0 w-[325px] h-[58px]"
                   >
                     <Image
                       src="/images/indiamet_logo.png"
@@ -157,12 +157,12 @@ export default function NavBar() {
                   <div className="flex items-center gap-2 ml-auto">
 
                     {/* EXHIBITOR LOGIN */}
-                    <Link
+                    {/* <Link
                       href="/login"
                       className="flex items-center justify-center gap-1.5 rounded-full bg-[#FF6A00] text-white px-3 py-2 text-[11px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
                     >
                       <span>LOGIN</span>
-                    </Link>
+                    </Link> */}
 
                     {/* MENU BUTTON */}
                     <button
