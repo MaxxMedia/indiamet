@@ -157,12 +157,12 @@ export default function NavBar() {
                   <div className="flex items-center gap-2 ml-auto">
 
                     {/* EXHIBITOR LOGIN */}
-                    {/* <Link
+                    <Link
                       href="/login"
                       className="flex items-center justify-center gap-1.5 rounded-full bg-[#FF6A00] text-white px-3 py-2 text-[11px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
                     >
                       <span>LOGIN</span>
-                    </Link> */}
+                    </Link>
 
                     {/* MENU BUTTON */}
                     <button
@@ -227,8 +227,8 @@ export default function NavBar() {
                   </div>
                 </Link>
 
-              </div>*/}
-            </div> 
+              </div>
+            </div> */}
 
             {/* ================= DESKTOP NAVBAR ================= */}
             <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
