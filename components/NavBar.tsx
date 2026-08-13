@@ -229,7 +229,6 @@ export default function NavBar() {
 
               </div>*/}
             </div> 
-
             {/* ================= DESKTOP NAVBAR ================= */}
             <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
               {/* Flex container maintaining exact same structure */}
