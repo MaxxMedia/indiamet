@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { ChevronDown, Menu, Xl } from "lucide-react"
+import { ChevronDown, Menu, X,} from "lucide-react"
 import Button from "./UI/Button"
 import Image from "next/image"
 
