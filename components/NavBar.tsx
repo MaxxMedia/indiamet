@@ -148,14 +148,14 @@ export default function NavBar() {
                   {/* LOGO */}
                   <Link
                     href="/"
-                    className="relative flex-shrink-0 w-[325px] h-[58px]"
+                    className="relative flex-shrink-0 w-[360px] h-[65px]"
                   >
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain object-left"
-                      sizes="275px"
+                      sizes="360px"
                       priority
                     />
                   </Link>
