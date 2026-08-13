@@ -30,12 +30,14 @@ interface TabConfig {
     path: string;
 }
 
+// Icons now use width/height 100% so they can be sized responsively by a
+// wrapper span instead of being locked to a fixed 18x18 px box.
 const TABS: TabConfig[] = [
     {
         key: 'enquiry',
         label: 'VISITOR',
         icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
         ),
@@ -49,14 +51,14 @@ const TABS: TabConfig[] = [
         key: 'exhibitor',
         label: 'EXHIBITOR',
         icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
             </svg>
         ),
         title: 'Enquire about exhibiting at our event',
         sub: 'Please fill in the details below and our team will get in touch with you.',
-        rightHeadline: 'Be Part of India"s First Dedicated Metrology Exhibition',
+        rightHeadline: "Be Part of India's First Dedicated Metrology Exhibition",
         rightSub: 'Showcase your innovations, connect with quality professionals, manufacturers, OEMs, and industrial decision-makers, and unlock new business opportunities in the rapidly growing metrology, measurement, and quality engineering market.',
         path: TAB_TO_LEGACY_PATH.exhibitor,
     },
@@ -64,21 +66,21 @@ const TABS: TabConfig[] = [
         key: 'sponsor',
         label: 'SPONSOR',
         icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
         ),
         title: 'Become a Sponsor / Partner',
         sub: 'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
         rightHeadline: 'Elevate Your Brand Visibility',
-        rightSub: 'Gain maximum exposure by showcasing your solutions at INDIAMET 2027—India"s first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.',
+        rightSub: "Gain maximum exposure by showcasing your solutions at INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering.",
         path: TAB_TO_LEGACY_PATH.sponsor,
     },
     {
         key: 'brochure',
         label: 'BROCHURE',
         icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
                 <line x1="16" y1="13" x2="8" y2="13" />
@@ -168,10 +170,15 @@ export default function INDIAMETTabbedFormWrapper({
     };
 
     return (
-        <div className={`w-full max-w-7xl mx-auto bg-white overflow-hidden shadow-lg rounded-2xl ${className}`}>
+        <div className={`w-full max-w-7xl mx-auto bg-white overflow-hidden shadow-lg rounded-xl sm:rounded-2xl ${className}`}>
             <Toaster position="top-right" />
 
-            <div className="grid grid-cols-4 gap-[2px] bg-slate-200 w-full px-1 py-1">
+            {/*
+              Mobile (< sm): icon stacked above label, smaller text, taller
+              row so nothing wraps/clips.
+              sm and up: original icon-beside-label single-line layout.
+            */}
+            <div className="grid grid-cols-4 gap-[1.5px] sm:gap-[2px] bg-slate-200 w-full px-1 py-1">
                 {TABS.map((tab) => {
                     const isActive = activeTab === tab.key;
 
@@ -180,9 +187,11 @@ export default function INDIAMETTabbedFormWrapper({
                             key={tab.key}
                             onClick={() => handleTabClick(tab)}
                             className={`
-                                relative flex items-center justify-center gap-3
-                                h-[54px] w-full
-                                font-semibold text-sm
+                                relative flex flex-col sm:flex-row items-center justify-center
+                                gap-1 sm:gap-2 md:gap-3
+                                h-[58px] sm:h-[54px] w-full min-w-0
+                                px-1
+                                font-semibold text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm
                                 transition-all
                                 ${isActive
                                     ? "bg-[#01163A] text-white"
@@ -190,11 +199,15 @@ export default function INDIAMETTabbedFormWrapper({
                                 }
                             `}
                         >
-                            <span>{tab.icon}</span>
-                            <span className="tracking-wide">{tab.label}</span>
+                            <span className="w-4 h-4 sm:w-[16px] sm:h-[16px] md:w-[18px] md:h-[18px] shrink-0">
+                                {tab.icon}
+                            </span>
+                            <span className="tracking-wide leading-none text-center truncate max-w-full">
+                                {tab.label}
+                            </span>
 
                             {isActive && (
-                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[12px] w-0 h-0 border-l-[12px] border-r-[12px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#01163A]" />
+                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[7px] sm:-bottom-[12px] w-0 h-0 border-l-[7px] sm:border-l-[12px] border-r-[7px] sm:border-r-[12px] border-t-[7px] sm:border-t-[12px] border-l-transparent border-r-transparent border-t-[#01163A]" />
                             )}
                         </button>
                     );
@@ -202,13 +215,13 @@ export default function INDIAMETTabbedFormWrapper({
             </div>
 
             <div className="flex flex-col lg:flex-row">
-                <div className="flex-1 bg-white p-6 lg:p-8 min-w-0 overflow-y-auto">
+                <div className="flex-1 bg-white p-4 xs:p-5 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
                     {showHeader && (
                         <>
-                            <h2 className="text-xl font-bold text-[#1e3a6e] mb-1">
+                            <h2 className="text-lg sm:text-xl font-bold text-[#1e3a6e] mb-1">
                                 {headerTitle || activeConfig.title}
                             </h2>
-                            <p className="text-sm text-gray-500 mb-6">
+                            <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
                                 {headerSubtitle || activeConfig.sub}
                             </p>
                         </>
@@ -227,20 +240,20 @@ export default function INDIAMETTabbedFormWrapper({
 
                     <div className="absolute inset-0 bg-gradient-to-r from-[#002b88]/95 via-[#0036a5]/85 to-[#0036a5]/40" />
 
-                    <div className="relative z-10 flex flex-col h-full p-10">
+                    <div className="relative z-10 flex flex-col h-full p-8 xl:p-10">
                         <div className="mt-auto mb-auto max-w-sm">
-                            <h3 className="text-white text-4xl font-bold leading-tight">
+                            <h3 className="text-white text-3xl xl:text-4xl font-bold leading-tight">
                                 {activeConfig.rightHeadline}
                             </h3>
 
-                            <div className="w-20 h-[2px] bg-white/50 my-8" />
+                            <div className="w-20 h-[2px] bg-white/50 my-6 xl:my-8" />
 
-                            <p className="text-white/85 text-base leading-relaxed">
+                            <p className="text-white/85 text-sm xl:text-base leading-relaxed">
                                 {activeConfig.rightSub}
                             </p>
                         </div>
 
-                        <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6">
+                        <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-5 xl:p-6">
                             <div className="grid grid-cols-3">
                                 {[
                                     { num: '150+', lbl: 'Exhibitors' },
@@ -251,10 +264,10 @@ export default function INDIAMETTabbedFormWrapper({
                                         key={lbl}
                                         className="text-center border-r border-white/20 last:border-r-0"
                                     >
-                                        <p className="text-white text-3xl font-bold">
+                                        <p className="text-white text-2xl xl:text-3xl font-bold">
                                             {num}
                                         </p>
-                                        <p className="text-white/80 text-sm mt-2">
+                                        <p className="text-white/80 text-xs xl:text-sm mt-2">
                                             {lbl}
                                         </p>
                                     </div>

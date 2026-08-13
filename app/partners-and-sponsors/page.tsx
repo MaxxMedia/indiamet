@@ -22,8 +22,8 @@ interface PartnersSectionProps {
 /* ===================== ANIMATION VARIANTS ===================== */
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.6 }
   }
@@ -42,8 +42,8 @@ const staggerContainer = {
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.95 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     scale: 1,
     transition: { duration: 0.5 }
   }
@@ -55,14 +55,14 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
   return (
     <motion.div
       variants={scaleIn}
-      whileHover={{ 
+      whileHover={{
         y: -10,
         boxShadow: "0 20px 40px rgba(37, 99, 235, 0.15)",
         transition: { duration: 0.3 }
       }}
       className="flex flex-col overflow-hidden rounded-xl border border-blue-600 transition-all duration-300 lg:flex-row"
     >
-      <motion.div 
+      <motion.div
         whileHover={{ scale: 1.05 }}
         className="flex h-48 w-full items-center justify-center border-b border-blue-600 py-8 lg:h-auto lg:w-1/3 lg:border-b-0 lg:border-r bg-white"
       >
@@ -78,7 +78,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
 
       <div className="flex grow flex-col justify-between bg-[#01163A] p-6 text-white lg:p-8">
         <div>
-          <motion.h3 
+          <motion.h3
             whileHover={{ scale: 1.02 }}
             className="text-xl lg:text-2xl font-semibold line-clamp-2 hover:text-blue-100 transition-colors duration-300"
           >
@@ -92,10 +92,10 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
         </div>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <motion.a 
+          <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            // href={`/partner/${partner.slug}`}
+          // href={`/partner/${partner.slug}`}
           >
             <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 hover:bg-[#FF6A00] hover:text-white transition-all duration-300 hover:shadow-lg">
               Explore
@@ -103,11 +103,11 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
           </motion.a>
 
           {partner.websiteLink && (
-            <motion.a 
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href={partner.websiteLink} 
-              target="_blank" 
+              href={partner.websiteLink}
+              target="_blank"
               rel="noopener noreferrer"
             >
               <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-blue-600 transition-all duration-300 hover:bg-[#FF6A00] hover:text-white hover:shadow-lg">
@@ -208,54 +208,61 @@ const PartnersSponsorsPage: React.FC = () => {
   /* ===================== RENDER ===================== */
 
   return (
-    console.log(
-      sections.map((s) => ({
-        key: s.key,
-        partners: s.partners,
-        isArray: Array.isArray(s.partners),
-      }))
-    ),
     <>
-    
-    <div className="">
-      {/* HERO */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="bg-gradient-to-b from-gray-50 to-white py-16 lg:py-24 mb-12"
-      >
-        <SectionContainer>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="mb-4 mt-20 text-4xl lg:text-4xl xl:text-5xl font-[600] text-black"
-          >
-            The organisations that power INDIAMET
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="max-w-4xl text-lg lg:text-xl text-gray-600"
-          >
-            Discover our valued sponsors and partners who help make INDIAMET a success.
-          </motion.p>
-        </SectionContainer>
-      </motion.section>
+      <div className="">
+        {/* HERO — matches Why-Exhibit: full-bleed bg image + dark gradient
+            overlay + white text, min-h-[60vh] lg:min-h-[70vh], text pinned
+            to the bottom via items-end (same treatment as the register page). */}
+        <section className="relative min-h-[60vh] lg:min-h-[70vh] overflow-hidden mb-12">
+          {/* Background */}
+          <motion.div
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url(https://images.sampletemplates.com/wp-content/uploads/2021/10/Sponsorship-Partnership-Proposal-featured.jpg)",
+            }}
+          />
 
-      {/* PARTNER SECTIONS */}
-      {sections.map((section) => (
-        <PartnersSection
-          key={section.key}
-          title={section.title}
-          partners={section.partners}
-          sectionKey={section.key}
-        />
-      ))}
-    </div>
-    <BackToTop/>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
+
+          <SectionContainer>
+            <div className="relative z-10 min-h-[60vh] lg:min-h-[70vh] flex items-end pb-12 lg:pb-16">
+              <div className="max-w-4xl text-white">
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-4xl lg:text-4xl xl:text-5xl font-[600]"
+                >
+                  The organisations that power INDIAMET
+                </motion.h1>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="mt-4 max-w-4xl text-lg lg:text-xl text-white/90"
+                >
+                  Discover our valued sponsors and partners who help make INDIAMET a success.
+                </motion.p>
+              </div>
+            </div>
+          </SectionContainer>
+        </section>
+
+        {/* PARTNER SECTIONS */}
+        {sections.map((section) => (
+          <PartnersSection
+            key={section.key}
+            title={section.title}
+            partners={section.partners}
+            sectionKey={section.key}
+          />
+        ))}
+      </div>
+      <BackToTop />
     </>
   );
 };

@@ -150,16 +150,17 @@ const Awards: NextPage = () => {
 
             <main className="bg-white overflow-hidden">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[100vh] lg:min-h-[110vh] w-full overflow-hidden">
-                    {/* Background Image */}
-                    {/* ================= HERO VIDEO BACKGROUND ================= */}
-                    <div className="absolute inset-0 w-full h-[100vh] lg:h-[110vh] overflow-hidden">
+                <section className="relative min-h-[60vh] lg:min-h-[70vh] w-full overflow-hidden">
+                    {/* Background Video (poster shows instantly, and stays visible
+                        as a fallback if the video file 404s or fails to load) */}
+                    <div className="absolute inset-0 w-full h-full overflow-hidden">
                         <video
                             autoPlay
                             muted
                             loop
                             playsInline
                             preload="auto"
+                            poster="/images/awards-header.jpg"
                             className="absolute inset-0 w-full h-full object-cover"
                         >
                             <source
@@ -169,11 +170,13 @@ const Awards: NextPage = () => {
                         </video>
                     </div>
 
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/80 to-[#01163A]/40" />
+                    {/* Overlay — matches why-exhibit exactly */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
 
-                    {/* Content */}
-                    <div className="relative z-10 flex items-end min-h-[100vh] lg:min-h-[110vh] pb-20 lg:pb-24 xl:pb-28">
+                    {/* Content — pt-* clears the fixed navbar (this was missing
+                        before and caused the title to sit under/behind the nav).
+                        items-center matches why-exhibit's vertical centering. */}
+                    <div className="relative z-10 min-h-[60vh] lg:min-h-[70vh] flex items-center pt-[130px] sm:pt-[140px] lg:pt-[100px]">
                         <SectionContainer>
                             <div className="max-w-4xl text-white">
                                 <motion.div
@@ -181,7 +184,7 @@ const Awards: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[17px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[15px] tracking-widest text-[#FF6A00] border border-[#FF6A00]/40 rounded-full px-3 py-1 mb-4">
                                         POWERED BY INDIAMET 2027
                                     </span>
                                 </motion.div>
@@ -190,7 +193,7 @@ const Awards: NextPage = () => {
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
+                                    className="font-parabolica text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight"
                                 >
                                     GLOBAL METROLOGY
                                     <br />

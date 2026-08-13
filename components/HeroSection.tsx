@@ -37,23 +37,23 @@ export default function HeroSection() {
 
   const handlePlayPause = () => {
     if (!iframeRef.current?.contentWindow) return
-    
+
     // Send play/pause commands to iframe
-    const message = isPlaying ? 
-      '{"event":"command","func":"pauseVideo","args":""}' : 
+    const message = isPlaying ?
+      '{"event":"command","func":"pauseVideo","args":""}' :
       '{"event":"command","func":"playVideo","args":""}'
-    
+
     iframeRef.current.contentWindow.postMessage(message, '*')
     setIsPlaying(!isPlaying)
   }
 
   const handleMute = () => {
     if (!iframeRef.current?.contentWindow) return
-    
-    const message = isMuted ? 
-      '{"event":"command","func":"unMute","args":""}' : 
+
+    const message = isMuted ?
+      '{"event":"command","func":"unMute","args":""}' :
       '{"event":"command","func":"mute","args":""}'
-    
+
     iframeRef.current.contentWindow.postMessage(message, '*')
     setIsMuted(!isMuted)
   }
@@ -68,10 +68,19 @@ export default function HeroSection() {
       id="heroSection"
       className="relative w-full h-screen min-h-[700px] overflow-hidden text-white"
     >
-      {/* BACKGROUND VIDEO CONTAINER - FIXED FOR FULL HEIGHT */}
-      <div className="absolute inset-0 w-full h-full bg-black">
+      {/* BACKGROUND VIDEO CONTAINER - FIXED FOR FULL HEIGHT
+          isolate + [transform:translateZ(0)] force each wrapper into its
+          own compositing layer. Without this, mobile Safari can let a
+          transformed, video-playing <iframe> bypass its ancestor's
+          overflow-hidden clip — the iframe's width here is intentionally
+          set to 177.78vh (wider than the viewport on tall/narrow phones)
+          so it can cover full height without letterboxing, and it relies
+          entirely on overflow-hidden clipping the excess width. That clip
+          was silently failing on Safari, which is what dragged the whole
+          fixed-position page (navbar included) sideways. */}
+      <div className="absolute inset-0 w-full h-full bg-black overflow-hidden isolate [transform:translateZ(0)]">
         {/* Direct YouTube iframe with proper styling */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden isolate [transform:translateZ(0)]">
           <iframe
             ref={iframeRef}
             src={getIframeUrl()}
@@ -94,9 +103,9 @@ export default function HeroSection() {
             loading="eager"
           />
         </div>
-        
+
         {/* Fallback image */}
-        <div 
+        <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-500"
           style={{
             backgroundImage: `url(https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg)`,
@@ -104,7 +113,7 @@ export default function HeroSection() {
             zIndex: isPlaying ? -1 : 10,
           }}
         />
-        
+
         {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/40 z-[1]"></div>
       </div>
@@ -160,7 +169,7 @@ export default function HeroSection() {
                   <li className="flex items-start gap-2">
                     <span className="mt-[2px] text-[#33A8DF]">•</span>
                     <span>
-                     International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
+                      International Exhibition for Metrology, Measurement, Quality Control & Inspection Technologies
                     </span>
                   </li>
                 </ul>

@@ -22,53 +22,53 @@ const PartnersSection = () => {
   const [scrollLeft, setScrollLeft] = useState(0)
 
 
-const partners: Partner[] = [
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-  {
-    name: '', 
-    logo: '',
-    link: ""
-  },
-];
+  const partners: Partner[] = [
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+    {
+      name: '',
+      logo: '',
+      link: ""
+    },
+  ];
 
   // Duplicate partners for seamless loop
   const duplicatedPartners = [...partners, ...partners, ...partners]
@@ -84,12 +84,12 @@ const partners: Partner[] = [
     const autoScroll = (timestamp: number) => {
       if (!lastTime) lastTime = timestamp
       const elapsed = timestamp - lastTime
-      
+
       if (elapsed > 16 && !isPausedRef.current && sliderRef.current) {
         const slider = sliderRef.current
         const itemWidth = 320 // Updated to match new card width
         const maxScroll = slider.scrollWidth - slider.clientWidth
-        
+
         // Check if we've scrolled past the original content
         if (slider.scrollLeft >= partners.length * itemWidth) {
           // Smoothly reset to start without jumping
@@ -98,10 +98,10 @@ const partners: Partner[] = [
           // Normal scrolling
           slider.scrollLeft += scrollSpeed
         }
-        
+
         lastTime = timestamp
       }
-      
+
       animationId = requestAnimationFrame(autoScroll)
     }
 
@@ -117,7 +117,7 @@ const partners: Partner[] = [
     if (!sliderRef.current) return
     setIsDragging(true)
     isPausedRef.current = true
-    
+
     const slider = sliderRef.current
     const rect = slider.getBoundingClientRect()
     setStartX(e.clientX - rect.left)
@@ -127,7 +127,7 @@ const partners: Partner[] = [
   const onMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return
     e.preventDefault()
-    
+
     const slider = sliderRef.current
     const rect = slider.getBoundingClientRect()
     const x = e.clientX - rect.left
@@ -151,9 +151,9 @@ const partners: Partner[] = [
 
   return (
     <SectionContainer>
-      <div className="space-y-10 py-10">
-        <div className="flex flex-col items-center">
-          <h2 className="mt-5 text-4xl font-bold text-black lg:text-6xl">
+      <div className="space-y-8 sm:space-y-10 py-6 sm:py-10">
+        <div className="flex flex-col items-center px-4 text-center">
+          <h2 className="mt-3 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black">
             Partners & Sponsors
           </h2>
         </div>
@@ -161,8 +161,8 @@ const partners: Partner[] = [
         {/* Slider Container - Desktop Only */}
         <div className="relative hidden lg:block">
           {/* Gradient overlay for smooth edges */}
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-12 bg-linear-to-r from-white to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-12 bg-linear-to-l from-white to-transparent" />
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-8 lg:w-12 bg-linear-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-8 lg:w-12 bg-linear-to-l from-white to-transparent" />
 
           {/* Scrollable Container */}
           <div
@@ -174,7 +174,7 @@ const partners: Partner[] = [
             onMouseLeave={stopDragging}
             onMouseEnter={() => (isPausedRef.current = true)}
             onMouseOut={() => (isPausedRef.current = false)}
-            style={{ 
+            style={{
               scrollBehavior: 'smooth',
               scrollbarWidth: 'none',
               msOverflowStyle: 'none'
@@ -184,7 +184,7 @@ const partners: Partner[] = [
               {duplicatedPartners.map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="min-w-[280px] max-w-[280px] px-4 shrink-0"
+                  className="min-w-[220px] max-w-[220px] xl:min-w-[280px] xl:max-w-[280px] px-3 lg:px-4 shrink-0"
                 >
                   <Link
                     href={partner.link}
@@ -192,10 +192,10 @@ const partners: Partner[] = [
                   >
                     {/* Card */}
                     <div className="w-full rounded-lg bg-white shadow-md transition-all group-hover:shadow-lg overflow-hidden border border-gray-100">
-                      
+
                       {/* Logo Container – Show placeholder when no image */}
-                      <div className="h-32 w-full bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center p-4">
-                        <div className="relative h-20 w-full flex items-center justify-center">
+                      <div className="h-24 lg:h-32 w-full bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center p-3 lg:p-4">
+                        <div className="relative h-16 lg:h-20 w-full flex items-center justify-center">
                           {partner.logo ? (
                             <Image
                               src={partner.logo}
@@ -207,7 +207,7 @@ const partners: Partner[] = [
                               sizes="(max-width: 280px) 100vw, 280px"
                             />
                           ) : (
-                            <span className="text-gray-400 font-medium text-lg">
+                            <span className="text-gray-400 font-medium text-base lg:text-lg">
                               Logo
                             </span>
                           )}
@@ -226,13 +226,13 @@ const partners: Partner[] = [
           </div>
         </div>
 
-        {/* Static Grid for Mobile - Shows only partner names */}
-        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+        {/* Static Grid for Mobile / Tablet - Shows only partner names */}
+        <div className="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 px-2 sm:px-0 mt-6 sm:mt-8">
           {partners.slice(0, 6).map((partner, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-all">
-              <Link href={partner.link} className="block p-4">
-                <div className="flex items-center justify-center min-h-[60px]">
-                  <span className="text-gray-800 font-medium text-center text-sm">
+              <Link href={partner.link} className="block p-3 sm:p-4">
+                <div className="flex items-center justify-center min-h-[52px] sm:min-h-[60px]">
+                  <span className="text-gray-800 font-medium text-center text-xs sm:text-sm">
                     {partner.name}
                   </span>
                 </div>
