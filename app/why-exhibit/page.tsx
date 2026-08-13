@@ -738,14 +738,12 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
             >
               <div className="relative w-full h-[520px] lg:h-[580px] rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src={""}
+                  src="/images/exhibitors.jpg"
                   alt="Exhibitors showcase"
                   fill
+                  sizes="100vw"
                   className="object-cover"
                   priority
-                  onError={(e) => {
-                    console.error('Failed to load exhibitors image');
-                  }}
                 />
               </div>
             </motion.div>

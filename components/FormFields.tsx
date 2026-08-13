@@ -191,29 +191,7 @@ export function PhoneField({
         </div>
     );
 }
-interface RadioCardProps {
-    title: string;
-    price: string;
-    note: string;
-    name: string;
-    defaultChecked?: boolean;
-}
 
-export function RadioCard({ title, price, note, name, defaultChecked = false }: RadioCardProps) {
-    return (
-        <label className="relative flex flex-col items-center justify-center p-3 border border-navy-600 rounded-lg cursor-pointer hover:border-gold-500 transition-colors bg-navy-800/50 hover:bg-navy-800 text-center min-h-[100px]">
-            <input
-                type="radio"
-                name={name}
-                defaultChecked={defaultChecked}
-                className="absolute top-2 right-2 accent-gold-600"
-            />
-            <span className="text-xs font-bold text-gold-500 tracking-wider">{title}</span>
-            <span className="text-sm font-semibold text-white mt-1">{price}</span>
-            <span className="text-[10px] text-slate-400 mt-1">{note}</span>
-        </label>
-    );
-}
 // Define the types for location data
 export interface LocationItem {
     id: string;
@@ -369,7 +347,25 @@ export function ConsentCheckbox({
     );
 }
 
-// Add these components to FormFields.tsx
+/* =========================================================
+   Field / TextInput / TextArea / Select / RadioCard
+   — these are the ones actually used by the nomination and
+   sponsor pages.
+
+   THE BUG: the previous versions used `bg-navy-800`,
+   `border-navy-600`, `text-gold-500`, `text-slate-300` etc.
+   Those are NOT real Tailwind color names and were never
+   defined in this project's tailwind.config, so Tailwind's
+   JIT compiler silently produced no CSS for them — no error,
+   no warning. Meanwhile `text-white` (also present) IS a
+   valid class. Net effect: inputs kept the page's default
+   white background, but the typed text was styled white —
+   i.e. invisible white-on-white text. You were typing the
+   whole time, you just couldn't see any of it.
+
+   FIX: switched every one of these to the gray/white/#FF6A00
+   palette the rest of the site actually uses.
+   ========================================================= */
 
 interface FieldProps {
     label: string;
@@ -381,8 +377,8 @@ interface FieldProps {
 export function Field({ label, required = false, children, className = '' }: FieldProps) {
     return (
         <div className={`flex flex-col gap-1.5 ${className}`}>
-            <label className="text-xs font-medium text-slate-300 tracking-wide">
-                {label} {required && <span className="text-gold-500">*</span>}
+            <label className="text-xs font-medium text-gray-700 tracking-wide">
+                {label} {required && <span className="text-[#FF6A00]">*</span>}
             </label>
             {children}
         </div>
@@ -408,12 +404,12 @@ export function TextInput({
     onChange,
     name,
     required,
-    defaultValue
+    defaultValue,
 }: TextInputProps) {
     return (
         <div className="relative">
             {prefix && (
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm pointer-events-none">
                     {prefix}
                 </span>
             )}
@@ -424,8 +420,8 @@ export function TextInput({
                 onChange={onChange}
                 required={required}
                 placeholder={placeholder}
-                defaultValue={defaultValue}
-                className={`w-full ${prefix ? 'pl-12' : 'px-3'} py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white placeholder:text-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition`}
+                defaultValue={value === undefined ? defaultValue : undefined}
+                className={`w-full ${prefix ? 'pl-12' : 'px-3'} py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#FF6A00] focus:ring-1 focus:ring-[#FF6A00] outline-none transition`}
             />
         </div>
     );
@@ -448,7 +444,7 @@ export function TextArea({
     onChange,
     name,
     required,
-    defaultValue
+    defaultValue,
 }: TextAreaProps) {
     return (
         <textarea
@@ -458,8 +454,8 @@ export function TextArea({
             required={required}
             placeholder={placeholder}
             rows={rows}
-            defaultValue={defaultValue}
-            className="w-full px-3 py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white placeholder:text-slate-500 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition resize-vertical"
+            defaultValue={value === undefined ? defaultValue : undefined}
+            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#FF6A00] focus:ring-1 focus:ring-[#FF6A00] outline-none transition resize-vertical"
         />
     );
 }
@@ -481,7 +477,7 @@ export function Select({
     onChange,
     name,
     required,
-    defaultValue
+    defaultValue,
 }: SelectProps) {
     return (
         <select
@@ -489,14 +485,38 @@ export function Select({
             value={value}
             onChange={onChange}
             required={required}
-            defaultValue={defaultValue}
-            className="w-full px-3 py-2.5 text-sm bg-navy-800 border border-navy-600 rounded-md text-white focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition appearance-none"
+            defaultValue={value === undefined ? (defaultValue ?? '') : undefined}
+            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 focus:border-[#FF6A00] focus:ring-1 focus:ring-[#FF6A00] outline-none transition appearance-none"
         >
-            <option value="">{placeholder}</option>
+            <option value="" disabled>{placeholder}</option>
             {options.map(opt => (
                 <option key={opt} value={opt}>{opt}</option>
             ))}
         </select>
+    );
+}
+
+interface RadioCardProps {
+    title: string;
+    price: string;
+    note: string;
+    name: string;
+    defaultChecked?: boolean;
+}
+
+export function RadioCard({ title, price, note, name, defaultChecked = false }: RadioCardProps) {
+    return (
+        <label className="relative flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:border-[#FF6A00] has-[:checked]:border-[#FF6A00] has-[:checked]:ring-1 has-[:checked]:ring-[#FF6A00] has-[:checked]:bg-[#FF6A00]/5 transition-colors bg-white text-center min-h-[100px]">
+            <input
+                type="radio"
+                name={name}
+                defaultChecked={defaultChecked}
+                className="absolute top-2 right-2 accent-[#FF6A00]"
+            />
+            <span className="text-xs font-bold text-[#FF6A00] tracking-wider">{title}</span>
+            <span className="text-sm font-semibold text-gray-800 mt-1">{price}</span>
+            <span className="text-[10px] text-gray-500 mt-1">{note}</span>
+        </label>
     );
 }
 
@@ -512,8 +532,8 @@ export function SubmitButton({ loading, label, showArrow = true }: SubmitButtonP
             type="submit"
             disabled={loading}
             className={`w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-lg font-semibold text-white transition-all text-sm ${loading
-                    ? 'bg-blue-400 cursor-not-allowed'
-                    : 'bg-[#1e3a6e] hover:bg-[#152d57] active:scale-[0.98]'
+                ? 'bg-blue-400 cursor-not-allowed'
+                : 'bg-[#1e3a6e] hover:bg-[#152d57] active:scale-[0.98]'
                 }`}
         >
             {loading ? (
