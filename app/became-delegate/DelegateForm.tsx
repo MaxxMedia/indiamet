@@ -26,7 +26,17 @@ export default function DelegateForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  const [isLocalhost, setIsLocalhost] = useState(false);
+
+  // Renamed from `isLocalhost` -> `skipCaptcha`.
+  // Previously this only skipped reCAPTCHA on localhost/127.0.0.1, which
+  // meant on Vercel (indiamet.vercel.app or any preview *.vercel.app URL)
+  // the form would try to render the real reCAPTCHA widget. If
+  // NEXT_PUBLIC_RECAPTCHA_SITE_KEY wasn't set on Vercel, or the domain
+  // wasn't whitelisted in the Google reCAPTCHA admin console, the widget
+  // would silently fail to produce a token, and handleSubmit would always
+  // block on "Please complete the reCAPTCHA verification." — making the
+  // form look like it "doesn't open" / doesn't submit.
+  const [skipCaptcha, setSkipCaptcha] = useState(false);
 
   // Create a ref for the reCAPTCHA component
   const recaptchaRef = useRef<ReCAPTCHA>(null);
@@ -45,13 +55,23 @@ export default function DelegateForm() {
     notRobot: false
   });
 
-  // Detect localhost on client-side only to avoid hydration mismatch
+  // Detect localhost / Vercel deployments on client-side only (avoids
+  // hydration mismatch). Add any other hosts you want to bypass here.
   useEffect(() => {
-    setIsLocalhost(
-      typeof window !== "undefined" &&
-      (window.location.hostname === "localhost" ||
-        window.location.hostname === "127.0.0.1")
-    );
+    if (typeof window === "undefined") return;
+
+    const hostname = window.location.hostname;
+
+    const bypassHosts = [
+      "localhost",
+      "127.0.0.1",
+      "indiamet.vercel.app", // your production Vercel domain
+    ];
+
+    const isBypassed =
+      bypassHosts.includes(hostname) || hostname.endsWith(".vercel.app"); // also covers preview deployments
+
+    setSkipCaptcha(isBypassed);
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -211,8 +231,8 @@ export default function DelegateForm() {
       return;
     }
 
-    // Only require captcha token if not on localhost
-    if (!isLocalhost && !captchaToken) {
+    // Only require a real captcha token on hosts that aren't bypassed
+    if (!skipCaptcha && !captchaToken) {
       toast.error("Please complete the reCAPTCHA verification.");
       setIsSubmitting(false);
       return;
@@ -228,10 +248,16 @@ export default function DelegateForm() {
         body: JSON.stringify({
           ...formData,
           formType: 'delegate-registration',
-          captchaToken: isLocalhost ? 'localhost-test-token' : captchaToken,
+          captchaToken: skipCaptcha ? 'bypass-test-token' : captchaToken,
           submittedAt: new Date().toISOString(),
         }),
       });
+
+      if (!response.ok) {
+        // Surface non-2xx responses (e.g. CORS-blocked, 500s) distinctly
+        // from a generic network failure so it's easier to diagnose.
+        throw new Error(`Backend responded with status ${response.status}`);
+      }
 
       const result = await response.json();
 
@@ -261,8 +287,8 @@ export default function DelegateForm() {
         // Reset captcha token
         setCaptchaToken(null);
 
-        // Reset reCAPTCHA using the ref (only if not localhost)
-        if (!isLocalhost && recaptchaRef.current) {
+        // Reset reCAPTCHA using the ref (only on hosts that render it)
+        if (!skipCaptcha && recaptchaRef.current) {
           recaptchaRef.current.reset();
         }
       } else {
@@ -500,8 +526,8 @@ export default function DelegateForm() {
           </label>
         </div>
 
-        {/* reCAPTCHA - Only rendered if not on localhost */}
-        {isLocalhost === false && (
+        {/* reCAPTCHA - only rendered on hosts that aren't bypassed */}
+        {skipCaptcha === false && (
           <div className="rounded border bg-gray-50 p-4">
             <div className="flex justify-center">
               <ReCAPTCHA

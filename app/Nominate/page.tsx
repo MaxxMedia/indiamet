@@ -64,7 +64,7 @@ const NominatePage: NextPage = () => {
 
             <main className="bg-white overflow-hidden">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[70vh] lg:min-h-[80vh] w-full overflow-hidden">
+                <section className="relative min-h-[60vh] lg:min-h-[70vh] w-full overflow-hidden">
                     {/* Background Image */}
                     <div className="absolute inset-0 w-full h-full">
                         <motion.div
@@ -82,7 +82,7 @@ const NominatePage: NextPage = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-[#01163A]/95 via-[#01163A]/80 to-[#01163A]/40" />
 
                     {/* Content */}
-                    <div className="relative z-10 flex items-center min-h-[70vh] lg:min-h-[80vh] pt-40 lg:pt-44 xl:pt-48">
+                    <div className="relative z-10 flex items-center min-h-[60vh] lg:min-h-[70vh] pt-[130px] sm:pt-[140px] lg:pt-[100px]">
                         <SectionContainer>
                             <div className="max-w-4xl text-white">
                                 <motion.div
