@@ -141,14 +141,14 @@ export default function NavBar() {
                   {/* LOGO */}
                   <Link
                     href="/"
-                    className="relative flex-shrink-0 w-[125px] h-[58px]"
+                    className="relative flex-shrink-0 w-[325px] h-[158px]"
                   >
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain object-left"
-                      sizes="125px"
+                      sizes="275px"
                       priority
                     />
                   </Link>
@@ -182,23 +182,22 @@ export default function NavBar() {
 
                 {/* EVENT INFO */}
                 <div className="px-4 pb-3 overflow-hidden">
-                  <div className="text-[11px] sm:text-[12px] opacity-90 leading-tight whitespace-nowrap overflow-hidden text-ellipsis">
-                    International Exhibition for Metrology, Measurement,
-                    Quality Control & Inspection Technologies
+                  <div className="text-[11px] sm:text-[12px] leading-tight whitespace-nowrap overflow-hidden text-ellipsis">
+                    INTERNATIONAL METROLOGY EXHIBITION & SUMMIT
                   </div>
 
-                  <div className="mt-1 text-[10px] sm:text-[11px] text-white/70 whitespace-nowrap overflow-hidden text-ellipsis">
-                    22 - 24 April 2027 · Auto Cluster Exhibition Centre, Pune
+                  <div className="mt-1 text-[10px] sm:text-[11px] text-white whitespace-nowrap overflow-hidden text-ellipsis">
+                    22 - 24 APRIL 2027 · PUNE,INDIA
                   </div>
                 </div>
 
               </div>
 
-              {/* TIME BAR */}
-              <div className="flex items-center gap-2 pl-4 mt-0">
+              {/* TIME BAR
+              <div className="flex items-center gap-2 pl-4 mt-0"> */}
 
                 {/* COUNTDOWN */}
-                <div className="relative z-[1001]">
+                {/* <div className="relative z-[1001]">
                   <div
                     className="flex items-center gap-1.5 rounded-b-xl bg-[#FF6A00] px-3 py-1 text-[11px] sm:text-[12px] text-white whitespace-nowrap"
                   >
@@ -214,10 +213,10 @@ export default function NavBar() {
                       {timeLeft.minutes} Mins
                     </span>
                   </div>
-                </div>
+                </div> */}
 
                 {/* EXHIBITOR LOGIN */}
-                <Link
+                {/* <Link
                   href="/login"
                   className="relative z-[1001]"
                 >
@@ -229,7 +228,7 @@ export default function NavBar() {
                 </Link>
 
               </div>
-            </div>
+            </div> */}
 
             {/* ================= DESKTOP NAVBAR ================= */}
             <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
