@@ -190,14 +190,18 @@ export default function NavBar() {
                       exactly what was forcing the side-scroll. */}
                   <Link
                     href="/"
+
                     className="relative flex-1 min-w-0 max-w-[220px] sm:max-w-[260px] md:max-w-[300px] h-[42px] xs:h-[50px] sm:h-[64px] md:h-[72px]"
+
                   >
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain object-left"
+
                       sizes="(max-width: 360px) 130px, (max-width: 480px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 260px, 300px"
+
                       priority
                     />
                   </Link>
