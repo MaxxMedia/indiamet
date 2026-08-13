@@ -12,7 +12,7 @@ export default function SideCard({ title, icon, children, className = "" }) {
 
 export function CheckItem({ children }) {
   return (
-    <li className="flex items-start gap-2 text-sm text-slate-200 py-1">
+    <li className="flex items-start gap-2 text-sm text-black py-1">
       <span className="text-emerald-400 mt-0.5">✓</span>
       <span>{children}</span>
     </li>
@@ -24,7 +24,7 @@ export function DateItem({ label, date, last }) {
     <div className="relative pl-5 pb-4 last:pb-0">
       {!last && <span className="absolute left-[3px] top-3 bottom-0 w-px bg-gold-600/30" />}
       <span className="absolute left-0 top-1 w-2 h-2 rounded-full bg-gold-500" />
-      <p className="text-slate-100 text-sm font-medium">{label}</p>
+      <p className="text-black text-sm font-medium">{label}</p>
       <p className="text-gold-400 text-xs">{date}</p>
     </div>
   );

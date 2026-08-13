@@ -13,20 +13,18 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-[#FF6A00] text-white font-parabolica">
       {/* TOP BRAND BAR */}
-      <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] py-10">
+      <div className="bg-gradient-to-r from-[#01163A] to-[#01163A] py-4">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center gap-1">
-                <Image
-                  src="/images/indiamet_logo.png"
-                  alt="INDIAMET 2027 Logo"
-                  width={280}
-                  height={180}
-                  className="object-contain"
-                  priority
-                />
-               </div>
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/indiamet_logo.png"
+                alt="INDIAMET 2027 Logo"
+                width={200}
+                height={100}
+                className="w-auto h-25 object-contain"
+                priority
+              />
             </Link>
           </div>
         </div>

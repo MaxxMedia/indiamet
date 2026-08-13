@@ -53,6 +53,16 @@ const jury = [
     { name: "Prof. Chris Wang", role: "Academic Expert", company: "Director, Precision Engineering, Tsinghua University, China" },
 ];
 
+
+const sponsors = [
+    { name: "HEXAGON", role: "Platinum Sponsor" },
+    { name: "Mitutoyo", role: "Gold Sponsor" },
+    { name: "ZEISS", role: "Silver Sponsor" },
+    { name: "RENISHAW", role: "Supporting Sponsor" },
+    { name: "NPL", role: "Knowledge Sponsor" },
+    { name: "TOOLING TRENDS", role: "Media Sponsor" },
+];
+
 const evaluation: [string, number][] = [
     ["Innovation", 35],
     ["Technical Excellence", 25],
@@ -104,37 +114,65 @@ interface RingProps {
 }
 
 function Ring({ percent, label }: RingProps) {
-    const r = 34;
+    const r = 42;
     const c = 2 * Math.PI * r;
     const offset = c - (percent / 100) * c;
+
     return (
         <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex flex-col items-center gap-2 w-28"
+            whileHover={{ scale: 1.06 }}
+            transition={{ duration: 0.2 }}
+            className="flex flex-col items-center gap-4 w-40 md:w-44"
         >
-            <svg width="90" height="90" viewBox="0 0 90 90">
-                <circle cx="45" cy="45" r={r} stroke="#e5e7eb" strokeWidth="8" fill="none" />
-                <circle
-                    cx="45"
-                    cy="45"
-                    r={r}
-                    stroke="#FF6A00"
-                    strokeWidth="8"
-                    fill="none"
-                    strokeDasharray={c}
-                    strokeDashoffset={offset}
-                    strokeLinecap="round"
-                    transform="rotate(-90 45 45)"
-                />
-                <text x="45" y="50" textAnchor="middle" className="fill-gray-900 font-bold text-sm">
-                    {percent}%
-                </text>
-            </svg>
-            <p className="text-xs text-gray-600 tracking-wide uppercase text-center">{label}</p>
+            <div className="relative">
+                <svg
+                    width="120"
+                    height="120"
+                    viewBox="0 0 120 120"
+                    className="w-28 h-28 md:w-32 md:h-32"
+                >
+                    {/* Background circle */}
+                    <circle
+                        cx="60"
+                        cy="60"
+                        r={r}
+                        stroke="#e5e7eb"
+                        strokeWidth="10"
+                        fill="white"
+                    />
+
+                    {/* Progress circle */}
+                    <circle
+                        cx="60"
+                        cy="60"
+                        r={r}
+                        stroke="#FF6A00"
+                        strokeWidth="10"
+                        fill="none"
+                        strokeDasharray={c}
+                        strokeDashoffset={offset}
+                        strokeLinecap="round"
+                        transform="rotate(-90 60 60)"
+                    />
+
+                    {/* Percentage */}
+                    <text
+                        x="60"
+                        y="68"
+                        textAnchor="middle"
+                        className="fill-gray-900 font-bold text-lg md:text-xl"
+                    >
+                        {percent}%
+                    </text>
+                </svg>
+            </div>
+
+            <p className="text-black text-sm md:text-base font-semibold tracking-wide uppercase text-center leading-snug">
+                {label}
+            </p>
         </motion.div>
     );
 }
-
 const Awards: NextPage = () => {
     const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
@@ -354,21 +392,26 @@ const Awards: NextPage = () => {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={staggerContainer}
-                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5"
                         >
                             {categories.map(([icon, title]) => (
                                 <motion.div
                                     key={title}
                                     variants={scaleIn}
                                     whileHover={{
-                                        y: -4,
-                                        boxShadow: '0 8px 20px rgba(0,0,0,0.06)',
-                                        borderColor: '#FF6A00',
+                                        y: -6,
+                                        boxShadow: "0 12px 25px rgba(0,0,0,0.10)",
+                                        borderColor: "#FF6A00",
                                     }}
-                                    className="border border-gray-200 rounded-lg p-4 flex flex-col items-center justify-center text-center gap-2 bg-white hover:border-[#FF6A00] transition-all duration-300"
+                                    className="min-h-[150px] border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center text-center gap-4 bg-white hover:border-[#FF6A00] transition-all duration-300"
                                 >
-                                    <span className="text-2xl">{icon}</span>
-                                    <p className="text-gray-800 text-xs font-medium leading-snug">{title}</p>
+                                    <span className="text-4xl md:text-5xl leading-none">
+                                        {icon}
+                                    </span>
+
+                                    <p className="text-black text-sm md:text-base font-semibold leading-snug">
+                                        {title}
+                                    </p>
                                 </motion.div>
                             ))}
                         </motion.div>
@@ -397,7 +440,7 @@ const Awards: NextPage = () => {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={staggerContainer}
-                            className="flex flex-col md:flex-row items-stretch md:items-start justify-between gap-8 md:gap-4"
+                            className="flex flex-col md:flex-row items-stretch md:items-start justify-between gap-10 md:gap-4"
                         >
                             {process.map(([icon, title, desc], i) => (
                                 <motion.div
@@ -405,15 +448,33 @@ const Awards: NextPage = () => {
                                     variants={scaleIn}
                                     className="flex md:flex-1 items-start w-full md:w-auto"
                                 >
-                                    <div className="flex flex-col items-center text-center gap-3 flex-1">
-                                        <div className="w-16 h-16 rounded-full border-2 border-[#FF6A00] flex items-center justify-center text-xl text-[#FF6A00] bg-white">
+                                    <div className="flex flex-col items-center text-center gap-4 flex-1">
+
+                                        {/* BIGGER CIRCLE */}
+                                        <motion.div
+                                            whileHover={{ scale: 1.08 }}
+                                            transition={{ duration: 0.2 }}
+                                            className="w-24 h-24 md:w-28 md:h-28 rounded-full border-3 border-[#FF6A00] flex items-center justify-center text-4xl md:text-5xl bg-white shadow-md"
+                                        >
                                             {icon}
-                                        </div>
-                                        <p className="text-[#FF6A00] text-xs font-bold tracking-wide">{title}</p>
-                                        <p className="text-gray-600 text-xs max-w-[9rem]">{desc}</p>
+                                        </motion.div>
+
+                                        {/* PROCESS TITLE */}
+                                        <p className="text-[#FF6A00] text-sm md:text-base font-bold tracking-wide leading-snug">
+                                            {title}
+                                        </p>
+
+                                        {/* PROCESS DESCRIPTION */}
+                                        <p className="text-black text-sm md:text-base font-medium leading-relaxed max-w-[13rem]">
+                                            {desc}
+                                        </p>
                                     </div>
+
+                                    {/* ARROW */}
                                     {i < process.length - 1 && (
-                                        <span className="hidden md:flex items-center justify-center text-[#FF6A00]/50 text-2xl mx-2 h-16">→</span>
+                                        <span className="hidden md:flex items-center justify-center text-[#FF6A00] text-3xl font-bold mx-2 h-28">
+                                            →
+                                        </span>
                                     )}
                                 </motion.div>
                             ))}
@@ -519,76 +580,9 @@ const Awards: NextPage = () => {
                     </SectionContainer>
                 </section>
 
-                {/* ================= PAST WINNERS & GALLERY ================= */}
-                <section className="py-16 lg:py-24 font-parabolica">
-                    <SectionContainer>
-                        <div className="grid md:grid-cols-2 gap-8">
-                            {/* Past Winners */}
-                            <motion.div
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                variants={fadeInUp}
-                            >
-                                <div className="flex gap-2 mb-4">
-                                    <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                    <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">🏆 Past Winners</h3>
-                                </div>
-                                <motion.div
-                                    whileHover={{ boxShadow: '0 12px 30px rgba(0,0,0,0.08)' }}
-                                    className="border border-gray-200 rounded-lg overflow-hidden bg-white transition-all duration-300"
-                                >
-                                    <div className="h-48 bg-gradient-to-br from-[#FF6A00]/10 to-[#01163A]/10 flex items-center justify-center">
-                                        <span className="text-6xl">🏭</span>
-                                    </div>
-                                    <div className="p-6">
-                                        <h3 className="text-gray-900 font-semibold text-lg">Hexagon Manufacturing Intelligence</h3>
-                                        <p className="text-gray-600 text-sm mt-1">
-                                            Winner — Outstanding Metrology Solution Award 2025, INDIAMET 2025
-                                        </p>
-                                        <Link
-                                            href="/past-winners"
-                                            className="text-[#FF6A00] text-sm font-semibold mt-3 hover:underline inline-block"
-                                        >
-                                            VIEW ALL WINNERS →
-                                        </Link>
-                                    </div>
-                                </motion.div>
-                            </motion.div>
 
-                            {/* Gallery */}
-                            <motion.div
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                variants={fadeInUp}
-                            >
-                                <div className="flex gap-2 mb-4">
-                                    <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                    <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">📸 Awards Night Gallery</h3>
-                                </div>
-                                <motion.div
-                                    variants={staggerContainer}
-                                    className="grid grid-cols-3 gap-3"
-                                >
-                                    {Array.from({ length: 6 }).map((_, i) => (
-                                        <motion.div
-                                            key={i}
-                                            variants={scaleIn}
-                                            whileHover={{ scale: 1.05 }}
-                                            className="aspect-square rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center"
-                                        >
-                                            <span className="text-3xl">🎉</span>
-                                        </motion.div>
-                                    ))}
-                                </motion.div>
-                            </motion.div>
-                        </div>
-                    </SectionContainer>
-                </section>
-
-                {/* ================= SUPPORTERS ================= */}
-                <section className="py-16 lg:py-24 bg-gray-50 font-parabolica">
+                {/* ================= SPONSORS ================= */}
+                <section className="py-16 lg:py-24 font-parabolica overflow-hidden">
                     <SectionContainer>
                         <motion.div
                             initial="hidden"
@@ -598,34 +592,151 @@ const Awards: NextPage = () => {
                             className="text-center mb-12"
                         >
                             <div className="flex gap-2 justify-center mb-4">
-                                <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Supporters</h3>
+                                <img
+                                    src="/images/logo-icon-3.png"
+                                    alt=""
+                                    className="h-5"
+                                />
+
+                                <h3 className="text-sm text-[#4D4D4D] font-semibold">
+                                    Sponsors
+                                </h3>
                             </div>
-                            <h2 className="text-4xl lg:text-5xl font-bold">Our Supporters</h2>
+
+                            <h2 className="text-4xl lg:text-5xl font-bold">
+                                Our Sponsors
+                            </h2>
+
+                            <p className="text-[#4D4D4D] text-base md:text-lg mt-4 max-w-2xl mx-auto">
+                                Proudly supported by leading organizations sponsoring
+                                the Global Metrology Excellence Awards.
+                            </p>
                         </motion.div>
 
+                        {/* SPONSOR SLIDER */}
+                        <div className="relative overflow-hidden">
+                            <motion.div
+                                className="flex gap-6 cursor-grab active:cursor-grabbing"
+                                drag="x"
+                                dragConstraints={{ left: -1200, right: 0 }}
+                                dragElastic={0.08}
+                                animate={{ x: [0, -600] }}
+                                transition={{
+                                    x: {
+                                        repeat: Infinity,
+                                        repeatType: "loop",
+                                        duration: 18,
+                                        ease: "linear",
+                                    },
+                                }}
+                                whileTap={{ cursor: "grabbing" }}
+                            >
+                                {[...sponsors, ...sponsors].map((sponsor, index) => (
+                                    <motion.div
+                                        key={`${sponsor.name}-${index}`}
+                                        whileHover={{
+                                            y: -6,
+                                            boxShadow:
+                                                "0 12px 30px rgba(0,0,0,0.08)",
+                                        }}
+                                        className="flex-shrink-0 w-[220px] md:w-[260px] min-h-[180px] bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#FF6A00] transition-all duration-300"
+                                    >
+                                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF6A00]/10 to-[#01163A]/10 flex items-center justify-center">
+                                            <span className="text-2xl font-bold text-[#FF6A00]">
+                                                {sponsor.name.charAt(0)}
+                                            </span>
+                                        </div>
+
+                                        <div className="text-center">
+                                            <p className="text-gray-900 text-lg font-bold">
+                                                {sponsor.name}
+                                            </p>
+
+                                            <p className="text-[#FF6A00] text-sm font-semibold mt-1 uppercase tracking-wide">
+                                                {sponsor.role}
+                                            </p>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
+                    </SectionContainer>
+                </section>
+
+
+
+                {/* ================= SUPPORTERS ================= */}
+                <section className="py-16 lg:py-24 bg-gray-50 font-parabolica overflow-hidden">
+                    <SectionContainer>
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            variants={staggerContainer}
-                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6"
+                            variants={fadeInUp}
+                            className="text-center mb-12"
                         >
-                            {supporters.map((supporter) => (
-                                <motion.div
-                                    key={supporter.name}
-                                    variants={scaleIn}
-                                    whileHover={{ y: -4 }}
-                                    className="flex flex-col items-center gap-2 bg-white p-4 rounded-lg border border-gray-200 hover:border-[#FF6A00] transition-all duration-300"
-                                >
-                                    <div className="w-16 h-16 bg-gradient-to-br from-[#FF6A00]/10 to-[#01163A]/10 rounded-full flex items-center justify-center">
-                                        <span className="text-2xl font-bold text-[#FF6A00]">{supporter.name.charAt(0)}</span>
-                                    </div>
-                                    <p className="text-[#4D4D4D] text-[10px] tracking-wide uppercase">{supporter.role}</p>
-                                    <p className="text-gray-900 font-semibold text-sm text-center">{supporter.name}</p>
-                                </motion.div>
-                            ))}
+                            <div className="flex gap-2 justify-center mb-4">
+                                <img
+                                    src="/images/logo-icon-3.png"
+                                    alt=""
+                                    className="h-5"
+                                />
+
+                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">
+                                    Supporters
+                                </h3>
+                            </div>
+
+                            <h2 className="text-4xl lg:text-5xl font-bold">
+                                Our Supporters
+                            </h2>
                         </motion.div>
+
+                        {/* ================= AUTO SLIDER ================= */}
+                        <div className="relative overflow-hidden">
+                            <motion.div
+                                className="flex gap-6 cursor-grab active:cursor-grabbing"
+                                drag="x"
+                                dragConstraints={{ left: -1200, right: 0 }}
+                                dragElastic={0.08}
+                                animate={{ x: [0, -600] }}
+                                transition={{
+                                    x: {
+                                        repeat: Infinity,
+                                        repeatType: "loop",
+                                        duration: 18,
+                                        ease: "linear",
+                                    },
+                                }}
+                                whileTap={{ cursor: "grabbing" }}
+                            >
+                                {/* Duplicate items for continuous slider */}
+                                {[...supporters, ...supporters].map((supporter, index) => (
+                                    <motion.div
+                                        key={`${supporter.name}-${index}`}
+                                        whileHover={{ y: -6 }}
+                                        className="flex-shrink-0 w-[210px] md:w-[240px] min-h-[180px] flex flex-col items-center justify-center gap-3 bg-white p-6 rounded-xl border border-gray-200 hover:border-[#FF6A00] transition-all duration-300"
+                                    >
+                                        {/* Icon */}
+                                        <div className="w-20 h-20 bg-gradient-to-br from-[#FF6A00]/10 to-[#01163A]/10 rounded-full flex items-center justify-center">
+                                            <span className="text-3xl font-bold text-[#FF6A00]">
+                                                {supporter.name.charAt(0)}
+                                            </span>
+                                        </div>
+
+                                        {/* Role */}
+                                        <p className="text-[#4D4D4D] text-xs tracking-wide uppercase text-center">
+                                            {supporter.role}
+                                        </p>
+
+                                        {/* Name */}
+                                        <p className="text-gray-900 font-bold text-base text-center">
+                                            {supporter.name}
+                                        </p>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
                     </SectionContainer>
                 </section>
             </main>
