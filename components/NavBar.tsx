@@ -227,8 +227,8 @@ export default function NavBar() {
                   </div>
                 </Link>
 
-              </div>
-            </div> */}
+              </div>*/}
+            </div> 
 
             {/* ================= DESKTOP NAVBAR ================= */}
             <div className="hidden lg:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
