@@ -255,12 +255,15 @@ export default function NavBar() {
 
                   {/* Event Info with fluid typography */}
                   <div className="md:flex flex-col font-parabolica min-w-0 ml-1 lg:ml-2">
-                    <span className="text-[clamp(12px,1vw,18px)] leading-tight whitespace-nowrap font-bold">
-                      22 - 24 APRIL 2027
-                    </span>
-                    <span className="text-[clamp(11px,0.9vw,18px)] leading-tight whitespace-nowrap truncate max-w-[clamp(120px,15vw,240px)]">
-                      Auto Cluster Exhibition Center, Pune, India
-                    </span>
+    <span className="text-[clamp(12px,1vw,18px)] leading-tight whitespace-nowrap font-bold block mb-2">
+  22 - 24 APRIL 2027
+</span>
+
+<span className="text-[clamp(11px,0.9vw,18px)] leading-tight whitespace-normal block">
+  Auto Cluster Exhibition Center
+  <br />
+  Pune India
+</span>
                   </div>
                 </div>
 
