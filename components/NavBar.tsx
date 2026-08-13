@@ -51,7 +51,14 @@ const navItems: NavItem[] = [
     ],
   },
 
-  { title: "SUMMIT", dropdown: false, href: "/summit" },
+  { title: "SUMMIT", 
+    dropdown: true, 
+      links: [
+      {text: "SUMMIT AGENDA", href: "/agenda"},
+      { text:"DELEGATE", href: "/delegate" },
+      { text:"SPONSOR", href: "/Sponsor" },
+    ],
+  },
   {
     title: "GMEA AWARDS",
     dropdown: true,
@@ -268,56 +275,62 @@ export default function NavBar() {
                 </div>
 
                 {/* ================= CENTER: NAVIGATION ================= */}
-                <nav className="hidden lg:flex items-center gap-[clamp(4px,0.6vw,14px)] font-parabolica flex-shrink min-w-0">
-                  {navItems.map((item, i) =>
-                    item.dropdown ? (
-                      <div
-                        key={i}
-                        className="relative group"
-                        onMouseEnter={() => setActiveDropdown(i)}
-                        onMouseLeave={() => setActiveDropdown(null)}
-                      >
-                        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
-                          <span className={`relative font-medium text-[13px]`}>
-                            {item.title}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
-                          </span>
-                          <ChevronDown className={`h-2 w-2 lg:h-2.5 lg:w-2.5 xl:h-3 xl:w-3 transition-transform duration-300 ${activeDropdown === i ? "rotate-180" : ""}`} />
-                        </button>
+                {/* ================= CENTER: NAVIGATION ================= */}
+<nav className="hidden lg:flex items-center gap-[clamp(4px,0.6vw,14px)] font-parabolica flex-shrink min-w-0">
+  {navItems.map((item, i) =>
+    item.dropdown ? (
+      <div
+        key={i}
+        className="relative group"
+        onMouseEnter={() => setActiveDropdown(i)}
+        onMouseLeave={() => setActiveDropdown(null)}
+      >
+        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
+          <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
+            {item.title}
+            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
+          </span>
 
-                        {activeDropdown === i && item.links && (
-                          <div className="absolute left-0 top-full pt-1.5 lg:pt-2 z-50">
-                            <div className="min-w-[160px] lg:min-w-[170px] xl:min-w-[200px] rounded-lg bg-white py-1 lg:py-1.5 shadow-xl text-gray-800 border border-gray-100">
-                              {item.links.map((link, j) => (
-                                <Link
-                                  key={j}
-                                  href={link.href}
-                                  className="block px-2 lg:px-3 xl:px-4 py-1 lg:py-1.5 xl:py-2 text-[clamp(10px,0.7vw,13px)] hover:bg-gray-100 relative group/item whitespace-nowrap transition-colors"
-                                >
-                                  <span className="relative">
-                                    {link.text}
-                                    <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-blue-600 group-hover/item:w-full transition-all duration-300"></span>
-                                  </span>
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    ) : (
-                      <Link
-                        key={i}
-                        href={item.href!}
-                        className="hover:text-gray-200 relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
-                      >
-                        <span className={`relative font-medium text-[13px]`}>
-                          {item.title}
-                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                      </Link>
-                    )
-                  )}
-                </nav>
+          <ChevronDown
+            className={`h-2 w-2 lg:h-2.5 lg:w-2.5 xl:h-3 xl:w-3 transition-transform duration-300 ${
+              activeDropdown === i ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+
+        {activeDropdown === i && item.links && (
+          <div className="absolute left-0 top-full pt-1.5 lg:pt-2 z-50">
+            <div className="min-w-[160px] lg:min-w-[170px] xl:min-w-[200px] rounded-lg bg-white py-1 lg:py-1.5 shadow-xl text-gray-800 border border-gray-100">
+              {item.links.map((link, j) => (
+                <Link
+                  key={j}
+                  href={link.href}
+                  className="block px-2 lg:px-3 xl:px-4 py-1 lg:py-1.5 xl:py-2 text-[clamp(10px,0.7vw,13px)] hover:bg-gray-100 relative group/item whitespace-nowrap transition-colors"
+                >
+                  <span className="relative">
+                    {link.text}
+                    <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-blue-600 group-hover/item:w-full transition-all duration-300"></span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    ) : (
+      <Link
+        key={i}
+        href={item.href!}
+        className="hover:text-gray-200 relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
+      >
+        <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
+          {item.title}
+          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#FF6A00] group-hover:w-full transition-all duration-300"></span>
+        </span>
+      </Link>
+    )
+  )}
+</nav>
 
                 {/* ================= RIGHT: CTA BUTTONS ================= */}
                 <div className="hidden lg:flex items-center gap-[clamp(4px,0.5vw,12px)] flex-shrink-0">
