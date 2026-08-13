@@ -108,7 +108,7 @@ const SponsorPage: NextPage = () => {
                                     industry and showcase your brand to global leaders, innovators and decision
                                     makers.
                                 </motion.p>
-
+{/* 
                                 <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -131,7 +131,7 @@ const SponsorPage: NextPage = () => {
                                             <p className="text-white/60">{desc}</p>
                                         </motion.div>
                                     ))}
-                                </motion.div>
+                                </motion.div> */}
                             </div>
                         </SectionContainer>
                     </div>

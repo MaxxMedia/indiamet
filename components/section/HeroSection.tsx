@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* CONTENT with SectionContainer */}
       <SectionContainer className="relative z-10">
         <div className="flex h-full items-end">
-          <div className="pb-25 text-white">
+          <div className="pb-6 sm:pb-8 lg:pb-10 text-white">
             <h2 className="title-72">About INDIAMET 2027</h2>
             <p className="mt-4 max-w-6xl text-lg">
               

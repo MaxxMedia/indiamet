@@ -70,7 +70,7 @@ export default function WhyVisit() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/10" />
           <SectionContainer>
-            <div className="relative z-10 pb-8 sm:pb-12 md:pb-16 lg:pb-24 px-4 sm:px-0">
+            <div className="relative z-10 pb-4 sm:pb-6 md:pb-8 lg:pb-10 px-4 sm:px-0">
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
