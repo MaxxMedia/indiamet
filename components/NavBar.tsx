@@ -161,94 +161,81 @@ export default function NavBar() {
     <>
       {/* ================= NAVBAR ================= */}
       <header className="fixed top-0 left-0 right-0 z-[999] font-parabolica">
-        <div className={`px-2 sm:px-4 md:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "pt-1.5 sm:pt-2" : "pt-2 sm:pt-3 md:pt-4"}`}>
+        {/* Mobile/Tablet - no padding, full width */}
+        <div className="xl:hidden">
           <div className="mx-auto max-w-[1800px]">
-            {/* ================= MOBILE / TABLET NAVBAR =================
-                Covers everything below xl (1280px): phones through tablets
-                and small laptops. Sizing now scales through sm -> md so
-                tablets get noticeably larger type/controls instead of
-                reusing phone-sized values all the way up to 1280px.
-                NOTE: this file previously used `xs:` classes, which is not
-                a default Tailwind breakpoint. Unless a custom `xs` screen
-                is defined in tailwind.config, those classes are silently
-                ignored by the JIT compiler and do nothing. Replaced with
-                the arbitrary variant `xs:` below, which works
-                out of the box with no config changes required. */}
             <div
               ref={mobileHeaderRef}
-              className="xl:hidden w-full absolute top-0 left-0 right-0 z-50"
+              className="w-full"
             >
               <div className="bg-[#01163A] text-white w-full">
-                {/* HEADER */}
-                <div className="relative flex items-center justify-between gap-2 w-full px-3 xs:px-4 sm:px-6 md:px-8 py-2.5 xs:py-3 sm:py-4 md:py-5 min-h-[64px] xs:min-h-[72px] sm:min-h-[84px] md:min-h-[96px]">
-                  {/* LOGO — flex-1 + min-w-0 lets this shrink to whatever
-                      space is left after the LOGIN button and menu icon
-                      (which must never shrink) take their fixed width.
-                      The previous w-[38vw] + min-w-[130px] combo was a
-                      rigid width that, added to the fixed-size right side,
-                      could exceed the viewport on narrow phones — which is
-                      exactly what was forcing the side-scroll. */}
+                {/* SINGLE ROW: LOGO | DIVIDER | EVENT INFO | LOGIN | MENU */}
+                <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 px-3 xs:px-4 sm:px-6 md:px-8 py-5 xs:py-6 sm:py-8 md:py-10 min-h-[100px] xs:min-h-[120px] sm:min-h-[140px] md:min-h-[160px]">
+
+                  {/* LOGO - increased height only */}
                   <Link
                     href="/"
-
-                    className="relative flex-1 min-w-0 max-w-[220px] sm:max-w-[260px] md:max-w-[300px] h-[42px] xs:h-[50px] sm:h-[64px] md:h-[72px]"
-
+                    className="relative w-[110px] xs:w-[130px] sm:w-[155px] md:w-[180px] h-[60px] xs:h-[72px] sm:h-[85px] md:h-[100px] flex-shrink-0"
                   >
                     <Image
                       src="/images/indiamet_logo.png"
                       alt="INDIAMET 2027 Logo"
                       fill
                       className="object-contain object-left"
-
-                      sizes="(max-width: 360px) 130px, (max-width: 480px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 260px, 300px"
-
+                      sizes="(max-width: 480px) 130px, (max-width: 640px) 155px, (max-width: 1024px) 180px"
                       priority
                     />
                   </Link>
 
-                  {/* RIGHT SIDE ACTIONS */}
+                  {/* VERTICAL DIVIDER - increased height */}
+                  <div className="h-[50px] xs:h-[58px] sm:h-[68px] md:h-[78px] w-px bg-white/70 flex-shrink-0" />
+
+                  {/* EVENT INFO - increased font sizes */}
+                  <div className="flex flex-col justify-center min-w-0 flex-1 text-white font-parabolica">
+                    <span className="text-[18px] xs:text-[21px] sm:text-[25px] md:text-[29px] font-medium leading-[1.1] whitespace-nowrap">
+                      22 - 24 APRIL 2027
+                    </span>
+                    <span className="text-[13px] xs:text-[15px] sm:text-[18px] md:text-[21px] leading-[1.2] whitespace-nowrap">
+                      Auto Cluster Exhibition Center
+                    </span>
+                    <span className="text-[13px] xs:text-[15px] sm:text-[18px] md:text-[21px] leading-[1.2] whitespace-nowrap">
+                      Pune India
+                    </span>
+                  </div>
+
+                  {/* RIGHT SIDE ACTIONS - increased button sizes */}
                   <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 flex-shrink-0">
                     {/* EXHIBITOR LOGIN */}
                     <Link
                       href="/login"
-                      className="flex items-center justify-center gap-1 rounded-full bg-[#FF6A00] text-white px-2.5 xs:px-3 sm:px-4 md:px-5 py-1.5 xs:py-2 sm:py-2.5 md:py-3 text-[10px] xs:text-[11px] sm:text-[13px] md:text-[14px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
+                      className="flex items-center justify-center gap-1 rounded-full bg-[#FF6A00] text-white px-2.5 xs:px-3 sm:px-4 md:px-5 py-2 xs:py-2.5 sm:py-3.5 md:py-4.5 text-[11px] xs:text-[13px] sm:text-[16px] md:text-[18px] font-bold whitespace-nowrap shadow-md active:scale-95 transition-all"
                     >
                       <span>LOGIN</span>
                     </Link>
 
-                    {/* MENU BUTTON */}
+                    {/* MENU BUTTON - increased size */}
                     <button
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      className="flex items-center justify-center w-8 h-8 xs:w-9 xs:h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 transition-all flex-shrink-0"
+                      className="flex items-center justify-center w-10 h-10 xs:w-11 xs:h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 transition-all flex-shrink-0"
                       aria-label="Toggle menu"
                     >
                       {mobileMenuOpen ? (
-                        <X className="w-4 h-4 xs:w-5 xs:h-5 md:w-6 md:h-6" />
+                        <X className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
                       ) : (
-                        <Menu className="w-4 h-4 xs:w-5 xs:h-5 md:w-6 md:h-6" />
+                        <Menu className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
                       )}
                     </button>
                   </div>
                 </div>
-
-                {/* EVENT INFO */}
-                <div className="px-3 xs:px-4 sm:px-6 md:px-8 pb-2.5 xs:pb-3 md:pb-4 overflow-hidden">
-                  <div className="text-[9.5px] xs:text-[11px] sm:text-[13px] md:text-[15px] leading-tight whitespace-nowrap overflow-hidden text-ellipsis">
-                    Auto Cluster Exhibition Center
-                  </div>
-
-                  <div className="mt-1 text-[9px] xs:text-[10px] sm:text-[12px] md:text-[13px] text-white whitespace-nowrap overflow-hidden text-ellipsis">
-                    PUNE, INDIA
-                  </div>
-                </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* ================= DESKTOP NAVBAR =================
-                Only takes over at xl (1280px) and up, where the full
-                row of logo + date + 6 nav items + 2 CTA buttons has room
-                to breathe. */}
-            <div className="hidden xl:block rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
+        {/* ================= DESKTOP NAVBAR (with padding) ================= */}
+        <div className={`hidden xl:block px-2 sm:px-4 md:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "pt-1.5 sm:pt-2" : "pt-2 sm:pt-3 md:pt-4"}`}>
+          <div className="mx-auto max-w-[1800px]">
+            <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#01163A] text-white shadow-xl">
               <div className="flex items-center justify-between gap-2 xl:gap-5 2xl:gap-6 px-3 xl:px-6 2xl:px-8 py-3 xl:py-4 2xl:py-5 min-h-[104px] xl:min-h-[120px] 2xl:min-h-[128px]">
                 {/* ================= LEFT SECTION: LOGO + EVENT INFO ================= */}
                 <div className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0">
@@ -377,7 +364,7 @@ export default function NavBar() {
 
             {/* ================= COUNTDOWN + LOGIN (desktop) ================= */}
             {!scrolled && (
-              <div className="hidden xl:flex justify-end w-full pr-4">
+              <div className="flex justify-end w-full pr-4">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-4 rounded-b-xl bg-[#01163A] px-4 py-1 text-[clamp(11px,0.7vw,14px)] text-white shadow-md">
                     <span className="font-medium">{isMounted ? timeLeft.days : "--"} Days</span>
