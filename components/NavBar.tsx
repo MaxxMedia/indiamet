@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { ChevronDown, Menu, Xl } from "lucide-react"
 import Button from "./UI/Button"
 import Image from "next/image"
 
@@ -322,13 +322,13 @@ export default function NavBar() {
                     href="/exhibiting-enquiry"
                     className="bg-[#FF6A00] hover:bg-[#FF6A00] px-[clamp(8px,0.7vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(8px,0.6vw,13px)] font-bold rounded-full"
                   >
-                    EXHIBITOR REGISTRATION
+                    EXHIBITOR REG
                   </Button>
                   <Button
                     href="/visitor-registration"
                     className="bg-[#FF6A00] hover:bg-[#FF6A00] px-[clamp(8px,0.7vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(8px,0.6vw,13px)] font-bold rounded-full"
                   >
-                    VISITOR REGISTRATION
+                    VISITOR REG
                   </Button>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export default function NavBar() {
           >
             {/* Dropdown Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
-              <span className="text-sm font-semibold">Menu</span>
+              <span className="text-base lg:text-xl font-semibold">Menu</span>
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="rounded-full p-1.5 hover:bg-gray-100 active:scale-95"
