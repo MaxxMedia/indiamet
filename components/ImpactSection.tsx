@@ -89,14 +89,14 @@ export default function ImpactSection() {
             <button
               onClick={prev}
               disabled={currentIndex === 0}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#9BB6D9] text-white disabled:opacity-40 hover:bg-[#01163A] transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#9BB6D9] text-white disabled:opacity-40 hover:bg-[#001f3d] transition-colors"
             >
               ←
             </button>
             <button
               onClick={next}
               disabled={currentIndex + ITEMS_PER_VIEW >= impacts.length}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#01163A] text-white disabled:opacity-40 hover:bg-[#00264d] transition-colors"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-[#001f3d] text-white disabled:opacity-40 hover:bg-[#00264d] transition-colors"
             >
               →
             </button>
@@ -110,7 +110,7 @@ export default function ImpactSection() {
             .map((impact, i) => (
               <div
                 key={i}
-                className="flex flex-col overflow-hidden rounded-2xl bg-[#01163A] text-white"
+                className="flex flex-col overflow-hidden rounded-2xl bg-[#001f3d] text-white"
               >
                 <div className="p-8 lg:p-10">
                   <h3 className="mb-5 text-2xl lg:text-3xl font-bold leading-tight">
@@ -126,7 +126,7 @@ export default function ImpactSection() {
                   style={{ backgroundImage: `url(${impact.image})` }}
                 />
 
-                <div className="bg-[#01163A] p-6 lg:p-8">
+                <div className="bg-[#001f3d] p-6 lg:p-8">
                   <h4 className="mb-2 text-4xl lg:text-5xl font-bold">
                     {impact.stat.value}
                   </h4>
