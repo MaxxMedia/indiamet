@@ -114,7 +114,7 @@ const sectors = [
             <Link href="/sectors">
               <button className="
                 rounded-full 
-                bg-[#8b1a3a] 
+                bg-[#1da428] 
                 px-8 lg:px-10 
                 py-3 lg:py-4 
                 text-white 

@@ -140,7 +140,7 @@ export default function ExhibitorPromotionPage() {
                 href="/images/Exhibitor_Promotion/Invitation_INDIAMET2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#8b1a3a] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#1da428] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Your Invitation
               </a>
@@ -163,7 +163,7 @@ export default function ExhibitorPromotionPage() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#8b1a3a] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#1da428] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Your Personalised Banners
               </a>
@@ -185,7 +185,7 @@ export default function ExhibitorPromotionPage() {
                 href="/images/Exhibitor_Promotion/Announcement_Temp_INDIAMET_2027.docx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#8b1a3a] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#1da428] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Download Announcement Template
               </a>
@@ -208,7 +208,7 @@ export default function ExhibitorPromotionPage() {
                 href="/images/Exhibitor_Promotion/INDIAMET_2027_news.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex w-fit rounded-full bg-[#8b1a3a] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                className="mt-auto inline-flex w-fit rounded-full bg-[#1da428] px-10 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
               >
                 Requirements to News Promotion
               </a>
@@ -271,7 +271,7 @@ export default function ExhibitorPromotionPage() {
                   href="/images/exhibitor-promo/INDIAMET_2027_logos.zip"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex w-fit rounded-full bg-[#8b1a3a] px-12 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
+                  className="mt-6 inline-flex w-fit rounded-full bg-[#1da428] px-12 py-4 text-lg font-semibold text-white hover:bg-mainColor4 transition"
                 >
                   Download Logo
                 </a>
