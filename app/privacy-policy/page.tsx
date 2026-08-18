@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
             
               {/* Introduction Section */}
               <div className="mb-8 pb-6 border-b">
-                <h2 className="text-2xl font-bold text-[#1da428] mb-4">
+                <h2 className="text-2xl font-bold text-[#b80a26] mb-4">
                   Policy for Processing and Security of Personal Data
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -162,7 +162,7 @@ export default function PrivacyPolicyPage() {
                   <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
                     <div className="flex items-center gap-3">
                       <div className="flex-shrink-0">
-                        <svg className="w-5 h-5 text-[#1da428]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="w-5 h-5 text-[#b80a26]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
@@ -196,7 +196,7 @@ export default function PrivacyPolicyPage() {
             <div className="mt-12 text-center">
               <div className="inline-flex items-center gap-4 text-gray-600">
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#1da428]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-[#b80a26]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
                   <span>Your privacy and data security are our top priorities</span>
