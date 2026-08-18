@@ -35,7 +35,7 @@ export default function UpdatedShortlyPage() {
         {/* CTA */}
         <Link
           href="/"
-          className="inline-block bg-[#C8102E] hover:bg-[#C8102E] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
+          className="inline-block bg-[#B80A26] hover:bg-[#B80A26] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
         >
           Back to Home
         </Link>

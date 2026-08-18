@@ -195,7 +195,7 @@ const NominatePage: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[17px] tracking-widest text-[#C8102E] border border-[#C8102E]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-4">
                                         GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
                                     </span>
                                 </motion.div>
@@ -228,11 +228,11 @@ const NominatePage: NextPage = () => {
                 <section className="py-4 bg-gray-50 border-b border-gray-100">
                     <SectionContainer>
                         <div className="flex items-center gap-2 text-sm text-gray-600">
-                            <Link href="/" className="hover:text-[#C8102E] transition-colors">Home</Link>
+                            <Link href="/" className="hover:text-[#B80A26] transition-colors">Home</Link>
                             <span className="text-gray-400">/</span>
-                            <Link href="/awards" className="hover:text-[#C8102E] transition-colors">GMEA Awards</Link>
+                            <Link href="/awards" className="hover:text-[#B80A26] transition-colors">GMEA Awards</Link>
                             <span className="text-gray-400">/</span>
-                            <span className="text-[#C8102E] font-medium">Nomination Form</span>
+                            <span className="text-[#B80A26] font-medium">Nomination Form</span>
                         </div>
                     </SectionContainer>
                 </section>
@@ -257,20 +257,20 @@ const NominatePage: NextPage = () => {
                                                 onClick={() => goToStep(i)}
                                                 disabled={i > active}
                                                 className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-colors duration-300 ${isReached
-                                                    ? "bg-[#C8102E] border-[#C8102E] text-white cursor-pointer"
+                                                    ? "bg-[#B80A26] border-[#B80A26] text-white cursor-pointer"
                                                     : "border-gray-300 text-gray-700 bg-white cursor-not-allowed"
                                                     }`}
                                             >
                                                 {i + 1}
                                             </button>
-                                            <span className={`text-xs whitespace-nowrap ${i === active ? "text-[#C8102E] font-semibold" : "text-gray-700"
+                                            <span className={`text-xs whitespace-nowrap ${i === active ? "text-[#B80A26] font-semibold" : "text-gray-700"
                                                 }`}>
                                                 {label}
                                             </span>
                                         </div>
                                         {i < steps.length - 1 && (
                                             <span
-                                                className={`flex-1 h-px mx-2 mb-5 transition-colors duration-300 ${i < active ? "bg-[#C8102E]" : "bg-gray-300"
+                                                className={`flex-1 h-px mx-2 mb-5 transition-colors duration-300 ${i < active ? "bg-[#B80A26]" : "bg-gray-300"
                                                     }`}
                                             />
                                         )}
@@ -297,14 +297,14 @@ const NominatePage: NextPage = () => {
                                 <button
                                     type="button"
                                     onClick={() => router.back()}
-                                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#C8102E] transition-colors mb-6"
+                                    className="inline-flex items-center gap-2 text-gray-600 hover:text-[#B80A26] transition-colors mb-6"
                                 >
                                     ← BACK TO AWARDS
                                 </button>
 
                                 {submitted ? (
                                     <div className="py-10 text-center">
-                                        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#C8102E]/10 text-[#C8102E] text-2xl">
+                                        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#B80A26]/10 text-[#B80A26] text-2xl">
                                             ✓
                                         </div>
                                         <h2 className="text-xl font-bold text-gray-900 mb-2">Nomination Submitted</h2>
@@ -318,7 +318,7 @@ const NominatePage: NextPage = () => {
                                         {/* STEP 1 — NOMINATOR DETAILS */}
                                         {active === 0 && (
                                             <div>
-                                                <h2 className="text-[#C8102E] font-bold text-base mb-4">1. NOMINATOR DETAILS</h2>
+                                                <h2 className="text-[#B80A26] font-bold text-base mb-4">1. NOMINATOR DETAILS</h2>
                                                 <div className="grid md:grid-cols-2 gap-5">
                                                     <Field label="Name of Nominator / Organization" required className="md:col-span-2">
                                                         <TextInput
@@ -378,7 +378,7 @@ const NominatePage: NextPage = () => {
                                         {/* STEP 2 — NOMINEE DETAILS */}
                                         {active === 1 && (
                                             <div>
-                                                <h2 className="text-[#C8102E] font-bold text-base mb-4">2. NOMINEE DETAILS</h2>
+                                                <h2 className="text-[#B80A26] font-bold text-base mb-4">2. NOMINEE DETAILS</h2>
                                                 <div className="grid md:grid-cols-2 gap-5">
                                                     <Field label="Name of Nominee (Organization / Individual)" required className="md:col-span-2">
                                                         <TextInput
@@ -391,7 +391,7 @@ const NominatePage: NextPage = () => {
 
                                                     <div className="md:col-span-2 flex items-center gap-6 text-sm text-gray-700">
                                                         <span className="font-medium">
-                                                            Type of Nominee <span className="text-[#C8102E]">*</span>
+                                                            Type of Nominee <span className="text-[#B80A26]">*</span>
                                                         </span>
                                                         <label className="flex items-center gap-2">
                                                             <input
@@ -400,7 +400,7 @@ const NominatePage: NextPage = () => {
                                                                 value="Organization"
                                                                 checked={formData.nomineeType === "Organization"}
                                                                 onChange={handleChange}
-                                                                className="accent-[#C8102E]"
+                                                                className="accent-[#B80A26]"
                                                             />
                                                             Organization
                                                         </label>
@@ -411,7 +411,7 @@ const NominatePage: NextPage = () => {
                                                                 value="Individual"
                                                                 checked={formData.nomineeType === "Individual"}
                                                                 onChange={handleChange}
-                                                                className="accent-[#C8102E]"
+                                                                className="accent-[#B80A26]"
                                                             />
                                                             Individual
                                                         </label>
@@ -492,7 +492,7 @@ const NominatePage: NextPage = () => {
                                         {/* STEP 3 — CATEGORY SELECTION */}
                                         {active === 2 && (
                                             <div>
-                                                <h2 className="text-[#C8102E] font-bold text-base mb-4">3. CATEGORY SELECTION</h2>
+                                                <h2 className="text-[#B80A26] font-bold text-base mb-4">3. CATEGORY SELECTION</h2>
                                                 <Field label="Select Award Category" required>
                                                     <Select
                                                         name="category"
@@ -505,14 +505,14 @@ const NominatePage: NextPage = () => {
 
                                                 <div className="flex items-center justify-between gap-4 mt-5 rounded-lg border border-gray-200 bg-gray-50 p-4">
                                                     <div className="flex items-center gap-3">
-                                                        <span className="text-[#C8102E] text-xl">🏆</span>
+                                                        <span className="text-[#B80A26] text-xl">🏆</span>
                                                         <p className="text-gray-700 text-sm">
                                                             Not sure which category to choose?
                                                         </p>
                                                     </div>
                                                     <button
                                                         type="button"
-                                                        className="text-xs font-semibold text-[#C8102E] border border-[#C8102E]/50 rounded-md px-3 py-2 hover:bg-[#C8102E]/10 transition-colors whitespace-nowrap"
+                                                        className="text-xs font-semibold text-[#B80A26] border border-[#B80A26]/50 rounded-md px-3 py-2 hover:bg-[#B80A26]/10 transition-colors whitespace-nowrap"
                                                     >
                                                         VIEW CATEGORIES & GUIDELINES ⟶
                                                     </button>
@@ -523,7 +523,7 @@ const NominatePage: NextPage = () => {
                                         {/* STEP 4 — SUPPORTING DETAILS */}
                                         {active === 3 && (
                                             <div>
-                                                <h2 className="text-[#C8102E] font-bold text-base mb-4">4. SUPPORTING DETAILS</h2>
+                                                <h2 className="text-[#B80A26] font-bold text-base mb-4">4. SUPPORTING DETAILS</h2>
                                                 <div className="grid gap-5">
                                                     <Field label="Key Achievements / Notable Contributions">
                                                         <TextArea
@@ -558,7 +558,7 @@ const NominatePage: NextPage = () => {
                                         {/* STEP 5 — REVIEW & SUBMIT */}
                                         {active === 4 && (
                                             <div>
-                                                <h2 className="text-[#C8102E] font-bold text-base mb-4">5. REVIEW & SUBMIT</h2>
+                                                <h2 className="text-[#B80A26] font-bold text-base mb-4">5. REVIEW & SUBMIT</h2>
                                                 <p className="text-gray-500 text-sm mb-6">
                                                     Please check everything below before submitting. You can jump back
                                                     to any earlier step using the numbers above.
@@ -610,12 +610,12 @@ const NominatePage: NextPage = () => {
                                                         type="checkbox"
                                                         checked={consent}
                                                         onChange={(e) => setConsent(e.target.checked)}
-                                                        className="mt-1 accent-[#C8102E]"
+                                                        className="mt-1 accent-[#B80A26]"
                                                     />
                                                     <span>
                                                         I confirm the above details are accurate and I agree to the{" "}
-                                                        <a className="text-[#C8102E] underline">terms & conditions</a> and{" "}
-                                                        <a className="text-[#C8102E] underline">privacy policy</a>.
+                                                        <a className="text-[#B80A26] underline">terms & conditions</a> and{" "}
+                                                        <a className="text-[#B80A26] underline">privacy policy</a>.
                                                     </span>
                                                 </label>
                                             </div>
@@ -642,7 +642,7 @@ const NominatePage: NextPage = () => {
                                             {active === steps.length - 1 ? (
                                                 <button
                                                     type="submit"
-                                                    className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#C8102E]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                                    className="inline-flex items-center gap-2 bg-[#B80A26] hover:bg-[#B80A26]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                                 >
                                                     SUBMIT
                                                 </button>
@@ -650,7 +650,7 @@ const NominatePage: NextPage = () => {
                                                 <button
                                                     type="button"
                                                     onClick={handleNext}
-                                                    className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#C8102E]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                                    className="inline-flex items-center gap-2 bg-[#B80A26] hover:bg-[#B80A26]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                                 >
                                                     SAVE & CONTINUE →
                                                 </button>
@@ -663,14 +663,14 @@ const NominatePage: NextPage = () => {
                             {/* SIDEBAR */}
                             <aside className="flex flex-col gap-6">
                                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                                    <h3 className="text-[#C8102E] font-bold text-base mb-3">ABOUT GMEA AWARDS</h3>
+                                    <h3 className="text-[#B80A26] font-bold text-base mb-3">ABOUT GMEA AWARDS</h3>
                                     <p className="text-gray-700 text-sm mb-3">
                                         The Global Metrology Excellence Awards (GMEA) honor outstanding achievements,
                                         innovation, and leadership in the field of metrology, measurement, inspection
                                         and quality assurance.
                                     </p>
                                     <Link href={"/awards"}>
-                                        <button className="text-sm font-semibold text-[#C8102E] hover:underline">
+                                        <button className="text-sm font-semibold text-[#B80A26] hover:underline">
                                             ABOUT THE AWARDS →
                                         </button>
                                     </Link>
@@ -678,33 +678,33 @@ const NominatePage: NextPage = () => {
                                 </div>
 
                                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                                    <h3 className="text-[#C8102E] font-bold text-base mb-3">WHY NOMINATE?</h3>
+                                    <h3 className="text-[#B80A26] font-bold text-base mb-3">WHY NOMINATE?</h3>
                                     <ul className="space-y-2 text-gray-700">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#C8102E]">✓</span>
+                                            <span className="text-[#B80A26]">✓</span>
                                             <span>Gain global recognition</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#C8102E]">✓</span>
+                                            <span className="text-[#B80A26]">✓</span>
                                             <span>Enhance brand reputation</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#C8102E]">✓</span>
+                                            <span className="text-[#B80A26]">✓</span>
                                             <span>Showcase innovation & excellence</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#C8102E]">✓</span>
+                                            <span className="text-[#B80A26]">✓</span>
                                             <span>Benchmark against industry leaders</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#C8102E]">✓</span>
+                                            <span className="text-[#B80A26]">✓</span>
                                             <span>Expand business opportunities</span>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                                    <h3 className="text-[#C8102E] font-bold text-base mb-3">📅 IMPORTANT DATES</h3>
+                                    <h3 className="text-[#B80A26] font-bold text-base mb-3">📅 IMPORTANT DATES</h3>
                                     <div className="space-y-3">
                                         <div>
                                             <p className="text-gray-500 text-xs">Nominations Open</p>
@@ -720,13 +720,13 @@ const NominatePage: NextPage = () => {
                                         </div>
                                         <div className="border-t border-gray-100 pt-3">
                                             <p className="text-gray-500 text-xs">Awards Ceremony</p>
-                                            <p className="text-[#C8102E] font-bold text-sm">23 April 2027</p>
+                                            <p className="text-[#B80A26] font-bold text-sm">23 April 2027</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                                    <h3 className="text-[#C8102E] font-bold text-base mb-3">🎧 NEED HELP?</h3>
+                                    <h3 className="text-[#B80A26] font-bold text-base mb-3">🎧 NEED HELP?</h3>
                                     <p className="text-gray-700 text-sm mb-3">
                                         Our team is here to assist you with your nomination.
                                     </p>

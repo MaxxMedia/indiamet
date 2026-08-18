@@ -22,7 +22,7 @@ export default function NewsletterSection() {
             </p>
 
             <a href="/newsletter" className="inline-block pt-3 sm:pt-4">
-              <button className="rounded-full bg-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-[15px] font-semibold text-[#171A1B] transition hover:bg-[#C8102E] hover:text-white">
+              <button className="rounded-full bg-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-[15px] font-semibold text-[#171A1B] transition hover:bg-[#B80A26] hover:text-white">
                 Sign up Today
               </button>
             </a>

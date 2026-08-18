@@ -8,7 +8,7 @@ export default function DiscoverSection() {
         <div className="grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-14">
             <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[0.85] tracking-tight">
-              Discover <span className="text-[#C8102E]">INDIAMET</span>
+              Discover <span className="text-[#B80A26]">INDIAMET</span>
             </h2>
 
             <div className="space-y-6 mt-8 max-w-3xl">
@@ -21,7 +21,7 @@ export default function DiscoverSection() {
             </div>
 
             <a href="/post-show-report" className="inline-block mt-10">
-              <button className="rounded-full bg-white text-[#C8102E] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#C8102E] hover:text-white transition-colors">
+              <button className="rounded-full bg-white text-[#B80A26] px-8 lg:px-10 py-3 lg:py-4 font-semibold hover:bg-[#B80A26] hover:text-white transition-colors">
                 Download Brochure
               </button>
             </a>

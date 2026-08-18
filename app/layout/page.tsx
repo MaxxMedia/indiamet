@@ -176,7 +176,7 @@ export default function PublicFloorPlanPage() {
     return (
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-16 h-16 text-[#C8102E] animate-spin mx-auto mb-4" />
+          <Loader2 className="w-16 h-16 text-[#B80A26] animate-spin mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-gray-700">Loading Floor Plan...</h2>
           <p className="text-gray-500 mt-2">Please wait while we load the exhibition layout</p>
         </div>
@@ -200,7 +200,7 @@ export default function PublicFloorPlanPage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={fetchFloorPlan}
-              className="bg-[#C8102E] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md"
+              className="bg-[#B80A26] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md"
             >
               Try Again
             </motion.button>
@@ -315,7 +315,7 @@ export default function PublicFloorPlanPage() {
               Our floor plan ensures easy navigation and optimal exposure for all participants.
             </p>
             <p>
-              <strong className="text-[#C8102E]">Pleae Note:</strong>
+              <strong className="text-[#B80A26]">Pleae Note:</strong>
             </p>
             <ul className="list-disc pl-6 space-y-2">
               
@@ -344,7 +344,7 @@ on the tariff rate and not on the discounted rate.</li>
         >
           <div className="flex items-start gap-4">
             <div className="bg-blue-100 p-3 rounded-full">
-              <svg className="w-6 h-6 text-[#C8102E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#B80A26]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -352,7 +352,7 @@ on the tariff rate and not on the discounted rate.</li>
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Need Assistance?</h4>
               <p className="text-gray-600">
                 If you need help locating your booth or have questions about the layout, 
-                please contact our exhibition support team at <a href="mailto:info@INDIAMET.in" className="text-[#C8102E] hover:underline">info@INDIAMET.in</a>
+                please contact our exhibition support team at <a href="mailto:info@INDIAMET.in" className="text-[#B80A26] hover:underline">info@INDIAMET.in</a>
               </p>
             </div>
           </div>

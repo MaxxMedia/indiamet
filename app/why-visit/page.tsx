@@ -104,12 +104,12 @@ export default function WhyVisit() {
                 className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-3 sm:gap-6 text-white"
               >
                 <div className="flex items-center gap-2">
-                  <svg stroke="#c8102e" fill="#c8102e" stroke-width="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-blue-800 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path></svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-blue-800 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path></svg>
                   <span className="text-sm sm:text-lg font-medium">22 - 24 April 2027</span>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <svg stroke="#c8102e" fill="#c8102e" stroke-width="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-blue-800 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path></svg>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="size-5 shrink-0 fill-blue-800 " height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path></svg>
                   <span className="text-sm sm:text-lg font-medium">Auto Cluster Exhibition Centre, Pune, India</span>
                 </div>
               </motion.div>
@@ -146,7 +146,7 @@ export default function WhyVisit() {
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#C8102E] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
+                  className="bg-[#B80A26] hover:bg-blue-800 text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-medium transition-all duration-300 w-full sm:w-auto"
                 >
                   Contact Us
                 </motion.button>
@@ -180,7 +180,7 @@ export default function WhyVisit() {
                     }}
                     className="p-4 sm:p-6 rounded-xl transition-all duration-300 cursor-pointer"
                   >
-                    <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#C8102E] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
+                    <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#B80A26] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
                       {stat.value}
                     </div>
                     <p className="text-sm sm:text-base lg:text-lg text-gray-800 mb-4 sm:mb-6">{stat.label}</p>
@@ -189,7 +189,7 @@ export default function WhyVisit() {
                       whileInView={{ width: "100%" }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8, delay: index * 0.1 }}
-                      className="h-px bg-[#C8102E]"
+                      className="h-px bg-[#B80A26]"
                     />
                   </motion.div>
                 ))}
@@ -228,7 +228,7 @@ export default function WhyVisit() {
                  <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-[#C8102E] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 mb-6 sm:mb-0 w-full sm:w-auto"
+                  className="bg-[#B80A26] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 mb-6 sm:mb-0 w-full sm:w-auto"
                 >
                   Explore the Exhibitor list
                 </motion.button>
@@ -405,7 +405,7 @@ export default function WhyVisit() {
                       }}
                       className="p-4 sm:p-6 rounded-xl transition-all duration-300 cursor-pointer"
                     >
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#C8102E] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#B80A26] mb-2 sm:mb-4 hover:text-blue-800 transition-colors duration-300">
                         {stat.value}
                       </div>
                       <p className="text-sm sm:text-base lg:text-lg text-gray-800 mb-4 sm:mb-6">{stat.label}</p>
@@ -414,7 +414,7 @@ export default function WhyVisit() {
                         whileInView={{ width: "100%" }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: index * 0.1 }}
-                        className="h-px bg-[#C8102E]"
+                        className="h-px bg-[#B80A26]"
                       />
                     </motion.div>
                   ))}
@@ -538,7 +538,7 @@ export default function WhyVisit() {
         <motion.button
           whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
           whileTap={{ scale: 0.95 }}
-          className="bg-[#C8102E] hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
+          className="bg-[#B80A26] hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
         >
           View Exhibitor List
         </motion.button>
@@ -642,7 +642,7 @@ export default function WhyVisit() {
                   <motion.button
                     whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(37, 99, 235, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-[#C8102E] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
+                    className="bg-[#B80A26] hover:bg-blue-800 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 w-full sm:w-auto"
                   >
                     Explore All the Event Sectors
                   </motion.button>
@@ -681,7 +681,7 @@ export default function WhyVisit() {
                   <motion.button
                     whileHover={{ scale: 1.1, backgroundColor: "#1d4ed8" }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#C8102E] text-white flex items-center justify-center transition-all duration-300"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#B80A26] text-white flex items-center justify-center transition-all duration-300"
                   >
                     →
                   </motion.button>
@@ -821,7 +821,7 @@ export default function WhyVisit() {
                     className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-8 transition-all duration-300 cursor-pointer"
                   >
                     <div className="flex items-center justify-between mb-4 sm:mb-6">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#C8102E] rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#B80A26] rounded-full flex items-center justify-center">
                         <span className="text-lg sm:text-xl lg:text-2xl">{card.icon}</span>
                       </div>
                       <motion.span
@@ -840,7 +840,7 @@ export default function WhyVisit() {
                       <motion.button
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="w-full bg-[#C8102E] hover:bg-blue-700 text-white py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
+                        className="w-full bg-[#B80A26] hover:bg-blue-700 text-white py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
                       >
                         {card.buttonText}
                       </motion.button>
