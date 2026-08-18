@@ -123,13 +123,13 @@ const BecomeDelegate = () => {
 
                       <div className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3">
                         <Link href={pkg.cardLink} className="flex-1 min-w-[120px]">
-                          <button className="w-full rounded-full bg-[#ED5A27] px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold text-white transition-all hover:bg-mainColor4">
+                          <button className="w-full rounded-full bg-[#B80A26] px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold text-white transition-all hover:bg-mainColor4">
                             Register
                           </button>
                         </Link>
 
                         {/* <Link href={pkg.invoiceLink} className="flex-1 min-w-[120px]">
-                          <button className="w-full rounded-full bg-[#ED5A27] px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold text-white transition-all hover:bg-mainColor4">
+                          <button className="w-full rounded-full bg-[#B80A26] px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold text-white transition-all hover:bg-mainColor4">
                             PAY BY INVOICE
                           </button>
                         </Link> */}

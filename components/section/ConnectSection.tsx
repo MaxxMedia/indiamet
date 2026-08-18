@@ -3,7 +3,7 @@ import SectionContainer from '@/components/UI/SectionContainer';
 
 export default function ConnectSection() {
   return (
-    <SectionContainer fullWidth bgColor="bg-[#011F3D]">
+    <SectionContainer fullWidth bgColor="bg-[#333839]">
       <section className="relative z-1 overflow-hidden text-white py-32">
         <div className="container">
           <div className="grid gap-16 lg:grid-cols-3 lg:gap-24">
