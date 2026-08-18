@@ -29,7 +29,7 @@ export default function Button({
     font-semibold
     text-white
     transition-all duration-300
-    bg-[#1da428]
+    bg-[#8b1a3a]
     hover:bg-[#0074D9]
     disabled:opacity-50 disabled:cursor-not-allowed
     ${fullWidth ? 'w-full' : ''}

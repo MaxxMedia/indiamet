@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function UpdatedShortlyPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#001f3d] to-[#001f3d] px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1a1f4e] to-[#1a1f4e] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function UpdatedShortlyPage() {
         <motion.div
           animate={{ rotate: [0, 10, -10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#001f3d] flex items-center justify-center text-white text-2xl font-bold"
+          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#1a1f4e] flex items-center justify-center text-white text-2xl font-bold"
         >
           ⏳
         </motion.div>
@@ -35,7 +35,7 @@ export default function UpdatedShortlyPage() {
         {/* CTA */}
         <Link
           href="/"
-          className="inline-block bg-[#1da428] hover:bg-[#1da428] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
+          className="inline-block bg-[#8b1a3a] hover:bg-[#8b1a3a] text-white text-sm font-semibold px-6 py-3 rounded-lg transition-all active:scale-95"
         >
           Back to Home
         </Link>

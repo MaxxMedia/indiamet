@@ -229,7 +229,7 @@ export default async function SectorPage({ params }: PageProps) {
 
             <div className="mt-12 text-center">
               <Link href="/exhibiting-enquiry">
-                <button className="px-8 py-4 bg-[#1da428] text-white rounded-full">
+                <button className="px-8 py-4 bg-[#8b1a3a] text-white rounded-full">
                   Enquire to Exhibit
                 </button>
               </Link>

@@ -41,7 +41,7 @@ export default async function PartnerDetailPage({ params }: PageProps) {
 
       {/* ROLE */}
       <SectionContainer>
-        <h2 className="mt-10 text-2xl font-semibold text-[#001f3d]">
+        <h2 className="mt-10 text-2xl font-semibold text-[#1a1f4e]">
           {partner.role}
         </h2>
       </SectionContainer>
