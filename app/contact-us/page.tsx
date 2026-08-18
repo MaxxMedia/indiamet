@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <main className="bg-white font-parabolica">
       {/* HERO SECTION */}
-      <section className="bg-[#FEEFDF] pt-40 pb-20">
+      <section className="bg-[#FEF9F2] pt-40 pb-20">
         <SectionContainer>
           <h1 className="text-5xl sm:text-6xl font-bold text-black">
             Contact Us

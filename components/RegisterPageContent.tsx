@@ -36,7 +36,7 @@ export default function RegisterPageContent() {
         <main className="bg-white font-parabolica">
             <section
                 className="
-                    relative bg-[#FEEFDF] overflow-hidden
+                    relative bg-[#FEF9F2] overflow-hidden
                     pt-[100px] xs:pt-[110px] sm:pt-[120px] md:pt-[100px] lg:pt-0
                     min-h-[45vh] xs:min-h-[48vh] sm:min-h-[52vh] md:min-h-[56vh] lg:min-h-[60vh] xl:min-h-[70vh]
                 "

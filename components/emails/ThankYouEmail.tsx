@@ -112,7 +112,7 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
 }
 
 const main = {
-  backgroundColor: '#FEEFDF',
+  backgroundColor: '#FEF9F2',
   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
 };
 
