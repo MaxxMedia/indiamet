@@ -146,7 +146,7 @@ const SponsorPage: NextPage = () => {
                     </div>
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#142674d]/95 via-[#142674d]/80 to-[#142674d]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#001f3d]/95 via-[#001f3d]/80 to-[#001f3d]/40" />
 
                     {/* Content */}
                     <div className="relative z-10 flex items-center min-h-[60vh] lg:min-h-[70vh] pt-[130px] sm:pt-[140px] lg:pt-[100px]">
@@ -157,7 +157,7 @@ const SponsorPage: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[17px] tracking-widest text-[#142674] border border-[#142674]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#1da428] border border-[#1da428]/40 rounded-full px-3 py-1 mb-4">
                                         GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
                                     </span>
                                 </motion.div>
@@ -170,7 +170,7 @@ const SponsorPage: NextPage = () => {
                                 >
                                     AWARD SPONSOR
                                     <br />
-                                    <span className="text-[#142674]">PARTNERSHIP FORM</span>
+                                    <span className="text-[#1da428]">PARTNERSHIP FORM</span>
                                 </motion.h1>
 
                                 <motion.p
@@ -193,11 +193,11 @@ const SponsorPage: NextPage = () => {
                 <section className="py-4 bg-gray-50 border-b border-gray-100">
                     <SectionContainer>
                         <div className="flex items-center gap-2 text-sm text-black">
-                            <Link href="/" className="hover:text-[#142674] transition-colors">Home</Link>
+                            <Link href="/" className="hover:text-[#1da428] transition-colors">Home</Link>
                             <span className="text-black">/</span>
-                            <Link href="/awards" className="hover:text-[#142674] transition-colors">GMEA Awards</Link>
+                            <Link href="/awards" className="hover:text-[#1da428] transition-colors">GMEA Awards</Link>
                             <span className="text-black">/</span>
-                            <span className="text-[#142674] font-medium">Sponsor Partnership</span>
+                            <span className="text-[#1da428] font-medium">Sponsor Partnership</span>
                         </div>
                     </SectionContainer>
                 </section>
@@ -217,12 +217,12 @@ const SponsorPage: NextPage = () => {
                                 {/* Back Button */}
                                 <button
                                     onClick={() => router.back()}
-                                    className="inline-flex items-center gap-2 text-black hover:text-[#142674] transition-colors mb-6"
+                                    className="inline-flex items-center gap-2 text-black hover:text-[#1da428] transition-colors mb-6"
                                 >
                                     ← BACK
                                 </button>
 
-                                <h2 className="text-[#142674] font-bold text-lg mb-1">SPONSOR INFORMATION</h2>
+                                <h2 className="text-[#1da428] font-bold text-lg mb-1">SPONSOR INFORMATION</h2>
                                 <p className="text-black text-sm mb-6">
                                     Please complete the form below and our team will get in touch with you.
                                 </p>
@@ -267,9 +267,9 @@ const SponsorPage: NextPage = () => {
                                     </Field>
                                 </div>
 
-                                <h2 className="text-[#142674] font-bold text-lg mt-8 mb-4">SPONSORSHIP INTEREST</h2>
+                                <h2 className="text-[#1da428] font-bold text-lg mt-8 mb-4">SPONSORSHIP INTEREST</h2>
                                 <p className="text-black text-sm font-medium mb-3">
-                                    Sponsorship Package Interested In <span className="text-[#142674]">*</span>
+                                    Sponsorship Package Interested In <span className="text-[#1da428]">*</span>
                                 </p>
                                 <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
                                     {packages.map((p, i) => (
@@ -286,7 +286,7 @@ const SponsorPage: NextPage = () => {
                                 </div>
 
                                 <label className="flex items-start gap-2 mt-4 text-sm text-black cursor-pointer">
-                                    <input type="radio" name="package" className="mt-1 accent-[#142674]" />
+                                    <input type="radio" name="package" className="mt-1 accent-[#1da428]" />
                                     <span>
                                         Yes, I am interested in a custom package
                                         <br />
@@ -301,16 +301,16 @@ const SponsorPage: NextPage = () => {
                                 </div>
 
                                 <label className="flex items-center gap-2 mt-6 text-sm text-black">
-                                    <input type="checkbox" className="accent-[#142674]" />
+                                    <input type="checkbox" className="accent-[#1da428]" />
                                     <span>
-                                        I agree to the <a className="text-[#142674] underline">terms & conditions</a> and{" "}
-                                        <a className="text-[#142674] underline">privacy policy</a>.
+                                        I agree to the <a className="text-[#1da428] underline">terms & conditions</a> and{" "}
+                                        <a className="text-[#1da428] underline">privacy policy</a>.
                                     </span>
                                 </label>
 
                                 <button
                                     type="submit"
-                                    className="mt-6 inline-flex items-center gap-2 bg-[#142674] hover:bg-[#142674]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                    className="mt-6 inline-flex items-center gap-2 bg-[#1da428] hover:bg-[#1da428]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                 >
                                     SUBMIT ENQUIRY →
                                 </button>
@@ -341,7 +341,7 @@ const SponsorPage: NextPage = () => {
                                         Choose a package that aligns with your marketing and branding goals.
                                     </p>
                                     <Link href={"/awards"}>
-                                        <button className="text-sm font-semibold text-[#142674] border border-[#142674]/50 rounded-md px-4 py-2 hover:bg-[#142674]/10 transition-colors">
+                                        <button className="text-sm font-semibold text-[#1da428] border border-[#1da428]/50 rounded-md px-4 py-2 hover:bg-[#1da428]/10 transition-colors">
                                             VIEW SPONSORSHIP BENEFITS →
                                         </button>
                                     </Link>
@@ -420,17 +420,17 @@ const SponsorPage: NextPage = () => {
                                 </button>
 
                                 <div className="p-6 md:p-8">
-                                    <span className="inline-block text-xs font-semibold tracking-widest text-[#142674] border border-[#142674]/40 rounded-full px-3 py-1 mb-3">
+                                    <span className="inline-block text-xs font-semibold tracking-widest text-[#1da428] border border-[#1da428]/40 rounded-full px-3 py-1 mb-3">
                                         {selectedPackage.title}
                                     </span>
                                     <h3 className="text-2xl font-bold text-black">{selectedPackage.price}</h3>
                                     <p className="text-black text-sm mt-1 mb-5">{selectedPackage.note}</p>
 
-                                    <h4 className="text-[#142674] font-bold text-sm mb-3">WHAT YOU GET</h4>
+                                    <h4 className="text-[#1da428] font-bold text-sm mb-3">WHAT YOU GET</h4>
                                     <ul className="space-y-2 mb-6">
                                         {selectedPackage.benefits.map((b) => (
                                             <li key={b} className="flex items-start gap-2 text-sm text-black">
-                                                <span className="text-[#142674] mt-0.5">✓</span>
+                                                <span className="text-[#1da428] mt-0.5">✓</span>
                                                 <span>{b}</span>
                                             </li>
                                         ))}
@@ -438,7 +438,7 @@ const SponsorPage: NextPage = () => {
 
                                     <button
                                         onClick={() => setIsModalOpen(false)}
-                                        className="w-full inline-flex items-center justify-center gap-2 bg-[#142674] hover:bg-[#142674]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                        className="w-full inline-flex items-center justify-center gap-2 bg-[#1da428] hover:bg-[#1da428]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                     >
                                         CONTINUE WITH {selectedPackage.title}
                                     </button>

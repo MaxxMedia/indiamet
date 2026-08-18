@@ -30,35 +30,35 @@ export default function TermsOfUsePage() {
               {/* Updated Content */}
               <div className="space-y-8">
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Acceptance of Terms</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Acceptance of Terms</h2>
                   <p className="text-gray-700">
                     The INDIAMET website ("Website") is operated by the INDIAMET Organising Team ("INDIAMET", "we", "our", "us"). The Website is offered to you subject to your acceptance, without modification, of these Terms of Use. By accessing or using this Website, you agree to be bound by all terms, conditions, and notices contained herein.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Modification of Terms</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Modification of Terms</h2>
                   <p className="text-gray-700">
                     INDIAMET reserves the right to change, modify, or update these Terms of Use at any time without prior notice. Continued use of the Website following any changes constitutes acceptance of those changes.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Links to Third-Party Websites</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Links to Third-Party Websites</h2>
                   <p className="text-gray-700">
                     The Website may contain links to third-party websites ("Linked Sites") provided for convenience only. INDIAMET does not control, endorse, or assume responsibility for the content, accuracy, or policies of any Linked Site. Accessing such websites is done at your own risk.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Prohibited and Unlawful Use</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Prohibited and Unlawful Use</h2>
                   <p className="text-gray-700">
                     As a condition of using this Website, you agree not to use it for any unlawful purpose or in any way that may damage, disable, overburden, or impair the Website or interfere with other users' access. You may not attempt to gain unauthorised access to any part of the Website or to any systems or networks connected to it.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Materials Submitted to INDIAMET</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Materials Submitted to INDIAMET</h2>
                   <div className="space-y-3 text-gray-700">
                     <p>INDIAMET does not claim ownership of any materials, information, or content you submit to the Website, including enquiries, feedback, or registration details ("Submissions"). However, by submitting content, you grant INDIAMET a non-exclusive, royalty-free right to use, reproduce, display, and distribute such Submissions for exhibition-related, promotional, or operational purposes.</p>
                     <p>No compensation shall be payable for the use of such Submissions. INDIAMET reserves the right to remove any Submission at its sole discretion.</p>
@@ -67,7 +67,7 @@ export default function TermsOfUsePage() {
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Disclaimer of Liability</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Disclaimer of Liability</h2>
                   <div className="space-y-3 text-gray-700">
                     <p>The information on this Website is provided for general information purposes only and may contain inaccuracies or typographical errors. INDIAMET makes no warranties regarding the accuracy, completeness, or suitability of the information, products, or services provided through the Website.</p>
                     <p>All content is provided on an "as is" and "as available" basis, without any warranties, express or implied. INDIAMET shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to the use or inability to use the Website.</p>
@@ -75,28 +75,28 @@ export default function TermsOfUsePage() {
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Professional Advice</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Professional Advice</h2>
                   <p className="text-gray-700">
                     Any information provided through the Website should not be considered professional, legal, medical, or financial advice. Users are encouraged to consult appropriate professionals where necessary.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Termination of Access</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Termination of Access</h2>
                   <p className="text-gray-700">
                     INDIAMET reserves the right to suspend or terminate access to the Website or any part thereof at any time, without notice, for any reason.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Governing Law and Jurisdiction</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Governing Law and Jurisdiction</h2>
                   <p className="text-gray-700">
                     These Terms of Use shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or related to the use of this Website shall be subject to the exclusive jurisdiction of the courts of India.
                   </p>
                 </div>
 
                 <div className="border-b pb-6">
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Copyright and Intellectual Property</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Copyright and Intellectual Property</h2>
                   <div className="space-y-3 text-gray-700">
                     <p>All content on this Website, including text, images, graphics, logos, and design elements, is protected by applicable copyright and intellectual property laws.</p>
                     <p className="font-semibold">© INDIAMET. All rights reserved.</p>
@@ -105,14 +105,14 @@ export default function TermsOfUsePage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#142674] mb-3">Contact Information</h2>
+                  <h2 className="text-2xl font-bold text-[#1da428] mb-3">Contact Information</h2>
                   <p className="text-gray-700">
                     For any queries regarding these Terms of Use, please contact:
                   </p>
                   <div className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
                     <div className="flex items-center gap-3">
                       <div className="flex-shrink-0">
-                        <svg className="w-5 h-5 text-[#142674]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="w-5 h-5 text-[#1da428]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
@@ -146,7 +146,7 @@ export default function TermsOfUsePage() {
             <div className="mt-12 text-center">
               <div className="inline-flex items-center gap-4 text-gray-600">
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[#142674]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-[#1da428]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                   </svg>
                   <span>For urgent matters, please contact during business hours</span>
