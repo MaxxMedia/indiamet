@@ -85,7 +85,7 @@ export default function WhyChooseSection() {
   return (
     <section ref={sectionRef} className="bg-[#F4F4F4] overflow-hidden">
       {/* Blue Header Section - Full width background */}
-      <div className="bg-[#191C1C] py-24">
+      <div className="bg-[#171A1B] py-24">
         <SectionContainer>
           <h2
             ref={titleRef}
@@ -93,7 +93,7 @@ export default function WhyChooseSection() {
                        leading-[0.85] tracking-tight opacity-0"
           >
             Why choose{" "}
-            <span className="text-[#B80A26] font-parabolica">INDIAMET 2027</span>
+            <span className="text-[#C8102E] font-parabolica">INDIAMET 2027</span>
           </h2>
         </SectionContainer>
       </div>
@@ -114,7 +114,7 @@ export default function WhyChooseSection() {
                 >
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-3xl lg:text-4xl">{reason.icon}</span>
-                    <h3 className="text-3xl lg:text-4xl font-bold text-[#B80A26]">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-[#C8102E]">
                       {reason.number}
                     </h3>
                   </div>
