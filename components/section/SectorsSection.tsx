@@ -21,7 +21,7 @@ const SectorsSection = () => {
 
         <div className="flex lg:col-span-3 lg:justify-end">
           <Link href="/sectors">
-            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#1DA428] text-white transition hover:bg-mainColor4">
+            <button className="flex items-center gap-2 rounded-full px-10 py-3 text-[16px] font-semibold bg-[#ED5A27] text-white transition hover:bg-mainColor4">
               Explore All Our Event Sector
             </button>
           </Link>
