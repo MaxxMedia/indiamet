@@ -27,7 +27,7 @@ const StatsSection = () => {
             Taking place from 23–25 April 2027 at the Auto Cluster Exhibition Centre, Pune, India, INDIAMET 2027 provides a focused B2B platform to showcase the latest innovations in precision measurement, coordinate measuring machines (CMM), optical and vision inspection, machine vision, testing equipment, industrial software, automation, and smart metrology solutions to a highly qualified audience of manufacturers, OEMs, and industry decision-makers.
           </p>
           <Link href="/why-exhibit">
-            <button className="rounded-full bg-[#b80a26] px-10 py-4 text-white font-semibold text-base transition hover:bg-[#083E82]">
+            <button className="rounded-full bg-[#142674] px-10 py-4 text-white font-semibold text-base transition hover:bg-[#083E82]">
               Why Exhibit
             </button>
           </Link>
@@ -40,7 +40,7 @@ const StatsSection = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
       {stats.map((stat, index) => (
         <div key={index}>
-          <h3 className="text-[52px] font-bold text-[#b80a26] mb-2">
+          <h3 className="text-[52px] font-bold text-[#142674] mb-2">
             {stat.value}
           </h3>
 
