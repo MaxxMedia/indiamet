@@ -11,7 +11,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer id="footer" className="bg-[#1da428] text-white font-parabolica">
+    <footer id="footer" className="bg-[#1DA428] text-white font-parabolica">
       {/* TOP BRAND BAR */}
       <div className="bg-gradient-to-r from-[#001f3d] to-[#001f3d] py-4">
         <div className="mx-auto max-w-7xl px-4">
