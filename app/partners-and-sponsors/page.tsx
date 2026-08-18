@@ -76,7 +76,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
         </div>
       </motion.div>
 
-      <div className="flex grow flex-col justify-between bg-[#333839d] p-6 text-white lg:p-8">
+      <div className="flex grow flex-col justify-between bg-[#142674d] p-6 text-white lg:p-8">
         <div>
           <motion.h3
             whileHover={{ scale: 1.02 }}

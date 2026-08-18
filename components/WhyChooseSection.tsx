@@ -85,7 +85,7 @@ export default function WhyChooseSection() {
   return (
     <section ref={sectionRef} className="bg-[#F4F4F4] overflow-hidden">
       {/* Blue Header Section - Full width background */}
-      <div className="bg-[#333839d] py-24">
+      <div className="bg-[#142674d] py-24">
         <SectionContainer>
           <h2
             ref={titleRef}

@@ -185,7 +185,7 @@ const NominatePage: NextPage = () => {
                         />
                     </div>
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#333839d]/95 via-[#333839d]/80 to-[#333839d]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#142674d]/95 via-[#142674d]/80 to-[#142674d]/40" />
 
                     <div className="relative z-10 flex items-center min-h-[60vh] lg:min-h-[70vh] pt-[130px] sm:pt-[140px] lg:pt-[100px]">
                         <SectionContainer>
