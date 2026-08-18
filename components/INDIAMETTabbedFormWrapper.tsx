@@ -194,7 +194,7 @@ export default function INDIAMETTabbedFormWrapper({
                                 font-semibold text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm
                                 transition-all
                                 ${isActive
-                                    ? "bg-[#333839] text-white"
+                                    ? "bg-[#191C1C] text-white"
                                     : "bg-white text-[#1e2b52] hover:bg-slate-50"
                                 }
                             `}
@@ -207,7 +207,7 @@ export default function INDIAMETTabbedFormWrapper({
                             </span>
 
                             {isActive && (
-                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[7px] sm:-bottom-[12px] w-0 h-0 border-l-[7px] sm:border-l-[12px] border-r-[7px] sm:border-r-[12px] border-t-[7px] sm:border-t-[12px] border-l-transparent border-r-transparent border-t-[#333839]" />
+                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[7px] sm:-bottom-[12px] w-0 h-0 border-l-[7px] sm:border-l-[12px] border-r-[7px] sm:border-r-[12px] border-t-[7px] sm:border-t-[12px] border-l-transparent border-r-transparent border-t-[#191C1C]" />
                             )}
                         </button>
                     );

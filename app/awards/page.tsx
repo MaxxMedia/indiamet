@@ -318,7 +318,7 @@ const Awards: NextPage = () => {
 
                             <motion.div
                                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-                                className="relative h-80 lg:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#B80A26]/20 to-[#333839]/20 border-2 border-[#B80A26]/20 transition-all duration-300 flex items-center justify-center"
+                                className="relative h-80 lg:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#B80A26]/20 to-[#191C1C]/20 border-2 border-[#B80A26]/20 transition-all duration-300 flex items-center justify-center"
                             >
                                 <img src="https://media.istockphoto.com/id/1676141013/vector/trophy-gold-star-on-podium-with-ribbon-elements-and-glitter-light-effects-decorations-and.jpg?s=612x612&w=0&k=20&c=FRr9rp2D5tZmCMs51AkP4_-IN9cOUTinnYSghLHYuak=" alt="Trophy" className="w-full h-full object-cover" />
                             </motion.div>
@@ -516,7 +516,7 @@ const Awards: NextPage = () => {
                                     }}
                                     className="bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300"
                                 >
-                                    <div className="h-48 bg-gradient-to-br from-[#B80A26]/10 to-[#333839]/10 flex items-center justify-center">
+                                    <div className="h-48 bg-gradient-to-br from-[#B80A26]/10 to-[#191C1C]/10 flex items-center justify-center">
                                         <span className="text-6xl">👤</span>
                                     </div>
                                     <div className="p-4">
@@ -641,7 +641,7 @@ const Awards: NextPage = () => {
                                         }}
                                         className="flex-shrink-0 w-[220px] md:w-[260px] min-h-[180px] bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#B80A26] transition-all duration-300"
                                     >
-                                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#B80A26]/10 to-[#333839]/10 flex items-center justify-center">
+                                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#B80A26]/10 to-[#191C1C]/10 flex items-center justify-center">
                                             <span className="text-2xl font-bold text-[#B80A26]">
                                                 {sponsor.name.charAt(0)}
                                             </span>
@@ -718,7 +718,7 @@ const Awards: NextPage = () => {
                                         className="flex-shrink-0 w-[210px] md:w-[240px] min-h-[180px] flex flex-col items-center justify-center gap-3 bg-white p-6 rounded-xl border border-gray-200 hover:border-[#B80A26] transition-all duration-300"
                                     >
                                         {/* Icon */}
-                                        <div className="w-20 h-20 bg-gradient-to-br from-[#B80A26]/10 to-[#333839]/10 rounded-full flex items-center justify-center">
+                                        <div className="w-20 h-20 bg-gradient-to-br from-[#B80A26]/10 to-[#191C1C]/10 rounded-full flex items-center justify-center">
                                             <span className="text-3xl font-bold text-[#B80A26]">
                                                 {supporter.name.charAt(0)}
                                             </span>
