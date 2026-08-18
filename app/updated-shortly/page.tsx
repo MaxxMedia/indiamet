@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function UpdatedShortlyPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#474A59] to-[#474A59] px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#25272E] to-[#25272E] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function UpdatedShortlyPage() {
         <motion.div
           animate={{ rotate: [0, 10, -10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#474A59] flex items-center justify-center text-white text-2xl font-bold"
+          className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#25272E] flex items-center justify-center text-white text-2xl font-bold"
         >
           ⏳
         </motion.div>
