@@ -15,7 +15,7 @@ const SummitSection = () => {
       <div className="grid min-h-[600px] overflow-hidden rounded-2xl lg:grid-cols-2 shadow-xl">
         
         {/* Left Content */}
-        <div className="relative bg-[#25272E] p-8 lg:p-12 flex flex-col justify-center">
+        <div className="relative bg-[#011F3D] p-8 lg:p-12 flex flex-col justify-center">
           <div className="space-y-6 lg:space-y-8">
 
             <div>
