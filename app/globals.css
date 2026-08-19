@@ -100,7 +100,7 @@ body {
   height: 100vh !important;
   min-width: 100% !important;
   min-height: 100% !important;
-  transform: translate(-50%, -50%) scale(1.25) !important;
+  transform: translate(-70%, -70%) scale(1.25) !important;
   pointer-events: none !important;
   z-index: 0 !important;
 }
