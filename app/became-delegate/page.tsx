@@ -119,7 +119,7 @@ export default function DelegatesPackagesPage() {
                             >
                               <path
                                 d="M16.6667 5L7.50004 14.1667L3.33337 10"
-                                stroke="#003771"
+                                stroke="#B80A26"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
