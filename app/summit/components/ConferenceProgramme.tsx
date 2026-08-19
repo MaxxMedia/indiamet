@@ -524,8 +524,8 @@ const selectedDay = programData[activeDay];
               className={`px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300
                 ${
                   activeDay === index
-                    ? "bg-[#0B3B75] text-white"
-                    : "bg-[#1E63B5] text-white hover:opacity-90"
+                    ? "bg-[#8F071D] text-white"
+                    : "bg-[#B80A26] text-white hover:opacity-90"
                 }
               `}
             >
