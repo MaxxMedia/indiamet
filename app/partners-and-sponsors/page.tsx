@@ -161,7 +161,6 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({
     </motion.section>
   );
 };
-
 /* ===================== MAIN COMPONENT ===================== */
 
 const PartnersSponsorsPage: React.FC = () => {
