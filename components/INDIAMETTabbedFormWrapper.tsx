@@ -218,7 +218,7 @@ export default function INDIAMETTabbedFormWrapper({
                 <div className="flex-1 bg-white p-4 xs:p-5 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
                     {showHeader && (
                         <>
-                            <h2 className="text-lg sm:text-xl font-bold text-[#1e3a6e] mb-1">
+                            <h2 className="text-lg sm:text-xl font-bold text-[#B80A26] mb-1">
                                 {headerTitle || activeConfig.title}
                             </h2>
                             <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">

@@ -338,7 +338,7 @@ export function ConsentCheckbox({
                 checked={checked}
                 onChange={onChange}
                 required={required}
-                className="mt-0.5 h-4 w-4 accent-[#1e3a6e] cursor-pointer shrink-0"
+                className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0"
             />
             <label htmlFor={id} className="text-xs text-gray-600 leading-relaxed cursor-pointer">
                 {children}
@@ -533,7 +533,7 @@ export function SubmitButton({ loading, label, showArrow = true }: SubmitButtonP
             disabled={loading}
             className={`w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-lg font-semibold text-white transition-all text-sm ${loading
                 ? 'bg-blue-400 cursor-not-allowed'
-                : 'bg-[#1e3a6e] hover:bg-[#152d57] active:scale-[0.98]'
+                : 'bg-[#B80A26] hover:bg-[#152d57] active:scale-[0.98]'
                 }`}
         >
             {loading ? (
