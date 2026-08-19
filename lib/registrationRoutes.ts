@@ -43,7 +43,7 @@ export const REGISTRATION_HERO: Record<
             'Partner with INDIAMET 2027 and put your brand in front of 10,000+ professionals.',
     },
     brochure: {
-        title: 'Browse Through Your Event Brochure',
+        title: 'Download Event Brochure',
         subtitle: 'Almost there, your brochure is waiting for you to download',
     },
 };
