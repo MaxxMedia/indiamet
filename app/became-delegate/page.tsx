@@ -66,7 +66,7 @@ export default function DelegatesPackagesPage() {
   return (
     <main className="bg-white font-parabolica">
       {/* PAGE HEADER */}
-      <div className="bg-sky-80 pt-48 pb-10">
+      <div className="bg[#fef9f2] pt-48 pb-10">
         <SectionContainer>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black">
             Become a Delegate
@@ -101,7 +101,7 @@ export default function DelegatesPackagesPage() {
                   {delegatePackages.map((pkg) => (
                     <div
                       key={pkg.id}
-                      className="flex flex-col bg-sky-50 p-4 rounded-lg"
+                      className="flex flex-col bg[#fef9f2] p-4 rounded-lg"
                     >
                       <h3 className="text-xl font-semibold mb-2">{pkg.title}</h3>
                       
