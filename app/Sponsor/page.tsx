@@ -285,15 +285,7 @@ const SponsorPage: NextPage = () => {
                                     ))}
                                 </div>
 
-                                <label className="flex items-start gap-2 mt-4 text-sm text-black cursor-pointer">
-                                    <input type="radio" name="package" className="mt-1 accent-[#B80A26]" />
-                                    <span>
-                                        Yes, I am interested in a custom package
-                                        <br />
-                                        <span className="text-black text-xs">Please specify your requirements</span>
-                                    </span>
-                                </label>
-
+                               
                                 <div className="grid md:grid-cols-1 gap-5 mt-5">
                                     <Field label="How did you hear about GMEA Awards?" required>
                                         <Select placeholder="Select an option" options={["Email", "Social Media", "Referral", "Website", "Event"]} />
@@ -367,9 +359,9 @@ const SponsorPage: NextPage = () => {
                                     <p className="text-black text-sm mb-3">
                                         Our team is here to help you create the perfect partnership.
                                     </p>
-                                    <p className="text-sm text-black">📞 +91 80 4127 0101</p>
-                                    <p className="text-sm text-black">✉️ awards@indiamet.com</p>
-                                    <p className="text-sm text-black">🌐 www.indiamet.com/awards</p>
+                                    <p className="text-sm text-black">📞 +91 91483 19993</p>
+                                    <p className="text-sm text-black">✉️ awards@indiametexpo.com</p>
+                                    <p className="text-sm text-black">🌐 www.indiametexpo.com/awards</p>
                                 </SideCard>
                             </aside>
                         </div>

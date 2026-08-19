@@ -730,9 +730,9 @@ const NominatePage: NextPage = () => {
                                     <p className="text-gray-700 text-sm mb-3">
                                         Our team is here to assist you with your nomination.
                                     </p>
-                                    <p className="text-sm text-gray-700">📞 +91 80 4127 0101</p>
-                                    <p className="text-sm text-gray-700">✉️ awards@indiamet.com</p>
-                                    <p className="text-sm text-gray-700">🌐 www.indiamet.com/awards</p>
+                                    <p className="text-sm text-black">📞 +91 91483 19993</p>
+                                    <p className="text-sm text-black">✉️ awards@indiametexpo.com</p>
+                                    <p className="text-sm text-black">🌐 www.indiametexpo.com/awards</p>
                                 </div>
                             </aside>
                         </div>

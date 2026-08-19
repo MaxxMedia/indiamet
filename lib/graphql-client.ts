@@ -151,7 +151,7 @@ function mapFormInputToCreateLead(projectId: string, input: Record<string, any>)
     const utmUrl =
         input.landingPage ||
         input.utmUrl ||
-        (typeof window !== 'undefined' ? window.location.href : 'https://INDIAMET.in');
+        (typeof window !== 'undefined' ? window.location.href : 'https://indiametexpo.com');
 
     return {
         name,

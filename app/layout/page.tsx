@@ -352,7 +352,7 @@ on the tariff rate and not on the discounted rate.</li>
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Need Assistance?</h4>
               <p className="text-gray-600">
                 If you need help locating your booth or have questions about the layout, 
-                please contact our exhibition support team at <a href="mailto:info@INDIAMET.in" className="text-[#B80A26] hover:underline">info@INDIAMET.in</a>
+                please contact our exhibition support team at <a href="mailto:info@indiametexpo.com" className="text-[#B80A26] hover:underline">info@indiametexpo.com</a>
               </p>
             </div>
           </div>

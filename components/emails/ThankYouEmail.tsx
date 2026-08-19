@@ -66,17 +66,17 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
               
               <ul style={list}>
                 <li style={listItem}>
-                  <a href="https://INDIAMET.in/event-brochure" style={link}>
+                  <a href="https://indiametexpo.com/event-brochure" style={link}>
                     Download our Event Brochure
                   </a>
                 </li>
                 <li style={listItem}>
-                  <a href="https://INDIAMET.in/post-show-report" style={link}>
+                  <a href="https://indiametexpo.com/post-show-report" style={link}>
                     View our Post-Show Report
                   </a>
                 </li>
                 <li style={listItem}>
-                  <a href="https://INDIAMET.in/sectors" style={link}>
+                  <a href="https://indiametexpo.com/sectors" style={link}>
                     Explore Event Sectors
                   </a>
                 </li>
@@ -84,7 +84,7 @@ export default function ThankYouEmail({ name, formType }: ThankYouEmailProps) {
             </Section>
 
             <Button
-              href="https://INDIAMET.in"
+              href="https://indiametexpo.com"
               style={button}
             >
               Visit Our Website

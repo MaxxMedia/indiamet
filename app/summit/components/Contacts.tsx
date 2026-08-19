@@ -37,7 +37,7 @@ const Contacts = () => {
                 </div>
                 <div className="mt-4 md:mt-6 space-y-1 md:space-y-2">
                   <a 
-                    href="mailto:bhoomika@INDIAMET.in."
+                    href="mailto:bhoomika@indiametexpo.com."
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
                     summit@indiametexpo.com
