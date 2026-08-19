@@ -238,7 +238,7 @@ export default function INDIAMETTabbedFormWrapper({
                         className="absolute inset-0 w-full h-full object-cover"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#002b88]/95 via-[#0036a5]/85 to-[#0036a5]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#8F071D]/95 via-[#B80A26]/85 to-[#B80A26]/40" />
 
                     <div className="relative z-10 flex flex-col h-full p-8 xl:p-10">
                         <div className="mt-auto mb-auto max-w-sm">
