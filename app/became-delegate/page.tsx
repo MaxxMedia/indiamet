@@ -66,7 +66,7 @@ export default function DelegatesPackagesPage() {
   return (
     <main className="bg-white font-parabolica">
       {/* PAGE HEADER */}
-      <div className="bg-sky-50 pt-48 pb-10">
+      <div className="bg-sky-80 pt-48 pb-10">
         <SectionContainer>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black">
             Become a Delegate
