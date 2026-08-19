@@ -45,7 +45,7 @@ export default function WhyAttendSection() {
                             <figure className="image image-style-side image_resized mx-auto md:mx-0" style={{ width: '40px', maxWidth: '75px', margin: '0 auto' }}>
                               <img
                                 style={{ aspectRatio: '512/512' }}
-                                src={`https://regional-cdn.itegroupnews.com/${item.icon}`}
+                                src={`/images/${item.icon}`}
                                 alt={item.icon}
                                 width={512}
                                 height={512}

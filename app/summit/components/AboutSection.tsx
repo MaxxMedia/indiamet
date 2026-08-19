@@ -46,7 +46,7 @@ export default function AboutSection() {
                           style={{ width: "50%", maxWidth: "75px", margin: "0 auto" }}
                         >
                           <img
-                            src="https://regional-cdn.itegroupnews.com/microphone_lines_solid_full_ee6b12ccb8.png"
+                            src="/images/microphone_lines_solid_full_ee6b12ccb8.png"
                             alt="Microphone"
                             width={328}
                             height={328}
@@ -80,7 +80,7 @@ export default function AboutSection() {
                           style={{ width: "50%", maxWidth: "75px", margin: "0 auto" }}
                         >
                           <img
-                            src="https://regional-cdn.itegroupnews.com/chart_simple_solid_full_12aaff66c1.png"
+                            src="/images/chart_simple_solid_full_12aaff66c1.png"
                             alt="Chart"
                             width={329}
                             height={328}
@@ -105,7 +105,7 @@ export default function AboutSection() {
                           style={{ width: "50%", maxWidth: "75px", margin: "0 auto" }}
                         >
                           <img
-                            src="https://regional-cdn.itegroupnews.com/comment_dots_solid_full_71c6e8b715.png"
+                            src="/images/comment_dots_solid_full_71c6e8b715.png"
                             alt="Networking"
                             width={328}
                             height={328}
