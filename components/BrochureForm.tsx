@@ -132,7 +132,7 @@ export default function BrochureForm() {
 
       // 2. Send email through contact API
       const emailResponse = await fetch(
-        `${API_URL}/api/contact`,
+        `${API_URL}/contact`,
         {
           method: "POST",
           headers: {

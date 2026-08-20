@@ -51,7 +51,7 @@ class ManualApi {
   private baseURL: string;
 
   constructor() {
-    this.baseURL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
+    this.baseURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
     console.log('✅ ManualApi initialized with axios instance');
   }
 

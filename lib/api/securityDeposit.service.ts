@@ -8,7 +8,7 @@ import {
   BulkDeleteResponse 
 } from '../types/securityDeposit';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://INDIAMET-backend.onrender.com';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 class SecurityDepositService {
   private api: AxiosInstance;

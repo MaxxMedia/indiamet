@@ -8,7 +8,7 @@ import { MapPin, Loader2, AlertCircle, Calendar, Building2 } from 'lucide-react'
 import SectionContainer from '@/components/UI/SectionContainer';
 import BackToTop from '../exhibitor-resource-center/component/BackToTop';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://INDIAMET-backend.onrender.com/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
 
 /* ===================== ANIMATION VARIANTS ===================== */
 const fadeInUp = {
