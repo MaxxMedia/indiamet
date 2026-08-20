@@ -44,7 +44,7 @@ export default function PostShowReportForm() {
     sector: '',
   });
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
   const sectors = [
     "Additive Manufacturing - 3D Printing",

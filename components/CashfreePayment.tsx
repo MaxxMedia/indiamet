@@ -29,7 +29,7 @@ export default function CashfreePayment({
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_BASE_URL = 'https://INDIAMET-backend.onrender.com';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
   // Load Cashfree SDK
   useEffect(() => {

@@ -45,7 +45,7 @@ const COUNTRIES = [
 ]
 
 // API Base URL
-const API_BASE_URL = 'https://INDIAMET-backend.onrender.com/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
 
 export default function VisitorRegistrationForm({
   isOpen,

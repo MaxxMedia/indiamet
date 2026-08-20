@@ -68,7 +68,7 @@ const TransRussiaPage: React.FC<TransRussiaPageProps> = ({
   const [showThankYouPopup, setShowThankYouPopup] = useState(false);
   const [submittedName, setSubmittedName] = useState('');
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
   // Fetch countries
   useEffect(() => {
