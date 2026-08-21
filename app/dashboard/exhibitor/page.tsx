@@ -28,7 +28,9 @@ import {
 } from 'lucide-react';
 
 // API Configuration
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 // Types
 interface ExhibitorProfile {

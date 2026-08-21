@@ -41,6 +41,16 @@ interface ApiResponse {
 
 const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://diemex-backend.onrender.com/api';
 
+const EMPTY_FORM = {
+  code: '',
+  description: '',
+  size: '',
+  cost3Days: 0,
+  category: 'Furniture',
+  inStock: true,
+  isActive: true
+};
+
 export default function AdminFurniturePage() {
   const router = useRouter();
   const [furnitureItems, setFurnitureItems] = useState<FurnitureItem[]>([]);
@@ -60,15 +70,7 @@ export default function AdminFurniturePage() {
   const [submitting, setSubmitting] = useState(false);
 
   // Form state
-  const [formData, setFormData] = useState({
-    code: '',
-    description: '',
-    size: '',
-    cost3Days: 0,
-    category: 'Furniture',
-    inStock: true,
-    isActive: true
-  });
+  const [formData, setFormData] = useState({ ...EMPTY_FORM });
 
   // Check authentication and fetch data
   useEffect(() => {
@@ -212,8 +214,8 @@ export default function AdminFurniturePage() {
       formDataToSend.append('size', formData.size || '');
       formDataToSend.append('cost3Days', formData.cost3Days.toString());
       formDataToSend.append('category', formData.category);
-      formDataToSend.append('inStock', formData.inStock.toString());
-      formDataToSend.append('isActive', formData.isActive.toString());
+      formDataToSend.append('inStock', String(Boolean(formData.inStock)));
+      formDataToSend.append('isActive', String(Boolean(formData.isActive ?? true)));
       
       if (imageFile) {
         formDataToSend.append('image', imageFile);
@@ -338,15 +340,7 @@ export default function AdminFurniturePage() {
   };
 
   const resetForm = () => {
-    setFormData({
-      code: '',
-      description: '',
-      size: '',
-      cost3Days: 0,
-      category: 'Furniture',
-      inStock: true,
-      isActive: true
-    });
+    setFormData({ ...EMPTY_FORM });
     setImageFile(null);
     setImagePreview(null);
     setEditingItem(null);
@@ -356,13 +350,13 @@ export default function AdminFurniturePage() {
   const editItem = (item: FurnitureItem) => {
     setEditingItem(item);
     setFormData({
-      code: item.code,
-      description: item.description,
+      code: item.code || '',
+      description: item.description || '',
       size: item.size || '',
-      cost3Days: item.cost3Days,
-      category: item.category,
-      inStock: item.inStock,
-      isActive: item.isActive
+      cost3Days: item.cost3Days || 0,
+      category: item.category || 'Furniture',
+      inStock: item.inStock !== false,
+      isActive: item.isActive !== false
     });
     setImagePreview(item.imageUrl);
     setShowModal(true);
@@ -759,7 +753,7 @@ export default function AdminFurniturePage() {
                       <input
                         type="checkbox"
                         id="inStock"
-                        checked={formData.inStock}
+                        checked={Boolean(formData.inStock)}
                         onChange={(e) => setFormData({...formData, inStock: e.target.checked})}
                         className="h-3 w-3 sm:h-4 sm:w-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
                       />
@@ -772,7 +766,7 @@ export default function AdminFurniturePage() {
                       <input
                         type="checkbox"
                         id="isActive"
-                        checked={formData.isActive}
+                        checked={Boolean(formData.isActive)}
                         onChange={(e) => setFormData({...formData, isActive: e.target.checked})}
                         className="h-3 w-3 sm:h-4 sm:w-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
                       />

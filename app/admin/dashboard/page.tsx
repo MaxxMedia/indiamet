@@ -95,13 +95,13 @@ export default function DashboardPage() {
         </div>
         <h2 className="text-lg font-semibold text-slate-900 mb-2">Could not load dashboard</h2>
         <p className="text-sm text-slate-500 mb-6">{error}</p>
-        <button
-          onClick={handleRefresh}
+          <button 
+            onClick={handleRefresh}
           className="inline-flex items-center gap-2 bg-[#B80A26] text-white px-5 py-2.5 rounded-xl hover:bg-[#0074D9] transition"
-        >
+          >
           <RefreshCw className="h-4 w-4" />
           Try again
-        </button>
+          </button>
       </div>
     );
   }
@@ -176,23 +176,23 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
-        <div>
+          <div>
           <p className="text-sm text-slate-500">{today}</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
             Overview
-          </h1>
+            </h1>
           <p className="text-slate-500 mt-1">
             Exhibition operations for {user?.name || 'Admin'}.
-          </p>
-        </div>
-        <button
-          onClick={handleRefresh}
+            </p>
+          </div>
+            <button 
+              onClick={handleRefresh}
           className="inline-flex items-center gap-2 self-start px-4 py-2.5 bg-[#B80A26] rounded-xl text-white hover:bg-[#0074D9]"
-        >
-          <RefreshCw className="h-4 w-4" />
+            >
+              <RefreshCw className="h-4 w-4" />
           Refresh
-        </button>
-      </div>
+            </button>
+        </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         {kpiCards.map((card) => (
@@ -201,7 +201,7 @@ export default function DashboardPage() {
             href={card.href}
             className="group bg-white rounded-2xl border border-[#D7E6F0] p-5 shadow-sm hover:shadow-md hover:border-[#B80A26]/40 transition"
           >
-            <div className="flex items-start justify-between">
+              <div className="flex items-start justify-between">
               <div className="h-11 w-11 rounded-xl bg-[#B80A26]/10 text-[#B80A26] flex items-center justify-center">
                 <card.icon className="h-5 w-5" />
               </div>
@@ -211,8 +211,8 @@ export default function DashboardPage() {
             <p className="text-2xl font-bold text-slate-900 tracking-tight">{card.value}</p>
             <p className="mt-1 text-xs text-slate-400">{card.hint}</p>
           </Link>
-        ))}
-      </div>
+          ))}
+        </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <div className="xl:col-span-2 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
@@ -222,7 +222,7 @@ export default function DashboardPage() {
               <p className="text-sm text-slate-500">Last 7 days</p>
             </div>
             <CalendarDays className="h-5 w-5 text-[#B80A26]" />
-          </div>
+        </div>
 
           {chartData.length > 0 ? (
             <ResponsiveContainer width="100%" height={280}>
@@ -251,9 +251,9 @@ export default function DashboardPage() {
           ) : (
             <div className="h-[280px] flex items-center justify-center text-sm text-slate-400">
               No visitor data yet
-            </div>
-          )}
-        </div>
+          </div>
+        )}
+              </div>
 
         <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
           <div className="flex items-center justify-between mb-6">
@@ -305,7 +305,7 @@ export default function DashboardPage() {
             </div>
           )}
         </div>
-      </div>
+              </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <div className="xl:col-span-2 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
@@ -315,7 +315,7 @@ export default function DashboardPage() {
               View analytics
             </Link>
           </div>
-
+          
           {topPages.length > 0 ? (
             <div className="space-y-4">
               {topPages.slice(0, 6).map((page, index) => {
@@ -335,7 +335,7 @@ export default function DashboardPage() {
                         style={{ width: `${width}%` }}
                       />
                     </div>
-                  </div>
+              </div>
                 );
               })}
             </div>
@@ -350,8 +350,8 @@ export default function DashboardPage() {
               </BarChart>
             </ResponsiveContainer>
           )}
-        </div>
-
+          </div>
+          
         <div className="space-y-6">
           <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
             <h2 className="text-lg font-semibold text-slate-900 mb-4">Quick actions</h2>
@@ -379,9 +379,9 @@ export default function DashboardPage() {
                     <p className="text-xs text-white/60 mt-0.5">
                       {item.user} · {item.time}
                     </p>
-                  </div>
+        </div>
                 ))}
-              </div>
+          </div>
             ) : (
               <p className="text-sm text-white/70">No recent activity logged yet.</p>
             )}

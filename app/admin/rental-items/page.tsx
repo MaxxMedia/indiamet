@@ -44,6 +44,29 @@ interface FormData {
 
 const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://diemex-backend.onrender.com/api';
 
+const ALLOWED_IMAGE_TYPES = new Set([
+  'image/jpeg',
+  'image/jpg',
+  'image/pjpeg',
+  'image/png',
+  'image/x-png',
+  'image/gif',
+  'image/webp',
+  'image/avif',
+  'image/bmp',
+  'image/heic',
+  'image/heif'
+]);
+const ALLOWED_IMAGE_EXTS = ['.jpg', '.jpeg', '.jfif', '.png', '.gif', '.webp', '.avif', '.bmp', '.heic', '.heif'];
+
+function isAllowedImageFile(file: File): boolean {
+  const type = (file.type || '').toLowerCase().trim();
+  const ext = file.name.toLowerCase().slice(file.name.lastIndexOf('.'));
+  if (ALLOWED_IMAGE_TYPES.has(type)) return true;
+  const mimeMissing = !type || type === 'application/octet-stream';
+  return ALLOWED_IMAGE_EXTS.includes(ext) && (mimeMissing || type.startsWith('image/'));
+}
+
 export default function AdminRentalItemsPage() {
   const [items, setItems] = useState<RentalItem[]>([]);
   const [filteredItems, setFilteredItems] = useState<RentalItem[]>([]);
@@ -159,13 +182,15 @@ export default function AdminRentalItemsPage() {
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      if (!file.type.startsWith('image/')) {
-        alert('Please upload an image file');
+      if (!isAllowedImageFile(file)) {
+        alert('Please upload a JPEG, PNG, GIF, or WebP image.');
+        e.target.value = '';
         return;
       }
       
       if (file.size > 5 * 1024 * 1024) {
         alert('Image size should be less than 5MB');
+        e.target.value = '';
         return;
       }
 
@@ -233,8 +258,13 @@ export default function AdminRentalItemsPage() {
       }
 
       if (!response.ok) {
-        console.error('Server error:', responseData);
-        throw new Error(responseData?.message || responseData?.error || 'Failed to save');
+        const serverMessage =
+          responseData?.message ||
+          responseData?.error ||
+          (typeof responseData === 'string' ? responseData : '') ||
+          `Failed to save (${response.status})`;
+        console.error('Server error:', serverMessage, responseData);
+        throw new Error(serverMessage);
       }
 
       await loadItems();
@@ -663,7 +693,7 @@ export default function AdminRentalItemsPage() {
                           Choose Image
                           <input
                             type="file"
-                            accept="image/*"
+                            accept=".jpg,.jpeg,.png,.gif,.webp,.avif,.bmp,.heic,image/jpeg,image/png,image/gif,image/webp"
                             onChange={handleImageChange}
                             className="hidden"
                           />

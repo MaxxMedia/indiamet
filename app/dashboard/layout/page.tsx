@@ -9,6 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import FloorPlanRenderer from '@/components/FloorPlanRenderer';
 import { Shape, ShapeType } from '@/lib/types';
+import { getBackendUrl } from '@/lib/api/backendUrl';
 
 interface FloorPlan {
   id: string | number;
@@ -88,7 +89,7 @@ const fetchMasterFloorPlan = async (silent = false) => {
     
     // Use the correct public endpoint
     const response = await fetch(
-      "https://diemex-backend.onrender.com/api/floor-plan", // Changed from /api/booths/floor-plan
+      `${getBackendUrl()}/api/floor-plan`,
       {
         method: "GET",
         headers: {

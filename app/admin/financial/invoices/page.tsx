@@ -20,7 +20,9 @@ import {
   ReceiptPercentIcon
 } from '@heroicons/react/24/outline';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 interface Invoice {
   id: string;
@@ -107,21 +109,26 @@ export default function AdminInvoicesPage() {
       
       if (response.ok) {
         const data = await response.json();
-        setInvoices(data.data);
+        const list = Array.isArray(data.data) ? data.data : data.data?.data || [];
+        setInvoices(list);
         
-        const paidInvoices = data.data.filter((inv: Invoice) => inv.status === 'paid');
-        const pendingInvoices = data.data.filter((inv: Invoice) => inv.status === 'pending');
+        const paidInvoices = list.filter((inv: Invoice) => inv.status === 'paid');
+        const pendingInvoices = list.filter((inv: Invoice) => inv.status === 'pending');
         
         const statsData = {
-          total: data.data.length,
+          total: list.length,
           paid: paidInvoices.length,
           pending: pendingInvoices.length,
-          overdue: data.data.filter((inv: Invoice) => inv.status === 'overdue').length,
-          totalAmount: data.data.reduce((sum: number, inv: Invoice) => sum + (Number(inv.amount) || 0), 0),
+          overdue: list.filter((inv: Invoice) => inv.status === 'overdue').length,
+          totalAmount: list.reduce((sum: number, inv: Invoice) => sum + (Number(inv.amount) || 0), 0),
           paidAmount: paidInvoices.reduce((sum: number, inv: Invoice) => sum + (Number(inv.amount) || 0), 0),
           pendingAmount: pendingInvoices.reduce((sum: number, inv: Invoice) => sum + (Number(inv.amount) || 0), 0)
         };
         setStats(statsData);
+      } else {
+        const payload = await response.json().catch(() => ({}));
+        console.error('Failed to fetch invoices:', payload);
+        setInvoices([]);
       }
     } catch (error) {
       console.error('Error fetching invoices:', error);
@@ -135,7 +142,7 @@ export default function AdminInvoicesPage() {
     
     if (searchTerm) {
       filtered = filtered.filter(inv => 
-        inv.invoiceNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (inv.invoiceNumber || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
         (inv.company && inv.company.toLowerCase().includes(searchTerm.toLowerCase())) ||
         (inv.metadata?.exhibitorInfo?.companyName && 
           inv.metadata.exhibitorInfo.companyName.toLowerCase().includes(searchTerm.toLowerCase())) ||

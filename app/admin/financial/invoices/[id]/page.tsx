@@ -21,7 +21,9 @@ import {
   CheckIcon
 } from '@heroicons/react/24/outline';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 interface Invoice {
   id: string;
