@@ -20,7 +20,9 @@ import {
   PrinterIcon
 } from '@heroicons/react/24/outline';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 interface Invoice {
   id: string;
@@ -91,23 +93,25 @@ export default function ExhibitorInvoicesPage() {
       });
       
       if (response.status === 401) {
-        localStorage.removeItem('exhibitor_token');
-        localStorage.removeItem('token');
-        router.push('/login');
+        console.error('Invoice request unauthorized');
+        setInvoices([]);
+        setLoading(false);
+        setRefreshing(false);
         return;
       }
       
       if (response.ok) {
         const data = await response.json();
-        setInvoices(data.data);
+        const list = data.data || [];
+        setInvoices(list);
         setLastRefresh(new Date());
         
         const statsData = {
-          total: data.data.length,
-          paid: data.data.filter((inv: Invoice) => inv.status === 'paid').length,
-          pending: data.data.filter((inv: Invoice) => inv.status === 'pending').length,
-          overdue: data.data.filter((inv: Invoice) => inv.status === 'overdue').length,
-          totalAmount: data.data.reduce(
+          total: list.length,
+          paid: list.filter((inv: Invoice) => inv.status === 'paid').length,
+          pending: list.filter((inv: Invoice) => inv.status === 'pending').length,
+          overdue: list.filter((inv: Invoice) => inv.status === 'overdue').length,
+          totalAmount: list.reduce(
             (sum: number, inv: Invoice) => sum + Number(inv.amount || 0),
             0
           )
@@ -147,11 +151,7 @@ export default function ExhibitorInvoicesPage() {
       });
       
       if (response.status === 401) {
-        alert('Session expired. Please login again.');
-        localStorage.removeItem('exhibitor_token');
-        localStorage.removeItem('token');
-        router.push('/login');
-        return;
+        throw new Error('Not authorized to download this invoice');
       }
       
       if (!response.ok) {

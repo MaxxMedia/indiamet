@@ -17,43 +17,43 @@ export default function QuickActions() {
       title: "Update Profile",
       description: "Edit company information",
       icon: PencilSquareIcon,
-      color: "bg-blue-50 text-blue-600",
+      color: "bg-[#F3F8FC] text-[#0092D7]",
       onClick: () => router.push('/dashboard/exhibitor')
     },
     {
       title: "View Invoices",
       description: "Check and pay invoices",
       icon: CreditCardIcon,
-      color: "bg-green-50 text-green-600",
+      color: "bg-emerald-50 text-emerald-600",
       onClick: () => router.push('/dashboard/invoice')
     },
     {
       title: "Stall Layout",
       description: "View your stall location",
       icon: MapIcon,
-      color: "bg-purple-50 text-purple-600",
+      color: "bg-[#171A1B]/5 text-[#171A1B]",
       onClick: () => router.push('/dashboard/layout')
     },
     {
       title: "Requirements",
       description: "Submit additional requests",
       icon: DocumentTextIcon,
-      color: "bg-orange-50 text-orange-600",
+      color: "bg-[#B80A26]/10 text-[#B80A26]",
       onClick: () => router.push('/dashboard/requirements')
     },
     {
       title: "Manual",
       description: "Event guidelines",
       icon: QuestionMarkCircleIcon,
-      color: "bg-gray-50 text-gray-600",
+      color: "bg-slate-100 text-slate-600",
       onClick: () => router.push('/dashboard/manual')
     },
     {
       title: "Support",
       description: "Get help",
       icon: UserCircleIcon,
-      color: "bg-red-50 text-red-600",
-      onClick: () => router.push('/dashboard/support')
+      color: "bg-[#B80A26]/10 text-[#B80A26]",
+      onClick: () => router.push('/dashboard/exhibitor')
     },
   ];
 
@@ -63,7 +63,7 @@ export default function QuickActions() {
         <button
           key={action.title}
           onClick={action.onClick}
-          className="flex items-start gap-3 p-4 border rounded-lg text-left hover:bg-gray-50 transition-colors"
+          className="flex items-start gap-3 rounded-xl border border-slate-200 p-4 text-left transition-colors hover:border-[#0092D7]/40 hover:bg-[#F3F8FC]"
         >
           <div className={`p-2 rounded-lg ${action.color}`}>
             <action.icon className="h-5 w-5" />
