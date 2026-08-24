@@ -88,7 +88,7 @@ export default function HeroSection() {
             style={{
               top: '50%',
               left: '50%',
-              transform: 'translate(-80%, -80%) scale(1.25)',
+              transform: 'translate(-50%, -50%) scale(1.25)',
               minWidth: '100%',
               minHeight: '100%',
               width: '177.77777778vh', /* 100 * 16 / 9 */
