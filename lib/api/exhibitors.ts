@@ -6,8 +6,9 @@ import axios from "axios";
 
 const api = axios.create({
   baseURL:
+    process.env.NEXT_PUBLIC_API_BASE_URL ||
     process.env.NEXT_PUBLIC_API_URL ||
-    "https://INDIAMET-backend.onrender.com/api",
+    "http://localhost:5000/api",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",

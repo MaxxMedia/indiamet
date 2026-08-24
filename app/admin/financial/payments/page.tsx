@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { Search, DollarSign, CheckCircle, XCircle, Clock, Download, Filter, Eye, Loader2, RefreshCw } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
+import { Search, DollarSign, CheckCircle, XCircle, Clock, Download, Eye, Loader2, RefreshCw } from 'lucide-react';
+import { getBackendUrl } from '@/lib/api/backendUrl';
 
 interface Payment {
   id: string;
@@ -15,6 +16,8 @@ interface Payment {
   processedBy: string;
 }
 
+const API_BASE_URL = getBackendUrl();
+
 // Format currency in Indian Rupees
 const formatCurrency = (amount: number) => {
   return new Intl.NumberFormat('en-IN', {
@@ -25,99 +28,63 @@ const formatCurrency = (amount: number) => {
   }).format(amount);
 };
 
-// Sample payments data
-const samplePayments: Payment[] = [
-  {
-    id: '1',
-    invoiceNumber: 'INV-2024-001',
-    company: 'ABC Logistics',
-    amount: 2500,
-    status: 'completed',
-    method: 'credit_card',
-    date: '2024-01-15',
-    processedBy: 'Auto'
-  },
-  {
-    id: '2',
-    invoiceNumber: 'INV-2024-002',
-    company: 'XYZ Shipping Co.',
-    amount: 1800,
-    status: 'pending',
-    method: 'bank_transfer',
-    date: '2024-01-14',
-    dueDate: '2024-01-21',
-    processedBy: 'Manual'
-  },
-  {
-    id: '3',
-    invoiceNumber: 'INV-2024-003',
-    company: 'Tech Solutions Ltd.',
-    amount: 3200,
-    status: 'refunded',
-    method: 'online',
-    date: '2024-01-10',
-    processedBy: 'Auto'
-  },
-  {
-    id: '4',
-    invoiceNumber: 'INV-2024-004',
-    company: 'Global Industries',
-    amount: 4500,
-    status: 'failed',
-    method: 'credit_card',
-    date: '2024-01-12',
-    processedBy: 'Auto'
-  },
-  {
-    id: '5',
-    invoiceNumber: 'INV-2024-005',
-    company: 'Premium Services Inc.',
-    amount: 2900,
-    status: 'completed',
-    method: 'check',
-    date: '2024-01-08',
-    processedBy: 'Manual'
-  },
-  {
-    id: '6',
-    invoiceNumber: 'INV-2024-006',
-    company: 'Indian Enterprises',
-    amount: 12500,
-    status: 'completed',
-    method: 'online',
-    date: '2024-01-05',
-    processedBy: 'Auto'
-  },
-  {
-    id: '7',
-    invoiceNumber: 'INV-2024-007',
-    company: 'Digital Solutions',
-    amount: 8700,
-    status: 'pending',
-    method: 'bank_transfer',
-    date: '2024-01-16',
-    dueDate: '2024-01-23',
-    processedBy: 'Manual'
-  },
-  {
-    id: '8',
-    invoiceNumber: 'INV-2024-008',
-    company: 'Startup Innovators',
-    amount: 3400,
-    status: 'completed',
-    method: 'cash',
-    date: '2024-01-13',
-    processedBy: 'Manual'
-  },
-];
-
 export default function PaymentsPage() {
   const [search, setSearch] = useState('');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [selectedMethod, setSelectedMethod] = useState<string>('all');
   const [dateRange, setDateRange] = useState<string>('all');
-  const [payments, setPayments] = useState<Payment[]>(samplePayments);
-  const [loading, setLoading] = useState(false);
+  const [payments, setPayments] = useState<Payment[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  const getAuthToken = () => localStorage.getItem('admin_token') || localStorage.getItem('token');
+
+  const fetchPayments = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError('');
+      const token = getAuthToken();
+      if (!token) {
+        window.location.href = '/admin/login';
+        return;
+      }
+
+      const response = await fetch(`${API_BASE_URL}/api/payments/admin/all`, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+
+      if (response.status === 401) {
+        window.location.href = '/admin/login';
+        return;
+      }
+
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(payload.error || payload.message || 'Failed to load payments');
+      }
+
+      const list = Array.isArray(payload.data) ? payload.data : payload.data?.payments || [];
+      setPayments(list.map((payment: Payment) => ({
+        ...payment,
+        amount: Number(payment.amount) || 0,
+        company: payment.company || '—',
+        invoiceNumber: payment.invoiceNumber || '—',
+        method: payment.method || 'online',
+        status: payment.status || 'pending',
+        processedBy: payment.processedBy || 'System'
+      })));
+    } catch (err: any) {
+      console.error('Failed to load payments:', err);
+      setError(err.message || 'Failed to load payments');
+      setPayments([]);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchPayments();
+  }, [fetchPayments]);
   
   const statuses = ['all', 'completed', 'pending', 'failed', 'refunded'];
   const methods = ['all', 'credit_card', 'bank_transfer', 'check', 'cash', 'online'];
@@ -199,11 +166,7 @@ export default function PaymentsPage() {
     .reduce((sum, p) => sum + p.amount, 0);
 
   const handleRefresh = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setPayments([...samplePayments]);
-      setLoading(false);
-    }, 500);
+    fetchPayments();
   };
 
   const handleExport = () => {
@@ -223,22 +186,47 @@ export default function PaymentsPage() {
     document.body.removeChild(link);
   };
 
-  const handleStatusUpdate = (id: string, newStatus: Payment['status']) => {
-    setPayments(payments.map(p => 
-      p.id === id ? { ...p, status: newStatus } : p
-    ));
-    alert(`Payment status updated to ${newStatus}`);
+  const handleStatusUpdate = async (id: string, newStatus: Payment['status']) => {
+    try {
+      const token = getAuthToken();
+      const response = await fetch(`${API_BASE_URL}/api/payments/${id}/status`, {
+        method: 'PATCH',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ status: newStatus })
+      });
+      if (!response.ok) {
+        const payload = await response.json().catch(() => ({}));
+        throw new Error(payload.error || 'Failed to update payment');
+      }
+      await fetchPayments();
+    } catch (err: any) {
+      alert(err.message || 'Failed to update payment');
+    }
   };
 
-  const handleRefund = (id: string) => {
-    if (confirm('Are you sure you want to refund this payment?')) {
-      const reason = prompt('Enter refund reason:') || 'Customer request';
-      if (reason) {
-        setPayments(payments.map(p => 
-          p.id === id ? { ...p, status: 'refunded' } : p
-        ));
-        alert('Payment refunded successfully');
+  const handleRefund = async (id: string) => {
+    if (!confirm('Are you sure you want to refund this payment?')) return;
+    const reason = prompt('Enter refund reason:') || 'Customer request';
+    try {
+      const token = getAuthToken();
+      const response = await fetch(`${API_BASE_URL}/api/payments/${id}/refund`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ reason })
+      });
+      if (!response.ok) {
+        const payload = await response.json().catch(() => ({}));
+        throw new Error(payload.error || 'Failed to refund payment');
       }
+      await fetchPayments();
+    } catch (err: any) {
+      alert(err.message || 'Failed to refund payment');
     }
   };
 
@@ -277,6 +265,12 @@ export default function PaymentsPage() {
           </button>
         </div>
       </div>
+
+      {error && (
+        <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </div>
+      )}
 
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

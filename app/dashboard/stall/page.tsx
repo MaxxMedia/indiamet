@@ -21,6 +21,7 @@ import {
 } from '@heroicons/react/24/outline';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { getBackendUrl } from '@/lib/api/backendUrl';
 
 // Types
 interface Stall {
@@ -116,7 +117,7 @@ export default function StallPage() {
       console.log('📡 Fetching stall data...');
       
       // Fetch from profile endpoint which includes price
-      const profileResponse = await axios.get('https://diemex-backend.onrender.com/api/exhibitorDashboard/profile', {
+      const profileResponse = await axios.get(`${getBackendUrl()}/api/exhibitorDashboard/profile`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 

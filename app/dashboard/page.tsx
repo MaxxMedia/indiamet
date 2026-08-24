@@ -15,7 +15,6 @@ import {
   MapPinIcon,
   CurrencyDollarIcon,
   DocumentCheckIcon,
-  ArrowTrendingUpIcon,
   CalendarIcon,
   SparklesIcon,
   ExclamationTriangleIcon,
@@ -133,7 +132,7 @@ export default function EnhancedDashboardPage() {
         value: dashboardData.exhibitor.status === 'active' ? "Complete" : "Pending",
         change: dashboardData.exhibitor.status === 'active' ? "Active" : "Setup Required",
         icon: BuildingStorefrontIcon,
-        color: dashboardData.exhibitor.status === 'active' ? "from-green-500 to-emerald-600" : "from-yellow-500 to-amber-600",
+        color: dashboardData.exhibitor.status === 'active' ? "from-[#0092D7] to-[#0074D9]" : "from-yellow-500 to-amber-600",
         trend: dashboardData.exhibitor.status === 'active' ? "up" : "warning",
         href: "/dashboard/exhibitor",
       },
@@ -142,7 +141,7 @@ export default function EnhancedDashboardPage() {
         value: dashboardData.exhibitor.boothNumber || "Not Assigned",
         change: dashboardData.floorPlan ? `${dashboardData.floorPlan.name} - Floor ${dashboardData.floorPlan.floor}` : "No Layout",
         icon: MapPinIcon,
-        color: dashboardData.exhibitor.boothNumber ? "from-blue-500 to-cyan-600" : "from-gray-500 to-gray-600",
+        color: dashboardData.exhibitor.boothNumber ? "from-[#171A1B] to-[#2c3234]" : "from-gray-500 to-gray-600",
         trend: dashboardData.exhibitor.boothNumber ? "stable" : "warning",
         href: "/dashboard/layout",
       },
@@ -152,7 +151,7 @@ export default function EnhancedDashboardPage() {
         value: `₹${totalAmount.toLocaleString()}`,
         change: paidInvoices > 0 ? `${paidInvoices}/${totalInvoices} Paid` : "No Invoices",
         icon: CurrencyDollarIcon,
-        color: paidAmount >= totalAmount ? "from-purple-500 to-violet-600" : "from-orange-500 to-red-600",
+        color: paidAmount >= totalAmount ? "from-[#B80A26] to-[#8f081d]" : "from-orange-500 to-[#B80A26]",
         trend: paidAmount >= totalAmount ? "up" : "warning",
         href: "/dashboard/invoice",
       },
@@ -177,68 +176,30 @@ export default function EnhancedDashboardPage() {
     { id: 3, title: "Exhibition Day", value: dashboardData.event.exhibitionDay, icon: CalendarIcon },
     { id: 4, title: "Dismantle Day", value: dashboardData.event.dismantleDay, icon: TrashIcon },
   ] : [
-    { id: 1, title: "Event Name", value: "DIEMEX 2026", icon: BuildingOfficeIcon },
+    { id: 1, title: "Event Name", value: "INDIAMET 2027", icon: BuildingOfficeIcon },
     { id: 2, title: "Venue", value: "Auto Cluster Exhibition Center", icon: MapIcon },
-    { id: 3, title: "Exhibition Day", value: "8th October, 2026", icon: CalendarIcon },
-    { id: 4, title: "Dismantle Day", value: "10th October, 2026", icon: TrashIcon },
+    { id: 3, title: "Exhibition Day", value: "To be announced", icon: CalendarIcon },
+    { id: 4, title: "Dismantle Day", value: "To be announced", icon: TrashIcon },
   ];
 
-  // Contact information
   const contactInfo = [
-    { id: 1, type: "Phone", value: "+91 9876543210", icon: PhoneIcon },
-    { id: 2, type: "Email", value: "support@exhibitionhub.com", icon: EnvelopeIcon },
-    { id: 3, type: "Hours", value: "Mon-Fri, 9AM-6PM", icon: ClockIcon },
+    { id: 1, type: "Phone", value: "+91 63649 36468", icon: PhoneIcon },
+    { id: 2, type: "Email", value: "info@indiametexpo.com", icon: EnvelopeIcon },
+    { id: 3, type: "Hours", value: "Mon–Fri, 9AM–6PM", icon: ClockIcon },
   ];
 
   if (loading) {
     return (
       <div className="space-y-6">
-        {/* Header Skeleton */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="h-8 w-64 bg-gray-200 rounded animate-pulse mb-2"></div>
-            <div className="h-4 w-96 bg-gray-200 rounded animate-pulse"></div>
-          </div>
-          <div className="h-10 w-32 bg-gray-200 rounded animate-pulse"></div>
-        </div>
-        
-        {/* Stats Grid Skeleton */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map(i => (
-            <div key={i} className="card p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-10 w-10 bg-gray-200 rounded animate-pulse"></div>
-                <div className="flex-1">
-                  <div className="h-4 w-24 bg-gray-200 rounded animate-pulse mb-2"></div>
-                  <div className="h-6 w-16 bg-gray-200 rounded animate-pulse"></div>
-                </div>
-              </div>
-            </div>
+        <div className="h-28 rounded-2xl bg-white/80 animate-pulse" />
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="h-36 rounded-2xl bg-white animate-pulse" />
           ))}
         </div>
-        
-        {/* Main Content Skeleton */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 space-y-6">
-            <div className="card p-6">
-              <div className="h-6 w-48 bg-gray-200 rounded animate-pulse mb-6"></div>
-              <div className="space-y-4">
-                {[1, 2, 3].map(i => (
-                  <div key={i} className="h-16 bg-gray-100 rounded-lg animate-pulse"></div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="space-y-6">
-            <div className="card p-6">
-              <div className="h-6 w-32 bg-gray-200 rounded animate-pulse mb-4"></div>
-              <div className="space-y-4">
-                {[1, 2, 3].map(i => (
-                  <div key={i} className="h-16 bg-gray-100 rounded-lg animate-pulse"></div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="h-80 rounded-2xl bg-white lg:col-span-2 animate-pulse" />
+          <div className="h-80 rounded-2xl bg-white animate-pulse" />
         </div>
       </div>
     );
@@ -246,26 +207,24 @@ export default function EnhancedDashboardPage() {
 
   if (error) {
     return (
-      <div className="space-y-6">
-        <div className="card p-6 text-center">
-          <ExclamationTriangleIcon className="h-12 w-12 text-yellow-500 mx-auto mb-4" />
-          <h2 className="text-xl font-semibold mb-2">Unable to Load Dashboard</h2>
-          <p className="text-gray-600 mb-4">{error}</p>
-          <div className="flex gap-3 justify-center">
-            <button 
-              onClick={fetchDashboardData}
-              className="btn-primary flex items-center gap-2"
-            >
-              <ArrowPathIcon className="h-4 w-4" />
-              Retry
-            </button>
-            <button 
-              onClick={() => router.push('/login')}
-              className="btn-secondary"
-            >
-              Go to Login
-            </button>
-          </div>
+      <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+        <ExclamationTriangleIcon className="mx-auto mb-4 h-12 w-12 text-amber-500" />
+        <h2 className="mb-2 text-xl font-semibold text-slate-900">Unable to load dashboard</h2>
+        <p className="mb-6 text-slate-600">{error}</p>
+        <div className="flex justify-center gap-3">
+          <button
+            onClick={fetchDashboardData}
+            className="inline-flex items-center gap-2 rounded-lg bg-[#B80A26] px-4 py-2 text-sm font-medium text-white hover:bg-[#0074D9]"
+          >
+            <ArrowPathIcon className="h-4 w-4" />
+            Retry
+          </button>
+          <button
+            onClick={() => router.push('/login')}
+            className="rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+          >
+            Go to Login
+          </button>
         </div>
       </div>
     );
@@ -273,181 +232,141 @@ export default function EnhancedDashboardPage() {
 
   if (!dashboardData) {
     return (
-      <div className="space-y-6">
-        <div className="card p-6 text-center">
-          <ExclamationTriangleIcon className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-          <h2 className="text-xl font-semibold mb-2">No Dashboard Data</h2>
-          <p className="text-gray-600 mb-4">Unable to load exhibitor dashboard data.</p>
-          <button 
-            onClick={fetchDashboardData}
-            className="btn-primary"
-          >
-            Refresh
-          </button>
-        </div>
+      <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+        <ExclamationTriangleIcon className="mx-auto mb-4 h-12 w-12 text-slate-400" />
+        <h2 className="mb-2 text-xl font-semibold text-slate-900">No dashboard data</h2>
+        <p className="mb-6 text-slate-600">Unable to load exhibitor dashboard data.</p>
+        <button
+          onClick={fetchDashboardData}
+          className="rounded-lg bg-[#B80A26] px-4 py-2 text-sm font-medium text-white hover:bg-[#0074D9]"
+        >
+          Refresh
+        </button>
       </div>
     );
   }
 
   const stats = calculateStats();
+  const isActive = dashboardData.exhibitor.status === 'active';
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Welcome back, {dashboardData.exhibitor.company}!
-          </h1>
-          <p className="text-gray-600 mt-2">
-            Here's what's happening with your exhibition today.
-          </p>
+      <div className="overflow-hidden rounded-2xl bg-[#171A1B] p-5 text-white sm:p-6">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div className="min-w-0">
+            <p className="text-xs font-medium uppercase tracking-wide text-[#0092D7]">Exhibitor portal</p>
+            <h1 className="mt-1 truncate text-2xl font-semibold sm:text-3xl">
+              Welcome back, {dashboardData.exhibitor.company}
+            </h1>
+            <p className="mt-1 text-sm text-slate-300">
+              Track your stall, invoices, and extra requirements in one place.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
+            <span
+              className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                isActive ? 'bg-emerald-500/20 text-emerald-300' : 'bg-amber-500/20 text-amber-300'
+              }`}
+            >
+              {dashboardData.exhibitor.status.charAt(0).toUpperCase() + dashboardData.exhibitor.status.slice(1)}
+            </span>
+            <button
+              onClick={fetchDashboardData}
+              className="inline-flex items-center gap-2 rounded-lg bg-[#B80A26] px-3 py-2 text-sm font-medium hover:bg-[#0074D9]"
+            >
+              <ArrowPathIcon className="h-4 w-4" />
+              Refresh
+            </button>
+          </div>
         </div>
-
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-md border border-gray-100 p-5">
-  
-  {/* Header */}
-  <div className="flex items-center justify-between mb-4">
-    <h3 className="text-lg font-semibold text-gray-800">
-      Account Overview
-    </h3>
-
-    <button 
-      onClick={fetchDashboardData}
-      className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
-    >
-      <ArrowPathIcon className="h-4 w-4" />
-      Refresh
-    </button>
-  </div>
-
-  {/* Status Section */}
-  <div className="flex items-center gap-3 bg-gray-50 rounded-xl p-3">
-    <div className="bg-white p-2 rounded-lg shadow-sm">
-      <CalendarIcon className="h-5 w-5 text-gray-600" />
-    </div>
-
-    <div>
-      <p className="text-sm text-gray-500">Account Status</p>
-      <p
-        className={`text-base font-semibold ${
-          dashboardData.exhibitor.status === "active"
-            ? "text-green-600"
-            : "text-yellow-600"
-        }`}
-      >
-        {dashboardData.exhibitor.status.charAt(0).toUpperCase() +
-          dashboardData.exhibitor.status.slice(1)}
-      </p>
-    </div>
-  </div>
-
-</div>
-
       </div>
 
-      {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {stats.map((stat) => (
           <EnhancedStatsCard key={stat.title} {...stat} />
         ))}
       </div>
 
-      {/* Main Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left */}
-        <div className="lg:col-span-2 space-y-6">
-          <div className="card p-6">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h2 className="section-title">Quick Actions</h2>
-                {/* <p className="section-subtitle">Common tasks and shortcuts</p> */}
-              </div>
-              <SparklesIcon className="h-5 w-5 text-gray-400" />
+      <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
+        <div className="space-y-6 xl:col-span-2">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-slate-900">Quick Actions</h2>
+              <SparklesIcon className="h-5 w-5 text-[#0092D7]" />
             </div>
             <QuickActions />
           </div>
 
-          <div className="card p-6">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h2 className="section-title">Recent Activity</h2>
-            
-              </div>
-             
-            </div>
-            <RecentActivity 
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <h2 className="mb-4 text-lg font-semibold text-slate-900">Recent Activity</h2>
+            <RecentActivity
               exhibitorName={dashboardData.exhibitor.name}
               boothNumber={dashboardData.exhibitor.boothNumber}
               invoiceCount={dashboardData.invoices?.length || 0}
-              pendingRequirements={dashboardData.requirements?.filter(r => r.status === 'pending').length || 0}
+              pendingRequirements={dashboardData.requirements?.filter((r) => r.status === 'pending').length || 0}
             />
           </div>
         </div>
 
-        {/* Right */}
         <div className="space-y-6">
-          <div className="card p-6">
-            <h2 className="section-title mb-4">Account Summary</h2>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 p-3 border rounded-lg hover:bg-gray-50">
-                <UserCircleIcon className="h-5 w-5 text-blue-600" />
-                <div className="flex-1">
-                  <p className="text-sm font-medium">Contact Person</p>
-                  <p className="text-xs text-gray-500">{dashboardData.exhibitor.name}</p>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <h2 className="mb-4 text-lg font-semibold text-slate-900">Account Summary</h2>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 rounded-xl border border-slate-100 p-3">
+                <UserCircleIcon className="h-5 w-5 text-[#0092D7]" />
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-slate-900">Contact Person</p>
+                  <p className="truncate text-xs text-slate-500">{dashboardData.exhibitor.name}</p>
                 </div>
               </div>
-              
-              <div className="flex items-center gap-3 p-3 border rounded-lg hover:bg-gray-50">
-                <CreditCardIcon className="h-5 w-5 text-green-600" />
-                <div className="flex-1">
-                  <p className="text-sm font-medium">Payment Status</p>
-                  <p className="text-xs text-gray-500">
-                    {dashboardData.invoices?.filter(inv => inv.status === 'paid').length || 0} of {dashboardData.invoices?.length || 0} invoices paid
+              <div className="flex items-center gap-3 rounded-xl border border-slate-100 p-3">
+                <CreditCardIcon className="h-5 w-5 text-emerald-600" />
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-slate-900">Payment Status</p>
+                  <p className="text-xs text-slate-500">
+                    {dashboardData.invoices?.filter((inv) => inv.status === 'paid').length || 0} of {dashboardData.invoices?.length || 0} invoices paid
                   </p>
                 </div>
               </div>
-              
-              <div className="flex items-center gap-3 p-3 border rounded-lg hover:bg-gray-50">
-                <ClipboardDocumentListIcon className="h-5 w-5 text-orange-600" />
-                <div className="flex-1">
-                  <p className="text-sm font-medium">Requirements Status</p>
-                  <p className="text-xs text-gray-500">
-                    {dashboardData.requirements?.filter(r => r.status === 'pending').length || 0} pending requirements
+              <div className="flex items-center gap-3 rounded-xl border border-slate-100 p-3">
+                <ClipboardDocumentListIcon className="h-5 w-5 text-[#B80A26]" />
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-slate-900">Requirements Status</p>
+                  <p className="text-xs text-slate-500">
+                    {dashboardData.requirements?.filter((r) => r.status === 'pending').length || 0} pending requirements
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="card p-6">
-            <h2 className="section-title mb-4">Event Details</h2>
-            <div className="space-y-4">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <h2 className="mb-4 text-lg font-semibold text-slate-900">Event Details</h2>
+            <div className="space-y-3">
               {upcomingEvents.map((event) => (
-                <div key={event.id} className="flex items-center gap-4 p-3 border rounded-lg hover:bg-gray-50">
-                  <event.icon className="h-5 w-5 text-gray-500" />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium">{event.title}</p>
-                    <p className="text-sm text-gray-700 mt-0.5">
-                      {event.value}
-                    </p>
+                <div key={event.id} className="flex items-center gap-3 rounded-xl border border-slate-100 p-3">
+                  <event.icon className="h-5 w-5 shrink-0 text-[#0092D7]" />
+                  <div className="min-w-0">
+                    <p className="text-xs text-slate-500">{event.title}</p>
+                    <p className="truncate text-sm font-medium text-slate-900">{event.value}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-            <h3 className="font-semibold mb-2">Need Help?</h3>
-            <p className="text-sm mb-4">
-              Contact our support team for assistance with your exhibition setup.
+          <div className="rounded-2xl bg-[#171A1B] p-5 text-white sm:p-6">
+            <h3 className="font-semibold">Need Help?</h3>
+            <p className="mt-1 mb-4 text-sm text-slate-300">
+              Contact the IndiaMet team for stall and exhibition support.
             </p>
             <div className="space-y-3">
               {contactInfo.map((contact) => (
                 <div key={contact.id} className="flex items-center gap-3">
-                  <contact.icon className="h-4 w-4 text-blue-600" />
+                  <contact.icon className="h-4 w-4 text-[#0092D7]" />
                   <div>
-                    <p className="text-xs text-gray-600">{contact.type}</p>
+                    <p className="text-xs text-slate-400">{contact.type}</p>
                     <p className="text-sm font-medium">{contact.value}</p>
                   </div>
                 </div>

@@ -27,7 +27,9 @@ import {
 } from '@heroicons/react/24/outline';
 import { SofaIcon, MonitorIcon, ZapIcon, CableIcon, DropletIcon, PackageIcon, UsersIcon, WifiIcon, LightbulbIcon, CoffeeIcon } from 'lucide-react';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 interface RequirementItem {
   id: string;
@@ -91,71 +93,34 @@ export default function AdminReceivedRequirementsPage() {
       const token = localStorage.getItem('token') || localStorage.getItem('admin_token');
       
       if (!token) {
-        console.error('No admin token found. Please login again.');
         router.push('/admin/login');
-        setLoading(false);
         return;
       }
-      
-      try {
-        const response = await fetch(`${API_BASE_URL}/api/extra-requirements/admin/all`, {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-          },
-        });
-        
-        if (response.ok) {
-          const data = await response.json();
-          setRequirements(data.data);
-          updateStats(data.data);
-          setLoading(false);
-          return;
-        } else if (response.status === 404) {
-          console.log('Endpoint not found, trying alternative endpoints...');
-        }
-      } catch (error) {
-        console.log('Primary endpoint failed, trying alternatives...');
+
+      const response = await fetch(`${API_BASE_URL}/api/extra-requirements/admin/all`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (response.status === 401) {
+        router.push('/admin/login');
+        return;
       }
-      
-      const alternativeEndpoints = [
-        `${API_BASE_URL}/api/requirements/admin/all`,
-        `${API_BASE_URL}/api/requirements`,
-        `${API_BASE_URL}/api/exhibitors/requirements`,
-      ];
-      
-      let found = false;
-      for (const endpoint of alternativeEndpoints) {
-        try {
-          const response = await fetch(endpoint, {
-            headers: {
-              'Authorization': `Bearer ${token}`,
-            },
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            const transformedData = transformRequirementsData(data.data || data);
-            setRequirements(transformedData);
-            updateStats(transformedData);
-            found = true;
-            break;
-          }
-        } catch (error) {
-          continue;
-        }
+
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(payload.error || payload.message || 'Failed to load requirements');
       }
-      
-      if (!found) {
-        const mockData = generateMockRequirements();
-        setRequirements(mockData);
-        updateStats(mockData);
-      }
-      
+
+      const list = Array.isArray(payload.data) ? payload.data : [];
+      const transformed = transformRequirementsData(list);
+      setRequirements(transformed);
+      updateStats(transformed);
     } catch (error) {
       console.error('Error fetching requirements:', error);
-      const mockData = generateMockRequirements();
-      setRequirements(mockData);
-      updateStats(mockData);
+      setRequirements([]);
+      updateStats([]);
     } finally {
       setLoading(false);
     }
@@ -186,85 +151,6 @@ export default function AdminReceivedRequirementsPage() {
     }));
   };
 
-  const generateMockRequirements = (): Requirement[] => {
-    const mockData = [
-      {
-        company: 'Aow Logistics',
-        stall: 'A-101',
-        contact: 'Rohan Mondal',
-        email: 'mondalrohan201@gmail.com',
-        phone: '8617461530',
-        items: [
-          { type: 'Furniture', description: 'Executive Chair', quantity: 2 },
-          { type: 'Furniture', description: 'Conference Table', quantity: 1 },
-          { type: 'AV & IT Rentals', description: 'Projector with Screen', quantity: 1 },
-          { type: 'AV & IT Rentals', description: 'Wireless Microphones', quantity: 2 },
-          { type: 'Electrical Load', description: '15 AMP Power Supply', quantity: 3 },
-          { type: 'Hostess Services', description: 'Welcome Hostess', quantity: 2 },
-          { type: 'Security', description: 'Security Guard Service', quantity: 2 },
-          { type: 'Compressed Air', description: 'Compressed Air Connection', quantity: 1 },
-          { type: 'Water Connection', description: 'Water Connection', quantity: 1 },
-          { type: 'Housekeeping', description: 'Housekeeping Staff', quantity: 3 },
-        ]
-      },
-      {
-        company: 'Tech Innovations Ltd',
-        stall: 'B-205',
-        contact: 'Priya Sharma',
-        email: 'priya@techinnovations.com',
-        phone: '9876543210',
-        items: [
-          { type: 'Furniture', description: 'Reception Desk', quantity: 1 },
-          { type: 'Furniture', description: 'Visitor Chairs', quantity: 4 },
-          { type: 'AV & IT Rentals', description: '65" LED Display', quantity: 2 },
-          { type: 'Electrical Load', description: 'High Power Connection', quantity: 2 },
-          { type: 'Internet', description: 'Dedicated WiFi', quantity: 1 },
-        ]
-      },
-      {
-        company: 'Global Exports',
-        stall: 'C-312',
-        contact: 'Amit Patel',
-        email: 'amit@globalexports.com',
-        phone: '9988776655',
-        items: [
-          { type: 'Furniture', description: 'Display Shelves', quantity: 6 },
-          { type: 'Furniture', description: 'Product Stands', quantity: 3 },
-          { type: 'Lighting', description: 'LED Spot Lights', quantity: 8 },
-          { type: 'Water Connection', description: 'Water Supply', quantity: 1 },
-        ]
-      }
-    ];
-
-    const statuses: ('pending' | 'approved' | 'rejected' | 'completed')[] = ['pending', 'approved', 'rejected', 'completed'];
-    
-    return mockData.map((data, i) => ({
-      id: `req_${i + 1}`,
-      requirementId: `REQ-2024-${String(i + 1).padStart(4, '0')}`,
-      exhibitorId: `exh_${i + 1}`,
-      stallNumber: data.stall,
-      companyName: data.company,
-      contactPerson: data.contact,
-      email: data.email,
-      phone: data.phone,
-      status: statuses[i % statuses.length],
-      submittedAt: new Date(Date.now() - Math.random() * 30 * 24 * 60 * 60 * 1000).toISOString(),
-      updatedAt: new Date().toISOString(),
-      notes: '',
-      items: data.items.map((item, idx) => ({
-        id: `${i}_item_${idx}`,
-        type: item.type,
-        quantity: item.quantity,
-        description: item.description,
-        specifications: ''
-      })),
-      metadata: {
-        boothArea: `${Math.floor(Math.random() * 100) + 20} sqm`,
-        eventName: 'DiemEx 2024',
-      }
-    }));
-  };
-
   const updateStats = (data: Requirement[]) => {
     setStats({
       total: data.length,
@@ -280,11 +166,11 @@ export default function AdminReceivedRequirementsPage() {
     
     if (searchTerm) {
       filtered = filtered.filter(req => 
-        req.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        req.contactPerson.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        req.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        req.companyName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        req.contactPerson?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        req.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
         (req.stallNumber && req.stallNumber.toLowerCase().includes(searchTerm.toLowerCase())) ||
-        req.requirementId.toLowerCase().includes(searchTerm.toLowerCase())
+        req.requirementId?.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
     

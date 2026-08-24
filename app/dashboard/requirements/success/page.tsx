@@ -23,7 +23,9 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 export default function SuccessPage() {
   const searchParams = useSearchParams();

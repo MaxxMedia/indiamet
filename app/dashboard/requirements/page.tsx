@@ -40,7 +40,9 @@ import Image from 'next/image';
 import CashfreePayment from '@/components/CashfreePayment';
 
 // ============= API CONFIGURATION =============
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 // ============= INTERFACES =============
 interface GeneralInfo {

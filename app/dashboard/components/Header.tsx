@@ -1,58 +1,66 @@
 'use client';
 
-import { BellIcon, MagnifyingGlassIcon, Bars3Icon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
-import { logout } from '@/lib/exhibitorAuth';
+import { useEffect, useMemo, useState } from 'react';
+import { BellIcon, Bars3Icon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
+import { getExhibitorData, logout } from '@/lib/exhibitorAuth';
 
 interface HeaderProps {
   onMenuClick: () => void;
 }
 
 export default function Header({ onMenuClick }: HeaderProps) {
-  const handleLogout = () => {
-    logout();
-  };
+  const [company, setCompany] = useState('Exhibitor');
+
+  useEffect(() => {
+    const exhibitor = getExhibitorData();
+    if (exhibitor) {
+      setCompany(exhibitor.company || exhibitor.name || 'Exhibitor');
+    }
+  }, []);
+
+  const initials = useMemo(() => {
+    return company
+      .split(' ')
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((part) => part[0]?.toUpperCase())
+      .join('') || 'EX';
+  }, [company]);
 
   return (
-    <header className="sticky top-0 z-10 border-b border-gray-200 bg-white shadow-sm">
-      <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center">
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white">
+      <div className="flex h-16 items-center justify-between px-4 sm:px-6">
+        <div className="flex min-w-0 items-center gap-3">
           <button
             type="button"
-            className="rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 lg:hidden"
+            className="rounded-lg p-2 text-slate-600 hover:bg-slate-100 lg:hidden"
             onClick={onMenuClick}
           >
             <Bars3Icon className="h-6 w-6" />
           </button>
-          
-          <div className="relative ml-4 lg:ml-0">
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
-            </div>
-            <input
-              type="search"
-              className="block w-full rounded-md border border-gray-300 bg-white py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:border-blue-500 focus:ring-blue-500"
-              placeholder="Search..."
-            />
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-slate-900">Exhibitor Dashboard</p>
+            <p className="hidden truncate text-xs text-slate-500 sm:block">Welcome back, {company}</p>
           </div>
         </div>
 
-        <div className="flex items-center space-x-4">
-          <button className="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500">
-            <BellIcon className="h-6 w-6" />
-            <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-400 ring-2 ring-white" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <button type="button" className="relative rounded-lg p-2 text-slate-500 hover:bg-slate-100">
+            <BellIcon className="h-5 w-5" />
+            <span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-[#B80A26]" />
           </button>
-          
+
           <button
-            onClick={handleLogout}
-            className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            title="Logout"
+            type="button"
+            onClick={logout}
+            className="hidden items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100 sm:flex"
           >
             <ArrowRightOnRectangleIcon className="h-5 w-5" />
-            <span className="hidden md:inline">Logout</span>
+            Logout
           </button>
-          
-          <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
-            <span className="font-semibold text-blue-600">EX</span>
+
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#B80A26] text-xs font-semibold text-white">
+            {initials}
           </div>
         </div>
       </div>

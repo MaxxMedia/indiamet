@@ -28,7 +28,9 @@ import {
 } from '@heroicons/react/24/outline';
 import { SofaIcon, MonitorIcon, ZapIcon, CableIcon, DropletIcon, PackageIcon, UsersIcon, WifiIcon, LightbulbIcon } from 'lucide-react';
 
-const API_BASE_URL = 'https://diemex-backend.onrender.com';
+import { getBackendUrl } from '@/lib/api/backendUrl';
+
+const API_BASE_URL = getBackendUrl();
 
 interface RequirementItem {
   id: string;

@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 const QRCodeScanner = ({ onScanSuccess, onScanError }) => {
   const [isScanning, setIsScanning] = useState(false);
   const scannerRef = useRef(null);
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://INDIAMET-backend.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
   useEffect(() => {
     // Initialize scanner

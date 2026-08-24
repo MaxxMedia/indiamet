@@ -212,7 +212,9 @@ export default function PartnerRegistrationForm() {
     }
 
     try {
-      const response = await fetch('https://INDIAMET-backend.onrender.com/api/contact', {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api'}/contact`,
+        {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
