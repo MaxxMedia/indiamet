@@ -31,7 +31,7 @@ export default function ImpactSection() {
       title: 'Build long-term business connections',
       content:
         'Forge valuable relationships with industry leaders, quality professionals, manufacturing executives, OEMs, technology providers, and decision-makers from across the manufacturing ecosystem.',
-      image: '/images/japan.JPG',
+      image: '/images/picxx3.png',
       stat: {
         value: '',
         label: 'Network with the right partners, exchange knowledge, and create strategic collaborations that drive innovation, business growth, and long-term success in the metrology and quality engineering industry.',
@@ -41,7 +41,7 @@ export default function ImpactSection() {
       title: 'Showcase innovation to the right audience',
       content:
         'Present your latest metrology, measurement, inspection, calibration, testing, machine vision, and quality assurance solutions to a highly targeted audience of manufacturers, OEMs, quality professionals, production engineers, R&D teams, calibration laboratories, and industrial decision-makers.',
-      image: '/images/hottip.JPG',
+      image: '/images/picx4.png',
       stat: {
         value: '',
         label: 'Demonstrate your technologies through live interactions, generate qualified business opportunities, and position your brand at the forefront of precision manufacturing and quality excellence.',
