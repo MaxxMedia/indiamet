@@ -318,7 +318,7 @@ Exhibitors demonstrate how optical and laser technologies can capture dimensiona
   mainDescription: `Reliable and traceable calibration is fundamental to every measurement and quality assurance process. The Calibration & Testing Equipment sector at INDIAMET brings together calibration laboratories, equipment manufacturers, reference standard suppliers, and testing technology providers covering dimensional, pressure, temperature, torque, electrical, force, mass, and other industrial measurement parameters.
 
 Exhibitors showcase calibration instruments, reference standards, laboratory equipment, software, and documentation solutions that help organizations maintain measurement accuracy and traceability. Visitors can evaluate solutions for in-house calibration laboratories as well as professional calibration and testing services supporting quality management systems and industrial compliance.`,
-  heroImage: "/images/sectors/calibration.jpg",
+  heroImage: "/images/sectors/calibration2.jpg",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
