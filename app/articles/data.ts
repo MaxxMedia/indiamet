@@ -77,7 +77,7 @@ export const articles: Article[] = [
     id: "96",
     attributes: {
       Title: "The Future of Industrial Metrology: Driving Smart Manufacturing with Precision",
-      Slug: "the-future-of-industrial-metrology-driving-smart-manufacturing",
+      Slug: "future-trends-in-industrial-metrology-and-quality-engineering",
       Excerpt:
         "Discover how advanced metrology technologies, AI-powered inspection, digital measurement systems, and Quality 4.0 are transforming modern manufacturing across automotive, aerospace, electronics, medical devices, and semiconductor industries.",
       Content: `
