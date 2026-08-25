@@ -24,14 +24,14 @@ const sectors = [
   {
     title: 'Quality Control & Inspection',
     slug: 'quality-control-inspection',
-    image: '/images/sectors/quality.jpg',
+    image: '/images/sectors/inspection.jpg',
     description:
       'Industrial inspection systems, quality assurance solutions, SPC software, gauges, measuring instruments, and testing equipment.'
   },
   {
     title: 'Machine Vision & Optical Inspection',
     slug: 'machine-vision',
-    image: '/images/sectors/machine-vision.jpg',
+    image: '/images/sectors/visionsystems.jpg',
     description:
       'Industrial cameras, AI vision systems, optical inspection, image processing, automated defect detection, and smart vision solutions.'
   },
@@ -45,7 +45,7 @@ const sectors = [
   {
     title: 'Automation, Robotics & Industry 4.0',
     slug: 'automation-robotics',
-    image: '/images/sectors/automation.jpg',
+    image: '/images/sectors/robot.png',
     description:
       'Industrial robots, cobots, smart factories, IoT-enabled manufacturing, AI, digital transformation, and factory automation.'
   },
@@ -59,7 +59,7 @@ const sectors = [
   {
     title: 'Surface Measurement & Material Testing',
     slug: 'surface-material-testing',
-    image: '/images/sectors/material-testing.jpg',
+    image: '/images/sectors/surface.png',
     description:
       'Surface roughness testers, hardness testers, tensile testing machines, material analysis, and laboratory instruments.'
   },
