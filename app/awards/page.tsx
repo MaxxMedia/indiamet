@@ -222,7 +222,7 @@ const Awards: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[15px] tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[25px] tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-4">
                                         POWERED BY INDIAMET 2027
                                     </span>
                                 </motion.div>
