@@ -145,7 +145,7 @@ export default async function SectorPage({ params }: PageProps) {
     <>
       <main className="bg-white">
         {/* HERO SECTION */}
-        <section className="pt-20 pb-12 px-4 md:px-8">
+        <section className="pt-40 pb-12 px-4 md:px-8">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-[40px] md:text-[52px] font-bold text-black mt-10">
               {sectorData.title}
