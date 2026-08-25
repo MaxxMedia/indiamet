@@ -231,9 +231,9 @@ const Awards: NextPage = () => {
                                     transition={{ duration: 0.8 }}
                                     className="font-parabolica text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight"
                                 >
-                                   INDIAMET GLOBAL METROLOGY
+                                   INDIAMET 
                                     <br />
-                                    <span className="text-[#B80A26]">EXCELLENCE AWARDS  2027(GMEA)</span>
+                                    <span className="text-[#B80A26]">GLOBAL METROLOGY EXCELLENCE AWARDS  2027(GMEA)</span>
                                 </motion.h1>
 
                                 <motion.p
