@@ -14,41 +14,48 @@ export default function HeroSection() {
 
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  const handlePlayPause = () => {
+  const handlePlayPause = async () => {
     if (!videoRef.current) return
 
-    if (isPlaying) {
+    if (videoRef.current.paused) {
+      try {
+        await videoRef.current.play()
+        setIsPlaying(true)
+      } catch (error) {
+        console.error('Unable to play video:', error)
+      }
+    } else {
       videoRef.current.pause()
       setIsPlaying(false)
-    } else {
-      videoRef.current.play()
-      setIsPlaying(true)
     }
   }
 
   const handleMute = () => {
     if (!videoRef.current) return
 
-    videoRef.current.muted = !isMuted
-    setIsMuted(!isMuted)
+    const newMutedState = !videoRef.current.muted
+
+    videoRef.current.muted = newMutedState
+    setIsMuted(newMutedState)
   }
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        src="/images/video1.mp4"
+        className="absolute inset-0 h-full w-full object-cover"
+        src="/images/hero-video.mp4"
         autoPlay
-        muted={isMuted}
+        muted
         loop
         playsInline
+        preload="auto"
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
 
-      {/* Optional dark overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Hero Content */}
@@ -66,10 +73,11 @@ export default function HeroSection() {
 
       {/* Video Controls */}
       <div className="absolute bottom-8 right-8 z-20 flex gap-3">
+        {/* Play / Pause */}
         <button
           type="button"
           onClick={handlePlayPause}
-          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm hover:bg-black/80"
+          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm transition hover:bg-black/80"
           aria-label={isPlaying ? 'Pause video' : 'Play video'}
         >
           {isPlaying ? (
@@ -79,10 +87,11 @@ export default function HeroSection() {
           )}
         </button>
 
+        {/* Mute / Unmute */}
         <button
           type="button"
           onClick={handleMute}
-          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm hover:bg-black/80"
+          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm transition hover:bg-black/80"
           aria-label={isMuted ? 'Unmute video' : 'Mute video'}
         >
           {isMuted ? (
