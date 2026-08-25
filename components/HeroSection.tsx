@@ -1,62 +1,100 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import {
   SpeakerWaveIcon,
   SpeakerXMarkIcon,
   PlayIcon,
-  PauseIcon
+  PauseIcon,
 } from '@heroicons/react/24/outline'
 
 export default function HeroSection() {
-  const VIDEO_ID = '3P-hRFrsXIs'
   const [isMuted, setIsMuted] = useState(true)
   const [isPlaying, setIsPlaying] = useState(true)
-  const iframeRef = useRef<HTMLIFrameElement>(null)
 
-  // Direct YouTube iframe URL approach (Simpler and more reliable)
-  const getIframeUrl = () => {
-    const params = new URLSearchParams({
-      autoplay: '1',
-      mute: isMuted ? '1' : '0',
-      controls: '0',
-      loop: '1',
-      playlist: VIDEO_ID,
-      modestbranding: '1',
-      rel: '0',
-      playsinline: '1',
-      fs: '0',
-      disablekb: '1',
-      showinfo: '0',
-      iv_load_policy: '3',
-      background: '1',
-      enablejsapi: '1',
-    })
-    return `https://www.youtube.com/embed/${VIDEO_ID}?${params.toString()}`
-  }
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const handlePlayPause = () => {
-    if (!iframeRef.current?.contentWindow) return
+    if (!videoRef.current) return
 
-    // Send play/pause commands to iframe
-    const message = isPlaying ?
-      '{"event":"command","func":"pauseVideo","args":""}' :
-      '{"event":"command","func":"playVideo","args":""}'
-
-    iframeRef.current.contentWindow.postMessage(message, '*')
-    setIsPlaying(!isPlaying)
+    if (isPlaying) {
+      videoRef.current.pause()
+      setIsPlaying(false)
+    } else {
+      videoRef.current.play()
+      setIsPlaying(true)
+    }
   }
 
   const handleMute = () => {
-    if (!iframeRef.current?.contentWindow) return
+    if (!videoRef.current) return
 
-    const message = isMuted ?
-      '{"event":"command","func":"unMute","args":""}' :
-      '{"event":"command","func":"mute","args":""}'
-
-    iframeRef.current.contentWindow.postMessage(message, '*')
+    videoRef.current.muted = !isMuted
     setIsMuted(!isMuted)
   }
+
+  return (
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Background Video */}
+      <video
+        ref={videoRef}
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/images/video1.mp4"
+        autoPlay
+        muted={isMuted}
+        loop
+        playsInline
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
+
+      {/* Optional dark overlay */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* Hero Content */}
+      <div className="relative z-10 flex h-full items-center justify-center">
+        <div className="text-center text-white">
+          <h1 className="text-5xl font-bold">
+            Your Hero Title
+          </h1>
+
+          <p className="mt-4 text-xl">
+            Your hero description goes here
+          </p>
+        </div>
+      </div>
+
+      {/* Video Controls */}
+      <div className="absolute bottom-8 right-8 z-20 flex gap-3">
+        <button
+          type="button"
+          onClick={handlePlayPause}
+          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm hover:bg-black/80"
+          aria-label={isPlaying ? 'Pause video' : 'Play video'}
+        >
+          {isPlaying ? (
+            <PauseIcon className="h-6 w-6" />
+          ) : (
+            <PlayIcon className="h-6 w-6" />
+          )}
+        </button>
+
+        <button
+          type="button"
+          onClick={handleMute}
+          className="rounded-full bg-black/60 p-3 text-white backdrop-blur-sm hover:bg-black/80"
+          aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+        >
+          {isMuted ? (
+            <SpeakerXMarkIcon className="h-6 w-6" />
+          ) : (
+            <SpeakerWaveIcon className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+    </section>
+  )
+}
 
   // Handle iframe load
   const handleIframeLoad = () => {
