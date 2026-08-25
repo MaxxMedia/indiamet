@@ -181,7 +181,7 @@ export const articles: Article[] = [
       Image: {
         data: {
           attributes: {
-            url: "/images/article4.jpg"
+            url: "/images/3dscanner.png"
           }
         }
       }
