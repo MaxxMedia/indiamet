@@ -45,7 +45,7 @@ const sectors = [
   {
     title: 'Automation, Robotics & Industry 4.0',
     slug: 'automation-robotics',
-    image: '/images/sectors/robot.jpg',
+    image: '/images/sectors/robot.png',
     description:
       'Industrial robots, cobots, smart factories, IoT-enabled manufacturing, AI, digital transformation, and factory automation.'
   },
