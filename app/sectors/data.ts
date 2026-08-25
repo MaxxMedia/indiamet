@@ -150,7 +150,7 @@ export const sectorDatabase: Record<string, SectorDetail> = {
   mainDescription: `As manufacturing tolerances continue to become tighter across automotive, aerospace, electronics, medical devices, engineering, and precision manufacturing, advanced metrology has become an essential part of modern production and quality assurance. The Metrology & Precision Measurement Systems sector at INDIAMET brings together leading manufacturers and solution providers of coordinate measuring machines, optical and laser measurement systems, precision gauges, dimensional inspection equipment, and advanced metrology technologies.
 
 From incoming inspection and first-piece verification to in-process measurement and final quality inspection, exhibitors showcase technologies designed to deliver accuracy, repeatability, traceability, and faster inspection cycles. Visitors can explore contact and non-contact measurement systems, portable and automated inspection solutions, and advanced metrology software that converts measurement data into actionable quality insights.`,
-  heroImage: "/images/sectors/metrology.jpg",
+  heroImage: "/images/sectors/measurement.png",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
