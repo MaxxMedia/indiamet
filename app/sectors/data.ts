@@ -95,7 +95,7 @@ export const indiametSectors: SectorSummary[] = [
     id: 7,
     title: "Automation, Robotics & Industry 4.0",
     slug: "automation-robotics",
-    image: "/images/sectors/robot.png",
+    image: "/images/sectors/robotech.png",
     description:
       "Industrial robots, cobots, smart factories, IoT-enabled manufacturing, AI, digital transformation, and factory automation.",
   },
@@ -486,7 +486,7 @@ Exhibitors showcase portable and fixed inspection systems for applications acros
   mainDescription: `Automation and connected manufacturing are transforming how inspection, measurement, and quality processes are performed. The Automation, Robotics & Industry 4.0 sector at INDIAMET showcases industrial robots, collaborative robots, automated inspection cells, IoT-enabled manufacturing systems, AI-based monitoring, and digital technologies supporting smart production and quality operations.
 
 Exhibitors demonstrate how robotics and automation can integrate measurement and inspection directly into production workflows. Visitors can explore automated quality inspection, robotic handling, connected equipment, real-time production monitoring, and digital platforms that link manufacturing data with quality information.`,
-  heroImage: "/images/sectors/automation.jpg",
+  heroImage: "/images/sectors/robotech.png",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
