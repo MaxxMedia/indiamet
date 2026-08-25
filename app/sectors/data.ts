@@ -87,7 +87,7 @@ export const indiametSectors: SectorSummary[] = [
     id: 6,
     title: "Non-Destructive Testing (NDT)",
     slug: "ndt",
-    image: "/images/sectors/ndt.jpg",
+    image: "/images/sectors/NDT2.jpg",
     description:
       "Ultrasonic, radiography, eddy current, magnetic particle, dye penetrant, and advanced NDT technologies.",
   },
@@ -103,7 +103,7 @@ export const indiametSectors: SectorSummary[] = [
     id: 8,
     title: "Sensors & Industrial Instrumentation",
     slug: "sensors-instrumentation",
-    image: "/images/sectors/sensors.jpg",
+    image: "/images/sectors/sensors2.jpg",
     description:
       "Industrial sensors, transmitters, data acquisition systems, monitoring devices, and process instrumentation.",
   },
@@ -120,7 +120,7 @@ export const indiametSectors: SectorSummary[] = [
     id: 10,
     title: "Surface Measurement & Material Testing",
     slug: "surface-material-testing",
-    image: "/images/sectors/material-testing.jpg",
+    image: "/images/sectors/surface2.jpg",
     description:
       "Surface roughness testers, hardness testers, tensile testing machines, material analysis, and laboratory instruments.",
   },
