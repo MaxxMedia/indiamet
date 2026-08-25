@@ -74,7 +74,55 @@ export const articles: Article[] = [
   },
 
   {
-    id: "96", attributes: { Title: "How CMM Technology Is Transforming Precision Inspection in Modern Manufacturing", Slug: "how-cmm-technology-is-transforming-precision-inspection", Excerpt: "Explore how Coordinate Measuring Machines (CMMs) are improving dimensional inspection, accuracy, productivity, and quality control across automotive, aerospace, engineering, medical, and precision manufacturing industries.", Content: ` <p><strong>Coordinate Measuring Machines (CMMs)</strong> have become one of the most important technologies in modern dimensional inspection. By accurately measuring the geometry of manufactured components, CMMs help manufacturers verify critical dimensions, tolerances, and geometric characteristics before products reach the next stage of production.</p> <h2>What Is a Coordinate Measuring Machine?</h2> <p>A CMM is a precision measurement system that determines the physical geometry of an object by using a probing system to capture points on its surface. These measurements are compared with engineering drawings, CAD models, or predefined inspection programs to determine whether a component meets the required specifications.</p> <h2>Why CMMs Are Important in Precision Manufacturing</h2> <p>Modern components often require extremely tight tolerances. Manual inspection methods can be time-consuming and may introduce measurement variation. CMMs provide repeatable and highly accurate measurements, making them particularly valuable for quality-critical applications.</p> <ul> <li>High-accuracy dimensional inspection</li> <li>Verification of geometric tolerances</li> <li>Automated inspection routines</li> <li>Repeatable measurement results</li> <li>CAD-based inspection and reporting</li> <li>Detailed quality documentation</li> </ul> <h2>Different Types of CMMs</h2> <p>CMM technology is available in several configurations to suit different manufacturing requirements. Bridge-type CMMs are widely used for high-precision inspection, while gantry, horizontal-arm, and portable CMM systems are suitable for larger components and specialized applications.</p> <h2>CMMs in Automotive and Aerospace Manufacturing</h2> <p>The automotive and aerospace industries depend heavily on dimensional accuracy. Engine components, transmission parts, moulds, dies, aircraft components, and structural assemblies must meet strict engineering tolerances. CMMs enable manufacturers to inspect these components efficiently and identify deviations early in the production process.</p> <h2>Integration with CAD and Digital Manufacturing</h2> <p>Modern CMM software can connect measurement processes with CAD models and digital quality systems. Inspection results can be automatically compared against nominal dimensions and presented through detailed measurement reports. This creates a digital link between product design, manufacturing, inspection, and quality management.</p> <h2>The Future of CMM Inspection</h2> <p>CMM technology is evolving toward greater automation, faster inspection cycles, advanced sensors, intelligent software, and integration with connected manufacturing environments. Automated loading systems, scanning probes, vision technologies, and data analytics are helping manufacturers increase inspection productivity while maintaining high levels of accuracy.</p> <p>As precision manufacturing continues to evolve, CMMs will remain a critical part of modern quality engineering. Exhibitions such as <strong>INDIAMET 2027</strong> provide an important platform for manufacturers, metrology companies, inspection specialists, and industrial buyers to discover the latest developments in dimensional measurement and quality technology.</p> ` } },
+  id: "96",
+  attributes: {
+    Title: "How CMM Technology Is Transforming Precision Inspection in Modern Manufacturing",
+    Slug: "how-cmm-technology-is-transforming-precision-inspection",
+    Excerpt:
+      "Explore how Coordinate Measuring Machines (CMMs) are improving dimensional inspection, accuracy, productivity, and quality control across automotive, aerospace, engineering, medical, and precision manufacturing industries.",
+    Content: `
+      <p><strong>Coordinate Measuring Machines (CMMs)</strong> have become one of the most important technologies in modern dimensional inspection. By accurately measuring the geometry of manufactured components, CMMs help manufacturers verify critical dimensions, tolerances, and geometric characteristics before products reach the next stage of production.</p>
+
+      <h2>What Is a Coordinate Measuring Machine?</h2>
+      <p>A CMM is a precision measurement system that determines the physical geometry of an object by using a probing system to capture points on its surface. These measurements are compared with engineering drawings, CAD models, or predefined inspection programs to determine whether a component meets the required specifications.</p>
+
+      <h2>Why CMMs Are Important in Precision Manufacturing</h2>
+      <p>Modern components often require extremely tight tolerances. Manual inspection methods can be time-consuming and may introduce measurement variation. CMMs provide repeatable and highly accurate measurements, making them particularly valuable for quality-critical applications.</p>
+
+      <ul>
+        <li>High-accuracy dimensional inspection</li>
+        <li>Verification of geometric tolerances</li>
+        <li>Automated inspection routines</li>
+        <li>Repeatable measurement results</li>
+        <li>CAD-based inspection and reporting</li>
+        <li>Detailed quality documentation</li>
+      </ul>
+
+      <h2>Different Types of CMMs</h2>
+      <p>CMM technology is available in several configurations to suit different manufacturing requirements. Bridge-type CMMs are widely used for high-precision inspection, while gantry, horizontal-arm, and portable CMM systems are suitable for larger components and specialized applications.</p>
+
+      <h2>CMMs in Automotive and Aerospace Manufacturing</h2>
+      <p>The automotive and aerospace industries depend heavily on dimensional accuracy. Engine components, transmission parts, moulds, dies, aircraft components, and structural assemblies must meet strict engineering tolerances. CMMs enable manufacturers to inspect these components efficiently and identify deviations early in the production process.</p>
+
+      <h2>Integration with CAD and Digital Manufacturing</h2>
+      <p>Modern CMM software can connect measurement processes with CAD models and digital quality systems. Inspection results can be automatically compared against nominal dimensions and presented through detailed measurement reports. This creates a digital link between product design, manufacturing, inspection, and quality management.</p>
+
+      <h2>The Future of CMM Inspection</h2>
+      <p>CMM technology is evolving toward greater automation, faster inspection cycles, advanced sensors, intelligent software, and integration with connected manufacturing environments. Automated loading systems, scanning probes, vision technologies, and data analytics are helping manufacturers increase inspection productivity while maintaining high levels of accuracy.</p>
+
+      <p>As precision manufacturing continues to evolve, CMMs will remain a critical part of modern quality engineering. Exhibitions such as <strong>INDIAMET 2027</strong> provide an important platform for manufacturers, metrology companies, inspection specialists, and industrial buyers to discover the latest developments in dimensional measurement and quality technology.</p>
+    `,
+    PublishedDate: "2027-02-01T03:30:00.000Z",
+    Image: {
+      data: {
+        attributes: {
+          url: "/images/cmm_metrology.png"
+        }
+      }
+    }
+  }
+},
+    
 
   {
     id: "83",
