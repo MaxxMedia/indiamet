@@ -266,9 +266,9 @@ export const articles: Article[] = [
 
 export const mockPageData: PageData = {
   Header: {
-    Title: "Industry Insights and News",
+    Title: "Metrology Insights & Industry News",
     Content:
-      "Stay up to date with the latest trends, innovations, and developments shaping the die,mould and tooling industry."
+      "Explore the latest technologies, trends, innovations, and expert insights shaping the future of industrial metrology, precision measurement, quality assurance, and smart manufacturing."
   },
   Sections: [
     {
