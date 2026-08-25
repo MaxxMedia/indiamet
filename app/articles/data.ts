@@ -66,7 +66,7 @@ export const articles: Article[] = [
     Image: {
       data: {
         attributes: {
-          url: "/images/article1.jpg"
+          url: "/images/automation.webp"
           }
         }
       }
@@ -102,7 +102,7 @@ export const articles: Article[] = [
     Image: {
       data: {
         attributes: {
-          url: "/images/article2.jpg"
+          url: "/images/inspection_ai.jpg"
           }
         }
       }
@@ -135,7 +135,7 @@ export const articles: Article[] = [
     Image: {
       data: {
         attributes: {
-          url: "/images/article3.jpg"
+          url: "/images/3dscanner.png"
           }
         }
       }

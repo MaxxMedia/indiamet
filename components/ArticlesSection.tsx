@@ -14,7 +14,7 @@ export default function ArticlesSection() {
   title: 'Why Precision Measurement is Critical for Next-Generation Manufacturing',
   slug: 'why-precision-measurement-is-critical-for-next-generation-manufacturing',
   excerpt: 'Explore how CMMs, optical metrology, machine vision, and calibration technologies are helping manufacturers improve quality, reduce defects, and achieve global standards.',
-  image: '/images/article3.jpg',
+  image: '/images/cmm.jpg',
   date: 'August 20, 2026',
 },
 {
