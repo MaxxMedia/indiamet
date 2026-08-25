@@ -11,7 +11,7 @@ export default function ImpactSection() {
 
       content:
         'INDIAMET 2027 provides an unparalleled opportunity for visitors to discover the latest innovations in metrology, measurement technology, quality assurance, inspection systems, calibration, testing equipment, machine vision, NDT, and precision engineering solutions—all under one roof.',
-      image: '/images/tooling.JPG',
+      image: '/images/picx1.png',
       stat: {
         value: '',
         label: 'Connect directly with leading technology providers, compare cutting-edge solutions, evaluate live demonstrations, and build valuable partnerships with global manufacturers, OEMs, quality professionals, and industrial solution providers driving the future of precision manufacturing.',
@@ -21,7 +21,7 @@ export default function ImpactSection() {
       title: 'Expand your business with the right partners',
       content:
         'INDIAMET 2027 connects you with leading metrology, measurement, inspection, calibration, testing, machine vision, and quality assurance solution providers from India and around the world. Explore innovative technologies, evaluate solutions firsthand, and engage directly with manufacturers, OEMs, distributors, research institutions, and industry experts to identify the right partners for your business growth.',
-      image: '/images/raj.JPG',
+      image: '/images/picx2.png',
       stat: {
         value: '',
         label: 'Build valuable business relationships, discover new technologies, and unlock opportunities that enhance productivity, quality, and manufacturing excellence.',
