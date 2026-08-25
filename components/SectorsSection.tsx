@@ -10,7 +10,7 @@ const sectors = [
   {
     title: 'Metrology & Precision Measurement Systems',
     slug: 'metrology-precision-measurement',
-    image: '/images/sectors/metrology.jpg',
+    image: '/images/sectors/cmm.jpg',
     description:
       'CMMs, vision measuring systems, laser scanners, gauges, coordinate measuring technologies, and precision inspection equipment.'
   },
