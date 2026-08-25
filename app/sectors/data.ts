@@ -262,7 +262,7 @@ Exhibitors showcase high-accuracy measurement solutions designed for tool rooms,
   mainDescription: `Non-contact measurement and inspection technologies are increasingly important for complex, delicate, reflective, miniature, and high-volume components. The Optical, Vision & Laser Inspection Systems sector at INDIAMET showcases machine vision systems, optical measurement equipment, laser scanners, 3D measurement technologies, profile projectors, microscopes, and advanced non-contact inspection solutions.
 
 Exhibitors demonstrate how optical and laser technologies can capture dimensional and surface information quickly and accurately, supporting automated inspection and high-throughput manufacturing. Visitors can explore solutions for component measurement, defect detection, surface inspection, reverse engineering, and automated quality verification.`,
-  heroImage: "/images/vision.jpg",
+  heroImage: "/images/visionsystems.jpg",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
@@ -654,7 +654,7 @@ Exhibitors present instrument ranges for general workshop inspection as well as 
   mainDescription: `Dimensional accuracy is only one part of product quality. Manufacturers must also verify surface characteristics, hardness, strength, and material properties to ensure components meet engineering specifications. The Surface Measurement & Material Testing sector at INDIAMET brings together manufacturers and technology providers of surface roughness testers, hardness testers, tensile testing machines, material analysis equipment, and laboratory testing systems.
 
 Exhibitors showcase laboratory and portable testing technologies used for incoming material inspection, process verification, research and development, and final product quality assurance. Visitors can explore solutions for evaluating mechanical properties, surface characteristics, material composition, and compliance with required specifications.`,
-  heroImage: "/images/sectors/material-testing.jpg",
+  heroImage: "/images/sectors/surface2.jpg",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
