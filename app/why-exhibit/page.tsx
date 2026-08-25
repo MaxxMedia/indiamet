@@ -718,7 +718,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
         </section>
 
         {/* A SNAPSHOT OF EXHIBITORS */}
-        <section className="py-16 lg:py-24 font-parabolica">
+        {/* <section className="py-16 lg:py-24 font-parabolica">
           <SectionContainer>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -760,7 +760,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
               </Link>
             </motion.button>
           </SectionContainer>
-        </section>
+        </section> */}
 
         {/* JOURNEY CTA */}
         <section
