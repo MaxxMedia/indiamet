@@ -252,7 +252,7 @@ export const articles: Article[] = [
       Image: {
         data: {
           attributes: {
-            url: "/images/article6.jpg"
+            url: "/images/industry_metrology.png"
           }
         }
       }
