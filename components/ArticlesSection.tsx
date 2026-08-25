@@ -19,7 +19,7 @@ export default function ArticlesSection() {
 },
 {
   title: 'Industrial Metrology Trends Shaping the Future of Manufacturing',
-  slug: 'industrial-metrology-trends-shaping-the-future-of-manufacturing',
+  slug: 'future-trends-in-industrial-metrology-and-quality-engineering',
   excerpt: 'From 3D scanning and digital inspection to AI-driven quality control and smart factories, explore the technologies redefining precision manufacturing.',
   image: '/images/3dscanner.png',
   date: 'August 25, 2026',
