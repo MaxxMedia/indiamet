@@ -7,7 +7,7 @@ export default function ArticlesSection() {
   title: 'The Future of Industrial Metrology: Driving Smart Manufacturing',
   slug: 'future-of-industrial-metrology-driving-smart-manufacturing',
   excerpt: 'Discover how precision measurement, AI-powered inspection, and advanced metrology technologies are transforming modern manufacturing across automotive, aerospace, electronics, and medical devices.',
-  image: '/images/article1.jpg',
+  image: '/images/industry_metrology.png',
   date: 'August 05, 2026',
 },
 {
@@ -21,7 +21,7 @@ export default function ArticlesSection() {
   title: 'Industrial Metrology Trends Shaping the Future of Manufacturing',
   slug: 'industrial-metrology-trends-shaping-the-future-of-manufacturing',
   excerpt: 'From 3D scanning and digital inspection to AI-driven quality control and smart factories, explore the technologies redefining precision manufacturing.',
-  image: '/images/article4.jpg',
+  image: '/images/3dscanner.png',
   date: 'August 25, 2026',
 },
   ]
