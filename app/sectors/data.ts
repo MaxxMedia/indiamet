@@ -63,7 +63,7 @@ export const indiametSectors: SectorSummary[] = [
     title: "Optical, Vision & Laser Inspection Systems",
     slug: "vision-inspection",
     // NOTE: sourced from /sectors/page.tsx ("/images/vision.jpg") — verify exists.
-    image: "/images/vision.jpg",
+    image: "/images/optical_inspection.png",
     description:
       "Machine vision, optical metrology, laser scanners, 3D measurement systems, industrial microscopes, profile projectors, and non-contact inspection technologies.",
   },
