@@ -222,9 +222,7 @@ const Awards: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="text-[25px] tracking-widest text-[#B80A26] py-1 mb-4">
-                                        POWERED BY INDIAMET 2027
-                                    </span>
+                                    
                                 </motion.div>
 
                                 <motion.h1
@@ -233,7 +231,7 @@ const Awards: NextPage = () => {
                                     transition={{ duration: 0.8 }}
                                     className="font-parabolica text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight"
                                 >
-                                    GLOBAL METROLOGY
+                                   INDIAMET 2027 GLOBAL METROLOGY
                                     <br />
                                     <span className="text-[#B80A26]">EXCELLENCE AWARDS (GMEA)</span>
                                 </motion.h1>
