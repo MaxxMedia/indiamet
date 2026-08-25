@@ -195,9 +195,7 @@ const NominatePage: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[17px] tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-4">
-                                        GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
-                                    </span>
+                                    
                                 </motion.div>
 
                                 <motion.h1
@@ -206,7 +204,7 @@ const NominatePage: NextPage = () => {
                                     transition={{ duration: 0.8 }}
                                     className="font-parabolica text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
                                 >
-                                    NOMINATION FORM
+                                    AWARDS NOMINATION FORM
                                 </motion.h1>
 
                                 <motion.p
