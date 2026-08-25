@@ -1,40 +1,106 @@
+// app/articles/data.ts
+
+export interface Article {
+  id: string;
+  attributes: {
+    Title: string;
+    Slug: string;
+    Excerpt: string;
+    Content: string;
+    PublishedDate: string;
+    Image: {
+      data: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
+  };
+}
+
+export interface PageData {
+  Header: {
+    Title: string;
+    Content: string;
+  };
+  Sections: Array<{
+    __typename: string;
+    id: string;
+    Articles?: Article[];
+  }>;
+}
+
 /* ================================
-   Metrology Articles
+   Articles with FULL HTML Content
 ================================ */
 
 export const articles: Article[] = [
   {
-    id: "101",
+    id: "97",
+    attributes: {
+      Title: "How Automation Is Transforming Modern Metrology",
+      Slug: "how-automation-is-transforming-modern-metrology",
+      Excerpt:
+        "Automation technologies are transforming modern metrology by improving measurement accuracy, inspection speed, productivity, and manufacturing efficiency.",
+      Content: `
+    <p><strong>Automation in metrology</strong> is transforming the way manufacturers inspect, measure, and control the quality of precision components. With increasing demand for tighter tolerances in automotive, aerospace, electronics, medical devices, and engineering industries, manufacturers are integrating automated measurement technologies into their production processes.</p>
+
+    <h2>The Shift Toward Automated Metrology</h2>
+    <p>Modern manufacturing facilities are increasingly adopting automated CMMs, robotic inspection systems, machine vision, 3D scanning, and digital measurement technologies. These systems help reduce manual intervention while improving repeatability, accuracy, and inspection speed.</p>
+
+    <h2>Key Technologies Driving Metrology Automation</h2>
+    <ul>
+      <li>Automated Coordinate Measuring Machines (CMMs)</li>
+      <li>Robotic measurement and inspection systems</li>
+      <li>Automated optical and vision inspection</li>
+      <li>3D laser scanning and structured-light measurement</li>
+      <li>AI-powered quality inspection systems</li>
+    </ul>
+
+    <h2>Benefits for Manufacturers</h2>
+    <p>Automated metrology enables manufacturers to inspect complex components with consistent accuracy while reducing inspection time and human error. It also helps companies collect reliable measurement data for process improvement and quality control.</p>
+
+    <p>Industry platforms such as <strong>INDIAMET – India International Metrology, Measurement Technology & Equipment Exhibition</strong> showcase advanced metrology technologies helping manufacturers move toward smarter and more automated quality systems.</p>
+    `,
+      PublishedDate: "2027-02-25T03:30:00.000Z",
+      Image: {
+        data: {
+          attributes: {
+            url: "/images/automation.webp"
+          }
+        }
+      }
+    }
+  },
+
+  {
+    id: "96",
     attributes: {
       Title: "The Future of Industrial Metrology: Driving Smart Manufacturing with Precision",
-      Slug: "future-of-industrial-metrology-smart-manufacturing",
+      Slug: "the-future-of-industrial-metrology-driving-smart-manufacturing",
       Excerpt:
-        "Discover how advanced metrology technologies, digital measurement systems, automation, and Quality 4.0 are transforming modern manufacturing.",
+        "Discover how advanced metrology technologies, AI-powered inspection, digital measurement systems, and Quality 4.0 are transforming modern manufacturing across automotive, aerospace, electronics, medical devices, and semiconductor industries.",
       Content: `
-        <p><strong>Industrial metrology</strong> has become a critical part of modern manufacturing. As industries demand tighter tolerances, higher productivity, and consistent quality, manufacturers are increasingly integrating advanced measurement technologies into their production processes.</p>
+    <p><strong>Industrial metrology</strong> forms the foundation of modern quality manufacturing. From automotive components to aerospace structures and semiconductor products, accurate measurement is essential for achieving dimensional accuracy, reliability, and consistent product quality.</p>
 
-        <h2>Why Metrology Matters in Modern Manufacturing</h2>
-        <p>Precision measurement enables manufacturers to verify dimensional accuracy, control process variation, reduce defects, and maintain consistent product quality. Metrology is no longer limited to final inspection; it is becoming an integral part of the entire manufacturing workflow.</p>
+    <h2>Importance of Metrology in Industrial Production</h2>
+    <p>Manufacturers rely on precision measurement to verify component dimensions, geometric characteristics, surface quality, and production tolerances. Accurate measurement helps ensure repeatability, reduce defects, and maintain compliance with engineering specifications.</p>
 
-        <h2>Key Technologies Transforming Metrology</h2>
-        <ul>
-          <li>Coordinate Measuring Machines (CMMs)</li>
-          <li>3D laser scanning and optical measurement</li>
-          <li>Machine vision inspection systems</li>
-          <li>Automated measurement systems</li>
-          <li>Digital calibration and data management</li>
-          <li>AI-powered inspection and defect detection</li>
-        </ul>
+    <h2>Key Technologies Driving Metrology</h2>
+    <ul>
+      <li>Coordinate Measuring Machines (CMMs)</li>
+      <li>3D scanning and optical measurement</li>
+      <li>Machine vision inspection</li>
+      <li>Advanced calibration systems</li>
+      <li>AI-powered quality inspection</li>
+    </ul>
 
-        <h2>Metrology and Industry 4.0</h2>
-        <p>Connected measurement systems are enabling manufacturers to collect inspection data directly from the production floor. Integration with MES, ERP, SPC, and quality management systems allows companies to make faster, data-driven decisions.</p>
+    <h2>Metrology and Smart Manufacturing</h2>
+    <p>Connected measurement systems are becoming an important part of Industry 4.0 manufacturing. Real-time inspection data can be integrated with production systems, quality management platforms, and statistical process control tools.</p>
 
-        <h2>The Road Ahead</h2>
-        <p>The future of industrial metrology will be driven by automation, connectivity, artificial intelligence, digital twins, and real-time measurement. These technologies will help manufacturers move from reactive inspection toward predictive and intelligent quality control.</p>
-
-        <p><strong>INDIAMET</strong> brings together metrology manufacturers, measurement technology providers, inspection specialists, calibration laboratories, and industrial buyers to explore the future of precision measurement and quality engineering.</p>
-      `,
-      PublishedDate: "2026-08-20T03:30:00.000Z",
+    <p>Events such as <strong>INDIAMET 2027</strong> bring together metrology manufacturers, technology providers, calibration laboratories, and industrial buyers to explore the future of precision measurement and quality engineering.</p>
+    `,
+      PublishedDate: "2027-02-01T03:30:00.000Z",
       Image: {
         data: {
           attributes: {
@@ -46,37 +112,33 @@ export const articles: Article[] = [
   },
 
   {
-    id: "102",
+    id: "83",
     attributes: {
-      Title: "How Coordinate Measuring Machines Are Transforming Quality Inspection",
-      Slug: "coordinate-measuring-machines-quality-inspection",
+      Title: "Why Precision Measurement Is Critical for Next-Generation Manufacturing",
+      Slug: "why-precision-measurement-is-critical-for-next-generation-manufacturing",
       Excerpt:
-        "Learn how CMM technology is helping manufacturers achieve high dimensional accuracy, faster inspection, and reliable quality control.",
+        "Explore how precision measurement, calibration, machine vision, coordinate measuring machines (CMMs), and digital inspection technologies are helping manufacturers improve quality, reduce defects, and achieve global manufacturing standards.",
       Content: `
-        <p><strong>Coordinate Measuring Machines (CMMs)</strong> are among the most important technologies used in precision inspection. They enable manufacturers to accurately measure complex components and compare actual dimensions against engineering specifications.</p>
+    <h2>The Importance of Precision Measurement</h2>
 
-        <h2>What Makes CMMs Important?</h2>
-        <p>CMMs can measure complex geometries, positions, profiles, and dimensional characteristics with a high level of repeatability. This makes them essential for industries where precision and consistency are critical.</p>
+    <p><strong>Precision measurement</strong> plays a critical role in modern manufacturing. As industries move toward tighter tolerances and increasingly complex components, reliable measurement systems are essential for maintaining product quality and manufacturing consistency.</p>
 
-        <h2>Major Applications of CMMs</h2>
-        <ul>
-          <li>Automotive component inspection</li>
-          <li>Aerospace component verification</li>
-          <li>Precision engineering</li>
-          <li>Tool and die inspection</li>
-          <li>Medical device manufacturing</li>
-          <li>Quality control laboratories</li>
-        </ul>
+    <h2>Major Applications of Precision Measurement</h2>
+    <ul>
+      <li>Automotive and electric vehicle components</li>
+      <li>Aerospace and defence manufacturing</li>
+      <li>Electronics and semiconductor industries</li>
+      <li>Medical devices and healthcare products</li>
+      <li>Precision engineering and machine tools</li>
+    </ul>
 
-        <h2>Bridge CMMs, Portable CMMs and Optical Systems</h2>
-        <p>Manufacturers can select from bridge-type CMMs, portable measuring arms, optical measurement systems, and other advanced inspection platforms depending on component size, tolerance requirements, and production environment.</p>
+    <h2>Advanced Measurement Technologies</h2>
+    <p>Manufacturers are increasingly using CMMs, optical measurement systems, 3D scanners, machine vision, surface measurement instruments, and digital inspection software to achieve higher levels of accuracy and repeatability.</p>
 
-        <h2>Integration with Digital Manufacturing</h2>
-        <p>Modern CMMs can connect with inspection software, CAD systems, statistical process control platforms, and manufacturing databases. This enables faster reporting and improved traceability.</p>
-
-        <p>As manufacturing tolerances become tighter, CMM technology will continue to play a central role in industrial quality assurance.</p>
-      `,
-      PublishedDate: "2026-08-15T03:30:00.000Z",
+    <h2>Future Opportunities</h2>
+    <p>The integration of automation, artificial intelligence, connected measurement systems, and real-time quality monitoring will further strengthen the role of metrology in next-generation manufacturing.</p>
+    `,
+      PublishedDate: "2027-01-20T03:30:00.000Z",
       Image: {
         data: {
           attributes: {
@@ -88,39 +150,38 @@ export const articles: Article[] = [
   },
 
   {
-    id: "103",
+    id: "82",
     attributes: {
-      Title: "3D Scanning and Optical Metrology: The Next Generation of Measurement",
-      Slug: "3d-scanning-optical-metrology-measurement",
+      Title: "Industrial Metrology Trends Shaping the Future of Manufacturing",
+      Slug: "industrial-metrology-trends-shaping-the-future-of-manufacturing",
       Excerpt:
-        "Explore how 3D scanning, structured light, and optical measurement technologies are changing the way complex industrial components are inspected.",
+        "From 3D scanning and optical metrology to AI-powered quality inspection and automated measurement systems, discover the emerging technologies redefining industrial quality, productivity, and manufacturing excellence.",
       Content: `
-        <p><strong>3D scanning and optical metrology</strong> are rapidly becoming important technologies for manufacturers working with complex components, freeform surfaces, and high-volume inspection requirements.</p>
+    <p><strong>Industrial metrology</strong> is rapidly evolving as manufacturers integrate digital technologies into traditional inspection and quality control processes.</p>
 
-        <h2>Why 3D Measurement Is Growing</h2>
-        <p>Traditional contact measurement methods can be time-consuming when inspecting complex geometries. Non-contact optical systems can capture large amounts of dimensional information quickly and generate detailed digital representations of physical components.</p>
+    <h2>Industry 4.0 in Metrology</h2>
+    <p>Manufacturers are adopting connected measurement equipment, real-time inspection data, automated reporting, and predictive quality systems to improve productivity and reduce manufacturing errors.</p>
 
-        <h2>Major Applications</h2>
-        <ul>
-          <li>Reverse engineering</li>
-          <li>Automotive body and component inspection</li>
-          <li>Aerospace component measurement</li>
-          <li>Tool and mould inspection</li>
-          <li>First article inspection</li>
-          <li>Surface and profile analysis</li>
-        </ul>
+    <h2>Key Technologies</h2>
+    <ul>
+      <li>3D laser scanning</li>
+      <li>Optical and vision measurement systems</li>
+      <li>Industrial IoT measurement devices</li>
+      <li>AI-driven quality inspection</li>
+      <li>Digital twins and virtual inspection</li>
+      <li>Cloud-based metrology software</li>
+    </ul>
 
-        <h2>Structured Light and Laser Scanning</h2>
-        <p>Structured-light scanners and laser-based systems can capture thousands or millions of measurement points. The resulting point clouds can be compared with CAD models to identify dimensional deviations.</p>
+    <h2>Connected Quality Systems</h2>
+    <p>Modern metrology systems can connect measurement data with manufacturing and quality platforms. This enables manufacturers to identify process variations quickly and take corrective action before defects increase.</p>
 
-        <h2>From Inspection to Digital Twins</h2>
-        <p>Measurement data from 3D scanners can support digital twin development, process optimization, product validation, and continuous improvement programs.</p>
-      `,
-      PublishedDate: "2026-08-10T03:30:00.000Z",
+    <p>These technologies are helping manufacturers improve measurement accuracy, reduce inspection time, and build more efficient quality management systems.</p>
+    `,
+      PublishedDate: "2025-12-25T04:15:00.000Z",
       Image: {
         data: {
           attributes: {
-            url: "/images/3d-scanning.jpg"
+            url: "/images/article4.jpg"
           }
         }
       }
@@ -128,41 +189,34 @@ export const articles: Article[] = [
   },
 
   {
-    id: "104",
+    id: "85",
     attributes: {
-      Title: "Calibration and Traceability: The Foundation of Reliable Measurement",
-      Slug: "calibration-traceability-reliable-measurement",
+      Title: "Key Technologies Driving Innovation in Industrial Metrology",
+      Slug: "key-technologies-driving-innovation-in-industrial-metrology",
       Excerpt:
-        "Understand why calibration, measurement traceability, uncertainty, and standards are essential for reliable industrial quality control.",
+        "Explore the latest measurement, inspection, calibration, and quality technologies transforming industrial metrology worldwide.",
       Content: `
-        <p><strong>Calibration</strong> is fundamental to reliable measurement. Even the most advanced measuring equipment cannot deliver dependable results without proper calibration and traceability.</p>
+    <p>The industrial metrology sector is undergoing rapid technological transformation. New measurement technologies and digital inspection systems are enabling manufacturers to achieve higher accuracy while improving inspection productivity.</p>
 
-        <h2>What Is Measurement Traceability?</h2>
-        <p>Measurement traceability provides a documented connection between a measurement result and recognized measurement standards through an unbroken chain of calibrations.</p>
+    <h2>Emerging Metrology Technologies</h2>
+    <ul>
+      <li>Advanced Coordinate Measuring Machines</li>
+      <li>3D laser scanning and structured-light scanning</li>
+      <li>Machine vision inspection systems</li>
+      <li>Automated calibration technologies</li>
+      <li>AI-powered quality inspection</li>
+      <li>Digital metrology and measurement software</li>
+    </ul>
 
-        <h2>Why Calibration Matters</h2>
-        <ul>
-          <li>Maintains measurement accuracy</li>
-          <li>Reduces uncertainty</li>
-          <li>Supports quality assurance</li>
-          <li>Improves process consistency</li>
-          <li>Supports compliance with industry standards</li>
-          <li>Provides confidence in inspection results</li>
-        </ul>
+    <p>These innovations allow manufacturers to reduce inspection time, improve measurement reliability, identify defects earlier, and maintain consistent product quality.</p>
 
-        <h2>Calibration in Modern Manufacturing</h2>
-        <p>Calibration is required for instruments such as micrometers, gauges, height gauges, CMMs, optical systems, pressure instruments, temperature instruments, and other measurement equipment.</p>
-
-        <h2>Digital Calibration Management</h2>
-        <p>Modern calibration management software helps organizations track equipment history, calibration schedules, certificates, measurement uncertainty, and asset status.</p>
-
-        <p>Strong calibration practices provide the foundation for reliable inspection and effective quality management.</p>
-      `,
-      PublishedDate: "2026-08-05T03:30:00.000Z",
+    <p><strong>INDIAMET 2027 – India International Metrology, Measurement Technology & Equipment Exhibition</strong> will showcase advanced metrology technologies and connect global measurement technology suppliers with manufacturers, quality professionals, and industrial buyers.</p>
+    `,
+      PublishedDate: "2025-12-15T06:00:00.000Z",
       Image: {
         data: {
           attributes: {
-            url: "/images/calibration.jpg"
+            url: "/images/article5.jpg"
           }
         }
       }
@@ -170,81 +224,35 @@ export const articles: Article[] = [
   },
 
   {
-    id: "105",
+    id: "84",
     attributes: {
-      Title: "AI-Powered Inspection: How Artificial Intelligence Is Changing Metrology",
-      Slug: "ai-powered-inspection-artificial-intelligence-metrology",
+      Title: "Future Trends in Industrial Metrology and Quality Engineering",
+      Slug: "future-trends-in-industrial-metrology-and-quality-engineering",
       Excerpt:
-        "AI and machine learning are enabling faster visual inspection, automated defect detection, predictive quality, and intelligent manufacturing decisions.",
+        "Discover the key trends shaping the future of industrial metrology, precision measurement, inspection, calibration, and quality engineering.",
       Content: `
-        <p><strong>Artificial intelligence is changing industrial inspection</strong> by enabling manufacturers to automatically identify defects, analyze measurement data, and detect patterns that may be difficult to identify using traditional inspection methods.</p>
+    <p>The global <strong>industrial metrology industry</strong> is evolving rapidly as manufacturers adopt advanced measurement equipment, digital technologies, artificial intelligence, and automated inspection systems.</p>
 
-        <h2>AI in Visual Inspection</h2>
-        <p>AI-powered vision systems can analyze images of components and identify scratches, dimensional deviations, surface defects, missing features, and assembly problems.</p>
+    <h2>Major Metrology Trends</h2>
+    <ul>
+      <li>Growth of automated measurement systems</li>
+      <li>Increasing adoption of 3D scanning and optical metrology</li>
+      <li>AI-powered inspection and defect detection</li>
+      <li>Integration of metrology with Industry 4.0 systems</li>
+      <li>Digital calibration and measurement management</li>
+      <li>Real-time quality monitoring</li>
+    </ul>
 
-        <h2>Applications of AI in Metrology</h2>
-        <ul>
-          <li>Automated visual inspection</li>
-          <li>Defect classification</li>
-          <li>Predictive quality analysis</li>
-          <li>Measurement data analysis</li>
-          <li>Process anomaly detection</li>
-          <li>Automated inspection reporting</li>
-        </ul>
+    <h2>Global Market Outlook</h2>
+    <p>Demand for advanced metrology solutions will continue to grow as industries require higher precision, tighter tolerances, improved traceability, and faster inspection cycles.</p>
 
-        <h2>Combining AI with Measurement Data</h2>
-        <p>When AI is combined with CMM data, 3D scanning, machine vision, SPC, and production data, manufacturers can identify trends and potential quality problems before they become major production issues.</p>
-
-        <h2>The Future of Intelligent Inspection</h2>
-        <p>AI will increasingly support automated inspection systems and help quality teams move toward predictive quality management and zero-defect manufacturing strategies.</p>
-      `,
-      PublishedDate: "2026-07-30T03:30:00.000Z",
+    <p>International industry events such as <strong>INDIAMET</strong> provide a platform for metrology manufacturers, technology providers, calibration laboratories, quality professionals, and industrial buyers to explore new technologies and business opportunities.</p>
+    `,
+      PublishedDate: "2025-12-05T09:15:00.000Z",
       Image: {
         data: {
           attributes: {
-            url: "/images/ai-inspection.jpg"
-          }
-        }
-      }
-    }
-  },
-
-  {
-    id: "106",
-    attributes: {
-      Title: "GD&T and Precision Measurement: Connecting Engineering Design with Quality",
-      Slug: "gdt-precision-measurement-quality-engineering",
-      Excerpt:
-        "Discover how Geometric Dimensioning and Tolerancing helps engineers communicate design intent and enables accurate dimensional inspection.",
-      Content: `
-        <p><strong>Geometric Dimensioning and Tolerancing (GD&T)</strong> provides a standardized method for defining the allowable variation of component geometry. It plays an important role in connecting product design, manufacturing, and inspection.</p>
-
-        <h2>Why GD&T Matters</h2>
-        <p>Traditional dimensional tolerances alone may not fully describe how a component should function. GD&T provides a systematic approach to controlling form, orientation, location, and profile characteristics.</p>
-
-        <h2>Important GD&T Characteristics</h2>
-        <ul>
-          <li>Flatness</li>
-          <li>Straightness</li>
-          <li>Circularity</li>
-          <li>Parallelism</li>
-          <li>Perpendicularity</li>
-          <li>Position</li>
-          <li>Profile</li>
-          <li>Runout</li>
-        </ul>
-
-        <h2>GD&T and CMM Inspection</h2>
-        <p>CMM inspection software can interpret engineering drawings and evaluate GD&T characteristics using measured coordinate data. This helps quality teams determine whether manufactured components meet design requirements.</p>
-
-        <h2>Better Communication Across the Manufacturing Process</h2>
-        <p>Effective use of GD&T improves communication between design engineers, manufacturing teams, suppliers, and quality professionals while reducing ambiguity in component requirements.</p>
-      `,
-      PublishedDate: "2026-07-25T03:30:00.000Z",
-      Image: {
-        data: {
-          attributes: {
-            url: "/images/gdt.jpg"
+            url: "/images/article6.jpg"
           }
         }
       }
@@ -252,23 +260,37 @@ export const articles: Article[] = [
   }
 ];
 
-
 /* ================================
    Page Data
 ================================ */
 
 export const mockPageData: PageData = {
   Header: {
-    Title: "Metrology Industry Insights & Articles",
+    Title: "Industry Insights and News",
     Content:
-      "Stay updated with the latest trends, technologies, innovations, and developments in industrial metrology, precision measurement, inspection, calibration, and quality engineering."
+      "Stay up to date with the latest trends, innovations, and developments shaping the die,mould and tooling industry."
   },
-
   Sections: [
     {
-      __typename: "ComponentMetrologyArticlesList",
+      __typename: "ComponentTransRussiaArticlesList",
       id: "2",
       Articles: articles
     }
   ]
 };
+
+/* ================================
+   Helper Functions
+================================ */
+
+export function getAllArticles(): Article[] {
+  return articles;
+}
+
+export function getArticleBySlug(slug: string): Article | null {
+  return articles.find(article => article.attributes.Slug === slug) || null;
+}
+
+export function getAllArticleSlugs(): string[] {
+  return articles.map(article => article.attributes.Slug);
+}
