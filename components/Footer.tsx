@@ -96,12 +96,12 @@ export default function Footer() {
                 >
                   Become an Exhibitor
                 </Link>
-                <Link
+                {/* <Link
                   href="/post-show-report"
                   className="hover:underline hover:text-white transition-colors"
                 >
                   Download post-show report
-                </Link>
+                </Link> */}
                 <Link
                   href="/event-brochure"
                   className="hover:underline hover:text-white transition-colors"
