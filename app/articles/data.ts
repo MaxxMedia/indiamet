@@ -116,7 +116,7 @@ export const articles: Article[] = [
     Image: {
       data: {
         attributes: {
-          url: "/images/cmm_metrology.png"
+          url: "/images/cmm.png"
         }
       }
     }
@@ -155,7 +155,7 @@ export const articles: Article[] = [
       Image: {
         data: {
           attributes: {
-            url: "/images/cmm.jpg"
+            url: "/images/3Dmachinevision.webp"
           }
         }
       }
