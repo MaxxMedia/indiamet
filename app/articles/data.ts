@@ -116,7 +116,7 @@ export const articles: Article[] = [
     Image: {
       data: {
         attributes: {
-          url: "/images/cmm.png"
+          url: "/images/cmm.jpg"
         }
       }
     }
