@@ -112,7 +112,7 @@ export const indiametSectors: SectorSummary[] = [
     title: "Precision Instruments & Measuring Accessories",
     slug: "precision-instruments",
     // NOTE: sourced from /sectors/page.tsx ("/images/instruments.jpg") — verify exists.
-    image: "/images/instruments.jpg",
+    image: "/images/Workshop-measuring_small.jpg",
     description:
       "Micrometers, calipers, dial gauges, bore gauges, height gauges, and precision measuring accessories for accurate hand and bench-level inspection.",
   },
@@ -598,7 +598,7 @@ Visitors can explore sensing solutions for temperature, pressure, force, displac
   mainDescription: `Precision hand and bench instruments remain essential to everyday dimensional inspection across manufacturing environments. The Precision Instruments & Measuring Accessories sector at INDIAMET showcases micrometers, calipers, dial gauges, bore gauges, height gauges, indicators, and other precision instruments used for fast and reliable shop-floor measurement.
 
 Exhibitors present instrument ranges for general workshop inspection as well as demanding high-accuracy applications. Visitors can compare mechanical and digital instruments, accuracy classes, measurement ranges, ergonomics, connectivity options, and accessories designed to improve measurement efficiency and traceability.`,
-  heroImage: "/images/instruments.jpg",
+  heroImage: "/images/Workshop-measuring_small.jpg",
   stats: { visitors: "10,000+", exhibitors: "150+", countries: "12+" },
   whyExhibit: [
     {
