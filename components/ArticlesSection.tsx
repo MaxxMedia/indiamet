@@ -5,7 +5,7 @@ export default function ArticlesSection() {
   const articles = [
   {
   title: 'The Future of Industrial Metrology: Driving Smart Manufacturing',
-  slug: 'future-of-industrial-metrology-driving-smart-manufacturing',
+  slug: 'future-trends-in-industrial-metrology-and-quality-engineering',
   excerpt: 'Discover how precision measurement, AI-powered inspection, and advanced metrology technologies are transforming modern manufacturing across automotive, aerospace, electronics, and medical devices.',
   image: '/images/industry_metrology.png',
   date: 'August 05, 2026',
