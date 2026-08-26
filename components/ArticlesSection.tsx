@@ -12,7 +12,7 @@ export default function ArticlesSection() {
 },
 {
   title: 'Precision in Next-Generation Manufacturing',
-  slug: 'Precision in Next-Generation Manufacturing',
+  slug: 'Precision-in-Next-Generation-Manufacturing',
   excerpt: 'Explore how CMMs, optical metrology, machine vision, and calibration technologies are helping manufacturers improve quality, reduce defects, and achieve global standards.',
   image: '/images/cmm.jpg',
   date: 'August 20, 2026',
