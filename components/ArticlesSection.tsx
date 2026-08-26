@@ -5,14 +5,14 @@ export default function ArticlesSection() {
   const articles = [
   {
   title: 'The Future of Industrial Metrology: Driving Smart Manufacturing',
-  slug: 'future-trends-in-industrial-metrology-and-quality-engineering',
+  slug: 'future-of-industrial-metrology-driving-smart-manufacturing',
   excerpt: 'Discover how precision measurement, AI-powered inspection, and advanced metrology technologies are transforming modern manufacturing across automotive, aerospace, electronics, and medical devices.',
   image: '/images/industry_metrology.png',
   date: 'August 05, 2026',
 },
 {
-  title: 'Why Precision Matters in Next-Gen Manufacturing',
-  slug: 'Why Precision Matters in Next-Gen Manufacturing',
+  title: 'Why Precision Measurement is Critical for Next-Generation Manufacturing',
+  slug: 'why-precision-measurement-is-critical-for-next-generation-manufacturing',
   excerpt: 'Explore how CMMs, optical metrology, machine vision, and calibration technologies are helping manufacturers improve quality, reduce defects, and achieve global standards.',
   image: '/images/cmm.jpg',
   date: 'August 20, 2026',
