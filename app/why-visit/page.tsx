@@ -570,7 +570,7 @@ export default function WhyVisit() {
   id: 1,
   title: 'Metrology & Precision Measurement Systems',
   slug: 'metrology-precision-measurement',
-  image: '/images/precision.jpg',
+  image: '/images/measurement.png',
   description: 'CMMs, precision measurement systems, dimensional inspection equipment, gauges, optical measurement, and advanced metrology technologies.'
 },
 {

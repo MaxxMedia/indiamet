@@ -43,7 +43,7 @@ export const indiametSectors: SectorSummary[] = [
     id: 1,
     title: "Metrology & Precision Measurement Systems",
     slug: "metrology-precision-measurement",
-    image: "/images/sectors/metrology.jpg",
+    image: "/images/sectors/measurement.png",
     description:
       "CMMs, vision measuring systems, laser scanners, gauges, coordinate measuring technologies, and precision inspection equipment.",
   },
