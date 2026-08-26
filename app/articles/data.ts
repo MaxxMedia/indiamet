@@ -127,8 +127,8 @@ export const articles: Article[] = [
   {
     id: "83",
     attributes: {
-      Title: "Why Precision Measurement Is Critical for Next-Generation Manufacturing",
-      Slug: "why-precision-measurement-is-critical-for-next-generation-manufacturing",
+      Title: "Precision in Next-Generation Manufacturing",
+      Slug: "Precision in Next-Generation Manufacturing",
       Excerpt:
         "Explore how precision measurement, calibration, machine vision, coordinate measuring machines (CMMs), and digital inspection technologies are helping manufacturers improve quality, reduce defects, and achieve global manufacturing standards.",
       Content: `
