@@ -25,6 +25,7 @@ export default function RootLayout({
     pathname?.startsWith("/admin") ||   
     pathname?.startsWith("/dashboard") ||
     pathname?.startsWith("/login") ||
+    pathname?.startsWith("/passes/badge") ||
     pathname?.startsWith("/exhibition-directory/");
 
   // Track page views on route change with UTM data
