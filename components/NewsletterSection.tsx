@@ -30,15 +30,15 @@ export default function NewsletterSection() {
 
           {/* IMAGE - Hidden on mobile, visible on lg+ */}
           <img
-            src="/images/newsletter2.png"
+            src="/images/newsletter.png"
             alt="Newsletter"
             className="pointer-events-none absolute bottom-0 right-0 z-10 hidden lg:block h-[200px] lg:h-[250px] xl:h-[300px] object-contain"
           />
 
           {/* BACKGROUND CIRCLES */}
-            <div className="absolute inset-0 flex items-center justify-center z-[-1]">
-    <div className="absolute w-[500px] h-[500px] rounded-full bg-[#0092D7] opacity-20" />
-    <div className="absolute w-[350px] h-[350px] rounded-full bg-[#0092D7] opacity-20" />
+          <div className="pointer-events-none absolute -bottom-[35%] -right-[8%] z-0 h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[520px] lg:w-[520px] rounded-full bg-[#0092D7]/25" />
+          <div className="pointer-events-none absolute -bottom-[20%] -right-[3%] z-0 h-[200px] w-[200px] sm:h-[260px] sm:w-[260px] lg:h-[360px] lg:w-[360px] rounded-full bg-[#0092D7]/25" />
+        </div>
       </SectionContainer>
     </section>
   );
