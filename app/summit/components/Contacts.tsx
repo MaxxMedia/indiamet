@@ -14,39 +14,39 @@ const Contacts = () => {
             <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
               <div className="rte-style">
                 <p className="text-lg md:text-xl lg:text-27 font-bold">
-                  {/* For participation and partnership inquiries: */}
+                  For participation and partnership inquiries:
                 </p>
                 <div className="mt-4 md:mt-6">
                   <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
                     <div className="w-20 sm:w-1/5 min-w-[60px] md:min-w-[80px]">
-                      {/* <img
-                        // src="/images/conference/contacts/"
+                      <img
+                        src="/images/conference/contacts/"
                         alt=""
                         width={80}
                         height={80}
-                        className="rounded-lg object-cover w-full h-auto" */}
-                      /
+                        className="rounded-lg object-cover w-full h-auto"
+                      />
                     </div>
                     <div className="flex-1">
-                      <p className="text-lg md:text-xl lg:text-27 font-bold"></p>
+                        <p className="text-lg md:text-xl lg:text-27 font-bold">Padmanabham R</p>
                       <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
-                        {/* SummitSales  */}
+                        SummitDirector 
                       </p>
-                    </div>
+                      </div>
                   </div>
                 </div>
                 <div className="mt-4 md:mt-6 space-y-1 md:space-y-2">
                   <a 
-                    href="mailto:bhoomika@indiametexpo.com."
+                    href="mailto:pad@maxxmedia.in"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    {/* summit@indiametexpo.com */}
-                  </a>
+                   pad@maxxmedia.in
+                                     </a>
                   <a 
                     href="tel:+91 9980241366"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors"
                   >
-                    {/* +91 9980241366  */}
+                    +91 91483 19993
                   </a>
                  
                 </div>
@@ -54,7 +54,7 @@ const Contacts = () => {
             </div>
 
             {/* Second Contact */}
-            <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
+            {/* <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
               <div className="rte-style">
                 <p className="text-lg md:text-xl lg:text-27 font-bold">
                   For speaking opportunities in the business program:
@@ -83,17 +83,17 @@ const Contacts = () => {
                     href="mailto:Olga.Senicheva@ite.group"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    pad@indiametexpo.com
+                    
                   </a>
                   <a 
                     href="tel:+919148319993"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors"
                   >
-                    +91 9148319993
-                  </a>
+                    +91 9148319993 */}
+                  {/* </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>
