@@ -36,9 +36,8 @@ export default function NewsletterSection() {
           />
 
           {/* BACKGROUND CIRCLES */}
-          {/* <div className="pointer-events-none absolute -bottom-[35%] -right-[8%] z-0 h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[520px] lg:w-[520px] rounded-full bg-[#B80A26]/50" />
-          <div className="pointer-events-none absolute -bottom-[20%] -right-[3%] z-0 h-[200px] w-[200px] sm:h-[260px] sm:w-[260px] lg:h-[360px] lg:w-[360px] rounded-full bg-[#B80A26]/50" />
-        </div> */}
+
+        </div> 
       </SectionContainer>
     </section>
   );
