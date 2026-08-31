@@ -33,8 +33,8 @@ The connections you make at INDIAMET 2027 don't end with the exhibition. Stay en
   />
 
   <div className="absolute inset-0 flex items-center justify-center z-[-1]">
-    <div className="absolute w-[500px] h-[500px] rounded-full bg-[#B80A26] opacity-80" />
-    <div className="absolute w-[350px] h-[350px] rounded-full bg-[#B80A26] opacity-80" />
+    <div className="absolute w-[500px] h-[500px] rounded-full bg-[#B80A26] opacity-10" />
+    <div className="absolute w-[350px] h-[350px] rounded-full bg-[#B80A26] opacity-10" />
   </div>
 
 </div>
