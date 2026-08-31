@@ -781,7 +781,7 @@ export default function AdminRequirementDetailsPage() {
               </div>
             </div>
           </div>
-        )}
+        )} 
       </div>
     </div>
   );
