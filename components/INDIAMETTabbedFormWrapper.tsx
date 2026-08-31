@@ -233,7 +233,7 @@ export default function INDIAMETTabbedFormWrapper({
 
                 <div className="hidden lg:block lg:w-[48%] relative overflow-hidden min-h-[500px]">
                     <img
-                        src="/images/exbibitor-resource-center/con2.png"
+                        src="/images/con2.png"
                         alt="INDIAMET Exhibition"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
