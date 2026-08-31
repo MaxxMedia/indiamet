@@ -140,7 +140,7 @@ const SponsorPage: NextPage = () => {
                             transition={{ duration: 1.2, ease: "easeOut" }}
                             className="w-full h-full bg-cover bg-center"
                             style={{
-                                backgroundImage: `url("https://media.istockphoto.com/id/2023122586/vector/golden-star-trophy-with-light-effects.jpg?s=2048x2048&w=is&k=20&c=klnmaesjpdPhxhm-U6hRkkwK-pSqdZ2QGgPeKu69AoQ=")`,
+                                backgroundImage: `url("/images/sponsors.jpg")`,
                             }}
                         />
                     </div>
