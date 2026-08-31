@@ -318,7 +318,7 @@ const Awards: NextPage = () => {
                                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
                                 className="relative h-80 lg:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#B80A26]/20 to-[#171A1B]/20 border-2 border-[#B80A26]/20 transition-all duration-300 flex items-center justify-center"
                             >
-                                <img src="https://media.istockphoto.com/id/1676141013/vector/trophy-gold-star-on-podium-with-ribbon-elements-and-glitter-light-effects-decorations-and.jpg?s=612x612&w=0&k=20&c=FRr9rp2D5tZmCMs51AkP4_-IN9cOUTinnYSghLHYuak=" alt="Trophy" className="w-full h-full object-cover" />
+                                <img src="/images/award3.jpg=" alt="Trophy" className="w-full h-full object-cover" />
                             </motion.div>
                         </motion.div>
                     </SectionContainer>
