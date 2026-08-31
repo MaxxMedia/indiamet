@@ -162,7 +162,7 @@ const staggerContainer = {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url(/images/why-exhibit-header.JPG)",
+                "url(/images/exhibit1.jpg)",
             }}
           />
 
@@ -422,7 +422,7 @@ const staggerContainer = {
                 {
                   title: "Rising Demand for Precision Measurement & Quality Solutions",
                   text: "As manufacturers embrace automation, digital transformation, and higher quality standards, the demand for advanced metrology, precision measurement, inspection systems, calibration, testing equipment, machine vision, and quality assurance technologies continues to grow across diverse industries.",
-                  image: "/images/demand.jpg"
+                  image: "/images/rising.jpg"
                 },
                 {
                   title: "Long-Term Growth & Investment Potential",
