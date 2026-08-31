@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative min-h-[60vh] lg:min-h-[70vh] flex items-end overflow-hidden">
       {/* BACKGROUND IMAGE */}
       <img
-        src="/images/exbibitor-resource-center/image1.png"
+        src="/images/exhibitor_resources.jpg"
         alt="INDIAMET 2027"
         className="absolute inset-0 h-full w-full object-cover"
       />
