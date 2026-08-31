@@ -20,7 +20,7 @@ const Contacts = () => {
                   <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
                     <div className="w-20 sm:w-1/5 min-w-[60px] md:min-w-[80px]">
                       <img
-                        src="/images/conference/contacts/"
+                        src="/images/conference/contacts/pad.jpg"
                         alt=""
                         width={80}
                         height={80}
