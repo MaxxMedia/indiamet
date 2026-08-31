@@ -198,7 +198,7 @@ const Awards: NextPage = () => {
                             loop
                             playsInline
                             preload="auto"
-                            poster="/images/awards-header.jpg"
+                            poster="/images/award3.jpg"
                             className="absolute inset-0 w-full h-full object-cover"
                         >
                             <source
