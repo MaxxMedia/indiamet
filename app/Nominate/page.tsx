@@ -180,7 +180,7 @@ const NominatePage: NextPage = () => {
                             transition={{ duration: 1.2, ease: "easeOut" }}
                             className="w-full h-full bg-cover bg-center"
                             style={{
-                                backgroundImage: `url("/images/awards2.png")`,
+                                backgroundImage: `url("/images/nominate.jpg")`,
                             }}
                         />
                     </div>
