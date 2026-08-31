@@ -360,7 +360,7 @@ const SponsorPage: NextPage = () => {
                                         Our team is here to help you create the perfect partnership.
                                     </p>
                                     <p className="text-sm text-black">📞 +91 91483 19993</p>
-                                    <p className="text-sm text-black">✉️ awards@indiametexpo.com</p>
+                                    <p className="text-sm text-black">✉️ awards@maxxmedia.in</p>
                                     <p className="text-sm text-black">🌐 www.indiametexpo.com/awards</p>
                                 </SideCard>
                             </aside>
