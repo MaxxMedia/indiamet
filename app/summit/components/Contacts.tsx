@@ -14,7 +14,7 @@ const Contacts = () => {
             <div className="rounded-xl bg-mainColor5 p-4 md:p-5">
               <div className="rte-style">
                 <p className="text-lg md:text-xl lg:text-27 font-bold">
-                  For participation and partnership inquiries:
+                  {/* For participation and partnership inquiries: */}
                 </p>
                 <div className="mt-4 md:mt-6">
                   <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4">
@@ -30,7 +30,7 @@ const Contacts = () => {
                     <div className="flex-1">
                       <p className="text-lg md:text-xl lg:text-27 font-bold"></p>
                       <p className="text-mainColor6 font-proxima text-base md:text-lg lg:text-27">
-                        SummitSales 
+                        {/* SummitSales  */}
                       </p>
                     </div>
                   </div>
@@ -40,13 +40,13 @@ const Contacts = () => {
                     href="mailto:bhoomika@indiametexpo.com."
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors break-words"
                   >
-                    summit@indiametexpo.com
+                    {/* summit@indiametexpo.com */}
                   </a>
                   <a 
                     href="tel:+91 9980241366"
                     className="block text-base md:text-lg lg:text-27 font-bold hover:text-mainColor2 transition-colors"
                   >
-                    +91 9980241366 
+                    {/* +91 9980241366  */}
                   </a>
                  
                 </div>
