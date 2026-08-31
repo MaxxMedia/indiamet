@@ -669,7 +669,7 @@ const NominatePage: NextPage = () => {
                                     </p>
                                     <Link href={"/awards"}>
                                         <button className="text-sm font-semibold text-[#B80A26] hover:underline">
-                                            ABOUT THE AWARDS →
+                                            KNOW MORE ABOUT →
                                         </button>
                                     </Link>
                                     
