@@ -47,20 +47,20 @@ const process = [
 ];
 
 const jury = [
-    // { name: "Dr. Klaus Weckenmann", role: "Chairman", company: "President Emeritus, PTB, Germany" },
-    // { name: "Dr. Gail Peters", role: "International Expert", company: "CEO, Peters Research, USA" },
-    // { name: "Mr. Ramesh Kaul", role: "Industry Leader", company: "Managing Director, Hexagon Manufacturing Intelligence" },
-    // { name: "Prof. Chris Wang", role: "Academic Expert", company: "Director, Precision Engineering, Tsinghua University, China" },
+    { name: "", role: "", company: "" },
+    { name: "", role: "", company: "" },
+    { name: "", role: "", company: "" },
+    { name: "", role: "", company: "" },
 ];
 
 
 const sponsors = [
-    // { name: "HEXAGON", role: "Platinum Sponsor" },
-    // { name: "Mitutoyo", role: "Gold Sponsor" },
-    // { name: "ZEISS", role: "Silver Sponsor" },
-    // { name: "RENISHAW", role: "Supporting Sponsor" },
-    // { name: "NPL", role: "Knowledge Sponsor" },
-    // { name: "TOOLING TRENDS", role: "Media Sponsor" },
+    { name: "", role: "Platinum Sponsor" },
+    { name: "", role: "Gold Sponsor" },
+    { name: "", role: "Silver Sponsor" },
+    { name: "", role: "Supporting Sponsor" },
+    { name: "", role: "Knowledge Sponsor" },
+    { name: "", role: "Media Sponsor" },
 ];
 
 const evaluation: [string, number][] = [
@@ -72,12 +72,12 @@ const evaluation: [string, number][] = [
 ];
 
 const supporters = [
-    // { name: "HEXAGON", role: "Platinum Partner" },
-    // { name: "Mitutoyo", role: "Gold Partner" },
-    // { name: "ZEISS", role: "Silver Partner" },
-    // { name: "RENISHAW", role: "Supporting Partner" },
-    // { name: "NPL", role: "Knowledge Partner" },
-    // { name: "TOOLING TRENDS", role: "Media Partner" },
+    { name: "", role: "Platinum Partner" },
+    { name: "", role: "Gold Partner" },
+    { name: "", role: "Silver Partner" },
+    { name: "", role: "Supporting Partner" },
+    { name: "", role: "Knowledge Partner" },
+    { name: "", role: "Media Partner" },
 ];
 
 const fadeInUp = {
