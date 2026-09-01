@@ -24,66 +24,18 @@ const whyParticipate = [
 ];
 
 const categories = [
-    [
-        "⚙️",
-        "Outstanding Metrology Solution",
-        "Recognizing an outstanding metrology solution that delivers exceptional accuracy, reliability, efficiency and measurable value to industrial applications."
-    ],
-    [
-        "📐",
-        "Best Measurement Innovation",
-        "Honouring innovative measurement technologies, methods or systems that advance precision, productivity and measurement capability."
-    ],
-    [
-        "🏅",
-        "Calibration Excellence",
-        "Recognizing excellence in calibration services, systems and practices that ensure measurement accuracy, traceability and confidence."
-    ],
-    [
-        "📋",
-        "Quality Excellence Award",
-        "Celebrating organizations that demonstrate outstanding commitment to quality management, inspection, continuous improvement and customer satisfaction."
-    ],
-    [
-        "🖥️",
-        "CMM Technology Award",
-        "Honouring innovative Coordinate Measuring Machine technologies and applications that improve dimensional accuracy, inspection speed and productivity."
-    ],
-    [
-        "🔍",
-        "Inspection Technology Award",
-        "Recognizing advanced inspection technologies and solutions that enhance defect detection, dimensional control and manufacturing quality."
-    ],
-    [
-        "📷",
-        "Machine Vision Award",
-        "Celebrating innovative machine vision systems that enable automated inspection, defect detection, measurement and intelligent quality control."
-    ],
-    [
-        "🏭",
-        "Smart Manufacturing Award",
-        "Recognizing organizations using connected technologies, automation, data and intelligent systems to transform manufacturing and quality processes."
-    ],
-    [
-        "🌟",
-        "Young Professional Award",
-        "Honouring an emerging professional who has demonstrated exceptional contribution, innovation and leadership in metrology, quality or precision engineering."
-    ],
-    [
-        "🌍",
-        "Sustainability Award",
-        "Recognizing initiatives that combine metrology and quality excellence with resource efficiency, environmental responsibility and sustainable manufacturing."
-    ],
-    [
-        "⚛️",
-        "Excellence in R&D",
-        "Celebrating outstanding research and development that introduces new technologies, methods or solutions advancing the field of metrology and measurement."
-    ],
-    [
-        "🏆",
-        "Lifetime Achievement Award",
-        "Honouring an exceptional individual whose long-term contribution, leadership and achievements have significantly advanced metrology, measurement and quality engineering."
-    ],
+    ["⚙️", "Outstanding Metrology Solution"],
+    ["📐", "Best Measurement Innovation"],
+    ["🏅", "Calibration Excellence"],
+    ["📋", "Quality Excellence Award"],
+    ["🖥️", "CMM Technology Award"],
+    ["🔍", "Inspection Technology Award"],
+    ["📷", "Machine Vision Award"],
+    ["🏭", "Smart Manufacturing Award"],
+    ["🌟", "Young Professional Award"],
+    ["🌍", "Sustainability Award"],
+    ["⚛️", "Excellence in R&D"],
+    ["🏆", "Lifetime Achievement Award"],
 ];
 
 const process = [
