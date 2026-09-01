@@ -491,7 +491,7 @@ const Awards: NextPage = () => {
                             className="text-center mb-12"
                         >
                             <div className="flex gap-2 justify-center mb-4">
-                                <img src="/images/logo-icon-3.png" alt="" className="h-5" />
+                                <img src="" alt="" className="h-5" />
                                 <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Jury</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Meet the Jury</h2>
