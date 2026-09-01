@@ -101,7 +101,7 @@ export default function ExhibitorPromotionPage() {
           {/* IMAGE */}
           <div>
             <img
-              src="/images/exhibitor-promo/exhibitor.JPG"
+              src="/images/exhibitor.jpg"
               alt=""
               className="w-full h-[400px] lg:h-[520px] object-cover"
             />
@@ -245,7 +245,7 @@ export default function ExhibitorPromotionPage() {
                   </p>
 
                   <img
-                    src="/images/exhibitor-promo/logo_INDIAMET.png"
+                    src="/images/indiamet_logo.png"
                     alt="Indiamet logo"
                     className="max-w-[260px]"
                   />

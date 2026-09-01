@@ -125,7 +125,7 @@ export default function CompanyDirectory() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url("/images/why-exhibit-header.JPG")`,
+            backgroundImage: `url("/images/directory.jpg")`,
           }}
         />
 
