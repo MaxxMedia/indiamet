@@ -291,7 +291,7 @@ const staggerContainer = {
                 className="relative h-120 overflow-hidden transition-all duration-300"
               >
                 <img
-                  src="/images/con-highlight.JPG"
+                  src="/images/exhibit2.jpg"
                   alt="Conference"
                   className="w-full h-full object-cover"
                 />
