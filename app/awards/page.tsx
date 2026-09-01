@@ -26,16 +26,16 @@ const whyParticipate = [
 const categories = [
     ["⚙️", "Outstanding Metrology Solution"],
     ["📐", "Best Measurement Innovation"],
-    ["🏅", "Quality Excellence Award"],
-    ["📋", "Calibration Excellence"],
+    ["🏅", "Calibration Excellence"],
+    ["📋", "Quality Excellence Award"],
+    ["🖥️", "CMM Technology Award"],
     ["🔍", "Inspection Technology Award"],
     ["📷", "Machine Vision Award"],
-    ["🖥️", "CMM Technology Award"],
     ["🏭", "Smart Manufacturing Award"],
-    ["🏆", "Lifetime Achievement Award"],
     ["🌟", "Young Professional Award"],
     ["🌍", "Sustainability Award"],
     ["⚛️", "Excellence in R&D"],
+    ["🏆", "Lifetime Achievement Award"],
 ];
 
 const process = [
@@ -47,20 +47,20 @@ const process = [
 ];
 
 const jury = [
-    { name: "Dr. Klaus Weckenmann", role: "Chairman", company: "President Emeritus, PTB, Germany" },
-    { name: "Dr. Gail Peters", role: "International Expert", company: "CEO, Peters Research, USA" },
-    { name: "Mr. Ramesh Kaul", role: "Industry Leader", company: "Managing Director, Hexagon Manufacturing Intelligence" },
-    { name: "Prof. Chris Wang", role: "Academic Expert", company: "Director, Precision Engineering, Tsinghua University, China" },
+    // { name: "Dr. Klaus Weckenmann", role: "Chairman", company: "President Emeritus, PTB, Germany" },
+    // { name: "Dr. Gail Peters", role: "International Expert", company: "CEO, Peters Research, USA" },
+    // { name: "Mr. Ramesh Kaul", role: "Industry Leader", company: "Managing Director, Hexagon Manufacturing Intelligence" },
+    // { name: "Prof. Chris Wang", role: "Academic Expert", company: "Director, Precision Engineering, Tsinghua University, China" },
 ];
 
 
 const sponsors = [
-    { name: "HEXAGON", role: "Platinum Sponsor" },
-    { name: "Mitutoyo", role: "Gold Sponsor" },
-    { name: "ZEISS", role: "Silver Sponsor" },
-    { name: "RENISHAW", role: "Supporting Sponsor" },
-    { name: "NPL", role: "Knowledge Sponsor" },
-    { name: "TOOLING TRENDS", role: "Media Sponsor" },
+    // { name: "HEXAGON", role: "Platinum Sponsor" },
+    // { name: "Mitutoyo", role: "Gold Sponsor" },
+    // { name: "ZEISS", role: "Silver Sponsor" },
+    // { name: "RENISHAW", role: "Supporting Sponsor" },
+    // { name: "NPL", role: "Knowledge Sponsor" },
+    // { name: "TOOLING TRENDS", role: "Media Sponsor" },
 ];
 
 const evaluation: [string, number][] = [
@@ -72,12 +72,12 @@ const evaluation: [string, number][] = [
 ];
 
 const supporters = [
-    { name: "HEXAGON", role: "Platinum Partner" },
-    { name: "Mitutoyo", role: "Gold Partner" },
-    { name: "ZEISS", role: "Silver Partner" },
-    { name: "RENISHAW", role: "Supporting Partner" },
-    { name: "NPL", role: "Knowledge Partner" },
-    { name: "TOOLING TRENDS", role: "Media Partner" },
+    // { name: "HEXAGON", role: "Platinum Partner" },
+    // { name: "Mitutoyo", role: "Gold Partner" },
+    // { name: "ZEISS", role: "Silver Partner" },
+    // { name: "RENISHAW", role: "Supporting Partner" },
+    // { name: "NPL", role: "Knowledge Partner" },
+    // { name: "TOOLING TRENDS", role: "Media Partner" },
 ];
 
 const fadeInUp = {
