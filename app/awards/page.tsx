@@ -23,19 +23,94 @@ const whyParticipate = [
     ["⭐", "Benchmark Against Industry", "Measure your performance and stand out from the competition."],
 ];
 
+import {
+  Settings2,
+  Ruler,
+  Scale,
+  ClipboardCheck,
+  ScanLine,
+  SearchCheck,
+  Camera,
+  Factory,
+  Star,
+  Leaf,
+  Atom,
+  Trophy,
+} from "lucide-react";
+
 const categories = [
-    ["⚙️", "Outstanding Metrology Solution"],
-    ["📐", "Best Measurement Innovation"],
-    ["🏅", "Calibration Excellence"],
-    ["📋", "Quality Excellence Award"],
-    ["🖥️", "CMM Technology Award"],
-    ["🔍", "Inspection Technology Award"],
-    ["📷", "Machine Vision Award"],
-    ["🏭", "Smart Manufacturing Award"],
-    ["🌟", "Young Professional Award"],
-    ["🌍", "Sustainability Award"],
-    ["⚛️", "Excellence in R&D"],
-    ["🏆", "Lifetime Achievement Award"],
+  {
+    icon: Settings2,
+    title: "Outstanding Metrology Solution",
+    description:
+      "Recognizes an outstanding metrology product, system, or solution that delivers exceptional accuracy, reliability, efficiency, and measurable value in industrial applications.",
+  },
+  {
+    icon: Ruler,
+    title: "Best Measurement Innovation",
+    description:
+      "Honors the most innovative measurement technology, instrument, product, or solution that advances measurement accuracy, speed, usability, and performance.",
+  },
+  {
+    icon: Scale,
+    title: "Calibration Excellence",
+    description:
+      "Recognizes calibration laboratories, service providers, or organizations demonstrating exceptional accuracy, traceability, technical competence, and commitment to calibration quality.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Quality Excellence Award",
+    description:
+      "Presented to an organization demonstrating outstanding commitment to quality management, process excellence, continuous improvement, and consistently high product or service quality.",
+  },
+  {
+    icon: ScanLine,
+    title: "CMM Technology Award",
+    description:
+      "Recognizes excellence in Coordinate Measuring Machine (CMM) technology, including innovative hardware, software, automation, measurement capability, and precision inspection solutions.",
+  },
+  {
+    icon: SearchCheck,
+    title: "Inspection Technology Award",
+    description:
+      "Honors innovative inspection technologies and systems that improve dimensional accuracy, defect detection, inspection speed, reliability, and manufacturing quality.",
+  },
+  {
+    icon: Camera,
+    title: "Machine Vision Award",
+    description:
+      "Recognizes outstanding machine vision technologies and applications that enhance automated inspection, defect detection, quality control, traceability, and production efficiency.",
+  },
+  {
+    icon: Factory,
+    title: "Smart Manufacturing Award",
+    description:
+      "Honors organizations implementing smart manufacturing through automation, Industrial IoT, digitalization, robotics, connected systems, artificial intelligence, and data-driven manufacturing.",
+  },
+  {
+    icon: Star,
+    title: "Young Professional Award",
+    description:
+      "Recognizes a young professional who has demonstrated exceptional technical ability, innovation, leadership, and meaningful contribution to the field of metrology and measurement.",
+  },
+  {
+    icon: Leaf,
+    title: "Sustainability Award",
+    description:
+      "Recognizes organizations or individuals advancing sustainable metrology and manufacturing through resource efficiency, energy conservation, waste reduction, and environmentally responsible practices.",
+  },
+  {
+    icon: Atom,
+    title: "Excellence in R&D",
+    description:
+      "Honors outstanding research and development achievements that contribute to breakthrough technologies, new measurement methods, advanced instruments, and innovation in metrology.",
+  },
+  {
+    icon: Trophy,
+    title: "Lifetime Achievement Award",
+    description:
+      "The highest individual honor recognizing exceptional contribution, leadership, innovation, mentorship, and lifelong dedication to the advancement of metrology and measurement technology.",
+  },
 ];
 
 const process = [
