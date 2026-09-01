@@ -245,7 +245,7 @@ export default function ExhibitorPromotionPage() {
                   </p>
 
                   <img
-                    src="/images/indiamet_logo.png"
+                    src="/images/indiamet_logo2.png"
                     alt="Indiamet logo"
                     className="max-w-[260px]"
                   />
