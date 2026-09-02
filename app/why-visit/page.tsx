@@ -643,23 +643,7 @@ export default function WhyVisit() {
     description:
       "Micrometers, calipers, dial gauges, bore gauges, height gauges, and precision measuring accessories for accurate hand and bench-level inspection.",
   },
-  {
-    id: 10,
-    title: "Surface Measurement & Material Testing",
-    slug: "surface-material-testing",
-    image: "/images/sectors/surface2.jpg",
-    description:
-      "Surface roughness testers, hardness testers, tensile testing machines, material analysis, and laboratory instruments.",
-  },
-  {
-    id: 11,
-    title: "CAD/CAM, Metrology Software & Digital Manufacturing",
-    slug: "cad-cam-software",
-    image: "/images/sectors/software.jpg",
-    description:
-      "CAD/CAM, reverse engineering, digital twins, metrology software, inspection software, simulation, and manufacturing analytics.",
-  },
-].map((sector, index) => (
+  ].map((sector, index) => (
   <Link
     key={index}
     href={`/sectors/${sector.slug}`}
