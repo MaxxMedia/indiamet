@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative min-h-[60vh] lg:min-h-[70vh] flex items-end">
       {/* BACKGROUND IMAGE - Full Width */}
       <img
-        src="/images/about-header.jpg"
+        src="/images/about.jpg"
         alt="INDIAMET©2027"
         className="absolute inset-0 h-full w-full object-cover"
       />
