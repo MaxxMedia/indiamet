@@ -27,7 +27,7 @@ export default function FAQCard({ question, answer, index }: FAQCardProps) {
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3 }}
-          className="text-2xl text-[#B80A26]"
+          className="text-2xl text-[#F37021]"
         >
           +
         </motion.div>

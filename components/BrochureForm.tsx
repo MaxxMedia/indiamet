@@ -244,7 +244,7 @@ export default function BrochureForm() {
             type="checkbox"
             id="br-terms"
             required
-            className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0"
+            className="mt-0.5 h-4 w-4 accent-[#F37021] cursor-pointer shrink-0"
           />
           <label htmlFor="br-terms" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
             I agree to the{' '}

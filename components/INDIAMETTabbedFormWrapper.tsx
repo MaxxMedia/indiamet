@@ -194,7 +194,7 @@ export default function INDIAMETTabbedFormWrapper({
                                 font-semibold text-[9.5px] xs:text-[10.5px] sm:text-xs md:text-sm
                                 transition-all
                                 ${isActive
-                                    ? "bg-[#171A1B] text-white"
+                                    ? "bg-[#02416E] text-white"
                                     : "bg-white text-[#1e2b52] hover:bg-slate-50"
                                 }
                             `}
@@ -207,7 +207,7 @@ export default function INDIAMETTabbedFormWrapper({
                             </span>
 
                             {isActive && (
-                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[7px] sm:-bottom-[12px] w-0 h-0 border-l-[7px] sm:border-l-[12px] border-r-[7px] sm:border-r-[12px] border-t-[7px] sm:border-t-[12px] border-l-transparent border-r-transparent border-t-[#171A1B]" />
+                                <span className="absolute left-1/2 -translate-x-1/2 -bottom-[7px] sm:-bottom-[12px] w-0 h-0 border-l-[7px] sm:border-l-[12px] border-r-[7px] sm:border-r-[12px] border-t-[7px] sm:border-t-[12px] border-l-transparent border-r-transparent border-t-[#02416E]" />
                             )}
                         </button>
                     );
@@ -218,7 +218,7 @@ export default function INDIAMETTabbedFormWrapper({
                 <div className="flex-1 bg-white p-4 xs:p-5 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
                     {showHeader && (
                         <>
-                            <h2 className="text-lg sm:text-xl font-bold text-[#B80A26] mb-1">
+                            <h2 className="text-lg sm:text-xl font-bold text-[#F37021] mb-1">
                                 {headerTitle || activeConfig.title}
                             </h2>
                             <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
@@ -238,7 +238,7 @@ export default function INDIAMETTabbedFormWrapper({
                         className="absolute inset-0 w-full h-full object-cover"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#8F071D]/95 via-[#B80A26]/85 to-[#B80A26]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#8F071D]/95 via-[#F37021]/85 to-[#F37021]/40" />
 
                     <div className="relative z-10 flex flex-col h-full p-8 xl:p-10">
                         <div className="mt-auto mb-auto max-w-sm">

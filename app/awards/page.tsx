@@ -146,7 +146,7 @@ function Ring({ percent, label }: RingProps) {
                         cx="60"
                         cy="60"
                         r={r}
-                        stroke="#B80A26"
+                        stroke="#F37021"
                         strokeWidth="10"
                         fill="none"
                         strokeDasharray={c}
@@ -233,7 +233,7 @@ const Awards: NextPage = () => {
                                 >
                                    INDIAMET 
                                     <br />
-                                    <span className="text-[#B80A26]">GLOBAL METROLOGY EXCELLENCE AWARDS  2027(GMEA)</span>
+                                    <span className="text-[#F37021]">GLOBAL METROLOGY EXCELLENCE AWARDS  2027(GMEA)</span>
                                 </motion.h1>
 
                                 <motion.p
@@ -254,13 +254,13 @@ const Awards: NextPage = () => {
                                 >
                                     <Link
                                         href="/Sponsor"
-                                        className="border border-[#B80A26]/60 text-[#B80A26] hover:bg-[#B80A26]/10 font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
+                                        className="border border-[#F37021]/60 text-[#F37021] hover:bg-[#F37021]/10 font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
                                     >
                                         SPONSOR NOW
                                     </Link>
                                     <Link
                                         href="/Nominate"
-                                        className="bg-[#B80A26] hover:bg-[#B80A26]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
+                                        className="bg-[#F37021] hover:bg-[#F37021]/90 text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors text-center"
                                     >
                                         NOMINATE NOW ↗
                                     </Link>
@@ -305,9 +305,9 @@ const Awards: NextPage = () => {
                                         <motion.div
                                             key={l}
                                             whileHover={{ scale: 1.05 }}
-                                            className="border-l-2 border-[#B80A26] pl-4"
+                                            className="border-l-2 border-[#F37021] pl-4"
                                         >
-                                            <p className="text-[#B80A26] font-bold text-2xl">{n}</p>
+                                            <p className="text-[#F37021] font-bold text-2xl">{n}</p>
                                             <p className="text-[#4D4D4D] text-xs mt-1">{l}</p>
                                         </motion.div>
                                     ))}
@@ -316,7 +316,7 @@ const Awards: NextPage = () => {
 
                             <motion.div
                                 whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-                                className="relative h-80 lg:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#B80A26]/20 to-[#171A1B]/20 border-2 border-[#B80A26]/20 transition-all duration-300 flex items-center justify-center"
+                                className="relative h-80 lg:h-96 rounded-lg overflow-hidden bg-gradient-to-br from-[#F37021]/20 to-[#02416E]/20 border-2 border-[#F37021]/20 transition-all duration-300 flex items-center justify-center"
                             >
                                 <img src="/images/award3.jpg" alt="Trophy" className="w-full h-full object-cover" />
                             </motion.div>
@@ -359,7 +359,7 @@ const Awards: NextPage = () => {
                                     }}
                                     className="bg-white border border-gray-200 rounded-lg p-6"
                                 >
-                                    <span className="text-3xl text-[#B80A26] block mb-3">{icon}</span>
+                                    <span className="text-3xl text-[#F37021] block mb-3">{icon}</span>
                                     <h3 className="font-semibold text-lg mb-2 text-gray-900">{title}</h3>
                                     <p className="text-gray-600 text-sm">{desc}</p>
                                 </motion.div>
@@ -399,9 +399,9 @@ const Awards: NextPage = () => {
                                     whileHover={{
                                         y: -6,
                                         boxShadow: "0 12px 25px rgba(0,0,0,0.10)",
-                                        borderColor: "#B80A26",
+                                        borderColor: "#F37021",
                                     }}
-                                    className="min-h-[150px] border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center text-center gap-4 bg-white hover:border-[#B80A26] transition-all duration-300"
+                                    className="min-h-[150px] border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center text-center gap-4 bg-white hover:border-[#F37021] transition-all duration-300"
                                 >
                                     <span className="text-4xl md:text-5xl leading-none">
                                         {icon}
@@ -452,13 +452,13 @@ const Awards: NextPage = () => {
                                         <motion.div
                                             whileHover={{ scale: 1.08 }}
                                             transition={{ duration: 0.2 }}
-                                            className="w-24 h-24 md:w-28 md:h-28 rounded-full border-3 border-[#B80A26] flex items-center justify-center text-4xl md:text-5xl bg-white shadow-md"
+                                            className="w-24 h-24 md:w-28 md:h-28 rounded-full border-3 border-[#F37021] flex items-center justify-center text-4xl md:text-5xl bg-white shadow-md"
                                         >
                                             {icon}
                                         </motion.div>
 
                                         {/* PROCESS TITLE */}
-                                        <p className="text-[#B80A26] text-sm md:text-base font-bold tracking-wide leading-snug">
+                                        <p className="text-[#F37021] text-sm md:text-base font-bold tracking-wide leading-snug">
                                             {title}
                                         </p>
 
@@ -470,7 +470,7 @@ const Awards: NextPage = () => {
 
                                     {/* ARROW */}
                                     {i < process.length - 1 && (
-                                        <span className="hidden md:flex items-center justify-center text-[#B80A26] text-3xl font-bold mx-2 h-28">
+                                        <span className="hidden md:flex items-center justify-center text-[#F37021] text-3xl font-bold mx-2 h-28">
                                             →
                                         </span>
                                     )}
@@ -514,11 +514,11 @@ const Awards: NextPage = () => {
                                     }}
                                     className="bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300"
                                 >
-                                    <div className="h-48 bg-gradient-to-br from-[#B80A26]/10 to-[#171A1B]/10 flex items-center justify-center">
+                                    <div className="h-48 bg-gradient-to-br from-[#F37021]/10 to-[#02416E]/10 flex items-center justify-center">
                                         <span className="text-6xl">👤</span>
                                     </div>
                                     <div className="p-4">
-                                        <span className="inline-block text-[10px] tracking-wide text-[#B80A26] border border-[#B80A26]/40 rounded px-2 py-0.5 mb-2">
+                                        <span className="inline-block text-[10px] tracking-wide text-[#F37021] border border-[#F37021]/40 rounded px-2 py-0.5 mb-2">
                                             {member.role.toUpperCase()}
                                         </span>
                                         <h3 className="text-gray-900 font-semibold text-sm">{member.name}</h3>
@@ -539,7 +539,7 @@ const Awards: NextPage = () => {
                             </p>
                             <Link
                                 href="/jury"
-                                className="inline-block border border-[#B80A26] text-[#B80A26] hover:bg-[#B80A26]/10 px-6 py-2 rounded-full text-sm font-medium transition-colors"
+                                className="inline-block border border-[#F37021] text-[#F37021] hover:bg-[#F37021]/10 px-6 py-2 rounded-full text-sm font-medium transition-colors"
                             >
                                 VIEW ALL JURY
                             </Link>
@@ -637,10 +637,10 @@ const Awards: NextPage = () => {
                                             boxShadow:
                                                 "0 12px 30px rgba(0,0,0,0.08)",
                                         }}
-                                        className="flex-shrink-0 w-[220px] md:w-[260px] min-h-[180px] bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#B80A26] transition-all duration-300"
+                                        className="flex-shrink-0 w-[220px] md:w-[260px] min-h-[180px] bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#F37021] transition-all duration-300"
                                     >
-                                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#B80A26]/10 to-[#171A1B]/10 flex items-center justify-center">
-                                            <span className="text-2xl font-bold text-[#B80A26]">
+                                        <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#F37021]/10 to-[#02416E]/10 flex items-center justify-center">
+                                            <span className="text-2xl font-bold text-[#F37021]">
                                                 {sponsor.name.charAt(0)}
                                             </span>
                                         </div>
@@ -650,7 +650,7 @@ const Awards: NextPage = () => {
                                                 {sponsor.name}
                                             </p>
 
-                                            <p className="text-[#B80A26] text-sm font-semibold mt-1 uppercase tracking-wide">
+                                            <p className="text-[#F37021] text-sm font-semibold mt-1 uppercase tracking-wide">
                                                 {sponsor.role}
                                             </p>
                                         </div>
@@ -713,11 +713,11 @@ const Awards: NextPage = () => {
                                     <motion.div
                                         key={`${supporter.name}-${index}`}
                                         whileHover={{ y: -6 }}
-                                        className="flex-shrink-0 w-[210px] md:w-[240px] min-h-[180px] flex flex-col items-center justify-center gap-3 bg-white p-6 rounded-xl border border-gray-200 hover:border-[#B80A26] transition-all duration-300"
+                                        className="flex-shrink-0 w-[210px] md:w-[240px] min-h-[180px] flex flex-col items-center justify-center gap-3 bg-white p-6 rounded-xl border border-gray-200 hover:border-[#F37021] transition-all duration-300"
                                     >
                                         {/* Icon */}
-                                        <div className="w-20 h-20 bg-gradient-to-br from-[#B80A26]/10 to-[#171A1B]/10 rounded-full flex items-center justify-center">
-                                            <span className="text-3xl font-bold text-[#B80A26]">
+                                        <div className="w-20 h-20 bg-gradient-to-br from-[#F37021]/10 to-[#02416E]/10 rounded-full flex items-center justify-center">
+                                            <span className="text-3xl font-bold text-[#F37021]">
                                                 {supporter.name.charAt(0)}
                                             </span>
                                         </div>

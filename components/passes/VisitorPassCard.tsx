@@ -28,14 +28,14 @@ export default function VisitorPassCard({
 
   return (
     <div className={`mx-auto overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl ${compact ? 'w-full max-w-sm' : 'w-full max-w-md'}`}>
-      <div className="bg-gradient-to-r from-[#0092D7] to-[#B80A26] px-6 py-3 text-center">
+      <div className="bg-gradient-to-r from-[#0092D7] to-[#F37021] px-6 py-3 text-center">
         <p className="text-xs font-bold tracking-[0.25em] text-white">VISITOR PASS</p>
       </div>
       <div className="px-6 py-6 text-center">
-        <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#B80A26] to-[#0092D7] text-2xl font-bold text-white">
+        <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#F37021] to-[#0092D7] text-2xl font-bold text-white">
           {initial}
         </div>
-        <h3 className="text-xl font-bold text-[#171A1B]">{pass.name || 'Visitor'}</h3>
+        <h3 className="text-xl font-bold text-[#02416E]">{pass.name || 'Visitor'}</h3>
         <p className="text-sm text-slate-500">{pass.company || 'INDIAMET 2027'}</p>
         {location && <p className="mt-1 text-xs text-slate-400">{location}</p>}
 

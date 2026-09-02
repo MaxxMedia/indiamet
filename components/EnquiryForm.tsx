@@ -200,7 +200,7 @@ export default function EnquiryForm() {
                         checked={termsAccepted}
                         onChange={e => setTerms(e.target.checked)}
                         required
-                        className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0"
+                        className="mt-0.5 h-4 w-4 accent-[#F37021] cursor-pointer shrink-0"
                     />
                     <label htmlFor="enq-terms" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
                         I confirm that I have read, understood and agree to the{' '}

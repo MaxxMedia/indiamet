@@ -7,7 +7,7 @@ import Link from 'next/link'
 const BrochureSection = () => {
   return (
     <SectionContainer className="py-16 lg:py-24">
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#071A33] to-[#171A1B] px-6 py-10 lg:px-12 lg:py-14 text-white">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#071A33] to-[#02416E] px-6 py-10 lg:px-12 lg:py-14 text-white">
         
         {/* TOP-RIGHT BROCHURE IMAGE */}
         <img

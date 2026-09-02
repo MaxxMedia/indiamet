@@ -525,7 +525,7 @@ const selectedDay = programData[activeDay];
                 ${
                   activeDay === index
                     ? "bg-[#8F071D] text-white"
-                    : "bg-[#B80A26] text-white hover:opacity-90"
+                    : "bg-[#F37021] text-white hover:opacity-90"
                 }
               `}
             >

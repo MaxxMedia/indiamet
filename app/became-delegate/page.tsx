@@ -119,7 +119,7 @@ export default function DelegatesPackagesPage() {
                             >
                               <path
                                 d="M16.6667 5L7.50004 14.1667L3.33337 10"
-                                stroke="#B80A26"
+                                stroke="#F37021"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -132,7 +132,7 @@ export default function DelegatesPackagesPage() {
 
                       {/* Price added at the bottom */}
                       <div className="mt-auto pt-3 border-t border-gray-200">
-                        <div className="text-xl font-bold text-[#B80A26]">{pkg.price}</div>
+                        <div className="text-xl font-bold text-[#F37021]">{pkg.price}</div>
                         {/* <p className="text-xs text-gray-500 mt-1">Inclusive of GST</p> */}
                       </div>
                     </div>
