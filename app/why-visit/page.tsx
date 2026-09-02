@@ -521,7 +521,7 @@ export default function WhyVisit() {
       transition={{ duration: 0.6 }}
       className="mb-6 sm:mb-8"
     >
-      <div className="relative w-full h-[700px] sm:h-[750px] md:h-[800px] lg:h-[850px] rounded-lg overflow-hidden shadow-lg">
+      <div className="relative w-full h-[900px] sm:h-[750px] md:h-[900px] lg:h-[950px] rounded-lg overflow-hidden shadow-lg">
         <Image
           src="/images/segments2.png" // Replace with your image path
           alt="Who you will meet at the exhibition"
