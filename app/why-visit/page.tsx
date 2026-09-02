@@ -567,47 +567,98 @@ export default function WhyVisit() {
 >
                 {[
   {
-  id: 1,
-  title: 'Metrology & Precision Measurement Systems',
-  slug: 'metrology-precision-measurement',
-  image: '/images/measurement.png',
-  description: 'CMMs, precision measurement systems, dimensional inspection equipment, gauges, optical measurement, and advanced metrology technologies.'
-},
-{
-  id: 2,
-  title: 'Coordinate Measuring Machines (CMM) & Gauging',
-  slug: 'tooling-mould-base',
-  image: '/images/mouldbase.jpg',
-  description: 'Bridge, gantry, horizontal arm and portable CMMs, probing systems, precision gauges, and dimensional inspection technologies.'
-},
-{
-  id: 3,
-  title: 'Optical, Vision & Laser Inspection Systems',
-  slug: 'machining-finishing',
-  image: '/images/finishing.jpg',
-  description: 'Machine vision, optical metrology, laser scanners, 3D measurement systems, microscopes, and non-contact inspection solutions.'
-},
-{
-  id: 4,
-  title: 'Calibration & Testing Equipment',
-  slug: 'automation-industry',
-  image: '/images/automation.jpg',
-  description: 'Calibration laboratories, dimensional standards, pressure, temperature, torque, electrical, mass, force, and testing solutions.'
-},
-{
-  id: 5,
-  title: 'Quality Control, Inspection & NDT',
-  slug: 'cad-cam',
-  image: '/images/cad.jpg',
-  description: 'Quality assurance systems, SPC, industrial inspection, non-destructive testing, testing equipment, and process quality solutions.'
-},
-{
-  id: 6,
-  title: 'Automation, Software & Smart Manufacturing',
-  slug: 'tool-steel',
-  image: '/images/toolsteel.jpg',
-  description: 'Metrology software, CAD/CAM, digital twins, AI, robotics, automated inspection, Industry 4.0, and smart manufacturing solutions.'
-},
+    id: 1,
+    title: "Metrology & Precision Measurement Systems",
+    slug: "metrology-precision-measurement",
+    image: "/images/sectors/measurement.png",
+    description:
+      "CMMs, vision measuring systems, laser scanners, gauges, coordinate measuring technologies, and precision inspection equipment.",
+  },
+  {
+    id: 2,
+    title: "Coordinate Measuring Machines (CMM) & Gauging",
+    slug: "cmm-gauging",
+    // NOTE: sourced from /sectors/page.tsx ("/images/cmm.jpg") — different path
+    // convention than the /images/sectors/ files above. Verify this file exists;
+    // do not assume it's the same asset as metrology.jpg.
+    image: "/images/cmm.jpg",
+    description:
+      "Bridge, gantry, horizontal arm, portable CMMs, precision gauges, probing systems, and dimensional inspection technologies for high-accuracy measurements.",
+  },
+  {
+    id: 3,
+    title: "Optical, Vision & Laser Inspection Systems",
+    slug: "vision-inspection",
+    // NOTE: sourced from /sectors/page.tsx ("/images/vision.jpg") — verify exists.
+    image: "/images/optical_inspection.png",
+    description:
+      "Machine vision, optical metrology, laser scanners, 3D measurement systems, industrial microscopes, profile projectors, and non-contact inspection technologies.",
+  },
+  {
+    id: 4,
+    title: "Calibration & Testing Equipment",
+    slug: "calibration-testing",
+    image: "/images/sectors/calibration.jpg",
+    description:
+      "Calibration laboratories, dimensional standards, pressure, temperature, torque, electrical and mass calibration solutions.",
+  },
+  {
+    id: 5,
+    title: "Quality Control & Inspection",
+    slug: "quality-control-inspection",
+    image: "/images/sectors/quality.jpg",
+    description:
+      "Industrial inspection systems, quality assurance solutions, SPC software, gauges, measuring instruments, and testing equipment.",
+  },
+  {
+    id: 6,
+    title: "Non-Destructive Testing (NDT)",
+    slug: "ndt",
+    image: "/images/sectors/NDT2.jpg",
+    description:
+      "Ultrasonic, radiography, eddy current, magnetic particle, dye penetrant, and advanced NDT technologies.",
+  },
+  {
+    id: 7,
+    title: "Automation, Robotics & Industry 4.0",
+    slug: "automation-robotics",
+    image: "/images/sectors/robotech.png",
+    description:
+      "Industrial robots, cobots, smart factories, IoT-enabled manufacturing, AI, digital transformation, and factory automation.",
+  },
+  {
+    id: 8,
+    title: "Sensors & Industrial Instrumentation",
+    slug: "sensors-instrumentation",
+    image: "/images/sectors/sensors2.jpg",
+    description:
+      "Industrial sensors, transmitters, data acquisition systems, monitoring devices, and process instrumentation.",
+  },
+  {
+    id: 9,
+    title: "Precision Instruments & Measuring Accessories",
+    slug: "precision-instruments",
+    // NOTE: sourced from /sectors/page.tsx ("/images/instruments.jpg") — verify exists.
+    image: "/images/Workshop-measuring_small.jpg",
+    description:
+      "Micrometers, calipers, dial gauges, bore gauges, height gauges, and precision measuring accessories for accurate hand and bench-level inspection.",
+  },
+  {
+    id: 10,
+    title: "Surface Measurement & Material Testing",
+    slug: "surface-material-testing",
+    image: "/images/sectors/surface2.jpg",
+    description:
+      "Surface roughness testers, hardness testers, tensile testing machines, material analysis, and laboratory instruments.",
+  },
+  {
+    id: 11,
+    title: "CAD/CAM, Metrology Software & Digital Manufacturing",
+    slug: "cad-cam-software",
+    image: "/images/sectors/software.jpg",
+    description:
+      "CAD/CAM, reverse engineering, digital twins, metrology software, inspection software, simulation, and manufacturing analytics.",
+  },
 ].map((sector, index) => (
   <Link
     key={index}
