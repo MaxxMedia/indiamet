@@ -1,14 +1,17 @@
 // app/floor-plan/page.tsx
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Loader2, AlertCircle, Calendar, Building2 } from 'lucide-react';
+import {
+  MapPin, Loader2, AlertCircle, Calendar, Building2, FileText, Download,
+  Maximize2, Minimize2
+} from 'lucide-react';
 import SectionContainer from '@/components/UI/SectionContainer';
 import BackToTop from '../exhibitor-resource-center/component/BackToTop';
+import { getBackendUrl } from '@/lib/api/backendUrl';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE_URL = getBackendUrl();
 
 /* ===================== ANIMATION VARIANTS ===================== */
 const fadeInUp = {
@@ -35,6 +38,8 @@ interface FloorPlanData {
   name?: string;
   imageUrl?: string;
   baseImageUrl?: string;
+  fileType?: string;
+  originalFileName?: string;
   image?: string;
   description?: string;
   lastUpdated?: string;
@@ -56,6 +61,11 @@ export default function PublicFloorPlanPage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [fileType, setFileType] = useState<string>('image');
+  const [fileName, setFileName] = useState<string>('');
+  const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const viewerRef = useRef<HTMLDivElement>(null);
   const [stats, setStats] = useState({
     totalBooths: 0,
     availableBooths: 0,
@@ -74,9 +84,8 @@ export default function PublicFloorPlanPage() {
 
       // Try multiple possible endpoints
       const endpoints = [
-        `${API_BASE_URL}/floor-plan/floor-plan`,  // Most likely correct based on your routes
-        `${API_BASE_URL}/floor-plan`,
-        `${API_BASE_URL}/booths/floor-plan`,
+        `${API_BASE_URL}/api/floor-plan`,
+        `${API_BASE_URL}/api/booths`,
       ];
 
       let response = null;
@@ -88,10 +97,10 @@ export default function PublicFloorPlanPage() {
           console.log('Trying endpoint:', endpoint);
           const res = await fetch(endpoint, {
             method: 'GET',
+            cache: 'no-store',
             headers: {
               'Content-Type': 'application/json',
             },
-            credentials: 'include',
           });
 
           if (res.ok) {
@@ -137,24 +146,28 @@ export default function PublicFloorPlanPage() {
       }
 
       // Extract image URL from various possible field names
-      let extractedImageUrl = null;
-      
-      if (planData.imageUrl) {
-        extractedImageUrl = planData.imageUrl;
-      } else if (planData.baseImageUrl) {
-        extractedImageUrl = planData.baseImageUrl;
-      } else if (planData.image) {
-        extractedImageUrl = planData.image;
-      } else if (typeof planData === 'string') {
+      let extractedImageUrl = planData.imageUrl || planData.baseImageUrl || planData.image || null;
+      if (typeof planData === 'string') {
         extractedImageUrl = planData;
       }
 
-      // If image URL is relative, make it absolute
-      if (extractedImageUrl && !extractedImageUrl.startsWith('http')) {
-        extractedImageUrl = `${API_BASE_URL.replace('/api', '')}${extractedImageUrl}`;
+      if (extractedImageUrl && !extractedImageUrl.startsWith('http') && !extractedImageUrl.startsWith('data:')) {
+        extractedImageUrl = `${API_BASE_URL}${extractedImageUrl.startsWith('/') ? '' : '/'}${extractedImageUrl}`;
       }
 
+      const extractedType = (() => {
+        const hinted = planData.fileType;
+        if (hinted === 'pdf' || hinted === 'image' || hinted === 'document') return hinted;
+        const lower = String(extractedImageUrl || planData.originalFileName || '').split('?')[0].toLowerCase();
+        if (lower.endsWith('.pdf')) return 'pdf';
+        if (/\.(docx?|xlsx?|pptx?)$/.test(lower)) return 'document';
+        return hinted || 'image';
+      })();
+
       setImageUrl(extractedImageUrl);
+      setFileType(extractedType);
+      setFileName(planData.originalFileName || '');
+      setDownloadUrl(planData.downloadUrl || extractedImageUrl);
 
       // Set floor plan data
       setFloorPlan({
@@ -171,6 +184,61 @@ export default function PublicFloorPlanPage() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    const onFullscreenChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', onFullscreenChange);
+  }, []);
+
+  const toggleFullscreen = async () => {
+    const el = viewerRef.current;
+    if (!el) return;
+    try {
+      if (!document.fullscreenElement) {
+        await el.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    } catch (err) {
+      console.error('Fullscreen failed:', err);
+    }
+  };
+
+  const handleDownload = async () => {
+    const urls = [downloadUrl, imageUrl].filter(Boolean) as string[];
+    for (const url of urls) {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) continue;
+        const blob = await res.blob();
+        const objectUrl = URL.createObjectURL(blob);
+        const ext = blob.type.includes('pdf')
+          ? '.pdf'
+          : blob.type.includes('png')
+            ? '.png'
+            : blob.type.includes('jpeg') || blob.type.includes('jpg')
+              ? '.jpg'
+              : '';
+        const base = (fileName || 'INDIAMET-Floor-Plan').replace(/\.[^.]+$/, '');
+        const link = document.createElement('a');
+        link.href = objectUrl;
+        link.download = `${base}${ext}`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(objectUrl);
+        return;
+      } catch (err) {
+        console.warn('Download attempt failed:', err);
+      }
+    }
+    if (downloadUrl || imageUrl) {
+      window.open(downloadUrl || imageUrl || '', '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  const isPreviewImage = /\.(png|jpe?g|gif|webp)(\?|$)/i.test(imageUrl || '');
 
   if (loading) {
     return (
@@ -256,38 +324,104 @@ export default function PublicFloorPlanPage() {
                 <MapPin className="w-6 h-6 text-blue-300" />
                 <h2 className="text-2xl font-semibold">Exhibition Hall Layout</h2>
               </div>
-              {floorPlan?.lastUpdated && (
-                <div className="flex items-center gap-2 bg-blue-900/30 px-4 py-2 rounded-lg">
-                  <Calendar className="w-4 h-4 text-blue-300" />
-                  <p className="text-sm text-blue-200">
-                    Last Updated: {new Date(floorPlan.lastUpdated).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </p>
-                </div>
-              )}
+              <div className="flex items-center gap-3 flex-wrap">
+                {floorPlan?.lastUpdated && (
+                  <div className="flex items-center gap-2 bg-blue-900/30 px-4 py-2 rounded-lg">
+                    <Calendar className="w-4 h-4 text-blue-300" />
+                    <p className="text-sm text-blue-200">
+                      Last Updated: {new Date(floorPlan.lastUpdated).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </p>
+                  </div>
+                )}
+                {imageUrl && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={toggleFullscreen}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#0092D7] hover:bg-[#0078b0] text-white rounded-lg text-sm font-medium"
+                    >
+                      {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+                      {isFullscreen ? 'Exit Full Screen' : 'Full Screen'}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleDownload}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#B80A26] hover:bg-[#96081f] text-white rounded-lg text-sm font-medium"
+                    >
+                      <Download className="w-4 h-4" /> Download
+                    </button>
+                  </>
+                )}
+              </div>
             </div>
           </div>
 
           {/* Floor Plan Image */}
           <div className="p-6">
             {imageUrl ? (
+              <div
+                ref={viewerRef}
+                className={`relative w-full overflow-hidden rounded-lg border border-gray-200 bg-gray-50 ${
+                  isFullscreen ? 'flex items-center justify-center bg-[#171A1B] border-0 rounded-none' : ''
+                }`}
+              >
               <motion.div
                 variants={scaleIn}
-                className="relative w-full overflow-hidden rounded-lg border border-gray-200 bg-gray-50"
+                className="w-full h-full"
               >
-                <img
-                  src={imageUrl}
-                  alt="Exhibition Floor Plan"
-                  className="w-full h-auto object-contain"
-                  onError={() => {
-                    console.error('Failed to load image:', imageUrl);
-                    setImageUrl(null);
-                  }}
-                />
+                {isFullscreen && (
+                  <div className="absolute top-4 right-4 z-20 flex gap-2">
+                    <button
+                      type="button"
+                      onClick={handleDownload}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#B80A26] text-white rounded-lg"
+                    >
+                      <Download className="w-4 h-4" /> Download
+                    </button>
+                    <button
+                      type="button"
+                      onClick={toggleFullscreen}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#0092D7] text-white rounded-lg"
+                    >
+                      <Minimize2 className="w-4 h-4" /> Exit
+                    </button>
+                  </div>
+                )}
+                {fileType === 'pdf' && !isPreviewImage ? (
+                  <iframe
+                    title="Exhibition Floor Plan PDF"
+                    src={imageUrl}
+                    className={`w-full bg-white ${isFullscreen ? 'h-screen' : 'min-h-[75vh]'}`}
+                  />
+                ) : fileType === 'document' ? (
+                  <div className="p-12 text-center">
+                    <FileText className="w-16 h-16 text-[#0092D7] mx-auto mb-4" />
+                    <p className="text-lg font-medium text-gray-800">{fileName || 'Floor plan document'}</p>
+                    <button
+                      type="button"
+                      onClick={handleDownload}
+                      className="inline-flex items-center gap-2 mt-5 px-5 py-3 bg-[#B80A26] text-white rounded-lg"
+                    >
+                      <Download className="w-4 h-4" /> Download Floor Plan
+                    </button>
+                  </div>
+                ) : (
+                  <img
+                    src={imageUrl}
+                    alt="Exhibition Floor Plan"
+                    className={`w-full object-contain ${isFullscreen ? 'h-screen' : 'h-auto'}`}
+                    onError={() => {
+                      console.error('Failed to load image:', imageUrl);
+                      setImageUrl(null);
+                    }}
+                  />
+                )}
               </motion.div>
+              </div>
             ) : (
               <div className="bg-gray-100 rounded-lg p-16 text-center">
                 <Building2 className="w-16 h-16 text-gray-400 mx-auto mb-4" />
