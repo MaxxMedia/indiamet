@@ -66,14 +66,14 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
         whileHover={{ scale: 1.05 }}
         className="flex h-48 w-full items-center justify-center border-b border-blue-600 py-8 lg:h-auto lg:w-1/3 lg:border-b-0 lg:border-r bg-white"
       >
-        {/* <div className="h-32 w-32 lg:h-40 lg:w-40">
+        <div className="h-32 w-32 lg:h-40 lg:w-40">
           <img
-            // src={partner.logo}
-            // alt={partner.name}
+            src={partner.logo}
+            alt={partner.name}
             loading="lazy"
             className="h-full w-full object-contain p-2 transition-transform duration-300 hover:scale-110"
           />
-        </div> */}
+        </div>
       </motion.div>
 
       <div className="flex grow flex-col justify-between bg-[#171A1B] p-6 text-white lg:p-8">
