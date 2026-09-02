@@ -297,22 +297,22 @@ export default function WhyVisit() {
               >
                {[
   {
-    image: "/images/pic1.JPG",
+    image: "/images/pics1.JPG",
     title: "Connect with Global Metrology Leaders",
     text: "Meet leading manufacturers, technology providers, calibration laboratories, quality professionals, and solution providers from India and around the world, all under one roof at INDIAMET 2027."
   },
   {
-    image: "/images/pic2.JPG",
+    image: "/images/pics2.JPG",
     title: "Discover Next-Generation Measurement Technologies",
     text: "Explore the latest innovations in metrology, coordinate measuring machines (CMM), optical inspection, machine vision, calibration, testing, and precision measurement solutions designed for modern manufacturing."
   },
   {
-    image: "/images/pic3.JPG",
+    image: "/images/pics3.JPG",
     title: "Build Strategic Business Partnerships",
     text: "Connect directly with OEMs, manufacturers, procurement leaders, quality heads, and industrial decision-makers to evaluate technologies, discuss business opportunities, and establish long-term partnerships."
   },
   {
-    image: "/images/pic4.JPG",
+    image: "/images/pics4.JPG",
     title: "Stay Ahead with Industry Insights",
     text: "Discover emerging trends in metrology, quality engineering, smart manufacturing, AI-powered inspection, automation, and Industry 4.0 through expert-led conferences, technical presentations, and live technology demonstrations."
   }
