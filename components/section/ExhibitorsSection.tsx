@@ -19,7 +19,7 @@ const ExhibitorsSection = () => {
     <div className="relative w-full mb-12 lg:mb-16 overflow-hidden rounded-2xl shadow-xl">
   <div className="relative w-full h-[500px] lg:h-[550px]">
     <Image
-      src="/images/exhibitors.png"
+      src=""
       alt="Our Past Exhibitors Banner"
       fill
       className="object-cover"

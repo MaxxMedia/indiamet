@@ -64,7 +64,7 @@ const SummitSection = () => {
         {/* Right Image */}
         <div className="relative min-h-[400px] lg:min-h-full">
           <Image
-            src="/images/exhibit2.jpg"
+            src="/images/summit.png"
             alt="Summitattendees networking and participating in sessions"
             fill
             className="object-cover"
