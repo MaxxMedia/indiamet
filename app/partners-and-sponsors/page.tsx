@@ -68,8 +68,8 @@ const PartnerCard: React.FC<PartnerCardProps> = ({ partner, index }) => {
       >
         <div className="h-32 w-32 lg:h-40 lg:w-40">
           <img
-            src={partner.logo}
-            alt={partner.name}
+            // src={partner.logo}
+            // alt={partner.name}
             loading="lazy"
             className="h-full w-full object-contain p-2 transition-transform duration-300 hover:scale-110"
           />
