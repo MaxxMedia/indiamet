@@ -733,15 +733,15 @@ export default function WhyVisit() {
                   {
                     title: "INDIAMET Summit",
                     text: "A 2-day industry summit featuring expert speakers, technical presentations, panel discussions, and case studies on the latest developments in metrology, measurement technology, quality assurance, inspection, calibration, testing, machine vision, AI-powered quality systems, Industry 4.0, and precision manufacturing. Gain practical insights into emerging technologies, global best practices, and the future of quality engineering.",
-                    image:  "/images/conferen.jpg",
+                    image:  "/images/summit.jpg",
                     link: "/summit",
                     external:true
                   },
                   {
                    title: "Global Metrology Excellence Awards (GMEA)",
                 text: "The Global Metrology Excellence Awards (GMEA) celebrates outstanding achievements in metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering. The awards recognize organizations, innovators, technology leaders, and industry professionals who are driving excellence, innovation, and quality across the global manufacturing ecosystem.",
-                image: "/images/tooling-visit.png",
-                link: "https://toolingtrends.com",
+                image: "/images/gmea.png",
+                link: "https://indiametexpo.com/awards",
                 external: true
                   }
                 ].map((card, index) => {
