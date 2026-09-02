@@ -523,7 +523,7 @@ export default function WhyVisit() {
     >
       <div className="relative w-full h-[700px] sm:h-[750px] md:h-[800px] lg:h-[850px] rounded-lg overflow-hidden shadow-lg">
         <Image
-          src="/images/segments.png" // Replace with your image path
+          src="/images/segments2.png" // Replace with your image path
           alt="Who you will meet at the exhibition"
           fill
           className="object-cover"
