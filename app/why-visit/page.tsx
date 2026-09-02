@@ -509,7 +509,7 @@ export default function WhyVisit() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-center sm:text-left"
+      className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-10 text-center sm:text-left"
     >
       Who You Will Meet
     </motion.h2>
