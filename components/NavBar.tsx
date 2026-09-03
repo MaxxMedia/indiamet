@@ -169,7 +169,7 @@ export default function NavBar() {
               ref={mobileHeaderRef}
               className="w-full"
             >
-              <div className="bg-gradient-to-r from-[#191C1C] to-[#191C1C] text-[#ffffff] w-full">
+              <div className="bg-gradient-to-r from-[#191C1C] to-[#1F2424] text-[#ffffff] w-full">
                 {/* SINGLE ROW: LOGO | DIVIDER | EVENT INFO | LOGIN | MENU */}
                 <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 px-3 xs:px-4 sm:px-6 md:px-8 py-5 xs:py-6 sm:py-8 md:py-10 min-h-[100px] xs:min-h-[120px] sm:min-h-[140px] md:min-h-[160px]">
 
@@ -192,7 +192,7 @@ export default function NavBar() {
                   <div className="h-[50px] xs:h-[58px] sm:h-[68px] md:h-[78px] w-px bg-[#171A1B]/30 flex-shrink-0" />
 
                   {/* EVENT INFO - increased font sizes */}
-                  <div className="flex flex-col justify-center min-w-0 flex-1 text-[#171A1B] font-parabolica">
+                  <div className="flex flex-col justify-center min-w-0 flex-1 text-[#ffffff] font-parabolica">
                     <span className="text-[18px] xs:text-[21px] sm:text-[25px] md:text-[29px] font-medium leading-[1.1] whitespace-nowrap">
                       22 - 24 APRIL 2027
                     </span>
