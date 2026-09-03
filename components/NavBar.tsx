@@ -211,7 +211,7 @@ export default function NavBar() {
                       href="/login"
                       aria-label="Login"
                       title="Login"
-                      className="flex items-center justify-center text-[#171A1B] hover:text-[#ffffff] active:scale-90 transition-all flex-shrink-0"
+                      className="flex items-center justify-center text-[#ffffff] hover:text-[#ffffff] active:scale-90 transition-all flex-shrink-0"
                     >
                       <UserRound className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 md:w-9 md:h-9" />
                     </Link>
