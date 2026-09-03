@@ -11,7 +11,7 @@ import { getBackendUrl } from '@/lib/api/backendUrl';
 const API = getBackendUrl();
 const ACCEPT = "image/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx";
 
-function authHeaders() {
+function authHeaders(): Record<string, string> {
   const token = typeof window !== 'undefined'
     ? localStorage.getItem('admin_token') || localStorage.getItem('token')
     : '';
