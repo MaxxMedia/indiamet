@@ -7,7 +7,7 @@ export default function ContactInformation() {
         Contact Information
       </h2>
 
-      <div className="rounded-2xl bg-[#F3F9FC] p-8 shadow-sm max-w-md">
+      <div className="rounded-2xl bg-[#fef9f2] p-8 shadow-sm max-w-md">
         <p className="text-lg leading-relaxed text-black/80 mb-6">
           For stall design approvals of RAW Space Exhibitors, please
           contact our manager:
