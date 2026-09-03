@@ -263,7 +263,7 @@ export default function ExhibitorForm() {
                                         name={s}
                                         checked={form.productSector.includes(s)}
                                         onChange={handleChange}
-                                        className="h-4 w-4 accent-[#F37021] shrink-0 cursor-pointer"
+                                        className="h-4 w-4 accent-[#B80A26] shrink-0 cursor-pointer"
                                     />
                                     <span className="text-sm text-gray-700">{s}</span>
                                 </label>
@@ -287,7 +287,7 @@ export default function ExhibitorForm() {
                 <div className="space-y-2">
                     <div className="flex items-start gap-3">
                         <input type="checkbox" id="ex-terms" required
-                            className="mt-0.5 h-4 w-4 accent-[#F37021] cursor-pointer shrink-0" />
+                            className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0" />
                         <label htmlFor="ex-terms" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
                             I confirm that I have read, understood and agree to the{' '}
                             <a href="/terms" className="text-blue-600 hover:underline">Terms & Conditions</a>.{' '}
@@ -296,7 +296,7 @@ export default function ExhibitorForm() {
                     </div>
                     <div className="flex items-start gap-3">
                         <input type="checkbox" id="ex-privacy"
-                            className="mt-0.5 h-4 w-4 accent-[#F37021] cursor-pointer shrink-0" />
+                            className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0" />
                         <label htmlFor="ex-privacy" className="text-xs text-gray-600 leading-relaxed cursor-pointer">
                             By submitting this form, I agree that the event organizers may contact me with updates and relevant
                             information about this event.{' '}

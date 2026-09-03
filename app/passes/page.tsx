@@ -216,7 +216,7 @@ export default function PassesPage() {
                   • INDIAMET 2027 open for registration
                 </span>
                 <h1 className="mt-5 text-4xl font-bold leading-tight text-[#02416E] md:text-5xl">
-                  Your <span className="bg-gradient-to-r from-[#F37021] to-[#0092D7] bg-clip-text text-transparent">Digital Visitor Badge</span> In Seconds
+                  Your <span className="bg-gradient-to-r from-[#B80A26] to-[#0092D7] bg-clip-text text-transparent">Digital Visitor Badge</span> In Seconds
                 </h1>
                 <p className="mt-4 max-w-xl text-slate-600">
                   Register for INDIAMET, receive your <strong>QR-coded visitor pass</strong> instantly via WhatsApp or SMS, and walk into the exhibition hassle-free.
@@ -224,12 +224,12 @@ export default function PassesPage() {
                 <div className="mt-6 flex flex-wrap items-center gap-2 text-sm font-medium">
                   <span className="rounded-full bg-white px-3 py-1 shadow-sm">1 Register</span>
                   <ArrowRight className="h-4 w-4 text-slate-400" />
-                  <span className="rounded-full bg-[#F37021]/10 px-3 py-1 text-[#F37021]">2 Get Badge</span>
+                  <span className="rounded-full bg-[#B80A26]/10 px-3 py-1 text-[#B80A26]">2 Get Badge</span>
                   <ArrowRight className="h-4 w-4 text-slate-400" />
                   <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">3 Walk In</span>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="#register" className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#F37021] to-[#0092D7] px-5 py-3 text-sm font-semibold text-white shadow-lg">
+                  <a href="#register" className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#B80A26] to-[#0092D7] px-5 py-3 text-sm font-semibold text-white shadow-lg">
                     <QrCode className="h-4 w-4" /> Register Now <ArrowRight className="h-4 w-4" />
                   </a>
                   <a href="#register" className="inline-flex items-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700">
@@ -238,7 +238,7 @@ export default function PassesPage() {
                 </div>
                 <div className="mt-8 flex flex-wrap gap-5 text-xs font-medium text-slate-500">
                   <span className="inline-flex items-center gap-1"><Shield className="h-4 w-4 text-[#0092D7]" /> Secure & Private</span>
-                  <span className="inline-flex items-center gap-1"><Zap className="h-4 w-4 text-[#F37021]" /> Instant Badge</span>
+                  <span className="inline-flex items-center gap-1"><Zap className="h-4 w-4 text-[#B80A26]" /> Instant Badge</span>
                   <span className="inline-flex items-center gap-1"><Check className="h-4 w-4 text-emerald-600" /> Free Registration</span>
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function PassesPage() {
                   </div>
                 </div>
                 <div className="flex gap-3 text-sm text-slate-600">
-                  <MapPin className="mt-0.5 h-5 w-5 text-[#F37021]" />
+                  <MapPin className="mt-0.5 h-5 w-5 text-[#B80A26]" />
                   <div>
                     <p className="font-medium text-[#02416E]">Venue</p>
                     <p>Auto Cluster Exhibition Centre, Pune, India</p>
@@ -358,7 +358,7 @@ export default function PassesPage() {
             <div className="h-fit space-y-5 rounded-2xl bg-white p-5 shadow-sm">
               <h3 className="font-semibold text-[#02416E]">Event Details</h3>
               <p className="flex gap-2 text-sm text-slate-600"><Calendar className="h-4 w-4 text-[#0092D7]" /> 23–25 April 2027</p>
-              <p className="flex gap-2 text-sm text-slate-600"><MapPin className="h-4 w-4 text-[#F37021]" /> Auto Cluster Exhibition Centre, Pune</p>
+              <p className="flex gap-2 text-sm text-slate-600"><MapPin className="h-4 w-4 text-[#B80A26]" /> Auto Cluster Exhibition Centre, Pune</p>
             </div>
             <form onSubmit={completeRegistration} className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex items-start justify-between gap-4">
@@ -466,7 +466,7 @@ export default function PassesPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 p-4">
           <div className="w-full max-w-md rounded-3xl bg-white p-6 shadow-2xl">
             <div className="flex items-center justify-between">
-              <p className="text-sm font-semibold text-[#F37021]">INDIAMET</p>
+              <p className="text-sm font-semibold text-[#B80A26]">INDIAMET</p>
               <button type="button" onClick={() => setOtpOpen(false)} className="text-slate-400">✕</button>
             </div>
             <h3 className="mt-4 text-2xl font-bold text-[#02416E]">Verify Your Phone Number</h3>
