@@ -219,7 +219,7 @@ export default function NavBar() {
                     {/* MENU BUTTON - increased size */}
                     <button
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      className="flex items-center justify-center w-10 h-10 xs:w-11 xs:h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-black/10 hover:bg-black/15 active:scale-95 transition-all flex-shrink-0 text-[#171A1B]"
+                      className="flex items-center justify-center w-10 h-10 xs:w-11 xs:h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-black/10 hover:bg-black/15 active:scale-95 transition-all flex-shrink-0 text-[#ffffff]"
                       aria-label="Toggle menu"
                     >
                       {mobileMenuOpen ? (
