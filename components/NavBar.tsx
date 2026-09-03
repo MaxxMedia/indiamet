@@ -238,7 +238,7 @@ export default function NavBar() {
         {/* ================= DESKTOP NAVBAR (with padding) ================= */}
         <div className={`hidden xl:block px-2 sm:px-4 md:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "pt-1.5 sm:pt-2" : "pt-2 sm:pt-3 md:pt-4"}`}>
           <div className="mx-auto max-w-[1800px]">
-            <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#132c33] to-[#132c33] text-[#ffffff] shadow-xl">
+            <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#02416E] to-[#032647] text-[#ffffff] shadow-xl">
               <div className="flex items-center justify-between gap-2 xl:gap-5 2xl:gap-6 px-3 xl:px-6 2xl:px-8 py-3 xl:py-4 2xl:py-5 min-h-[104px] xl:min-h-[120px] 2xl:min-h-[128px]">
                 {/* ================= LEFT SECTION: LOGO + EVENT INFO ================= */}
                 <div className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0">
