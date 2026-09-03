@@ -169,7 +169,7 @@ export default function NavBar() {
               ref={mobileHeaderRef}
               className="w-full"
             >
-              <div className="bg-[#02416E] text-white w-full">
+              <div className="bg-gradient-to-r from-[#FED1B2] to-[#EDF0F5] text-[#171A1B] w-full">
                 {/* SINGLE ROW: LOGO | DIVIDER | EVENT INFO | LOGIN | MENU */}
                 <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 px-3 xs:px-4 sm:px-6 md:px-8 py-5 xs:py-6 sm:py-8 md:py-10 min-h-[100px] xs:min-h-[120px] sm:min-h-[140px] md:min-h-[160px]">
 
@@ -189,10 +189,10 @@ export default function NavBar() {
                   </Link>
 
                   {/* VERTICAL DIVIDER - increased height */}
-                  <div className="h-[50px] xs:h-[58px] sm:h-[68px] md:h-[78px] w-px bg-white/70 flex-shrink-0" />
+                  <div className="h-[50px] xs:h-[58px] sm:h-[68px] md:h-[78px] w-px bg-[#171A1B]/30 flex-shrink-0" />
 
                   {/* EVENT INFO - increased font sizes */}
-                  <div className="flex flex-col justify-center min-w-0 flex-1 text-white font-parabolica">
+                  <div className="flex flex-col justify-center min-w-0 flex-1 text-[#171A1B] font-parabolica">
                     <span className="text-[18px] xs:text-[21px] sm:text-[25px] md:text-[29px] font-medium leading-[1.1] whitespace-nowrap">
                       22 - 24 APRIL 2027
                     </span>
@@ -211,7 +211,7 @@ export default function NavBar() {
                       href="/login"
                       aria-label="Login"
                       title="Login"
-                      className="flex items-center justify-center text-white hover:text-[#F37021] active:scale-90 transition-all flex-shrink-0"
+                      className="flex items-center justify-center text-[#171A1B] hover:text-[#F37021] active:scale-90 transition-all flex-shrink-0"
                     >
                       <UserRound className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 md:w-9 md:h-9" />
                     </Link>
@@ -219,7 +219,7 @@ export default function NavBar() {
                     {/* MENU BUTTON - increased size */}
                     <button
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      className="flex items-center justify-center w-10 h-10 xs:w-11 xs:h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 transition-all flex-shrink-0"
+                      className="flex items-center justify-center w-10 h-10 xs:w-11 xs:h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-black/10 hover:bg-black/15 active:scale-95 transition-all flex-shrink-0 text-[#171A1B]"
                       aria-label="Toggle menu"
                     >
                       {mobileMenuOpen ? (
@@ -238,7 +238,7 @@ export default function NavBar() {
         {/* ================= DESKTOP NAVBAR (with padding) ================= */}
         <div className={`hidden xl:block px-2 sm:px-4 md:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "pt-1.5 sm:pt-2" : "pt-2 sm:pt-3 md:pt-4"}`}>
           <div className="mx-auto max-w-[1800px]">
-            <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl bg-[#003465] text-white shadow-xl">
+            <div className="rounded-xl sm:rounded-2xl lg:rounded-3xl bg-gradient-to-r from-[#FED1B2] to-[#EDF0F5] text-[#171A1B] shadow-xl">
               <div className="flex items-center justify-between gap-2 xl:gap-5 2xl:gap-6 px-3 xl:px-6 2xl:px-8 py-3 xl:py-4 2xl:py-5 min-h-[104px] xl:min-h-[120px] 2xl:min-h-[128px]">
                 {/* ================= LEFT SECTION: LOGO + EVENT INFO ================= */}
                 <div className="flex items-center gap-1 sm:gap-8.5 md:gap-10 flex-shrink-0 min-w-0">
@@ -254,7 +254,7 @@ export default function NavBar() {
                       />
                     </div>
 
-                    <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-white/70 mx-1"></span>
+                    <span className="hidden md:block h-5 lg:h-6 xl:h-8 w-px bg-[#171A1B]/30 mx-1"></span>
                   </div>
 
                   {/* Event Info with fluid typography */}
@@ -282,7 +282,7 @@ export default function NavBar() {
                         onMouseEnter={() => setActiveDropdown(i)}
                         onMouseLeave={() => setActiveDropdown(null)}
                       >
-                        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-gray-200 relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
+                        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-[#B80A26] relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
                           <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
                             {/* shortTitle (when present) shows at xl, the
                                 full title takes over at 2xl once there's
@@ -327,7 +327,7 @@ export default function NavBar() {
                       <Link
                         key={i}
                         href={item.href!}
-                        className="hover:text-gray-200 relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
+                        className="hover:text-[#B80A26] relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
                       >
                         <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
                           {item.shortTitle ? (
