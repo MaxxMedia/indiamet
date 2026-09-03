@@ -207,7 +207,7 @@ export default function ExploreMoscowPage() {
       </section>
 
       {/* Getting Around Section */}
-      <section className="relative z-10 mx-auto overflow-hidden bg-[#02416E] text-white">
+      <section className="relative z-10 mx-auto overflow-hidden bg-[#191C1C] text-white">
         <SectionContainer>
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
             <div className="flex h-fit flex-col gap-5 lg:col-span-7 lg:border-l lg:border-white/20 lg:pl-10 xl:pl-12 2xl:pl-14">

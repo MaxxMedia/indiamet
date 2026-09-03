@@ -96,7 +96,7 @@ export default function MediaGalleryPage() {
                 <Link
                   key={item.id}
                   href={item.href}
-                  className="group relative flex flex-col rounded-xl overflow-hidden bg-[#02416E] shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                  className="group relative flex flex-col rounded-xl overflow-hidden bg-[#191C1C] shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                 >
                   {/* Image Container */}
                   <div className="relative h-56 w-full overflow-hidden">

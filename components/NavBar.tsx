@@ -369,13 +369,13 @@ export default function NavBar() {
             {!scrolled && (
               <div className="flex justify-end w-full pr-4">
                 <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-4 rounded-b-xl bg-[#02416E] px-4 py-1 text-[clamp(11px,0.7vw,14px)] text-white shadow-md">
+                  <div className="flex items-center gap-4 rounded-b-xl bg-[#191C1C] px-4 py-1 text-[clamp(11px,0.7vw,14px)] text-white shadow-md">
                     <span className="font-medium">{isMounted ? timeLeft.days : "--"} Days</span>
                     <span className="font-medium">{isMounted ? timeLeft.hours : "--"} Hours</span>
                     <span className="font-medium">{isMounted ? timeLeft.minutes : "--"} Mins</span>
                   </div>
                   <Link href="/login">
-                    <div className="flex items-center rounded-b-xl bg-[#02416E] px-3 py-1 text-[clamp(11px,0.7vw,14px)] text-white font-bold cursor-pointer hover:bg-[#B80A26] active:scale-95 transition-all shadow-md">
+                    <div className="flex items-center rounded-b-xl bg-[#191C1C] px-3 py-1 text-[clamp(11px,0.7vw,14px)] text-white font-bold cursor-pointer hover:bg-[#B80A26] active:scale-95 transition-all shadow-md">
                       EXHIBITOR LOGIN
                     </div>
                   </Link>

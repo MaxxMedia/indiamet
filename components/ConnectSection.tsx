@@ -3,7 +3,7 @@ import SectionContainer from "./UI/SectionContainer";
 // components/ConnectSection.tsx
 export default function ConnectSection() {
   return (
-    <section className="relative z-1 overflow-hidden bg-[#02416E] text-white py-32">
+    <section className="relative z-1 overflow-hidden bg-[#191C1C] text-white py-32">
       <SectionContainer>
       <div className="container">
         <div className="grid gap-16 lg:grid-cols-3 lg:gap-24">
