@@ -6,7 +6,7 @@ export default function NewsletterSection() {
     <section className="py-16 sm:py-20 lg:py-24 xl:py-32">
       <SectionContainer>
         {/* CARD */}
-        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[36px] bg-gradient-to-r from-[#191C1C] to-[] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 py-8 sm:py-10 lg:py-12 xl:py-14 text-white">
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[36px] bg-gradient-to-r from-[#002926] to-[] px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 py-8 sm:py-10 lg:py-12 xl:py-14 text-white">
           
           {/* LEFT CONTENT */}
           <div className="relative z-10 max-w-[1050px] space-y-4 sm:space-y-5 lg:space-y-6">
@@ -22,7 +22,7 @@ export default function NewsletterSection() {
             </p>
 
             <a href="/newsletter" className="inline-block pt-3 sm:pt-4">
-              <button className="rounded-full bg-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-[15px] font-semibold text-[#191C1C] transition hover:bg-[#00857C] hover:text-white">
+              <button className="rounded-full bg-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-[15px] font-semibold text-[#002926] transition hover:bg-[#00857C] hover:text-white">
                 Sign up Today
               </button>
             </a>

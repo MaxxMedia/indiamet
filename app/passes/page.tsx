@@ -215,7 +215,7 @@ export default function PassesPage() {
                 <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
                   • INDIAMET 2027 open for registration
                 </span>
-                <h1 className="mt-5 text-4xl font-bold leading-tight text-[#191C1C] md:text-5xl">
+                <h1 className="mt-5 text-4xl font-bold leading-tight text-[#002926] md:text-5xl">
                   Your <span className="bg-gradient-to-r from-[#00857C] to-[#0092D7] bg-clip-text text-transparent">Digital Visitor Badge</span> In Seconds
                 </h1>
                 <p className="mt-4 max-w-xl text-slate-600">
@@ -255,7 +255,7 @@ export default function PassesPage() {
             </div>
           </section>
 
-          <section id="register" className="bg-[#191C1C] px-4 py-10 text-white">
+          <section id="register" className="bg-[#002926] px-4 py-10 text-white">
             <div className="mx-auto max-w-6xl">
               <a href="/" className="inline-flex rounded-full border border-white/30 px-4 py-1.5 text-sm">← Back to Home</a>
               <span className="ml-3 inline-flex rounded-full bg-emerald-500 px-3 py-1 text-xs font-semibold">Registration Open</span>
@@ -270,18 +270,18 @@ export default function PassesPage() {
           <section className="bg-[#F3F8FC] px-4 py-10">
             <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[280px_1fr]">
               <div className="h-fit space-y-5 rounded-2xl bg-white p-5 shadow-sm">
-                <h3 className="font-semibold text-[#191C1C]">Event Details</h3>
+                <h3 className="font-semibold text-[#002926]">Event Details</h3>
                 <div className="flex gap-3 text-sm text-slate-600">
                   <Calendar className="mt-0.5 h-5 w-5 text-[#0092D7]" />
                   <div>
-                    <p className="font-medium text-[#191C1C]">Event Dates</p>
+                    <p className="font-medium text-[#002926]">Event Dates</p>
                     <p>23–25 April 2027</p>
                   </div>
                 </div>
                 <div className="flex gap-3 text-sm text-slate-600">
                   <MapPin className="mt-0.5 h-5 w-5 text-[#00857C]" />
                   <div>
-                    <p className="font-medium text-[#191C1C]">Venue</p>
+                    <p className="font-medium text-[#002926]">Venue</p>
                     <p>Auto Cluster Exhibition Centre, Pune, India</p>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function PassesPage() {
 
               <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <p className="text-xs font-bold tracking-widest text-[#0092D7]">INDIAMET 2027</p>
-                <h3 className="mt-2 text-2xl font-bold text-[#191C1C]">Choose Verification Method</h3>
+                <h3 className="mt-2 text-2xl font-bold text-[#002926]">Choose Verification Method</h3>
                 <p className="mt-1 text-sm text-slate-500">Select how you’d like to receive your one-time password</p>
 
                 <div className="mt-5 grid grid-cols-2 rounded-xl bg-slate-100 p-1">
@@ -298,7 +298,7 @@ export default function PassesPage() {
                       key={item}
                       type="button"
                       onClick={() => setChannel(item)}
-                      className={`rounded-lg py-2.5 text-sm font-semibold capitalize ${channel === item ? 'bg-white text-[#191C1C] shadow-sm' : 'text-slate-500'}`}
+                      className={`rounded-lg py-2.5 text-sm font-semibold capitalize ${channel === item ? 'bg-white text-[#002926] shadow-sm' : 'text-slate-500'}`}
                     >
                       {item === 'sms' ? 'SMS' : 'WhatsApp'}
                     </button>
@@ -310,7 +310,7 @@ export default function PassesPage() {
                   OTP will be sent via {channel === 'sms' ? 'SMS' : 'WhatsApp'} to your phone number
                 </div>
 
-                <label className="mt-5 block text-sm font-medium text-[#191C1C]">Mobile Number *</label>
+                <label className="mt-5 block text-sm font-medium text-[#002926]">Mobile Number *</label>
                 <div className="mt-2 flex overflow-hidden rounded-xl border border-slate-200">
                   <select
                     value={countryCode}
@@ -335,7 +335,7 @@ export default function PassesPage() {
                   type="button"
                   onClick={sendOtp}
                   disabled={loading}
-                  className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#191C1C] px-4 py-3 text-sm font-semibold text-white disabled:opacity-60"
+                  className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#002926] px-4 py-3 text-sm font-semibold text-white disabled:opacity-60"
                 >
                   <Smartphone className="h-4 w-4" />
                   {loading ? 'Sending OTP...' : `Send OTP via ${channel === 'sms' ? 'SMS' : 'WhatsApp'}`}
@@ -356,14 +356,14 @@ export default function PassesPage() {
         <section className="bg-[#F3F8FC] px-4 py-10">
           <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[260px_1fr]">
             <div className="h-fit space-y-5 rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="font-semibold text-[#191C1C]">Event Details</h3>
+              <h3 className="font-semibold text-[#002926]">Event Details</h3>
               <p className="flex gap-2 text-sm text-slate-600"><Calendar className="h-4 w-4 text-[#0092D7]" /> 23–25 April 2027</p>
               <p className="flex gap-2 text-sm text-slate-600"><MapPin className="h-4 w-4 text-[#00857C]" /> Auto Cluster Exhibition Centre, Pune</p>
             </div>
             <form onSubmit={completeRegistration} className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#191C1C]">Complete Registration</h2>
+                  <h2 className="text-2xl font-bold text-[#002926]">Complete Registration</h2>
                   <p className="text-sm text-slate-500">Fill in your details to complete registration</p>
                 </div>
                 <button type="button" onClick={() => setStep('phone')} className="text-sm font-semibold text-[#0092D7]">Change Number</button>
@@ -400,7 +400,7 @@ export default function PassesPage() {
               </div>
 
               <div className="mt-6">
-                <h3 className="font-semibold text-[#191C1C]">What are you looking for?</h3>
+                <h3 className="font-semibold text-[#002926]">What are you looking for?</h3>
                 <p className="mt-2 rounded-xl bg-[#E8F6FC] px-4 py-3 text-sm text-[#0F4C6B]">Please select at least one interest to continue with your registration.</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {INTERESTS.map((interest) => (
@@ -417,7 +417,7 @@ export default function PassesPage() {
               </div>
 
               {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
-              <button type="submit" disabled={loading} className="mt-6 w-full rounded-xl bg-[#191C1C] py-3 font-semibold text-white disabled:opacity-60">
+              <button type="submit" disabled={loading} className="mt-6 w-full rounded-xl bg-[#002926] py-3 font-semibold text-white disabled:opacity-60">
                 {loading ? 'Creating your pass...' : 'Complete Registration'}
               </button>
               <p className="mt-3 text-center text-xs text-slate-400">By registering, you agree to our terms and conditions</p>
@@ -432,7 +432,7 @@ export default function PassesPage() {
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
               <Check className="h-7 w-7" />
             </div>
-            <h2 className="text-3xl font-bold text-[#191C1C]">Registration Successful!</h2>
+            <h2 className="text-3xl font-bold text-[#002926]">Registration Successful!</h2>
             <p className="mt-2 text-sm text-slate-500">Your visitor pass has been sent via {pass.channel === 'sms' ? 'SMS' : 'WhatsApp'}.</p>
             <div className="mt-8">
               <VisitorPassCard pass={pass} />
@@ -455,7 +455,7 @@ export default function PassesPage() {
               <StatusCard title="Event Reminder" body="We'll remind you" />
             </div>
             <div className="mt-6 grid grid-cols-2 gap-3">
-              <a href="/" className="rounded-xl bg-[#191C1C] py-3 text-sm font-semibold text-white">Back to Home</a>
+              <a href="/" className="rounded-xl bg-[#002926] py-3 text-sm font-semibold text-white">Back to Home</a>
               <button type="button" onClick={() => window.location.reload()} className="rounded-xl border border-[#0092D7] py-3 text-sm font-semibold text-[#0092D7]">Another Registration</button>
             </div>
           </div>
@@ -469,7 +469,7 @@ export default function PassesPage() {
               <p className="text-sm font-semibold text-[#00857C]">INDIAMET</p>
               <button type="button" onClick={() => setOtpOpen(false)} className="text-slate-400">✕</button>
             </div>
-            <h3 className="mt-4 text-2xl font-bold text-[#191C1C]">Verify Your Phone Number</h3>
+            <h3 className="mt-4 text-2xl font-bold text-[#002926]">Verify Your Phone Number</h3>
             <p className="mt-2 text-sm text-slate-500">
               We’ve sent a 4-digit verification code to <strong>{displayPhone}</strong>
             </p>
@@ -551,7 +551,7 @@ function Field({
 function StatusCard({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-2xl bg-white p-3 shadow-sm">
-      <p className="font-semibold text-[#191C1C]">{title}</p>
+      <p className="font-semibold text-[#002926]">{title}</p>
       <p className="mt-1 text-slate-500">{body}</p>
     </div>
   );

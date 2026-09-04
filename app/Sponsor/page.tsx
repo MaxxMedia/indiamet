@@ -146,7 +146,7 @@ const SponsorPage: NextPage = () => {
                     </div>
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#191C1C]/95 via-[#191C1C]/80 to-[#191C1C]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#002926]/95 via-[#002926]/80 to-[#002926]/40" />
 
                     {/* Content */}
                     <div className="relative z-10 flex items-center min-h-[60vh] lg:min-h-[70vh] pt-[130px] sm:pt-[140px] lg:pt-[100px]">

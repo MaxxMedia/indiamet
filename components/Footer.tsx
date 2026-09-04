@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-[#00857C] text-white font-parabolica">
       {/* TOP BRAND BAR */}
-      <div className="bg-gradient-to-r from-[#191C1C] to-[#1F2424] py-4">
+      <div className="bg-gradient-to-r from-[#002926] to-[#1F2424] py-4">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
