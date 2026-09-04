@@ -350,14 +350,14 @@ export default function NavBar() {
                 <div className="hidden xl:flex items-center gap-[clamp(3px,0.4vw,12px)] flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className="bg-[#002926] hover:bg-[#002926] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
+                    className="bg-[#002926] hover:bg-[#002926] px-[clamp(16px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
 
                     EXHIBITOR REG
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className="bg-[#002926] hover:bg-[#002926] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
+                    className="bg-[#002926] hover:bg-[#002926] px-[clamp(16px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
                     VISITOR REG
                   </Button>
