@@ -169,7 +169,7 @@ export default function NavBar() {
               ref={mobileHeaderRef}
               className="w-full"
             >
-              <div className="bg-gradient-to-r from-[#191C1C] to-[#1F2424] text-[#ffffff] w-full">
+              <div className="bg-gradient-to-r from-[#002926] to-[#005C55] text-[#ffffff] w-full">
                 {/* SINGLE ROW: LOGO | DIVIDER | EVENT INFO | LOGIN | MENU */}
                 <div className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 px-3 xs:px-4 sm:px-6 md:px-8 py-5 xs:py-6 sm:py-8 md:py-10 min-h-[100px] xs:min-h-[120px] sm:min-h-[140px] md:min-h-[160px]">
 
