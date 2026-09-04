@@ -539,7 +539,7 @@ const selectedDay = programData[activeDay];
 
           {/* Day Header */}
           <div className="mb-12">
-            <p className="text-[#4D4D4D] font-semibold text-2xl mb-3">
+            <p className="text-[#848688] font-semibold text-2xl mb-3">
               {selectedDay.day} • {selectedDay.date}
             </p>
           </div>
@@ -552,7 +552,7 @@ const selectedDay = programData[activeDay];
                 className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8"
               >
                 {/* Time */}
-                <div className="text-[#4D4D4D] text-lg font-medium">
+                <div className="text-[#848688] text-lg font-medium">
                   {session.time}
                 </div>
 
@@ -563,13 +563,13 @@ const selectedDay = programData[activeDay];
                   </h2>
 
                   {session.description && (
-                    <p className="text-[#4D4D4D] text-lg mb-4">
+                    <p className="text-[#848688] text-lg mb-4">
                       {session.description}
                     </p>
                   )}
 
                   {session.topics && (
-                    <ul className="list-disc pl-6 space-y-2 text-[#4D4D4D] text-lg mb-4">
+                    <ul className="list-disc pl-6 space-y-2 text-[#848688] text-lg mb-4">
                       {session.topics.map((topic) => (
                         <li key={topic.id}>{topic.title}</li>
                       ))}
@@ -580,10 +580,10 @@ const selectedDay = programData[activeDay];
                     <div className="space-y-2">
                       {session.speakers.map((speaker, i) => (
                         <div key={i}>
-                          <p className="text-[#4D4D4D] text-base">
+                          <p className="text-[#848688] text-base">
                             {speaker.position}
                           </p>
-                          <p className="text-[#4D4D4D] text-lg">{speaker.name}</p>
+                          <p className="text-[#848688] text-lg">{speaker.name}</p>
                           
                         </div>
                       ))}

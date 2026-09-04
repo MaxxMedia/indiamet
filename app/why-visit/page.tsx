@@ -806,7 +806,7 @@ export default function WhyVisit() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="text-xs sm:text-sm text-[#4D4D4D] mb-1 sm:mb-2"
+                className="text-xs sm:text-sm text-[#848688] mb-1 sm:mb-2"
               >
                 Simplifying Your Participation Journey
               </motion.h3>
@@ -905,7 +905,7 @@ export default function WhyVisit() {
                   whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(37, 99, 235, 0.1)" }}
                   className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg transition-all duration-300"
                 >
-                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-2 sm:mb-4">Venue</h3>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#848688] mb-2 sm:mb-4">Venue</h3>
                   <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">Auto Cluster Exhibition Centre, Pune, India</p>
                 </motion.div>
 
@@ -917,7 +917,7 @@ export default function WhyVisit() {
                   whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(37, 99, 235, 0.1)" }}
                   className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg transition-all duration-300"
                 >
-                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-2 sm:mb-4">Opening Hours</h3>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#848688] mb-2 sm:mb-4">Opening Hours</h3>
                   <p className="text-gray-800 font-medium text-sm sm:text-base lg:text-lg">22-24 April 2027, 10:00 - 18:00</p>
                 </motion.div>
               </div>

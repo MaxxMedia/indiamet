@@ -236,39 +236,39 @@ const staggerContainer = {
             >
               <div>
                 <h2 className="text-4xl lg:text-5xl font-bold">Where the Metrology & Quality Engineering Industry Comes Together</h2>
-                <p className="text-[#4D4D4D] mb-6 text-lg">
+                <p className="text-[#848688] mb-6 text-lg">
                   INDIAMET 2027 is India's first dedicated international exhibition for metrology, measurement technology, quality assurance, inspection, calibration, testing, and precision engineering, bringing together the entire quality ecosystem under one roof.
                 </p>
-                <p className="text-[#4D4D4D] mb-8 text-lg">
+                <p className="text-[#848688] mb-8 text-lg">
                  With India's rapidly expanding manufacturing sectors—including automotive, EV, aerospace, electronics, medical devices, defence, and industrial engineering—supported by initiatives such as Make in India, Atmanirbhar Bharat, and smart manufacturing, the country presents exceptional opportunities for companies to expand their market presence, introduce innovative technologies, and build long-term partnerships with manufacturers, OEMs, and quality professionals.
                 </p>
 
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
-                    <span className="text-[#4D4D4D] font-bold text-[20px] leading-none">•</span>
+                    <span className="text-[#848688] font-bold text-[20px] leading-none">•</span>
                     <motion.span
                       whileHover={{ scale: 1.02, x: 5 }}
-                      className="text-[#4D4D4D] text-[30px] cursor-pointer"
+                      className="text-[#848688] text-[30px] cursor-pointer"
                     >
                       <strong>10,000 Visitors</strong>
                     </motion.span>
                   </li>
 
                   <li className="flex items-start gap-3">
-                    <span className="text-[#4D4D4D] font-bold text-[30px] leading-none">•</span>
+                    <span className="text-[#848688] font-bold text-[30px] leading-none">•</span>
                     <motion.span
                       whileHover={{ scale: 1.02, x: 5 }}
-                      className="text-[#4D4D4D] text-[30px] cursor-pointer"
+                      className="text-[#848688] text-[30px] cursor-pointer"
                     >
                       <strong>150+ Exhibitors</strong>
                     </motion.span>
                   </li>
 
                   <li className="flex items-start gap-3">
-                    <span className="text-[#4D4D4D] font-bold text-[20px] leading-none">•</span>
+                    <span className="text-[#848688] font-bold text-[20px] leading-none">•</span>
                     <motion.span
                       whileHover={{ scale: 1.02, x: 5 }}
-                      className="text-[#4D4D4D] text-[30px] cursor-pointer"
+                      className="text-[#848688] text-[30px] cursor-pointer"
                     >
                       <strong>12+ Countries</strong>
                     </motion.span>
@@ -323,7 +323,7 @@ const staggerContainer = {
               <div className="mb-8 lg:mb-0">
                 <div className="flex gap-2 mb-4">
                   <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                  <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Key Benefits</h3>
+                  <h3 className="text-sm text-[#848688] font-semibold mb-2">Key Benefits</h3>
                 </div>
 
                 <h2 className="text-4xl lg:text-5xl font-bold">Reasons Why You Should Exhibit</h2>
@@ -474,7 +474,7 @@ const staggerContainer = {
               <div>
                 <div className="flex gap-2 mb-4">
                   <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                  <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Event Sectors</h3>
+                  <h3 className="text-sm text-[#848688] font-semibold mb-2">Event Sectors</h3>
                 </div>
                 <h2 className="text-4xl lg:text-6xl font-[450] max-w-7xl">
                   Discover the Core Sectors Driving Metrology & Quality Engineering
@@ -536,7 +536,7 @@ const staggerContainer = {
           <SectionContainer>
             <div className="flex gap-2 mb-4">
               <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Testimonials</h3>
+              <h3 className="text-sm text-[#848688] font-semibold mb-2">Testimonials</h3>
             </div>
 
             <div className="relative flex items-center justify-between mb-16">
@@ -811,7 +811,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
           <SectionContainer>
             <div className="flex gap-2 mb-4">
               <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-              <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">INDIAMET</h3>
+              <h3 className="text-sm text-[#848688] font-semibold mb-2">INDIAMET</h3>
             </div>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -825,7 +825,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-sm text-[#4D4D4D] font-semibold mb-5"
+              className="text-sm text-[#848688] font-semibold mb-5"
             >
               Simplifying Your Participation Journey
             </motion.h3>
@@ -924,7 +924,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                 whileHover={{ y: -5, boxShadow: "0 15px 30px rgba(37, 99, 235, 0.1)" }}
                 className="bg-blue-50 p-8 rounded-lg transition-all duration-300"
               >
-                <h3 className="text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-4">Venue</h3>
+                <h3 className="text-lg lg:text-xl font-semibold text-[#848688] mb-4">Venue</h3>
                 <p className="text-gray-800 font-medium text-lg"> Auto Cluster Exhibition Centre, Pune, India</p>
               </motion.div>
 
@@ -936,7 +936,7 @@ From quality heads, metrology engineers, plant managers, manufacturing leaders, 
                 whileHover={{ y: -5, boxShadow: "0 15px 30px rgba(37, 99, 235, 0.1)" }}
                 className="bg-blue-50 p-8 rounded-lg transition-all duration-300"
               >
-                <h3 className="text-lg lg:text-xl font-semibold text-[#4D4D4D] mb-4">Opening Hours</h3>
+                <h3 className="text-lg lg:text-xl font-semibold text-[#848688] mb-4">Opening Hours</h3>
                 <p className="text-gray-800 font-medium text-lg">22-24 April 2027, 10:00 -18:00</p>
                              </motion.div>
             </div>

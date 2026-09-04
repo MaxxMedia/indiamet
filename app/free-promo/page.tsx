@@ -66,8 +66,8 @@ export default function ExhibitorPromotionPage() {
       <section className="py-20">
         <div className="px-4 sm:px-6 lg:px-8 mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* TEXT */}
-          <div className='text-[#4D4D4D]'>
-            <h2 className="text-2xl lg:text-3xl font-bold text-[#4D4D4D] mb-6 leading-tight">
+          <div className='text-[#848688]'>
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#848688] mb-6 leading-tight">
               Invite Your Clients to INDIAMET 2027
             </h2>
 
@@ -120,7 +120,7 @@ export default function ExhibitorPromotionPage() {
       >
         <div className="px-4 sm:px-6 lg:px-8 mx-auto max-w-[1600px]">
           {/* FORCE 2 ITEMS PER ROW */}
-          <div className="grid grid-cols-2 gap-6 text-[#4D4D4D]">
+          <div className="grid grid-cols-2 gap-6 text-[#848688]">
             
             {/* CARD */}
             <div className="relative flex min-h-[520px] flex-col bg-sky-50 p-6 lg:p-10">
@@ -228,7 +228,7 @@ export default function ExhibitorPromotionPage() {
       >
         <div className="px-4 sm:px-6 lg:px-8 mx-auto max-w-[1600px]">
           <div className="grid grid-cols-1 gap-6">
-            <div className="relative flex min-h-[520px] flex-col rounded-2xl text-[#4D4D4D] p-6 lg:p-10">
+            <div className="relative flex min-h-[520px] flex-col rounded-2xl text-[#848688] p-6 lg:p-10">
               <div className="flex flex-col gap-6">
 
                 {/* BIG HEADING */}

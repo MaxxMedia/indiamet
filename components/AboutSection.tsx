@@ -142,7 +142,7 @@ export default function AboutSection() {
           <div className="max-w-[1500px] space-y-4">
             <p
               ref={addToTextRefs}
-              className="font-parabolica text-lg md:text-xl leading-relaxed text-[#4D4D4D] opacity-0"
+              className="font-parabolica text-lg md:text-xl leading-relaxed text-[#848688] opacity-0"
             >
               INDIAMET 2027 is India's first dedicated international exhibition focused exclusively on metrology, measurement technology, 
               quality assurance, inspection systems, calibration, testing equipment, machine vision, NDT, and precision engineering solutions. 
@@ -152,7 +152,7 @@ export default function AboutSection() {
 
             <p
               ref={addToTextRefs}
-              className="font-parabolica text-lg md:text-xl leading-relaxed text-[#4D4D4D] opacity-0"
+              className="font-parabolica text-lg md:text-xl leading-relaxed text-[#848688] opacity-0"
             >
             Whether you are looking to showcase cutting-edge measurement technologies, connect with high-value industrial buyers, build strategic 
             business partnerships, or discover the latest innovations in metrology, quality control, and industrial inspection, INDIAMET 2027 is the 

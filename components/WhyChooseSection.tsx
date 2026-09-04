@@ -121,7 +121,7 @@ export default function WhyChooseSection() {
                   <h4 className="font-parabolica text-xl lg:text-2xl font-bold mb-4 text-gray-800">
                     {reason.title}
                   </h4>
-                  <p className="text-base lg:text-lg text-[#4D4D4D] leading-relaxed">
+                  <p className="text-base lg:text-lg text-[#848688] leading-relaxed">
                     {reason.description}
                   </p>
                 </div>

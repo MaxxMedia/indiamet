@@ -84,7 +84,7 @@ export default function DelegatesPackagesPage() {
             {/* LEFT CONTENT - PACKAGES */}
             <div>
               <div className="max-w-4xl">
-                <h2 className="mt-5 text-4xl font-semibold text-[#4D4D4D] lg:text-5xl">
+                <h2 className="mt-5 text-4xl font-semibold text-[#848688] lg:text-5xl">
                   Choose Your Delegate Package
                 </h2>
 
@@ -147,19 +147,19 @@ export default function DelegatesPackagesPage() {
 
                 <div className="grid grid-cols-2 gap-x-10 gap-y-12">
                   <div>
-                    <p className="text-5xl font-bold text-[#4D4D4D]">500+</p>
+                    <p className="text-5xl font-bold text-[#848688]">500+</p>
                     <p className="mt-2 text-xl text-gray-700">Industry Professionals</p>
                   </div>
                   <div>
-                    <p className="text-5xl font-bold text-[#4D4D4D]">20+</p>
+                    <p className="text-5xl font-bold text-[#848688]">20+</p>
                     <p className="mt-2 text-xl text-gray-700">Expert Speakers</p>
                   </div>
                   <div>
-                    <p className="text-5xl font-bold text-[#4D4D4D]">3</p>
+                    <p className="text-5xl font-bold text-[#848688]">3</p>
                     <p className="mt-2 text-xl text-gray-700">Networking Events</p>
                   </div>
                   <div>
-                    <p className="text-5xl font-bold text-[#4D4D4D]">20+</p>
+                    <p className="text-5xl font-bold text-[#848688]">20+</p>
                     <p className="mt-2 text-xl text-gray-700">Hours of Content</p>
                   </div>
                 </div>

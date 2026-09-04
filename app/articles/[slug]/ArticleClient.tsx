@@ -218,7 +218,7 @@ export default function ArticleClient({ article }: ArticleClientProps) {
  <style jsx global>{`
   .article-content {
     font-family: 'Parabolica', sans-serif;
-    color: #4D4D4D;
+    color: #848688;
     line-height: 1.5; /* reduced */
     font-size: 1.125rem;
     width: 100%;
@@ -226,7 +226,7 @@ export default function ArticleClient({ article }: ArticleClientProps) {
 
   .article-content p {
     margin-bottom: 0.8rem; /* reduced */
-    color: #4D4D4D;
+    color: #848688;
     line-height: 1.5;
     font-size: 1.125rem;
   }
@@ -236,7 +236,7 @@ export default function ArticleClient({ article }: ArticleClientProps) {
     font-weight: 600;
     margin-top: 1.5rem; /* reduced */
     margin-bottom: 0.6rem; /* reduced */
-    color: #4D4D4D;
+    color: #848688;
     line-height: 1.3;
   }
 
@@ -245,7 +245,7 @@ export default function ArticleClient({ article }: ArticleClientProps) {
     font-weight: 600;
     margin-top: 1.3rem; /* reduced */
     margin-bottom: 0.5rem; /* reduced */
-    color: #4D4D4D;
+    color: #848688;
     line-height: 1.3;
   }
 
@@ -254,7 +254,7 @@ export default function ArticleClient({ article }: ArticleClientProps) {
     font-weight: 500;
     margin-top: 1.2rem; /* reduced */
     margin-bottom: 0.4rem; /* reduced */
-    color: #4D4D4D;
+    color: #848688;
     line-height: 1.4;
   }
 

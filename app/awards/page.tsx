@@ -283,18 +283,18 @@ const Awards: NextPage = () => {
                             <div>
                                 <div className="flex gap-2 mb-4">
                                     <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                    <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">About GMEA</h3>
+                                    <h3 className="text-sm text-[#848688] font-semibold mb-2">About GMEA</h3>
                                 </div>
                                 <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                                     Global Metrology Excellence Awards
                                 </h2>
-                                <p className="text-[#4D4D4D] text-lg mb-6">
+                                <p className="text-[#848688] text-lg mb-6">
                                     The Global Metrology Excellence Awards (GMEA) honour individuals, teams and
                                     organizations that demonstrate outstanding achievement, innovation and leadership
                                     in metrology, measurement, inspection, calibration, quality assurance and allied
                                     technologies.
                                 </p>
-                                <p className="text-[#4D4D4D] text-lg mb-8">
+                                <p className="text-[#848688] text-lg mb-8">
                                     Recognizing excellence across the entire metrology and quality engineering ecosystem,
                                     GMEA celebrates the pioneers, innovators, and leaders who are shaping the future of
                                     precision manufacturing and quality assurance.
@@ -308,7 +308,7 @@ const Awards: NextPage = () => {
                                             className="border-l-2 border-[#00857C] pl-4"
                                         >
                                             <p className="text-[#00857C] font-bold text-2xl">{n}</p>
-                                            <p className="text-[#4D4D4D] text-xs mt-1">{l}</p>
+                                            <p className="text-[#848688] text-xs mt-1">{l}</p>
                                         </motion.div>
                                     ))}
                                 </div>
@@ -336,7 +336,7 @@ const Awards: NextPage = () => {
                         >
                             <div className="flex gap-2 justify-center mb-4">
                                 <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Benefits</h3>
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">Benefits</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Why Participate?</h2>
                         </motion.div>
@@ -380,7 +380,7 @@ const Awards: NextPage = () => {
                         >
                             <div className="flex gap-2 justify-center mb-4">
                                 <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Categories</h3>
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">Categories</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Award Categories</h2>
                         </motion.div>
@@ -428,7 +428,7 @@ const Awards: NextPage = () => {
                         >
                             <div className="flex gap-2 justify-center mb-4">
                                 <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Process</h3>
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">Process</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Awards Process</h2>
                         </motion.div>
@@ -492,7 +492,7 @@ const Awards: NextPage = () => {
                         >
                             <div className="flex gap-2 justify-center mb-4">
                                 <img src="" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Jury</h3>
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">Jury</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Meet the Jury</h2>
                         </motion.div>
@@ -559,7 +559,7 @@ const Awards: NextPage = () => {
                         >
                             <div className="flex gap-2 justify-center mb-4">
                                 <img src="/images/logo-icon-3.png" alt="" className="h-5" />
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">Criteria</h3>
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">Criteria</h3>
                             </div>
                             <h2 className="text-4xl lg:text-5xl font-bold">Evaluation Criteria</h2>
                         </motion.div>
@@ -596,7 +596,7 @@ const Awards: NextPage = () => {
                                     className="h-5"
                                 />
 
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold">
+                                <h3 className="text-sm text-[#848688] font-semibold">
                                     Sponsors
                                 </h3>
                             </div>
@@ -605,7 +605,7 @@ const Awards: NextPage = () => {
                                 Our Sponsors
                             </h2>
 
-                            <p className="text-[#4D4D4D] text-base md:text-lg mt-4 max-w-2xl mx-auto">
+                            <p className="text-[#848688] text-base md:text-lg mt-4 max-w-2xl mx-auto">
                                 Proudly supported by leading organizations sponsoring
                                 the Global Metrology Excellence Awards.
                             </p>
@@ -680,7 +680,7 @@ const Awards: NextPage = () => {
                                     className="h-5"
                                 />
 
-                                <h3 className="text-sm text-[#4D4D4D] font-semibold mb-2">
+                                <h3 className="text-sm text-[#848688] font-semibold mb-2">
                                     Supporters
                                 </h3>
                             </div>
@@ -723,7 +723,7 @@ const Awards: NextPage = () => {
                                         </div>
 
                                         {/* Role */}
-                                        <p className="text-[#4D4D4D] text-xs tracking-wide uppercase text-center">
+                                        <p className="text-[#848688] text-xs tracking-wide uppercase text-center">
                                             {supporter.role}
                                         </p>
 

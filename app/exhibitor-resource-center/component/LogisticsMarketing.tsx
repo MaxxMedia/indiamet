@@ -10,14 +10,14 @@ export default function LogisticsMarketing() {
           {/* Logistics Section */}
           <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
             <div className="flex flex-col h-full">
-            <h2 className="text-xl md:text-2xl lg:text-[30px] max-w-3xl text-[#4D4D4D] mb-6 leading-tight font-semibold">
+            <h2 className="text-xl md:text-2xl lg:text-[30px] max-w-3xl text-[#848688] mb-6 leading-tight font-semibold">
   How to get your products/equipment to Pune on time?
 </h2>
 
 
               
             <div className="mb-8 flex-grow">
-  <div className="prose prose-xl max-w-none text-[#4D4D4D]">
+  <div className="prose prose-xl max-w-none text-[#848688]">
     <p className="text-[18px]">
       Indiaet 2027 partners with Buhariwala Logistics for all freight handling requests from exhibitors.
     </p>

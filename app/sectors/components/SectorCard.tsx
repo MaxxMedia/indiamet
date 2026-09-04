@@ -64,7 +64,7 @@ export default function SectorCard({ id, title, slug, image, description, index 
             <motion.h3 
               className="text-lg font-semibold mb-2"
               animate={{
-                color: isHovered ? '#ffffff' : '#000000',
+                color: isHovered ? '#ffffff' : '#606062000',
               }}
             >
               {title}

@@ -33,7 +33,7 @@ export default function ContactInformation() {
         <p className="text-lg">
           <a
             href="tel:+916364936468"
-            className="underline text-[#4D4D4D]"
+            className="underline text-[#848688]"
           >
             +91 63649 36468
           </a>

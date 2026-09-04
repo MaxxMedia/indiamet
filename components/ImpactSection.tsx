@@ -79,7 +79,7 @@ export default function ImpactSection() {
               INDIAMET 2027 – The Industry Impact
             </h2>
 
-            <p className="text-lg text-[#4D4D4D]">
+            <p className="text-lg text-[#848688]">
               Discover the vision, opportunity, and industry significance of INDIAMET 2027—India's first dedicated exhibition for metrology, measurement technology, quality assurance, inspection, calibration, and precision engineering. Bringing together global technology leaders, manufacturers, OEMs, quality professionals, and industrial decision-makers, INDIAMET is set to become the nation's premier platform for advancing precision manufacturing, quality excellence, and industrial innovation.
             </p>
           </div>
