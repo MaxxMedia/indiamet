@@ -157,7 +157,7 @@ const SponsorPage: NextPage = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                 >
-                                    <span className="inline-block text-[17px] tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-4">
+                                    <span className="inline-block text-[17px] tracking-widest text-[#00857C] border border-[#00857C]/40 rounded-full px-3 py-1 mb-4">
                                         GLOBAL METROLOGY EXCELLENCE AWARDS (GMEA)
                                     </span>
                                 </motion.div>
@@ -170,7 +170,7 @@ const SponsorPage: NextPage = () => {
                                 >
                                     AWARD SPONSOR
                                     <br />
-                                    <span className="text-[#B80A26]">PARTNERSHIP FORM</span>
+                                    <span className="text-[#00857C]">PARTNERSHIP FORM</span>
                                 </motion.h1>
 
                                 <motion.p
@@ -193,11 +193,11 @@ const SponsorPage: NextPage = () => {
                 <section className="py-4 bg-gray-50 border-b border-gray-100">
                     <SectionContainer>
                         <div className="flex items-center gap-2 text-sm text-black">
-                            <Link href="/" className="hover:text-[#B80A26] transition-colors">Home</Link>
+                            <Link href="/" className="hover:text-[#00857C] transition-colors">Home</Link>
                             <span className="text-black">/</span>
-                            <Link href="/awards" className="hover:text-[#B80A26] transition-colors">GMEA Awards</Link>
+                            <Link href="/awards" className="hover:text-[#00857C] transition-colors">GMEA Awards</Link>
                             <span className="text-black">/</span>
-                            <span className="text-[#B80A26] font-medium">Sponsor Partnership</span>
+                            <span className="text-[#00857C] font-medium">Sponsor Partnership</span>
                         </div>
                     </SectionContainer>
                 </section>
@@ -217,12 +217,12 @@ const SponsorPage: NextPage = () => {
                                 {/* Back Button */}
                                 <button
                                     onClick={() => router.back()}
-                                    className="inline-flex items-center gap-2 text-black hover:text-[#B80A26] transition-colors mb-6"
+                                    className="inline-flex items-center gap-2 text-black hover:text-[#00857C] transition-colors mb-6"
                                 >
                                     ← BACK
                                 </button>
 
-                                <h2 className="text-[#B80A26] font-bold text-lg mb-1">SPONSOR INFORMATION</h2>
+                                <h2 className="text-[#00857C] font-bold text-lg mb-1">SPONSOR INFORMATION</h2>
                                 <p className="text-black text-sm mb-6">
                                     Please complete the form below and our team will get in touch with you.
                                 </p>
@@ -267,9 +267,9 @@ const SponsorPage: NextPage = () => {
                                     </Field>
                                 </div>
 
-                                <h2 className="text-[#B80A26] font-bold text-lg mt-8 mb-4">SPONSORSHIP INTEREST</h2>
+                                <h2 className="text-[#00857C] font-bold text-lg mt-8 mb-4">SPONSORSHIP INTEREST</h2>
                                 <p className="text-black text-sm font-medium mb-3">
-                                    Sponsorship Package Interested In <span className="text-[#B80A26]">*</span>
+                                    Sponsorship Package Interested In <span className="text-[#00857C]">*</span>
                                 </p>
                                 <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
                                     {packages.map((p, i) => (
@@ -293,16 +293,16 @@ const SponsorPage: NextPage = () => {
                                 </div>
 
                                 <label className="flex items-center gap-2 mt-6 text-sm text-black">
-                                    <input type="checkbox" className="accent-[#B80A26]" />
+                                    <input type="checkbox" className="accent-[#00857C]" />
                                     <span>
-                                        I agree to the <a className="text-[#B80A26] underline">terms & conditions</a> and{" "}
-                                        <a className="text-[#B80A26] underline">privacy policy</a>.
+                                        I agree to the <a className="text-[#00857C] underline">terms & conditions</a> and{" "}
+                                        <a className="text-[#00857C] underline">privacy policy</a>.
                                     </span>
                                 </label>
 
                                 <button
                                     type="submit"
-                                    className="mt-6 inline-flex items-center gap-2 bg-[#B80A26] hover:bg-[#B80A26]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                    className="mt-6 inline-flex items-center gap-2 bg-[#00857C] hover:bg-[#00857C]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                 >
                                     SUBMIT ENQUIRY →
                                 </button>
@@ -333,7 +333,7 @@ const SponsorPage: NextPage = () => {
                                         Choose a package that aligns with your marketing and branding goals.
                                     </p>
                                     <Link href={"/awards"}>
-                                        <button className="text-sm font-semibold text-[#B80A26] border border-[#B80A26]/50 rounded-md px-4 py-2 hover:bg-[#B80A26]/10 transition-colors">
+                                        <button className="text-sm font-semibold text-[#00857C] border border-[#00857C]/50 rounded-md px-4 py-2 hover:bg-[#00857C]/10 transition-colors">
                                             VIEW SPONSORSHIP BENEFITS →
                                         </button>
                                     </Link>
@@ -412,17 +412,17 @@ const SponsorPage: NextPage = () => {
                                 </button>
 
                                 <div className="p-6 md:p-8">
-                                    <span className="inline-block text-xs font-semibold tracking-widest text-[#B80A26] border border-[#B80A26]/40 rounded-full px-3 py-1 mb-3">
+                                    <span className="inline-block text-xs font-semibold tracking-widest text-[#00857C] border border-[#00857C]/40 rounded-full px-3 py-1 mb-3">
                                         {selectedPackage.title}
                                     </span>
                                     <h3 className="text-2xl font-bold text-black">{selectedPackage.price}</h3>
                                     <p className="text-black text-sm mt-1 mb-5">{selectedPackage.note}</p>
 
-                                    <h4 className="text-[#B80A26] font-bold text-sm mb-3">WHAT YOU GET</h4>
+                                    <h4 className="text-[#00857C] font-bold text-sm mb-3">WHAT YOU GET</h4>
                                     <ul className="space-y-2 mb-6">
                                         {selectedPackage.benefits.map((b) => (
                                             <li key={b} className="flex items-start gap-2 text-sm text-black">
-                                                <span className="text-[#B80A26] mt-0.5">✓</span>
+                                                <span className="text-[#00857C] mt-0.5">✓</span>
                                                 <span>{b}</span>
                                             </li>
                                         ))}
@@ -430,7 +430,7 @@ const SponsorPage: NextPage = () => {
 
                                     <button
                                         onClick={() => setIsModalOpen(false)}
-                                        className="w-full inline-flex items-center justify-center gap-2 bg-[#B80A26] hover:bg-[#B80A26]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+                                        className="w-full inline-flex items-center justify-center gap-2 bg-[#00857C] hover:bg-[#00857C]/90 text-white font-semibold px-6 py-3 rounded-full transition-colors"
                                     >
                                         CONTINUE WITH {selectedPackage.title}
                                     </button>

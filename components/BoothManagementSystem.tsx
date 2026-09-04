@@ -199,7 +199,7 @@ export default function FloorPlanViewer() {
                 <button onClick={downloadFile} className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg flex items-center gap-2">
                   <Download size={18} /> Download
                 </button>
-                <button onClick={deleteFloorPlan} disabled={isLoading} className="px-4 py-2 bg-[#B80A26] hover:bg-red-800 text-white rounded-lg flex items-center gap-2 disabled:opacity-50">
+                <button onClick={deleteFloorPlan} disabled={isLoading} className="px-4 py-2 bg-[#00857C] hover:bg-red-800 text-white rounded-lg flex items-center gap-2 disabled:opacity-50">
                   <Trash2 size={18} /> Delete
                 </button>
               </>

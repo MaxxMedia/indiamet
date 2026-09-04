@@ -282,7 +282,7 @@ export default function NavBar() {
                         onMouseEnter={() => setActiveDropdown(i)}
                         onMouseLeave={() => setActiveDropdown(null)}
                       >
-                        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-[#B80A26] relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
+                        <button className="flex items-center gap-0.5 lg:gap-0.5 xl:gap-1 hover:text-[#00857C] relative whitespace-nowrap transition-colors px-0.5 lg:px-1">
                           <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
                             {/* shortTitle (when present) shows at xl, the
                                 full title takes over at 2xl once there's
@@ -295,7 +295,7 @@ export default function NavBar() {
                             ) : (
                               item.title
                             )}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#B80A26] group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#00857C] group-hover:w-full transition-all duration-300"></span>
                           </span>
 
                           <ChevronDown
@@ -327,7 +327,7 @@ export default function NavBar() {
                       <Link
                         key={i}
                         href={item.href!}
-                        className="hover:text-[#B80A26] relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
+                        className="hover:text-[#00857C] relative group whitespace-nowrap transition-colors px-0.5 lg:px-1"
                       >
                         <span className={`relative font-medium text-[clamp(14px,0.9vw,17px)]`}>
                           {item.shortTitle ? (
@@ -338,7 +338,7 @@ export default function NavBar() {
                           ) : (
                             item.title
                           )}
-                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#B80A26] group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] lg:h-[2px] bg-[#00857C] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </Link>
                     )
@@ -350,14 +350,14 @@ export default function NavBar() {
                 <div className="hidden xl:flex items-center gap-[clamp(3px,0.4vw,12px)] flex-shrink-0">
                   <Button
                     href="/exhibiting-enquiry"
-                    className="bg-[#B80A26] hover:bg-[#B80A26] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
+                    className="bg-[#00857C] hover:bg-[#00857C] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
 
                     EXHIBITOR REGISTRATION
                   </Button>
                   <Button
                     href="/visitor-registration"
-                    className="bg-[#B80A26] hover:bg-[#B80A26] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
+                    className="bg-[#00857C] hover:bg-[#00857C] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
                     VISITOR REGISTRATION
                   </Button>
@@ -375,7 +375,7 @@ export default function NavBar() {
                     <span className="font-medium">{isMounted ? timeLeft.minutes : "--"} Mins</span>
                   </div>
                   <Link href="/login">
-                    <div className="flex items-center rounded-b-xl bg-[#191C1C] px-3 py-1 text-[clamp(11px,0.7vw,14px)] text-white font-bold cursor-pointer hover:bg-[#B80A26] active:scale-95 transition-all shadow-md">
+                    <div className="flex items-center rounded-b-xl bg-[#191C1C] px-3 py-1 text-[clamp(11px,0.7vw,14px)] text-white font-bold cursor-pointer hover:bg-[#00857C] active:scale-95 transition-all shadow-md">
                       EXHIBITOR LOGIN
                     </div>
                   </Link>
@@ -467,14 +467,14 @@ export default function NavBar() {
                 <Button
                   href="/exhibiting-enquiry"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#B80A26] text-white text-sm sm:text-base py-3 font-semibold rounded-md w-full"
+                  className="bg-[#00857C] text-white text-sm sm:text-base py-3 font-semibold rounded-md w-full"
                 >
                   EXHIBITOR REGISTRATION
                 </Button>
                 <Button
                   href="/visitor-registration"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="bg-[#B80A26] text-white text-sm sm:text-base py-3 font-semibold rounded-md w-full"
+                  className="bg-[#00857C] text-white text-sm sm:text-base py-3 font-semibold rounded-md w-full"
                 >
                   VISITOR REGISTRATION
                 </Button>

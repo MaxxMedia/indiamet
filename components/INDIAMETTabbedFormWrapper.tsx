@@ -218,7 +218,7 @@ export default function INDIAMETTabbedFormWrapper({
                 <div className="flex-1 bg-white p-4 xs:p-5 sm:p-6 lg:p-8 min-w-0 overflow-y-auto">
                     {showHeader && (
                         <>
-                            <h2 className="text-lg sm:text-xl font-bold text-[#B80A26] mb-1">
+                            <h2 className="text-lg sm:text-xl font-bold text-[#00857C] mb-1">
                                 {headerTitle || activeConfig.title}
                             </h2>
                             <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
@@ -238,7 +238,7 @@ export default function INDIAMETTabbedFormWrapper({
                         className="absolute inset-0 w-full h-full object-cover"
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#8F071D]/95 via-[#B80A26]/85 to-[#B80A26]/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#8F071D]/95 via-[#00857C]/85 to-[#00857C]/40" />
 
                     <div className="relative z-10 flex flex-col h-full p-8 xl:p-10">
                         <div className="mt-auto mb-auto max-w-sm">

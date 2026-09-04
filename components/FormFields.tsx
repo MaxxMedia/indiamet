@@ -338,7 +338,7 @@ export function ConsentCheckbox({
                 checked={checked}
                 onChange={onChange}
                 required={required}
-                className="mt-0.5 h-4 w-4 accent-[#B80A26] cursor-pointer shrink-0"
+                className="mt-0.5 h-4 w-4 accent-[#00857C] cursor-pointer shrink-0"
             />
             <label htmlFor={id} className="text-xs text-gray-600 leading-relaxed cursor-pointer">
                 {children}
@@ -363,7 +363,7 @@ export function ConsentCheckbox({
    i.e. invisible white-on-white text. You were typing the
    whole time, you just couldn't see any of it.
 
-   FIX: switched every one of these to the gray/white/#B80A26
+   FIX: switched every one of these to the gray/white/#00857C
    palette the rest of the site actually uses.
    ========================================================= */
 
@@ -378,7 +378,7 @@ export function Field({ label, required = false, children, className = '' }: Fie
     return (
         <div className={`flex flex-col gap-1.5 ${className}`}>
             <label className="text-xs font-medium text-gray-700 tracking-wide">
-                {label} {required && <span className="text-[#B80A26]">*</span>}
+                {label} {required && <span className="text-[#00857C]">*</span>}
             </label>
             {children}
         </div>
@@ -421,7 +421,7 @@ export function TextInput({
                 required={required}
                 placeholder={placeholder}
                 defaultValue={value === undefined ? defaultValue : undefined}
-                className={`w-full ${prefix ? 'pl-12' : 'px-3'} py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#B80A26] focus:ring-1 focus:ring-[#B80A26] outline-none transition`}
+                className={`w-full ${prefix ? 'pl-12' : 'px-3'} py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#00857C] focus:ring-1 focus:ring-[#00857C] outline-none transition`}
             />
         </div>
     );
@@ -455,7 +455,7 @@ export function TextArea({
             placeholder={placeholder}
             rows={rows}
             defaultValue={value === undefined ? defaultValue : undefined}
-            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#B80A26] focus:ring-1 focus:ring-[#B80A26] outline-none transition resize-vertical"
+            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 placeholder:text-gray-400 focus:border-[#00857C] focus:ring-1 focus:ring-[#00857C] outline-none transition resize-vertical"
         />
     );
 }
@@ -486,7 +486,7 @@ export function Select({
             onChange={onChange}
             required={required}
             defaultValue={value === undefined ? (defaultValue ?? '') : undefined}
-            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 focus:border-[#B80A26] focus:ring-1 focus:ring-[#B80A26] outline-none transition appearance-none"
+            className="w-full px-3 py-2.5 text-sm bg-white border border-gray-300 rounded-md text-gray-900 focus:border-[#00857C] focus:ring-1 focus:ring-[#00857C] outline-none transition appearance-none"
         >
             <option value="" disabled>{placeholder}</option>
             {options.map(opt => (
@@ -506,14 +506,14 @@ interface RadioCardProps {
 
 export function RadioCard({ title, price, note, name, defaultChecked = false }: RadioCardProps) {
     return (
-        <label className="relative flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:border-[#B80A26] has-[:checked]:border-[#B80A26] has-[:checked]:ring-1 has-[:checked]:ring-[#B80A26] has-[:checked]:bg-[#B80A26]/5 transition-colors bg-white text-center min-h-[100px]">
+        <label className="relative flex flex-col items-center justify-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:border-[#00857C] has-[:checked]:border-[#00857C] has-[:checked]:ring-1 has-[:checked]:ring-[#00857C] has-[:checked]:bg-[#00857C]/5 transition-colors bg-white text-center min-h-[100px]">
             <input
                 type="radio"
                 name={name}
                 defaultChecked={defaultChecked}
-                className="absolute top-2 right-2 accent-[#B80A26]"
+                className="absolute top-2 right-2 accent-[#00857C]"
             />
-            <span className="text-xs font-bold text-[#B80A26] tracking-wider">{title}</span>
+            <span className="text-xs font-bold text-[#00857C] tracking-wider">{title}</span>
             <span className="text-sm font-semibold text-gray-800 mt-1">{price}</span>
             <span className="text-[10px] text-gray-500 mt-1">{note}</span>
         </label>
@@ -533,7 +533,7 @@ export function SubmitButton({ loading, label, showArrow = true }: SubmitButtonP
             disabled={loading}
             className={`w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-lg font-semibold text-white transition-all text-sm ${loading
                 ? 'bg-blue-400 cursor-not-allowed'
-                : 'bg-[#B80A26] hover:bg-[#152d57] active:scale-[0.98]'
+                : 'bg-[#00857C] hover:bg-[#152d57] active:scale-[0.98]'
                 }`}
         >
             {loading ? (
