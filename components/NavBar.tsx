@@ -353,13 +353,13 @@ export default function NavBar() {
                     className="bg-[#002926] hover:bg-[#00857C] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
 
-                    EXHIBITOR REGISTRATION
+                    EXHIBITOR REG
                   </Button>
                   <Button
                     href="/visitor-registration"
                     className="bg-[#002926] hover:bg-[#00857C] px-[clamp(6px,0.6vw,16px)] py-[clamp(4px,0.5vw,10px)] whitespace-nowrap transition-all text-[clamp(7px,0.55vw,13px)] font-bold rounded-full"
                   >
-                    VISITOR REGISTRATION
+                    VISITOR REG
                   </Button>
                 </div>
               </div>
