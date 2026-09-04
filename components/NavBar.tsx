@@ -400,7 +400,7 @@ export default function NavBar() {
               on every screen size. Width now scales up a bit more for
               tablets instead of capping out at 600px right away. */}
           <div
-            className="xl:hidden fixed left-0 right-0 z-[9999] mt-2 bg-white text-gray-900 shadow-xl rounded-xl mx-2 sm:mx-4 md:mx-6 max-w-[600px] md:max-w-[720px] sm:mx-auto max-h-[calc(100vh-96px)] overflow-y-auto overscroll-contain"
+            className="xl:hidden fixed left-0 right-0 z-[9999] mt-2 bg-white text-gray-900 shadow-xl rounded-xl mx-2 sm:mx-4 md:mx-6 max-w-[600px] md:max-w-[720px] sm:mx-auto max-h-[calc(100vh-296px)] overflow-y-auto overscroll-contain"
             style={{ top: mobileHeaderHeight, animation: "slideDown 0.25s ease-out" }}
           >
             {/* Dropdown Header */}
